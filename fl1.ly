@@ -4,10 +4,20 @@
 %Bsn. II
 %Hrn I
 %Viol. I
+%Viol. II
 %Viola
 %Piano
 
 \version "2.18.2"
+
+pDolce = \tweak DynamicText.self-alignment-X #LEFT 
+  #(make-dynamic-script (markup #:dynamic "p" #:normal-text #:italic "dolce"))
+
+
+pLeg = \tweak DynamicText.self-alignment-X #LEFT 
+  #(make-dynamic-script (markup #:dynamic "p" #:normal-text #:italic "leggiero"))
+
+
 ppLeg = \tweak DynamicText.self-alignment-X #LEFT 
   #(make-dynamic-script (markup #:dynamic "pp" #:normal-text #:italic "leggiero"))
 
@@ -216,6 +226,114 @@ FlOneII = \relative c'{
   r8 ef'4\f\cresc-- g8 b ef g4\sff | R1 | a8-.\ff r a-. r_"attacca subito" r2 \bar "||"
 } 
 
+FlOneIII = \relative c' {
+  \clef treble
+  \key d \minor
+  \time 2/2
+  \tempo "Alla breve"
+  d''4\sff r r2 | R1 * 17 \mark #40 |
+  R1 * 16 |
+  %\cueDuring #"ClarOne" #DOWN
+  {R1 * 2 | r2 r4} a-.\f |
+  g8-. f-. e-. d-. c4-. b-. \mark\default |
+  a-> r r2 | R1 * 13 |
+  %\cueDuring #"OboeOne" #UP
+  {R1 * 2 | r4 }
+  e''8-.\f e,-. a4-- e'8-. e,-. |
+  a-.[ e'-.] a,-.[ e'-.] a,4-. r \mark\default |
+  R1 * 2 |
+  r2 b'4-.\ff e,-. | R1 * 3 |
+  r2 a4-.\ff d,-. |
+  r2 r8 a,-.\mf bf-. c-. | d\dim-. e-. f-. g-. a4-.\! r | R1 * 6 |
+  \tempo "Più mosso" R1 * 6 |
+  r2^"Solo" \tuplet 3/2 {c8(\pLeg^"ad lib." b bf} bf4--~ |
+  \tuplet 3/2 {bf8 a af} af4--~ \tuplet 3/2 {af8 g fs} f4) \mark\default |
+  R1 * 6 |
+  r4^"Solo" \tuplet 3/2 {e'8^"ad lib."\p( d  c} c4--~ \tuplet 3/2{c8 b bf} |
+  bf4--~ \tuplet 3/2{bf8 a af} af4--~\dim \tuplet 3/2 {af8 g f} | e4\!) r r2 |
+  R1 * 2 \mark\default |
+  R1 * 7 |
+  \tuplet 3/2 4 {r8^"Solo" e8\p\<^"ad lib."([ fs] g b ds\! e[ fs g] fs g fs |
+  e\mf[ d e] d b d} b) r r4 |
+  \tuplet 3/2 4 {d8([ c d] c a c} a) r r4 |
+  \tuplet 3/2 4 {c8\dim([ b c] g ef g} b)\! r r4 |
+  \tuplet 3/2 4 {b8([ a b] e, cs e} b') r r4 \mark\default |
+  \tempo "Meno mosso" R1 * 15 |
+  \tempo\markup{\italic "allarg."} R1 |
+  \tempo "a tempo" R1 * 5 \mark\default |
+  R1 * 5 |
+  %\cueDuring #"OboeOne #UP
+  {R1 * 3 } |
+  \tempo "Allegro molto"
+  \tuplet 3/2 {g8\<( b d} g4)\ff->~ \tuplet 3/2 4 {g d8( fs8[ d b])} |
+  \tuplet 3/2 4 {e4-> b8( d[-> b g)] c4-> g8( b[ fs d]) |
+  g4-. d8-.} g4->~ \tuplet 3/2 {g d8(} f4)-> |
+  \tuplet 3/2 {ef4-. bf8(} d4)->\dim \tuplet 3/2 {c4-. g8(} b4)-> \mark\default |
+  g\f r r2 | 
+  R1 * 11 |
+  \tempo\markup{\italic "rit."} R1 * 4 \bar "||"
+  \time 4/4
+  \key c \minor
+  \tempo "Scherzando"
+  R1 * 2 \mark\default |
+  R1 * 8 \bar "||"
+  \time 3/2 R1. \mark\default \bar "||"
+  \time 4/4 \tempo\markup{\italic "rit."} R1 * 7 \mark\default |
+  %\cueDuring #"ViolTwo" #UP
+  {R1 | \tempo "a tempo" R1}
+  R1 * 3 \bar "||"
+  \time 3/2 R1. * 3 \mark\default \bar "||"
+  \time 4/4 \tempo "Più vivo" R1 * 8 \mark\default |
+  \tempo\markup{\italic "rit."} R1 * 2 \bar "||"
+  \time 3/2 \tempo "Meno mosso" R1. * 2 \bar "||"
+  \time 4/4 
+  %\cueDuring #"OboeOne" #UP
+  {R1 * 2 | \tempo\markup{\italic "poco accel."} R1 | r2 }
+  r8^"Solo" \tempo\markup{\italic "rit."} a'16\p-. bf-. \tuplet 3/2 {cf-. c-. cs-.} d8-. \mark\default |
+  \tempo "a tempo"
+  \acciaccatura{fs} g8-.[\ppLeg r16 fs]-. g8-.[ r16 fs-.] g8-.[ r16 g32( fs] g16) bf-. cf-. fs,-. |
+  g16-. g32( fs g8--)~ g16 fs-. g-. fs-. g-. g32( fs g8--)~ g r16 d-. |
+  ef8-.[ r16 d-.] ef8-.[ r16 d-.] ef8-.[ r16 ef32( d] ef16) g-. a-. d,-. |
+  ef-. ef32( d ef8--)~ ef16 d-. ef8--~ ef16 d-. ef-. d-. ef-. ef32( d ef8) \bar "||"
+  \time 3/2 
+  r2 r16 d-. ef-. a,-. bf8-. r r16 d-. ef-. a, b8-. r |
+  r2 r16 c-. df-. a-. bf8-. r r2 | \tempo\markup{\italic "rit."} R1. \mark\default \bar "||"
+  \time 4/4 \tempo\markup{"a tempo  " \italic{accel.}} R1 * 4 |
+  \tempo\markup{\italic "poco a poco rit."} R1 * 4 \mark\default |
+  \tempo "Lento" R1 * 2 | 
+  r4 r8 gs(\pDolce^"Solo" a cs e ds) |
+  ds--( cs4\> ds8--)\! cs--( b4\> cs8--)\! |
+  b--(\dim fs4)\! r8 r2 | R1 * 4 \mark\default |
+  R1 * 3 | \tempo\markup{\italic "rit."} R1 | \tempo "a tempo come prima" R1 * 4 \mark\default |
+  %\cueDuring #"ViolOne" #UP
+  {R1 * 6 \mark\default | r4 }
+  g'4\mf^"Solo"( ef c | bf) r r2 |
+  \tempo\markup{\italic "rit."} R1 * 9 \mark\default \bar "||"
+  \time 2/2 \tempo "Tempo I (Alla breve)" R1 * 12 |
+  %\cueDuring #"OboeOne" #UP
+  {R1} \mark\default |
+  r4 \tuplet 3/2 {bf8-.\mf af-. bf-.} bf4--(\> af)\!|
+  r4 \tuplet 3/2 {af8-.\mf gf-. af-.} af4--(\> g)\! | R1 |
+  r2 r4 \tuplet 3/2 {c8-.->\mf c,-. c-.} |
+  r2 r4 \tuplet 3/2 {bf'8-.->\mf bf,-. bf-.} | R2 * 2 |
+  \tempo "Più vivo" R1 * 8 \mark\default |
+  R1 * 11 |
+  %\cueDuring #"OboeOne" #DOWN
+  {R1 | r2 r4 } g'-.\f |
+  f8-. ef-. d-. c-. bf4-. r \mark\default |
+  R1 * 3 |
+  r4 d'-.\pp d-. c-. | c-. bf-. a-. g-. | f-. r r2 |
+  R1 * 6 |
+  r4 c'-.\mf f,-. r | R1 \mark\default |
+  R1 * 2 |
+  r4 d'8-.\f d,-. g4-- d'8-. d,-. |
+  g-. d'-. g,-. d'-. g,4-> r \bar "||"
+  \key d \minor R1 * 2 |
+  r2 b4-.\mf e,-. | R1 * 3 |
+ 
+
+
+}
 
 \markup{ \vspace #1 }
 \score{
@@ -237,6 +355,19 @@ FlOneII = \relative c'{
    \set Score.markFormatter = #format-mark-box-numbers
    \compressFullBarRests \FlOneII}
   \header{title="II Intermezzo"
+          composer = ##f
+        opus=##f
+      instrument=##f}
+
+}
+
+\markup{ \vspace #1 }
+\score{
+ 
+ \new Staff {
+   \set Score.markFormatter = #format-mark-box-numbers
+   \compressFullBarRests \FlOneIII}
+  \header{title="III Finale"
           composer = ##f
         opus=##f
       instrument=##f}
