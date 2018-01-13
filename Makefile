@@ -1,9 +1,18 @@
-all: flutes.pdf
+LILY=lilypond
+FLUTEFILES=flutes.ly include/fl1.ily
 
-%.pdf : %.ly
-	lilypond -fpdf -s -o $* $<
+all: flutes
 
-flutes.pdf: flutes.ly include/fl1.ily
+flutes: flutes.a4.pdf flutes.letter.pdf
+
+%.a4.pdf : %.ly
+	lilypond -fpdf -dpaper-size=\"a4\" -s -o $*.a4 $<
+
+%.letter.pdf : %.ly
+	lilypond -fpdf -dpaper-size=\"letter\" -s -o $*.letter $<
+
+flutes.a4.pdf: ${FLUTEFILES}
+flutes.letter.pdf: ${FLUTEFILES}
 
 
 clean:

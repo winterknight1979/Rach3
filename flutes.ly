@@ -46,7 +46,7 @@ mpbreak={}
    \compressFullBarRests \FlOneI}
   \header{title="I"
           composer = ##f
-        opus=##f
+%        opus=##f
       instrument=##f}
 
 }
