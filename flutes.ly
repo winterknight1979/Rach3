@@ -25,8 +25,8 @@ ppLeg = \tweak DynamicText.self-alignment-X #LEFT
 
 \language "english"
 
-mbreak={}
-mpbreak={}
+mbreak={\break}
+mpbreak={\break}
 
 \include "include/fl1.ily" % add cues in FL2
 \include "include/fl2.ily"

@@ -13,6 +13,7 @@ FlTwoI=\relative c'{
   \time 2/4 R2 \bar "||"
   \time 4/4 R1 \mbreak |
   \tempo "Più mosso" R1 * 11 \mark\default |
+  R1 * 6 | 
   %\cueDuring #"OboeOne" #UP
   {R1 * 2} |
   R1 * 6 |
@@ -35,7 +36,7 @@ FlTwoI=\relative c'{
   %\cueDuring #"FluteOne" #UP
   {r1} \tuplet 3/2 4 {r8 a'\<( bf c[ d ef])} \mark\default |
   \time 4/4 \tempo "a tempo" f4(\f e ef d | df c8\> bf bf\!) r r4 |
-  R1 | r2 r4\breathe \tempo\markup {\italic "rit."} r4 | R1\mbreak |
+  R1 | r2 r4\breathe \tempo\markup {\italic "rit."} r4 | R1 \mbreak |
   \key g \minor \tempo "a tempo" R1 * 6 \mark\default | 
   R1 * 6 | \time 2/4 R2 |
   \time 4/4 \tempo\markup{\italic "colla parte"} R1 |
@@ -67,7 +68,7 @@ FlTwoI=\relative c'{
   r2 r4 r8 gs-.\pp[ |
   fs-. e-.] r4 r r8 gs-.[ |
   fs-. e-.] r4 r2 | R1 \mpbreak |
-  \tempo "Più vivo" R1 * 14 \mark\default |
+  \tempo "Più vivo" R1 * 10 \mark\default |
   R1 * 6 |
   %\cueDuring #"OboeOne" #DOWN
   {R1 | r2 r4 }
@@ -79,7 +80,7 @@ FlTwoI=\relative c'{
   r4\tempo\markup{\italic "accel."} c8-. c-. c4-> c8-. c-. |
   c4-> c8-. c-. c4-> c8-. c-. \mbreak |
   c4-> gs->\cresc g-. fs-> | f-. fs-> g-> gs-> |
-  \time 2/2 \tempo "Allegro molto (alla breve)" a->\ff r r2 |
+  \time 2/2 \tempo "Allegro molto (Alla breve)" a->\ff r r2 |
   R1 * 7 \mark\default |
   R1 * 16 \mark\default |
   R1 * 8 \mbreak |

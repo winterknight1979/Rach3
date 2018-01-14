@@ -11,6 +11,7 @@ FlOneI=\relative c'{
   \tempo "Più mosso" R1 * 11 \mark\default |
   R1 * 6 |
   % \cueDuring #"OboeOne" #UP
+  {R1 * 2 }
   R1 * 6 |
   \tempo "Più vivo"
   R1 * 2 | 
@@ -30,19 +31,20 @@ FlOneI=\relative c'{
   R1\fermataMarkup_"Cadenza" \mbreak 
   \tempo "Moderato" R1 * 2 |
   % \cueDuring #"OboeOne" #UP
-  {R1 * 4 | \time 3/2 \tempo\markup{\italic "allargando"} r2 }
+  {R1 * 4 | \time 3/2 \tempo\markup{\italic "allarg."} r2 }
   \tuplet 3/2 4 {r8 c,\f( ef a[ c ef]} g4. f8 \mark\default |
   \time 4/4 \tempo "a tempo" f,) r r4 r2 |
-  R2 * 2 \mbreak |
+  R1 * 2 \mbreak |
   r2 r4\breathe \tempo\markup{\italic "rit."} r4 |
   R1 |
   \key g \minor R1 * 6 \mark\default |
+  R1 * 6 |
   \time 2/4 R2 |
   \time 4/4 \tempo\markup{\italic "colla parte"} R1 |
   \tempo "a tempo" R1 * 8 \mark\default \mbreak |
   R1 * 9 \mark\default |
   R1 * 2 |
-  \tempo\markup{\italic "allargando"} R1 |
+  \tempo\markup{\italic "allarg."} R1 |
   \tempo "a tempo" R1 * 4 \mark\default |
   R1 * 2 |
   % \cueDuring #"OboeOne" #UP
@@ -58,7 +60,7 @@ FlOneI=\relative c'{
   f'2(\pp e | ef_\markup{\bold\italic "poco a poco accel."} d| df1) \mbreak |
   c2( cf \mark\default | b)\tempo "Allegro" r |
  \tempo\markup{\italic "rit."} R1 * 7 \bar "||"
- \key a \minor \tempo "tempo I" R1 * 14 \mark\default \bar "||" 
+ \key a \minor \tempo "Tempo I" R1 * 14 \mark\default \bar "||" 
  \time 3/2 \tempo "Più mosso" R1. * 2 \mbreak \bar "||"
  \time 4/4 
   % \cueDuringwithClef #"BsnTwo" #UP #"treble"
@@ -80,10 +82,9 @@ FlOneI=\relative c'{
   f4.-- f8-. f4-- f8-. f-. | f4.-- f8-. f4.-- r8 |
   \tempo "Allegro" R1 * 5 |
   r2 r4 r8 a\f | d4(-> a8) r r2 | R1 \mbreak |
-  \override TextSpanner.bound-details.left.text =\markup{\bold\italic "accel."}
-  r4 f'8-.\f\startTextSpan f-. f4-> f8-. f-. |
+  r4 \tempo\markup{\italic "accel."} f'8-.\f f-. f4-> f8-. f-. |
   f4-> f8-. f-. f4-> f8-. f-. |
-  f4-> gs,-> g-> fs-> | f-> fs-> g-> gs->\stopTextSpan |
+  f4-> gs,-> g-> fs-> | f-> fs-> g-> gs->|
   \time 2/2 \tempo "Allegro molto (Alla breve)"
   a->\ff r r2 | R1 * 7 \mark\default \mbreak |
   R1 * 16 \mark\default |
@@ -100,6 +101,7 @@ FlOneI=\relative c'{
   % \cueDuring #"Piano" #UP
   {R1*4} \mark\default |
   bf1--\pp~ \tempo\markup{\italic "poco a poco riten."} | bf |
+  R1 * 10 |
   % Skip cadenza
   R1\fermataMarkup_"Cadenza" \mark\default \mbreak \bar "||"
   %\cueDuring #"Piano" #DOWN
@@ -111,7 +113,7 @@ FlOneI=\relative c'{
   R1\fermataMarkup_"Cadenza" \mark\default |
   R1 * 2 |
   %\cueDuring #"HrnOne" #DOWN
-    {R1 | \tempo\markup{\italic "rit."} R1 \bar "||"
+    {R1 | \tempo\markup{\italic "rit."} R1 \bar "||" \key d\minor 
     \tempo "Tempo I" R1 }
   R1 * 9 \mark\default \mbreak |
   R1 * 7 |
@@ -119,7 +121,7 @@ FlOneI=\relative c'{
   \tempo "a tempo" R1 * 4 |
   %\cueDuring #ClarOne #DOWN
     {R1 * 2 \bar "||" \time 2/4 R2 \bar "||" \time 4/4 R1 \mark\default \mbreak | r4 }
-  d'2--\p c4~-- | c b2-- a4~-- | a r r2 | R1 |
+  d'2--\p c4~-- | c bf2-- a4~-- | a r r2 | R1 |
   \tempo "Un poco più mosso" R1 * 4 \mark\default |
   R1 * 10 \mpbreak \bar "|."
 } 
