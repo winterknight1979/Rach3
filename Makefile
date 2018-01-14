@@ -1,5 +1,5 @@
 LILY=lilypond
-FLUTEFILES=flutes.ly include/fl1.ily
+FLUTEFILES=flutes.ly include/fl1.ily include/fl2.ily
 
 all: flutes
 
