@@ -207,6 +207,182 @@ FlTwoII = \relative c'{
 } 
 
 FlTwoIII = \relative c' {
+\clef treble
+\key d \minor
+\time 2/2
+\tempo "Alla breve"
+d''4\sff r r2 |
+R1 * 17 \mark #40 |
+R1 * 16 |
+%\cueDuring #"ClarOne" #DOWN
+{R1 * 2 | r2 r4 } f,-.\f |
+e8-. d-. c-. a-. g4-. r \mark\default  \mbreak |
+R1 * 14 |
+%\cueDuring #"OboeOne" #UP
+{R1 * 2 | r4 } e''8-.\f e,-. a4-- e'8-. e,-. |
+a-. e'-. a,-.[ e'-.] a,4-. r \mark\default |
+R1 * 2 \mbreak |
+r2 b'4-.\ff e, |
+R1 * 3 |
+r2 a4-.\ff d, |
+R1 * 8 |
+\tempo "Più mosso" R1 * 8 \mark\default |
+R1 * 11 \mark\default |
+R1 * 7 \mpbreak |
+%\cueDuring #"FluteOne" #UP
+{R1 | r2 }
+\tuplet 3/2 4 {b8\mf([^"Solo ad lib." fs b] e, fs b} |
+d) r r4 \tuplet 3/2 4 {a8([\dim e a] d, e a} |
+c)\! r r4 \tuplet 3/2 4 { b8([ a b] fs d fs} |
+b) r r4 \tuplet 3/2 4 {b8([\p a e] d cs c} \mark\default |
+\tempo "Meno mosso" b) r r4 r2 |
+R1 * 14 |
+\tempo\markup{\italic "allarg."} R1 |
+\tempo "a tempo" R1 * 5 \mark\default \mbreak |
+R1 * 5 |
+%\cueDuring #"OboeOne" #UP
+{R1 * 3 }|
+\tempo "Allegro molto"
+\tuplet 3/2 {g'8\<( b d} g4->\ff)~ \tuplet 3/2 4 {g d8( fs[-> d b]) |
+e4-> b8( d->[ b g]) c4-> g8( b->[fs d]) \mbreak |
+g4-. d8-.} g4->~ \tuplet 3/2 {g d8(} f4)-> |
+\tuplet 3/2 {ef4-. bf8(} d4)->\dim \tuplet 3/2 {c4-. g8(} b4) \mark\default |
+g\f r r2 |
+R1 * 11 |
+\tempo\markup{\italic "rit."} R1 * 4 \mbreak \bar "||"
+\time 4/4 \tempo "Scherzando" \key c\minor
+R1 * 2 \mark\default |
+R1 * 8 \bar "||"
+\time 3/2 R1. \mark\default \bar "||"
+\time 4/4 \tempo\markup{\italic "rit."} R1 * 7 \mark\default |
+%\cueDuring #"ViolTwo" #DOWN
+{R1 \tempo "a tempo" R1} |
+R1 * 3 \mbreak \bar "||"
+\time 3/2 
+R1. * 3 \mark\default \bar "||"
+\time 4/4 \tempo "Più vivo" R1 * 8 \mark\default |
+\tempo\markup{\italic "rit."} R1 * 2 \bar "||"
+\time 3/2 \tempo "Meno mosso" R1. * 2 \bar "||"
+\time 4/4
+%\cueDuring #"OboeTwo" #DOWN
+{R1 * 2 \mbreak | \tempo\markup{\italic "poco accel."} R1 | r2}
+r8^"Solo" \tempo\markup{\italic "rit."} fs'16\p-. g-. \tuplet 3/2 {af-. a-. bf-.} bf8-. \mark\default |
+\tempo "a tempo" \acciaccatura{d8(} ef-.)[\ppLeg  r16 d-.] ef8-.[ r16 d-.] ef8-.[ r16 ef32( d] ef16) fs-. g-. d-. \mbreak |
+ef16-.[ ef32( d ef8)]--~ ef16[ d-. ef-. d-.] ef-.[ ef32( d ef8)]--~ ef r16 b-. |
+c8-.[ r16 b-.] c8-.[ r16 b-.] c8-.[ r16 cf32( bf] cf16) d-. ef-. b-. \mbreak |
+c16-.[ c32( b c8--)~] c16[ b-. c8]--~ c16[ b-. c-. b-.] c-.[ c32( b c8-.)] \bar "||"
+\time 3/2 R1. * 2 |
+\tempo\markup{\italic "rit."} R1. \mark\default \bar "||"
+\time 4/4 \tempo\markup{"a tempo   "\italic "accel."} R1 * 4 |
+\tempo\markup{\italic "poco a poco rit."} R1 * 4 \mark\default \mbreak |
+\tempo "Lento" R1 * 9 \mark\default |
+R1 * 3 |
+\tempo \markup{\italic "rit."} R1 |
+\tempo "a tempo come prima" R1 * 4 \mark\default |
+R1 * 6 \mark\default |
+%\cueDuring #"FluteOne" #UP
+ {R1 * 2 } |
+\tempo\markup{\italic "rit."} R1 * 9 \mark\default\mbreak \bar "||"
+\tempo "Tempo I (Alla breve)" \time 2/2  R1 * 4 |
+%\cueDuring #"OboeOne" #UP
+{ R1 * 4 } |
+R1 * 4 |
+%\cueDuring #"OboeOne" #UP
+{R1 \mark\default \mpbreak | r4 }
+\tuplet 3/2 {g8-.\mf f-. g-.} g4--(\> af)\! |
+r4 \tuplet 3/2 {g8-.\mf f-. g-.} g4--(\> af)\! |
+R1 * 5 |
+\tempo "Più vivo" R1 * 8 \mark\default |
+R1 * 11 \mbreak |
+%\cueDuring #"OboeOne" #UP
+{R1 | r2 r4}
+ef-.\f |
+d8-. c-. bf-. a-. g4-. r \mark\default |
+R1 * 4 |
+r4 c'-.\pp c-. c-. \mbreak |
+c-. bf-. a-. g-. |
+f-. r r2 |
+R1 * 7 \mark\default |
+R1 * 2 |
+r4 d'8-.\f d,-. g4-- d'8-. d,-. |
+g-. d'-. g,-. d'-. g,4-> r \bar "||"
+\key d\minor R1 * 2 |
+r2 b4-.\f e,-. |
+R1 * 3 |
+r2 d'4-.\f g,-. |
+R1 |
+r4 \tuplet 3/2 {bf8-.\f bf-. f-.} bf4-- r |
+r \tuplet 3/2{d8-. d-. a-.} d4-- \tuplet 3/2 {ef8-.\cresc ef-. c-.} \mbreak |
+f4-- \tuplet 3/2 {g8-. g-. d-.} g4-- \tuplet 3/2 {gs8-. gs-. d} |
+f4->\ff r a, r \mark\default
+d-> r r2 |
+R1 * 3 |
+\tempo "Più mosso" R1 * 8 \mark\default |
+R1 * 11 \mbreak \mark\default |
+R1 * 12 |
+\tempo "Più vivo" R1 * 6 \mark\default |
+R1 * 8 |
+%\cueDuring #"FluteOne" #UP
+{R1 * 3 \mbreak | R1 * 2 } \mark\default |
+R1 * 8 |
+\tempo\markup{\italic "accel."} R1 |
+%\cueDuring #"OboeOne" #UP
+{R1 | r2 r4}
+r8 g,( |
+a\< bf cs f a4)\sff r \mbreak \mark\default \bar "||"
+\tempo "Vivace" R1 * 16 \mark\default |
+R1 * 8 \mark\default |
+R1 * 8 |
+%\cueDuring #"OboeOne" #DOWN
+{R1 * 2 \mark\default | R1 } |
+r2 \repeat tremolo 4 {g,16->\f\>( fs} | g4\p-.)\! r r2 \mbreak |
+r2 \repeat tremolo 4 {g16->\>( fs} | \tempo\markup{\italic "poco a poco accel."} g4-.)\! r r2 
+r2 \repeat tremolo 4 {bf16->\>( a} | bf4-.)\! r r2 |
+r2 \repeat tremolo 4 {bf16->\>( a} | bf4-.)\! r \repeat tremolo 4 {cs16->\>( bs } \mbreak |
+cs4-.\!) r \repeat tremolo 4 {cs16->\>( bs } |
+b4-.\!) r \repeat tremolo 4 {d16->\>( cs } |
+d4-.\!) r \repeat tremolo 4 {d16->( cs } \mark\default \bar "||"
+\key b \minor
+a4)-. r r2 |
+R1 * 3 \mpbreak |
+a'8\ff( as b e,) a( as b e,) | a( as b e,) a( as b e,) |
+a1\trill | a1\trill | a1 \trill | a1 \trill \mbreak |
+a4\sff r r2\fermata_"Cadenza"
+% skip cadenza
+\mark\default \bar "||"
+\tempo "Vivacissimo" R1 * 4 |
+\tempo "Un poco meno mosso" R1 * 4 |
+\time 3/2 R1. * 2 |
+\time 2/2 \tempo\markup{\italic "accel."} R1 * 2 |
+\tempo "Tempo precedente" R1 * 4 \mark\default \mbreak |
+\tempo "Un poco meno mosso"
+%\cueDuring #"OboeOne" #DOWN
+{R1 * 4} |
+\tempo\markup{\italic "poco a poco accel."}
+d,,1\f( | e | bf' | a)~ | a | c( \mbreak |
+b\cresc | d | cs | c) \mark\default |
+b\< |
+\tempo\markup{\italic "allargando"} ds\! | e\ff\< | cs\! | cs--(\> \mbreak |
+\tempo\markup{\italic "accel."} c2\! b) |
+b( as | b fs~ |
+\tempo "a tempo" fs) e | d1\>~ \mark\default |
+\tempo "Più vivo" d4\! r r2 |
+R1 * 3 \mbreak |
+r2 r4 a'\mf( |
+bf\cresc d2\< fs4 |
+\tempo\markup{\italic "rit."} g2.--\ff ef4 |
+d) r r2 \mark\default |
+\tempo\markup{\italic "poco a poco accel."} r8 a,-. b-. cs-. d4-. r \mbreak |
+r8 cs-. d-. e-. fs4-. r |
+r8 fs-.\cresc g->[ b,-.] cs-. ds-. e-. fs-. |
+g-. a-. b-.\< cs-. d-. e-.\! cs4-. |
+d-.\ff r d,-.\p r \mbreak |
+d-. r d-. r | d-. r d-. r | R1 \mark\default |
+\tempo "Più vivo" R1 * 4 |
+\tempo "Presto" R1 |
+d'4\ff r r2 | d4 r d r \mbreak |
+r2 d4 r | R1 * 2 |
+r4 d-.\ff d-. e-. | fs\sff r cs\sff r | d\sff r r2 | R1 \bar ".|"
 }
 
 \markup{ \vspace #1 }
