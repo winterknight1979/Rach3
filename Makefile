@@ -22,6 +22,7 @@ score.letter.pdf: ${SCOREFILES}
 flutes.a4.pdf: ${FLUTEFILES}
 flutes.letter.pdf: ${FLUTEFILES}
 
+.PHONY: clean all
 
 clean:
 	rm -f *.pdf *.ps *.mid
