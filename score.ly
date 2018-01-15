@@ -25,13 +25,32 @@ mpbreak={}
     opus = "Opus 30"
     composer = "Sergei Rachmaninoff"}
 
-
      \score{
  
       \new Staff {
          \set Score.markFormatter = #format-mark-box-numbers
          \partcombine \FlOneI \FlTwoI}
         \header{title="I"
+          composer = ##f
+%         opus=##f
+          instrument=##f}
+      }
+     \score{
+ 
+      \new Staff {
+         \set Score.markFormatter = #format-mark-box-numbers
+         \partcombine \FlOneII \FlTwoII}
+        \header{title="II Intermezzo"
+          composer = ##f
+%         opus=##f
+          instrument=##f}
+      }
+     \score{
+ 
+      \new Staff {
+         \set Score.markFormatter = #format-mark-box-numbers
+         \partcombine \FlOneIII \FlTwoIII}
+        \header{title="III Finale"
           composer = ##f
 %         opus=##f
           instrument=##f}
