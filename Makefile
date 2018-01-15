@@ -12,10 +12,10 @@ flutes: flutes.a4.pdf flutes.letter.pdf
 
 
 %.a4.pdf : %.ly
-	lilypond -fpdf -dpaper-size=\"a4\" -s -o $*.a4 $<
+	${LILY} -fpdf -dpaper-size=\"a4\" -s -o $*.a4 $<
 
 %.letter.pdf : %.ly
-	lilypond -fpdf -dpaper-size=\"letter\" -s -o $*.letter $<
+	${LILY} -fpdf -dpaper-size=\"letter\" -s -o $*.letter $<
 
 score.a4.pdf: ${SCOREFILES}
 score.letter.pdf: ${SCOREFILES}

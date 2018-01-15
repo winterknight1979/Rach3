@@ -28,7 +28,7 @@ ppLeg = \tweak DynamicText.self-alignment-X #LEFT
 mbreak={}
 mpbreak={}
 
-\include "include/fl1.ily" % add cues in FL2
+\include "include/fl1.ily" \addQuote "FluteOneI" {\FlOneI}
 \include "include/fl2.ily"
 
 \paper{

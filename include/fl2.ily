@@ -19,13 +19,13 @@ FlTwoI=\relative c'{
   R1 * 6 |
   \tempo "Più vivo" R1 * 4 \mark\default |
   R1 * 2 |
-  %\cueDuring #"FluteOne" #UP
+  \cueDuring #"FluteOneI" #UP
   {R1 * 2 \mbreak | R1 } |
   R1 * 6 |
   \tempo\markup{\italic "colla parte"} R1 \bar "||"
   \time 2/4 \tempo "a tempo" R2 \mark\default \bar "||"
   \time 4/4 \tempo "Allegro" R1 * 2 |
-  %\cueDuring #"FluteOne" #UP
+  \cueDuring #"FluteOneI" #UP
   {R1} |
   R1 * 5 |
   R1^\fermataMarkup_"Cadenza" 
@@ -33,7 +33,7 @@ FlTwoI=\relative c'{
   \mbreak |
   \tempo "Moderato" R1 * 6 |
   \time 3/2 \tempo\markup{\italic "allarg."}
-  %\cueDuring #"FluteOne" #UP
+  \cueDuring #"FluteOneI" #UP
   {r1} \tuplet 3/2 4 {r8 a'\<( bf c[ d ef])} \mark\default |
   \time 4/4 \tempo "a tempo" f4(\f e ef d | df c8\> bf bf\!) r r4 |
   R1 | r2 r4\breathe \tempo\markup {\italic "rit."} r4 | R1 \mbreak |
@@ -50,7 +50,7 @@ FlTwoI=\relative c'{
   \tempo "Allegro" R1 * 6 \mark\default |
   \tempo\markup{\italic "rit."} R1 * 2 \mbreak |
   \tempo "Tempo precedente" R1 * 4 |
-  %\cueDuring #"FluteOne" #UP
+  \cueDuring #"FluteOneI" #UP
   {R1 | \tempo\markup{\italic "poco a poco accel."} R1 * 3 \mark\default | \tempo "Allegro" R1} |
   \tempo\markup{\italic "rit."} R1 * 7 \mbreak \bar "||"
   \key a \minor
@@ -84,7 +84,7 @@ FlTwoI=\relative c'{
   R1 * 7 \mark\default |
   R1 * 16 \mark\default |
   R1 * 8 \mbreak |
-  %\cueDuring #"FluteOne" #UP
+  \cueDuring #"FluteOneI" #UP
   {R1 * 2 }
   R1 * 10 \mark\default |
   R1 * 8 |
@@ -95,7 +95,7 @@ FlTwoI=\relative c'{
   % skip cadenza
   \mark\default \bar "||"
   \time 4/4 \tempo "Meno mosso" R1 |
-  %\cueDuring #"FluteOne" #UP
+  \cueDuring #"FluteOneI" #UP
   {R1 * 3 \mbreak | R1 * 2 } |
   \tempo\markup{\italic "rit."} R1 * 7 |
   R1^\fermataMarkup_"Cadenza"
@@ -110,7 +110,7 @@ FlTwoI=\relative c'{
   \tempo "a tempo" R1 * 6 \bar "||"
   \time 2/4 R2 \bar "||"
   \time 4/4 R1 \mark\default \mbreak |
-  %\cueDuring #"FluteOne" #UP
+  \cueDuring #"FluteOneI" #UP
   {R1 * 2 | r4 }
   g2--\p f4--~ |
   f e ef--(\dim d)~ |
