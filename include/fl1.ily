@@ -267,7 +267,7 @@ FlOneIII = \relative c' {
   \time 3/2 
   r2 r16 d-. ef-. a,-. bf8-. r r16 d-. ef-. a, b8-. r |
   r2 r16 c-. df-. a-. bf8-. r r2 | \tempo\markup{\italic "rit."} R1. \mark\default \mbreak \bar "||"
-  \time 4/4 \tempo\markup{"a tempo  " \italic{accel.}} R1 * 4 |
+  \time 4/4 \tempo\markup{"a tempo   "\italic "accel."} R1 * 4 |
   \tempo\markup{\italic "poco a poco rit."} R1 * 4 \mark\default |
   \tempo "Lento" R1 * 2 | 
   r4 r8 gs(\pDolce^"Solo" a cs e ds) |
@@ -284,7 +284,7 @@ FlOneIII = \relative c' {
   r4 \tuplet 3/2 {bf8-.\mf af-. bf-.} bf4--(\> af)\!|
   r4 \tuplet 3/2 {af8-.\mf gf-. af-.} af4--(\> g)\! | R1 \mbreak |
   r2 r4 \tuplet 3/2 {c8-.->\mf c,-. c-.} |
-  r2 r4 \tuplet 3/2 {bf'8-.->\mf bf,-. bf-.} | R2 * 2 |
+  r2 r4 \tuplet 3/2 {bf'8-.->\mf bf,-. bf-.} | R1 * 2 |
   \tempo "Più vivo" R1 * 8 \mark\default |
   R1 * 11 |
   %\cueDuring #"OboeOne" #DOWN
@@ -363,7 +363,7 @@ FlOneIII = \relative c' {
   \tempo "Un poco meno mosso"
   %\cueDuring #"OboeOne" #UP
   {R1 * 4} \mbreak |
-  \tempo\markup {\italic "Poco a poco accel."} fs,1\f( |
+  \tempo\markup {\italic "poco a poco accel."} fs,1\f( |
   g)~ | g~ | g |
   fs(\( | a)~ | a\cresc | bf\) \mbreak |
   a2.( b4 | c e2.) \mark\default |
@@ -371,17 +371,17 @@ FlOneIII = \relative c' {
   \tempo\markup{\italic "allarg."} g2\! fs) |
   g1(\ff\< | fs2.\! e4)\mbreak |
   fs2( e\> | \tempo\markup{\italic "accel."} e2.--\! ds4)|
-  e( d2 cs4 | b2. bf4 | \tempo\markup{\italic "a tempo"} a2) gs4( g | fs2 e\> \mark\default \mbreak |
+  e( d2 cs4 | b2. bf4 | \tempo "a tempo" a2) gs4( g | fs2 e\> \mark\default \mbreak |
   \tempo "Più vivo" fs4)\! r r2 | R1 * 3 |
   r2 r4 a\mf( | bf\cresc d2 fs4\< |
-  \tempo\markup{\italic "riten."} bf2--\ff g4 ef | d) r r2 \mark\default\mbreak |
+  \tempo\markup{\italic "rit."} bf2--\ff g4 ef | d) r r2 \mark\default\mbreak |
   \tempo\markup{\italic "poco a poco accel."}
   r8 cs,-. d-. e-. fs4-. r |
   r8 e-. fs-. g-. a4-. r |
   r8 a-.\cresc bf[-> ds,-.] e-. fs-. g-. a-. |
   b-. cs-.\< d-. e-. fs-. g-.\! a4-. \mbreak | 
   \tempo "a tempo"
-  d,-.\ff r d-.\pp r | d-. r d-. r | d-. r d-. r | R1 \mark\default |
+  d,-.\ff r d-.\p r | d-. r d-. r | d-. r d-. r | R1 \mark\default |
   \tempo "Più vivo" R1 * 4 |
   \tempo "Presto" R1 |
   d4\ff r r2 \mbreak |

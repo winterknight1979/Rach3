@@ -164,7 +164,7 @@ FlTwoII = \relative c'{
   %\cueDuring #"FluteOne #UP
   {R4. * 3} |
   R4. * 4 |
-  \tempo \markup{\italic "rit"} R4. \mark\default |
+  \tempo \markup{\italic "rit."} R4. \mark\default |
   \tempo "a tempo" R4. * 16 \mark\default \mbreak \bar "||"
   \time 3/4 R2. * 2 |
   \tempo "Meno mosso"
@@ -339,7 +339,7 @@ a4\sff r r2\fermata_"Cadenza"
 d,,1\f( | e | bf' | a)~ | a | c( \mbreak |
 b\cresc | d | cs | c) \mark\default |
 b\< |
-\tempo\markup{\italic "allargando"} ds\! | e\ff\< | cs\! | cs--(\> \mbreak |
+\tempo\markup{\italic "allarg."} ds\! | e\ff\< | cs\! | cs--(\> \mbreak |
 \tempo\markup{\italic "accel."} c2\! b) |
 b( as | b fs~ |
 \tempo "a tempo" fs) e | d1\>~ \mark\default |
@@ -359,7 +359,7 @@ d-. r d-. r | d-. r d-. r | R1 \mark\default |
 \tempo "Presto" R1 |
 d'4\ff r r2 | d4 r d r \mbreak |
 r2 d4 r | R1 * 2 |
-r4 d-.\ff d-. e-. | fs\sff r cs\sff r | d\sff r r2 | R1 \bar ".|"
+r4 d-.\ff d-. e-. | fs\sff r cs\sff r | d\sff r r2 | R1 \bar "|."
 }
 
 
