@@ -1,4 +1,5 @@
 FlOneI=\relative c'{
+  \commonConductor
   \clef treble
   \key d \minor
   \tempo "Allegro ma non tanto"
@@ -127,6 +128,7 @@ FlOneI=\relative c'{
 } 
 
 FlOneII = \relative c'{
+  \commonConductor
   \clef treble
   \key fs \minor
   \time 3/4
@@ -196,6 +198,7 @@ FlOneII = \relative c'{
 } 
 
 FlOneIII = \relative c' {
+  \commonConductor
   \clef treble
   \key d \minor
   \time 2/2

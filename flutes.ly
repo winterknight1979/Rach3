@@ -22,16 +22,20 @@
   \addQuote "FluteOneIII" {\FlOneIII}
 \include "include/fl2.ily"
 
-\paper{
-  print-all-headers=##t
-  page-breaking = #ly:page-turn-breaking
+\paper{ 
+  #(layout-set-staff-size 19)
+  system-system-spacing = #'((basic-distance . 18)
+                             (minimum-distance . 8)
+                             (padding . 1)
+                             (stretchability . 60))
+ score-markup-spacing = #'((basic-distance . 20)
+                            (padding . 0.5)
+                            (stretchability . 60))
+ page-breaking-system-system-spacing = #'((basic-distance . 12))
+ %page-breaking = #ly:page-turn-breaking
 }
 
 \book {
-  \header{
-    title = "Piano Concerto No. 3 in D Minor"
-    opus = "Opus 30"
-    composer = "Sergei Rachmaninoff"}
     \bookpart {
       \header {
          instrument = "Flauto I"
@@ -39,34 +43,22 @@
       \score{
  
       \keepWithTag #'part \new Staff \with {\consists "Page_turn_engraver"} <<
-         \set Score.markFormatter = #format-mark-box-numbers
-         \compressFullBarRests \FlOneI>>
-        \header{title="I"
-          composer = ##f
-%         opus=##f
-          instrument=##f}
+         \FlOneI>>
+        \header{piece=\markup\huge "I"}
       }
 
       \markup{ \vspace #1 }
       \score{
-        \new Staff \with {\consists "Page_turn_engraver"} {
-          \set Score.markFormatter = #format-mark-box-numbers
-          \compressFullBarRests \FlOneII}
-        \header{title="II Intermezzo"
-          composer = ##f
-          opus=##f
-          instrument=##f}
+       \keepWithTag #'part   \new Staff \with {\consists "Page_turn_engraver"} {
+          \FlOneII}
+        \header{piece=\markup\huge "II Intermezzo"}
       }
 
       \markup{ \vspace #1 }
       \score{
-        \new Staff \with{\consists "Page_turn_engraver"} {
-          \set Score.markFormatter = #format-mark-box-numbers
-          \compressFullBarRests \FlOneIII}
-          \header{title="III Finale"
-            composer = ##f
-            opus=##f
-            instrument=##f}
+         \keepWithTag #'part \new Staff \with{\consists "Page_turn_engraver"} {
+      \FlOneIII}
+        \header{piece=\markup\huge "III Finale"}
       }
     }
 
@@ -76,35 +68,22 @@
       }
       \score{
  
-      \keepWithTag #'part \new Staff \with {\consists "Page_turn_engraver"} <<
-         \set Score.markFormatter = #format-mark-box-numbers
-         \compressFullBarRests \FlTwoI >>
-        \header{title="I"
-          composer = ##f
-%         opus=##f
-          instrument=##f}
+      \keepWithTag #'part \new Staff \with {\consists "Page_turn_engraver"} << \FlTwoI >>
+        \header{piece=\markup\huge "I"}
       }
 
       \markup{ \vspace #1 }
       \score{
-        \new Staff \with {\consists "Page_turn_engraver"} {
-          \set Score.markFormatter = #format-mark-box-numbers
-          \compressFullBarRests \FlTwoII}
-        \header{title="II Intermezzo"
-          composer = ##f
-          opus=##f
-          instrument=##f}
+         \keepWithTag #'part \new Staff \with {\consists "Page_turn_engraver"} {
+         \FlTwoII}
+        \header{piece=\markup\huge "II Intermezzo"}
       }
 
       \markup{ \vspace #1 }
       \score{
-        \new Staff \with{\consists "Page_turn_engraver"} {
-          \set Score.markFormatter = #format-mark-box-numbers
-          \compressFullBarRests \FlTwoIII}
-          \header{title="III Finale"
-            composer = ##f
-            opus=##f
-            instrument=##f}
+         \keepWithTag #'part \new Staff \with{\consists "Page_turn_engraver"} {
+         \FlTwoIII}
+        \header{piece=\markup\huge "III Finale"}
       }
     }  
 }

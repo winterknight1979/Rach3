@@ -9,39 +9,36 @@
 
 \include "include/fl1.ily"
 \include "include/fl2.ily"
-
- \header{
-    title = "Piano Concerto No. 3 in D Minor"
-    opus = "Opus 30"
-    composer = "Sergei Rachmaninoff"}
+\paper {
+  #(layout-set-staff-size 15)
+  indent = 2.5\cm
+  short-indent = 0.8\cm
+  ragged-last-bottom = ##f
+  page-limit-inter-system-space = ##t
+  system-separator-markup = \slashSeparator
+}
 
      \score{
  
-      \keepWithTag #'score \killCues \new Staff {
-         \set Score.markFormatter = #format-mark-box-numbers
-         \partcombine \FlOneI \FlTwoI}
-        \header{title="I"
-          composer = ##f
-%         opus=##f
-          instrument=##f}
+      \keepWithTag #'score \killCues \new Staff \with
+      { instrumentName = #"2 Flauti"
+        shortInstrumentName = #"Fl."}
+        {\partcombine \FlOneI \FlTwoI}
+        \header{piece=\markup\huge "I"}
       }
      \score{
  
-       \keepWithTag #'score \killCues \new Staff {
-         \set Score.markFormatter = #format-mark-box-numbers
-         \partcombine \FlOneII \FlTwoII}
-        \header{title="II Intermezzo"
-          composer = ##f
-%         opus=##f
-          instrument=##f}
+       \keepWithTag #'score \killCues \new Staff  \with
+      { instrumentName = #"2 Flauti"
+        shortInstrumentName = #"Fl."}
+        {\partcombine \FlOneII \FlTwoII}
+        \header{piece=\markup\huge "II Intermezzo"}
       }
      \score{
  
-       \keepWithTag #'score \killCues \new Staff {
-         \set Score.markFormatter = #format-mark-box-numbers
-         \partcombine \FlOneIII \FlTwoIII}
-        \header{title="III Finale"
-          composer = ##f
-%         opus=##f
-          instrument=##f}
+       \keepWithTag #'score \killCues \new Staff  \with
+      { instrumentName = #"2 Flauti"
+        shortInstrumentName = #"Fl."}
+        {\partcombine \FlOneIII \FlTwoIII}
+        \header{piece=\markup\huge "III Finale"}
       }

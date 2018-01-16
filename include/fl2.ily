@@ -3,6 +3,7 @@
 \version "2.18.2"
 
 FlTwoI=\relative c'{
+  \commonConductor
   \clef treble
   \time 4/4
   \tempo "Allegro ma non tanto"
@@ -120,6 +121,7 @@ FlTwoI=\relative c'{
 } 
 
 FlTwoII = \relative c'{
+  \commonConductor
   \clef treble
   \key fs \minor
   \time 3/4
@@ -184,6 +186,7 @@ FlTwoII = \relative c'{
 } 
 
 FlTwoIII = \relative c' {
+  \commonConductor
 \clef treble
 \key d \minor
 \time 2/2
