@@ -13,19 +13,20 @@ commonConductor = {
   \override Score.MetronomeMark.break-align-symbols
     = #'(time-signature key-signature)
   \override Score.KeySignature.break-align-anchor-alignment = #RIGHT
-  \tag #'part \override Score.RehersalMark.extra-spacing-width = #'(0 . 0)
+  \tag #'part \override Score.RehearsalMark.extra-spacing-width = #'(0 . 0)
   \tag #'part \override Score.Hairpin.to-barline = ##f
   \tag #'part \compressFullBarRests
 %  \tag #'part \override Score.NonMusicalPaperColumn.page-break-permission = ##f
   \override Score.Hairpin.minimum-length = #4
   \override Score.TextScript.whiteout = ##t
   \override Score.CombineTextScript.whiteout = ##t
-  \override Score.RehersalMark.padding = #2.0
+  \override Score.RehearsalMark.padding = #2.0
   \set Score.markFormatter = #format-mark-box-numbers
   \tag #'score \override Score.DynamicText.extra-spacing-width = ##f
   \override Score.InstrumentName.self-alignment-X = #RIGHT
-  \override Score.instrumentName.padding = #1.0
+  \override Score.InstrumentName.padding = #1.0
   \once\override Score.SpacingSpanner.spacing-increment = #0.8
+  \tag #'part \set Score.tempoHideNote = ##t
 }
 
 \header {

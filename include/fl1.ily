@@ -1,67 +1,65 @@
 FlOneI=\relative c'{
   \commonConductor
   \clef treble
-  \key d \minor
-  \tempo "Allegro ma non tanto"
+  \key d \minor 
   R1 * 10 \mark\default |
   R1 * 7 |
-  \tempo \markup{\italic "colla parte"} R1 |
-  \tempo "a tempo" R1 * 6 \bar "||"
+  R1 |
+  R1 * 6 \bar "||"
   \time 2/4 R2 \bar "||"
   \time 4/4 R1 \mbreak |
-  \tempo "Più mosso" R1 * 11 \mark\default |
+  R1 * 11 \mark\default |
   R1 * 6 |
   % \cueDuring #"OboeOne" #UP
   {R1 * 2 }
   R1 * 6 |
-  \tempo "Più vivo"
   R1 * 2 | 
   % \cueDuring #"OboeOne" #UP
   {R1 * 2 \mark\default \mbreak | R1 } |
   R1 |
   r4 r8 d''4(\p c b8~ | b bf a4~ a8\dim g fs4~ | fs8 g)\! r4 r2 |
   R1 * 6 |
-  \tempo \markup{\italic "colla parte"} R1 \mbreak \bar "||"
-  \time 2/4 \tempo "a tempo" R2 \mark\default \bar "||"
-  \time 4/4 \tempo "Allegro" R1 |
+  R1 \mbreak \bar "||"
+  \time 2/4 R2 \mark\default \bar "||"
+  \time 4/4 R1 |
   % \cueDuring #"OboeOne" #UP
     {R1 | r4 r16 }
   e16\ppLeg( gs a b f g gs a8) r |
   R1 * 5 |
-  % Skip cadenza here in orch. score
+  \tag #'score \cadenzaIa
   R1\fermataMarkup_"Cadenza" \mbreak 
   \tempo "Moderato" R1 * 2 |
   % \cueDuring #"OboeOne" #UP
-  {R1 * 4 | \time 3/2 \tempo\markup{\italic "allarg."} r2 }
+  {R1 * 4 | \time 3/2  r2 }
   \tuplet 3/2 4 {r8 c,\f( ef a[ c ef]} g4. f8 \mark\default |
-  \time 4/4 \tempo "a tempo" f,) r r4 r2 |
+  \time 4/4  f,) r r4 r2 |
   R1 * 2 \mbreak |
-  r2 r4\breathe \tempo\markup{\italic "rit."} r4 |
+  r2 r4\breathe r4 |
   R1 |
   \key g \minor R1 * 6 \mark\default |
   R1 * 6 |
   \time 2/4 R2 |
-  \time 4/4 \tempo\markup{\italic "colla parte"} R1 |
-  \tempo "a tempo" R1 * 8 \mark\default \mbreak |
+  \time 4/4 R1 |
+  R1 * 8 \mark\default \mbreak |
   R1 * 9 \mark\default |
   R1 * 2 |
-  \tempo\markup{\italic "allarg."} R1 |
-  \tempo "a tempo" R1 * 4 \mark\default |
+  R1 |
+  R1 * 4 \mark\default |
   R1 * 2 |
   % \cueDuring #"OboeOne" #UP
     {R1 * 2}
   % \cueDuring #"ClarOne" #DOWN
-    {R1 |\tempo\markup{\italic "rit."} R1 } \mbreak |
-  \tempo\markup{\italic "accel."} R1 * 6 |
-  \tempo "Allegro" R1 * 6 \mark\default |
-  \tempo\markup{\italic "rit."} R1 * 2 |
-  \tempo "Tempo precedente" R1 * 3 |
+    {R1 | R1 } \mbreak |
+  R1 * 6 |
+  R1 * 6 \mark\default |
+  R1 * 2 |
+  R1 * 3 |
   % \cueDuring #"OboeOne" #UP
     {R1} |
-  f'2(\pp e | ef_\markup{\bold\italic "poco a poco accel."} d| df1) \mbreak |
-  c2( cf \mark\default | b)\tempo "Allegro" r |
- \tempo\markup{\italic "rit."} R1 * 7 \bar "||"
- \key a \minor \tempo "Tempo I" R1 * 14 \mark\default \bar "||" 
+  f'2(\pp e | ef d df1) \mbreak |
+  c2( cf \mark\default | b) r |
+ R1 * 7 \bar "||"
+ \key a \minor R1 * 14 \mark\default \bar "||" 
  \time 3/2 \tempo "Più mosso" R1. * 2 \mbreak \bar "||"
  \time 4/4 
   % \cueDuringwithClef #"BsnTwo" #UP #"treble"

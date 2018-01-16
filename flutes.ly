@@ -15,6 +15,7 @@
 \include "include/macros.ily"
 \include "include/dynamics.ily"
 \include "include/functions.ily"
+\include "include/conductor.ily"
 
 \include "include/fl1.ily" 
   \addQuote "FluteOneI" {\FlOneI}
@@ -42,8 +43,9 @@
       }
       \score{
  
-      \keepWithTag #'part \new Staff \with {\consists "Page_turn_engraver"} <<
-         \FlOneI>>
+      \keepWithTag #'part \new Staff 
+        \with {\consists "Page_turn_engraver"} 
+        <<\FlOneI \conductorI>>
         \header{piece=\markup\huge "I"}
       }
 
