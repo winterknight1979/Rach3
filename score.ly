@@ -21,12 +21,16 @@
 
      \score{
  
-      \keepWithTag #'score \killCues \new Staff \with
+    \keepWithTag #'score \killCues <<
+      \new Devnull \conductorI
+      \new Staff \with
       { instrumentName = #"2 Flauti"
         shortInstrumentName = #"Fl."}
         {\partcombine \FlOneI \FlTwoI}
+      >>
         \header{piece=\markup\huge "I"}
       }
+
      \score{
  
        \keepWithTag #'score \killCues \new Staff  \with

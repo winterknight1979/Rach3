@@ -13,7 +13,7 @@ flutes: flutes.a4.pdf flutes.letter.pdf
 
 
 %.a4.pdf : %.ly
-	${LILY} -fpdf -dpaper-size=\"a4\" -s -o $*.a4 $<
+	${LILY} -fpdf -dpaper-size=\"a4\"  -o $*.a4 $<
 
 %.letter.pdf : %.ly
 	${LILY} -fpdf -dpaper-size=\"letter\" -s -o $*.letter $<

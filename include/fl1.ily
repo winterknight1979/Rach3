@@ -2,25 +2,25 @@ FlOneI=\relative c'{
   \commonConductor
   \clef treble
   \key d \minor 
-  R1 * 10 \mark\default |
+  R1 * 10 \mark\default \barNumberCheck\RhI|
   R1 * 7 |
   R1 |
   R1 * 6 \bar "||"
   \time 2/4 R2 \bar "||"
   \time 4/4 R1 \mbreak |
-  R1 * 11 \mark\default |
+  R1 * 11 \mark\default \barNumberCheck\RhII|
   R1 * 6 |
   % \cueDuring #"OboeOne" #UP
   {R1 * 2 }
   R1 * 6 |
   R1 * 2 | 
   % \cueDuring #"OboeOne" #UP
-  {R1 * 2 \mark\default \mbreak | R1 } |
+  {R1 * 2 \mark\default \barNumberCheck\RhIII \mbreak | R1 } |
   R1 |
   r4 r8 d''4(\p c b8~ | b bf a4~ a8\dim g fs4~ | fs8 g)\! r4 r2 |
   R1 * 6 |
   R1 \mbreak \bar "||"
-  \time 2/4 R2 \mark\default \bar "||"
+  \time 2/4 R2 \mark\default \barNumberCheck\RhIV \bar "||"
   \time 4/4 R1 |
   % \cueDuring #"OboeOne" #UP
     {R1 | r4 r16 }
@@ -31,42 +31,42 @@ FlOneI=\relative c'{
   \tempo "Moderato" R1 * 2 |
   % \cueDuring #"OboeOne" #UP
   {R1 * 4 | \time 3/2  r2 }
-  \tuplet 3/2 4 {r8 c,\f( ef a[ c ef]} g4. f8 \mark\default |
+  \tuplet 3/2 4 {r8 c,\f( ef a[ c ef]} g4. f8 \mark\default \barNumberCheck\RhV |
   \time 4/4  f,) r r4 r2 |
   R1 * 2 \mbreak |
   r2 r4\breathe r4 |
   R1 |
-  \key g \minor R1 * 6 \mark\default |
+  \key g \minor R1 * 6 \mark\default \barNumberCheck\RhVI |
   R1 * 6 |
   \time 2/4 R2 |
   \time 4/4 R1 |
-  R1 * 8 \mark\default \mbreak |
-  R1 * 9 \mark\default |
+  R1 * 8 \mark\default \barNumberCheck \RhVII \mbreak |
+  R1 * 9 \mark\default \barNumberCheck \RhVIII|
   R1 * 2 |
   R1 |
-  R1 * 4 \mark\default |
+  R1 * 4 \mark\default \barNumberCheck \RhIX |
   R1 * 2 |
   % \cueDuring #"OboeOne" #UP
     {R1 * 2}
   % \cueDuring #"ClarOne" #DOWN
     {R1 | R1 } \mbreak |
   R1 * 6 |
-  R1 * 6 \mark\default |
+  R1 * 6 \mark\default \barNumberCheck\RhX|
   R1 * 2 |
   R1 * 3 |
   % \cueDuring #"OboeOne" #UP
     {R1} |
   f'2(\pp e | ef d df1) \mbreak |
-  c2( cf \mark\default | b) r |
+  c2( cf \mark\default \barNumberCheck \RhXI | b) r |
  R1 * 7 \bar "||"
- \key a \minor R1 * 14 \mark\default \bar "||" 
- \time 3/2 \tempo "Più mosso" R1. * 2 \mbreak \bar "||"
+ \key a \minor R1 * 14 \mark\default \barNumberCheck\RhXII \bar "||" 
+ \time 3/2 R1. * 2 \mbreak \bar "||"
  \time 4/4 
   % \cueDuringwithClef #"BsnTwo" #UP #"treble"
   {\time 4/4 R1 * 2 | r2 }
   r4 r8 af-.[\p | g-. f-.] r4 r2 |
   R1 * 2 \bar "||"
-  \time 3/2 R1.* 4 \mark\default \mpbreak \bar "||"
+  \time 3/2 R1.* 4 \mark\default \barNumberCheck\RhXIII \mpbreak \bar "||"
   \time 4/4 r8 f'-. e-. d-. r2 |
   r8 d-. c-. b-. r c-. b-. a-. |
   g-.\dim a-. b-. c-. r4 r8 c-.[\p

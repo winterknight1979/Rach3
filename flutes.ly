@@ -70,7 +70,9 @@
       }
       \score{
  
-      \keepWithTag #'part \new Staff \with {\consists "Page_turn_engraver"} << \FlTwoI >>
+      \keepWithTag #'part \new Staff
+      \with {\consists "Page_turn_engraver"} 
+      << \FlTwoI \conductorI >>
         \header{piece=\markup\huge "I"}
       }
 

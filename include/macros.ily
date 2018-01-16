@@ -37,4 +37,18 @@ commonConductor = {
   copyright = "Creative Commons Attribution-ShareAlike 4.0"
 }
 
+%marks
 
+RhI     =   #11
+RhII    =   #38
+RhIII   =   #56
+RhIV    =   #69
+RhV     =   #85
+RhVI    =   #96
+RhVII   =   #112
+RhVIII  =   #121
+RhIX    =   #128
+RhX     =   #146
+RhXI    =   #156
+RhXII   =   #178
+RhXIII  =   #190
