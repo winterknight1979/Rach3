@@ -19,13 +19,13 @@ FlTwoI=\relative c'{
   R1 * 6 |
   \tempo "Più vivo" R1 * 4 \mark\default |
   R1 * 2 |
-  \cueDuring #"FluteOneI" #UP
+  \cueWhile "FluteOneI" "Fl.I" #UP
   {R1 * 2 \mbreak | R1 } |
   R1 * 6 |
   \tempo\markup{\italic "colla parte"} R1 \bar "||"
   \time 2/4 \tempo "a tempo" R2 \mark\default \bar "||"
   \time 4/4 \tempo "Allegro" R1 * 2 |
-  \cueDuring #"FluteOneI" #UP
+  \cueWhile "FluteOneI" "Fl.I" #UP
   {R1} |
   R1 * 5 |
   R1^\fermataMarkup_"Cadenza" 
@@ -33,7 +33,7 @@ FlTwoI=\relative c'{
   \mbreak |
   \tempo "Moderato" R1 * 6 |
   \time 3/2 \tempo\markup{\italic "allarg."}
-  \cueDuring #"FluteOneI" #UP
+  \cueWhile "FluteOneI" "Fl.I" #UP
   {r1} \tuplet 3/2 4 {r8 a'\<( bf c[ d ef])} \mark\default |
   \time 4/4 \tempo "a tempo" f4(\f e ef d | df c8\> bf bf\!) r r4 |
   R1 | r2 r4\breathe \tempo\markup {\italic "rit."} r4 | R1 \mbreak |
@@ -50,7 +50,7 @@ FlTwoI=\relative c'{
   \tempo "Allegro" R1 * 6 \mark\default |
   \tempo\markup{\italic "rit."} R1 * 2 \mbreak |
   \tempo "Tempo precedente" R1 * 4 |
-  \cueDuring #"FluteOneI" #UP
+  \cueWhile "FluteOneI" "Fl.I" #UP
   {R1 | \tempo\markup{\italic "poco a poco accel."} R1 * 3 \mark\default | \tempo "Allegro" R1} |
   \tempo\markup{\italic "rit."} R1 * 7 \mbreak \bar "||"
   \key a \minor
@@ -84,7 +84,7 @@ FlTwoI=\relative c'{
   R1 * 7 \mark\default |
   R1 * 16 \mark\default |
   R1 * 8 \mbreak |
-  \cueDuring #"FluteOneI" #UP
+  \cueWhile "FluteOneI" "Fl.I" #UP
   {R1 * 2 }
   R1 * 10 \mark\default |
   R1 * 8 |
@@ -95,7 +95,7 @@ FlTwoI=\relative c'{
   % skip cadenza
   \mark\default \bar "||"
   \time 4/4 \tempo "Meno mosso" R1 |
-  \cueDuring #"FluteOneI" #UP
+  \cueWhile "FluteOneI" "Fl.I" #UP
   {R1 * 3 \mbreak | R1 * 2 } |
   \tempo\markup{\italic "rit."} R1 * 7 |
   R1^\fermataMarkup_"Cadenza"
@@ -110,7 +110,7 @@ FlTwoI=\relative c'{
   \tempo "a tempo" R1 * 6 \bar "||"
   \time 2/4 R2 \bar "||"
   \time 4/4 R1 \mark\default \mbreak |
-  \cueDuring #"FluteOneI" #UP
+  \cueWhile "FluteOneI" "Fl.I" #UP
   {R1 * 2 | r4 }
   g2--\p f4--~ |
   f e ef--(\dim d)~ |
@@ -127,7 +127,7 @@ FlTwoII = \relative c'{
   R2. * 9 \mark #24 |
   R2. * 16 \mark\default
   \tempo "Un poco più mosso"
-  %\cueDuring #"FluteOne #UP
+  \cueWhile "FluteOneII" "Fl.I" #UP
   {R2. * 3} |
   R2. * 3 \mbreak |
   \tempo "Più mosso" R2. * 3 |
@@ -157,23 +157,23 @@ FlTwoII = \relative c'{
   \tempo\markup{\italic "rit"} R2. * 6 \mark\default \mbreak |
   \tempo "Tempo come prima" R2. * 4 \bar "||"
   \key fs \minor \tempo "Poco più mosso"
-   %\cueDuring #"FluteOne #UP
+  \cueWhile "FluteOneII" "Fl.I" #UP
   {R2. * 4} \mbreak \mark\default \bar "||"
   \time 3/8 R4. * 26 \mark\default |
   R4. * 4 |
-  %\cueDuring #"FluteOne #UP
+  \cueWhile "FluteOneII" "Fl.I" #UP
   {R4. * 3} |
   R4. * 4 |
   \tempo \markup{\italic "rit."} R4. \mark\default |
   \tempo "a tempo" R4. * 16 \mark\default \mbreak \bar "||"
   \time 3/4 R2. * 2 |
   \tempo "Meno mosso"
-  %\cueDuring #"FluteOne #UP
+  \cueWhile "FluteOneII" "Fl.I" #UP
   {R2. | \tempo\markup{\italic "allargando"} R2. * 4 } |
   R2. * 3 \mark\default |
   R2. * 10 \mark\default \mbreak |
   \tempo "Un poco più mosso"
-  %\cueDuring #"FluteOne #UP
+  \cueWhile "FluteOneII" "Fl.I" #UP
   {R2. * 2} |
   R2. * 4 \bar "||"
   \time 4/4 \key d\minor \tempo "L'istesso tempo"
@@ -206,7 +206,7 @@ R1 * 8 |
 \tempo "Più mosso" R1 * 8 \mark\default |
 R1 * 11 \mark\default |
 R1 * 7 \mpbreak |
-%\cueDuring #"FluteOne" #UP
+  \cueWhile "FluteOneIII" "Fl.I" #UP
 {R1 | r2 }
 \tuplet 3/2 4 {b8\mf([^"Solo ad lib." fs b] e, fs b} |
 d) r r4 \tuplet 3/2 4 {a8([\dim e a] d, e a} |
@@ -258,7 +258,8 @@ R1 * 3 |
 \tempo "a tempo come prima" R1 * 4 \mark\default |
 R1 * 6 \mark\default |
 %\cueDuring #"FluteOne" #UP
- {R1 * 2 } |
+  \cueWhile "FluteOneIII" "Fl.I" #UP
+{R1 * 2 } |
 \tempo\markup{\italic "rit."} R1 * 9 \mark\default\mbreak \bar "||"
 \tempo "Tempo I (Alla breve)" \time 2/2  R1 * 4 |
 %\cueDuring #"OboeOne" #UP
@@ -300,6 +301,7 @@ R1 * 12 |
 \tempo "Più vivo" R1 * 6 \mark\default |
 R1 * 8 |
 %\cueDuring #"FluteOne" #UP
+ \cueWhile "FluteOneIII" "Fl.I" #UP
 {R1 * 3 \mbreak | R1 * 2 } \mark\default |
 R1 * 8 |
 \tempo\markup{\italic "accel."} R1 |

@@ -10,25 +10,16 @@
 %Piano
 
 \version "2.18.2"
-
-
-pDolce = \tweak DynamicText.self-alignment-X #LEFT 
-  #(make-dynamic-script (markup #:dynamic "p" #:normal-text #:italic "dolce"))
-
-
-pLeg = \tweak DynamicText.self-alignment-X #LEFT 
-  #(make-dynamic-script (markup #:dynamic "p" #:normal-text #:italic "leggiero"))
-
-
-ppLeg = \tweak DynamicText.self-alignment-X #LEFT 
-  #(make-dynamic-script (markup #:dynamic "pp" #:normal-text #:italic "leggiero"))
-
 \language "english"
 
-mbreak={}
-mpbreak={}
+\include "include/macros.ily"
+\include "include/dynamics.ily"
+\include "include/functions.ily"
 
-\include "include/fl1.ily" \addQuote "FluteOneI" {\FlOneI}
+\include "include/fl1.ily" 
+  \addQuote "FluteOneI" {\FlOneI}
+  \addQuote "FluteOneII" {\FlOneII}
+  \addQuote "FluteOneIII" {\FlOneIII}
 \include "include/fl2.ily"
 
 \paper{
@@ -47,9 +38,9 @@ mpbreak={}
       }
       \score{
  
-      \new Staff \with {\consists "Page_turn_engraver"} {
+      \keepWithTag #'part \new Staff \with {\consists "Page_turn_engraver"} <<
          \set Score.markFormatter = #format-mark-box-numbers
-         \compressFullBarRests \FlOneI}
+         \compressFullBarRests \FlOneI>>
         \header{title="I"
           composer = ##f
 %         opus=##f
@@ -85,9 +76,9 @@ mpbreak={}
       }
       \score{
  
-      \new Staff \with {\consists "Page_turn_engraver"} {
+      \keepWithTag #'part \new Staff \with {\consists "Page_turn_engraver"} <<
          \set Score.markFormatter = #format-mark-box-numbers
-         \compressFullBarRests \FlTwoI}
+         \compressFullBarRests \FlTwoI >>
         \header{title="I"
           composer = ##f
 %         opus=##f

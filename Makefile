@@ -1,7 +1,8 @@
 LILY=lilypond
-FLUTEFILES=flutes.ly include/fl1.ily include/fl2.ily
-SCOREFILES=score.ly \
-	   include/fl1.ily include/fl2.ily
+
+HEADERS=include/dynamics.ily include/functions.ily include/macros.ily
+FLUTEFILES=include/fl1.ily include/fl2.ily
+SCOREFILES=${FLUTEFILES}
 
 all: flutes score
 
@@ -17,10 +18,10 @@ flutes: flutes.a4.pdf flutes.letter.pdf
 %.letter.pdf : %.ly
 	${LILY} -fpdf -dpaper-size=\"letter\" -s -o $*.letter $<
 
-score.a4.pdf: ${SCOREFILES}
-score.letter.pdf: ${SCOREFILES}
-flutes.a4.pdf: ${FLUTEFILES}
-flutes.letter.pdf: ${FLUTEFILES}
+score.a4.pdf: score.ly ${SCOREFILES}
+score.letter.pdf: score.ly ${SCOREFILES}
+flutes.a4.pdf: flutes.ly ${HEADERS} ${FLUTEFILES}
+flutes.letter.pdf: flutes.ly ${HEADERS} ${FLUTEFILES}
 
 .PHONY: clean all
 
