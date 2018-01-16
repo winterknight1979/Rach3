@@ -27,7 +27,11 @@ commonConductor = {
   \override Score.InstrumentName.padding = #1.0
   \once\override Score.SpacingSpanner.spacing-increment = #0.8
   \tag #'part \set Score.tempoHideNote = ##t
+  \set Staff.soloText = #"I"
+  \set Staff.soloIIText = #"II"
 }
+
+stopSlurSpan = {} 
 
 \header {
   title = "Piano Concerto No. 3 in D Minor"
@@ -52,3 +56,14 @@ RhX     =   #146
 RhXI    =   #156
 RhXII   =   #178
 RhXIII  =   #190
+RhXIV   =   #210
+RhXV    =   #240
+RhXVI   =   #256
+RhXVII  =   #276
+RhXVIII =   #288
+RhXIX   =   #301
+RhXX    =   #315
+RhXXI   =   #329
+RhXXII  =   #345
+RhXXIII =   #353
+EndMI   =   #363

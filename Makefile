@@ -1,8 +1,8 @@
 LILY=lilypond
 
-HEADERS=include/dynamics.ily include/functions.ily include/macros.ily
+HEADERS= include/conductor.ily include/dynamics.ily include/functions.ily include/macros.ily
 FLUTEFILES=include/fl1.ily include/fl2.ily
-SCOREFILES=${FLUTEFILES}
+SCOREFILES=${HEADERS} ${FLUTEFILES}
 
 all: flutes score
 

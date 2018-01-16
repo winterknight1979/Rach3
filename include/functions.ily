@@ -1,6 +1,6 @@
 cueWhile = 
 #(define-music-function
-   (instrument name dir music)
+   (parser location instrument name dir music)
    (string? string? ly:dir? ly:music?)
    #{
      \cueDuring $instrument #dir {

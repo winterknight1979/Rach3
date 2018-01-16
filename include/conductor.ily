@@ -1,4 +1,6 @@
 cadenzaIa={\cadenzaOn s1*9 s1*3 \bar "|" s1 \bar "|" s1 \cadenzaOff |}
+cadenzaIb={\cadenzaOn s1 * 58 \cadenzaOff}
+cadenzaIc={\cadenzaOn s1*15 s1 s4*21 s4*6 s2*3 s4.*3 s8 s2 s2 s2 s4 s1 s1\cadenzaOff}
 
 conductorI={
   %\commonConductor
@@ -37,6 +39,34 @@ conductorI={
   \tempo "Più mosso" \time 3/2 s1.*2 \bar "||"
   \time 4/4 s1 * 6 \bar "||"
   \time 3/2 s1.*4 \mark\default  \barNumberCheck \RhXIII \bar "||"
+
+  \time 4/4 s1 * 10 \tempo "Più vivo" s1 * 10 \mark\default \barNumberCheck \RhXIV
+
+  s1 * 10 \tempo "Allegro" s1*8 \tempo\markup{\italic "accel."} s1*4
+  \time 2/2 \tempo "Allegro molto (Alla breve)" s1 * 8 \mark\default \barNumberCheck \RhXV
+
+  s1 * 16 \mark\default \barNumberCheck \RhXVI
+  
+  s1 * 20 \mark\default \barNumberCheck \RhXVII
+
+  s1 * 12 \mark\default \barNumberCheck \RhXVIII
+
+  \tempo\markup{\italic "poco a poco ritenuto"} s1 * 12 | s1 
+  \tag #'score \cadenzaIb \mark\default \barNumberCheck \RhXIX \bar "||"
+
+  \time 4/4 \tempo "Meno mosso" s1 * 12 s2 \tempo\markup{\italic "rit."} s2 s1
+  \tag #'score \cadenzaIc
+  \mark\default \barNumberCheck \RhXX \bar "|"
+
+  s1 * 3 s2 \tempo\markup{\italic "rit."} s2 \bar "||"
+  \tempo "Tempo I" s1 * 10 \mark\default \barNumberCheck \RhXXI
+
+  s1 * 7 s4 \tempo\markup{\italic "colla parte"} s2. 
+  \tempo "a tempo" s1 * 6 \bar "||" \time 2/4 s2 \bar "||" \time 4/4 s1 \mark\default \barNumberCheck \RhXXII
+
+  s1 * 4 \tempo "Un poco più mosso" s1 * 4 \mark\default \barNumberCheck \RhXXIII
+
+  s1 * 10 \barNumberCheck \EndMI
 }
 
 %\new Staff { \compressFullBarRests \keepWithTag #'score \conductorI}

@@ -18,7 +18,7 @@
 \include "include/conductor.ily"
 
 \include "include/fl1.ily" 
-  \addQuote "FluteOneI" {\FlOneI}
+  \addQuote "FluteOneI" {\keepWithTag #'quote \FlOneI}
   \addQuote "FluteOneII" {\FlOneII}
   \addQuote "FluteOneIII" {\FlOneIII}
 \include "include/fl2.ily"

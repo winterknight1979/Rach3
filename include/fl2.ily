@@ -34,8 +34,12 @@ FlTwoI=\relative c'{
   \mbreak |
    R1 * 6 |
   \time 3/2 
-  \cueWhile "FluteOneI" "Fl.I" #UP
-  {r1} \tuplet 3/2 4 {r8 a'\<( bf c[ d ef])} \mark\default \barNumberCheck \RhV |
+  <<
+  \tag #'part \cueWhile "FluteOneI" "Fl.I" #UP 
+  %\context CueVoice {s1\stopSlurSpan}
+  {r1} 
+>>
+  \tuplet 3/2 4 {r8 a'\<( bf c[ d ef])} \mark\default \barNumberCheck \RhV |
   \time 4/4  f4(\f e ef d | df c8\> bf bf\!) r r4 |
   R1 | r2 r4\breathe r4 | R1 \mbreak |
   \key g \minor R1 * 6 \mark\default \barNumberCheck \RhVI | 
@@ -63,60 +67,61 @@ FlTwoI=\relative c'{
   \time 3/2 R1. * 4 \mark\default \barNumberCheck \RhXIII \bar "||"
   \time 4/4 r8 d'-.\mf c-. b-. r2 |
   r8 b-. a-. gs-. r a-. g-. fs-. |
-  e-.\dim fs-. g-. a-.\! r4 r8 a-.[\p \mbreak |
+  e-.\dim fs-. g-. a-. r4 r8 a-.[\p \mbreak |
   g-. fs-.] r4 r8 a-.\dim g-. fs-.\! |
   R1 * 2 |
   r2 r4 r8 gs-.\pp[ |
   fs-. e-.] r4 r r8 gs-.[ |
   fs-. e-.] r4 r2 | R1 \mpbreak |
-  \tempo "Più vivo" R1 * 10 \mark\default |
+  R1 * 10 \mark\default \barNumberCheck \RhXIV |
   R1 * 6 |
   %\cueDuring #"OboeOne" #DOWN
   {R1 | r2 r4 }
   r8 ef-.\f |
   d4.-- ef8-. d4-- d8-. ef-. |
   d4.-- ef8-. d4.-- r8 \mbreak |
-  \tempo "Allegro" R1 * 5 |
+  R1 * 5 |
   r2 r4 r8 a'\f | d4->( a8) r r2 | R1 |
-  r4\tempo\markup{\italic "accel."} c8-. c-. c4-> c8-. c-. |
+  r4 c8-. c-. c4-> c8-. c-. |
   c4-> c8-. c-. c4-> c8-. c-. \mbreak |
-  c4-> gs->\cresc g-. fs-> | f-. fs-> g-> gs-> |
-  \time 2/2 \tempo "Allegro molto (Alla breve)" a->\ff r r2 |
-  R1 * 7 \mark\default |
-  R1 * 16 \mark\default |
+  c4-> gs->\cresc g-> fs-> | f-> fs-> g-> gs-> |
+  \time 2/2 a->\ff r r2 |
+  R1 * 7 \mark\default \barNumberCheck \RhXV |
+  R1 * 16 \mark\default \barNumberCheck \RhXVI |
   R1 * 8 \mbreak |
-  \cueWhile "FluteOneI" "Fl.I" #UP
+  <<
+  \tag #'part \cueWhile "FluteOneI" "Fl.I" #UP
   {R1 * 2 }
-  R1 * 10 \mark\default |
+>>
+  R1 * 10 \mark\default \barNumberCheck \RhXVII |
   R1 * 8 |
   %\cueDuring #"Piano" #DOWN
-  {R1 * 4} \mark\default \mbreak |
-  \tempo\markup{\italic "poco a poco ritenuto"}
+  {R1 * 4} \mark\default \barNumberCheck \RhXVIII \mbreak |
   g1--\pp~ | g | R1 * 10 | R1^\fermataMarkup_"Cadenza"
-  % skip cadenza
-  \mark\default \bar "||"
-  \time 4/4 \tempo "Meno mosso" R1 |
+  \tag #'score \cadenzaIb
+  \mark\default \barNumberCheck \RhXIX \bar "||"
+  \time 4/4  R1 |
   \cueWhile "FluteOneI" "Fl.I" #UP
   {R1 * 3 \mbreak | R1 * 2 } |
-  \tempo\markup{\italic "rit."} R1 * 7 |
+  R1 * 7 |
   R1^\fermataMarkup_"Cadenza"
-  % skip cadenza
-  \mark\default |
+  \tag #'score \cadenzaIc
+  \mark\default \barNumberCheck \RhXX |
   R1 * 2 |
   %\cueDuring #"HrnOne" #DOWN
-  {R1 * 2 \mbreak \bar "||" \key d\minor \tempo "Tempo I" R1 }|
-  R1 * 9 \mark\default |
+  {R1 * 2 \mbreak \bar "||" \key d\minor  R1 }|
+  R1 * 9 \mark\default \barNumberCheck \RhXXI |
   R1 * 7 |
-  \tempo\markup{\italic "colla parte"} R1 |
-  \tempo "a tempo" R1 * 6 \bar "||"
+  R1 |
+  R1 * 6 \bar "||"
   \time 2/4 R2 \bar "||"
-  \time 4/4 R1 \mark\default \mbreak |
+  \time 4/4 R1 \mark\default \barNumberCheck \RhXXII \mbreak |
   \cueWhile "FluteOneI" "Fl.I" #UP
   {R1 * 2 | r4 }
   g2--\p f4--~ |
   f e ef--(\dim d)~ |
-  \tempo "Un poco più mosso" d\pp r r2 | R1 * 3 \mark\default |
-  R1 * 10 \bar "|."
+  d\pp r r2 | R1 * 3 \mark\default \barNumberCheck \RhXXIII |
+  R1 * 10 \barNumberCheck \EndMI \bar "|."
  
 } 
 

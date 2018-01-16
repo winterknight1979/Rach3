@@ -70,59 +70,63 @@ FlOneI=\relative c'{
   \time 4/4 r8 f'-. e-. d-. r2 |
   r8 d-. c-. b-. r c-. b-. a-. |
   g-.\dim a-. b-. c-. r4 r8 c-.[\p
-  b-. a-.] r4 r8 c-.\dim[ b-. a-.]\! |
+  b-. a-.] r4 r8 c-.\dim b-. a-.\! |
   R1 * 2 \mbreak | 
   r2 r4 r8 b-.[\pp | a-. gs-.] r4 r r8 b-.[ | a-. gs-.] r4 r2 | R1 |
-  \tempo "Più vivo" R1 * 10 \mark\default | 
+  R1 * 10 \mark\default \barNumberCheck \RhXIV | 
   R1 * 6 |
  % \cueDuring #"OboeOne" #UP
   {R1 | r2 r4 }
   r8 f-.\f \mbreak |
   f4.-- f8-. f4-- f8-. f-. | f4.-- f8-. f4.-- r8 |
-  \tempo "Allegro" R1 * 5 |
+  R1 * 5 |
   r2 r4 r8 a\f | d4(-> a8) r r2 | R1 \mbreak |
-  r4 \tempo\markup{\italic "accel."} f'8-.\f f-. f4-> f8-. f-. |
+  r4 f'8-.\f f-. f4-> f8-. f-. |
   f4-> f8-. f-. f4-> f8-. f-. |
-  f4-> gs,-> g-> fs-> | f-> fs-> g-> gs->|
-  \time 2/2 \tempo "Allegro molto (Alla breve)"
-  a->\ff r r2 | R1 * 7 \mark\default \mbreak |
-  R1 * 16 \mark\default |
+  f4-> gs,->\cresc  g-> fs-> | f-> fs-> g-> gs->|
+  \time 2/2 
+  a->\ff r r2 | R1 * 7 \mark\default \barNumberCheck \RhXV \mbreak |
+  R1 * 16 \mark\default \barNumberCheck \RhXVI |
   R1 * 5 |
   % \cueDuring #"ViolOne" #UP
-  {R1} |
+  R1 |
   R1 |
   % \cueDuring #"ViolOne" #UP
-  {R1} |
+  R1 |
   r8 es'(\ppLeg^"Solo" fs gs a gs fs e |
   fs es a, gs a) r r4 |
-  R1 * 10 \mark\default \mbreak |
+  R1 * 10 \mark\default \barNumberCheck \RhXVII \mbreak |
   R1 * 8 |
   % \cueDuring #"Piano" #UP
-  {R1*4} \mark\default |
-  bf1--\pp~ \tempo\markup{\italic "poco a poco riten."} | bf |
+  {R1*4} \mark\default \barNumberCheck \RhXVIII |
+  bf1--\pp~ | bf |
   R1 * 10 |
   % Skip cadenza
-  R1\fermataMarkup_"Cadenza" \mark\default \mbreak \bar "||"
+  R1\fermataMarkup_"Cadenza" 
+  \tag #'score \cadenzaIb 
+  \mark\default \barNumberCheck \RhXIX \mbreak \bar "||"
   %\cueDuring #"Piano" #DOWN
-  {\time 4/4 \tempo "Meno mosso" R1 | r4}
+  {\time 4/4  R1 | r4}
   d4(\mf^"Solo" ef8 d c4 | bf8 c d4 a2--) |
   c8( bf a4 gs8 a b4 | g2--) fs8(\dim g a4 \mbreak |
-  g--)\! r r2 | \tempo\markup{\italic "rit."} R1 * 7 |
+  g--)\! r r2 | R1 * 7 |
   % skip Cadenza
-  R1\fermataMarkup_"Cadenza" \mark\default |
+  R1\fermataMarkup_"Cadenza" 
+  \tag #'score \cadenzaIc
+  \mark\default \barNumberCheck \RhXX |
   R1 * 2 |
   %\cueDuring #"HrnOne" #DOWN
-    {R1 | \tempo\markup{\italic "rit."} R1 \bar "||" \key d\minor 
+    {R1 | R1 \bar "||" \key d\minor 
     \tempo "Tempo I" R1 }
-  R1 * 9 \mark\default \mbreak |
+  R1 * 9 \mark\default \barNumberCheck \RhXXI \mbreak |
   R1 * 7 |
-  \tempo\markup{\italic "colla parte"} R1 |
-  \tempo "a tempo" R1 * 4 |
+  R1 |
+  R1 * 4 |
   %\cueDuring #ClarOne #DOWN
-    {R1 * 2 \bar "||" \time 2/4 R2 \bar "||" \time 4/4 R1 \mark\default \mbreak | r4 }
+    {R1 * 2 \bar "||" \time 2/4 R2 \bar "||" \time 4/4 R1 \mark\default \barNumberCheck \RhXXII \mbreak | r4 }
   d'2--\p c4~-- | c bf2-- a4~-- | a r r2 | R1 |
-  \tempo "Un poco più mosso" R1 * 4 \mark\default |
-  R1 * 10 \mpbreak \bar "|."
+  R1 * 4 \mark\default \barNumberCheck \RhXXIII |
+  R1 * 10 \mpbreak \barNumberCheck \EndMI \bar "|."
 } 
 
 FlOneII = \relative c'{
