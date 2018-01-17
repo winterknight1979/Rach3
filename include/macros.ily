@@ -88,3 +88,26 @@ RhXXXVII    =   #194
 RhXXXVIII   =   #204
 RhXXXIX     =   #214
 EndMII      =   #218
+
+% Finale
+RhXL        =   #19
+RhXLI       =   #39
+RhXLII      =   #57
+RhXLIII     =   #80
+RhXLIV      =   #91
+RhXLV       =   #103
+RhXLVI      =   #124
+RhXLVII     =   #136
+RhXLVIII    =   #154
+RhXLIX      =   #163
+RhL         =   #170
+RhLI        =   #178
+RhLII       =   #186
+RhLIII      =   #194
+RhLIV       =   #201
+RhLV        =   #209
+RhLVI       =   #218
+RhLVII      =   #226
+RhLVIII     =   #232
+RhLIX       =   #243
+RhLX        =   #256

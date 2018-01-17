@@ -27,4 +27,4 @@ flutes.letter.pdf: flutes.ly ${HEADERS} ${FLUTEFILES}
 .PHONY: clean all
 
 clean:
-	rm -f *.pdf *.ps *.mid .log
+	rm -f *.pdf *.ps *.mid *.log

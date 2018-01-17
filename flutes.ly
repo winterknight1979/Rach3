@@ -20,7 +20,7 @@
 \include "include/fl1.ily" 
   \addQuote "FluteOneI" {\keepWithTag #'quote \FlOneI}
   \addQuote "FluteOneII" {\keepWithTag #'quote \FlOneII}
-  \addQuote "FluteOneIII" {\FlOneIII}
+  \addQuote "FluteOneIII" {\keepWithTag #'quote \FlOneIII}
 \include "include/fl2.ily"
 
 \paper{ 
@@ -59,8 +59,9 @@
 
       \markup{ \vspace #1 }
       \score{
-         \keepWithTag #'part \new Staff \with{\consists "Page_turn_engraver"} {
-      \FlOneIII}
+         \keepWithTag #'part \new Staff 
+         \with{\consists "Page_turn_engraver"} 
+        <<\FlOneIII \conductorIII>>
         \header{piece=\markup\huge "III Finale"}
       }
     }
@@ -87,8 +88,9 @@
 
       \markup{ \vspace #1 }
       \score{
-         \keepWithTag #'part \new Staff \with{\consists "Page_turn_engraver"} {
-         \FlTwoIII}
+         \keepWithTag #'part \new Staff 
+         \with{\consists "Page_turn_engraver"} 
+         <<\FlTwoIII \conductorIII>>
         \header{piece=\markup\huge "III Finale"}
       }
     }  

@@ -140,4 +140,85 @@ conductorII={
         
 }
 
+conductorIII = {
+  \time 2/2 \tempo \markup {
+      \concat {
+        "Alla breve ("
+        \smaller \general-align #Y #DOWN \note #"2" #1
+        " = "
+        \smaller \general-align #Y #DOWN \note #"4" #1
+        )
+      }
+    }
+    s1 * 18 \mark #40 \barNumberCheck \RhXL
+
+    s1 * 20 \mark\default \barNumberCheck \RhXLI
+
+    s1 * 18 \mark\default \barNumberCheck \RhXLII
+
+    s1 * 15 \tempo "Più mosso" s1 * 8 \mark\default \barNumberCheck \RhXLIII
+
+    s1 * 11 \mark\default \barNumberCheck \RhXLIV
+
+    s1 * 12 \mark\default \barNumberCheck \RhXLV
+
+    \tempo "Meno mosso" s1 * 15 
+    \tempo\markup{\italic "allarg."} s1
+    \tempo "a tempo" s1 * 5 \mark\default \barNumberCheck \RhXLVI
+
+    s1 * 8 \tempo "Allegro molto" s1 * 4 \mark\default \barNumberCheck \RhXLVII
+
+    s1 * 12 \tempo\markup{\italic "rit."} s1 * 4 \bar "||"
+    \time 4/4
+    \tempo \markup {
+      \concat {
+        "Scherzando ("
+        \smaller \general-align #Y #DOWN \note #"4" #1
+        " = "
+        \smaller \general-align #Y #DOWN \note #"2" #1
+        )
+      }
+    } s1 * 2 \mark\default \barNumberCheck \RhXLVIII
+
+    s1 * 8 \bar "||"
+    \time 3/2 s1. \mark\default \barNumberCheck \RhXLIX \bar "||"
+
+    \time 4/4 s1*6 s2. \tempo \markup{\italic "rit."} s4 \mark\default \barNumberCheck \RhL
+
+    s1 \tempo "a tempo" s1 * 4 \bar "||"
+    \time 3/2 s1.*3 \mark\default \barNumberCheck \RhLI \bar "||"
+
+    \time 4/4 \tempo "Più vivo" s1 * 8 \mark\default \barNumberCheck \RhLII
+
+    \tempo\markup{\italic "rit."} s1 * 2 \bar "||"
+    \time 3/2 \tempo "Meno mosso" s1. * 2 \bar "||"
+    \time 4/4 s1 * 2 \tempo\markup{\italic "poco accel."} s1 s2 \tempo\markup{\italic "rit."} s2 \mark\default \barNumberCheck \RhLIII
+
+    \tempo "a tempo" \grace s8 s1 * 4 \bar "||" 
+    \time 3/2 s1. * 2 s2 \tempo\markup{\italic "rit."} s1 \mark\default \barNumberCheck \RhLIV \bar "||"
+
+    \time 4/4 \tempo "a tempo" s2 \tempo\markup{\italic "accel."} s2 s1 * 3 
+    \tempo\markup{\italic "poco a poco rit."} s1 * 4 \mark\default \barNumberCheck \RhLV
+    
+    \tempo "Lento" s1 * 9 \mark\default \barNumberCheck \RhLVI
+
+    s1 * 3 \tempo\markup{\italic "rit."} s1 
+    \tempo "a tempo come prima" s1 * 4 \mark\default \barNumberCheck \RhLVII
+
+    s1 * 6 \mark\default \barNumberCheck \RhLVIII
+
+    s1 * 8 s2 \tempo\markup{\italic "rit."} s2 s1 * 2 \mark\default \barNumberCheck \RhLIX \bar "||"
+
+    \time 2/2 \tempo \markup {
+      \concat {
+        "Tempo I Alla breve ("
+        \smaller \general-align #Y #DOWN \note #"2" #1
+        " = "
+        \smaller \general-align #Y #DOWN \note #"4" #1
+        )
+      }
+    } s1 * 13 \mark\default \barNumberCheck \RhLX
+
+}
+
 %\new Staff { \compressFullBarRests \keepWithTag #'score \conductorI}

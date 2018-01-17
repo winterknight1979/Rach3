@@ -19,6 +19,13 @@
   ragged-last-bottom = ##f
   page-limit-inter-system-space = ##t
   system-separator-markup = \slashSeparator
+  scoreTitleMarkup = \markup {
+    \fill-line {
+      \null
+      \fontsize #4 \bold \fromproperty #'header:piece
+      \fromproperty #'header:opus
+    }
+  }
 }
 
      \score{
@@ -32,7 +39,7 @@
       >>
         \header{piece=\markup\huge "I"}
       }
-
+      %\markup{\pageBreak}
      \score{
  
        \keepWithTag #'score \killCues <<
@@ -44,12 +51,16 @@
       >>
         \header{piece=\markup\huge "II Intermezzo"}
       }
+      %\markup{\pageBreak}
      \score{
  
-       \keepWithTag #'score \killCues \new Staff  \with
+       \keepWithTag #'score \killCues <<
+         \new Devnull \conductorIII
+         \new Staff  \with
       { instrumentName = #"2 Flauti"
         shortInstrumentName = #"Fl."}
         {\partcombine \FlOneIII \FlTwoIII}
+      >>
         \header{piece=\markup\huge "III Finale"}
       }
       \layout {
