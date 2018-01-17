@@ -10,6 +10,8 @@
 
 \include "include/fl1.ily"
 \include "include/fl2.ily"
+
+
 \paper {
   #(layout-set-staff-size 15)
   indent = 2.5\cm
@@ -47,3 +49,9 @@
         {\partcombine \FlOneIII \FlTwoIII}
         \header{piece=\markup\huge "III Finale"}
       }
+      \layout {
+        \context{
+          \Staff \RemoveEmptyStaves
+        }
+      }
+    
