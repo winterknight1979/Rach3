@@ -29,6 +29,7 @@ commonConductor = {
   \tag #'part \set Score.tempoHideNote = ##t
   \set Staff.soloText = #"I"
   \set Staff.soloIIText = #"II"
+  %\tag #'part \markLengthOn
 }
 
 stopSlurSpan = {} 
@@ -43,27 +44,47 @@ stopSlurSpan = {}
 
 %marks
 
-RhI     =   #11
-RhII    =   #38
-RhIII   =   #56
-RhIV    =   #69
-RhV     =   #85
-RhVI    =   #96
-RhVII   =   #112
-RhVIII  =   #121
-RhIX    =   #128
-RhX     =   #146
-RhXI    =   #156
-RhXII   =   #178
-RhXIII  =   #190
-RhXIV   =   #210
-RhXV    =   #240
-RhXVI   =   #256
-RhXVII  =   #276
-RhXVIII =   #288
-RhXIX   =   #301
-RhXX    =   #315
-RhXXI   =   #329
-RhXXII  =   #345
-RhXXIII =   #353
-EndMI   =   #363
+RhI         =   #11
+RhII        =   #38
+RhIII       =   #56
+RhIV        =   #69
+RhV         =   #85
+RhVI        =   #96
+RhVII       =   #112
+RhVIII      =   #121
+RhIX        =   #128
+RhX         =   #146
+RhXI        =   #156
+RhXII       =   #178
+RhXIII      =   #190
+RhXIV       =   #210
+RhXV        =   #240
+RhXVI       =   #256
+RhXVII      =   #276
+RhXVIII     =   #288
+RhXIX       =   #301
+RhXX        =   #315
+RhXXI       =   #329
+RhXXII      =   #345
+RhXXIII     =   #353
+EndMI       =   #363
+
+% Intermezzo
+
+RhXXIV      =   #10
+RhXXV       =   #26
+RhXXVI      =   #47
+RhXXVII     =   #65
+RhXXVIII    =   #77
+RhXXIX      =   #94
+RhXXX       =   #102
+RhXXXI      =   #111
+RhXXXII     =   #122
+RhXXXIII    =   #130
+RhXXXIV     =   #156
+RhXXXV      =   #168
+RhXXXVI     =   #184
+RhXXXVII    =   #194
+RhXXXVIII   =   #204
+RhXXXIX     =   #214
+EndMII      =   #218

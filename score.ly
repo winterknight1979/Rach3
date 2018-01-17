@@ -35,10 +35,13 @@
 
      \score{
  
-       \keepWithTag #'score \killCues \new Staff  \with
+       \keepWithTag #'score \killCues <<
+         \new Devnull \conductorII
+         \new Staff  \with
       { instrumentName = #"2 Flauti"
         shortInstrumentName = #"Fl."}
         {\partcombine \FlOneII \FlTwoII}
+      >>
         \header{piece=\markup\huge "II Intermezzo"}
       }
      \score{
@@ -51,7 +54,7 @@
       }
       \layout {
         \context{
-          \Staff \RemoveEmptyStaves
+       %   \Staff \RemoveEmptyStaves
         }
       }
     

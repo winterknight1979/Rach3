@@ -129,65 +129,65 @@ FlTwoII = \relative c'{
   \commonConductor
   \clef treble
   \key fs \minor
-  \time 3/4
-  \tempo "Adagio"
-  R2. * 9 \mark #24 |
-  R2. * 16 \mark\default
-  \tempo "Un poco più mosso"
+  \time 3/4 
+  R2. * 9 \mark #24 \barNumberCheck \RhXXIV |
+  R2. * 16 \mark\default \barNumberCheck \RhXXV |
   \cueWhile "FluteOneII" "Fl.I" #UP
   {R2. * 3} |
   R2. * 3 \mbreak |
-  \tempo "Più mosso" R2. * 3 |
-  \tempo\markup{\italic "rit."} R2. * 3 \bar "||"
-  \key bf \minor \tempo "a tempo" R2. * 8 |
-  \tempo\markup{\italic "rit."} R2. \mark\default |
-  \tempo "Meno mosso" R2. * 3 |
-  \tempo\markup{\italic "rit."} R2. \mpbreak |
-  \tempo "a tempo" R2. * 2 |
+  R2. * 3 |
+  R2. * 3 \bar "||"
+  \key bf \minor R2. * 8 |
+  R2. \mark\default \barNumberCheck \RhXXVI |
+  R2. * 3 |
+  R2. \mpbreak |
+  R2. * 2 |
   %skip cadenza
   R2.^\fermataMarkup_"Cadenza" |
+  \tag #'score \cadenzaIIa
   R2. |
-  \tempo "a tempo, più mosso" R2. * 9 |
-  \tempo\markup{\italic "rit."} R2. \mark\default |
-  \tempo "Meno mosso" R2. * 3 |
-  \tempo\markup{\italic "rit."} R2. \mbreak |
-  \tempo "a tempo" R2. * 2 |
-  \tempo "Più vivo" R2. * 5 |
-   \tempo\markup{\italic "rit."} R2. \mark\default |
-  \tempo "Meno mosso (Adagio)" R2. * 6 |
-  \tempo\markup{\italic "accel."} R2. * 2 \mbreak |
-  \tempo "a tempo, più mosso" R2. * 9 \mark\default |
-  R2. * 8 \mark\default |
+  R2. * 9 |
+  R2. \mark\default \barNumberCheck \RhXXVII |
+  R2. * 3 |
+  R2. \mbreak |
+  R2. * 2 |
+  R2. * 5 |
+  R2. \mark\default \barNumberCheck \RhXXVIII|
+  R2. * 6 |
+  R2. * 2 \mbreak |
+  R2. * 9 \mark\default \barNumberCheck \RhXXIX|
+  R2. * 8 \mark\default \barNumberCheck \RhXXX |
   R2. * 8 |
   %\cueDuring #"OboeOne" #UP
-  {R2. \mark\default | R2. * 4 } |
-  \tempo\markup{\italic "rit"} R2. * 6 \mark\default \mbreak |
-  \tempo "Tempo come prima" R2. * 4 \bar "||"
-  \key fs \minor \tempo "Poco più mosso"
-  \cueWhile "FluteOneII" "Fl.I" #UP
-  {R2. * 4} \mbreak \mark\default \bar "||"
-  \time 3/8 R4. * 26 \mark\default |
+  {R2. \mark\default \barNumberCheck \RhXXXI| R2. * 4 } |
+  R2. * 7 \mark\default \mbreak \barNumberCheck \RhXXXII |
+  R2. * 4 \bar "||"
+  \key fs \minor 
+  <<
+  \tag #'part \cueWhile "FluteOneII" "Fl.I" #UP
+  {R2. * 4} 
+>>
+  \mbreak \mark\default \bar "||"
+  \time 3/8 R4. * 26 \mark\default \barNumberCheck \RhXXXIV |
   R4. * 4 |
   \cueWhile "FluteOneII" "Fl.I" #UP
   {R4. * 3} |
   R4. * 4 |
-  \tempo \markup{\italic "rit."} R4. \mark\default |
-  \tempo "a tempo" R4. * 16 \mark\default \mbreak \bar "||"
+  R4. \mark\default \barNumberCheck \RhXXXV |
+  R4. * 16 \mark\default \barNumberCheck \RhXXXVI \mbreak \bar "||"
   \time 3/4 R2. * 2 |
-  \tempo "Meno mosso"
   \cueWhile "FluteOneII" "Fl.I" #UP
-  {R2. | \tempo\markup{\italic "allargando"} R2. * 4 } |
-  R2. * 3 \mark\default |
-  R2. * 10 \mark\default \mbreak |
-  \tempo "Un poco più mosso"
+  {R2. | R2. * 4 } |
+  R2. * 3 \mark\default \barNumberCheck \RhXXXVII |
+  R2. * 10 \mark\default \barNumberCheck \RhXXXVIII \mbreak |
   \cueWhile "FluteOneII" "Fl.I" #UP
   {R2. * 2} |
   R2. * 4 \bar "||"
-  \time 4/4 \key d\minor \tempo "L'istesso tempo"
-  R1 * 4 \mark\default |
+  \time 4/4 \key d\minor 
+  R1 * 4 \mark\default \barNumberCheck \RhXXXIX |
   R1 | r8 bf'4\f\cresc-- ef8 g b ef4\sff |
   R1 |
-  d8-.\ff r cs-._"attacca subito" r r2 \mbreak \bar "||"
+  d8-.\ff r cs-. r r2 \barNumberCheck \EndMII \mbreak \bar "||"
 } 
 
 FlTwoIII = \relative c' {

@@ -19,7 +19,7 @@
 
 \include "include/fl1.ily" 
   \addQuote "FluteOneI" {\keepWithTag #'quote \FlOneI}
-  \addQuote "FluteOneII" {\FlOneII}
+  \addQuote "FluteOneII" {\keepWithTag #'quote \FlOneII}
   \addQuote "FluteOneIII" {\FlOneIII}
 \include "include/fl2.ily"
 
@@ -51,8 +51,9 @@
 
       \markup{ \vspace #1 }
       \score{
-       \keepWithTag #'part   \new Staff \with {\consists "Page_turn_engraver"} {
-          \FlOneII}
+       \keepWithTag #'part \new Staff 
+        \with {\consists "Page_turn_engraver"} 
+        <<\FlOneII \conductorII>>
         \header{piece=\markup\huge "II Intermezzo"}
       }
 
@@ -78,8 +79,9 @@
 
       \markup{ \vspace #1 }
       \score{
-         \keepWithTag #'part \new Staff \with {\consists "Page_turn_engraver"} {
-         \FlTwoII}
+         \keepWithTag #'part \new Staff 
+         \with {\consists "Page_turn_engraver"} 
+         <<\FlTwoII \conductorII>>
         \header{piece=\markup\huge "II Intermezzo"}
       }
 

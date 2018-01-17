@@ -133,70 +133,69 @@ FlOneII = \relative c'{
   \commonConductor
   \clef treble
   \key fs \minor
-  \time 3/4
-  \tempo "Adagio"
-  R2. * 9 \mark #24 |
+  \time 3/4 
+  R2. * 9 \mark #24 \barNumberCheck \RhXXIV |
   R2. * 13 |
   %\CueDuringWithClef #"Viola" #UP #"alto"
-  {R2. * 3 \mark\default |\tempo "Un poco più mosso" r4 }
+  {R2. * 3 \mark\default \barNumberCheck \RhXXV | r4 }
   a''\(\mf\< \tuplet 3/2 {g4(\! e8)} | e2-- \tuplet 3/2 {d4 bf8} \mbreak|
   bf4--\)~ bf8 r r4 | R2. * 3 |
-  \tempo "Più mosso" R2. * 3 |
-  \tempo\markup{\italic "rit."} R2. * 3 \bar "||"
-  \key bf \minor \tempo "a tempo" R2. * 8 |
-  \tempo\markup{\italic "rit."} R2. \mark\default \mbreak |
-  \tempo "Meno mosso" R2. * 3 |
-  \tempo\markup{\italic "rit."} R2. |
-  \tempo "a tempo" R2. * 2 |
+  R2. * 3 |
+  R2. * 3 \bar "||"
+  \key bf \minor  R2. * 8 |
+  R2. \mark\default \mbreak \barNumberCheck \RhXXVI |
+  R2. * 3 |
+  R2. |
+  R2. * 2 |
   % Skip cadenza
   R2.\fermataMarkup_"Cadenza"
+  \tag #'score \cadenzaIIa
   R2.
-  \tempo "a tempo, più mosso" R2. * 9 |
-  \tempo\markup{\italic "rit."} R2. \mark\default \mbreak |
-  \tempo "Meno mosso" R2. * 3 |
-  \tempo\markup{\italic "rit."} R2. |
-  \tempo "a tempo" R2. * 2 |
-  \tempo "Più vivo" R2. * 5 |
-  \tempo\markup{\italic "rit."} R2. \mark\default |
-  \tempo "Meno mosso (Adagio)" R2. * 6 |
-  \tempo\markup{\italic "accel."} R2. * 2 \mbreak |
-  \tempo "a tempo, più mosso" R2. * 9 \mark\default |
-  R2. * 8 \mark\default |
+  R2. * 9 |
+  R2. \mark\default \barNumberCheck \RhXXVII \mbreak |
+  R2. * 3 |
+  R2. |
+  R2. * 2 |
+  R2. * 5 |
+  R2. \mark\default \barNumberCheck \RhXXVIII |
+  R2. * 6 |
+  R2. * 2 \mbreak |
+  R2. * 9 \mark\default \barNumberCheck \RhXXIX |
+  R2. * 8 \mark\default \barNumberCheck \RhXXX|
   R2. * 8 |
   %\cueDuring  #"OboeOne" #UP
-  {R2. \mark\default | R2. * 2 \mbreak | R2. } |
-  \tempo\markup{\italic "rit."} R2. * 7 \mark\default | 
+  {R2. \mark\default \barNumberCheck \RhXXXI | R2. * 3 \mbreak | R2. } |
+  R2. * 7 \mark\default \barNumberCheck \RhXXXII | 
   %\cueDuring  #"ViolOne" #UP
-  {\tempo "Tempo come prima" R2. * 4 \bar "||"
-  \key fs \minor \tempo "Poco più mosso" 
+  {R2. * 4 \bar "||"
+  \key fs \minor  
   r4} \tuplet 3/2 4 {r8 r b'-.\p cs-. gs-. r} \mbreak |
   r4 \tuplet 3/2 4 {r8 r a-. b-. fs-. r} |
   r4 \tuplet 3/2 4 {r8 r gs-. a-. e-. r} |
-  r4 \tuplet 3/2 4 {r8 r fs-.\dim gs-. d-.\! r} \mark\default \bar "||"
-  \time 3/8 R4.*26 \mark\default \mbreak |
+  r4 \tuplet 3/2 4 {r8 r fs-.\dim gs-. d-.\! r} \mark\default \barNumberCheck \RhXXXIII \bar "||"
+  \time 3/8 R4.*26 \mark\default \barNumberCheck \RhXXXIV \mbreak |
   %\cueDuring #"ClarOne" #DOWN
   {R4.*4 | r8}
   a'4\pp(^"Solo" | gs fs8 | es16 fs gs4) |
   R4. * 4
-  \tempo\markup{\italic "rit."} R4. \mark\default \mbreak |
-  \tempo "a tempo" R4.*16 \mark\default \bar "||"
+  R4. \mark\default \barNumberCheck \RhXXXV \mbreak |
+  R4.*16 \mark\default \barNumberCheck \RhXXXVI \bar "||"
   \time 3/4
   %\cueDuring #"ViolTwo" #UP
-  {R2. * 2 | \tempo "Meno mosso" r4}
+  {R2. * 2 | r4}
   r4 a\mf( |
-  \tempo\markup{\italic "allargando"} gs2) fs4( |
+  gs2) fs4( |
   es2) e4(\dim |
   ds2) d4(\p\> \mbreak |
-  cs8)\!r r4 r | R2. * 3 \mark\default |
-  R2. * 10 \mark\default |
-  \tempo "Un poco più mosso" r4 \tuplet 3/2 4 { r8 cs'\mf\<( bs b\! a\> gs |
+  cs8)\!r r4 r | R2. * 3 \mark\default \barNumberCheck \RhXXXVII |
+  R2. * 10 \mark\default \barNumberCheck \RhXXXVIII|
+  r4 \tuplet 3/2 4 { r8 cs'\mf\<( bs b\! a\> gs |
   fs\! es d cs\dim b a\!)} r4 | R2. * 4 \mbreak \bar "||"
   \time 4/4
   \key d \minor
-  \tempo "L'istesso tempo"
-  R1 * 4 \mark\default |
+  R1 * 4 \mark\default \barNumberCheck \RhXXXIX |
   R1 |
-  r8 ef'4\f\cresc-- g8 b ef g4\sff | R1 | a8-.\ff r a-. r_"attacca subito" r2 \mpbreak \bar "||"
+  r8 ef'4\f\cresc-- g8 b ef g4\sff | R1 | a8-.\ff r a-. r r2 \barNumberCheck \EndMII \mpbreak \bar "||"
 } 
 
 FlOneIII = \relative c' {
