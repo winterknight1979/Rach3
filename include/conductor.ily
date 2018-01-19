@@ -140,6 +140,9 @@ conductorII={
         
 }
 
+cadenzaIIIa={\bar "" \cadenzaOn s1*7\cadenzaOff }
+
+
 conductorIII = {
   \time 2/2 \tempo \markup {
       \concat {
@@ -219,6 +222,55 @@ conductorIII = {
       }
     } s1 * 13 \mark\default \barNumberCheck \RhLX
 
-}
+    s1 * 7 \tempo "Più vivo" s1 * 8 \mark\default \barNumberCheck \RhLXI
 
+    s1 * 14 \mark\default \barNumberCheck \RhLXII
+
+    s1 * 14 \mark\default \barNumberCheck \RhLXIII
+
+    s1 * 4 \bar "||"
+
+    s1 * 12 \barNumberCheck \RhLXIV
+
+    s1 * 4 \tempo "Più mosso" s1 * 8 \barNumberCheck \RhLXV
+
+    s1 * 11 \barNumberCheck \RhLXVI
+
+    s1 * 12 \tempo "Più vivo" s1 * 6 \barNumberCheck \RhLXVII
+
+    s1 * 13 \mark\default \barNumberCheck \RhLXVIII
+
+    s1 * 8 \tempo\markup{\italic "accel."} s1 * 4 \mark\default \barNumberCheck \RhLXIX
+
+    \tempo "Vivace" s1 * 16 \mark\default \barNumberCheck \RhLXX
+
+    s1 * 8 \mark\default \barNumberCheck \RhLXXI
+
+    s1 * 10 \mark\default \barNumberCheck \RhLXXII
+
+    s1 * 4 \tempo\markup{\italic "poco a poco accel."} s1 * 8 \mark\default \barNumberCheck \RhLXXIII \bar "||"
+
+    s1 * 11 \tag #'score \cadenzaIIIa \mark\default \barNumberCheck \RhLXXIV \bar "||"
+  
+    \tempo "Vivacissimo" s1 * 4
+    \tempo "Un poco meno mosso" s1 * 4
+    \time 3/2 s1. * 2
+    \time 2/2 \tempo\markup{\italic "accel."} s1 * 2 |
+    \tempo "Tempo precedente" s1 * 4 \mark\default \barNumberCheck \RhLXXV
+
+    \tempo "Un poco meno mosso" s1 * 4
+    \tempo \markup{\italic "poco a poco accel."} s1 * 10 \barNumberCheck \RhLXXVI
+
+    s1 \tempo \markup{\italic "allarg."} s1 * 4
+    \tempo\markup{\italic "accel."} s1 * 3 
+    \tempo "a tempo" s1 * 2 \mark\default \barNumberCheck \RhLXXVII
+
+    \tempo "Più vivo" s1 * 6 
+    \tempo\markup{\italic "rit."} s1 * 2 \mark\default \barNumberCheck \RhLXXVIII
+    
+    \tempo\markup{\italic "poco a poco accel."} s1 * 8 \mark\default \barNumberCheck \RhLXXIX
+
+    \tempo "Più vivo" s1 * 4
+    \tempo "Presto" s1 * 10 \barNumberCheck \EndMIII \bar "|."
+  }
 %\new Staff { \compressFullBarRests \keepWithTag #'score \conductorI}

@@ -285,15 +285,15 @@ FlOneIII = \relative c' {
   r4 \tuplet 3/2 {af8-.\mf gf-. af-.} af4--(\> g)\! | R1 \mbreak |
   r2 r4 \tuplet 3/2 {c8-.->\mf c,-. c-.} |
   r2 r4 \tuplet 3/2 {bf'8-.->\mf bf,-. bf-.} | R1 * 2 |
-  \tempo "Più vivo" R1 * 8 \mark\default |
+  R1 * 8 \mark\default \barNumberCheck \RhLXI |
   R1 * 11 |
   %\cueDuring #"OboeOne" #DOWN
   {R1 | r2 r4 } g'-.\f \mbreak |
-  f8-. ef-. d-. c-. bf4-. r \mark\default |
+  f8-. ef-. d-. c-. bf4-. r \mark\default \barNumberCheck \RhLXII |
   R1 * 3 |
   r4 d'-.\pp d-. c-. | c-. bf-. a-. g-. | f-. r r2 |
   R1 * 6 \mbreak |
-  r4 c'-.\mf f,-. r | R1 \mark\default |
+  r4 c'-.\mf f,-. r | R1 \mark\default \barNumberCheck \RhLXIII |
   R1 * 2 |
   r4 d'8-.\f d,-. g4-- d'8-. d,-. |
   g-. d'-. g,-. d'-. g,4-> r \bar "||"
@@ -303,20 +303,20 @@ FlOneIII = \relative c' {
   r4 \tuplet 3/2 {bf8-.\f bf-. f-.} bf4-- r |
   r4 \tuplet 3/2 {d8-. d-. a-.} d4-- \tuplet 3/2 {ef8-.\cresc ef-. c-.} \mbreak |
   f4-- \tuplet 3/2 {f8-. f-. d-.} f4-- \tuplet 3/2 {fs8-. fs-. d-.} |
-  g4->\ff r a,-> r \mark\default |
+  g4->\ff r a,-> r \mark\default \barNumberCheck \RhLXIV |
   d-> d8-.\p c-. d-. bf-. d-. a-. |
   d4-. r r2 | R1 * 2 \mbreak |
-  \tempo "Più mosso" R1*8 \mark\default |
+  R1*8 \mark\default \barNumberCheck \RhLXV |
   R1 * 6 |
   r4^"Solo" \tuplet 3/2 {d8\pLeg^"ad lib."( c gf} bf4--~ \tuplet 3/2 {bf8 a d,} |
-  af'4--~ \tuplet 3/2 {af8\dim gf df} f4-.)\! r | R1 * 3 \mbreak \mark\default |
+  af'4--~ \tuplet 3/2 {af8\dim gf df} f4-.)\! r | R1 * 3 \mbreak \mark\default \barNumberCheck \RhLXVI |
   R1 * 4 | \tuplet 3/2 { f'8\mp^"Solo ad lib."( d bf} d4--~ \tuplet 3/2 {d8 c f,} a4--~ |
   \tuplet 3/2 {a8\dim gs d} fs4-.)\! r2 | R1 |
   r2 \tuplet 3/2 4 {r8^"Solo" a\mf^"ad lib."( d f[ a e] \mbreak
   d c a} c4)--~ \tuplet 3/2 4 {c8[  a( e] a c e |
   c bf g} bf4)--~ \tuplet 3/2 4 {bf8[ g( d] g bf d |
   bf\dim a f} a4--~ \tuplet 3/2 {a8 e c} e4-.)\! | R1 \mbreak |
-  \tempo "Più vivo" R1 * 6 \mark\default |
+  R1 * 6 \mark\default \barNumberCheck \RhLXVII|
   R1 * 5 |
   %\cueDuring #"OboeOne" #UP
   {R1 * 3 } |
@@ -327,66 +327,64 @@ FlOneIII = \relative c' {
   g-.\> a-. a-. bf-. |
   a-. g-. g-. a-. bf-. a-. a-. bf-.
   g r r4 a8-. g-. g-. a-. |
-  g-. fs-. fs-. g-. fs-.\p r r4 \mark\default |
+  g-. fs-. fs-. g-. fs-.\p r r4\barNumberCheck \RhLXVIII |
   \unset decrescendoText
   \unset decrescendoSpanner
   R1 * 8 \mbreak |
-  \tempo\markup{\italic "accel."} R1 |
+  R1 |
   %\cueDuring #"OboeOne" #UP
   {R1 | r2 r4}
-  r8 g( | a\< b cs f a4)\sff r \mark\default \bar "||"
-  \tempo "Vivace" R1 * 16 \mark\default |
-  R1 * 8 \mark\default \mbreak |
+  r8 g( | a\< b cs f a4)\sff r \mark\default \barNumberCheck \RhLXIX \bar "||"
+  R1 * 16 \mark\default \barNumberCheck \RhLXX |
+  R1 * 8 \mark\default \barNumberCheck \RhLXXI \mbreak |
   R1 * 8 |
   %\cueDuring #"OboeOne" #DOWN
-  {R1 * 2 \mark\default | R1 }|
+  {R1 * 2 \mark\default \barNumberCheck \RhLXXII | R1 }|
   r2 \repeat tremolo 4 {bf,16->\f\>( a} | bf4-.)\p r r2 |
-  r2 \repeat tremolo 4 {bf16->\>( a} \mbreak  bf4\!-.)\tempo\markup{\italic "poco a poco accel."} r r2 |
+  r2 \repeat tremolo 4 {bf16->\>( a} \mbreak  bf4\!-.) r r2 |
   r2 \repeat tremolo 4 {df16->\>( c} df4-.)\! r r2 |
   r2 \repeat tremolo 4 {df16->\>( c} df4-.)\! r \repeat tremolo 4 {e16->\>( ds} |
   cs4-.\!) r \repeat tremolo 4 {e16->\>( ds} |
   d4-.)\! r \repeat tremolo 4 {f16->\>( e} \mpbreak |
-  d4-.)\! r \repeat tremolo 4 {f16->( e} \mark\default \bar "||"
+  d4-.)\! r \repeat tremolo 4 {f16->( e} \mark\default \barNumberCheck \RhLXXIII \bar "||"
   \key b \minor  cs4-.) r r2 |
   R1 * 3 |
   a'8(\ff as b e,) a( a b e,) |
   a( as b e,) a( as b e,) \mbreak |
   a1\trill| a\trill | a\trill | a\trill |
   a4\sff r r2\fermata_"Cadenza"
-  %skip cadenza
-  \mark\default \bar "||"
-  \tempo "Vivacissimo" R1 * 4 \mbreak |
-  \tempo "Un poco meno mosso" R1 * 4 |
+  \tag #'score \cadenzaIIIa
+  \mark\default \barNumberCheck \RhLXXIV \bar "||"
+  R1 * 4 \mbreak |
+  R1 * 4 |
   \time 3/2 R1. * 2 |
-  \time 2/2 \tempo\markup{\italic "accel."} R1 * 2 |
-  \tempo "Tempo precedente" R1 * 4 \mark\default |
-  \tempo "Un poco meno mosso"
+  \time 2/2 R1 * 2 |
+  R1 * 4 \mark\default \mark\default \barNumberCheck \RhLXXV |
   %\cueDuring #"OboeOne" #UP
   {R1 * 4} \mbreak |
-  \tempo\markup {\italic "poco a poco accel."} fs,1\f( |
+  fs,1\f( |
   g)~ | g~ | g |
   fs(\( | a)~ | a\cresc | bf\) \mbreak |
-  a2.( b4 | c e2.) \mark\default |
+  a2.( b4 | c e2.) \mark\default \barNumberCheck \RhLXXVI |
   fs1\<( |
-  \tempo\markup{\italic "allarg."} g2\! fs) |
+  g2\! fs) |
   g1(\ff\< | fs2.\! e4)\mbreak |
-  fs2( e\> | \tempo\markup{\italic "accel."} e2.--\! ds4)|
-  e( d2 cs4 | b2. bf4 | \tempo "a tempo" a2) gs4( g | fs2 e\> \mark\default \mbreak |
-  \tempo "Più vivo" fs4)\! r r2 | R1 * 3 |
+  fs2( e\> |  e2.--\! ds4)|
+  e( d2 cs4 | b2. bf4 |  a2) gs4( g | fs2 e\> \mark\default \barNumberCheck \RhLXXVII \mbreak |
+  fs4)\! r r2 | R1 * 3 |
   r2 r4 a\mf( | bf\cresc d2 fs4\< |
-  \tempo\markup{\italic "rit."} bf2--\ff g4 ef | d) r r2 \mark\default\mbreak |
-  \tempo\markup{\italic "poco a poco accel."}
+  bf2--\ff g4 ef | d) r r2 \mark\default\barNumberCheck \RhLXXVIII \mbreak |
   r8 cs,-. d-. e-. fs4-. r |
   r8 e-. fs-. g-. a4-. r |
   r8 a-.\cresc bf[-> ds,-.] e-. fs-. g-. a-. |
   b-. cs-.\< d-. e-. fs-. g-.\! a4-. \mbreak | 
-  \tempo "a tempo"
-  d,-.\ff r d-.\p r | d-. r d-. r | d-. r d-. r | R1 \mark\default |
-  \tempo "Più vivo" R1 * 4 |
-  \tempo "Presto" R1 |
+  d,-.\ff r d-.\p r | d-. r d-. r | d-. r d-. r | R1 \mark\default \barNumberCheck \RhLXXIX |
+  R1 * 4 |
+  R1 |
   d4\ff r r2 \mbreak |
   d4 r d r | r2 d4 r | R1 * 2 |
-  r4 d-.\ff fs-. g-. | a\sff r c\sff r | d\sff r r2 | R1 \bar "|."
+  r4 d-.\ff fs-. g-. | a\sff r c\sff r | d\sff r r2 | R1 \barNumberCheck \EndMIII \bar "|."
 }
+
 
 
