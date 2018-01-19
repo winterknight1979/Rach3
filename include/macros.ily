@@ -30,6 +30,7 @@ commonConductor = {
   \set Staff.soloText = #"I"
   \set Staff.soloIIText = #"II"
   %\tag #'part \markLengthOn
+  %\tag #'midi \set Score.currentBarNumber = #1
 }
 
 stopSlurSpan = {} 

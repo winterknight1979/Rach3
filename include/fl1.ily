@@ -131,6 +131,7 @@ FlOneI=\relative c'{
 
 FlOneII = \relative c'{
   \commonConductor
+  %\tag #'midi \set Score.currentBarNumber = #1 % stops midi errors
   \clef treble
   \key fs \minor
   \time 3/4 
@@ -200,6 +201,7 @@ FlOneII = \relative c'{
 
 FlOneIII = \relative c' {
   \commonConductor
+  % \tag #'midi \set Score.currentBarNumber = #1 % stops midi errors
   \clef treble
   \key d \minor
   \time 2/2 

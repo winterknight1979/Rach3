@@ -127,6 +127,7 @@ FlTwoI=\relative c'{
 
 FlTwoII = \relative c'{
   \commonConductor
+%  \set Score.currentBarNumber = #1 % stops midi errors
   \clef treble
   \key fs \minor
   \time 3/4 
@@ -192,6 +193,7 @@ FlTwoII = \relative c'{
 
 FlTwoIII = \relative c' {
   \commonConductor
+ % \set Score.currentBarNumber = #1 % stops midi errors
 \clef treble
 \key d \minor
 \time 2/2
