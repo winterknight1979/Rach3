@@ -3,14 +3,14 @@ LOG=WARN
 
 HEADERS= include/conductor.ily include/dynamics.ily include/functions.ily include/macros.ily
 FLUTEFILES=include/fl1.ily include/fl2.ily
+OBOEFILES=include/ob1.ily include/ob2.ily
 SCOREFILES=${HEADERS} ${FLUTEFILES}
 
-all: flutes score
+all: flutes oboes score
 
 score: score.a4.pdf score.letter.pdf
-
 flutes: flutes.a4.pdf flutes.letter.pdf
-
+oboes: oboes.a4.pdf oboes.letter.pdf
 
 
 %.a4.pdf : %.ly
@@ -23,6 +23,8 @@ score.a4.pdf: score.ly ${SCOREFILES}
 score.letter.pdf: score.ly ${SCOREFILES}
 flutes.a4.pdf: flutes.ly ${HEADERS} ${FLUTEFILES}
 flutes.letter.pdf: flutes.ly ${HEADERS} ${FLUTEFILES}
+flutes.a4.pdf: oboes.ly ${HEADERS} ${OBOEFILES} ${FLUTEFILES}
+flutes.letter.pdf: oboes.ly ${HEADERS} ${OBOEFILES} ${FLUTEFILES}
 
 .PHONY: clean all
 

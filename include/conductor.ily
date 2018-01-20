@@ -20,7 +20,7 @@ conductorI={
   \tempo "Moderato" s1 * 6  
   \time 3/2 \tempo\markup{\italic "allarg."} s1. \mark\default  \barNumberCheck \RhV %5
 
-  \time 4/4 s1 * 3 s2 s4 \tempo\markup{\italic "rit."} s4 s1 * 7 \mark\default  \barNumberCheck \RhVI  %6
+  \time 4/4 \tempo "a tempo" s1 * 3 s2 s4 \tempo\markup{\italic "rit."} s4 s1 \tempo "a tempo" s1 * 6 \mark\default  \barNumberCheck \RhVI  %6
 
   s1 * 6 | \time 2/4 s2 | \time 4/4 s4 \tempo\markup{\italic "colla parte"} s4 s2 | \tempo "a tempo" s1 * 8 \mark\default  \barNumberCheck \RhVII %7
 
@@ -54,7 +54,15 @@ conductorI={
   \tempo\markup{\italic "poco a poco ritenuto"} s1 * 12 | s1 
   \tag #'score \cadenzaIb \mark\default \barNumberCheck \RhXIX \bar "||"
 
-  \time 4/4 \tempo "Meno mosso" s1 * 12 s2 \tempo\markup{\italic "rit."} s2 s1
+  \time 4/4  \tempo\markup {
+    \concat {
+      "Meno mosso ("
+        \smaller \general-align #Y #DOWN \note #"2" #1
+        " = "
+        \smaller \general-align #Y #DOWN \note #"4" #1
+      )
+    }
+  } s1 * 12 s2 \tempo\markup{\italic "rit."} s2 s1
   \tag #'score \cadenzaIc
   \mark\default \barNumberCheck \RhXX \bar "|"
 
