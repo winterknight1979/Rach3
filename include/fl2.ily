@@ -34,11 +34,11 @@ FlTwoI=\relative c'{
   \mbreak |
    R1 * 6 |
   \time 3/2 
-  <<
-  \tag #'part \cueWhile "FluteOneI" "Fl.I" #UP 
+
+ \cueWhile "FluteOneI" "Fl.I" #UP 
   %\context CueVoice {s1\stopSlurSpan}
   {r1} 
->>
+
   \tuplet 3/2 4 {r8 a'\<( bf c[ d ef])} \mark\default \barNumberCheck \RhV |
   \time 4/4  f4(\f e ef d | df c8\> bf bf\!) r r4 |
   R1 | r2 r4\breathe r4 | R1 \mbreak |
@@ -89,10 +89,8 @@ FlTwoI=\relative c'{
   R1 * 7 \mark\default \barNumberCheck \RhXV |
   R1 * 16 \mark\default \barNumberCheck \RhXVI |
   R1 * 8 \mbreak |
-  <<
-  \tag #'part \cueWhile "FluteOneI" "Fl.I" #UP
+  \cueWhile "FluteOneI" "Fl.I" #UP
   {R1 * 2 }
->>
   R1 * 10 \mark\default \barNumberCheck \RhXVII |
   R1 * 8 |
   %\cueDuring #"Piano" #DOWN
@@ -163,10 +161,8 @@ FlTwoII = \relative c'{
   R2. * 7 \mark\default \mbreak \barNumberCheck \RhXXXII |
   R2. * 4 \bar "||"
   \key fs \minor 
-  <<
-  \tag #'part \cueWhile "FluteOneII" "Fl.I" #UP
+ \cueWhile "FluteOneII" "Fl.I" #UP
   {R2. * 4} 
->>
   \mbreak \mark\default \bar "||"
   \time 3/8 R4. * 26 \mark\default \barNumberCheck \RhXXXIV |
   R4. * 4 |

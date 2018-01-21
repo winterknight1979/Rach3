@@ -26,7 +26,7 @@ ObOneI=\relative c' {
   R1 * 6 |
   R1 * 2 |
   r4 r8 a'4\p( g fs8~ |
-  fs f e4~ e8\dim d cs4 \mbreak \mark\default \barNumberCheck \RhIII |
+  fs f e4~ e8\dim d cs4~ \mbreak \mark\default \barNumberCheck \RhIII |
   cs8 d)\! r4 r2 |
   R1 * 10 |
   c4(\< e2\mf\> d4 \bar"||"
@@ -86,7 +86,7 @@ ObOneI=\relative c' {
   \key a \minor R1 * 14 \mark\default \barNumberCheck \RhXII \bar "||"
   \time 3/2 R1. * 2 \bar "||"
   \time 4/4 R1 * 2 |
-  \cueWhile "FluteOneI" "Fl.I" #UP
+  \cueWhile "FlutesI" "Fl" #UP
   {R1 |R1 } \mbreak |
   r4 r8 af'-.\p[ g-. f-.] r f-.[
   ef-. d-.] r d-.\dim[ c-. bf-.\!] r4 \bar "||"
