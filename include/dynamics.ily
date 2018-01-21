@@ -17,3 +17,7 @@ ppLeg = \tweak DynamicText.self-alignment-X #LEFT
   #(make-dynamic-script (markup #:dynamic "pp" #:normal-text #:italic "leggiero"))
 
 
+semprePP = \tweak DynamicText.self-alignment-X #LEFT 
+  #(make-dynamic-script (markup #:normal-text #:italic "sempre" #:dynamic "pp" ))
+
+

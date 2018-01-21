@@ -179,7 +179,7 @@ conductorIII = {
 
     s1 * 8 \tempo "Allegro molto" s1 * 4 \mark\default \barNumberCheck \RhXLVII
 
-    s1 * 12 \tempo\markup{\italic "rit."} s1 * 4 \bar "||"
+    s1 * 2 \tempo\markup{\italic "poco a poco rit."} s1 * 10 \tempo\markup{\italic "rit."} s1 * 4 \bar "||"
     \time 4/4
     \tempo \markup {
       \concat {
@@ -238,13 +238,13 @@ conductorIII = {
 
     s1 * 4 \bar "||"
 
-    s1 * 12 \barNumberCheck \RhLXIV
+    s1 * 12 \mark\default \barNumberCheck \RhLXIV
 
-    s1 * 4 \tempo "Più mosso" s1 * 8 \barNumberCheck \RhLXV
+    s1 * 4 \tempo "Più mosso" s1 * 8 \mark\default \barNumberCheck \RhLXV
 
-    s1 * 11 \barNumberCheck \RhLXVI
+    s1 * 11 \mark\default \barNumberCheck \RhLXVI
 
-    s1 * 12 \tempo "Più vivo" s1 * 6 \barNumberCheck \RhLXVII
+    s1 * 12 \tempo "Più vivo" s1 * 6 \mark\default \barNumberCheck \RhLXVII
 
     s1 * 13 \mark\default \barNumberCheck \RhLXVIII
 
@@ -267,7 +267,7 @@ conductorIII = {
     \tempo "Tempo precedente" s1 * 4 \mark\default \barNumberCheck \RhLXXV
 
     \tempo "Un poco meno mosso" s1 * 4
-    \tempo \markup{\italic "poco a poco accel."} s1 * 10 \barNumberCheck \RhLXXVI
+    \tempo \markup{\italic "poco a poco accel."} s1 * 10 \mark\default \barNumberCheck \RhLXXVI
 
     s1 \tempo \markup{\italic "allarg."} s1 * 4
     \tempo\markup{\italic "accel."} s1 * 3 

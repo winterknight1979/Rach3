@@ -14,6 +14,8 @@
 \include "include/fl2.ily"
 \addQuote "FluteOneI" {\keepWithTag #'quote \FlOneI}
 \addQuote "FluteOneII" {\keepWithTag #'quote \FlOneII}
+\addQuote "FluteOneIII" {\keepWithTag #'quote \FlOneIII}
+
 
 
 \addQuote "FlutesI" {\keepWithTag #'quote <<{\FlOneI}{\FlTwoI}>>} 
