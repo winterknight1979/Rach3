@@ -23,8 +23,8 @@ score.a4.pdf: score.ly ${SCOREFILES}
 score.letter.pdf: score.ly ${SCOREFILES}
 flutes.a4.pdf: flutes.ly ${HEADERS} ${FLUTEFILES}
 flutes.letter.pdf: flutes.ly ${HEADERS} ${FLUTEFILES}
-flutes.a4.pdf: oboes.ly ${HEADERS} ${OBOEFILES} ${FLUTEFILES}
-flutes.letter.pdf: oboes.ly ${HEADERS} ${OBOEFILES} ${FLUTEFILES}
+oboes.a4.pdf: oboes.ly ${HEADERS} ${OBOEFILES} ${FLUTEFILES}
+oboes.letter.pdf: oboes.ly ${HEADERS} ${OBOEFILES} ${FLUTEFILES}
 
 .PHONY: clean all
 

@@ -181,6 +181,97 @@ ObOneI=\relative c' {
   R1 * 10 \barNumberCheck \EndMI \bar "|."
   
 }
-ObOneII=\relative c'{\commonConductor}
+
+ObOneII=\relative c'{
+  \commonConductor
+  \clef treble \time 3/4 \key fs\minor R2. |
+  a''2\p_\markup\italic{espress.}^"Solo"\<( \tuplet 3/2{g4\> e8\!} |
+  e2--) \tuplet 3/2 {g4\mf( f8} |
+  \tuplet 3/2 {e8 f d} d4.--\> e8 |
+  e4--~)\p \tuplet 3/2 4 {e4 g,8( a[\< f' e] }|
+  a4\mf~ \tuplet 3/2 4 {a8\< g a g4--\> e8\!}\mbreak |
+  e2--) \tuplet 3/2 4 {g4\p\<( f8 |
+  e\> f d\!} d4.-- e8\dim |
+  e2)\>--~ e8\pp r \mark #24 \barNumberCheck \RhXXIV |
+  R2. * 16 \mark\default \barNumberCheck \RhXXV |
+  \cueWhile "FluteOneII" "Fl.I" #UP
+  {R2. * 2} |
+  bf2\mf\<( \tuplet 3/2 {a4\! f8} \mbreak |
+  f4)\>--~ f8\! r r4 |
+  R2. * 2 |
+  R2. * 3 |
+  R2. * 3 \bar "||"
+  \key bf\minor R2. * 8 |
+  R2.\mark\default \barNumberCheck \RhXXVI |
+  R2.* 3 |
+  R2.\mbreak |
+  R2. * 2 |
+  R2.\fermataMarkup_"Cadenza"
+  \tag #'score \cadenzaIIa |
+  R2. |
+  R2. * 9 |
+  R2.\mark\default \barNumberCheck \RhXXVII |
+  R2. * 3 |
+  R2. |
+  R2. * 2 \mbreak |
+  R2. * 5 |
+  R2. \mark\default \barNumberCheck \RhXXVIII 
+  R2. * 6 |
+  R2. * 2 |
+  R2. * 8 |
+  % Cue cor. I
+  {R2. \mark\default \barNumberCheck \RhXXIX | R2. } |
+  R2. * 7 \mark\default \barNumberCheck \RhXXX \mbreak |
+  R2. * 5 |
+  %cue Clar. I
+  {R2. * 3 | r4 }
+  r4 gf'(\< \mark\default \barNumberCheck \RhXXXI |
+  f2)\f-\markup{\italic "cantabile"} \tuplet 3/2 {ef4( c8)} |
+  c2-- \tuplet 3/2 4 { ef4( df8 |
+  c df bf)} bf4--~(\dim \tuplet 3/2 {bf c8} \mbreak |
+  af4)\p r r | 
+  R2.*7\mark\default\barNumberCheck \RhXXXII |
+  R2.*4 \bar "||"
+  \key fs\minor R2.*4 \mark\default \barNumberCheck \RhXXXIII \bar "||"
+  \time 3/8 R4. * 26 \mark\default \barNumberCheck \RhXXXIV |
+  %cue Cl. I
+  {R4.*2 \mbreak R4.*2} |
+  \cueWhile "FluteOneII" "Fl.I" #UP
+  {R4. * 2 | r8 }
+ gs4(\ppDolce^"Solo" |
+  a b8~ |
+  \set crescendoText = \markup{\italic "poco cresc."}
+  \set crescendoSpanner = #'text
+  b\<[  cs8. e16] |
+  d4.) \unset crescendoText \unset crescendoSpanner |
+  ds4\<--( fs8 |
+  e\> es8. gs16]) \mark\default \barNumberCheck \RhXXXV \mbreak |
+  fs4.(\pp~ |
+  fs8 e4 |
+  d16[ cs b8. a16] |
+  gs4.) |
+  e'4.\mp~( |
+  e8\dim d4 |
+  cs8[ b a]|
+  gs4.)\! |
+  R4.*8 \mark\default \barNumberCheck \RhXXXVI \mpbreak \bar "||"
+  R2. * 2 |
+  R2. * 4 |
+  cs2\p_\markup\italic{espress.}^"Solo"(\< \tuplet 3/2 { b4\> gs8)\!} |
+  gs2--(\< \tuplet 3/2 4 {b4\! a8 |
+  gs\> a fs\!)} fs4.--( gs8) |
+  gs2--\p\> r4\! \mark\default\barNumberCheck \RhXXXVII  |
+  R2. * 10 \mark\default \barNumberCheck \RhXXXVIII \mbreak |
+  r4 r d'--~(\f |
+  d \tuplet 3/2 {cs a8)} a4--(~ |
+  a \tuplet 3/2 {gs es8)} es4--~(\dim |
+  es \tuplet 3/2 {e bs8\mf)\>} bs4\! |
+  R2. * 2 \mbreak \bar "||"
+  \time 4/4 \key d\minor R1 * 4 \mark\default \barNumberCheck \RhXXXIX |
+  R1 |
+  r8 ef'4\f g8\cresc bf4~\< bf\sff |
+  R1 |
+  a8-.\ff r a-. r r2 \barNumberCheck \EndMII \bar "||"
+}
 ObOneIII=\relative c'{\commonConductor}
 
