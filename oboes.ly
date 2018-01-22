@@ -8,6 +8,8 @@
 
 \include "include/ob1.ily" 
   \addQuote "OboeOneI" {\keepWithTag #'quote \ObOneI}
+  \addQuote "OboeOneII" {\keepWithTag #'quote \ObOneII}
+
 \include "include/ob2.ily"
 
 %cues

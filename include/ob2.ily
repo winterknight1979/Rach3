@@ -136,6 +136,61 @@ ObTwoI=\relative c' {
   R1 * 3 \mark\default \barNumberCheck \RhXXIII |
   R1 * 10 \barNumberCheck \EndMI \mpbreak \bar "|."
 }
-ObTwoII=\relative c'{\commonConductor}
+
+ObTwoII=\relative c'{
+  \commonConductor
+  \clef treble \time 3/4 \key fs\minor 
+  R2. * 9 \mark #24 \barNumberCheck \RhXXIV |
+  R2. * 16 \mark\default \barNumberCheck \RhXXV |
+  R2. * 2 |
+  \cueWhile "OboeOneII" "Ob.I" #DOWN
+  {R2. * 2} |
+  R2. * 2 |
+  R2. * 3 |
+  R2. * 3 \mbreak \bar "||"
+  \key bf\minor R2. *8 | R2. \mark\default \barNumberCheck \RhXXVI |
+  R2. * 3 |
+  R2. |
+  R2. * 2 |
+  R2.\fermataMarkup_"Cadenza"
+  \tag #'score \cadenzaIIa |
+  R2. \mbreak |
+  R2. * 9 | R2. \mark\default \barNumberCheck \RhXXVII |
+  R2. * 3 | R2. |
+  R2. * 2 | R2. * 5 | R2. \mark\default \barNumberCheck \RhXXVIII \mbreak |
+  R2. * 6 | R2. * 2 | R2. * 8 |
+  % cue cor. I 
+  {R2. \mark\default \barNumberCheck \RhXXIX | R2. } |
+  R2. * 7 \mark\default \barNumberCheck \RhXXX |
+  R2. * 5 |
+  % cue Clar. I |
+  {R2. * 3 \mbreak | r4 }
+  r ef'\<( \mark\default \barNumberCheck \RhXXXI |
+  df2)\fCant \tuplet 3/2 {c4( af8)} |
+  af2--~ af8 r |
+  R2. * 9 \barNumberCheck \RhXXXII |
+  R2. * 4 \bar "||"
+  \key fs\minor R2. * 4 \mark\default \barNumberCheck \RhXXXIII \mbreak \bar "||"
+  \time 3/8 R4. * 26 \mark\default \barNumberCheck \RhXXXIV |
+  R4. * 11 | R4.\mark\default \barNumberCheck \RhXXXV |
+  R4. * 16 \mark\default \barNumberCheck \RhXXXVI \bar "||"
+  \time 3/4 R2. * 2 | R2. * 4 |
+  \cueWhile "OboeOneII" "Ob.I" #DOWN 
+  {R2. * 3} \mbreak |
+  bs,4\p\>( cs)\! r \mark\default \barNumberCheck \RhXXXVII |
+  R2. * 10 \mark\default \barNumberCheck \RhXXXVIII |
+  r4 r b'--\f(~ |
+  b~ \tuplet 3/2 {b a8)} fs4--~ |
+  fs(~ \tuplet 3/2 {fs es8)} cs4--~(\dim |
+  cs~ \tuplet 3/2 {cs bs8)} bs4\mf\> <>\! |
+  R2.*2 \mbreak \bar "||"
+  \time 4/4 \key d\minor 
+  R1 * 4 \mark\default \barNumberCheck \RhXXXIX |
+  R1 |
+  r8 bf'4\f\cresc ef8 g4 bf\sff |
+  R1 |
+  f8-.\ff r e-. r r2 \barNumberCheck \EndMII \bar "||"
+}
+
 ObTwoIII=\relative c'{\commonConductor}
 
