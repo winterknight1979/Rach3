@@ -28,7 +28,7 @@ FlOneI=\relative c'{
   R1 * 5 |
   \tag #'score \cadenzaIa
   R1\fermataMarkup_"Cadenza" \mbreak 
-  \tempo "Moderato" R1 * 2 |
+  R1 * 2 |
   % \cueDuring #"OboeOne" #UP
   {R1 * 4 | \time 3/2  r2 }
   \tuplet 3/2 4 {r8 c,\f( ef a[ c ef]} g4. f8 \mark\default \barNumberCheck\RhV |
@@ -117,7 +117,7 @@ FlOneI=\relative c'{
   R1 * 2 |
   %\cueDuring #"HrnOne" #DOWN
     {R1 | R1 \bar "||" \key d\minor 
-    \tempo "Tempo I" R1 }
+    R1 }
   R1 * 9 \mark\default \barNumberCheck \RhXXI \mbreak |
   R1 * 7 |
   R1 |

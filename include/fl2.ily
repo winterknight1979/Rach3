@@ -17,14 +17,14 @@ FlTwoI=\relative c'{
   %\cueDuring #"OboeOne" #UP
   {R1 * 2} |
   R1 * 6 |
-  \tempo "Più vivo" R1 * 4 \mark\default \barNumberCheck \RhIII |
+  R1 * 4 \mark\default \barNumberCheck \RhIII |
   R1 * 2 |
   \cueWhile "FluteOneI" "Fl.I" #UP
   {R1 * 2 \mbreak | R1 } |
   R1 * 6 |
   R1 \bar "||"
   \time 2/4 R2 \mark\default \barNumberCheck \RhIV \bar "||"
-  \time 4/4 \tempo "Allegro" R1 * 2 |
+  \time 4/4 R1 * 2 |
   \cueWhile "FluteOneI" "Fl.I" #UP
   {R1} |
   R1 * 5 |

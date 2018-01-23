@@ -26,7 +26,7 @@ commonConductor = {
   \override Score.InstrumentName.self-alignment-X = #RIGHT
   \override Score.InstrumentName.padding = #1.0
   \once\override Score.SpacingSpanner.spacing-increment = #0.8
-  \tag #'part \set Score.tempoHideNote = ##t
+  \set Score.tempoHideNote = ##t
   \set Staff.soloText = #"I"
   \set Staff.soloIIText = #"II"
   %\tag #'part \markLengthOn
