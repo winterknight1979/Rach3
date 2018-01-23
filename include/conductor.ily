@@ -4,46 +4,51 @@ cadenzaIc={\cadenzaOn s1*15 s1 s4*21 s4*6 s2*3 s4.*3 s8 s2 s2 s2 s4 s1 s1\cadenz
 
 conductorI={
   %\commonConductor
-  \time 4/4 \tempo "Allegro ma non tanto" s1 * 10 \mark\default \barNumberCheck\RhI %1 
+  \time 4/4 \tempo "Allegro ma non tanto" 4=120 s1 * 10 \mark\default \barNumberCheck\RhI %1 
 
-  s1 * 7  s4 \tempo\markup{\italic "colla parte"} s4 s2  
-  \tempo "a tempo" s1 * 6 \bar "||" 
-  \time 2/4 s2 \bar "||" \time 4/4 s1 \tempo "Più mosso" s1 * 11 \mark\default \barNumberCheck\RhII  %2
+  s1 * 7  s4 \tempo\markup{\italic "colla parte"} 4=100 s4 s2  
+  \tempo "a tempo" 4=120 s1 * 6 \bar "||" 
+  \time 2/4 s2 \bar "||" \time 4/4 s1 \tempo "Più mosso" 4=140 s1 * 11 \mark\default \barNumberCheck\RhII  %2
 
   
-  s1 * 14 | \tempo "Più vivo" s1 * 4 \mark\default \barNumberCheck\RhIII %3
+  s1 * 14 | \tempo "Più vivo" 4=155 s1 * 4 \mark\default \barNumberCheck\RhIII %3
 
-  s1 * 11 | \tempo\markup{\italic "colla parte"} s1 \bar "||" 
-  \time 2/4 \tempo "a tempo" s2 \mark\default \barNumberCheck \RhIV \bar "||" %4
+  s1 * 11 | \tempo\markup{\italic "colla parte"} 4=140 s1 \bar "||" 
+  \time 2/4 \tempo "a tempo" 4=155 s2 \mark\default \barNumberCheck \RhIV \bar "||" %4
 
-  \time 4/4 \tempo "Allegro" s1 * 8  \tag #'score \cadenzaIa s1 
-  \tempo "Moderato" s1 * 6  
-  \time 3/2 \tempo\markup{\italic "allarg."} s1. \mark\default  \barNumberCheck \RhV %5
+  \time 4/4 \tempo "Allegro" 4=140 s1 * 8  \tag #'score \cadenzaIa s1 
+  \tempo "Moderato" 4=110 s1 * 6  
+  \time 3/2 \tempo\markup{\italic "allarg."} 4=95 s1. \mark\default  \barNumberCheck \RhV %5
 
-  \time 4/4 s1 * 3 s2 s4 \tempo\markup{\italic "rit."} s4 s1 * 7 \mark\default  \barNumberCheck \RhVI  %6
+  \time 4/4 \tempo "a tempo" 4=110  s1 * 3 s2 s4 \tempo\markup{\italic "rit."} 4=100 
+  s4 s1 \tempo "a tempo" 4=110 s1 * 6 \mark\default  \barNumberCheck \RhVI  %6
 
-  s1 * 6 | \time 2/4 s2 | \time 4/4 s4 \tempo\markup{\italic "colla parte"} s4 s2 | \tempo "a tempo" s1 * 8 \mark\default  \barNumberCheck \RhVII %7
+  s1 * 6 | \time 2/4 s2 | \time 4/4 s4 \tempo\markup{\italic "colla parte"} 4=100 s4 s2 | 
+  \tempo "a tempo" 4=110 s1 * 8 \mark\default  \barNumberCheck \RhVII %7
 
   s1 * 9 \mark\default  \barNumberCheck \RhVIII %8
 
-  s1 * 2  \tempo\markup{\italic "allarg."} s1  \tempo "a tempo" s1 * 4 \mark\default  \barNumberCheck \RhIX %9
+  s1 * 2  \tempo\markup{\italic "allarg."} 4=95 s1  
+  \tempo "a tempo" 4=110 s1 * 4 \mark\default  \barNumberCheck \RhIX %9
 
-  s1 * 5  s2 \tempo\markup{\italic "rit."} s2  \tempo\markup{\italic "accel."} s1 * 6  \tempo "Allegro" s1 * 6 \mark\default  \barNumberCheck \RhX %10
+  s1 * 5  s2 \tempo\markup{\italic "rit."} 4=100 s2  
+  \tempo\markup{\italic "accel."} 4=115 s1 * 6  \tempo "Allegro" 4=140 
+  s1 * 6 \mark\default  \barNumberCheck \RhX %10
 
-  s1 s2 \tempo\markup{\italic "rit."} s2 \tempo "Tempo precedente" s1 * 5 
-  \tempo\markup{\italic "poco a poco accel."} s1 * 3 \mark\default  \barNumberCheck \RhXI %11
+  s1 s2 \tempo\markup{\italic "rit."} s2 \tempo "Tempo precedente" 4=115 s1 * 5 
+  \tempo\markup{\italic "poco a poco accel."} 4=125 s1 * 3 \mark\default  \barNumberCheck \RhXI %11
 
-  s2 \tempo "Allegro" s2  s1 *5 s2 \tempo\markup{\italic "rit"} s2 s1 \bar "||"
-  \tempo "Tempo I" s1 * 14 \mark\default  \barNumberCheck \RhXII \bar "||" %12
+  s2 \tempo "Allegro" 4=140 s2  s1 *5 s2 \tempo\markup{\italic "rit"} 4=132 s2 s1 \bar "||"
+  \tempo "Tempo I" 4=120 s1 * 14 \mark\default  \barNumberCheck \RhXII \bar "||" %12
 
-  \tempo "Più mosso" \time 3/2 s1.*2 \bar "||"
+  \tempo "Più mosso" 4=140 \time 3/2 s1.*2 \bar "||"
   \time 4/4 s1 * 6 \bar "||"
   \time 3/2 s1.*4 \mark\default  \barNumberCheck \RhXIII \bar "||"
 
-  \time 4/4 s1 * 10 \tempo "Più vivo" s1 * 10 \mark\default \barNumberCheck \RhXIV
+  \time 4/4 s1 * 10 \tempo "Più vivo" 4=155 s1 * 10 \mark\default \barNumberCheck \RhXIV
 
-  s1 * 10 \tempo "Allegro" s1*8 \tempo\markup{\italic "accel."} s1*4
-  \time 2/2 \tempo "Allegro molto (Alla breve)" s1 * 8 \mark\default \barNumberCheck \RhXV
+  s1 * 10 \tempo "Allegro" 4=145 s1*8 \tempo\markup{\italic "accel."} 4=152 s1*4
+  \time 2/2 \tempo "Allegro molto (Alla breve)" 2=91 s1 * 8 \mark\default \barNumberCheck \RhXV
 
   s1 * 16 \mark\default \barNumberCheck \RhXVI
   
@@ -51,22 +56,25 @@ conductorI={
 
   s1 * 12 \mark\default \barNumberCheck \RhXVIII
 
-  \tempo\markup{\italic "poco a poco ritenuto"} s1 * 12 | s1 
+  \tempo\markup{\italic "poco a poco ritenuto"} 2=70 s1 * 12 | s1 
   \tag #'score \cadenzaIb \mark\default \barNumberCheck \RhXIX \bar "||"
 
-  \time 4/4 \tempo "Meno mosso" s1 * 12 s2 \tempo\markup{\italic "rit."} s2 s1
+  \time 4/4 \tempo "Meno mosso" 4=150 s1 * 12 s2 \tempo\markup{\italic "rit."} s2 s1
   \tag #'score \cadenzaIc
   \mark\default \barNumberCheck \RhXX \bar "|"
 
-  s1 * 3 s2 \tempo\markup{\italic "rit."} s2 \bar "||"
-  \tempo "Tempo I" s1 * 10 \mark\default \barNumberCheck \RhXXI
+  s1 * 3 s2 \tempo\markup{\italic "rit."} 4=140  s2 \bar "||"
+  \tempo "Tempo I" 4=120 s1 * 10 \mark\default \barNumberCheck \RhXXI
 
-  s1 * 7 s4 \tempo\markup{\italic "colla parte"} s2. 
-  \tempo "a tempo" s1 * 6 \bar "||" \time 2/4 s2 \bar "||" \time 4/4 s1 \mark\default \barNumberCheck \RhXXII
+  s1 * 7 s4 \tempo\markup{\italic "colla parte"} 4=90 s2. 
+  \tempo "a tempo" 4=120 s1 * 6 \bar "||" \time 2/4 s2 \bar "||" \time 4/4 s1 \mark\default \barNumberCheck \RhXXII
 
-  s1 * 4 \tempo "Un poco più mosso" s1 * 4 \mark\default \barNumberCheck \RhXXIII
+  s1 * 4 \tempo "Un poco più mosso" 4=130 s1 * 4 \mark\default \barNumberCheck \RhXXIII
 
-  s1 * 10 \barNumberCheck \EndMI
+  s1 \tempo\markup{\italic "rall."} 4=100 
+  s1 \tempo "a tempo" 4=120 
+  s1 \tempo\markup{\italic "rall."} 4=100 
+  s1 \tempo\markup{\italic "poco accel. a fine"} 4=140 s1* 6 \barNumberCheck \EndMI
 }
 
 cadenzaIIa={\cadenzaOn s8 * 36 s2 s1 \cadenzaOff}
