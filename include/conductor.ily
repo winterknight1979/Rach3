@@ -80,34 +80,34 @@ conductorI={
 cadenzaIIa={\cadenzaOn s8 * 36 s2 s1 \cadenzaOff}
 
 conductorII={
-  \time 3/4 \tempo "Adagio" s2.*9 \mark #24 \barNumberCheck \RhXXIV
+  \time 3/4 \tempo "Adagio" 4 = 72 s2.*9 \mark #24 \barNumberCheck \RhXXIV
   
   s2.*16 \mark\default \barNumberCheck \RhXXV
   
-  \tempo "Un poco più mosso" s2.*6 
-  \tempo "Più mosso" s2.*3 s2\tempo\markup{\italic "rit."} s4 s2.*2 \bar "||"
-  \tempo "a tempo" s2.*8 s4\tempo\markup{\italic "rit."} s2 \mark\default \barNumberCheck \RhXXVI
+  \tempo "Un poco più mosso" 4=76 s2.*6 
+  \tempo "Più mosso" 4=86 s2.*3 s2\tempo\markup{\italic "rit."} 4=80  s4 s2.*2 \bar "||"
+  \tempo "a tempo" 4=86 s2.*8  s4\tempo\markup{\italic "rit."} 4=80 s2 \mark\default \barNumberCheck \RhXXVI
 
-  \tempo "Meno mosso" s2.*3 s4 \tempo\markup{\italic "rit."} s2
-  \tempo "a tempo" s2. * 2 s2. \tag #'score \cadenzaIIa \bar "|"
-  s2. \tempo "a tempo, più mosso" s2.*9 s4 \tempo\markup{\italic "rit."} s2 \mark\default \barNumberCheck \RhXXVII
+  \tempo "Meno mosso" 4=76 s2.*3 s4 \tempo\markup{\italic "rit."} 4=72 s2
+  \tempo "a tempo" 4=76 s2. * 2 s2. \tag #'score \cadenzaIIa \bar "|"
+  s2. \tempo "a tempo, più mosso" 4=86 s2.*9 s4 \tempo\markup{\italic "rit."} 4=80 s2 \mark\default \barNumberCheck \RhXXVII
   
-  \tempo "Meno mosso" s2. * 3 s4 \tempo\markup{\italic "rit."} s2 
-  \tempo "a tempo" s2. * 2
-  \tempo "Più vivo" s2. * 5 s4 \tempo\markup{\italic "rit."} s2 \mark\default \barNumberCheck \RhXXVIII
+  \tempo "Meno mosso" 4=76 s2. * 3 s4 \tempo\markup{\italic "rit."} 4=72 s2 
+  \tempo "a tempo" 4=76 s2. * 2
+  \tempo "Più vivo" 4=90 s2. * 5 s4 \tempo\markup{\italic "rit."} 4=80 s2 \mark\default \barNumberCheck \RhXXVIII
 
-  \tempo "Meno mosso (Adagio)" s2.*6
-  \tempo\markup{\italic "accel."} s2.*2 
-  \tempo "a tempo, più mosso" s2.*9 \mark\default \barNumberCheck \RhXXIX
+  \tempo "Meno mosso (Adagio)" 4=72 s2.*6
+  \tempo\markup{\italic "accel."} 4=80 s2.*2 
+  \tempo "a tempo, più mosso" 4=86 s2.*9 \mark\default \barNumberCheck \RhXXIX
 
   s2.*8 \mark\default \barNumberCheck \RhXXX
 
-  s2. *9 \mark\default \barNumberCheck \RhXXXI
+  s2. *8 s4. \tempo\markup{\italic "allarg."} 4=82 s4. \mark\default \barNumberCheck \RhXXXI
 
-  s2.*8 \tempo\markup{\italic "rit."} s2.*2 s4.\tempo\markup{\italic "rit."} s4. \mark\default \barNumberCheck \RhXXXII 
+  s2.*8 \tempo\markup{\italic "rit."} 4=78 s2.*2 s4.\tempo\markup{\italic "rit."} 4=74 s4. \mark\default \barNumberCheck \RhXXXII 
 
-  \tempo "Tempo come prima" s2. * 4 \bar "||"
-  \tempo "Poco più mosso" s2. * 4 \mark\default \barNumberCheck \RhXXXIII \bar "||"
+  \tempo "Tempo come prima" 4=72 s2. * 4 \bar "||"
+  \tempo "Poco più mosso" 4=76 s2. * 4 \mark\default \barNumberCheck \RhXXXIII \bar "||"
 
   \time 3/8
   \tempo\markup {
@@ -118,12 +118,13 @@ conductorII={
         \smaller \general-align #Y #DOWN \note #"4" #1
       )
     }
-  }
+    
+  } 4=51
   s4.*26 \mark\default \barNumberCheck \RhXXXIV
 
-  s4.*11 \tempo\markup{\italic "rit."} s4. \mark\default \barNumberCheck \RhXXXV
+  s4.*11 \tempo\markup{\italic "rit."} 4=45 s4. \mark\default \barNumberCheck \RhXXXV
 
-  \tempo "a tempo" s4.*16 \mark\default \barNumberCheck \RhXXXVI \bar "||"
+  \tempo "a tempo" 4=51 s4.*16 \mark\default \barNumberCheck \RhXXXVI \bar "||"
 
    \time 3/4
   \tempo\markup {
@@ -134,14 +135,14 @@ conductorII={
         \smaller \general-align #Y #DOWN \note #"4." #1
       )
     }
-  }
+  } 4=76
   s2. * 2 
-  \tempo "Meno mosso" s2.
-  \tempo\markup{\italic "allargando"} s2. * 7 \mark\default \barNumberCheck \RhXXXVII
+  \tempo "Meno mosso" 4=72 s2.
+  \tempo\markup{\italic "allargando"} 4=68 s2. * 7 \mark\default \barNumberCheck \RhXXXVII
 
   s2. * 10 \mark\default \barNumberCheck \RhXXXVIII
 
-  \tempo "Un poco più mosso" s2. * 6 \bar "||"
+  \tempo "Un poco più mosso" 4=72 s2. * 6 \bar "||"
   \time 4/4 \tempo "L'istesso tempo" s1 * 4 \mark\default \barNumberCheck \RhXXXIX
 
   s1 *3 \tempo "attaca subito" s1 \barNumberCheck \EndMII \bar "||"
