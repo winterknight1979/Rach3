@@ -220,5 +220,70 @@ ObTwoIII=\relative c'{
   g4-- g8-. a-. bf-. a-. g4--|
   f-. r r2 |
   R1*5 \mpbreak |
+  a4.\f-- e16 e a4.-- e16 e | 
+  a4.-- e16 e a4.-- e16 e |
+  a4-- e8-. e-. a4-- e8-. e-. |
+  a-. e-. a-.[ e-.] a4-. r \mark\default \barNumberCheck \RhXLII |
+  R1 * 3 |
+  b4-.\ff e,-. r2 |
+  R1 * 3 \mbreak |
+  a4-.\ff d,-. r2 |
+  r4 bf\p-. a-. g-. |
+  f-. r r2 |
+  r4 c'-.\dim b-. a-. |
+  g-.\! r r2 |
+  R1 |
+  r2 b4-.\mf e,-. |
+  R1 \mbreak |
+  R1 * 8 \mark\default \barNumberCheck \RhXLIII |
+  R1 * 10 |
+  r4 g2--\f a4-. \mark\default \barNumberCheck \RhXLIV |
+  g4-. r r2 |
+  R1 * 11 \mark\default \barNumberCheck \RhXLV |
+  R1 * 14 \mbreak |
+  \cueWhile "OboeOneIII" "Ob. I" #UP
+  {R1 * 5} |
+  R1 * 2 \mark\default \barNumberCheck \RhXLVI |
+  R1 * 5 |
+  r4 r8 a-.\mf b4.-- r8 |
+  r4 r8 b\cresc-. c4.-- r8 \mbreak |
+  r4 r8 e-. e4-. d-. |
+  \tuplet 3/2 {d-. g8-.} g2->\ff fs4-. |
+  g-. g-. e-. d-. |
+  \tuplet 3/2 {b-. b8-.} b2-> bf4-. |
+  bf-. f-.\dim ef-. d-. \mbreak |
+  g2.--\fMarc d4-. |
+  g2.-- d4-. |
+  ef2.--\dim g4-. |
+  ef2.-- g4-. |
+  ef-.\p r r2 |
+  R1 * 7 |
+  R1 * 4  \mbreak \bar "||"
+  \time 4/4 \key g \minor
+  R1 * 2 \mark\default \barNumberCheck \RhXLVIII |
+  R1 * 8 \bar "||"
+  \time 3/2 R1. \mark\default \barNumberCheck \RhXLIX \bar "||"
+  \time 4/4 R1 * 3 |
+  \cueWhile "OboeOneIII" "Ob.I" #UP
+  {R1 * 3} |
+  R1 \mark\default \barNumberCheck \RhL \mbreak |
+  R1 | R1 |
+  ef'8-.\pp[ r16  d-.] ef8-.[ r16 d-.] ef8-.[ r16 d-.] ef8-.[ r16 d-.] |
+  ef8-. r r4 r2 |
+  c8-.\pp[ r16 b-.] c8-.[ r16 b-.] c8-.[ r16 b-.] c8-.[ r16 b-.] \mbreak \bar "||"
+  \time 3/2 bf8-. r r4 r2 r |
+  R1. * 2 \mark\default \barNumberCheck \RhLI \bar "||"
+  \time 4/4 R1 * 8 \barNumberCheck \RhLII |
+  % Cue viol II
+  {R1 * 2} \bar "||"
+  \time 3/2 R1. * 2 \bar "||"
+  \time 4/4 r2 r4 r16 es,\p-. fs-. g-. \mbreak |
+  gs8-. r r4 r2 | r r4 r16 b-.\cresc c-. cs-. |
+  d8-.\! r r4 r2 \mark\default \barNumberCheck \RhLIII |
+  \grace s8 R1 * 3 |
+  r2 r4 r8.^"Solo" \tuplet 3/2 {ef,32(\pp f fs} \mbreak \bar "||"
+  \time 3/2 g8)[^\markup{\italic "legg."} r16 g32( fs] g4--)~ g16 fs-. g-. fs-. g4--( gf16) f-. gf-. f-. gf4--~ |
+  gf16\semprePP[ gf32( f) gf8~]-- gf16[ f-. gf8--(] f16)[ e-. f-. e-.] f16-.[  df'32( c d8-.)] r16 d32( c d16) c-. c-. b-. c8-. |
+  R1. \mark\default \barNumberCheck \RhLIV \mpbreak \bar "||"
 }
 

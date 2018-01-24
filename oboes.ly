@@ -7,8 +7,9 @@
 \include "include/conductor.ily"
 
 \include "include/ob1.ily" 
-  \addQuote "OboeOneI" {\keepWithTag #'quote \ObOneI}
-  \addQuote "OboeOneII" {\keepWithTag #'quote \ObOneII}
+   \addQuote "OboeOneI" {\keepWithTag #'quote \ObOneI}
+   \addQuote "OboeOneII" {\keepWithTag #'quote \ObOneII}
+   \addQuote "OboeOneIII" {\keepWithTag #'quote \ObOneIII}
 
 \include "include/ob2.ily"
 

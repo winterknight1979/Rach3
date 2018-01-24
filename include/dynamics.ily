@@ -24,4 +24,7 @@ semprePP = \tweak DynamicText.self-alignment-X #LEFT
 fCant = \tweak DynamicText.self-alignment-X #LEFT 
   #(make-dynamic-script (markup #:dynamic "f" #:normal-text #:italic "cantabile."))
 
+fMarc = \tweak DynamicText.self-alignment-X #LEFT 
+  #(make-dynamic-script (markup #:dynamic "f" #:normal-text #:italic "marc."))
+
 
