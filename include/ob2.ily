@@ -192,5 +192,33 @@ ObTwoII=\relative c'{
   f8-.\ff r e-. r r2 \barNumberCheck \EndMII \bar "||"
 }
 
-ObTwoIII=\relative c'{\commonConductor}
+ObTwoIII=\relative c'{
+  \commonConductor
+  \clef treble \key d\minor \time 2/2
+  f'4\sff r r2 |
+  R1 * 5 |
+  c4.--\p b8-. c4.-- b8-. |
+  c4-- c8-. b-. c4-. c-. |
+  bf2.-- a4-. |
+  bf1--~ |
+  bf4 bf-. a-. g-. |
+  f-. r r2 |
+  R1 * 6 \mark #40 \barNumberCheck \RhXL \mbreak |
+  R1 * 10 |
+  a1~\pp |
+  a2. r4 |
+  R1 * 2 |
+  g1~\pp |
+  g2. r4 |
+  R1 * 2 |
+  r2 r4 f'\ff-. |
+  e8-. d-. c-. a-. g4-. r \mark\default \barNumberCheck \RhXLI |
+  R1 * 4 \mbreak |
+  r4 d'-.\f e-. fs-. |
+  g-- d8-. e-. e-.[ fs-.] fs-. g-. |
+  g4-- g8-. a-. g4-- g8-. a-. |
+  g4-- g8-. a-. bf-. a-. g4--|
+  f-. r r2 |
+  R1*5 \mpbreak |
+}
 
