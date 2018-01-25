@@ -285,5 +285,82 @@ ObTwoIII=\relative c'{
   \time 3/2 g8)[^\markup{\italic "legg."} r16 g32( fs] g4--)~ g16 fs-. g-. fs-. g4--( gf16) f-. gf-. f-. gf4--~ |
   gf16\semprePP[ gf32( f) gf8~]-- gf16[ f-. gf8--(] f16)[ e-. f-. e-.] f16-.[  df'32( c d8-.)] r16 d32( c d16) c-. c-. b-. c8-. |
   R1. \mark\default \barNumberCheck \RhLIV \mpbreak \bar "||"
+  \time 4/4 R1 * 4 | R1 * 4 \mark\default \barNumberCheck \RhLV |
+  R1 * 9 \barNumberCheck \RhLVI \mark\default |
+  \cueWhile "OboeOneIII" "Ob.I" #UP
+  {R1 * 4 \mbreak r8.}
+  ef16\pp-. ef8-.[ r16 ef-.] ef8-. r r4 |
+  r8. ef16-. ef8-.[ r16 ef-.] ef8-. r r4 |
+  r8. c16-. c8-.[ r16 c-.] c8-. r r4 |
+  r8. b16-. c8-.[ r16 b-.] c8-. r r4 \mark\default \barNumberCheck \RhLVII |
+  R1 * 6 \mark\default \barNumberCheck \RhLVIII \mbreak |
+  R1 |
+  \cueWhile "OboeOneIII" "Ob.I" #UP
+  {R1 * 2} |
+  R1 * 8 \mark\default \barNumberCheck \RhLIX \bar "||"
+  \time 2/2 R1 * 4 |
+  c4.--\p b8-. c4.-- b8-. |
+  c4-- c8-. b8-. c4-. c-. |
+  bf2.-- a4-. \mbreak |
+  bf1--|
+  R1 * 4 |
+  r4 c-.\p c-. g-.\mark\default \barNumberCheck \RhLX |
+  g-. \tuplet 3/2 {g'8-.\mf f-. g-.} g4--(\> d~\! |
+  d) \tuplet 3/2 {f8-. ef-. f-.} f4--(\> c\!~ |
+  c) r r2 |
+  r4 \tuplet 3/2 {df8(\mf c df)} df4--\>( c-.)\! \mbreak |
+  c-. \tuplet 3/2 {cf8\mf( bf cf)} cf4--(\> bf-.)\! |
+  bf-. r r2 |
+  R1 | R1 * 7 |
+  r2 r4 b-.\pp \mark\default \barNumberCheck \RhLXI |
+  c4.-- b8-. c4.-- b8-. |
+  c4-- c8-. b-. c4-. c-. \mbreak |
+  bf-. r r2 |
+  R1 |
+  bf4.--\p a8-. bf4.-- a8-. |
+  bf4-- bf8-. a-. bf4-. bf-. |
+  af-. r r2 |
+  R1 * 4 |
+  r2 r4 bf-.\pp |
+  a-. g-. f-. g-.\f \mbreak |
+  g8-. g-. g-. g-. g4-. r \mark\default \barNumberCheck \RhLXII |
+  R1 * 2 |
+  r4 d'-.\pp d-. c-. |
+  bf-. r r2 |
+  R1 * 10 \mark\default \barNumberCheck \RhLXIII |
+  g'4.--\f d8-. g4.-- d8-.|
+  g4.-- d8-. g4.-- d8-. |
+  g4-- g8-. d-. g4-- g8-. d-. \mbreak |
+  g-. d-. g-. d-. g4-> r \bar "||"
+  \key d \minor R1 * 3 |
+  b,4\f-. e,-. r2 |
+  R1 * 3 |
+  r2 r4 \tuplet 3/2 {af8-.\f af-. f-.}
+  bf2.-- \tuplet 3/2 {c8-. c-. a-.} |
+  d2.-- ef4-. \mbreak |
+  \tuplet 3/2 {f8-. f-. d-.} g2-- \tuplet 3/2 {gs8-. gs-. d-.} |
+  a'4->\ff r cs,-> r \mark\default \barNumberCheck \RhLXIV |
+  d-> r r2 |
+  R1 * 3 | R1 * 8 \mark\default \barNumberCheck \RhLXV |
+  R1 * 10 |
+  \tuplet 3/2 {r8 a\mf a} d4--~ d8 a-. e'-. a,-. \mark\default \barNumberCheck \RhLXVI \mbreak |
+  d4-. r r2 | R1 * 11 | R1 * 6 \mark\default \barNumberCheck \RhLXVII |
+  R1 * 5 |
+  \cueWhile "OboeOneIII" "Ob.I" #UP
+  {R1 * 3} \mbreak |
+  fs,8-.\mf g-. g-. a-. a-.\< bf-. bf-. c-. |
+  bf-.\f a-. a-. bf-. bf-. r r4 |
+  r2 c8-.\dim c-. c-. c-.  |
+  bf-. bf-. bf-. bf-. bf-. bf-. bf-. bf-. |
+  a-.\! r r4 r2 \mark\default \barNumberCheck \RhLXVIII |
+  R1 * 7 \mbreak |
+  bf1--~\f\> |
+  bf4\p r r2 |
+  r2 bf4.--\p bf8 | 
+  bf4.--\cresc bf8 bf4.-- bf8 |
+  bf4.-- bf8 d4\sff r \mark\default \barNumberCheck \RhLXIX \bar "||"
+  R1 * 16 \mark\default \barNumberCheck \RhLXX |
+  R1 * 8 \mark\default \barNumberCheck \RhLXXI \mpbreak |
+
 }
 
