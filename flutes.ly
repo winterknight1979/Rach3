@@ -23,6 +23,14 @@
   \addQuote "FluteOneIII" {\keepWithTag #'quote \FlOneIII}
 \include "include/fl2.ily"
 
+\include "include/ob1.ily"
+\include "include/ob2.ily"
+  \addQuote "OboeOneI" {\keepWithTag #'quote \ObOneI}
+  \addQuote "OboeOneII" {\keepWithTag #'quote \ObOneII}
+  \addQuote "OboeOneIII" {\keepWithTag #'quote \ObOneIII}
+  
+  \addQuote "OboesIII" {\keepWithTag #'quote <<\ObOneIII \ObTwoIII>>}
+
 \paper{ 
   #(layout-set-staff-size 19)
   system-system-spacing = #'((basic-distance . 18)

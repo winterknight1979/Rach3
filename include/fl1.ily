@@ -10,11 +10,11 @@ FlOneI=\relative c'{
   \time 4/4 R1 \mbreak |
   R1 * 11 \mark\default \barNumberCheck\RhII|
   R1 * 6 |
-  % \cueDuring #"OboeOne" #UP
+  \cueWhile "OboeOneI" "Ob.I" #UP
   {R1 * 2 }
   R1 * 6 |
   R1 * 2 | 
-  % \cueDuring #"OboeOne" #UP
+  \cueWhile "OboeOneI" "Ob.I" #UP
   {R1 * 2 \mark\default \barNumberCheck\RhIII \mbreak | R1 } |
   R1 |
   r4 r8 d''4(\p c b8~ | b bf a4~ a8\dim g fs4~ | fs8 g)\! r4 r2 |
@@ -22,15 +22,15 @@ FlOneI=\relative c'{
   R1 \mbreak \bar "||"
   \time 2/4 R2 \mark\default \barNumberCheck\RhIV \bar "||"
   \time 4/4 R1 |
-  % \cueDuring #"OboeOne" #UP
+  \cueWhile "OboeOneI" "Ob.I" #UP
     {R1 | r4 r16 }
   e16\ppLeg( gs a b f g gs a8) r |
   R1 * 5 |
   \tag #'score \cadenzaIa
   R1\fermataMarkup_"Cadenza" \mbreak 
   \tempo "Moderato" R1 * 2 |
-  % \cueDuring #"OboeOne" #UP
-  {R1 * 4 | \time 3/2  r2 }
+  \cueWhile "OboeOneI" "Ob.I" #UP
+ {R1 * 4 | \time 3/2  r2 }
   \tuplet 3/2 4 {r8 c,\f( ef a[ c ef]} g4. f8 \mark\default \barNumberCheck\RhV |
   \time 4/4  f,) r r4 r2 |
   R1 * 2 \mbreak |
@@ -46,16 +46,16 @@ FlOneI=\relative c'{
   R1 |
   R1 * 4 \mark\default \barNumberCheck \RhIX |
   R1 * 2 |
-  % \cueDuring #"OboeOne" #UP
-    {R1 * 2}
+  \cueWhile "OboeOneI" "Ob.I" #UP
+   {R1 * 2}
   % \cueDuring #"ClarOne" #DOWN
     {R1 | R1 } \mbreak |
   R1 * 6 |
   R1 * 6 \mark\default \barNumberCheck\RhX|
   R1 * 2 |
   R1 * 3 |
-  % \cueDuring #"OboeOne" #UP
-    {R1} |
+  \cueWhile "OboeOneI" "Ob.I" #UP
+   {R1} |
   f'2(\pp e | ef d df1) \mbreak |
   c2( cf \mark\default \barNumberCheck \RhXI | b) r |
  R1 * 7 \bar "||"
@@ -75,8 +75,8 @@ FlOneI=\relative c'{
   r2 r4 r8 b-.[\pp | a-. gs-.] r4 r r8 b-.[ | a-. gs-.] r4 r2 | R1 |
   R1 * 10 \mark\default \barNumberCheck \RhXIV | 
   R1 * 6 |
- % \cueDuring #"OboeOne" #UP
-  {R1 | r2 r4 }
+  \cueWhile "OboeOneI" "Ob.I" #UP
+ {R1 | r2 r4 }
   r8 f-.\f \mbreak |
   f4.-- f8-. f4-- f8-. f-. | f4.-- f8-. f4.-- r8 |
   R1 * 5 |
@@ -163,8 +163,8 @@ FlOneII = \relative c'{
   R2. * 9 \mark\default \barNumberCheck \RhXXIX |
   R2. * 8 \mark\default \barNumberCheck \RhXXX|
   R2. * 8 |
-  %\cueDuring  #"OboeOne" #UP
-  {R2. \mark\default \barNumberCheck \RhXXXI | R2. * 3 \mbreak | R2. } |
+  \cueWhile "OboeOneII" "Ob.I" #UP
+ {R2. \mark\default \barNumberCheck \RhXXXI | R2. * 3 \mbreak | R2. } |
   R2. * 7 \mark\default \barNumberCheck \RhXXXII | 
   %\cueDuring  #"ViolOne" #UP
   {R2. * 4 \bar "||"
@@ -209,8 +209,8 @@ FlOneIII = \relative c' {
   {R1 * 2 | r2 r4} a-.\f |
   g8-. f-. e-. d-. c4-. b-. \mark\default \barNumberCheck \RhXLI \mbreak |
   a-> r r2 | R1 * 13 |
-  %\cueDuring #"OboeOne" #UP
-  {R1 * 2 | r4 }
+  \cueWhile "OboesIII" "Ob." #UP
+ {R1 * 2 | r4 }
   e''8-.\f e,-. a4-- e'8-. e,-. |
   a-.[ e'-.] a,-.[ e'-.] a,4-. r \mark\default \barNumberCheck \RhXLII |
   R1 * 2 \mbreak |
@@ -234,8 +234,8 @@ FlOneIII = \relative c' {
   R1 |
   R1 * 5 \mark\default \barNumberCheck \RhXLVI |
   R1 * 5 |
-  %\cueDuring #"OboeOne #UP
-  {R1 * 3 } \mbreak |
+  \cueWhile "OboesIII" "Ob." #UP
+ {R1 * 3 } \mbreak |
   \tuplet 3/2 {g8\<( b d} g4)\ff->~ \tuplet 3/2 4 {g d8( fs8[ d b])} |
   \tuplet 3/2 4 {e4-> b8( d[-> b g)] c4-> g8( b[ fs d]) |
   g4-. d8-.} g4->~ \tuplet 3/2 {g d8(} f4)-> |
@@ -257,8 +257,8 @@ FlOneIII = \relative c' {
   R1 * 2 \mbreak \bar "||"
   \time 3/2 R1. * 2 \bar "||"
   \time 4/4 
-  %\cueDuring #"OboeOne" #UP
-  {R1 * 2 | R1 | r2 }
+  \cueWhile "OboeOneIII" "Ob.I" #UP
+ {R1 * 2 | R1 | r2 }
   r8^"Solo" a'16\p-. bf-. \tuplet 3/2 {cf-. c-. cs-.} d8-. \mark\default \barNumberCheck \RhLIII \mpbreak |
   \acciaccatura{fs} g8-.[\ppLeg r16 fs]-. g8-.[ r16 fs-.] g8-.[ r16 g32( fs] g16) bf-. cf-. fs,-. |
   g16-. g32( fs g8--)~ g16 fs-. g-. fs-. g-. g32( fs g8--)~ g r16 d-. \mbreak |
@@ -279,16 +279,16 @@ FlOneIII = \relative c' {
   g'4\mf^"Solo"( ef c | bf) r r2 |
   R1 * 9 \mark\default \barNumberCheck \RhLIX \mbreak \bar "||"
   \time 2/2 R1 * 12 |
-  %\cueDuring #"OboeOne" #UP
-  {R1} \mark\default \barNumberCheck \RhLX |
+  \cueWhile "OboesIII" "Ob." #UP
+ {R1} \mark\default \barNumberCheck \RhLX |
   r4 \tuplet 3/2 {bf8-.\mf af-. bf-.} bf4--(\> af)\!|
   r4 \tuplet 3/2 {af8-.\mf gf-. af-.} af4--(\> g)\! | R1 \mbreak |
   r2 r4 \tuplet 3/2 {c8-.->\mf c,-. c-.} |
   r2 r4 \tuplet 3/2 {bf'8-.->\mf bf,-. bf-.} | R1 * 2 |
   R1 * 8 \mark\default \barNumberCheck \RhLXI |
   R1 * 11 |
-  %\cueDuring #"OboeOne" #DOWN
-  {R1 | r2 r4 } g'-.\f \mbreak |
+  \cueWhile "OboesIII" "Ob." #UP
+ {R1 | r2 r4 } g'-.\f \mbreak |
   f8-. ef-. d-. c-. bf4-. r \mark\default \barNumberCheck \RhLXII |
   R1 * 3 |
   r4 d'-.\pp d-. c-. | c-. bf-. a-. g-. | f-. r r2 |
@@ -318,8 +318,8 @@ FlOneIII = \relative c' {
   bf\dim a f} a4--~ \tuplet 3/2 {a8 e c} e4-.)\! | R1 \mbreak |
   R1 * 6 \mark\default \barNumberCheck \RhLXVII|
   R1 * 5 |
-  %\cueDuring #"OboeOne" #UP
-  {R1 * 3 } |
+  \cueWhile "OboeOneIII" "Ob.I" #UP
+ {R1 * 3 } |
   fs8-.\mf g-. g-. a-.\< a-. bf-. bf-. c-. \mbreak |
   bf-.\f a-. a-. bf-. 
   \set decrescendoText = \markup {\italic {poco a poco dim.}}
@@ -332,14 +332,14 @@ FlOneIII = \relative c' {
   \unset decrescendoSpanner
   R1 * 8 \mbreak |
   R1 |
-  %\cueDuring #"OboeOne" #UP
-  {R1 | r2 r4}
+  \cueWhile "OboeOneIII" "Ob.I" #UP
+ {R1 | r2 r4}
   r8 g( | a\< b cs f a4)\sff r \mark\default \barNumberCheck \RhLXIX \bar "||"
   R1 * 16 \mark\default \barNumberCheck \RhLXX |
   R1 * 8 \mark\default \barNumberCheck \RhLXXI \mbreak |
   R1 * 8 |
-  %\cueDuring #"OboeOne" #DOWN
-  {R1 * 2 \mark\default \barNumberCheck \RhLXXII | R1 }|
+  \cueWhile "OboesIII" "Ob." #DOWN
+ {R1 * 2 \mark\default \barNumberCheck \RhLXXII | R1 }|
   r2 \repeat tremolo 4 {bf,16->\f\>( a} | bf4-.)\p r r2 |
   r2 \repeat tremolo 4 {bf16->\>( a} \mbreak  bf4\!-.) r r2 |
   r2 \repeat tremolo 4 {df16->\>( c} df4-.)\! r r2 |
@@ -360,8 +360,8 @@ FlOneIII = \relative c' {
   \time 3/2 R1. * 2 |
   \time 2/2 R1 * 2 |
   R1 * 4 \mark\default \mark\default \barNumberCheck \RhLXXV |
-  %\cueDuring #"OboeOne" #UP
-  {R1 * 4} \mbreak |
+  \cueWhile "OboeOneIII" "Ob.I" #UP
+ {R1 * 4} \mbreak |
   fs,1\f( |
   g)~ | g~ | g |
   fs(\( | a)~ | a\cresc | bf\) \mbreak |

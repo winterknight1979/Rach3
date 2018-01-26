@@ -21,8 +21,8 @@ oboes: oboes.a4.pdf oboes.letter.pdf
 
 score.a4.pdf: score.ly ${SCOREFILES}
 score.letter.pdf: score.ly ${SCOREFILES}
-flutes.a4.pdf: flutes.ly ${HEADERS} ${FLUTEFILES}
-flutes.letter.pdf: flutes.ly ${HEADERS} ${FLUTEFILES}
+flutes.a4.pdf: flutes.ly ${HEADERS} ${FLUTEFILES} ${OBOEFILES}
+flutes.letter.pdf: flutes.ly ${HEADERS} ${FLUTEFILES} ${OBOEFILES}
 oboes.a4.pdf: oboes.ly ${HEADERS} ${OBOEFILES} ${FLUTEFILES}
 oboes.letter.pdf: oboes.ly ${HEADERS} ${OBOEFILES} ${FLUTEFILES}
 
