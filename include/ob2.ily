@@ -361,6 +361,77 @@ ObTwoIII=\relative c'{
   bf4.-- bf8 d4\sff r \mark\default \barNumberCheck \RhLXIX \bar "||"
   R1 * 16 \mark\default \barNumberCheck \RhLXX |
   R1 * 8 \mark\default \barNumberCheck \RhLXXI \mpbreak |
-
+  R1 * 8 |
+  f,4\p-. r f-. r |
+  fs-. r g-. r \mark\default \barNumberCheck \RhLXXII |
+  g-. r r2 \bar "||"
+ <>^\markup\smaller{(\note #"2." #1 "=" \note #"2" #1 )} 
+  \once \override Staff.TimeSignature.stencil = #(lambda (grob)
+    (parenthesize-stencil (ly:time-signature::print grob) 0.1 0.4 0.4 0.1 ))
+  \set Staff.timeSignatureFraction = 6/4
+  \scaleDurations 2/3 {
+  r4 r cs8\p\<( d\! ef4)-. r r | R1. \mbreak |
+  r4 r cs8(\< d\! ef4-.) r r | R1. |
+  r4 r e8(\< f\! gf4->) r r | R1. |
+  r4 r e8(\< f\! gf4->) r r |
+}
+  \unset Staff.timeSignatureFraction
+  \once \override Staff.TimeSignature.stencil = #(lambda (grob)
+    (parenthesize-stencil (ly:time-signature::print grob) 0.1 0.4 0.4 0.1 ))
+  \time 2/2 R1 * 4 \mark\default \barNumberCheck \RhLXXIII \mbreak \bar "||"
+  \key b \minor
+  cs,2--\f d-- |
+  cs-- d-- |
+  cs--\cresc d-- |
+  cs-- d-- |
+  cs4-.\ff d-. cs-. d-. |
+  cs-. f-. cs-. d-. |
+  cs-. r cs,2--~ |
+  cs cs--~ \mbreak |
+  cs4 cs2-- g'4--~ |
+  g g-. cs-. cs-. |
+  cs-.\sff r r2\fermata_"Cadenza"
+  \tag #'score \cadenzaIIIa 
+  \mark\default \barNumberCheck \RhLXXIV \bar "||"
+  R1 * 4 |
+  d,1\p( | fs\cresc | a | d)\mbreak |
+  \time 3/2 d1.--\f |
+  d1( cs2--\> <>\! |
+  \time 2/2 d) r | R1 | R1 * 4 \mark\default \barNumberCheck \RhLXXV |
+  d,1\p( | fs\cresc | a | d) \mbreak |
+  d,\f( | e | bf') |
+  a~ | a( | c | b)\cresc |
+  d( | cs | c) \mark\default \barNumberCheck \RhLXXVI \mbreak |
+  b\< | ds\! | e\ff\< cs\! |
+  cs--\>( |
+  c2\! b) |
+  b( as |
+  b4) r r2 |
+  R1 * 2 \mark\default \barNumberCheck \RhLXXVII \mbreak |
+  d1\f~( | d2 cs) |
+  c( b\dim | bf\( as\) | b4)\p r r2 |
+  fs'1_\markup{\italic "cresc."}\<( |
+  g--\ff~ | g4 a2\> g4\! \mark\default \barNumberCheck \RhLXXVIII \mbreak |
+  fs) r8 cs\f d4.-- a8-. |
+  b4.-- e8-. fs4.-- cs8-. |
+  d4-.\cresc g4.-- ds8-. e4--~ |
+  e8 a,-.\< b-. cs-. d-. e-.\! g4-. |
+  fs-.\ff a,8-.\mf a-. bf4-- bf8-. bf-. \mbreak |
+  cs4-- cs8-. cs-. af4-- af8-. af-. |
+  bf4-- bf8-. bf-. fs4-- fs8-. fs-. |
+  g2.\f-> a4-. \mark\default \barNumberCheck \RhLXXIX |
+  fs-. r bf-.\fMarc b-. |
+  c-. r af-. a-. \mbreak |
+  bf-. r fs-. g-. |
+  bf-. d-. g-. a-.-> |
+  d,-> r r2 |
+  fs4\ff r r2 |
+  fs4 r fs r |
+  r2 fs4 r \mbreak |
+  r fs,2-- a4--~ |
+  a d2-- fs4--~ |
+  fs fs-. fs-. e-. |
+  fs\sff r g\sff r |
+  fs\sff r r2 | R1 \barNumberCheck \EndMIII \bar "|."
 }
 
