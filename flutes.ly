@@ -28,7 +28,7 @@
   \addQuote "OboeOneI" {\keepWithTag #'quote \ObOneI}
   \addQuote "OboeOneII" {\keepWithTag #'quote \ObOneII}
   \addQuote "OboeOneIII" {\keepWithTag #'quote \ObOneIII}
-  
+  \addQuote "OboeTwoIII" {\keepWithTag #'quote \ObTwoIII}
   \addQuote "OboesIII" {\keepWithTag #'quote <<\ObOneIII \ObTwoIII>>}
 
 \paper{ 

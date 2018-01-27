@@ -209,7 +209,7 @@ FlOneIII = \relative c' {
   {R1 * 2 | r2 r4} a-.\f |
   g8-. f-. e-. d-. c4-. b-. \mark\default \barNumberCheck \RhXLI \mbreak |
   a-> r r2 | R1 * 13 |
-  \cueWhile "OboesIII" "Ob." #UP
+  \cueWhile "OboeOneIII" "Ob." #UP
  {R1 * 2 | r4 }
   e''8-.\f e,-. a4-- e'8-. e,-. |
   a-.[ e'-.] a,-.[ e'-.] a,4-. r \mark\default \barNumberCheck \RhXLII |
