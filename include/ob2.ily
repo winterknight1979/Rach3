@@ -20,8 +20,8 @@ ObTwoI=\relative c' {
   a'4(\< c2\mf\> b4\! \bar "||"
   \time 2/4 c)\pp r \mark\default \barNumberCheck \RhIV \bar "||"
   \time 4/4 R1 * 8 |
-  R1\fermataMarkup_"Cadenza"
-  \tag #'score \cadenzaIa \mbreak |
+  R1^\fermataMarkup_"Cadenza"
+  \tag #'score {\cadenzaIa} \mbreak |
   %cue bsn
   {R1 * 2| r4}
   g2\mf g4--~ |

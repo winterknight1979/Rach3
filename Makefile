@@ -7,7 +7,7 @@ OBOEFILES=include/ob1.ily include/ob2.ily
 CLARFILES=include/cl1.ily include/cl2.ily
 SCOREFILES=${HEADERS} ${FLUTEFILES} ${OBOEFILES} ${CLARFILES}
 
-all: flutes oboes score Rach3.mid
+all: flutes oboes clarinets score Rach3.mid
 
 score: score.a4.pdf score.letter.pdf
 flutes: flutes.a4.pdf flutes.letter.pdf

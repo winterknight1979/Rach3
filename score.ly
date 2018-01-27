@@ -30,7 +30,7 @@
     }
   }
 }
-
+%showFirstLength=R1*3 
      \score{
  
     \keepWithTag #'score \killCues <<
@@ -56,12 +56,12 @@
     >>
         \header{piece=\markup\huge "I"}
       }
-      %\markup{\pageBreak}
-     \score{
+%      \markup{\pageBreak}
+           \score{
  
        \keepWithTag #'score \killCues <<
          \new Devnull \conductorII
-          \new StaffGroup <<
+         \new StaffGroup <<
           \new Staff  \with
             { instrumentName = #"2 Flauti"
             shortInstrumentName = #"Fl."}
@@ -73,11 +73,11 @@
           {\partcombine \ObOneII \ObTwoII}
 
 
-        >>
-      >>
+       >>
+     >>
         \header{piece=\markup\huge "II Intermezzo"}
       }
-      %\markup{\pageBreak}
+%      \markup{\pageBreak}
      \score{
  
        \keepWithTag #'score \killCues <<
@@ -99,7 +99,7 @@
       }
       \layout {
         \context{
-       %   \Staff \RemoveEmptyStaves
+          \Staff \RemoveEmptyStaves
         }
       }
     

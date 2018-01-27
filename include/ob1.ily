@@ -35,8 +35,8 @@ ObOneI=\relative c' {
   r4 r8 a16-.\mf a-. a8-. e'-. f-. b,-. | cs-. e-. a4-- r2 \mbreak |
   r4 r16 cs,\ppLeg( d e f gs, a bf b8) r |
   R1 * 4 |
-  R1\fermataMarkup_"Cadenza"
-  \tag #'score \cadenzaIa |
+  R1^\fermataMarkup_"Cadenza"
+  \tag #'score {\cadenzaIa}|
   %cue bassoon
   {R1 * 2 | r4 }
   a2\mf( b4)~ |

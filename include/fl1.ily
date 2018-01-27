@@ -26,8 +26,8 @@ FlOneI=\relative c'{
     {R1 | r4 r16 }
   e16\ppLeg( gs a b f g gs a8) r |
   R1 * 5 |
-  \tag #'score \cadenzaIa
-  R1\fermataMarkup_"Cadenza" \mbreak 
+ R1^\fermataMarkup_"Cadenza"
+   \tag #'score \cadenzaIa \mbreak 
   R1 * 2 |
   \cueWhile "OboeOneI" "Ob.I" #UP
   {R1 * 4 | \time 3/2  r2}

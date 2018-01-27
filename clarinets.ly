@@ -8,6 +8,7 @@
 
 \include "include/cl1.ily"
 \include "include/cl2.ily"
+  \addQuote "ClarOneI" {\keepWithTag #'quote \ClOneI}
 
 \include "include/ob1.ily" 
    \addQuote "OboeOneI" {\keepWithTag #'quote \ObOneI}
@@ -69,7 +70,7 @@
 
     \bookpart {
       \header {
-         instrument = "Oboe II"
+         instrument = "Clarinetto II"
       }
       \score{
  
