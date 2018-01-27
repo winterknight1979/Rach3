@@ -4,14 +4,15 @@ LOG=WARN
 HEADERS= include/conductor.ily include/dynamics.ily include/functions.ily include/macros.ily
 FLUTEFILES=include/fl1.ily include/fl2.ily
 OBOEFILES=include/ob1.ily include/ob2.ily
-SCOREFILES=${HEADERS} ${FLUTEFILES}
+CLARFILES=include/cl1.ily include/cl2.ily
+SCOREFILES=${HEADERS} ${FLUTEFILES} ${OBOEFILES} ${CLARFILES}
 
 all: flutes oboes score Rach3.mid
 
 score: score.a4.pdf score.letter.pdf
 flutes: flutes.a4.pdf flutes.letter.pdf
 oboes: oboes.a4.pdf oboes.letter.pdf
-
+clarinets: clarinets.a4.pdf clarinets.letter.pdf
 
 %.mid: %.ly
 	${LILY} -dmidi-extension=mid -s $< 2>&1 | tee $*.mid.log
@@ -28,6 +29,9 @@ flutes.a4.pdf: flutes.ly ${HEADERS} ${FLUTEFILES} ${OBOEFILES}
 flutes.letter.pdf: flutes.ly ${HEADERS} ${FLUTEFILES} ${OBOEFILES}
 oboes.a4.pdf: oboes.ly ${HEADERS} ${OBOEFILES} ${FLUTEFILES}
 oboes.letter.pdf: oboes.ly ${HEADERS} ${OBOEFILES} ${FLUTEFILES}
+clarinets.a4.pdf: clarinets.ly ${HEADERS} ${CLARFILES}
+clarinets.letter.pdf: clarinets.ly ${HEADERS} ${CLARFILES}
+
 
 Rach3.mid: Rach3.ly ${SCOREFILES}
 
