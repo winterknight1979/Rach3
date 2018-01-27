@@ -10,7 +10,8 @@
 
 \include "include/fl1.ily"
 \include "include/fl2.ily"
-
+\include "include/ob1.ily"
+\include "include/ob2.ily"
 
 \paper {
   #(layout-set-staff-size 15)
@@ -32,11 +33,19 @@
  
     \keepWithTag #'score \killCues <<
       \new Devnull \conductorI
-      \new Staff \with
-      { instrumentName = #"2 Flauti"
-        shortInstrumentName = #"Fl."}
-        {\partcombine \FlOneI \FlTwoI}
-      >>
+      \new StaffGroup <<
+        \new Staff \with
+        { instrumentName = #"2 Flauti"
+          shortInstrumentName = #"Fl."}
+          {\partcombine \FlOneI \FlTwoI}
+        
+        \new Staff \with
+        { instrumentName = #"2 Oboi"
+          shortInstrumentName = #"Ob."}
+          {\partcombine \ObOneI \ObTwoI}
+        >>
+
+    >>
         \header{piece=\markup\huge "I"}
       }
       %\markup{\pageBreak}
@@ -44,10 +53,19 @@
  
        \keepWithTag #'score \killCues <<
          \new Devnull \conductorII
-         \new Staff  \with
-      { instrumentName = #"2 Flauti"
-        shortInstrumentName = #"Fl."}
-        {\partcombine \FlOneII \FlTwoII}
+          \new StaffGroup <<
+          \new Staff  \with
+            { instrumentName = #"2 Flauti"
+            shortInstrumentName = #"Fl."}
+            {\partcombine \FlOneII \FlTwoII}
+          
+          \new Staff  \with
+            { instrumentName = #"2 Oboi"
+          shortInstrumentName = #"Ob."}
+          {\partcombine \ObOneII \ObTwoII}
+
+
+        >>
       >>
         \header{piece=\markup\huge "II Intermezzo"}
       }
@@ -56,11 +74,19 @@
  
        \keepWithTag #'score \killCues <<
          \new Devnull \conductorIII
-         \new Staff  \with
-      { instrumentName = #"2 Flauti"
-        shortInstrumentName = #"Fl."}
-        {\partcombine \FlOneIII \FlTwoIII}
-      >>
+         \new StaffGroup <<
+            \new Staff  \with
+              { instrumentName = #"2 Flauti"
+              shortInstrumentName = #"Fl."}
+              {\partcombine \FlOneIII \FlTwoIII}
+ 
+            \new Staff  \with
+              { instrumentName = #"2 Oboi"
+              shortInstrumentName = #"Ob."}
+              {\partcombine \ObOneIII \ObTwoIII}
+      
+            >>
+          >>
         \header{piece=\markup\huge "III Finale"}
       }
       \layout {
