@@ -59,7 +59,15 @@ conductorI={
   \tempo\markup{\italic "poco a poco ritenuto"} 2=70 s1 * 12 | s1 
   \tag #'score \cadenzaIb \mark\default \barNumberCheck \RhXIX \bar "||"
 
-  \time 4/4 \tempo "Meno mosso" 4=150 s1 * 12 s2 \tempo\markup{\italic "rit."} s2 s1
+  \time 4/4  \tempo\markup {
+    \concat {
+      "Meno mosso ("
+        \smaller \general-align #Y #DOWN \note #"2" #1
+        " = "
+        \smaller \general-align #Y #DOWN \note #"4" #1
+      )
+    }
+  } 4=150 s1 * 12 s2 \tempo\markup{\italic "rit."} 4=145 s2 s1
   \tag #'score \cadenzaIc
   \mark\default \barNumberCheck \RhXX \bar "|"
 
@@ -180,7 +188,7 @@ conductorIII = {
 
     s1 * 8 \tempo "Allegro molto" 2=80 s1 * 4 \mark\default \barNumberCheck \RhXLVII
 
-    s1 * 12 \tempo\markup{\italic "rit."} 2=76 s1 * 4 \bar "||"
+    s1 * 2 \tempo\markup{\italic "poco a poco rit."} 2=78 s1 * 10 \tempo\markup{\italic "rit."} 2=76 s1 * 4 \bar "||"
     \time 4/4
     \tempo \markup {
       \concat {
@@ -239,13 +247,13 @@ conductorIII = {
 
     s1 * 4 \bar "||"
 
-    s1 * 12 \barNumberCheck \RhLXIV
+    s1 * 12 \mark\default \barNumberCheck \RhLXIV
 
-    s1 * 4 \tempo "Più mosso" 2=80 s1 * 8 \barNumberCheck \RhLXV
+    s1 * 4 \tempo "Più mosso" 2=80 s1 * 8 \mark\default \barNumberCheck \RhLXV
 
-    s1 * 11 \barNumberCheck \RhLXVI
+    s1 * 11 \mark\default \barNumberCheck \RhLXVI
 
-    s1 * 12 \tempo "Più vivo" 2=84 s1 * 6 \barNumberCheck \RhLXVII
+    s1 * 12 \tempo "Più vivo" 2=84 s1 * 6 \mark\default \barNumberCheck \RhLXVII
 
     s1 * 13 \mark\default \barNumberCheck \RhLXVIII
 
@@ -268,7 +276,7 @@ conductorIII = {
     \tempo "Tempo precedente" 2=92 s1 * 4 \mark\default \barNumberCheck \RhLXXV
 
     \tempo "Un poco meno mosso" 2=88 s1 * 4
-    \tempo \markup{\italic "poco a poco accel."} 2=90 s1 * 10 \barNumberCheck \RhLXXVI
+    \tempo \markup{\italic "poco a poco accel."} 2=90 s1 * 10 \mark\default \barNumberCheck \RhLXXVI
 
     s1 \tempo \markup{\italic "allarg."} 2=84 s1 * 4
     \tempo\markup{\italic "accel."} 2=86 s1 * 3 

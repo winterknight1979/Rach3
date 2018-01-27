@@ -1,14 +1,3 @@
-%cues:
-%Oboe I
-%Oboe II
-%Clar. I
-%Bsn. II
-%Hrn I
-%Viol. I
-%Viol. II
-%Viola
-%Piano
-
 \version "2.18.2"
 \language "english"
 
@@ -17,19 +6,20 @@
 \include "include/functions.ily"
 \include "include/conductor.ily"
 
-\include "include/fl1.ily" 
+\include "include/ob1.ily" 
+   \addQuote "OboeOneI" {\keepWithTag #'quote \ObOneI}
+   \addQuote "OboeOneII" {\keepWithTag #'quote \ObOneII}
+   \addQuote "OboeOneIII" {\keepWithTag #'quote \ObOneIII}
+
+\include "include/ob2.ily"
+
+%cues
+\include "include/fl1.ily"
+\include "include/fl2.ily"
   \addQuote "FluteOneI" {\keepWithTag #'quote \FlOneI}
   \addQuote "FluteOneII" {\keepWithTag #'quote \FlOneII}
   \addQuote "FluteOneIII" {\keepWithTag #'quote \FlOneIII}
-\include "include/fl2.ily"
-
-\include "include/ob1.ily"
-\include "include/ob2.ily"
-  \addQuote "OboeOneI" {\keepWithTag #'quote \ObOneI}
-  \addQuote "OboeOneII" {\keepWithTag #'quote \ObOneII}
-  \addQuote "OboeOneIII" {\keepWithTag #'quote \ObOneIII}
-  \addQuote "OboeTwoIII" {\keepWithTag #'quote \ObTwoIII}
-  \addQuote "OboesIII" {\keepWithTag #'quote <<\ObOneIII \ObTwoIII>>}
+  \addQuote "FlutesI" {\keepWithTag #'quote <<{\FlOneI}{\FlTwoI}>>} 
 
 \paper{ 
   #(layout-set-staff-size 19)
@@ -47,13 +37,13 @@
 \book {
     \bookpart {
       \header {
-         instrument = "Flauto I"
+         instrument = "Oboe I"
       }
       \score{
  
       \keepWithTag #'part \new Staff 
         \with {\consists "Page_turn_engraver"} 
-        <<\FlOneI \conductorI>>
+        <<\ObOneI \conductorI>>
         \header{piece=\markup\huge "I"}
       }
 
@@ -61,7 +51,7 @@
       \score{
        \keepWithTag #'part \new Staff 
         \with {\consists "Page_turn_engraver"} 
-        <<\FlOneII \conductorII>>
+        <<\ObOneII \conductorII>>
         \header{piece=\markup\huge "II Intermezzo"}
       }
 
@@ -69,20 +59,20 @@
       \score{
          \keepWithTag #'part \new Staff 
          \with{\consists "Page_turn_engraver"} 
-        <<\FlOneIII \conductorIII>>
+        <<\ObOneIII \conductorIII>>
         \header{piece=\markup\huge "III Finale"}
       }
     }
 
     \bookpart {
       \header {
-         instrument = "Flauto II"
+         instrument = "Oboe II"
       }
       \score{
  
       \keepWithTag #'part \new Staff
       \with {\consists "Page_turn_engraver"} 
-      << \FlTwoI \conductorI >>
+      << \ObTwoI \conductorI >>
         \header{piece=\markup\huge "I"}
       }
 
@@ -90,7 +80,7 @@
       \score{
          \keepWithTag #'part \new Staff 
          \with {\consists "Page_turn_engraver"} 
-         <<\FlTwoII \conductorII>>
+         <<\ObTwoII \conductorII>>
         \header{piece=\markup\huge "II Intermezzo"}
       }
 
@@ -98,7 +88,7 @@
       \score{
          \keepWithTag #'part \new Staff 
          \with{\consists "Page_turn_engraver"} 
-         <<\FlTwoIII \conductorIII>>
+         <<\ObTwoIII \conductorIII>>
         \header{piece=\markup\huge "III Finale"}
       }
     }  

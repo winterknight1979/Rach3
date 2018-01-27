@@ -13,8 +13,8 @@ FlTwoI=\relative c'{
   \time 2/4 R2 \bar "||"
   \time 4/4 R1 \mbreak |
   R1 * 11 \mark\default \barNumberCheck \RhII |
-  R1 * 6 | 
-  %\cueDuring #"OboeOne" #UP
+  R1 * 6 |
+  \cueWhile "OboeOneI" "Ob.I" #UP
   {R1 * 2} |
   R1 * 6 |
   R1 * 4 \mark\default \barNumberCheck \RhIII |
@@ -34,11 +34,11 @@ FlTwoI=\relative c'{
   \mbreak |
    R1 * 6 |
   \time 3/2 
-  <<
-  \tag #'part \cueWhile "FluteOneI" "Fl.I" #UP 
+
+ \cueWhile "FluteOneI" "Fl.I" #UP 
   %\context CueVoice {s1\stopSlurSpan}
   {r1} 
->>
+
   \tuplet 3/2 4 {r8 a'\<( bf c[ d ef])} \mark\default \barNumberCheck \RhV |
   \time 4/4  f4(\f e ef d | df c8\> bf bf\!) r r4 |
   R1 | r2 r4\breathe r4 | R1 \mbreak |
@@ -75,7 +75,7 @@ FlTwoI=\relative c'{
   fs-. e-.] r4 r2 | R1 \mpbreak |
   R1 * 10 \mark\default \barNumberCheck \RhXIV |
   R1 * 6 |
-  %\cueDuring #"OboeOne" #DOWN
+  \cueWhile "OboeOneI" "Ob.I" #DOWN
   {R1 | r2 r4 }
   r8 ef-.\f |
   d4.-- ef8-. d4-- d8-. ef-. |
@@ -89,10 +89,8 @@ FlTwoI=\relative c'{
   R1 * 7 \mark\default \barNumberCheck \RhXV |
   R1 * 16 \mark\default \barNumberCheck \RhXVI |
   R1 * 8 \mbreak |
-  <<
-  \tag #'part \cueWhile "FluteOneI" "Fl.I" #UP
+  \cueWhile "FluteOneI" "Fl.I" #UP
   {R1 * 2 }
->>
   R1 * 10 \mark\default \barNumberCheck \RhXVII |
   R1 * 8 |
   %\cueDuring #"Piano" #DOWN
@@ -159,15 +157,13 @@ FlTwoII = \relative c'{
   R2. * 9 \mark\default \barNumberCheck \RhXXIX|
   R2. * 8 \mark\default \barNumberCheck \RhXXX |
   R2. * 8 |
-  %\cueDuring #"OboeOne" #UP
+  \cueWhile "OboeOneII" "Ob.I" #UP
   {R2. \mark\default \barNumberCheck \RhXXXI| R2. * 4 } |
   R2. * 7 \mark\default \mbreak \barNumberCheck \RhXXXII |
   R2. * 4 \bar "||"
   \key fs \minor 
-  <<
-  \tag #'part \cueWhile "FluteOneII" "Fl.I" #UP
+ \cueWhile "FluteOneII" "Fl.I" #UP
   {R2. * 4} 
->>
   \mbreak \mark\default \bar "||"
   \time 3/8 R4. * 26 \mark\default \barNumberCheck \RhXXXIV |
   R4. * 4 |
@@ -204,7 +200,7 @@ R1 * 16 |
 {R1 * 2 | r2 r4 } f,-.\f |
 e8-. d-. c-. a-. g4-. r \mark\default  \barNumberCheck \RhXLI \mbreak |
 R1 * 14 |
-%\cueDuring #"OboeOne" #UP
+\cueWhile "OboeOneIII" "Ob." #UP
 {R1 * 2 | r4 } e''8-.\f e,-. a4-- e'8-. e,-. |
 a-. e'-. a,-.[ e'-.] a,4-. r \mark\default \barNumberCheck \RhXLII |
 R1 * 2 \mbreak |
@@ -226,7 +222,7 @@ R1 * 14 |
 R1 |
 R1 * 5 \mark\default \barNumberCheck \RhXLVI \mbreak |
 R1 * 5 |
-%\cueDuring #"OboeOne" #UP
+\cueWhile "OboesIII" "Ob." #UP
 {R1 * 3 }|
 \tuplet 3/2 {g'8\<( b d} g4->\ff)~ \tuplet 3/2 4 {g d8( fs[-> d b]) |
 e4-> b8( d->[ b g]) c4-> g8( b->[fs d]) \mbreak |
@@ -249,7 +245,7 @@ R1. * 3 \mark\default \barNumberCheck \RhLI \bar "||"
 R1 * 2 \bar "||"
 \time 3/2 R1. * 2 \bar "||"
 \time 4/4
-%\cueDuring #"OboeTwo" #DOWN
+\cueWhile "OboeTwoIII" "Ob.II" #DOWN
 {R1 * 2 \mbreak |  R1 | r2}
 r8^"Solo"  fs'16\p-. g-. \tuplet 3/2 {af-. a-. bf-.} bf8-. \mark\default\barNumberCheck \RhLIII |
 \acciaccatura{d8(} ef-.)[\ppLeg  r16 d-.] ef8-.[ r16 d-.] ef8-.[ r16 ef32( d] ef16) fs-. g-. d-. \mbreak |
@@ -270,17 +266,17 @@ R1 * 6 \mark\default \barNumberCheck \RhLVIII |
 {R1 * 2 } |
 R1 * 9 \mark\default\barNumberCheck \RhLIX \mbreak \bar "||"
 \time 2/2  R1 * 4 |
-%\cueDuring #"OboeOne" #UP
+\cueWhile "OboeOneIII" "Ob.I" #UP
 { R1 * 4 } |
 R1 * 4 |
-%\cueDuring #"OboeOne" #UP
+\cueWhile "OboesIII" "Ob." #UP
 {R1 \mark\default \barNumberCheck \RhLX \mpbreak | r4 }
 \tuplet 3/2 {g8-.\mf f-. g-.} g4--(\> af)\! |
 r4 \tuplet 3/2 {g8-.\mf f-. g-.} g4--(\> af)\! |
 R1 * 5 |
 R1 * 8 \mark\default \barNumberCheck \RhLXI |
 R1 * 11 \mbreak |
-%\cueDuring #"OboeOne" #UP
+\cueWhile "OboesIII" "Ob." #DOWN
 {R1 | r2 r4}
 ef-.\f |
 d8-. c-. bf-. a-. g4-. r \mark\default \barNumberCheck \RhLXII |
@@ -313,14 +309,14 @@ R1 * 8 |
 {R1 * 3 \mbreak | R1 * 2 } \mark\default \barNumberCheck \RhLXVIII |
 R1 * 8 |
 R1 |
-%\cueDuring #"OboeOne" #UP
+\cueWhile "OboeOneIII" "Ob.I" #UP
 {R1 | r2 r4}
 r8 g,( |
 a\< bf cs f a4)\sff r \mbreak \mark\default \barNumberCheck \RhLXIX \bar "||"
 R1 * 16 \mark\default \barNumberCheck \RhLXX |
 R1 * 8 \mark\default \barNumberCheck \RhLXXI|
 R1 * 8 |
-%\cueDuring #"OboeOne" #DOWN
+\cueWhile "OboesIII" "Ob." #DOWN
 {R1 * 2 \mark\default \barNumberCheck \RhLXXII | R1 } |
 r2 \repeat tremolo 4 {g,16->\f\>( fs} | g4\p-.)\! r r2 \mbreak |
 r2 \repeat tremolo 4 {g16->\>( fs} | g4-.)\! r r2 
@@ -342,7 +338,7 @@ R1 * 4 |
 \time 3/2 R1. * 2 |
 R1 * 2 |
 R1 * 4 \mark\default \barNumberCheck \RhLXXV \mbreak |
-%\cueDuring #"OboeOne" #DOWN
+\cueWhile "OboeOneIII" "Ob.I"  #DOWN
 {R1 * 4} |
 d,,1\f( | e | bf' | a)~ | a | c( \mbreak |
 b\cresc | d | cs | c) \mark\default \barNumberCheck \RhLXXVI |
