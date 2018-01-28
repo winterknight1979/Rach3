@@ -9,6 +9,8 @@
 \include "include/cl1.ily"
 \include "include/cl2.ily"
   \addQuote "ClarOneI" {\keepWithTag #'quote \ClOneI}
+  \addQuote "ClarOneII" {\keepWithTag #'quote \ClOneII}
+  \addQuote "ClarTwoII" {\keepWithTag #'quote \ClTwoII}
 
 \include "include/ob1.ily" 
    \addQuote "OboeOneI" {\keepWithTag #'quote \ObOneI}

@@ -56,7 +56,8 @@ conductorI={
 
   s1 * 12 \mark\default \barNumberCheck \RhXVIII
 
-  \tempo\markup{\italic "poco a poco ritenuto"} 2=70 s1 * 12 | s1 
+  \tempo\markup{\italic "poco a poco ritenuto"} 2=70 s1 * 12 | 
+  \tempo "Allegro molto" 2=91 s1 |
   \tag #'score \cadenzaIb \mark\default \barNumberCheck \RhXIX \bar "||"
 
   \time 4/4  \tempo\markup {

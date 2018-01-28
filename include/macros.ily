@@ -29,6 +29,8 @@ commonConductor = {
   \set Score.tempoHideNote = ##t
   \set Staff.soloText = #"I"
   \set Staff.soloIIText = #"II"
+  \override DynamicTextSpanner.style=#'none
+  \override TupletBracket.bracket-visibility=##f
   %\tag #'part \markLengthOn
   %\tag #'midi \set Score.currentBarNumber = #1
 }

@@ -13,7 +13,8 @@
 \include "include/fl2.ily"
 \include "include/ob1.ily"
 \include "include/ob2.ily"
-
+\include "include/cl1.ily"
+\include "include/cl2.ily"
 
      \score{
  
@@ -23,12 +24,17 @@
       { instrumentName = #"2 Flauti"
         shortInstrumentName = #"Fl."
         midiInstrument = #"flute"}
-        \articulate <<{\FlOneI \FlOneII \FlOneIII} \\ {\FlTwoI \FlTwoII \FlTwoIII}>>
+        \unfoldRepeats \articulate <<{\FlOneI \FlOneII \FlOneIII} \\ {\FlTwoI \FlTwoII \FlTwoIII}>>
        \new Staff \with
       { instrumentName = #"2 Oboi"
         shortInstrumentName = #"Ob."
         midiInstrument = #"oboe"}
-        \articulate <<{\ObOneI \ObOneII \ObOneIII} \\ {\ObTwoI \ObTwoII \ObTwoIII}>>
+        \unfoldRepeats \articulate <<{\ObOneI \ObOneII \ObOneIII} \\ {\ObTwoI \ObTwoII \ObTwoIII}>>
+        \new Staff \with
+      { instrumentName = #"2 Clarinetti"
+        shortInstrumentName = #"Cl."
+        midiInstrument = #"clarinet"}
+        \unfoldRepeats \articulate <<{\ClOneI \ClOneII \ClOneIII} \\ {\ClTwoI \ClTwoII \ClTwoIII}>>
       
       
       >>
