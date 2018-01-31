@@ -16,7 +16,8 @@ commonConductor = {
   \tag #'part \override Score.RehearsalMark.extra-spacing-width = #'(0 . 0)
   \tag #'part \override Score.Hairpin.to-barline = ##f
   \tag #'part \compressFullBarRests
-%  \tag #'part \override Score.NonMusicalPaperColumn.page-break-permission = ##f
+  \tag #'part \override Score.NonMusicalPaperColumn.page-break-permission = ##f % disable when we're done
+  \tag #'part \override Score.NonMusicalPaperColumn.line-break-permission = ##f % disable when we're done
   \override Score.Hairpin.minimum-length = #4
   \override Score.TextScript.whiteout = ##t
   \override Score.CombineTextScript.whiteout = ##t

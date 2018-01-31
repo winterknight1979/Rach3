@@ -29,8 +29,8 @@ flutes.a4.pdf: flutes.ly ${HEADERS} ${FLUTEFILES} ${OBOEFILES}
 flutes.letter.pdf: flutes.ly ${HEADERS} ${FLUTEFILES} ${OBOEFILES}
 oboes.a4.pdf: oboes.ly ${HEADERS} ${OBOEFILES} ${FLUTEFILES}
 oboes.letter.pdf: oboes.ly ${HEADERS} ${OBOEFILES} ${FLUTEFILES}
-clarinets.a4.pdf: clarinets.ly ${HEADERS} ${CLARFILES}
-clarinets.letter.pdf: clarinets.ly ${HEADERS} ${CLARFILES}
+clarinets.a4.pdf: clarinets.ly ${HEADERS} ${CLARFILES} ${OBOEFILES}
+clarinets.letter.pdf: clarinets.ly ${HEADERS} ${CLARFILES} ${OBOEFILES}
 
 
 Rach3.mid: Rach3.ly ${SCOREFILES}

@@ -98,6 +98,11 @@
               { instrumentName = #"2 Oboi"
               shortInstrumentName = #"Ob."}
               {\partcombine \ObOneIII \ObTwoIII}
+ 
+              \new Staff \with
+        { instrumentName = #"2 Clarinetti"
+          shortInstrumentName = #"Cl."}
+          {\partcombine \ClOneIII \ClTwoIII}
       
             >>
           >>

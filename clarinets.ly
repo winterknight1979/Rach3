@@ -11,11 +11,12 @@
   \addQuote "ClarOneI" {\keepWithTag #'quote \ClOneI}
   \addQuote "ClarOneII" {\keepWithTag #'quote \ClOneII}
   \addQuote "ClarTwoII" {\keepWithTag #'quote \ClTwoII}
+  \addQuote "ClarOneIII" {\keepWithTag #'quote \ClOneIII}
 
 \include "include/ob1.ily" 
    \addQuote "OboeOneI" {\keepWithTag #'quote \ObOneI}
 %   \addQuote "OboeOneII" {\keepWithTag #'quote \ObOneII}
-%   \addQuote "OboeOneIII" {\keepWithTag #'quote \ObOneIII}
+   \addQuote "OboeOneIII" {\keepWithTag #'quote \ObOneIII}
 
 %\include "include/ob2.ily"
 
