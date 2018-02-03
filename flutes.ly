@@ -31,6 +31,12 @@
   \addQuote "OboeTwoIII" {\keepWithTag #'quote \ObTwoIII}
   \addQuote "OboesIII" {\keepWithTag #'quote <<\ObOneIII \ObTwoIII>>}
 
+
+\include "include/cl1.ily"
+  \addQuote "ClarOneI" {\keepWithTag #'quote \ClOneI}
+  \addQuote "ClarOneII" {\keepWithTag #'quote \ClOneII}
+  \addQuote "ClarOneIII" {\keepWithTag #'quote \ClOneIII}
+
 \paper{ 
   #(layout-set-staff-size 19)
   system-system-spacing = #'((basic-distance . 18)

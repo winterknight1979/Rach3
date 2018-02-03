@@ -25,10 +25,10 @@ clarinets: clarinets.a4.pdf clarinets.letter.pdf
 
 score.a4.pdf: score.ly ${SCOREFILES}
 score.letter.pdf: score.ly ${SCOREFILES}
-flutes.a4.pdf: flutes.ly ${HEADERS} ${FLUTEFILES} ${OBOEFILES}
-flutes.letter.pdf: flutes.ly ${HEADERS} ${FLUTEFILES} ${OBOEFILES}
-oboes.a4.pdf: oboes.ly ${HEADERS} ${OBOEFILES} ${FLUTEFILES}
-oboes.letter.pdf: oboes.ly ${HEADERS} ${OBOEFILES} ${FLUTEFILES}
+flutes.a4.pdf: flutes.ly ${HEADERS} ${FLUTEFILES} ${OBOEFILES} ${CLARFILES}
+flutes.letter.pdf: flutes.ly ${HEADERS} ${FLUTEFILES} ${OBOEFILES} ${CLARFILES}
+oboes.a4.pdf: oboes.ly ${HEADERS} ${OBOEFILES} ${FLUTEFILES} ${CLARFILES}
+oboes.letter.pdf: oboes.ly ${HEADERS} ${OBOEFILES} ${FLUTEFILES} ${CLARFILES}
 clarinets.a4.pdf: clarinets.ly ${HEADERS} ${CLARFILES} ${OBOEFILES}
 clarinets.letter.pdf: clarinets.ly ${HEADERS} ${CLARFILES} ${OBOEFILES}
 

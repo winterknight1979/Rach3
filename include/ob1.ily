@@ -223,7 +223,7 @@ ObOneII=\relative c'{
   {R2. \mark\default \barNumberCheck \RhXXIX | R2. } |
   R2. * 7 \mark\default \barNumberCheck \RhXXX \mbreak |
   R2. * 5 |
-  %cue Clar. I
+  \cueWhile "ClarOneII" "Cl.I" #DOWN
   {R2. * 3 | r4 }
   r4 gf'(\< \mark\default \barNumberCheck \RhXXXI |
   f2)\f-\markup{\italic "cantabile"} \tuplet 3/2 {ef4( c8)} |
@@ -234,7 +234,7 @@ ObOneII=\relative c'{
   R2.*4 \bar "||"
   \key fs\minor R2.*4 \mark\default \barNumberCheck \RhXXXIII \bar "||"
   \time 3/8 R4. * 26 \mark\default \barNumberCheck \RhXXXIV |
-  %cue Cl. I
+  \cueWhile "ClarOneII" "Cl.I" #UP
   {R4.*2 \mbreak R4.*2} |
   \cueWhile "FluteOneII" "Fl.I" #UP
   {R4. * 2 | r8 }

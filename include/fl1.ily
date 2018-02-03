@@ -48,7 +48,7 @@ FlOneI=\relative c'{
   R1 * 2 |
   \cueWhile "OboeOneI" "Ob.I" #UP
    {R1 * 2}
-  % \cueDuring #"ClarOne" #DOWN
+  \cueWhile "ClarOneI" "Cl.I" #DOWN
     {R1 | R1 } \mbreak |
   R1 * 6 |
   R1 * 6 \mark\default \barNumberCheck\RhX|
@@ -122,7 +122,7 @@ FlOneI=\relative c'{
   R1 * 7 |
   R1 |
   R1 * 4 |
-  %\cueDuring #ClarOne #DOWN
+  \cueWhile "ClarOneI" "Cl.I" #DOWN
     {R1 * 2 \bar "||" \time 2/4 R2 \bar "||" \time 4/4 R1 \mark\default \barNumberCheck \RhXXII \mbreak | r4 }
   d'2--\p c4~-- | c bf2-- a4~-- | a r r2 | R1 |
   R1 * 4 \mark\default \barNumberCheck \RhXXIII |
@@ -175,7 +175,7 @@ FlOneII = \relative c'{
   r4 \tuplet 3/2 4 {r8 r gs-. a-. e-. r} |
   r4 \tuplet 3/2 4 {r8 r fs-.\dim gs-. d-.\! r} \mark\default \barNumberCheck \RhXXXIII \bar "||"
   \time 3/8 R4.*26 \mark\default \barNumberCheck \RhXXXIV \mbreak |
-  %\cueDuring #"ClarOne" #DOWN
+  \cueWhile "ClarOneII" "Cl.I" #DOWN
   {R4.*4 | r8}
   a'4\pp(^"Solo" | gs fs8 | es16 fs gs4) |
   R4. * 4
@@ -207,7 +207,7 @@ FlOneIII = \relative c' {
   \time 2/2 
   d''4\sff r r2 | R1 * 17 \mark #40 \barNumberCheck \RhXL |
   R1 * 16 |
-  %\cueDuring #"ClarOne" #DOWN
+  \cueWhile "ClarOneIII" "Cl.I" #DOWN
   {R1 * 2 | r2 r4} a-.\f |
   g8-. f-. e-. d-. c4-. b-. \mark\default \barNumberCheck \RhXLI \mbreak |
   a-> r r2 | R1 * 13 |

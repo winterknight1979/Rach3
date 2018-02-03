@@ -163,7 +163,7 @@ ObTwoII=\relative c'{
   {R2. \mark\default \barNumberCheck \RhXXIX | R2. } |
   R2. * 7 \mark\default \barNumberCheck \RhXXX |
   R2. * 5 |
-  % cue Clar. I |
+  \cueWhile "ClarOneII" "Cl.I" #DOWN
   {R2. * 3 \mbreak | r4 }
   r ef'\<( \mark\default \barNumberCheck \RhXXXI |
   df2)\fCant \tuplet 3/2 {c4( af8)} |

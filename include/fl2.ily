@@ -196,7 +196,7 @@ FlTwoIII = \relative c' {
 d''4\sff r r2 |
 R1 * 17 \mark #40 \barNumberCheck \RhXL |
 R1 * 16 |
-%\cueDuring #"ClarOne" #DOWN
+\cueWhile "ClarOneIII" "Cl.I" #DOWN
 {R1 * 2 | r2 r4 } f,-.\f |
 e8-. d-. c-. a-. g4-. r \mark\default  \barNumberCheck \RhXLI \mbreak |
 R1 * 14 |

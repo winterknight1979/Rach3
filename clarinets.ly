@@ -12,7 +12,8 @@
   \addQuote "ClarOneII" {\keepWithTag #'quote \ClOneII}
   \addQuote "ClarTwoII" {\keepWithTag #'quote \ClTwoII}
   \addQuote "ClarOneIII" {\keepWithTag #'quote \ClOneIII}
-
+  \addQuote "ClarTwoIII" {\keepWithTag #'quote \ClTwoIII}
+ 
 \include "include/ob1.ily" 
    \addQuote "OboeOneI" {\keepWithTag #'quote \ObOneI}
 %   \addQuote "OboeOneII" {\keepWithTag #'quote \ObOneII}

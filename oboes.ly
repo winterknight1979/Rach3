@@ -21,6 +21,9 @@
   \addQuote "FluteOneIII" {\keepWithTag #'quote \FlOneIII}
   \addQuote "FlutesI" {\keepWithTag #'quote <<{\FlOneI}{\FlTwoI}>>} 
 
+\include "include/cl1.ily"
+  \addQuote "ClarOneII" {\keepWithTag #'quote \ClOneII}
+
 \paper{ 
   #(layout-set-staff-size 19)
   system-system-spacing = #'((basic-distance . 18)
