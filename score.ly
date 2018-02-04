@@ -14,6 +14,8 @@
 \include "include/ob2.ily"
 \include "include/cl1.ily"
 \include "include/cl2.ily"
+\include "include/bsn1.ily"
+\include "include/bsn2.ily"
 
 \paper {
   #(layout-set-staff-size 15)
@@ -46,10 +48,15 @@
           shortInstrumentName = #"Ob."}
           {\partcombine \ObOneI \ObTwoI}
         
-        \new Staff \with
-        { instrumentName = #"2 Clarinetti"
+         \new Staff \with
+         { instrumentName = #"2 Clarinetti"
           shortInstrumentName = #"Cl."}
           {\partcombine \ClOneI \ClTwoI}
+ 
+          \new Staff \with
+         { instrumentName = #"2 Fagotti"
+          shortInstrumentName = #"Fag."}
+          {\partcombine \BsnOneI \BsnTwoI}
         
         >>
 
@@ -77,6 +84,10 @@
           shortInstrumentName = #"Cl."}
           {\partcombine \ClOneII \ClTwoII}
         
+           \new Staff \with
+         { instrumentName = #"2 Fagotti"
+          shortInstrumentName = #"Fag."}
+          {\partcombine \BsnOneII \BsnTwoII}
  
 
        >>
@@ -104,6 +115,11 @@
           shortInstrumentName = #"Cl."}
           {\partcombine \ClOneIII \ClTwoIII}
       
+          \new Staff \with
+         { instrumentName = #"2 Fagotti"
+          shortInstrumentName = #"Fag."}
+          {\partcombine \BsnOneIII \BsnTwoIII}
+ 
             >>
           >>
         \header{piece=\markup\huge "III Finale"}

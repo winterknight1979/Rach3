@@ -5,14 +5,16 @@ HEADERS= include/conductor.ily include/dynamics.ily include/functions.ily includ
 FLUTEFILES=include/fl1.ily include/fl2.ily
 OBOEFILES=include/ob1.ily include/ob2.ily
 CLARFILES=include/cl1.ily include/cl2.ily
-SCOREFILES=${HEADERS} ${FLUTEFILES} ${OBOEFILES} ${CLARFILES}
+BSNFILES=include/bsn1.ily include/bsn2.ily
+SCOREFILES=${HEADERS} ${FLUTEFILES} ${OBOEFILES} ${CLARFILES} ${BSNFILES}
 
-all: flutes oboes clarinets score Rach3.mid
+all: flutes oboes clarinets bassoons score Rach3.mid
 
 score: score.a4.pdf score.letter.pdf
 flutes: flutes.a4.pdf flutes.letter.pdf
 oboes: oboes.a4.pdf oboes.letter.pdf
 clarinets: clarinets.a4.pdf clarinets.letter.pdf
+bassoons: bassoons.a4.pdf bassoons.letter.pdf 
 
 %.mid: %.ly
 	${LILY} -dmidi-extension=mid -s $< 2>&1 | tee $*.mid.log
@@ -31,6 +33,9 @@ oboes.a4.pdf: oboes.ly ${HEADERS} ${OBOEFILES} ${FLUTEFILES} ${CLARFILES}
 oboes.letter.pdf: oboes.ly ${HEADERS} ${OBOEFILES} ${FLUTEFILES} ${CLARFILES}
 clarinets.a4.pdf: clarinets.ly ${HEADERS} ${CLARFILES} ${OBOEFILES}
 clarinets.letter.pdf: clarinets.ly ${HEADERS} ${CLARFILES} ${OBOEFILES}
+bassoons.a4.pdf: bassoons.ly ${HEADERS} ${BSNFILES}
+bassoons.letter.pdf: bassoons.ly ${HEADERS} ${BSNFILES}
+
 
 
 Rach3.mid: Rach3.ly ${SCOREFILES}

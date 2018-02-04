@@ -497,11 +497,10 @@ ClTwoIII=\relative c'{
   c-.\cresc c-. c-. c-. d-. d-. d-. d-. \mbreak |
   d-. d-. d-.\< d-. d,-. d-. d-. d-. |
   c-.\f c-. c-. c-.
-  \set decrescendoText = \markup{\italic "poco a poco dim."}
-  \set decrescendoSpanner = #'text
+  \once \set decrescendoText = \markup{\italic "poco a poco dim."}
+  \once \set decrescendoSpanner = #'text
   c'-.\> c-. c-. c-. |
-  b-. b-. b-. b-. e,-. e-. e-. e-.\!
-  \unset decrescendoText \unset decrescendoSpanner |
+  b-. b-. b-. b-. e,-. e-. e-. e-.\! |
   r2 fs8-. fs-. fs-. fs-. |
   b-. b-. b-. b-. b-. b-. b-. b-. \mark\default \barNumberCheck \RhLXVIII \mbreak |
   a-. r r4 r2 |
@@ -520,7 +519,7 @@ ClTwoIII=\relative c'{
   R1 * 8 |
   \transposition a <>^"In A" af,4-.\p r af-. r |
   a-. r bf-. r \mark\default \barNumberCheck \RhLXXII |
-  bf-. r r2 | \unset decrescendoText \unset decrescendoSpanner
+  bf-. r r2 | 
   R1 * 3 | R1 * 4 \mbreak |
   bf2(\p\< c--)\> |
   bf(\< c--\>) |

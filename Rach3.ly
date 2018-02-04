@@ -15,11 +15,16 @@
 \include "include/ob2.ily"
 \include "include/cl1.ily"
 \include "include/cl2.ily"
+\include "include/bsn1.ily"
+\include "include/bsn2.ily"
+
 
      \score{
  
     \keepWithTag #'score \killCues <<
-      \new Devnull {\conductorI \conductorII \conductorIII}
+      \new Devnull {
+        \set Score.instrumentEqualizer = #my-equalizer
+        \conductorI \conductorII \conductorIII}
       \new Staff \with
       { instrumentName = #"2 Flauti"
         shortInstrumentName = #"Fl."
@@ -35,6 +40,11 @@
         shortInstrumentName = #"Cl."
         midiInstrument = #"clarinet"}
         \unfoldRepeats \articulate <<{\ClOneI \ClOneII \ClOneIII} \\ {\ClTwoI \ClTwoII \ClTwoIII}>>
+         \new Staff \with
+      { instrumentName = #"2 Fagotti"
+        shortInstrumentName = #"Fag."
+        midiInstrument = #"bassoon"}
+        \unfoldRepeats \articulate <<{\BsnOneI \BsnOneII \BsnOneIII} \\ {\BsnTwoI \BsnTwoII \BsnTwoIII}>>
       
       
       >>

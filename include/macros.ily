@@ -1,6 +1,7 @@
 
 mbreak={\tag #'part \break}
 mpbreak={\tag #'part \pageBreak}
+sbreak={}
 
 commonConductor = {
   \accidentalStyle Score.modern

@@ -9,11 +9,10 @@ ClOneI=\relative c'{\transposition bf \commonConductor
   a2( b |
   c4.) r8 r2 |
   gs2--\pp( a) |
-  \set crescendoText = \markup{\italic "poco cresc."}
-  \set crescendoSpanner = #'text
+  \once\set crescendoText = \markup{\italic "poco cresc."}
+  \once\set crescendoSpanner = #'text
   as2--(\< b)~ |
   b4
-  \unset crescendoSpanner \unset crescendoText
   b2.--\mf(\> |
   c\p b4 |
   a2 g) |
@@ -191,10 +190,10 @@ ClOneI=\relative c'{\transposition bf \commonConductor
   a2( b |
   c4.) r8 r2 |
   gs2( a) |
-  \set crescendoText = \markup{\italic "poco cresc."}
-  \set crescendoSpanner = #'text
+  \once \set crescendoText = \markup{\italic "poco cresc."}
+  \once \set crescendoSpanner = #'text
   as2\<( b)~ |
-  b4 \unset crescendoSpanner \unset crescendoText
+  b4 
   b2.\mf\>--( |
   c2.\p b4 |
   a2 g) \mbreak |
@@ -275,10 +274,9 @@ ClOneII=\relative c'{
   c b a |
   b8. c16 b8~) |
   b c4( |
-  \set crescendoText = \markup{\italic "poco cresc."}
-  \set crescendoSpanner = #'text 
-  b8\< c d~ |
-  \unset crescendoSpanner \unset crescendoText
+  \once \set crescendoText = \markup{\italic "poco cresc."}
+  \once \set crescendoSpanner = #'text 
+  b8\< c d~ | 
   d d4--\> |
   d8\p c8. b16 |
   a4) b8~( |
@@ -300,10 +298,10 @@ ClOneII=\relative c'{
   b a8 |
   gs) b,4\pp( |
   c d8~ |
-  \set crescendoText = \markup{\italic "poco cresc."}
-  \set crescendoSpanner = #'text 
+  \once \set crescendoText = \markup{\italic "poco cresc."}
+  \once \set crescendoSpanner = #'text 
   d\< e8. g16 |
-  f4.)\! \unset crescendoText \unset crescendoSpanner |
+  f4.)\! |
   f4\<( a8\! |
   g\> gs8. b16\! \mark\default \barNumberCheck \RhXXXV \mbreak |
   a4) r8 |
@@ -568,11 +566,10 @@ ClOneIII=\relative c'{
   d-.\cresc d-. d-. d-. f-. f-. f-. f-. |
   e-. e-. e-. e-.\< gs,-. gs-. gs-. gs-. |
   a\f-. a-. a-. a-.
-  \set decrescendoText = \markup{\italic "poco a poco dim."}
-  \set decrescendoSpanner = #'text
+  \once \set decrescendoText = \markup{\italic "poco a poco dim."}
+  \once \set decrescendoSpanner = #'text
   d-.\> d-. d-. d-. |
   d-. d-. d-. d-. e-.\!
-  \unset decrescendoText \unset decrescendoSpanner
   r r4 |
   e8-. e-. e-. e-. r2 \mbreak |
   d8-. d-. d-. d-. d-. d-. d-. d-. \mark\default \barNumberCheck \RhLXVIII |
