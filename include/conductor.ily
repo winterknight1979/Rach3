@@ -286,7 +286,7 @@ conductorIII = {
     \tempo "Più vivo" 2=92 s1 * 6 
     \tempo\markup{\italic "rit."} 2=88 s1 * 2 \mark\default \barNumberCheck \RhLXXVIII
     
-    \tempo\markup{\italic "poco a poco accel."} 2=90 s1 * 8 \mark\default \barNumberCheck \RhLXXIX
+    \tempo\markup{\italic "poco a poco accel."} 2=92 s1 * 4 \tempo "a tempo" 2=88 s1*4 \mark\default \barNumberCheck \RhLXXIX
 
     \tempo "Più vivo" 2=92 s1 * 4
     \tempo "Presto" 2=96 s1 * 10 \barNumberCheck \EndMIII \bar "|."

@@ -660,4 +660,81 @@ BsnOneIII=\relative c' {
     f4.-- f8 a4\sff r \mark\default \barNumberCheck \RhLXIX \bar "||"
     R1 * 16 \mark\default \barNumberCheck \RhLXX |
     R1 * 8 \mark\default\barNumberCheck \RhLXXI \mpbreak |
+    e4-.\p r e-. r |
+    e-. r e-. r |
+    fs-. r fs-. r |
+    f-. r fs-. r |
+    fs-._\markup{\italic "sempre"} r fs-. r |
+    g-. r g-. r |
+    g-. r g-. r |
+    gs-. r gs-. r \mbreak |
+    a-. r a-. r |
+    bf-. r bf-. r \mark\default \barNumberCheck \RhLXXII |
+    bf-. r \clef tenor cs2\p--~ |
+    cs~\< cs4\! r |
+    r2 cs--~ |
+    cs\<~ cs4\! r |
+    r2 e--~ |
+    e\<~ e4\! r \mbreak |
+    r2 e--~ |
+    e\<~ e4\! r |
+    cs2\p\<( e--)\> |
+    cs\p\<( e--)\> |
+    d\cresc( f--) |
+    d( f--) \mark\default \barNumberCheck \RhLXXIII \bar "||"
+    \key b\minor \clef bass e,2--\f e-- |
+    e-- e-- |
+    e--\cresc e-- \mbreak |
+    e-- e-- |
+    e4-.\ff e-. e-. e-. |
+    e-. e-. e-. e-. |
+    e-. e2-- e4--~ |
+    e e2-- e4--~ |
+    e g2-- g4--~ |
+    g c-. e-. f-. |
+    g-.\sff r r2\fermata_"Cadenza"
+    \tag #'score \cadenzaIIIa 
+    \mark\default \barNumberCheck \RhLXXIV \mbreak \bar "||"
+    R1 * 4 |
+    a,,1\p(| d\cresc| fs |a) |
+    \time 3/2 d2\f( cs c |
+    b bf a4\> g |
+    \time 2/2 fs\!) r r2 | R1 \mbreak |
+    R1 * 4 \mark\default \barNumberCheck \RhLXXV |
+    a,1\p( | d\cresc | fs | a\!) |
+    b,(~ | b | e) |
+    a,( | cs | fs) \mbreak |
+    b,\cresc | e, | a | fs \mark\default \barNumberCheck \RhLXXVI |
+    ds\< | b'\!~ | b\ff\< | a | cs\> | b\!~ | b4 r r2 |
+    b'2.( bf4) |
+    a2( gs4 g \mbreak |
+    fs2 e)\> \mark\default \barNumberCheck \RhLXXVII |
+    a\f( gs | g1) |
+    fs2\mf( ds\< |
+    e\! cs | d4\p) r r2 |
+    g,1\< | bf--\ff \mbreak |
+    bf'2( e,\> \mark\default \barNumberCheck \RhLXXVIII |
+    fs4\!) r r8 a\f-. b-. cs-. |
+    d4-. r \clef tenor r8 cs-.\cresc d-. e-. |
+    fs4-. r8 ds-. e-. f-. g4-.\! |
+    r4 \clef bass e,-. bf'-. a-. \mbreak |
+    d,-.\ff r d-.\mf r |
+    d-. r d-. r |
+    d-. r d-. r |
+    ef2->(\f e4-.) a-. \mark\default \barNumberCheck \RhLXXIX |
+    d,-.\f r g-.\fMarc gs-. |
+    a-. r f-. fs-. \mbreak |
+    g-. r ef-. e-. |
+    fs-. g-. bf-. e,->-. |
+    d->-. r r2 |
+    a'4\ff r r2 |
+    a4 r a r |
+    r2 a4 r \mbreak |
+    r4 a,2-- d4--~ |
+    d d2-- a'4--~ |
+    a a'-. a-. a-. |
+    a\sff r a,\sff r |
+    d,\sff r r2 | R1 \barNumberCheck \EndMIII \bar "|."
+    
+
   }
