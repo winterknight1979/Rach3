@@ -154,7 +154,7 @@ conductorII={
   \tempo "Un poco più mosso" 4=72 s2. * 6 \bar "||"
   \time 4/4 \tempo "L'istesso tempo" s1 * 4 \mark\default \barNumberCheck \RhXXXIX
 
-  s1 *3 \tempo "attaca subito" s1 \barNumberCheck \EndMII \bar "||"
+  s1 *3 \tempo "attaca subito" s1 \barNumberCheck \EndMII \bar "||" \time 2/2 s8 
         
 }
 

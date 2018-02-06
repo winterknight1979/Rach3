@@ -1,6 +1,6 @@
 BsnOneI=\relative c {
   \commonConductor
-  \clef tenor \time 4/4 \key d \minor 
+  \clef tenor \time 4/4 \key d \minor
   f4.\p--( g8 f4.-- g8 |
   f4.-- g8 f4.-- g8 |
   f4.--) r8 r2 | R1 |
@@ -210,7 +210,7 @@ BsnOneI=\relative c {
   {R1 * 2}
   bf,1\pp(~ |
   bf2 a4) r \mbreak \bar "||"
-  \key d \minor \clef tenor 
+  \key d \minor \clef tenor
   f'4.--(\p g8 f4.-- g8 |
   f4.-- g8 f4.--\dim g8 |
   f4.)\! r8 r2 | R1 |
@@ -246,7 +246,7 @@ BsnOneI=\relative c {
   d4.-- c16-. c-. d8-. g-. a-. c,-. |
   d4.-- c8-. d4.-- c8-. |
   d4.-- c16-. c-. d8-.[ g-.] a-. r \mark\default \barNumberCheck \RhXXIII |
-  gs4.--\p a16-.\pp a-. gs8-. a-. gs-. af-. | 
+  gs4.--\p a16-.\pp a-. gs8-. a-. gs-. af-. |
   g4-- r r2 |
   R1 * 8 \barNumberCheck \EndMI \bar "|."
 }
@@ -282,7 +282,7 @@ BsnOneII=\relative c' {
   \key bf\minor R2. * 8 | R2.\mark\default \barNumberCheck \RhXXVI |
   R2. * 3 | R2. | R2. * 2 |
   R2.\fermataMarkup_"Cadenza"
-  \tag #'score \cadenzaIIa 
+  \tag #'score \cadenzaIIa
   R2. |
   R2. * 9 | R2. \mark\default \barNumberCheck \RhXXVII \mbreak |
   r4 r bf'--\mp\>( |
@@ -311,7 +311,237 @@ BsnOneII=\relative c' {
   a2.( |
   b4) r r |
   R2. * 2 \mpbreak |
-
+  r4 c2(\p |
+  df ef4)
+  f2\cresc( gf4) |
+  gf2. \mark\default \barNumberCheck \RhXXXI
+  f4\f( af,2~) |
+  af~ af8 r |
+  R2. * 9 \mark\default \barNumberCheck \RhXXXII |
+  R2. * 4 \mbreak \bar "||"
+  \key fs\minor R2.*4 \mark\default \barNumberCheck \RhXXXIII \bar "||"
+  \clef tenor \time 3/8
+  % cue cor.I
+  {R4.*7 | r8}
+  gs'4(^"Solo"\pDolce |
+  b a8~ |
+  a gs fs |
+  gs8. a16 gs8~\mbreak|
+  gs8) a4( |
+  \once\set crescendoText="poco cresc"
+  \once\set crescendoSpanner=#'text
+  gs8\< a b~ |
+  b b4~\>-- |
+  b8--\p a8. gs16 |
+  fs4) gs8~( |
+  gs b a~ |
+  a gs fs |
+  gs16 a gs4) |
+  cs4.\mp(~ |
+  cs4 b8~ |
+  b a4\dim \mbreak |
+  gs4.~ |
+  gs8 fs4 |
+  es8.\pp fs16 gs8~ |
+  gs4) r8 \mark\default \barNumberCheck \RhXXXIV |
+  r a4(\pp |
+  gs fs8 |
+  es16 fs\< gs4 |
+  a\> b8~\!) |
+  b cs4(\< |
+  ds4.\> |
+  es16\pp fs gs4) |
+  R4. * 4 | R4.\mark\default \barNumberCheck \RhXXXV \mbreak |
+  fs4.\pp(~^"Solo" |
+  fs8 e4 |
+  d16 cs b8. a16 |
+  gs4.) |
+  e'4.\mp(~ |
+  e8\dim d4 |
+  cs8 b a |
+  gs4.) |
+  d'\pp( | cs~ |
+  cs8 b8. a16 |
+  b4.~\mbreak |
+  b8\dim a8. gs16 |
+  a8 gs fs\!
+  gs4.~\pp | gs) \mark\default \barNumberCheck \RhXXXVI \bar "||"
+  \time 3/4 R2. * 2 | R2. * 4 |
+  \clef bass r4 e'\p( d |
+  cs bs b) |
+  a( fs ds\<|
+  fs--\> gs\!) r \mark\default \barNumberCheck \RhXXXVII \mbreak |
+  r4 cs,\p( e~ |
+  e\< b'\> as\! |
+  a) gs(\dim fs |
+  a,\>-- gs\pp) r |
+  r g'(\p-- fs)~ |
+  fs8 r f4\dim( e)~ |
+  e8 r c4(\< ds |
+  es\mf~ \tuplet 3/2 4 {es8 fs gs fs4\< es8\!} \mbreak |
+  b'4)~\tuplet 3/2 4 {b8 a( b a4\> gs8} |
+  c,4\dim a2 \mark\default \barNumberCheck \RhXXXVIII |
+  gs2\p)\< b'4\f(~ |
+  b~ \tuplet 3/2 { b a8)} a4(~-- |
+  a b es,~) |
+  es e\dim( fs)\! |
+  \tuplet 3/2 {cs8\f\<^"Solo"( es gs\!} cs4 b\> \mbreak |
+  gs\dim es \tuplet 3/2 {cs8 bs b} \bar "||"
+  \time 4/4 \key d\minor a8\p) r r4 r2 |
+  R1 * 3 \mark\default \barNumberCheck \RhXXXIX |
+  r8.. ef'32\mf ef8..-- g32 g8..--\cresc bf32 bf8..-- ef32 |
+  ef4. g,8 bf ef g4\sff | R1 |
+  a,8-.\ff r a-. r r2 \barNumberCheck \EndMII \bar "||"
 }
-BsnOneIII=\relative c {\commonConductor}
+BsnOneIII=\relative c' {
+  \commonConductor
+  \clef bass \time 2/2 \key d\minor
+  a4--\sff \clef tenor f'8-.\p f-. f4-- f8-. f-. |
+  f4-- f8-. f-. f4-- f8-. f-. |
+  f4.-- e8-. f4.-- e8-. |
+  f4-- f8-. e-. f4-. f-. |
+  e2.-- f4-. |
+  e1 \mbreak |
+  e4.-- d8-. e4.-- d8-. |
+  e4-- e8-. d-. e4-. e-. |
+  d2.-- ef4-. |
+  d1--~ |
+  d4 e-. a-. r |
+  R1 * 3 |
+  r4 c,\p( ef--\> d)\! |
+  r4 bf( df--\> c\!) |
+  R1 * 2 \mark #40 \barNumberCheck \RhXL \mbreak |
+  \clef bass fs,1\pp(~ |
+  fs~ |
+  fs2 g |
+  fs g |
+  fs1)~\dim |
+  fs~ |
+  fs4\! r r2 | r1 |
+  d'1\pp~( |
+  d |
+  e4) r r2 |
+  R1 \mpbreak |
+  c1\p(~ | c | d4) r r2 | R1 |
+  bf2--(\p c4) r |
+  a2--( b4) r |
+  g2--(\dim a4)\! c,-.\f |
+  cs8-. d-. e-. f-. g4-. gs-. \mark\default \barNumberCheck \RhXLI |
+  a-> r r2 | R1 * 3 \mbreak |
+  r4 b-.\f b-. d-. |
+  d-- b8-. b-. b-.[ d-.] d-. d-. |
+  d4-- d8-. d-. d4-- d8-. d-. |
+  d4-- d8-. d-. d-. d-. e4-- |
+  c-. r r2 | R1 * 2 \mbreak |
+  d,1~(\mf |
+  d2 ef\cresc |
+  c g') |
+  e4.--\f e16-. e-. e4.-- e16-. e-. |
+  e4.-- e16-. e-. e4.-- e16-. e-. |
+  e4-- e8-. e-. e4-- e8-. e-. |
+  e-. e-. e-.[ e-.] e4-. r \mark\default \barNumberCheck \RhXLII \mbreak |
+  R1 * 9 |
+  r4 a-.\p a-. c-. e-. r r2 |
+  R1 * 4 | R1 * 4 |
+  e,1\p~ | e~ | e2( ef | d1\dim \mark\default \barNumberCheck \RhXLIII |
+  c4)\pp r r2 | R1 * 3 \mbreak
+  e1~(\p | e2.~ e8 f) |
+  f2( e | ef\dim d | c4)\! r r2 |
+  R1 * 2 \mark\default \barNumberCheck \RhXLIV |
+  r2 b4-.\p r |
+  b-.\cresc r b-.\! r |
+  g'1~(\p |
+  g2 fs |
+  g1)~\dim \mbreak |
+  g~ |
+  g4\! r b,\p-. r |
+  b-.\cresc r cs-. r |
+  d-.\! r r2 | R1 * 3 \mark\default \barNumberCheck \RhXLV |
+  r2 d(~\p | d1~ | d |
+  e2\dim ef\mbreak |
+  d)\! r2 | R1 |
+  r2 d~\p | d1 |
+  d'2(\p e,~ |
+  e4 fs g2) |
+  c( d)~ | d1 |
+  \clef alto d2(_\markup{\italic "senza cresc."} ef |
+  d1)~ |
+  d2 b'( |
+  a4 g fs2 \mbreak |
+  f d |
+  ds1 |
+  e4)\p r r2 | R1 * 2 \mark\default \barNumberCheck \RhXLVI |
+  R1 * 5 |
+  r4 r8 c-.\mf d4.-- r8 |
+  r4 r8 d-.\cresc e4.-- r8 |
+  r4 r8 g-.\f g4-. d-. \mbreak |
+   \tuplet 3/2 {d-. d8-.} d2->\ff d4-. |
+   g-. g-. g-. fs-. |
+   \tuplet 3/2 {g-. \clef bass a,8-.} a2-> bf,4-. |
+   ef-. g-.\dim c,-. d-. \mark\default \barNumberCheck \RhXLVII |
+    g-.\f r r2 | R1 | R1 * 2 |
+    ef2--(\mf bf) |
+    ef--( bf) \mbreak |
+    d2--( af) |
+    c2--( g) |
+    bf2.-- bf4-. |
+    bf2.-- bf4-. |
+    bf2.--\dim bf4-. |
+    bf2.-- bf4-. |
+    d1\p\<( |
+    c\! | bf~)\< | bf\> \mbreak \bar "||"
+    \key c\minor \time 4/4
+    bf\p~ | bf\dim~ \mark\default \barNumberCheck \RhXLVIII |
+    bf8\pp r r2 r4 |
+    R1 * 5 |
+    bf'1~\pp |
+    bf4(~ bf8 af~ af2 \bar "||"
+    \time 3/2 g4--)~ g8 r r2 d'\pp(^\markup{\italic "ten."} \mark\default \barNumberCheck \RhXLIX \mbreak \bar "||"
+    \time 4/4 ef8) r r4 r2 |
+    r2 cf,--\p( |
+    ef4) r r2 |
+    r cf'\p( |
+    ef1)~\dim |
+    ef8\! r r4 r2 | R1 \mark\default \barNumberCheck \RhL |
+    R1 \mpbreak |
+    R1 * 4 \bar "||"
+    \time 3/2 \clef alto g1\p( gf2)\< |
+    f\>( e\! ef\dim |
+    \clef bass ef,\pp~) ef8 r r4 r2 \mark\default \barNumberCheck \RhLI \bar "||"
+    \time 4/4 R1 |
+    r2 cf\mf\> |
+    bf1\p~--  |
+    bf8 r r4 cf2--\mf\> \mbreak |
+    bf1~\p\dim |
+    bf~\pp |
+    bf8 r r4 r2 | R1 \mark\default \barNumberCheck \RhLII |
+    bf8-.\p[ r16 bf-.] bf8-.[ r16 bf-.] bf8-.[ r16 bf-.] bf8-. r16 bf-.] |
+    bf1--~ \bar "||"
+    \time 3/2 bf8 r r4 r2 r | R1. \mbreak \bar "||"
+    \time 4/4 R1 * 2 | R1 | R1 \mark\default \barNumberCheck \RhLIII |
+    \grace s8 R1 |
+    r2 r4 r8. d'16\pp^"Solo" |
+    ef8-.[_\markup{\italic "leggiero"} r16 d-.] ef8-. r16 d-.] ef8-.[ r16 ef32( d] ef16) g-. af-. d,-. \mbreak |
+    ef-. ef32( d ef8)--~ ef16 d-. ef8--~ ef16 d-. ef-. d-. ef-. ef32( d ef8-.) \bar "||"
+    \time 3/2 R1. * 2 | R1. \mark\default \barNumberCheck \RhLIV \bar "||"
+    \time 4/4 ef,1~\mfCant |
+    ef2 ef--~ | ef1 |
+    cf--\mbreak
+    cf--~ |
+    cf2 cf--~\dim | cf1 |
+    df2\p( c\dim \mark\default \barNumberCheck \RhLV |
+    b8)\pp r r4 r2 | R1 * 8 \mark\default \barNumberCheck \RhLVI |
+    r2 r4 ff''\p\< |
+    ff4.\!(-- ef8 d2) |
+    cs4.\cresc( c8 b4 a8 af) \mbreak |
+    af4--\f( g8 af a2\dim |
+    bf8)\pp r r4 r2 | R1 |
+    af1~(\p |
+    af2.\< b4\> \mark\default \barNumberCheck \RhLVII |
+    c)\! r r b\>(-- | c) r r g(\< |
+    f1\mf\dim |
+    e2 f | ef8)\p r r4 r2 \mbreak |
+    d1^\markup{\italic "ten."}\p( \mark\default \barNumberCheck \RhLVIII
+    ef8\pp) r
+  }
 
