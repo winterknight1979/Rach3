@@ -381,5 +381,48 @@ BsnTwoIII=\relative c {
   \clef tenor gs4(_\markup{\italic"senza cresc"} b c2~ |
   c a | b) e(~ | e d~ | d b | c b | a4)\p r r2 |
   R1 * 2 \mark\default \barNumberCheck \RhXLVI \mbreak |
+  R1 * 5 |
+  r4 r8 a-.\mf b4.-- r8 |
+  r4 r8 b-.\cresc c4.-- r8 |
+  r4 r8 c-.\f cs4-. c-.  |
+  \tuplet 3/2 {b-. g8-.} g2->\ff b4-. |
+  e,-. g-. c,-. d-. \mbreak |
+  \tuplet 3/2 {g-. \clef bass g,8-.} g2-> bf,4-. |
+  ef-. g-.\dim c,-. d-. \mark\default \barNumberCheck \RhXLVII |
+  g-.\f r r2 |
+  R1 | R1 * 2 |
+  c2--(\mf^\markup{\italic "poco marc."} g4 ef) |
+  c'2--( g4 ef) |
+  bf'2--( f4 df) \mbreak |
+  af'2(-- ef4 c) |
+  ef2.--(\p bf4)-. |
+  ef2.--( bf4)-. |
+  g'2.(--\dim d4-.) |
+  g2.(-- d4-.) |
+  bf'4-. r bf2~(\p | bf af~  | af g~ | g f)\> \mbreak \bar "||"
+  \key c\minor \time 4/4
+  ef1\p~ | ef\dim~ \mark\default \barNumberCheck \RhXLVIII |
+  ef8\pp r r4 r2 | R1 * 5 |
+  g'1\pp~ |
+  g4(~ g8 ef~ ef2~ \bar "||"
+  \time 3/2 ef4--~) ef8 r r2 bf'^\markup{\italic "ten"}\pp( \mark\default \barNumberCheck \RhXLIX \mbreak \bar "||"
+  \time 4/4 bf8) r r4 r2 |
+  R1 * 2 |
+  r2 cf,\p( | ef1~)\dim | ef8\! r r4 r2 |
+  R1 \mark\default \barNumberCheck \RhL |
+  R1 | R1 * 4 \bar "||"
+  \time 3/2 \clef tenor ef'1.\p\< \mbreak |
+  df2\>( bf\! cf\dim |
+  \clef bass bf)~\pp bf8 r r4 r2 \mark\default \barNumberCheck \RhLI \bar "||"
+  \time 4/4 R1 |
+  r2 ef,,\mf\> |
+  ef1--\p~ |
+  ef8 r r4 ef2--\mf\> \mbreak |
+  ef1\p\dim~ | ef\pp~ | ef8 r r4 r2 |
+  R1 \mark\default \barNumberCheck \RhLII |
+  R1 * 2 \bar "||"
+  \time 3/2 R1. * 2 \bar "||"
+  \time 4/4 R1 * 2 | R1 \mpbreak 
+
 }
 
