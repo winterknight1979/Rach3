@@ -9,6 +9,7 @@
 \include "include/bsn1.ily"
   \addQuote "BsnOneI" {\keepWithTag #'quote \BsnOneI}
   \addQuote "BsnOneII" {\keepWithTag #'quote \BsnOneII}
+  \addQuote "BsnOneIII" {\keepWithTag #'quote \BsnOneIII}
 \include "include/bsn2.ily"
   \addQuote "BsnTwoII" {\keepWithTag #'quote \BsnTwoII}
 

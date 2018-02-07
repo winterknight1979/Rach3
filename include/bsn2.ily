@@ -284,7 +284,102 @@ BsnTwoII=\relative c' {
   df,2.\f)~ |
   df2~ df8 r |
   R2. * 9 \mark\default \barNumberCheck \RhXXXII \mpbreak |
-
+  R2.* 4 \bar "||"
+  \key fs \minor R2. * 4 \mark\default \barNumberCheck \RhXXXIII \bar "||" |
+  \time 3/8 R4. * 26 \mark\default \barNumberCheck \RhXXXIV |
+  \clef tenor \cueWhile "BsnOneII" "Fag.I" #UP
+  {R4. * 5 \mbreak R4.*2 } | R4. |
+  r8  a''-.\p a-. |
+  r8 \once\set crescendoText="poco cresc." \once\set crescendoSpanner=#'text a-.\< a-. |
+  r gs-. gs-. |
+  r cs-.\dim cs-.\! \mark\default \barNumberCheck \RhXXXV |
+  R4.*16 \barNumberCheck \RhXXXVI \bar "||"
+  R2. * 2 | R2. * 4 |
+  \clef bass r4 gs\pp( fs |
+  es ds cs) \mbreak | 
+  fs,( a bs\< |
+  ds\>-- es)\! r \mark\default \barNumberCheck \RhXXXVII |
+  r fs,\p( g |
+  a\< g\> fs\! |
+  d) e(\dim d |
+  c2\>) r4\pp | 
+  r e(\p fs)~ |
+  fs8 r d4(\dim e)~ \mbreak |
+  e8\! r a2(\<^\markup{\italic "cantabile"} |
+  gs4\mf a gs\< |
+  fs\! es e\> |
+  ds\dim d cs)~ \mark\default \barNumberCheck \RhXXXVIII |
+  cs2\p\< gs''4\f(~ | 
+  gs~ \tuplet 3/2 {gs a8)} fs4--~( |
+  fs gs cs,)~ |
+  cs a\dim( gs |
+  cs,2.\mf~) \mbreak |
+  cs\dim( \bar "||"
+  \key d\minor \time 4/4 a'8\p) r r4 r2 |
+  R1 * 3 \mark\default \barNumberCheck \RhXXXIX |
+  r8.. bf32\mf bf8..[-- ef32] ef8..--[\cresc g32] g8..--[ bf32] |
+  bf4.-- ef,8 bf g ef4\sff | R1 |
+  a8-.\ff r a-. r r2 \barNumberCheck \EndMII \bar "||"
 }
-BsnTwoIII=\relative c {\commonConductor}
+BsnTwoIII=\relative c {
+  \commonConductor
+  \clef bass \time 2/2 \key d\minor
+  d4\sff \clef tenor d'8-.\p d-. d4-- d8-. d-. |
+  d4-- d8-. d-. d4-- d8-. d-. |
+  d4.-- a8-. d4.-- a8-. |
+  d4-- d8-. a-. d4-. d-. |
+  a2.-- d4-. | a1-- \mbreak
+  c4.-- g8-. c4.-- g8-. |
+  c4-- c8-. g-. c4-. c-. |
+  g2.-- c4-. |
+  g1~-- |
+  g4 r r a-. |
+  d-. r r2 |
+  R1 * 6 \mark #40 \barNumberCheck \RhXL |
+  \clef bass b,1\pp~ | b~ \mbreak |
+  b~ | b~ | b~\dim | b~ | b4\! r r2 |
+  R1 | f'1\p(~ |
+  f | a4) r r2 | R1 |
+  ef1~(\p \mbreak |
+  ef | g4) r r2 | R1 |
+  df2--(\p f4) r |
+  c2--( e4) r |
+  bf2--(\dim d4)\! c,\f-. | 
+  cs8-. d-. e-. f-. g4-. gs-. \mark\default \barNumberCheck \RhXLI |
+  a-> r r2 | R1 * 3 \mbreak |
+  r4 fs'-.\f g-. a-. |
+  b-- fs8-. g-. g-.[ a-.] a-. bf-. |
+  bf4-- bf8-. c-. bf4-- bf8-. c-. |
+  bf4-- bf8-. c-. d-. c-. bf4-- |
+  a-. r r2 | R1 * 2 \mbreak |
+  bf,1\mf( |
+  g2 ef\cresc |
+  c bf') |
+  a4.\f-- e'8-. a,4.-- e'8-. |
+  a,4.-- e'8-. a,4.-- e'8-. |
+  a,4-- a8-. e-. a4-- a8-. e-. |
+  a-. e-. a-.[ e-.] a4-. r \mark\default \barNumberCheck \RhXLII |
+  R1 * 9 \mpbreak 
+  r4 f'-.\p a-. a-.  |
+  c-. r4 r2 |
+  R1 * 4 | R1 * 8 \mark\default \barNumberCheck \RhXLIII |
+  R1 * 4 |
+  \cueWhile "BsnOneIII" "Fag.I" #UP
+  {R1 * 5} |
+  R1 * 2 \mark\default \barNumberCheck \RhXLIV \mbreak |
+  r2 e,,4\p r |
+  e-.\cresc r e-.\! r |
+  e-.\p r r2 | R1 * 3 |
+  r2 e4-.\p r |
+  e-.\cresc r cs-. r |
+  d-.\! r r2 | R1 * 3 \mark\default \barNumberCheck \RhXLV \mbreak |
+  r2  g~\pp | g1~ | g~ | g\dim~ | g2\! r | R1 |
+  r2 g\p~ | g1 |
+  b'2(\p c)~ | c1 | 
+  fs,4( g fs2~ \mbreak |
+  fs4 g a2) |
+  \clef tenor gs4(_\markup{\italic"senza cresc"} b c2~ |
+  c a | b) e(~ | e d~ | d b | c b | a4)\p r r2 |
+  R1 * 2 \mark\default \barNumberCheck \RhXLVI \mbreak |
+}
 
