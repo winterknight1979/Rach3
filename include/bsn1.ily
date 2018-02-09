@@ -644,8 +644,8 @@ BsnOneIII=\relative c' {
     d-.\f d-. d-. d-.
     \once\set decrescendoText="poco a poco dim"
     \once\set decrescendoSpanner=#'text
-    e-.\< e-. e-. e-. |
-    e-. e-. e-. e-.\! r2 |
+    e-.\> e-. e-. e-. |
+    e-. e-. e-. e-. r2 |
     g8-. g-. g-. g-. \clef tenor c-. c-. c-. c-. \mbreak |
     ef-. ef-. ef-. ef-. d-. d-. d-. d-. \mark\default \barNumberCheck \RhLXVIII |
     g-.\p r r4 r2 |

@@ -489,6 +489,149 @@ BsnTwoIII=\relative c {
   c1(\p | af) |
   f2\cresc( df |
   bf a') \mark\default \barNumberCheck \RhLXIII \mpbreak |
-  g4.--\f
+  g4.--\f d8-. g4.-- d8-. |
+  g4.-- d8-. g4.-- d8-. |
+  g4-- g8-. d-. g4-- g8-. d-. |
+  g-. d-. g-. d-. g4-> g-> \bar "||"
+  \key d \minor
+  d'->\f r d-. r | d-. r r2 |
+  e,1--~\> | e\p \mbreak |
+  f'4-.\f r f-. r | f-. r r2 |
+  g,1--~\> |
+  g2.\p f4-.\mf |
+  bf,2.-- a'4-. |
+  d,2.-- c'4-.\cresc |
+  bf-. g-. ef-. bf'-. |
+  a->\ff r a-> r \mark\default \barNumberCheck \RhLXIV \mbreak |
+  d,-> r r2 | R1 |
+  r4 d'8-.\p c-. bf4.--\cresc a8 |
+  g4.-- gf8-. f-.\< ef-. d-. c-. |
+  bf4-.\sf r r2 |
+  r r4 r8 f'16-.\p f-. |
+  f4-. r r r8 f16-. f-. \mbreak |
+  f4-. r r r8 f16-.\mf f-. |
+  f4-. r8 f16-. f-. f4-. r8 f16-. f-. |
+  f4-. r8 f16-. f-. g4-. r8 g16-. g-. |
+  gf4-. r8 gf16-. gf-. f4-.\dim r8 f16-. f-.
+  f4-. r8 f16-. f-. f4-. r8 f16-. f-. \mark\default \barNumberCheck \RhLXV |
+  f4-.\! r r2 \mbreak |
+  r r4 r8 f16-.\p f-. |
+  f4-. r r r8 f16-. f-. |
+  f4-. r r r8 f16-.\mf f-. |
+  f4-. r8 f16-. f-. f4-. r8 f16-. f-. |
+  f4-. r8 f16-. f-. g4-. r8 g16-. g-. \mbreak |
+  gf4-. r8 gf16-. gf-. f4-.\dim r8 f16-. f-. |
+  f4-. r8 f16-. f-. f4-. r8 f16-. f-. |
+  f4-.\pp r r r8 f16-.\p f-. |
+  f4-. r r r8
+  \once\set crescendoText="poco cresc"
+  \once\set crescendoSpanner=#'text
+  f16-.\< f-. |
+  f4-.\! r r2 \mark\default \barNumberCheck \RhLXVI \mbreak |
+  r2 r4 r8 a16-.\mf a-. |
+  a4-. r r r8 a16-. a-. |
+  a4-. r8 a16-. a-. a4-. r8 a16-. a-. |
+  a4-. r8 a16-. a-. b4-. r8 b16-. b-. |
+  bf4-. r8 bf16-.\dim bf-. a4-. r8 a16-. a-. \mbreak |
+  a4-. r8 a16-. a-. a4-. r8 a16-. a-. |
+  a4-.\pp r r r8 a16-.\p a-. |
+  a4-. r r r8 b16-.\mf b16-. |
+  c4-. r8 c16-. c-. c4-. r8 c16-. c-. |
+  c4-. r8 c16-. c-. c4-. r8 c16-. c-. \mbreak |
+  c4-. r8 c16\dim-. c-. c4-. r8 c16-. c-. |
+  d4-. r8 d16-. d-. c4-. r8 c16-. c-. |
+  c4-.\pp r r2 |
+  R1 * 5 \mark\default \barNumberCheck \RhLXVII |
+  R1 * 7 |
+  \cueWhile "BsnOneIII" "Fag.I" #UP {r2}
+  c'8\cresc-. c-. c-. c-. \mbreak |
+  a-. a-. a-. a-.\< d,-. d-. d-. d-. |
+  g,\f-. g-. g-. g-. 
+  \once\set decrescendoText="poco a poco dim."
+  \once\set decrescendoSpanner=#'text
+  c-.\> c-. c-. c-. |
+  e-. r r4 fs8-. fs-. fs-. fs-. |
+  r2 bf8-. bf-. bf-. bf-. |
+  c-. c-. c-. c-.\! r2 \mark\default \barNumberCheck \RhLXVIII |
+  R1 \mbreak |
+  r2 f,8-.\p f-. f-. f-. |
+  f-. r f-.\dim f-. e-. e-. e-. e-. |
+  d-. r d-. d-. c-. r c-. c-. |
+  bf-.\pp r r4 r2 |
+  g1\mf\>( | d\p) \mbreak |
+  ef1(\mf\>| g4)\p r r2 |
+  r bf4.--\p bf8 |
+  bf4.-- bf8 cs4.-- cs8 |
+  cs4.-- cs8 a4\sff r \mark\default \barNumberCheck \RhLXIX \bar "||"
+  R1 * 16 \mark\default \barNumberCheck \RhLXX |
+  R1 * 8 \mark\default \barNumberCheck \RhLXXI \mpbreak |
+  a4-.\p r a-. r |
+  a-. r a-. r |
+  a-. r a-. r |
+  a-. r a-. r |
+  ds-._\markup{\italic "sempre"} r ds-. r |
+  ds-. r ds-. r |
+  e-. r e-. r |
+  e-. r e-. r \mbreak |
+  f-. r d-. r |
+  d-. r ef-. r \mark\default \barNumberCheck \RhLXXII |
+  e-. r r2 |
+  R1 * 3 | R1 * 4 |
+  \clef tenor bf'2\p\<( a--)\> |
+  bf\p\<( a--)\> |
+  b\cresc( bf--) |
+  b( d--) \mark\default \barNumberCheck \RhLXXIII \mbreak \bar "||"
+  \clef bass \key b\minor
+  a,\f-- e-- |
+  a-- e--
+  a--\cresc e-- |
+  a-- e-- |
+  a4-.\ff e-. a-. e-. |
+  a-. e-. a-. e-. |
+  a-. a2-- a4--~ |
+  a a2-- a4--~ \mbreak |
+  a a2-- a4--~ |
+  a g'-. c-. c-. |
+  c-.\sff r r2\fermata_"Cadenza"
+  \tag #'score \cadenzaIIIa 
+  \mark\default \barNumberCheck \RhLXXIV \bar "||"
+  R1 * 4 |
+  d,,1\p | d--\cresc | d--~ | d\mbreak |
+  \time 3/2 d1.--\f | d--~ |
+  \time 2/2 d4 r r2 | R1 |
+  R1 * 4 \mark\default \barNumberCheck \RhLXXV |
+  d1\p | d1--\cresc | d~ | d\! \mbreak |
+  b'( | e,)~ | e | a( | fs)~ | fs |
+  b,\cresc | e | a | fs \mark\default \barNumberCheck \RhLXXVI |
+  ds\< | b\! | e\ff\< \mbreak |
+  a\! | fs\> | b\! |
+  e,2( fs | g gs) |
+  a( as | b g)\> \mark\default\barNumberCheck \RhLXXVII |
+  a1~\f | a |
+  a2\mf( b\< | g\!  fs \mbreak |
+  b4\p) r r2 |
+  g1\< | ef--\ff |
+  e2( g\> \mark\default \barNumberCheck \RhLXXVIII |
+  a4)\! r r8 f'-.\f g-. a-. |
+  bf4-. r r8 \clef tenor a-.\cresc bf-. c-. |
+  d4-.\! r8 bf-. c-. ds-. e4-. \mbreak |
+  \clef bass r e,,-. g-. a-. |
+  d,-.\f r d-.\mf r |
+  d-. r d-. r |
+  d-. r d-. r |
+  ef2->\f ( e4-.) a-. \mark\default \barNumberCheck \RhLXXIX |
+  d,-. r g-.\fMarc gs-. |
+  a-. r f-. fs-. \mbreak |
+  g-. r ef-. e-. |
+  fs-. g-. bf-. a-.-> |
+  d,-.-> r r2 |
+  d'4\ff r r2 |
+  d4 r d r |
+  r2 d4 r \mbreak |
+  r4 d,2-- a'4--~ |
+  a a2-- d4--~ |
+  d a'-. a-. a-. |
+  a\sff r a,\sff r |
+  d,\sff r r2 | R1 \barNumberCheck \EndMIII \bar "|."
 }
 

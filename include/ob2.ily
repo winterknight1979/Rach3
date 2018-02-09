@@ -259,7 +259,7 @@ ObTwoIII=\relative c'{
   ef-.\p r r2 |
   R1 * 7 |
   R1 * 4  \mbreak \bar "||"
-  \time 4/4 \key g \minor
+  \time 4/4 \key c \minor
   R1 * 2 \mark\default \barNumberCheck \RhXLVIII |
   R1 * 8 \bar "||"
   \time 3/2 R1. \mark\default \barNumberCheck \RhXLIX \bar "||"

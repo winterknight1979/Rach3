@@ -2,10 +2,19 @@ LILY=lilypond
 LOG=INFO
 
 HEADERS= include/conductor.ily include/dynamics.ily include/functions.ily include/macros.ily
+
 FLUTEFILES=include/fl1.ily include/fl2.ily
+FLUTECUES=include/ob1.ily include/ob2.ily include/cl1.ily
+
 OBOEFILES=include/ob1.ily include/ob2.ily
+OBOECUES=include/fl1.ily include/fl2.ily include/cl1.ily
+
 CLARFILES=include/cl1.ily include/cl2.ily
+CLARCUES=include/ob1.ily
+
 BSNFILES=include/bsn1.ily include/bsn2.ily
+BSNCUES=
+
 SCOREFILES=${HEADERS} ${FLUTEFILES} ${OBOEFILES} ${CLARFILES} ${BSNFILES}
 
 all: flutes oboes clarinets bassoons score Rach3.mid
@@ -27,14 +36,14 @@ bassoons: bassoons.a4.pdf bassoons.letter.pdf
 
 score.a4.pdf: score.ly ${SCOREFILES}
 score.letter.pdf: score.ly ${SCOREFILES}
-flutes.a4.pdf: flutes.ly ${HEADERS} ${FLUTEFILES} ${OBOEFILES} ${CLARFILES}
-flutes.letter.pdf: flutes.ly ${HEADERS} ${FLUTEFILES} ${OBOEFILES} ${CLARFILES}
-oboes.a4.pdf: oboes.ly ${HEADERS} ${OBOEFILES} ${FLUTEFILES} ${CLARFILES}
-oboes.letter.pdf: oboes.ly ${HEADERS} ${OBOEFILES} ${FLUTEFILES} ${CLARFILES}
-clarinets.a4.pdf: clarinets.ly ${HEADERS} ${CLARFILES} ${OBOEFILES}
-clarinets.letter.pdf: clarinets.ly ${HEADERS} ${CLARFILES} ${OBOEFILES}
-bassoons.a4.pdf: bassoons.ly ${HEADERS} ${BSNFILES}
-bassoons.letter.pdf: bassoons.ly ${HEADERS} ${BSNFILES}
+flutes.a4.pdf: flutes.ly ${HEADERS} ${FLUTEFILES} ${FLUTECUES}
+flutes.letter.pdf: flutes.ly ${HEADERS} ${FLUTEFILES} ${FLUTECUES}
+oboes.a4.pdf: oboes.ly ${HEADERS} ${OBOEFILES} ${OBOECUES}
+oboes.letter.pdf: oboes.ly ${HEADERS} ${OBOEFILES} ${OBOECUES}
+clarinets.a4.pdf: clarinets.ly ${HEADERS} ${CLARFILES} ${CLARCUES}
+clarinets.letter.pdf: clarinets.ly ${HEADERS} ${CLARFILES} ${CLARCUES}
+bassoons.a4.pdf: bassoons.ly ${HEADERS} ${BSNFILES} ${BSNCUES}
+bassoons.letter.pdf: bassoons.ly ${HEADERS} ${BSNFILES} ${BSNCUES}
 
 
 
