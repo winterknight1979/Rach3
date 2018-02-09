@@ -39,7 +39,7 @@ ClTwoI=\relative c'{
   b8) r r4 r2 |
   R1^\fermataMarkup_"Cadenza"
   \tag #'score {\cadenzaIa} |
-  %cue bsn.
+  \cueWhileClef "BsnOneI" "Fag.I" #UP "bass"
   {R1 * 2 \mbreak r4}
   ds2(\mf e4)~ |
   e a2(\< a4--\! |

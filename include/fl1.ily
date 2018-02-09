@@ -62,7 +62,7 @@ FlOneI=\relative c'{
  \key a \minor R1 * 14 \mark\default \barNumberCheck\RhXII \bar "||" 
  \time 3/2 R1. * 2 \mbreak \bar "||"
  \time 4/4 
-  % \cueDuringwithClef #"BsnTwo" #UP #"treble"
+  \cueWhileClef #"BsnTwoI" "Fag.II" #UP "bass"
   {\time 4/4 R1 * 2 | r2 }
   r4 r8 af-.[\p | g-. f-.] r4 r2 |
   R1 * 2 \bar "||"

@@ -22,7 +22,7 @@ ObTwoI=\relative c' {
   \time 4/4 R1 * 8 |
   R1^\fermataMarkup_"Cadenza"
   \tag #'score {\cadenzaIa} \mbreak |
-  %cue bsn
+  \cueWhileClef "BsnOneI" "Fag.I" #UP "bass"
   {R1 * 2| r4}
   g2\mf g4--~ |
   g a2\<( bf4\! |

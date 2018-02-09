@@ -61,7 +61,7 @@ FlTwoI=\relative c'{
   \key a \minor
   R1 * 14 \mark\default \barNumberCheck \RhXII \bar "||"
   \time 3/2 R1. * 2 \bar "||"
-  \time 4/4 %cueDuringWithClef #"BsnOne" #UP #"bass"
+  \time 4/4 \cueWhileClef #"BsnTwoI" "Fag.II" #UP "bass"
   {R1 * 2 | r2}
   r4 r8 f'-.[\p | ef-. d-.] r4 r2 | R1 * 2 \mbreak \bar "||"
   \time 3/2 R1. * 4 \mark\default \barNumberCheck \RhXIII \bar "||"

@@ -14,20 +14,13 @@
   \addQuote "ClarOneIII" {\keepWithTag #'quote \ClOneIII}
   \addQuote "ClarTwoIII" {\keepWithTag #'quote \ClTwoIII}
  
+%cues
 \include "include/ob1.ily" 
    \addQuote "OboeOneI" {\keepWithTag #'quote \ObOneI}
-%   \addQuote "OboeOneII" {\keepWithTag #'quote \ObOneII}
    \addQuote "OboeOneIII" {\keepWithTag #'quote \ObOneIII}
 
-%\include "include/ob2.ily"
-
-%cues
-%\include "include/fl1.ily"
-%\include "include/fl2.ily"
- % \addQuote "FluteOneI" {\keepWithTag #'quote \FlOneI}
- % \addQuote "FluteOneII" {\keepWithTag #'quote \FlOneII}
- % \addQuote "FluteOneIII" {\keepWithTag #'quote \FlOneIII}
- % \addQuote "FlutesI" {\keepWithTag #'quote <<{\FlOneI}{\FlTwoI}>>} 
+\include "include/bsn1.ily"
+  \addQuote "BsnOneI" {\keepWithTag #'quote \BsnOneI}
 
 \paper{ 
   #(layout-set-staff-size 19)

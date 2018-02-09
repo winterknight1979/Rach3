@@ -50,7 +50,7 @@ ClOneI=\relative c'{\transposition bf \commonConductor
   fs\< g gs a! bf8-.\!) r r2 |
   R1 * 2 | R1^\fermataMarkup_"Cadenza"
   \tag #'score {\cadenzaIa} |
-  % cue bsn.
+  \cueWhileClef "BsnOneI" "Fag.I" #UP "bass"
   {R1 * 2 | r4}
   b2(\mf c4)~ \mbreak |
   c d2(\< e4--\! |

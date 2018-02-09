@@ -37,6 +37,9 @@
   \addQuote "ClarOneII" {\keepWithTag #'quote \ClOneII}
   \addQuote "ClarOneIII" {\keepWithTag #'quote \ClOneIII}
 
+\include "include/bsn2.ily"
+  \addQuote "BsnTwoI" {\keepWithTag #'quote \BsnTwoI}
+
 \paper{ 
   #(layout-set-staff-size 19)
   system-system-spacing = #'((basic-distance . 18)

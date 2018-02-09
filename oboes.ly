@@ -24,6 +24,9 @@
 \include "include/cl1.ily"
   \addQuote "ClarOneII" {\keepWithTag #'quote \ClOneII}
 
+\include "include/bsn1.ily"
+  \addQuote "BsnOneI" {\keepWithTag #'quote \BsnOneI}
+
 \paper{ 
   #(layout-set-staff-size 19)
   system-system-spacing = #'((basic-distance . 18)

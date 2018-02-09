@@ -4,13 +4,13 @@ LOG=INFO
 HEADERS= include/conductor.ily include/dynamics.ily include/functions.ily include/macros.ily
 
 FLUTEFILES=include/fl1.ily include/fl2.ily
-FLUTECUES=include/ob1.ily include/ob2.ily include/cl1.ily
+FLUTECUES=include/ob1.ily include/ob2.ily include/cl1.ily include/bsn2.ily
 
 OBOEFILES=include/ob1.ily include/ob2.ily
-OBOECUES=include/fl1.ily include/fl2.ily include/cl1.ily
+OBOECUES=include/fl1.ily include/fl2.ily include/cl1.ily include/bsn1.ily
 
 CLARFILES=include/cl1.ily include/cl2.ily
-CLARCUES=include/ob1.ily
+CLARCUES=include/ob1.ily include/bsn1.ily
 
 BSNFILES=include/bsn1.ily include/bsn2.ily
 BSNCUES=
