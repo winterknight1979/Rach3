@@ -16,6 +16,13 @@
 \include "include/cl2.ily"
 \include "include/bsn1.ily"
 \include "include/bsn2.ily"
+\include "include/hrn1.ily"
+\include "include/hrn2.ily"
+\include "include/hrn3.ily"
+\include "include/hrn4.ily"
+
+
+
 
 \paper {
   #(layout-set-staff-size 15)
@@ -37,7 +44,7 @@
  
     \keepWithTag #'score \killCues <<
       \new Devnull \conductorI
-      \new StaffGroup <<
+      \new StaffGroup ="Woods" <<
         \new Staff \with
         { instrumentName = #"2 Flauti"
           shortInstrumentName = #"Fl."}
@@ -57,8 +64,21 @@
          { instrumentName = #"2 Fagotti"
           shortInstrumentName = #"Fag."}
           {\partcombine \BsnOneI \BsnTwoI}
-        
         >>
+
+      \new StaffGroup = "Brass" <<
+        \new GrandStaff = "Horns" <<
+         \new Staff \with
+         { instrumentName = #"Corni 1-2 in F"
+          shortInstrumentName = #"Cor. 1-2"}
+          {\partcombine \HrnOneI \HrnTwoI}
+         \new Staff \with
+         { instrumentName = #"Corni 3-4 in F"
+          shortInstrumentName = #"Cor. 3-4"}
+          {\partcombine \HrnThreeI \HrnFourI}
+ 
+        >>
+      >>
 
     >>
         \header{piece=\markup\huge "I"}
@@ -68,7 +88,7 @@
  
        \keepWithTag #'score \killCues <<
          \new Devnull \conductorII
-         \new StaffGroup <<
+         \new StaffGroup ="Woods" <<
           \new Staff  \with
             { instrumentName = #"2 Flauti"
             shortInstrumentName = #"Fl."}
@@ -91,6 +111,21 @@
  
 
        >>
+       \new StaffGroup = "Brass" <<
+        \new GrandStaff = "Horns" <<
+         \new Staff \with
+         { instrumentName = #"Corni 1-2 in F"
+          shortInstrumentName = #"Cor. 1-2"}
+          {\partcombine \HrnOneII \HrnTwoII}
+         \new Staff \with
+         { instrumentName = #"Corni 3-4 in F"
+          shortInstrumentName = #"Cor. 3-4"}
+          {\partcombine \HrnThreeII \HrnFourII}
+ 
+        >>
+      >>
+
+
      >>
         \header{piece=\markup\huge "II Intermezzo"}
       }
@@ -99,7 +134,7 @@
  
        \keepWithTag #'score \killCues <<
          \new Devnull \conductorIII
-         \new StaffGroup <<
+         \new StaffGroup="Woods" <<
             \new Staff  \with
               { instrumentName = #"2 Flauti"
               shortInstrumentName = #"Fl."}
@@ -121,6 +156,21 @@
           {\partcombine \BsnOneIII \BsnTwoIII}
  
             >>
+        \new StaffGroup = "Brass" <<
+        \new GrandStaff = "Horns" <<
+         \new Staff \with
+         { instrumentName = #"Corni 1-2 in F"
+          shortInstrumentName = #"Cor. 1-2"}
+          {\partcombine \HrnOneIII \HrnTwoIII}
+         \new Staff \with
+         { instrumentName = #"Corni 3-4 in F"
+          shortInstrumentName = #"Cor. 3-4"}
+          {\partcombine \HrnThreeIII \HrnFourIII}
+ 
+        >>
+      >>
+
+
           >>
         \header{piece=\markup\huge "III Finale"}
       }

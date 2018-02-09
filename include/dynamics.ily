@@ -8,7 +8,8 @@ pLeg = \tweak DynamicText.self-alignment-X #LEFT
 pCant = \tweak DynamicText.self-alignment-X #LEFT 
   #(make-dynamic-script (markup #:dynamic "p" #:normal-text #:italic "cantabile"))
 
-
+pComm = \tweak DynamicText.self-alignment-X #LEFT 
+  #(make-dynamic-script (markup #:dynamic "p" #:normal-text #:italic "commodo"))
 
 pEsp = \tweak DynamicText.self-alignment-X #LEFT 
   #(make-dynamic-script (markup #:dynamic "p" #:normal-text #:italic "espress."))
@@ -47,6 +48,7 @@ ffMMarc = \tweak DynamicText.self-alignment-X #LEFT
        ("pLeg"      . 0.55)
        ("pCant"     . 0.55)
        ("pEsp"      . 0.55)
+       ("pComm"     . 0.55)
        ("ppDolce"   . 0.49)
        ("ppLeg"     . 0.49)
        ("semprePP"  . 0.49)

@@ -17,6 +17,11 @@
 \include "include/cl2.ily"
 \include "include/bsn1.ily"
 \include "include/bsn2.ily"
+\include "include/hrn1.ily"
+\include "include/hrn2.ily"
+\include "include/hrn3.ily"
+\include "include/hrn4.ily"
+
 
 
      \score{
@@ -45,6 +50,12 @@
         shortInstrumentName = #"Fag."
         midiInstrument = #"bassoon"}
         \unfoldRepeats \articulate <<{\BsnOneI \BsnOneII \BsnOneIII} \\ {\BsnTwoI \BsnTwoII \BsnTwoIII}>>
+          \new Staff \with
+      { instrumentName = #"4 Corni"
+        shortInstrumentName = #"Cor."
+        midiInstrument = #"french horn"}
+        \unfoldRepeats \articulate <<{\HrnOneI \HrnOneII \HrnOneIII} \\ {\HrnTwoI \HrnTwoII \HrnTwoIII} \\ 
+          {\HrnThreeI \HrnThreeII \HrnThreeIII} \\ {\HrnFourI \HrnFourII \HrnFourIII}>>
       
       
       >>

@@ -15,15 +15,19 @@ CLARCUES=include/ob1.ily include/bsn1.ily
 BSNFILES=include/bsn1.ily include/bsn2.ily
 BSNCUES=
 
-SCOREFILES=${HEADERS} ${FLUTEFILES} ${OBOEFILES} ${CLARFILES} ${BSNFILES}
+HRNFILES=include/hrn1.ily include/hrn2.ily include/hrn3.ily include/hrn4.ily
+HRNCUES=
 
-all: flutes oboes clarinets bassoons score Rach3.mid
+SCOREFILES=${HEADERS} ${FLUTEFILES} ${OBOEFILES} ${CLARFILES} ${BSNFILES} ${HRNFILES}
+
+all: flutes oboes clarinets bassoons horns score Rach3.mid
 
 score: score.a4.pdf score.letter.pdf
 flutes: flutes.a4.pdf flutes.letter.pdf
 oboes: oboes.a4.pdf oboes.letter.pdf
 clarinets: clarinets.a4.pdf clarinets.letter.pdf
 bassoons: bassoons.a4.pdf bassoons.letter.pdf 
+horns: horns.a4.pdf horns.letter.pdf
 
 %.mid: %.ly
 	${LILY} -dmidi-extension=mid -s  $< 2>&1 | tee $*.mid.log
@@ -44,6 +48,9 @@ clarinets.a4.pdf: clarinets.ly ${HEADERS} ${CLARFILES} ${CLARCUES}
 clarinets.letter.pdf: clarinets.ly ${HEADERS} ${CLARFILES} ${CLARCUES}
 bassoons.a4.pdf: bassoons.ly ${HEADERS} ${BSNFILES} ${BSNCUES}
 bassoons.letter.pdf: bassoons.ly ${HEADERS} ${BSNFILES} ${BSNCUES}
+horns.a4.pdf: bassoons.ly ${HEADERS} ${HRNFILES} ${HRNCUES}
+horns.letter.pdf: bassoons.ly ${HEADERS} ${HRNFILES} ${HRNCUES}
+
 
 
 
