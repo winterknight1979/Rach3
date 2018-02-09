@@ -1,5 +1,5 @@
 LILY=lilypond
-LOG=WARN
+LOG=INFO
 
 HEADERS= include/conductor.ily include/dynamics.ily include/functions.ily include/macros.ily
 FLUTEFILES=include/fl1.ily include/fl2.ily
@@ -17,7 +17,7 @@ clarinets: clarinets.a4.pdf clarinets.letter.pdf
 bassoons: bassoons.a4.pdf bassoons.letter.pdf 
 
 %.mid: %.ly
-	${LILY} -dmidi-extension=mid -s $< 2>&1 | tee $*.mid.log
+	${LILY} -dmidi-extension=mid -s  $< 2>&1 | tee $*.mid.log
 
 %.a4.pdf : %.ly
 	${LILY} -fpdf -dpaper-size=\"a4\"  --loglevel=${LOG} -o $*.a4 $< 2>&1 | tee $*.a4.log
