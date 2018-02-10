@@ -28,7 +28,7 @@
  
     \keepWithTag #'score \killCues <<
       \new Devnull {
-        \set Score.instrumentEqualizer = #my-equalizer
+%        \set Score.instrumentEqualizer = #my-equalizer
         \conductorI \conductorII \conductorIII}
       \new Staff \with
       { instrumentName = #"2 Flauti"

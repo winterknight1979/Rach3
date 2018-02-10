@@ -10,6 +10,7 @@
   \addQuote "HrnOneI" {\keepWithTag #'quote \HrnOneI}
 \include "include/hrn2.ily"
   \addQuote "HrnTwoI" {\keepWithTag #'quote \HrnTwoI}
+  \addQuote "Hrn12I" {\keepWithTag #'quote <<\HrnOneI \HrnTwoI>>}
 \include "include/hrn3.ily"
   \addQuote "HrnThreeI" {\keepWithTag #'quote \HrnThreeI}
 \include "include/hrn4.ily"
@@ -17,8 +18,11 @@
 
 
 %cues
+\include "include/ob1.ily"
+  \addQuote "OboeOneI" {\keepWithTag #'quote \transpose c' c \ObOneI}
 \include "include/cl1.ily"
-  % clarinet cues need to be transposed down an octave
+
+  \addQuote "ClarOneIut" {\keepWithTag #'quote \ClOneI}
   \addQuote "ClarOneI" {\keepWithTag #'quote \transpose c' c \ClOneI}
 \include "include/bsn1.ily"
   \addQuote "BsnOneI" {\keepWithTag #'quote \BsnOneI}

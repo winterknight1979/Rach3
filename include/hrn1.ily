@@ -79,6 +79,107 @@ HrnOneI=\relative c' {
   R1 * 5 | r2\breathe r2 |
   R1 * 6 \mpbreak |
   R1 * 6 \mark\default \barNumberCheck \RhX
+  R1 * 2 | R1 * 5 | R1 * 3 \mark\default \barNumberCheck \RhXI |
+  \cueWhile "ClarOneI" "Cl.I Solo" #UP {R1 * 3} |
+  R1 * 3 |
+  a1\pp~ |
+  a2.~( a8 fs \mbreak \bar "||"
+  a4) r r2 |
+  R1 * 5 |
+  g1\pp-+~ | g4-+ r r2 |
+  R1 * 6 \mark\default \barNumberCheck \RhXII \bar "||"
+  \time 3/2 r2 c1\pp\open~ | c1. \bar "||"
+  \time 4/4 \nextCresc "poco cresc"
+  c1--\<~ | c~\dim \mbreak
+  c4\p r r2 | R1 * 3 \bar "||"
+  \time 3/2 r2 g1\pp~ | g1. |
+  \nextCresc "poco cresc"
+  a1.~\< | a \mark\default \barNumberCheck \RhXIII \bar "||"
+  \time 4/4 a2\mf\<( b)\>~ |
+  b1\!_\markup{\italic "dim."} | R1 * 8 \mbreak |
+  R1 * 6 |
+  \cueWhile "OboeOneI" "Ob.I" #DOWN {R1 * 3} |
+  R1 \mark\default \barNumberCheck \RhXIV |
+  R1 * 6 |
+  c4.\f-- df8-. c4.-- df8-. |
+  c4-- c8-. d-. c4.-- c8-. |
+  f1\f--~ | f2~ f4. r8 \mbreak |
+  df4.--\fMarc df8-. df4.-- df8-. |
+  df4.-- df8-. cs4.-- cs8-. | 
+  cs4-- cs8-. cs cs4.-- cs8-. |
+  cs4.-- cs8-. cs4.-- cs8-. |
+  e4.-- e8-. e4.-- e8-. |
+  e4.-- e8-. e4.-- e8-. |
+  e4-- e8-. e-. e4.-- e8-. \mbreak |
+  e4.-- e8-. e4.-- e8-. |
+  e4-- b8-.\f b-. b4-> b8-. b-. |
+  b4-> b8-. b-. b4-> b8-. b-. |
+  b4-> b->\cresc b-> b-> |
+  b-> b-> b-> b-> \mbreak |
+  \time 2/2 cs1\ff~ |
+  cs2. cs8-- cs-- |
+  cs1--~ |
+  cs2. cs8-- cs-- |
+  c1--\dim~ |
+  c2. c8-- c-- |
+  c1--~ | c\> \mark\default \barNumberCheck \RhXV |
+  bf\pp~ | bf~ \mbreak
+  bf~ | bf |
+  a--~ | a~ | a\dim~ | a |
+  a--\pp~ |a~ | a~ | a |
+  gs~ | gs~ | gs\dim~ | gs( \mark\default \barNumberCheck \RhXVI \mbreak |
+  g4)\ppp r cs2--\p\>( |
+  d)\! b--(\> |
+  c\!) a--\>( |
+  b) gs\pp--( |
+  a4.) r8 r2 |
+  R1 * 15 \mark\default \barNumberCheck \RhXVII |
+  r2 gs(--\p\> |
+  a)\! fs--\p\>( |
+  g)\! e--\dim( \mbreak |
+  fs) ds(\> |
+  e4\pp) r r2 |
+  R1 * 7 \mark\default \barNumberCheck \RhXVIII |
+  R1 * 12 |
+  R1\fermataMarkup_"Cadenza"
+  \tag #'score \cadenzaIb
+  \mark\default \barNumberCheck \RhXIX \bar "||"
+  \time 4/4 R1 * 5 |
+  \cueWhile "OboeOneI" "Ob.I Solo" #DOWN {R1 * 2} |
+  \cueWhile "ClarOneI" "Cl.I Solo" #DOWN {R1 \mbreak r2 r4}
+  d'\p^"Solo"( |
+  f8 e d4 cs8 d e4 |
+  c2--) b8( c d4 |
+  bf2--) a8(\dim bf c4 |
+  bf2 a |
+  bf4\pp) r r2\fermata_"Cadenza"
+  \tag #'score \cadenzaIc
+  \mark\default \barNumberCheck \RhXX |
+  %cue piano
+  {R1 * 2} \mbreak |
+  a4.\pp\>--( bf8-.\! a4.--\> bf8-.\! |
+  a4.--\> bf8-.\! a4.--\dim bf8-. \bar "||"
+  a4)\pp r r2 |
+  R1 * 8 |
+  r2 b--\p~ \mark\default \barNumberCheck \RhXXI |
+  b2. r4 |
+  R1 * 6 |
+  \cueWhile "HrnThreeI" "Cor.III" #DOWN
+  {R1\mpbreak R1 * 5} |
+  R1 \bar "||"
+  \time 2/4 R2 \bar "||"
+  \time 4/4 R1 \mark\default \barNumberCheck \RhXXII |
+  a4.--\p g16-. g-. a8-. d-. e-. g,-. |
+   a4.-- g16-. g-. a8-. d-. e-. g,-. |
+   a4.-- g16-. g-. a8-. d-. e-. g,-. \mbreak |
+    a4.-- g16-. g-. gs8-.\dim d'-. e-. e,-. |
+    a4\pp r r2 |
+    R1 * 3 \mark\default \barNumberCheck \RhXXIII |
+    a2\p--~\> a8\pp a-. a-. a-. |
+    g4-- r r2 |
+    R1 | R1 | R1*6 \barNumberCheck \EndMI \bar "|."
+ 
+
 }
 HrnOneII=\relative c' {
   \commonConductor
