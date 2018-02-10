@@ -1,3 +1,4 @@
+\version "2.18.2"
 BsnTwoI=\relative c {
   \commonConductor
   \clef tenor \key d\minor \time 4/4 R1 * 8 |
@@ -9,8 +10,7 @@ BsnTwoI=\relative c {
   ef2( fs |
   g4.) r8 r2 |
   c2--( bf) |
-  \once\set crescendoText="poco cresc."
-  \once\set crescendoSpanner=#'text
+  \nextCresc "poco cresc."
   d\<--( cs \mbreak
   c4) ef\mf( d\> c\! |
   bf4.\p c8 bf4) r | 
@@ -36,8 +36,7 @@ BsnTwoI=\relative c {
   ef2( f) |
   bf,( d4 g) |
   \clef tenor 
-  \once\set crescendoText="poco cresc."
-  \once\set crescendoSpanner=#'text
+  \nextCresc "poco cresc."
   d'2--\<( cs)\! | 
   ef( d4\< f\! |
   e) \clef bass g,\dim( f\> e8\! a, |
@@ -211,8 +210,7 @@ BsnTwoI=\relative c {
   ef2( fs |
   gf4.) r8 r2 |
   c2(-- bf) |
-  \once\set crescendoText="poco cresc."
-  \once\set crescendoSpanner=#'text
+  \nextCresc "poco cresc."
   d--\<( cs |
   c4) ef(\mf d\> c | 
   bf4.\p c8 bf4) r | R1 * 2 \mbreak |
@@ -290,7 +288,7 @@ BsnTwoII=\relative c' {
   \clef tenor \cueWhile "BsnOneII" "Fag.I" #UP
   {R4. * 5 \mbreak R4.*2 } | R4. |
   r8  a''-.\p a-. |
-  r8 \once\set crescendoText="poco cresc." \once\set crescendoSpanner=#'text a-.\< a-. |
+  r8 \nextCresc "poco cresc." a-.\< a-. |
   r gs-. gs-. |
   r cs-.\dim cs-.\! \mark\default \barNumberCheck \RhXXXV |
   R4.*16 \barNumberCheck \RhXXXVI \bar "||"
@@ -524,8 +522,7 @@ BsnTwoIII=\relative c {
   f4-. r8 f16-. f-. f4-. r8 f16-. f-. |
   f4-.\pp r r r8 f16-.\p f-. |
   f4-. r r r8
-  \once\set crescendoText="poco cresc"
-  \once\set crescendoSpanner=#'text
+  \nextCresc "poco cresc"
   f16-.\< f-. |
   f4-.\! r r2 \mark\default \barNumberCheck \RhLXVI \mbreak |
   r2 r4 r8 a16-.\mf a-. |
@@ -547,8 +544,7 @@ BsnTwoIII=\relative c {
   c'8\cresc-. c-. c-. c-. \mbreak |
   a-. a-. a-. a-.\< d,-. d-. d-. d-. |
   g,\f-. g-. g-. g-. 
-  \once\set decrescendoText="poco a poco dim."
-  \once\set decrescendoSpanner=#'text
+  \nextDim "poco a poco dim."
   c-.\> c-. c-. c-. |
   e-. r r4 fs8-. fs-. fs-. fs-. |
   r2 bf8-. bf-. bf-. bf-. |

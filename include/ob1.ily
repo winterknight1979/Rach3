@@ -1,3 +1,4 @@
+\version "2.18.2"
 ObOneI=\relative c' {
   \commonConductor
   \clef treble
@@ -8,12 +9,10 @@ ObOneI=\relative c' {
   %\cueDuring #"Piano" #UP
   {R1 * 4} |
   r4 c'--\pDolce( bf)~ bf8 r |
-  \set crescendoText = \markup{\italic "poco cresc."}
-  \set crescendoSpanner = #'text
-  r4 d--\<( cs)~ cs8 r \mbreak |
+  r4 \nextCresc "poco cresc"
+  d--\<( cs)~ cs8 r \mbreak |
   r4 ef--\mf( d\> c |
   bf\p) r r2 |
-  \unset crescendoText \unset crescendoSpanner
   R1 * 5 \bar "||"
   \time 2/4 R2 \bar "||"
   \time 4/4 R1 |
@@ -163,10 +162,8 @@ ObOneI=\relative c' {
   R1 * 9 \mark\default \barNumberCheck \RhXXI |
   R1 * 5 |
   r4 c--\pDolce( bf)~ bf8 r |
-  \set crescendoText = \markup{\italic "poco cresc."}
-  \set crescendoSpanner = #'text
-  r4 d--\<( cs)~ cs8\! r \mpbreak |
-  \unset crescendoText \unset crescendoSpanner 
+  r4 \nextCresc "poco cresc."
+  d--\<( cs)~ cs8\! r \mpbreak | 
   r4 ef(\mf d\> c |
   bf\p) r r2 |
   R1 * 5 \bar "||"
@@ -240,10 +237,9 @@ ObOneII=\relative c'{
   {R4. * 2 | r8 }
  gs4(\ppDolce^"Solo" |
   a b8~ |
-  \set crescendoText = \markup{\italic "poco cresc."}
-  \set crescendoSpanner = #'text
+  \nextCresc "poco cresc."
   b\<[  cs8. e16] |
-  d4.) \unset crescendoText \unset crescendoSpanner |
+  d4.) |
   ds4\<--( fs8 |
   e\> es8. gs16]) \mark\default \barNumberCheck \RhXXXV \mbreak |
   fs4.(\pp~ |

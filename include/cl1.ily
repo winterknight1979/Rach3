@@ -1,3 +1,4 @@
+\version "2.18.2"
 ClOneI=\relative c'{\transposition bf \commonConductor
   \clef treble \key e\minor \time 4/4
   <>^\markup{"In B"\flat} e4.\p--( fs8 e4.-- fs8 |
@@ -9,8 +10,7 @@ ClOneI=\relative c'{\transposition bf \commonConductor
   a2( b |
   c4.) r8 r2 |
   gs2--\pp( a) |
-  \once\set crescendoText = \markup{\italic "poco cresc."}
-  \once\set crescendoSpanner = #'text
+  \nextCresc "poco cresc."
   as2--(\< b)~ |
   b4
   b2.--\mf(\> |
@@ -190,8 +190,7 @@ ClOneI=\relative c'{\transposition bf \commonConductor
   a2( b |
   c4.) r8 r2 |
   gs2( a) |
-  \once \set crescendoText = \markup{\italic "poco cresc."}
-  \once \set crescendoSpanner = #'text
+  \nextCresc "poco cresc."
   as2\<( b)~ |
   b4 
   b2.\mf\>--( |
@@ -274,8 +273,7 @@ ClOneII=\relative c'{
   c b a |
   b8. c16 b8~) |
   b c4( |
-  \once \set crescendoText = \markup{\italic "poco cresc."}
-  \once \set crescendoSpanner = #'text 
+  \nextCresc "poco cresc."
   b8\< c d~ | 
   d d4--\> |
   d8\p c8. b16 |
@@ -298,8 +296,7 @@ ClOneII=\relative c'{
   b a8 |
   gs) b,4\pp( |
   c d8~ |
-  \once \set crescendoText = \markup{\italic "poco cresc."}
-  \once \set crescendoSpanner = #'text 
+  \nextCresc "poco cresc." 
   d\< e8. g16 |
   f4.)\! |
   f4\<( a8\! |
@@ -566,8 +563,7 @@ ClOneIII=\relative c'{
   d-.\cresc d-. d-. d-. f-. f-. f-. f-. |
   e-. e-. e-. e-.\< gs,-. gs-. gs-. gs-. |
   a\f-. a-. a-. a-.
-  \once \set decrescendoText = \markup{\italic "poco a poco dim."}
-  \once \set decrescendoSpanner = #'text
+  \nextDim "poco a poco dim."
   d-.\> d-. d-. d-. |
   d-. d-. d-. d-. e-.\!
   r r4 |

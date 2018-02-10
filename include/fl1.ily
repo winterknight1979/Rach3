@@ -1,3 +1,4 @@
+\version "2.18.2"
 FlOneI=\relative c'{
   \commonConductor
   \clef treble
@@ -324,14 +325,11 @@ FlOneIII = \relative c' {
  {R1 * 3 } |
   fs8-.\mf g-. g-. a-.\< a-. bf-. bf-. c-. \mbreak |
   bf-.\f a-. a-. bf-. 
-  \set decrescendoText = \markup {\italic {poco a poco dim.}}
-  \set decrescendoSpanner = #'text
+  \nextDim "poco a poco dim"
   g-.\> a-. a-. bf-. |
   a-. g-. g-. a-. bf-. a-. a-. bf-.
   g r r4 a8-. g-. g-. a-. |
   g-. fs-. fs-. g-. fs-.\p r r4\barNumberCheck \RhLXVIII |
-  \unset decrescendoText
-  \unset decrescendoSpanner
   R1 * 8 \mbreak |
   R1 |
   \cueWhile "OboeOneIII" "Ob.I" #UP

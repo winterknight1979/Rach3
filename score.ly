@@ -48,22 +48,22 @@
         \new Staff \with
         { instrumentName = #"2 Flauti"
           shortInstrumentName = #"Fl."}
-          {\partcombine \FlOneI \FlTwoI}
+          {\commonConductor \partcombine \FlOneI \FlTwoI}
         
         \new Staff \with
         { instrumentName = #"2 Oboi"
           shortInstrumentName = #"Ob."}
-          {\partcombine \ObOneI \ObTwoI}
+          {\commonConductor \partcombine \ObOneI \ObTwoI}
         
          \new Staff \with
          { instrumentName = #"2 Clarinetti"
           shortInstrumentName = #"Cl."}
-          {\partcombine \ClOneI \ClTwoI}
+          {\commonConductor \partcombine \ClOneI \ClTwoI}
  
           \new Staff \with
          { instrumentName = #"2 Fagotti"
           shortInstrumentName = #"Fag."}
-          {\partcombine \BsnOneI \BsnTwoI}
+          {\commonConductor \partcombine \BsnOneI \BsnTwoI}
         >>
 
       \new StaffGroup = "Brass" <<
@@ -71,11 +71,11 @@
          \new Staff \with
          { instrumentName = #"Corni 1-2 in F"
           shortInstrumentName = #"Cor. 1-2"}
-          {\partcombine \HrnOneI \HrnTwoI}
+          {\commonConductor \partcombine \HrnOneI \HrnTwoI}
          \new Staff \with
          { instrumentName = #"Corni 3-4 in F"
           shortInstrumentName = #"Cor. 3-4"}
-          {\partcombine \HrnThreeI \HrnFourI}
+          {\commonConductor \partcombine \HrnThreeI \HrnFourI}
  
         >>
       >>

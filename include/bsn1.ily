@@ -1,3 +1,4 @@
+\version "2.18.2"
 BsnOneI=\relative c {
   \commonConductor
   \clef tenor \time 4/4 \key d \minor
@@ -16,8 +17,7 @@ BsnOneI=\relative c {
   bf2( c |
   bf4.) r8 r2 |
   d4--( ef d2)
-  \once \set crescendoText="poco cresc."
-  \once \set crescendoSpanner=#'text
+  \nextCresc "poco cresc."
   e4--\<( f e2 |
   ef4) g(\mf\> f ef \sbreak |
   d4.\p ef8 d4 c \mbreak |
@@ -42,8 +42,7 @@ BsnOneI=\relative c {
   g2( a2) \sbreak |
   f2( d') |
   \clef tenor
-  \once\set crescendoText ="poco cresc."
-  \once\set crescendoSpanner =#'text
+  \nextCresc "poco cresc."
   e1 |
   f2.( g4)~ |
   g\! r r2 \sbreak |
@@ -226,8 +225,7 @@ BsnOneI=\relative c {
   bf( c |
   bf4.) r8 r2 |
   d4(-- ef d2) |
-  \once\set crescendoText="poco cresc."
-  \once\set crescendoSpanner=#'text
+  \nextCresc "poco cresc."
   e4--(\< f e2 |
   ef4) g(\mf\> f e |
   d4.\p ef8 d4 c |
@@ -328,8 +326,7 @@ BsnOneII=\relative c' {
   a gs fs |
   gs8. a16 gs8~\mbreak|
   gs8) a4( |
-  \once\set crescendoText="poco cresc"
-  \once\set crescendoSpanner=#'text
+  \nextCresc "poco cresc"
   gs8\< a b~ |
   b b4~\>-- |
   b8--\p a8. gs16 |
@@ -618,8 +615,7 @@ BsnOneIII=\relative c' {
     e4-. r8 e16-. e-. ef4-. r8 ef16-. ef-. |
     d4-.\pp r r r8 bf16-.\p bf-. \mbreak|
     bf4-. r r r8 
-    \once\set crescendoText ="poco cresc"
-    \once\set crescendoSpanner=#'text
+    \nextCresc "poco cresc"
     bf16\< bf-. |
     a4-.\! r r2 \mark\default \barNumberCheck \RhLXVI |
     r2 r4 r8 d16-.\mf d-. |
@@ -642,8 +638,7 @@ BsnOneIII=\relative c' {
     g'8\cresc-. g-. g-. g-. ef-. ef-. ef-. ef-. |
     c-. c-. c-. c-. fs,\<-. fs-. fs-. fs-. |
     d-.\f d-. d-. d-.
-    \once\set decrescendoText="poco a poco dim"
-    \once\set decrescendoSpanner=#'text
+    \nextDim "poco a poco dim"
     e-.\> e-. e-. e-. |
     e-. e-. e-. e-. r2 |
     g8-. g-. g-. g-. \clef tenor c-. c-. c-. c-. \mbreak |

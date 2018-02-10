@@ -1,3 +1,5 @@
+\version "2.18.2"
+
 cadenzaIa={\cadenzaOn s1*9 s1*3 \bar "|" s1 \bar "|" s1 \cadenzaOff |}
 cadenzaIb={\cadenzaOn s1 * 58 \cadenzaOff}
 cadenzaIc={\cadenzaOn s1*15 s1 s4*21 s4*6 s2*3 s4.*3 s8 s2 s2 s2 s4 s1 s1\cadenzaOff}
@@ -24,7 +26,9 @@ conductorI={
   s4 s1 \tempo "a tempo" 4=110 s1 * 6 \mark\default  \barNumberCheck \RhVI  %6
 
   s1 * 6 | \time 2/4 s2 | \time 4/4 s4 \tempo\markup{\italic "colla parte"} 4=100 s4 s2 | 
-  \tempo "a tempo" 4=110 s1 * 8 \mark\default  \barNumberCheck \RhVII %7
+  \tempo "a tempo" 4=110 s1 * 3
+  s2 \tempo \markup{\italic "poco rit."} 4=100 s2 |
+  \tempo "a tempo" 4=110 s1 * 4 | \mark\default  \barNumberCheck \RhVII %7
 
   s1 * 9 \mark\default  \barNumberCheck \RhVIII %8
 

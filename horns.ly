@@ -9,11 +9,19 @@
 \include "include/hrn1.ily"
   \addQuote "HrnOneI" {\keepWithTag #'quote \HrnOneI}
 \include "include/hrn2.ily"
+  \addQuote "HrnTwoI" {\keepWithTag #'quote \HrnTwoI}
 \include "include/hrn3.ily"
   \addQuote "HrnThreeI" {\keepWithTag #'quote \HrnThreeI}
 \include "include/hrn4.ily"
+  \addQuote "HrnFourI" {\keepWithTag #'quote \HrnFourI}
 
 
+%cues
+\include "include/cl1.ily"
+  % clarinet cues need to be transposed down an octave
+  \addQuote "ClarOneI" {\keepWithTag #'quote \transpose c' c \ClOneI}
+\include "include/bsn1.ily"
+  \addQuote "BsnOneI" {\keepWithTag #'quote \BsnOneI}
 
 \paper{ 
   #(layout-set-staff-size 19)

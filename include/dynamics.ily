@@ -1,3 +1,5 @@
+\version "2.18.2"
+
 pDolce = \tweak DynamicText.self-alignment-X #LEFT 
   #(make-dynamic-script (markup #:dynamic "p" #:normal-text #:italic "dolce"))
 
@@ -69,7 +71,8 @@ ffMMarc = \tweak DynamicText.self-alignment-X #LEFT
        ("flute"     .   (0.1 . 0.8))
        ("oboe"      .   (0.1 . 0.7))
        ("clarinet"  .   (0.1 . 0.7))
-       ("bassoon"   .   (0.2 . 0.7)))
+       ("bassoon"   .   (0.2 . 0.7))
+       ("french horn" . (0.2 . 1.0)))
     my-equalizer-alist))
 
 #(define (my-equalizer s)

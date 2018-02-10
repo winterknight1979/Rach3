@@ -1,3 +1,4 @@
+\version "2.18.2"
 ClTwoI=\relative c'{
   \transposition bf \commonConductor
   \clef treble \key e\minor \time 4/4 <>^\markup{"In B"\flat}
@@ -497,8 +498,7 @@ ClTwoIII=\relative c'{
   c-.\cresc c-. c-. c-. d-. d-. d-. d-. \mbreak |
   d-. d-. d-.\< d-. d,-. d-. d-. d-. |
   c-.\f c-. c-. c-.
-  \once \set decrescendoText = \markup{\italic "poco a poco dim."}
-  \once \set decrescendoSpanner = #'text
+  \nextDim "poco a poco dim."
   c'-.\> c-. c-. c-. |
   b-. b-. b-. b-. e,-. e-. e-. e-.\! |
   r2 fs8-. fs-. fs-. fs-. |
