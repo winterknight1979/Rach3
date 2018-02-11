@@ -178,12 +178,89 @@ HrnOneI=\relative c' {
     a2\p--~\> a8\pp a-. a-. a-. |
     g4-- r r2 |
     R1 | R1 | R1*6 \barNumberCheck \EndMI \bar "|."
- 
-
 }
 HrnOneII=\relative c' {
   \commonConductor
   \transposition f
+  \clef treble \time 3/4 R2. * 2 |
+  r4 r d'\p\<(~ |
+  \tuplet 3/2 {d\> c8)\!} c4.\>( b8 |
+  b2\pp) r4 | R2. |
+  r4 r \tuplet 3/2 { d\p\<( c8} |
+  c2--\> b4\dim~) |
+  b2\> r4\! \mark #24 \barNumberCheck \RhXXIV |
+  R2. * 16 \mark\default \barNumberCheck \RhXXV \mbreak |
+  \tuplet 3/2 4 {r8^\markup{\italic "cantabile"} b,\p\<([ e] gs b e} f4--~\mf) |
+  f\< \tuplet 3/2 {e\!( c8)} c4--~ |
+  c \tuplet 3/2 {b( gs8)} gs4-- |
+  gs\< \tuplet 3/2 {g\!( ds8)} ds4--\>( |
+  e\p) r r | R2. |
+  R2. * 3 | R2. * 3 \mbreak \bar "||"
+  R2. * 8 | R2. \mark\default \barNumberCheck \RhXXVI |
+  R2. * 3 | R2. | R2. * 2 |
+  R2.\fermataMarkup_"Cadenza"
+  \tag #'score \cadenzaIIa |
+  R2. | R2. * 7 | R2. * 2 \mbreak |
+  R2. \mark\default \barNumberCheck \RhXXVII |
+  \cueWhileClef "Hrn34II" "Cor.III.IV" #UP "bass"
+  {R2. * 3}
+  c'2\pp( \tuplet 3/2 {cs4 d8} |
+  e2.)~ | e2. |
+  R2. * 5 | R2. \mark\default \barNumberCheck \RhXXVIII \mbreak |
+  R2. * 6 | R2. * 2 | R2. * 8 |
+  bf2--(~\f\> bf8\! af \mark\default \barNumberCheck \RhXXIX |
+  f2)\p~ f8 r |
+  R2. * 7 \mark\default \barNumberCheck \RhXXX |
+  r4 e2\f~ | e2. |
+  a2(~ \tuplet 3/2 {a4 gs8)} \mbreak |
+  gs2\dim( \tuplet 3/2 {gs4 fs8)} |
+  fs2(~ fs8 e |
+  ef4\p) r r |
+  R2. * 3 \mark\default \barNumberCheck \RhXXXI |
+  r4 c'\fCant( \tuplet 3/2 {bf g8)} |
+  g2-- \tuplet 3/2 4 {bf4( af8 |
+  g af f)} f4--~\dim( \tuplet 3/2 {f g8} |
+  ef4)\p r r | R2. * 7 \mark\default \barNumberCheck \RhXXXII \mbreak |
+  R2. * 4 \bar "||" R2. * 4 \mark\default \barNumberCheck \RhXXXIII \bar "||"
+  \time 3/8 cs'4.\pp( |
+  bs | b\cresc | as | a\mf | as\dim | b\mbreak 
+  bs8\pp) r r | R4. * 18 \mark\default \barNumberCheck \RhXXXIV |
+  R4. * 4 |
+  \cueWhile "FlOneII" "Fl.I" #UP {R4. * 3} |
+  \cueWhile "OboeOneII" "Ob.I" #UP {R4. | r8}
+  gs-.\pp gs-. |
+  r \nextCresc "poco cresc" a-.\< a-. |
+  r gs-. gs-. |
+  r bs-.\dim bs-.\! \mark\default \barNumberCheck \RhXXXV |
+  R4. * 16 \mark\default \barNumberCheck \RhXXXVI \mbreak \bar "||"
+  \cueWhileClef "HrnThreeII" "Cor.III" #UP "bass"
+  {R2. * 2 | r4 r} 
+  e4\mfCant( |
+  ds2) cs4( |
+  bs2) b4(\dim |
+  as2) a4(\> |
+  gs8)\! r r4 r | R2. * 2 |
+  r4^"Solo" r gs\pEsp( \mark\default \barNumberCheck \RhXXXVII |
+  cs2 \tuplet 3/2 {b8-- a-- gs--)} \mbreak |
+  gs2--(\< \tuplet 3/2 4 { b4\! a8 |
+  gs\> a fs\!)} fs4.--\dim( gs8) |
+  gs2--\p gs4--\dim( |
+  b2~ \tuplet 3/2 {b8 a-- b--} |
+  a2)~ \tuplet 3/2 {a8 gs--( a--} |
+  gs4--\pp) r r |
+  R2. * 2 \mpbreak |
+  \cueWhile "HrnTwoII" "Cor.II" #UP
+  {R2. \mark\default \barNumberCheck \RhXXXVIII | r4}
+  bs\<( fs'~\f |
+  fs~ \tuplet 3/2{ fs e8} e,4)~ |
+  e \tuplet 3/2 {cs'( bs8} fs4)~ |
+  fs( \tuplet 3/2 {gs\dim fss8} cs4 |
+  bs2.~) | bs2.\dim( \mbreak \bar "||"
+  \time 4/4 b8)\p r r4 r2 | R1 * 3 \mark\default \barNumberCheck \RhXXXIX |
+  r8.. d32\mf d8..--[ f32\cresc] f8..[-- bf32] bf8..--[ d32] |
+  d4.-- d8 d d f4\sff | R1 |
+  e8-.\ff r e-. r r2 \barNumberCheck \EndMII \bar "||"
+
 }
 HrnOneIII=\relative c' {
   \commonConductor

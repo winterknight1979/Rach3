@@ -8,22 +8,30 @@
 
 \include "include/hrn1.ily"
   \addQuote "HrnOneI" {\keepWithTag #'quote \HrnOneI}
+  \addQuote "HrnOneII" {\keepWithTag #'quote \HrnOneII}
 \include "include/hrn2.ily"
   \addQuote "HrnTwoI" {\keepWithTag #'quote \HrnTwoI}
+  \addQuote "HrnTwoII" {\keepWithTag #'quote \HrnTwoII}
   \addQuote "Hrn12I" {\keepWithTag #'quote <<\HrnOneI \HrnTwoI>>}
 \include "include/hrn3.ily"
   \addQuote "HrnThreeI" {\keepWithTag #'quote \HrnThreeI}
+  \addQuote "HrnThreeII" {\keepWithTag #'quote \HrnThreeII}
 \include "include/hrn4.ily"
   \addQuote "HrnFourI" {\keepWithTag #'quote \HrnFourI}
+  \addQuote "Hrn34II" {\keepWithTag #'quote <<\HrnThreeII \HrnFourII>>}
 
 
 %cues
+\include "include/fl1.ily"
+  \addQuote "FlOneII" {\keepWithTag #'quote \transpose c' c \FlOneII}
 \include "include/ob1.ily"
   \addQuote "OboeOneI" {\keepWithTag #'quote \transpose c' c \ObOneI}
+  \addQuote "OboeOneII" {\keepWithTag #'quote \transpose c' c \ObOneII}
 \include "include/cl1.ily"
 
   \addQuote "ClarOneIut" {\keepWithTag #'quote \ClOneI}
   \addQuote "ClarOneI" {\keepWithTag #'quote \transpose c' c \ClOneI}
+  \addQuote "ClarOneII" {\keepWithTag #'quote \transpose c' c \ClOneII}
 \include "include/bsn1.ily"
   \addQuote "BsnOneI" {\keepWithTag #'quote \BsnOneI}
 
@@ -118,7 +126,7 @@
         \header{piece=\markup\huge "II Intermezzo"}
       }
 
-      \markup{ \vspace #1 }
+      \pageBreak 
       \score{
          \keepWithTag #'part \new Staff 
          \with{\consists "Page_turn_engraver"} 

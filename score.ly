@@ -26,8 +26,8 @@
 
 \paper {
   #(layout-set-staff-size 15)
-  indent = 2.5\cm
-  short-indent = 0.8\cm
+  indent = 2.75\cm
+  short-indent = 1.0\cm
   ragged-last-bottom = ##f
   page-limit-inter-system-space = ##t
   system-separator-markup = \slashSeparator
@@ -56,8 +56,9 @@
           {\commonConductor \partcombine \ObOneI \ObTwoI}
         
          \new Staff \with
-         { instrumentName = #"2 Clarinetti"
-          shortInstrumentName = #"Cl."}
+         {  instrumentName = \markup {\center-column {"2 Clarinetti"
+                                      \line {"In B" \smaller \flat}}}
+            shortInstrumentName = #"Cl."}
           {\commonConductor \partcombine \ClOneI \ClTwoI}
  
           \new Staff \with
@@ -67,14 +68,17 @@
         >>
 
       \new StaffGroup = "Brass" <<
-        \new GrandStaff = "Horns" <<
+        \new PianoStaff = "Horns" 
+          \with {instrumentName =\markup{\center-column {"4 Corni"
+          \line {"In F"}}}}
+        <<
          \new Staff \with
-         { instrumentName = #"Corni 1-2 in F"
-          shortInstrumentName = #"Cor. 1-2"}
+         { instrumentName = #"I.II"
+          shortInstrumentName = #"Cor. I.II"}
           {\commonConductor \partcombine \HrnOneI \HrnTwoI}
          \new Staff \with
-         { instrumentName = #"Corni 3-4 in F"
-          shortInstrumentName = #"Cor. 3-4"}
+         { instrumentName = #"III.IV"
+          shortInstrumentName = #"Cor. III.IV"}
           {\commonConductor \partcombine \HrnThreeI \HrnFourI}
  
         >>
@@ -100,7 +104,8 @@
           {\partcombine \ObOneII \ObTwoII}
 
           \new Staff \with
-        { instrumentName = #"2 Clarinetti"
+        { instrumentName = \markup {\center-column {"2 Clarinetti"
+                                    \line {"In B" \smaller \flat}}}
           shortInstrumentName = #"Cl."}
           {\partcombine \ClOneII \ClTwoII}
         
@@ -112,14 +117,17 @@
 
        >>
        \new StaffGroup = "Brass" <<
-        \new GrandStaff = "Horns" <<
+        \new PianoStaff = "Horns" 
+          \with {instrumentName=\markup {\center-column {"4 Corni"
+          \line {"In F"}}}}
+        <<
          \new Staff \with
-         { instrumentName = #"Corni 1-2 in F"
-          shortInstrumentName = #"Cor. 1-2"}
+         { instrumentName = #"I.II"
+          shortInstrumentName = #"Cor. I.II"}
           {\partcombine \HrnOneII \HrnTwoII}
          \new Staff \with
-         { instrumentName = #"Corni 3-4 in F"
-          shortInstrumentName = #"Cor. 3-4"}
+         { instrumentName = #"III.IV"
+          shortInstrumentName = #"Cor. III.IV"}
           {\partcombine \HrnThreeII \HrnFourII}
  
         >>
@@ -146,7 +154,8 @@
               {\partcombine \ObOneIII \ObTwoIII}
  
               \new Staff \with
-        { instrumentName = #"2 Clarinetti"
+        { instrumentName = \markup {\center-column {"2 Clarinetti"
+                                      \line {"In B" \smaller \flat}}}
           shortInstrumentName = #"Cl."}
           {\partcombine \ClOneIII \ClTwoIII}
       
@@ -157,14 +166,15 @@
  
             >>
         \new StaffGroup = "Brass" <<
-        \new GrandStaff = "Horns" <<
+          \new PianoStaff = "Horns" 
+          \with {instrumentName=\markup{\center-column {"4 Corni" \line{ "in F"}}}} <<
          \new Staff \with
-         { instrumentName = #"Corni 1-2 in F"
-          shortInstrumentName = #"Cor. 1-2"}
+         { instrumentName = #"I.II"
+          shortInstrumentName = #"Cor. I.II"}
           {\partcombine \HrnOneIII \HrnTwoIII}
          \new Staff \with
-         { instrumentName = #"Corni 3-4 in F"
-          shortInstrumentName = #"Cor. 3-4"}
+         { instrumentName = #"III.IV"
+          shortInstrumentName = #"Cor. III.IV"}
           {\partcombine \HrnThreeIII \HrnFourIII}
  
         >>

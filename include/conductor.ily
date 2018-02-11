@@ -103,7 +103,11 @@ conductorII={
 
   \tempo "Meno mosso" 4=76 s2.*3 s4 \tempo\markup{\italic "rit."} 4=72 s2
   \tempo "a tempo" 4=76 s2. * 2 s2. \tag #'score \cadenzaIIa \bar "|"
-  s2. \tempo "a tempo, più mosso" 4=86 s2.*9 s4 \tempo\markup{\italic "rit."} 4=80 s2 \mark\default \barNumberCheck \RhXXVII
+  s2. \tempo "a tempo, più mosso" 4=86 s2.*6
+  s2 \tempo\markup{\italic "rit."} 4=80 s4 
+  \tempo "a tempo" 4=86 s2. * 2 
+ 
+  s4 \tempo\markup{\italic "rit."} 4=80 s2 \mark\default \barNumberCheck \RhXXVII
   
   \tempo "Meno mosso" 4=76 s2. * 3 s4 \tempo\markup{\italic "rit."} 4=72 s2 
   \tempo "a tempo" 4=76 s2. * 2

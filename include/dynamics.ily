@@ -3,7 +3,6 @@
 pDolce = \tweak DynamicText.self-alignment-X #LEFT 
   #(make-dynamic-script (markup #:dynamic "p" #:normal-text #:italic "dolce"))
 
-
 pLeg = \tweak DynamicText.self-alignment-X #LEFT 
   #(make-dynamic-script (markup #:dynamic "p" #:normal-text #:italic "leggiero"))
 
@@ -19,25 +18,23 @@ pEsp = \tweak DynamicText.self-alignment-X #LEFT
 ppDolce = \tweak DynamicText.self-alignment-X #LEFT 
   #(make-dynamic-script (markup #:dynamic "pp" #:normal-text #:italic "dolce"))
 
-
 ppLeg = \tweak DynamicText.self-alignment-X #LEFT 
   #(make-dynamic-script (markup #:dynamic "pp" #:normal-text #:italic "leggiero"))
-
 
 semprePP = \tweak DynamicText.self-alignment-X #LEFT 
   #(make-dynamic-script (markup #:normal-text #:italic "sempre" #:dynamic "pp" ))
 
-
 mfCant = \tweak DynamicText.self-alignment-X #LEFT 
-  #(make-dynamic-script (markup #:dynamic "mf" #:normal-text #:italic "cantabile."))
+  #(make-dynamic-script (markup #:dynamic "mf" #:normal-text #:italic "cantabile"))
 
+mfMarc = \tweak DynamicText.self-alignment-X #LEFT 
+  #(make-dynamic-script (markup #:dynamic "mf" #:normal-text #:italic "marcato"))
 
 fCant = \tweak DynamicText.self-alignment-X #LEFT 
-  #(make-dynamic-script (markup #:dynamic "f" #:normal-text #:italic "cantabile."))
+  #(make-dynamic-script (markup #:dynamic "f" #:normal-text #:italic "cantabile"))
 
 fMarc = \tweak DynamicText.self-alignment-X #LEFT 
-  #(make-dynamic-script (markup #:dynamic "f" #:normal-text #:italic "marc."))
-
+  #(make-dynamic-script (markup #:dynamic "f" #:normal-text #:italic "marcato"))
 
 ffMMarc = \tweak DynamicText.self-alignment-X #LEFT 
   #(make-dynamic-script (markup #:dynamic "ff" #:normal-text #:italic "molto marc."))
@@ -55,6 +52,7 @@ ffMMarc = \tweak DynamicText.self-alignment-X #LEFT
        ("ppLeg"     . 0.49)
        ("semprePP"  . 0.49)
        ("mfCant"    . 0.68)
+       ("mfMarc"    . 0.68)
        ("fCant"     . 0.75)
        ("fMarc"     . 0.75)
        ("ffMMarc"   . 0.80)

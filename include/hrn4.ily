@@ -137,6 +137,75 @@ HrnFourII=\relative c' {
   \transposition f
   \set Staff.soloText = #"III"
   \set Staff.soloIIText = #"IV"
+  \clef treble \time 3/4 R2. * 7 |
+  \cueWhile "HrnThreeII" "Cor.III" #UP {R2. * 2}
+  \mark #24 \barNumberCheck \RhXXIV |
+  R2. * 12 |
+  b2\pp( a4 |
+  gs) r r |
+  R2. * 2 \mark\default \barNumberCheck \RhXXV |
+  r4 r d'\mf(~ |
+  d2 c4)~ \mbreak |
+  c \tuplet 3/2 {cs( d8)} d4-- |
+  e(\< c\! b\>)~ |
+  b\p r r |
+  R2. | R2. * 3 | R2. * 3 \bar "||"
+  R2. * 8 | R2. \mark\default \barNumberCheck \RhXXVI \mpbreak |
+  r4 r \clef bass ef,,~\mp\>-- |
+  ef\pp~ ef8 r ef4--\mp\> |
+  ef\pp~ ef8 r r4 |
+  R2. | R2. * 2 | R2.\fermataMarkup_"Cadenza"
+  \tag #'score \cadenzaIIa 
+  R2. | R2. * 7 | R2. * 2 | R2. \mark\default \barNumberCheck \RhXXVII \mbreak |
+  r4 r g--\mp\>~ |
+  g\pp~ g8 r g4--\mp\>~ |
+  g\pp~ g8 r r4 |
+  R2. | R2. * 2 | R2. * 4 |
+  c,2.\p~ | c\dim~ \mark\default \barNumberCheck \RhXXVIII \mbreak |
+  c2\pp~ c8 r |
+  R2. * 5 | R2. * 2 | R2. * 9 \mark\default \barNumberCheck \RhXXIX |
+  R2. * 8 \mark\default \barNumberCheck \RhXXX |
+  \clef treble R2. * 2 |
+  \cueWhile "HrnOneI" "Cor.I" #DOWN {R2. * 4} |
+  R2. * 2 \mbreak |
+  ff''2\p(\< ef4 \mark\default \barNumberCheck \RhXXXI |
+  c2\f) r4 |
+  R2. * 10 \mark\default \barNumberCheck \RhXXXII |
+  r4 r \clef bass ef,,~\mp\>-- |
+  ef\pp~ ef8 r ef4--\mp\> |
+  ef\pp~ ef8 r r4 |
+  R2. \mbreak \bar "||"
+  \clef treble R2. * 4 \mark\default \barNumberCheck \RhXXXIII \bar "||"
+  \time 3/8 
+  e''4.\pp~ | e~ | e\cresc~ | e~ | e\mf~ | e\dim~ | e( | fs8)\pp r r |
+  R4. * 18 \mark\default \barNumberCheck \RhXXXIV |
+  R4. * 11 | R4. \mark\default \barNumberCheck \RhXXXV \mbreak |
+  R4. * 8 |
+  \cueWhile "ClarOneII" "Cl.I Fag.I" #DOWN {R4.*8}
+  \mark\default \barNumberCheck \RhXXXVI \bar "||"
+  \time 3/4 
+  r4 r \clef bass ef,,~\mp\>-- |
+  ef\pp~ ef8 r ef4--\mp\> \mbreak|
+  ef\pp~ ef8 r r4 |
+  R2.*7 \mark\default \barNumberCheck \RhXXXVII |
+  R2. * 2 |
+  r4 fs2\p\>( |
+  gs)\pp r4 |
+  r fs\p( es~ |
+  es8) r e4\dim( ds~) |
+  ds8 r gs2\pp\<~ |
+  gs2.\mp~ \mbreak |
+  gs2.~ | gs\dim \mark\default \barNumberCheck \RhXXXVIII |
+  \clef treble gs'2\<--( ds'4\f~ |
+  ds~ \tuplet 3/2 {ds e8} cs4)~ |
+  cs ds( gs,8) r |
+  r4 r ds\dim |
+  ds2.--~\mf | ds(\dim \mbreak \bar "||" 
+  \time 4/4 e8\p) r r4 r2 |
+  R1 * 3 \barNumberCheck \RhXXXIX |
+  r8.. f32\mf f8..--[ bf32] bf8..--[\cresc d32] d8..--[ f32] |
+  f4.-- d8 d d bf4\sff |
+  R1 | e8-.\ff r e-. r r2 \barNumberCheck \EndMII \bar "||"
 }
 HrnFourIII=\relative c' {
   \commonConductor
