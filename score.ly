@@ -69,21 +69,68 @@
 
       \new StaffGroup = "Brass" <<
         \new PianoStaff = "Horns" 
-          \with {instrumentName =\markup{\center-column {"4 Corni"
-          \line {"In F"}}}}
+          \with {instrumentName ="4 Corni In F"
+          \remove "Keep_alive_together_engraver"}
         <<
          \new Staff \with
          { instrumentName = #"I.II"
-          shortInstrumentName = #"Cor. I.II"}
+          shortInstrumentName = #"Cor.I.II"}
           {\commonConductor \partcombine \HrnOneI \HrnTwoI}
          \new Staff \with
          { instrumentName = #"III.IV"
-          shortInstrumentName = #"Cor. III.IV"}
+          shortInstrumentName = #"Cor.III.IV"}
           {\commonConductor \partcombine \HrnThreeI \HrnFourI}
- 
         >>
+        \new Staff \with
+        {instrumentName =\markup{\center-column {"2 Trombe" \line {"In B"\smaller\flat}}}
+          shortInstrumentName=#"Tr.be"}
+          {s1}
       >>
 
+      \new Staff \with {
+        instrumentName=\markup{\center-column {"Timpani" \line {"In D,C,A"}}}
+        shortInstrumentName="Timp"}
+        {s1}
+
+      \new PianoStaff="Piano" \with {
+        instrumentName="Piano"
+        shortInstrumentName="P.no"}
+        <<
+          \new Staff="PnoUp" {s1}
+          \new Staff="PnoDn" {s1}
+        >>
+
+      \new StaffGroup="Strings"
+      <<
+        \new GrandStaff="Violins"
+          <<
+            \new Staff \with
+            {instrumentName=#"Violini I"
+             shortInstrumentName=#"V.ni I"}
+             {s1}
+             \new Staff \with
+             {instrumentName=#"Violini II"
+             shortInstrumentName="V.ni II"}
+             {s1}
+           >>
+
+           \new Staff \with
+           {instrumentName=#"Viole"
+           shortInstrumentName="V.le"}
+           {s1}
+
+          \new GrandStaff="BassStrings"
+          <<
+            \new Staff \with
+            {instrumentName="Violoncelli"
+            shortInstrumentName="Vc."}
+            {s1}
+            \new Staff \with
+            {instrumentName="Contrabassi"
+            shortInstrumentName="Cb."}
+            {s1}
+          >>
+        >>
     >>
         \header{piece=\markup\huge "I"}
       }
@@ -118,23 +165,92 @@
        >>
        \new StaffGroup = "Brass" <<
         \new PianoStaff = "Horns" 
-          \with {instrumentName=\markup {\center-column {"4 Corni"
-          \line {"In F"}}}}
+          \with {instrumentName="4 Corni In F"
+        \remove "Keep_alive_together_engraver"}
         <<
          \new Staff \with
          { instrumentName = #"I.II"
-          shortInstrumentName = #"Cor. I.II"}
+          shortInstrumentName = #"Cor.I.II"}
           {\partcombine \HrnOneII \HrnTwoII}
          \new Staff \with
          { instrumentName = #"III.IV"
-          shortInstrumentName = #"Cor. III.IV"}
+          shortInstrumentName = #"Cor.III.IV"}
           {\partcombine \HrnThreeII \HrnFourII}
- 
+        >>
+        \new Staff \with
+        {instrumentName =\markup{\center-column {"2 Trombe" \line {"In B"\smaller\flat}}}
+          shortInstrumentName=#"T.be"}
+          {s1}
+        \new PianoStaff="LowBrass" 
+          \with {instrumentName=\markup {\center-column {"3 Tromboni"
+          \line {"e Tuba"}}}
+        \remove "Keep_alive_together_engraver"}
+        <<
+          \new Staff \with
+          {shortInstrumentName="T.ni.I.II"}
+          {s1}
+          \new Staff \with
+          {shortInstrumentName=\markup{\center-column{"T.no.III" \line{"e Tub."}}}}
+          {s1}
+        >>
+       
+      >>
+      
+      \new StaffGroup="Perc" <<
+        \new Staff \with {
+          instrumentName=\markup{\center-column {"Timpani" \line {"In B,A"}}}
+          shortInstrumentName="Timp"}
+          {s1}
+        \new RhythmicStaff \with
+        {instrumentName="Gran Cassa"
+        shortInstrumentName="G.C."}
+        {s1}
+        \new RhythmicStaff \with
+        {instrumentName="Piatti"
+        shortInstrumentName="Pti."}
+        {s1}
+        >>
+      \new PianoStaff="Piano" \with {
+        instrumentName="Piano"
+        shortInstrumentName="P.no"}
+        <<
+          \new Staff="PnoUp" {s1}
+          \new Staff="PnoDn" {s1}
+        >>
+
+      \new StaffGroup="Strings"
+      <<
+        \new GrandStaff="Violins"
+          <<
+            \new Staff \with
+            {instrumentName=#"Violini I"
+             shortInstrumentName=#"V.ni I"}
+             {s1}
+             \new Staff \with
+             {instrumentName=#"Violini II"
+             shortInstrumentName="V.ni II"}
+             {s1}
+           >>
+
+           \new Staff \with
+           {instrumentName=#"Viole"
+           shortInstrumentName="V.le"}
+           {s1}
+
+          \new GrandStaff="BassStrings"
+          <<
+            \new Staff \with
+            {instrumentName="Violoncelli"
+            shortInstrumentName="Vc."}
+            {s1}
+            \new Staff \with
+            {instrumentName="Contrabassi"
+            shortInstrumentName="Cb."}
+            {s1}
+          >>
         >>
       >>
 
-
-     >>
         \header{piece=\markup\huge "II Intermezzo"}
       }
 %      \markup{\pageBreak}
@@ -167,19 +283,94 @@
             >>
         \new StaffGroup = "Brass" <<
           \new PianoStaff = "Horns" 
-          \with {instrumentName=\markup{\center-column {"4 Corni" \line{ "in F"}}}} <<
+          \with {instrumentName="4 Corni in F"} <<
          \new Staff \with
          { instrumentName = #"I.II"
-          shortInstrumentName = #"Cor. I.II"}
+          shortInstrumentName = #"Cor.I.II"}
           {\partcombine \HrnOneIII \HrnTwoIII}
          \new Staff \with
          { instrumentName = #"III.IV"
-          shortInstrumentName = #"Cor. III.IV"}
+          shortInstrumentName = #"Cor.III.IV"}
           {\partcombine \HrnThreeIII \HrnFourIII}
  
         >>
+              \new Staff \with
+        {instrumentName =\markup{\center-column {"2 Trombe" \line {"In B"\smaller\flat}}}
+          shortInstrumentName=#"T.be"}
+          {s1}
+        \new PianoStaff="LowBrass" 
+          \with {instrumentName=\markup {\center-column {"3 Tromboni"
+          \line {"e Tuba"}}}
+        \remove "Keep_alive_together_engraver"}
+        <<
+          \new Staff \with
+          {shortInstrumentName="T.ni.I.II"}
+          {s1}
+          \new Staff \with
+          {shortInstrumentName=\markup{\center-column{"T.no.III" \line{"e Tub."}}}}
+          {s1}
+        >>
+       
       >>
+      
+      \new StaffGroup="Perc" <<
+        \new Staff \with {
+          instrumentName=\markup{\center-column {"Timpani" \line {"In B,A"}}}
+          shortInstrumentName="Timp"}
+          {s1}
+        \new RhythmicStaff \with
+        {instrumentName="Tamburo"
+        shortInstrumentName="T.bo"}
+        {s1}
+        \new RhythmicStaff \with
+        {instrumentName="Gran Cassa"
+        shortInstrumentName="G.C."}
+        {s1}
+        \new RhythmicStaff \with
+        {instrumentName="Piatti"
+        shortInstrumentName="Pti."}
+        {s1}
+        >>
+      \new PianoStaff="Piano" \with {
+        instrumentName="Piano"
+        shortInstrumentName="P.no"}
+        <<
+          \new Staff="PnoUp" {s1}
+          \new Staff="PnoDn" {s1}
+        >>
 
+      \new StaffGroup="Strings"
+      <<
+        \new GrandStaff="Violins"
+          <<
+            \new Staff \with
+            {instrumentName=#"Violini I"
+             shortInstrumentName=#"V.ni I"}
+             {s1}
+             \new Staff \with
+             {instrumentName=#"Violini II"
+             shortInstrumentName="V.ni II"}
+             {s1}
+           >>
+
+           \new Staff \with
+           {instrumentName=#"Viole"
+           shortInstrumentName="V.le"}
+           {s1}
+
+          \new GrandStaff="BassStrings"
+          <<
+            \new Staff \with
+            {instrumentName="Violoncelli"
+            shortInstrumentName="Vc."}
+            {s1}
+            \new Staff \with
+            {instrumentName="Contrabassi"
+            shortInstrumentName="Cb."}
+            {s1}
+          >>
+        >>
+ 
 
           >>
         \header{piece=\markup\huge "III Finale"}

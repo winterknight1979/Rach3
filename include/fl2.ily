@@ -261,7 +261,6 @@ R1 * 3 |
 R1 |
 R1 * 4 \mark\default \barNumberCheck \RhLVII |
 R1 * 6 \mark\default \barNumberCheck \RhLVIII |
-%\cueDuring #"FluteOne" #UP
   \cueWhile "FluteOneIII" "Fl.I" #UP
 {R1 * 2 } |
 R1 * 9 \mark\default\barNumberCheck \RhLIX \mbreak \bar "||"
@@ -304,7 +303,6 @@ R1 * 11 \mbreak \mark\default \barNumberCheck \RhLXVI |
 R1 * 12 |
 R1 * 6 \mark\default \barNumberCheck \RhLXVII |
 R1 * 8 |
-%\cueDuring #"FluteOne" #UP
  \cueWhile "FluteOneIII" "Fl.I" #UP
 {R1 * 3 \mbreak | R1 * 2 } \mark\default \barNumberCheck \RhLXVIII |
 R1 * 8 |

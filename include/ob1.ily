@@ -36,7 +36,7 @@ ObOneI=\relative c' {
   R1 * 4 |
   R1^\fermataMarkup_"Cadenza"
   \tag #'score {\cadenzaIa}|
-  %cue bassoon
+  \cueWhile "BsnOneI" "Fag.I" #UP
   {R1 * 2 | r4 }
   a2\mf( b4)~ |
   b c2(\< d4 \mbreak |
