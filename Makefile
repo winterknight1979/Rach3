@@ -4,21 +4,43 @@ LOG=INFO
 HEADERS= include/conductor.ily include/dynamics.ily include/functions.ily include/macros.ily
 
 FLUTEFILES=include/fl1.ily include/fl2.ily
-FLUTECUES=include/ob1.ily include/ob2.ily include/cl1.ily include/bsn2.ily
+FLUTECUES=include/ob1.ily include/ob2.ily include/cl1.ily include/bsn2.ily \
+	    include/hrn1.ily include/piano.ily include/viol1.ily include/viol2.ily include/vla.ily
 
 OBOEFILES=include/ob1.ily include/ob2.ily
-OBOECUES=include/fl1.ily include/fl2.ily include/cl1.ily include/bsn1.ily
+OBOECUES=include/fl1.ily include/fl2.ily include/cl1.ily include/bsn1.ily \
+	    include/hrn1.ily include/piano.ily include/viol1.ily include/viol2.ily include/vla.ily
 
 CLARFILES=include/cl1.ily include/cl2.ily
-CLARCUES=include/ob1.ily include/bsn1.ily
+CLARCUES=include/ob1.ily include/bsn1.ily include/hrn1.ily include/piano.ily include/viol1.ily
 
 BSNFILES=include/bsn1.ily include/bsn2.ily
-BSNCUES=
+BSNCUES=include/hrn1.ily include/piano.ily include/viol1.ily
 
 HRNFILES=include/hrn1.ily include/hrn2.ily include/hrn3.ily include/hrn4.ily
-HRNCUES=include/fl1.ily include/ob1.ily include/cl1.ily include/bsn1.ily
+HRNCUES=include/fl1.ily include/ob1.ily include/cl1.ily include/bsn1.ily \
+	include/piano.ily include/viol1.ily include/viol2.ily
 
-SCOREFILES=${HEADERS} ${FLUTEFILES} ${OBOEFILES} ${CLARFILES} ${BSNFILES} ${HRNFILES}
+TPTFILES=include/tpt1.ily include/tpt2.ily
+TPTCUES=
+
+LBFILES=include/trom1.ily include/trom2.ily include/trom3.ily include/tuba.ily
+LBCUES=
+
+PERCFILES=include/timp.ily include/perc.ily
+PERCCUES=
+
+#Piano and strings files only have one source file each, so we only need cues variables
+PIANOCUES=
+VIOLICUES=
+VIOLIICUES=
+VIOLACUES=
+CELLOCUES=
+BASSCUES=
+
+SCOREFILES=${HEADERS} ${FLUTEFILES} ${OBOEFILES} ${CLARFILES} ${BSNFILES} ${HRNFILES} \
+	    ${TPTFILES} ${LBFILES} ${PERCFILES} include/piano.ily include/viol1.ily include/viol2.ily \
+	    include/vla.ily include/cello.ily include/bass.ily
 
 all: flutes oboes clarinets bassoons horns score Rach3.mid
 

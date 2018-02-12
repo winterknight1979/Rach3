@@ -34,6 +34,14 @@
   \addQuote "ClarOneII" {\keepWithTag #'quote \transpose c' c \ClOneII}
 \include "include/bsn1.ily"
   \addQuote "BsnOneI" {\keepWithTag #'quote \BsnOneI}
+\include "include/piano.ily"
+  \addQuote "PianoI" {\keepWithTag #'quote \PianoUPI}
+\include "include/viol1.ily"
+  \addQuote "ViolOneI" {\keepWithTag #'quote \ViolOneI}
+\include "include/viol2.ily"
+  \addQuote "ViolTwoI" {\keepWithTag #'quote \ViolTwoI}
+
+
 
 \paper{ 
   #(layout-set-staff-size 19)

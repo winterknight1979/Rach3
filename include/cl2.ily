@@ -151,7 +151,7 @@ ClTwoI=\relative c'{
   \tag #'score \cadenzaIc 
   \mark\default \barNumberCheck \RhXX |
   R1 * 2 |
-  % cue cor I
+  \cueWhile "HrnOneI" "Cor.I" #DOWN 
   {R1 * 2 } \bar "||"
   \key e \minor
   \cueWhile "ClarOneI" "Cl.I" #DOWN
@@ -232,7 +232,7 @@ ClTwoII=\relative c'{\transposition bf \commonConductor
   R4. * 18 \mark\default \barNumberCheck \RhXXXIV |
   R4. * 11 | R4. \mark\default \barNumberCheck \RhXXXV \mbreak 
   R4. * 14 |
-  % cue viol.
+  \cueWhile "ViolOneII" "Viol.I" #DOWN 
   {R4. * 2}
   \mark\default \barNumberCheck \RhXXXVI \bar "||"
   \time 3/4 r4 r af--\mp\>( |

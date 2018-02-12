@@ -205,7 +205,7 @@ BsnOneI=\relative c {
   R1\fermataMarkup_"Cadenza"
   \tag #'score \cadenzaIc |
   \mark\default \barNumberCheck \RhXX |
-  %cue piano
+  \cueWhile "PianoI" "Piano" #UP 
   {R1 * 2}
   bf,1\pp(~ |
   bf2 a4) r \mbreak \bar "||"
@@ -295,7 +295,7 @@ BsnOneII=\relative c' {
   af\dim a bf \mark\default \barNumberCheck \RhXXVIII \mbreak |
   a2\pp)~ a8 r |
   R2. * 5 | R2. * 2 | R2. * 8 |
-  % cue viol. I
+  \cueWhile "ViolOneII" "Viol.I" #UP 
   {R2. \mark\default\barNumberCheck \RhXXIX | r4 }
   r ef'8\p( df |
   c2 af4 |
@@ -319,7 +319,7 @@ BsnOneII=\relative c' {
   R2. * 4 \mbreak \bar "||"
   \key fs\minor R2.*4 \mark\default \barNumberCheck \RhXXXIII \bar "||"
   \clef tenor \time 3/8
-  % cue cor.I
+  \cueWhile "HrnOneII" "Cor.I" #UP 
   {R4.*7 | r8}
   gs'4(^"Solo"\pDolce |
   b a8~ |

@@ -74,7 +74,7 @@ ClOneI=\relative c'{\transposition bf \commonConductor
   e)\pp r r2 |
   R1 * 7 \mark\default \barNumberCheck \RhVII \mpbreak |
   R1 * 4 |
-  % CUE VIOL.I 
+  \cueWhile "ViolOneI" "Viol.I" #UP 
   {R1 * 2 | r4}
   r8^"Solo" a,\pDolce( bf d\< f e\! |
   e--\! d4\> e8--)\! d--\>( c4\! d8--) c--(\dim g4\!) r8 r2 \mark\default \barNumberCheck \RhVIII |
@@ -156,7 +156,7 @@ ClOneI=\relative c'{\transposition bf \commonConductor
   g_\markup{\italic "perdendo"} fs g as b) r r4 |
   R1 * 8 \mark\default \barNumberCheck \RhXVII \mbreak |
   R1 * 12 \mark\default \barNumberCheck \RhXVIII |
-  % cue piano
+  \cueWhile "PianoI" "Piano" #DOWN  
   {R1 * 2} |
   c,1--\pp~ | c |
   R1 * 4 |
@@ -177,7 +177,7 @@ ClOneI=\relative c'{\transposition bf \commonConductor
   \tag #'score \cadenzaIc 
   \mark\default \barNumberCheck \RhXX \mbreak |
   R1 * 2 
-  % cue cor.I 
+  \cueWhile "HrnOneI" "Cor.I" #DOWN 
   {R1 * 2} \bar "||"
   \key e\minor
   e,4.(\p-- fs8 e4.-- fs8 |
@@ -240,7 +240,7 @@ ClOneII=\relative c'{
   \tag #'score \cadenzaIIa
   R2. \mbreak |
   R2.*9 | R2.\mark\default \barNumberCheck \RhXXVII |
-  % cue viol. I
+  \cueWhile "ViolOneII" "Viol.I" #UP 
   {R2. * 3 | r4 }
   r d--\p |
   d2.--~ | d \mbreak |
@@ -253,7 +253,7 @@ ClOneII=\relative c'{
   R2. * 9 \mark\default \barNumberCheck \RhXXIX |
   R2.* 8 \mark\default \barNumberCheck \RhXXX |
   R2. * 2 |
-  % cue cor.I 
+  \cueWhile "HrnOneII" "Cor.I" #UP 
   {R2. * 3 | r4}
   d2(\p |
   ef f4) |
@@ -478,7 +478,7 @@ ClOneIII=\relative c'{
   R1 * 3 |
   R1 * 4 \mark\default \barNumberCheck \RhLV \mbreak |
   R1 * 6 |
-  % cue cor. I 
+  \cueWhile "HrnOneIII" "Cor.I" #DOWN 
   {R1 * 3}
   \mark\default \barNumberCheck \RhLVI |
   r2 r4 gf\p^\markup{\italic "cantabile"}\< |

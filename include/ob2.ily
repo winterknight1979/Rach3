@@ -120,7 +120,7 @@ ObTwoI=\relative c' {
   \tag #'score \cadenzaIc 
   \mark\default \barNumberCheck \RhXX |
   R1 * 2 |
-  % cue cor I
+  \cueWhile "HrnOneI" "Cor.I" #DOWN
   {R1 * 2 \mbreak \bar "||" \key d \minor R1 }|
   R1 *  9\mark\default \barNumberCheck \RhXXI |
   R1 * 5 |
@@ -160,7 +160,7 @@ ObTwoII=\relative c'{
   R2. * 3 | R2. |
   R2. * 2 | R2. * 5 | R2. \mark\default \barNumberCheck \RhXXVIII \mbreak |
   R2. * 6 | R2. * 2 | R2. * 8 |
-  % cue cor. I 
+  \cueWhile "HrnOneII" "Cor.I" #DOWN
   {R2. \mark\default \barNumberCheck \RhXXIX | R2. } |
   R2. * 7 \mark\default \barNumberCheck \RhXXX |
   R2. * 5 |
@@ -275,7 +275,7 @@ ObTwoIII=\relative c'{
   \time 3/2 bf8-. r r4 r2 r |
   R1. * 2 \mark\default \barNumberCheck \RhLI \bar "||"
   \time 4/4 R1 * 8 \barNumberCheck \RhLII |
-  % Cue viol II
+  \cueWhile "ViolTwoIII" "Viol.II" #UP
   {R1 * 2} \bar "||"
   \time 3/2 R1. * 2 \bar "||"
   \time 4/4 r2 r4 r16 es,\p-. fs-. g-. \mbreak |

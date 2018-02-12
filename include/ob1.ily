@@ -6,7 +6,7 @@ ObOneI=\relative c' {
   \key d \minor
   R1 * 10 \mark\default \barNumberCheck \RhI
   R1 |
-  %\cueDuring #"Piano" #UP
+  \cueWhile "PianoI" "Piano" #UP
   {R1 * 4} |
   r4 c'--\pDolce( bf)~ bf8 r |
   r4 \nextCresc "poco cresc"
@@ -18,7 +18,7 @@ ObOneI=\relative c' {
   \time 4/4 R1 |
   R1 * 11 \mark\default \barNumberCheck \RhII |
   R1 * 4 |
-  %\cueDuring viola
+  \cueWhile "ViolaI" "Viola" #UP
   {R1 * 2 \mbreak | r4}
   cs--\mf(~ cs8 b\> cs e |
   d4)\p r r2 |
@@ -59,7 +59,7 @@ ObOneI=\relative c' {
   d\pp) r r2 |
   R1 * 7 \mark\default \barNumberCheck \RhVII |
   R1 * 4 |
-  %cue viol I
+  \cueWhile "ViolOneI" "Viol.I" #UP
   {R1 \mbreak R1 r4}
   r8 g,\pDolce^"Solo"( af c\< ef d |
   d--\> c4\! d8--) c--\>( bf4\! c8--) |
@@ -73,7 +73,7 @@ ObOneI=\relative c' {
   R1 * 6 \mark\default \barNumberCheck \RhX |
   R1 * 2 |
   R1 * 2 |
-  % Cue viol. II
+  \cueWhile "ViolTwoI" "Viol.II" #DOWN
   {R1 | r2}
   f4.\p( g8 |
   a4-- bf) gs(-- a) |
@@ -157,7 +157,7 @@ ObOneI=\relative c' {
   R1\fermataMarkup_"Cadenza"
   \tag #'score \cadenzaIc \mark\default \barNumberCheck \RhXX \mbreak |
   R1 * 2 |
-  % cue horn
+  \cueWhile "HrnOneI" "Cor.I" #DOWN
   {R1 * 2 \bar "||" \key d\minor R1} |
   R1 * 9 \mark\default \barNumberCheck \RhXXI |
   R1 * 5 |
@@ -216,7 +216,7 @@ ObOneII=\relative c'{
   R2. * 6 |
   R2. * 2 |
   R2. * 8 |
-  % Cue cor. I
+  \cueWhile "HrnOneII" "Cor.I" #DOWN
   {R2. \mark\default \barNumberCheck \RhXXIX | R2. } |
   R2. * 7 \mark\default \barNumberCheck \RhXXX \mbreak |
   R2. * 5 |
@@ -335,7 +335,7 @@ ObOneIII=\relative c'{
   ds\<[ e fs]} g4-.)\! r2 |
   R1 * 4 \mark\default \barNumberCheck \RhXLV |
   R1 * 12 |
-  %cue viol I
+  \cueWhile "ViolOneIII" "Viol.I" #UP
   {R1 * 2 \mpbreak  | r2}
   b2\p( |
   a4 g fs2 |
@@ -360,7 +360,7 @@ ObOneIII=\relative c'{
   R1 * 4 \bar "||"
   \time 4/4 \key c\minor R1 * 2 \mark\default \barNumberCheck \RhXLVIII |
   R1 * 7 |
-  % cue viol. I
+  \cueWhile "ViolOneIII" "Viol.I" #DOWN
   {R1 \bar "||" \time 3/2 R1. \mark\default \barNumberCheck \RhXLIX \mbreak \bar "||" \time 4/4 R1} |
   R1 * 2 |
   r2 g'\pDolce( |
@@ -396,7 +396,7 @@ ObOneIII=\relative c'{
   R1 * 3 |
   R1 * 4 \mark\default \barNumberCheck \RhLV |
   R1 * 6 |
-  %cue cor. I
+  \cueWhile "HrnOneIII" "Cor.I" #DOWN 
   {R1 * 3} \mark\default \barNumberCheck \RhLVI \mbreak |
   r2 r4 ff\p\<^\markup{\italic "cantabile"} |
   ff4.\!--( ef8 d2) |

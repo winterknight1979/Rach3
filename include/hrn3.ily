@@ -123,7 +123,7 @@ HrnThreeI=\relative c' {
   R1\fermataMarkup_"Cadenza"
   \tag #'score \cadenzaIc 
   \mark\default \barNumberCheck \RhXX |
-  %cue piano
+  \cueWhile "PianoI" "Piano" #DOWN
   {R1 * 2} |
   f''1\pp~ | f \mbreak \bar "||"
   e1\pp~ | e~ | e4. r8 r2 |
@@ -143,7 +143,7 @@ HrnThreeI=\relative c' {
   R1 * 4 | R1 * 4 \mark\default \barNumberCheck \RhXXIII |
   R1 | R1 \mbreak |
   R1 | R1 |
-  %cue viol. I
+  \cueWhile "ViolOneI" "Viol.I" #DOWN
   {R1 * 2} |
   \clef bass a,1\pp(~ |
   a2 e |
@@ -233,7 +233,7 @@ HrnThreeIII=\relative c' {
   \transposition f
   \set Staff.soloText = #"III"
   \set Staff.soloIIText = #"IV"
-
+s1
 
 }
 

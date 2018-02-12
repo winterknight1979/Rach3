@@ -115,7 +115,7 @@ HrnTwoI=\relative c' {
   r2\fermata_"Cadenza"
   \tag #'score \cadenzaIc
   \mark\default \barNumberCheck \RhXX |
-  % cue piano
+  \cueWhile "PianoI" "Piano" #DOWN
   {R1 * 2}
   d4.--\pp(\> cs8-.\! d4.--\> cs8-.\! |
   d4.--\> cs8-. d2\dim \bar "||"
@@ -201,6 +201,6 @@ HrnTwoII=\relative c' {
 }
 HrnTwoIII=\relative c' {
   \commonConductor
-  \transposition f
+  \transposition f s1
 }
 

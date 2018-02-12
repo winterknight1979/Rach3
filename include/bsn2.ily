@@ -198,7 +198,7 @@ BsnTwoI=\relative c {
   R1\fermataMarkup_"Cadenza"
   \tag #'score \cadenzaIc 
   \mark\default \barNumberCheck \RhXX \mbreak |
-  %cue piano
+  \cueWhile "PianoI" "Piano" #UP 
   {R1 * 2}
   ef,1(~\pp | ef2 a4) r \bar "||"
   \clef tenor \key d\minor R1 * 8 |
@@ -265,7 +265,7 @@ BsnTwoII=\relative c' {
   df\dim \mark\default \barNumberCheck \RhXXVIII \mbreak |
   c2\pp~ c8 r |
   R2. * 5 | R2. * 2 | R2. * 8 |
-  %cue viol. I 
+  \cueWhile "ViolOneII" "Viol.I" #UP 
   {R2.\mark\default \barNumberCheck \RhXXIX | r4 }
   r bf'~(\p |
   bf af gf |
@@ -421,7 +421,7 @@ BsnTwoIII=\relative c {
   R1 * 2 \bar "||"
   \time 3/2 R1. * 2 \bar "||"
   \time 4/4 R1 * 2 | R1 \mpbreak 
-  % cue cor.I 
+  \cueWhile "HrnOneIII" "Cor.I" #UP
   {R1 \mark\default \barNumberCheck \RhLIII | \grace s8 R1 | r2}
   r4 r8.^"Solo" b''16\pp-. |
   c8-.[_\markup{\italic "leggiero"} r16 b-.] c8-.[ r16 b-.] c8-.[ r16 cf32( bf] cf16) bf-. cf-. b-.\mbreak |

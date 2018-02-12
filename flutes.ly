@@ -40,6 +40,22 @@
 \include "include/bsn2.ily"
   \addQuote "BsnTwoI" {\keepWithTag #'quote \BsnTwoI}
 
+\include "include/hrn1.ily"
+  \addQuote "HrnOneI" {\keepWithTag #'quote \HrnOneI}
+
+\include "include/piano.ily"
+  \addQuote "PianoI" {\keepWithTag #'quote \PianoUPI}
+
+\include "include/viol1.ily"
+  \addQuote "ViolOneI" {\keepWithTag #'quote \ViolOneI}
+  \addQuote "ViolOneII" {\keepWithTag #'quote \ViolOneII}
+  \addQuote "ViolOneIII" {\keepWithTag #'quote \ViolOneIII}
+\include "include/viol2.ily"
+  \addQuote "ViolTwoII" {\keepWithTag #'quote \ViolTwoII}
+  \addQuote "ViolTwoIII" {\keepWithTag #'quote \ViolTwoIII}
+\include "include/vla.ily"
+  \addQuote "ViolaII" {\keepWithTag #'quote \VlaII}
+
 \paper{ 
   #(layout-set-staff-size 19)
   system-system-spacing = #'((basic-distance . 18)

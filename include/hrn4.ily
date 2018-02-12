@@ -50,7 +50,7 @@ HrnFourI=\relative c' {
   R1 * 5 | R1 | R1 * 6 | R1 * 6 \mark\default \barNumberCheck \RhX |
   R1 * 2 \mbreak |
   R1 * 2 |
-  % cue Viol. II
+  \cueWhile "ViolTwoI" "Viol.II" #DOWN 
   {R1 * 2} |
   c1\pp~ |
   c2( b | c df | d4) r r2 \mark\default \barNumberCheck \RhXI |
@@ -125,7 +125,7 @@ HrnFourI=\relative c' {
   a,~) | a~ | a~ | a~ | a4 r r2 |
   R1 * 3 \mark\default \barNumberCheck \RhXXIII \mbreak |
   \clef treble R1 | R1 | R1 | R1 |
-  % cue viol.I 
+  \cueWhile "ViolOneI" "Viol.I" #DOWN 
   {R1 * 2} |
   \clef bass a'1\pp( |
   a2 e |
@@ -212,5 +212,6 @@ HrnFourIII=\relative c' {
   \transposition f
   \set Staff.soloText = #"III"
   \set Staff.soloIIText = #"IV"
+  s1
 }
 

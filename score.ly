@@ -7,7 +7,7 @@
 
 \language "english"
 
-
+% woods
 \include "include/fl1.ily"
 \include "include/fl2.ily"
 \include "include/ob1.ily"
@@ -16,11 +16,28 @@
 \include "include/cl2.ily"
 \include "include/bsn1.ily"
 \include "include/bsn2.ily"
+% brass
 \include "include/hrn1.ily"
 \include "include/hrn2.ily"
 \include "include/hrn3.ily"
 \include "include/hrn4.ily"
-
+\include "include/tpt1.ily"
+\include "include/tpt2.ily"
+\include "include/trom1.ily"
+\include "include/trom2.ily"
+\include "include/trom3.ily"
+\include "include/tuba.ily"
+% percussion
+\include "include/timp.ily"
+\include "include/perc.ily"
+% soloist
+\include "include/piano.ily"
+% strings
+\include "include/viol1.ily"
+\include "include/viol2.ily"
+\include "include/vla.ily"
+\include "include/cello.ily"
+\include "include/bass.ily"
 
 
 
@@ -84,20 +101,42 @@
         \new Staff \with
         {instrumentName =\markup{\center-column {"2 Trombe" \line {"In B"\smaller\flat}}}
           shortInstrumentName=#"Tr.be"}
-          {s1}
+          {\commonConductor \partcombine \TptOneI \TptTwoI}
       >>
 
       \new Staff \with {
         instrumentName=\markup{\center-column {"Timpani" \line {"In D,C,A"}}}
         shortInstrumentName="Timp"}
-        {s1}
+        {\TimpI}
+
+      \new PianoStaff="Ossia" \with {
+        instrumentName="Ossia"
+        shortInstrumentName="Ossia"}
+        <<
+          \new Staff="PnoUp" \with
+          {
+            \override VerticalAxisGroup.remove-first=##t
+            fontSize = #-3
+            \override StaffSymbol.staff-space = #(magstep -3)
+            \override StaffSymbol.thickness = #(magstep -3)
+          }
+          {\PianoUPOssia}
+          \new Staff="PnoDn"  \with
+          {
+            \override VerticalAxisGroup.remove-first=##t
+            fontSize = #-3
+            \override StaffSymbol.staff-space = #(magstep -3)
+            \override StaffSymbol.thickness = #(magstep -3)
+          }{\PianoDNOssia}
+        >>
+
 
       \new PianoStaff="Piano" \with {
         instrumentName="Piano"
         shortInstrumentName="P.no"}
         <<
-          \new Staff="PnoUp" {s1}
-          \new Staff="PnoDn" {s1}
+          \new Staff="PnoUp" {\PianoUPI}
+          \new Staff="PnoDn" {\PianoDNI}
         >>
 
       \new StaffGroup="Strings"
@@ -107,28 +146,28 @@
             \new Staff \with
             {instrumentName=#"Violini I"
              shortInstrumentName=#"V.ni I"}
-             {s1}
+             {\ViolOneI}
              \new Staff \with
              {instrumentName=#"Violini II"
              shortInstrumentName="V.ni II"}
-             {s1}
+             {\ViolTwoI}
            >>
 
            \new Staff \with
            {instrumentName=#"Viole"
            shortInstrumentName="V.le"}
-           {s1}
+           {\VlaI}
 
           \new GrandStaff="BassStrings"
           <<
             \new Staff \with
             {instrumentName="Violoncelli"
             shortInstrumentName="Vc."}
-            {s1}
+            {\CellI}
             \new Staff \with
             {instrumentName="Contrabassi"
             shortInstrumentName="Cb."}
-            {s1}
+            {\BassI}
           >>
         >>
     >>
@@ -180,7 +219,7 @@
         \new Staff \with
         {instrumentName =\markup{\center-column {"2 Trombe" \line {"In B"\smaller\flat}}}
           shortInstrumentName=#"T.be"}
-          {s1}
+          {\partcombine \TptOneII \TptTwoII}
         \new PianoStaff="LowBrass" 
           \with {instrumentName=\markup {\center-column {"3 Tromboni"
           \line {"e Tuba"}}}
@@ -188,10 +227,10 @@
         <<
           \new Staff \with
           {shortInstrumentName="T.ni.I.II"}
-          {s1}
+          {\partcombine \TromOneII \TromTwoII}
           \new Staff \with
           {shortInstrumentName=\markup{\center-column{"T.no.III" \line{"e Tub."}}}}
-          {s1}
+          {\partcombine \TromThreeII \TubaII}
         >>
        
       >>
@@ -200,22 +239,22 @@
         \new Staff \with {
           instrumentName=\markup{\center-column {"Timpani" \line {"In B,A"}}}
           shortInstrumentName="Timp"}
-          {s1}
+          {\TimpII}
         \new RhythmicStaff \with
         {instrumentName="Gran Cassa"
         shortInstrumentName="G.C."}
-        {s1}
+        {\BDII}
         \new RhythmicStaff \with
         {instrumentName="Piatti"
         shortInstrumentName="Pti."}
-        {s1}
+        {\CymII}
         >>
       \new PianoStaff="Piano" \with {
         instrumentName="Piano"
         shortInstrumentName="P.no"}
         <<
-          \new Staff="PnoUp" {s1}
-          \new Staff="PnoDn" {s1}
+          \new Staff="PnoUp" {\PianoUPII}
+          \new Staff="PnoDn" {\PianoDNII}
         >>
 
       \new StaffGroup="Strings"
@@ -225,28 +264,28 @@
             \new Staff \with
             {instrumentName=#"Violini I"
              shortInstrumentName=#"V.ni I"}
-             {s1}
+             {\ViolOneII}
              \new Staff \with
              {instrumentName=#"Violini II"
              shortInstrumentName="V.ni II"}
-             {s1}
+             {\ViolTwoII}
            >>
 
            \new Staff \with
            {instrumentName=#"Viole"
            shortInstrumentName="V.le"}
-           {s1}
+           {\VlaII}
 
           \new GrandStaff="BassStrings"
           <<
             \new Staff \with
             {instrumentName="Violoncelli"
             shortInstrumentName="Vc."}
-            {s1}
+            {\CellII}
             \new Staff \with
             {instrumentName="Contrabassi"
             shortInstrumentName="Cb."}
-            {s1}
+            {\BassII}
           >>
         >>
       >>
@@ -297,7 +336,7 @@
               \new Staff \with
         {instrumentName =\markup{\center-column {"2 Trombe" \line {"In B"\smaller\flat}}}
           shortInstrumentName=#"T.be"}
-          {s1}
+          {\partcombine \TptOneIII \TptTwoIII}
         \new PianoStaff="LowBrass" 
           \with {instrumentName=\markup {\center-column {"3 Tromboni"
           \line {"e Tuba"}}}
@@ -305,10 +344,10 @@
         <<
           \new Staff \with
           {shortInstrumentName="T.ni.I.II"}
-          {s1}
+          {\partcombine \TromOneIII \TromTwoIII}
           \new Staff \with
           {shortInstrumentName=\markup{\center-column{"T.no.III" \line{"e Tub."}}}}
-          {s1}
+          {\TromThreeIII \TubaIII}
         >>
        
       >>
@@ -317,26 +356,26 @@
         \new Staff \with {
           instrumentName=\markup{\center-column {"Timpani" \line {"In B,A"}}}
           shortInstrumentName="Timp"}
-          {s1}
+          {\TimpIII}
         \new RhythmicStaff \with
         {instrumentName="Tamburo"
         shortInstrumentName="T.bo"}
-        {s1}
+        {\SDIII}
         \new RhythmicStaff \with
         {instrumentName="Gran Cassa"
         shortInstrumentName="G.C."}
-        {s1}
+        {\BDIII}
         \new RhythmicStaff \with
         {instrumentName="Piatti"
         shortInstrumentName="Pti."}
-        {s1}
+        {\CymIII}
         >>
       \new PianoStaff="Piano" \with {
         instrumentName="Piano"
         shortInstrumentName="P.no"}
         <<
-          \new Staff="PnoUp" {s1}
-          \new Staff="PnoDn" {s1}
+          \new Staff="PnoUp" {\PianoUPIII}
+          \new Staff="PnoDn" {\PianoDNIII}
         >>
 
       \new StaffGroup="Strings"
@@ -346,28 +385,28 @@
             \new Staff \with
             {instrumentName=#"Violini I"
              shortInstrumentName=#"V.ni I"}
-             {s1}
+             {\ViolOneIII}
              \new Staff \with
              {instrumentName=#"Violini II"
              shortInstrumentName="V.ni II"}
-             {s1}
+             {\ViolTwoIII}
            >>
 
            \new Staff \with
            {instrumentName=#"Viole"
            shortInstrumentName="V.le"}
-           {s1}
+           {\VlaIII}
 
           \new GrandStaff="BassStrings"
           <<
             \new Staff \with
             {instrumentName="Violoncelli"
             shortInstrumentName="Vc."}
-            {s1}
+            {\CellIII}
             \new Staff \with
             {instrumentName="Contrabassi"
             shortInstrumentName="Cb."}
-            {s1}
+            {\BassIII}
           >>
         >>
  

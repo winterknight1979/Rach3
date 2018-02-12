@@ -12,6 +12,13 @@
   \addQuote "BsnOneIII" {\keepWithTag #'quote \BsnOneIII}
 \include "include/bsn2.ily"
   \addQuote "BsnTwoII" {\keepWithTag #'quote \BsnTwoII}
+\include "include/hrn1.ily"
+  \addQuote "HrnOneII" {\keepWithTag #'quote \HrnOneII}
+  \addQuote "HrnOneIII" {\keepWithTag #'quote \HrnOneIII}
+\include "include/piano.ily"
+  \addQuote "PianoI" {\keepWithTag #'quote \PianoUPI}
+\include "include/viol1.ily"
+  \addQuote "ViolOneII" {\keepWithTag #'quote \ViolOneII}
 
 \paper{ 
   #(layout-set-staff-size 19)

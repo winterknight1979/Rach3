@@ -22,6 +22,18 @@
 \include "include/bsn1.ily"
   \addQuote "BsnOneI" {\keepWithTag #'quote \BsnOneI}
 
+\include "include/hrn1.ily"
+  \addQuote "HrnOneI" {\keepWithTag #'quote \HrnOneI}
+  \addQuote "HrnOneII" {\keepWithTag #'quote \HrnOneII}
+  \addQuote "HrnOneIII" {\keepWithTag #'quote \HrnOneIII}
+
+\include "include/piano.ily"
+  \addQuote "PianoI" {\keepWithTag #'quote \PianoUPI}
+
+\include "include/viol1.ily"
+  \addQuote "ViolOneI" {\keepWithTag #'quote \ViolOneI}
+  \addQuote "ViolOneII" {\keepWithTag #'quote \ViolOneII}
+
 \paper{ 
   #(layout-set-staff-size 19)
   system-system-spacing = #'((basic-distance . 18)

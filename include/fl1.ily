@@ -89,16 +89,16 @@ FlOneI=\relative c'{
   a->\ff r r2 | R1 * 7 \mark\default \barNumberCheck \RhXV \mbreak |
   R1 * 16 \mark\default \barNumberCheck \RhXVI |
   R1 * 5 |
-  % \cueDuring #"ViolOne" #UP
+  \cueWhile "ViolOneI" "Viol.I" #UP
   R1 |
   R1 |
-  % \cueDuring #"ViolOne" #UP
+  \cueWhile "ViolOneI" "Viol.I" #UP
   R1 |
   r8 es'(\ppLeg^"Solo" fs gs a gs fs e |
   fs es a, gs a) r r4 |
   R1 * 10 \mark\default \barNumberCheck \RhXVII \mbreak |
   R1 * 8 |
-  % \cueDuring #"Piano" #UP
+  \cueWhile "PianoI" "Piano" #DOWN
   {R1*4} \mark\default \barNumberCheck \RhXVIII |
   bf1--\pp~ | bf |
   R1 * 10 |
@@ -106,7 +106,7 @@ FlOneI=\relative c'{
   R1\fermataMarkup_"Cadenza" 
   \tag #'score \cadenzaIb 
   \mark\default \barNumberCheck \RhXIX \mbreak \bar "||"
-  %\cueDuring #"Piano" #DOWN
+  \cueWhile "PianoI" "Piano" #DOWN
   {\time 4/4  R1 | r4}
   d4(\mf^"Solo" ef8 d c4 | bf8 c d4 a2--) |
   c8( bf a4 gs8 a b4 | g2--) fs8(\dim g a4 \mbreak |
@@ -116,7 +116,7 @@ FlOneI=\relative c'{
   \tag #'score \cadenzaIc
   \mark\default \barNumberCheck \RhXX |
   R1 * 2 |
-  %\cueDuring #"HrnOne" #DOWN
+  \cueWhile "HrnOneI" "Cor.I" #DOWN
     {R1 | R1 \bar "||" \key d\minor 
     R1 }
   R1 * 9 \mark\default \barNumberCheck \RhXXI \mbreak |
@@ -138,7 +138,7 @@ FlOneII = \relative c'{
   \time 3/4 
   R2. * 9 \mark #24 \barNumberCheck \RhXXIV |
   R2. * 13 |
-  %\CueDuringWithClef #"Viola" #UP #"alto"
+  \cueWhileClef "ViolaII" "Vla." #UP #"alto"
   {R2. * 3 \mark\default \barNumberCheck \RhXXV | r4 }
   a''\(\mf\< \tuplet 3/2 {g4(\! e8)} | e2-- \tuplet 3/2 {d4 bf8} \mbreak|
   bf4--\)~ bf8 r r4 | R2. * 3 |
@@ -168,7 +168,7 @@ FlOneII = \relative c'{
   \cueWhile "OboeOneII" "Ob.I" #UP
  {R2. \mark\default \barNumberCheck \RhXXXI | R2. * 3 \mbreak | R2. } |
   R2. * 7 \mark\default \barNumberCheck \RhXXXII | 
-  %\cueDuring  #"ViolOne" #UP
+  \cueWhile "ViolOneII" "Viol.I" #DOWN
   {R2. * 4 \bar "||"
   \key fs \minor  
   r4} \tuplet 3/2 4 {r8 r b'-.\p cs-. gs-. r} \mbreak |
@@ -183,7 +183,7 @@ FlOneII = \relative c'{
   R4. \mark\default \barNumberCheck \RhXXXV \mbreak |
   R4.*16 \mark\default \barNumberCheck \RhXXXVI \bar "||"
   \time 3/4
-  %\cueDuring #"ViolTwo" #UP
+  \cueWhile "ViolTwoII" "Viol.II" #UP
   {R2. * 2 | r4}
   r4 a\mf( |
   gs2) fs4( |
@@ -252,7 +252,7 @@ FlOneIII = \relative c' {
   R1 * 8 \bar "||"
   \time 3/2 R1. \mark\default \barNumberCheck \RhXLIX \mbreak \bar "||"
   \time 4/4 R1 * 7 \mark\default \barNumberCheck \RhL |
-  %\cueDuring #"ViolTwo" #UP
+  \cueWhile "ViolTwoIII" "Viol.II" #UP
   {R1 | R1}
   R1 * 3 \bar "||"
   \time 3/2 R1. * 3 \mark\default \barNumberCheck \RhLI \bar "||"
@@ -277,7 +277,7 @@ FlOneIII = \relative c' {
   ds--( cs4\> ds8--)\! cs--( b4\> cs8--)\! \mbreak |
   b--(\dim fs4)\! r8 r2 | R1 * 4 \mark\default \barNumberCheck \RhLVI |
   R1 * 3 | R1 | R1 * 4 \mark\default \barNumberCheck \RhLVII |
-  %\cueDuring #"ViolOne" #UP
+  \cueWhile "ViolOneIII" "Viol.I" #UP
   {R1 * 3\mbreak | R1 * 3 \mark\default \barNumberCheck \RhLVIII | r4 }
   g'4\mf^"Solo"( ef c | bf) r r2 |
   R1 * 9 \mark\default \barNumberCheck \RhLIX \mbreak \bar "||"

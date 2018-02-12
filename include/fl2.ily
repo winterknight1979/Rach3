@@ -1,4 +1,4 @@
-%cues:
+
 
 \version "2.18.2"
 
@@ -35,8 +35,7 @@ FlTwoI=\relative c'{
    R1 * 6 |
   \time 3/2 
 
- \cueWhile "FluteOneI" "Fl.I" #UP 
-  %\context CueVoice {s1\stopSlurSpan}
+ \cueWhile "FluteOneI" "Fl.I" #UP  
   {r1} 
 
   \tuplet 3/2 4 {r8 a'\<( bf c[ d ef])} \mark\default \barNumberCheck \RhV |
@@ -93,7 +92,7 @@ FlTwoI=\relative c'{
   {R1 * 2 }
   R1 * 10 \mark\default \barNumberCheck \RhXVII |
   R1 * 8 |
-  %\cueDuring #"Piano" #DOWN
+  \cueWhile "PianoI" "Piano" #DOWN
   {R1 * 4} \mark\default \barNumberCheck \RhXVIII \mbreak |
   g1--\pp~ | g | R1 * 10 | R1^\fermataMarkup_"Cadenza"
   \tag #'score \cadenzaIb
@@ -106,7 +105,7 @@ FlTwoI=\relative c'{
   \tag #'score \cadenzaIc
   \mark\default \barNumberCheck \RhXX |
   R1 * 2 |
-  %\cueDuring #"HrnOne" #DOWN
+  \cueWhile "HrnOneI" "Cor.I" #DOWN
   {R1 * 2 \mbreak \bar "||" \key d\minor  R1 }|
   R1 * 9 \mark\default \barNumberCheck \RhXXI |
   R1 * 7 |
@@ -236,7 +235,7 @@ R1 * 2 \mark\default \barNumberCheck \RhXLVIII |
 R1 * 8 \bar "||"
 \time 3/2 R1. \mark\default \barNumberCheck \RhXLIX \bar "||"
 \time 4/4 R1 * 7 \mark\default \barNumberCheck \RhL |
-%\cueDuring #"ViolTwo" #DOWN
+\cueWhile "ViolTwoII" "Viol.II" #DOWN
 {R1 R1} |
 R1 * 3 \mbreak \bar "||"
 \time 3/2 
