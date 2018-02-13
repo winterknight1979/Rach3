@@ -201,6 +201,35 @@ HrnTwoII=\relative c' {
 }
 HrnTwoIII=\relative c' {
   \commonConductor
-  \transposition f s1
+  \transposition f 
+  \clef treble \time 2/2 
+  e4\sff r r2 | R1 * 17 \mark #40 \barNumberCheck \RhXL |
+  e1\pp~ | e~ | e~ | e~ | e~\dim | e~ | e4\! r r2 |
+  R1 * 3 \mbreak |
+  e1~\pp | e2. r4 | R1 * 2 |
+  d1~ | d2. r4 | R1 * 2 |
+  r2 r4 e-.\f |
+  e8-. e-. d-. c-. b4-. b-. \mark\default \barNumberCheck \RhXLI |
+  b-> r r2 | R1 * 7 \mbreak |
+  g'4\f-. e-. e-. ds-. |
+  e-. e-. g-. gs-. |
+  a-. r r2 |
+  c,1\mf( | d~\cresc | d2 a') |
+  gs4.--\f a16 a gs4.-- a16 a |
+  gs4.-- a16 a gs4.-- a16 a \mbreak |
+  gs4-- gs8-. a-. gs4-- gs8-. a-. |
+  gs-. a-. gs-.[ a-.] gs4-. r \mark\default \barNumberCheck \RhXLII |
+  R1 * 2 |
+  fs1--\ff~ | fs\dim( | g4)\! r r2 | R1 |
+  e1--\ff~ | e\dim( | f4)\p r r2 | R1 \mbreak |
+  r4 e-.\pp\dim d-. cs-. | b-.\! r r2 | R1 |
+  b1\p~ | b~ | b4 r r2 | R1 |
+  d4-.\p r d-. r |
+  \nextCresc "poco cresc." d-.\< r d-. r \mbreak |
+  d-.\! r r2 | R1 * 3 \mark\default \barNumberCheck \RhXLIII |
+  R1 * 2 |
+  d4-.\p r d-. r |
+  \nextCresc "poco cresc." d-.\< r d-. r |
+  d-.\! r r2 | R1 * 5 \mpbreak |
 }
 

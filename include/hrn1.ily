@@ -264,6 +264,72 @@ HrnOneII=\relative c' {
 }
 HrnOneIII=\relative c' {
   \commonConductor
-  \transposition f s1
+  \transposition f
+  \clef treble \time 2/2
+  e'4\sff r r2 |
+  R1 * 5 |
+  d4.--\p d8-. d4.-- d8-. |
+  d4-- d8-. d-. d4-. d-. |
+  d2.-- d4-. |
+  d1--~ |
+  d4 r r2 |
+  R1 * 7 \mark #40 \barNumberCheck \RhXL \mbreak \bar "||"
+  e1\pp~ | e~ | e~ | e~ | e~\dim | e~ | e4\! r r2 |
+  R1 * 3 |
+  b1~\pp | b2. r4 |
+  R1 * 2 |
+  a1~ | a2. r4 |
+  R1 * 2 \mbreak |
+  r2 r4 e'\f-. |
+  d8-. c-. b-. a-. g4-. a-. \mark\default \barNumberCheck \RhXLI |
+  g4-> r r2 | R1 * 3 |
+  r4 a4\f-. b-. cs-. |
+  d-- a8-. b-. b-.[ cs-.] cs-. d-. |
+  d4-- d8-. e-. d4-- d8-. e-. |
+  d4-- d8-. e-. f-. e-. d4-- |
+  c-. r r2 | R1 * 2 \mbreak |
+  a1\mf(~ |
+  a2 bf\cresc |
+  c d) |
+  e4.--\f b8-. e4.-- b8-. |
+  e4.-- b8-. e4.-- b8-. |
+  e4-- e8-. b-. e4-- e8-. b-. |
+  e-. b-. e-. b-. e4-. r \mark\default \barNumberCheck \RhXLII |
+  R1 * 2 |
+  b1\ff--~ | b\dim~ \mbreak |
+  b4\! r r2 |
+  R1 |
+  a1\ff--~ | a\dim~ | a4\p r r2 |
+  r4 c(\p b2~) |
+  b4 b-.\dim b-. as-. |
+  b-.\! r r2 | R1 |
+  b1\p~ |  b~ \mbreak |
+  b4 r r2 |
+  R1 * 7 \mark\default \barNumberCheck \RhXLIII |
+  R1 * 10 |
+  \tuplet 3/2 {r8 fs\f fs} b4--~  \tuplet 3/2 {b8 fs fs} cs'4-. \mark\default \barNumberCheck \RhXLIV |
+  b4-. r r2 | R1 |
+  fs1\p(~ | fs |
+  b~ | b2\dim as \mbreak |
+  b4) r r2 | R1 * 5 \mark\default \barNumberCheck \RhXLV |
+  R1 * 2 |
+  cs2\p( c | b\dim bf | a)\! r |
+  R1 * 3 |
+  r4 cs\p( b2~ | b bf \mbreak |
+  a4) d( cs2~ |
+  cs c |
+  b4) ds_\markup{\italic "senza cresc."}( d2 |
+  cs c | b4) r r2 |
+  r2 g'\p( |
+  fs4 e ds2 |
+  d2. cs4 | b) r r2 |
+  R1 * 2 \mark\default \barNumberCheck \RhXLVI \mbreak |
+  R1 | 
+  d1\p(\< | ds\f | d\dim~ | d4\p) r r2 |
+  R1 * 2 |
+  r4 r8 d-.\f d4-. cs-. |
+  d-. fs2->\ff fs4 |
+  d-. d-. d-. cs-. |
+  d-. r r c-.\ff \mpbreak |
 }
 

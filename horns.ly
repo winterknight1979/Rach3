@@ -40,8 +40,8 @@
   \addQuote "ViolOneI" {\keepWithTag #'quote \ViolOneI}
 \include "include/viol2.ily"
   \addQuote "ViolTwoI" {\keepWithTag #'quote \ViolTwoI}
-
-
+\include "include/bass.ily"
+  \addQuote "BassIII" {\keepWithTag #'quote \BassIII}
 
 \paper{ 
   #(layout-set-staff-size 19)

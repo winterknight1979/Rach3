@@ -212,6 +212,15 @@ HrnFourIII=\relative c' {
   \transposition f
   \set Staff.soloText = #"III"
   \set Staff.soloIIText = #"IV"
-  s1
+  e4\sff r r2 |
+  R1 * 17 \mark #40 \barNumberCheck \RhXL |
+  R1 * 15 |
+  \cueWhile "BassIII" "Bassi" #DOWN {R1 * 3 | r2 r4 }
+ e4-.\f |
+ e8-. e-. d-. c-. b4-. r \mark\default \barNumberCheck \RhXLI \mbreak |
+ e,4-> r r2 | R1 * 7 | 
+ e'4-.\f d-. c-. b-. |
+ c-. d-. e-. f-. |
+ e-. r r2 | R1 * 3 \mpbreak |
 }
 

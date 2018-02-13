@@ -19,7 +19,7 @@ BSNCUES=include/hrn1.ily include/piano.ily include/viol1.ily
 
 HRNFILES=include/hrn1.ily include/hrn2.ily include/hrn3.ily include/hrn4.ily
 HRNCUES=include/fl1.ily include/ob1.ily include/cl1.ily include/bsn1.ily \
-	include/piano.ily include/viol1.ily include/viol2.ily
+	include/piano.ily include/viol1.ily include/viol2.ily include/bass.ily
 
 TPTFILES=include/tpt1.ily include/tpt2.ily
 TPTCUES=
