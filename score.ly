@@ -141,29 +141,40 @@
 
       \new StaffGroup="Strings"
       <<
-        \new GrandStaff="Violins"
+        \new StaffGroup="Violins"
           <<
-            \new Staff \with
+            \new PianoStaff \with
             {instrumentName=#"Violini I"
-             shortInstrumentName=#"V.ni I"}
-             {\ViolOneI}
-             \new Staff \with
+             shortInstrumentName=#"V.ni I"
+              \remove "Keep_alive_together_engraver"} <<
+              \new Staff{\ViolOneI}
+              \new Staff \with {\override VerticalAxisGroup.remove-first=##t} {\ViolOneDI} >>
+             
+            \new PianoStaff \with
              {instrumentName=#"Violini II"
-             shortInstrumentName="V.ni II"}
-             {\ViolTwoI}
+             shortInstrumentName="V.ni II"
+              \remove "Keep_alive_together_engraver"} <<
+               \new Staff {\ViolTwoI}
+               \new Staff \with {\override VerticalAxisGroup.remove-first=##t} {\ViolTwoDI} >>
            >>
 
-           \new Staff \with
+           \new PianoStaff \with
            {instrumentName=#"Viole"
-           shortInstrumentName="V.le"}
-           {\VlaI}
+           shortInstrumentName="V.le"
+            \remove "Keep_alive_together_engraver"} <<
+              \new Staff {\VlaI}
+              \new Staff \with {\override VerticalAxisGroup.remove-first=##t} {\VlaDI} >>
+            
 
-          \new GrandStaff="BassStrings"
+          \new StaffGroup="BassStrings"
           <<
-            \new Staff \with
+            \new PianoStaff \with 
             {instrumentName="Violoncelli"
-            shortInstrumentName="Vc."}
-            {\CellI}
+            shortInstrumentName="Vc."
+            \remove "Keep_alive_together_engraver"} <<
+              \new Staff {\CellI}   
+              \new Staff \with {\override VerticalAxisGroup.remove-first=##t} {\CellDI} >>
+            
             \new Staff \with
             {instrumentName="Contrabassi"
             shortInstrumentName="Cb."}
@@ -259,29 +270,35 @@
 
       \new StaffGroup="Strings"
       <<
-        \new GrandStaff="Violins"
+        \new StaffGroup="Violins"
           <<
             \new Staff \with
             {instrumentName=#"Violini I"
              shortInstrumentName=#"V.ni I"}
              {\ViolOneII}
-             \new Staff \with
+             \new PianoStaff \with
              {instrumentName=#"Violini II"
-             shortInstrumentName="V.ni II"}
-             {\ViolTwoII}
+             shortInstrumentName="V.ni II"
+              \remove "Keep_alive_together_engraver"} <<
+                \new Staff {\ViolTwoII}
+                \new Staff \with {\override VerticalAxisGroup.remove-first=##t} {\ViolTwoDII} >>
            >>
 
-           \new Staff \with
+           \new PianoStaff \with
            {instrumentName=#"Viole"
-           shortInstrumentName="V.le"}
-           {\VlaII}
+           shortInstrumentName="V.le"
+              \remove "Keep_alive_together_engraver"} <<
+                \new Staff {\VlaII}
+                \new Staff \with {\override VerticalAxisGroup.remove-first=##t} {\VlaDII} >>
 
-          \new GrandStaff="BassStrings"
+          \new StaffGroup="BassStrings"
           <<
-            \new Staff \with
+            \new PianoStaff \with
             {instrumentName="Violoncelli"
-            shortInstrumentName="Vc."}
-            {\CellII}
+            shortInstrumentName="Vc."
+              \remove "Keep_alive_together_engraver"} <<
+                \new Staff {\CellII}
+                \new Staff \with {\override VerticalAxisGroup.remove-first=##t} {\CellDII} >>
             \new Staff \with
             {instrumentName="Contrabassi"
             shortInstrumentName="Cb."}
@@ -380,38 +397,49 @@
 
       \new StaffGroup="Strings"
       <<
-        \new GrandStaff="Violins"
+        \new StaffGroup="Violins"
           <<
-            \new Staff \with
+            \new PianoStaff \with
             {instrumentName=#"Violini I"
-             shortInstrumentName=#"V.ni I"}
-             {\ViolOneIII}
-             \new Staff \with
+             shortInstrumentName=#"V.ni I"
+              \remove "Keep_alive_together_engraver"} <<
+              \new Staff{\ViolOneIII}
+              \new Staff \with {\override VerticalAxisGroup.remove-first=##t} {\ViolOneDIII} >>
+             
+            \new PianoStaff \with
              {instrumentName=#"Violini II"
-             shortInstrumentName="V.ni II"}
-             {\ViolTwoIII}
+             shortInstrumentName="V.ni II"
+              \remove "Keep_alive_together_engraver"} <<
+               \new Staff {\ViolTwoIII}
+               \new Staff \with {\override VerticalAxisGroup.remove-first=##t} {\ViolTwoDIII} >>
            >>
 
-           \new Staff \with
+           \new PianoStaff \with
            {instrumentName=#"Viole"
-           shortInstrumentName="V.le"}
-           {\VlaIII}
+           shortInstrumentName="V.le"
+            \remove "Keep_alive_together_engraver"} <<
+              \new Staff {\VlaIII}
+              \new Staff \with {\override VerticalAxisGroup.remove-first=##t} {\VlaDIII} >>
+            
 
-          \new GrandStaff="BassStrings"
+          \new StaffGroup="BassStrings"
           <<
-            \new Staff \with
+            \new PianoStaff \with 
             {instrumentName="Violoncelli"
-            shortInstrumentName="Vc."}
-            {\CellIII}
-            \new Staff \with
+            shortInstrumentName="Vc."
+            \remove "Keep_alive_together_engraver"} <<
+              \new Staff {\CellIII}   
+              \new Staff \with {\override VerticalAxisGroup.remove-first=##t} {\CellDIII} >>
+            
+            \new PianoStaff \with
             {instrumentName="Contrabassi"
-            shortInstrumentName="Cb."}
-            {\BassIII}
+            shortInstrumentName="Cb."
+            \remove "Keep_alive_together_engraver"} <<
+              \new Staff {\BassIII}   
+              \new Staff \with {\override VerticalAxisGroup.remove-first=##t} {\BassDIII} >>
           >>
         >>
- 
-
-          >>
+     >>
         \header{piece=\markup\huge "III Finale"}
       }
       \layout {
