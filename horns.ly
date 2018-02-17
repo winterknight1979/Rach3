@@ -9,13 +9,16 @@
 \include "include/hrn1.ily"
   \addQuote "HrnOneI" {\keepWithTag #'quote \HrnOneI}
   \addQuote "HrnOneII" {\keepWithTag #'quote \HrnOneII}
+  \addQuote "HrnOneIII" {\keepWithTag #'quote \HrnOneIII}
 \include "include/hrn2.ily"
   \addQuote "HrnTwoI" {\keepWithTag #'quote \HrnTwoI}
   \addQuote "HrnTwoII" {\keepWithTag #'quote \HrnTwoII}
+  \addQuote "HrnTwoIII" {\keepWithTag #'quote \HrnTwoIII}
   \addQuote "Hrn12I" {\keepWithTag #'quote <<\HrnOneI \HrnTwoI>>}
 \include "include/hrn3.ily"
   \addQuote "HrnThreeI" {\keepWithTag #'quote \HrnThreeI}
   \addQuote "HrnThreeII" {\keepWithTag #'quote \HrnThreeII}
+  \addQuote "HrnThreeIII" {\keepWithTag #'quote \HrnThreeIII}
 \include "include/hrn4.ily"
   \addQuote "HrnFourI" {\keepWithTag #'quote \HrnFourI}
   \addQuote "Hrn34II" {\keepWithTag #'quote <<\HrnThreeII \HrnFourII>>}
@@ -27,6 +30,7 @@
 \include "include/ob1.ily"
   \addQuote "OboeOneI" {\keepWithTag #'quote \transpose c' c \ObOneI}
   \addQuote "OboeOneII" {\keepWithTag #'quote \transpose c' c \ObOneII}
+  \addQuote "OboeOneIII" {\keepWithTag #'quote \transpose c' c \ObOneIII}
 \include "include/cl1.ily"
 
   \addQuote "ClarOneIut" {\keepWithTag #'quote \ClOneI}
@@ -34,10 +38,13 @@
   \addQuote "ClarOneII" {\keepWithTag #'quote \transpose c' c \ClOneII}
 \include "include/bsn1.ily"
   \addQuote "BsnOneI" {\keepWithTag #'quote \BsnOneI}
+\include "include/tpt1.ily"
+  \addQuote "TptOneIII" {\keepWithTag #'quote \TptOneIII}
 \include "include/piano.ily"
   \addQuote "PianoI" {\keepWithTag #'quote \PianoUPI}
 \include "include/viol1.ily"
   \addQuote "ViolOneI" {\keepWithTag #'quote \ViolOneI}
+  \addQuote "ViolOneIII" {\keepWithTag #'quote \ViolOneIII}
 \include "include/viol2.ily"
   \addQuote "ViolTwoI" {\keepWithTag #'quote \ViolTwoI}
 \include "include/bass.ily"

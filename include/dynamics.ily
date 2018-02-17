@@ -21,6 +21,9 @@ ppDolce = \tweak DynamicText.self-alignment-X #LEFT
 ppLeg = \tweak DynamicText.self-alignment-X #LEFT 
   #(make-dynamic-script (markup #:dynamic "pp" #:normal-text #:italic "leggiero"))
 
+sempreP = \tweak DynamicText.self-alignment-X #LEFT 
+  #(make-dynamic-script (markup #:normal-text #:italic "sempre" #:dynamic "p" ))
+
 semprePP = \tweak DynamicText.self-alignment-X #LEFT 
   #(make-dynamic-script (markup #:normal-text #:italic "sempre" #:dynamic "pp" ))
 
@@ -48,6 +51,7 @@ ffMMarc = \tweak DynamicText.self-alignment-X #LEFT
        ("pCant"     . 0.55)
        ("pEsp"      . 0.55)
        ("pComm"     . 0.55)
+       ("sempreP"   . 0.55)
        ("ppDolce"   . 0.49)
        ("ppLeg"     . 0.49)
        ("semprePP"  . 0.49)

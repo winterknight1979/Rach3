@@ -339,7 +339,8 @@
             >>
         \new StaffGroup = "Brass" <<
           \new PianoStaff = "Horns" 
-          \with {instrumentName="4 Corni in F"} <<
+          \with {instrumentName="4 Corni in F"
+        \remove "Keep_alive_together_engraver"} <<
          \new Staff \with
          { instrumentName = #"I.II"
           shortInstrumentName = #"Cor.I.II"}
