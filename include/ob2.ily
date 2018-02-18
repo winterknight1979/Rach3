@@ -260,7 +260,7 @@ ObTwoIII=\relative c'{
   ef-.\p r r2 |
   R1 * 7 |
   R1 * 4  \mbreak \bar "||"
-  \time 4/4 \key c \minor
+  \numericTimeSignature \time 4/4 \key c \minor
   R1 * 2 \mark\default \barNumberCheck \RhXLVIII |
   R1 * 8 \bar "||"
   \time 3/2 R1. \mark\default \barNumberCheck \RhXLIX \bar "||"
@@ -299,7 +299,7 @@ ObTwoIII=\relative c'{
   \cueWhile "OboeOneIII" "Ob.I" #UP
   {R1 * 2} |
   R1 * 8 \mark\default \barNumberCheck \RhLIX \bar "||"
-  \time 2/2 R1 * 4 |
+  \defaultTimeSignature \time 2/2 R1 * 4 |
   c4.--\p b8-. c4.-- b8-. |
   c4-- c8-. b8-. c4-. c-. |
   bf2.-- a4-. \mbreak |
@@ -366,20 +366,12 @@ ObTwoIII=\relative c'{
   f,4\p-. r f-. r |
   fs-. r g-. r \mark\default \barNumberCheck \RhLXXII |
   g-. r r2 \bar "||"
- <>^\markup\smaller{(\note #"2." #1 "=" \note #"2" #1 )} 
-  \once \override Staff.TimeSignature.stencil = #(lambda (grob)
-    (parenthesize-stencil (ly:time-signature::print grob) 0.1 0.4 0.4 0.1 ))
-  \set Staff.timeSignatureFraction = 6/4
-  \scaleDurations 2/3 {
+  \inSixFour{
   r4 r cs8\p\<( d\! ef4)-. r r | R1. \mbreak |
   r4 r cs8(\< d\! ef4-.) r r | R1. |
   r4 r e8(\< f\! gf4->) r r | R1. |
   r4 r e8(\< f\! gf4->) r r |
-}
-  \unset Staff.timeSignatureFraction
-  \once \override Staff.TimeSignature.stencil = #(lambda (grob)
-    (parenthesize-stencil (ly:time-signature::print grob) 0.1 0.4 0.4 0.1 ))
-  \time 2/2 R1 * 4 \mark\default \barNumberCheck \RhLXXIII \mbreak \bar "||"
+  } |  R1 * 4 \mark\default \barNumberCheck \RhLXXIII \mbreak \bar "||"
   \key b \minor
   cs,2--\f d-- |
   cs-- d-- |

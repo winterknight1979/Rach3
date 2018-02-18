@@ -397,8 +397,8 @@ BsnTwoIII=\relative c {
   ef2.--( bf4)-. |
   g'2.(--\dim d4-.) |
   g2.(-- d4-.) |
-  bf'4-. r bf2~(\p | bf af~  | af g~ | g f)\> \mbreak \bar "||"
-  \key c\minor \time 4/4
+  bf'4-. r bf2~(\p | bf af~  | af g~ | g f)\> \mbreak \bar "||" 
+  \numericTimeSignature  \key c\minor \time 4/4
   ef1\p~ | ef\dim~ \mark\default \barNumberCheck \RhXLVIII |
   ef8\pp r r4 r2 | R1 * 5 |
   g'1\pp~ |
@@ -450,7 +450,7 @@ BsnTwoIII=\relative c {
   r4 ef8\ppLeg[ r16 ef32-. ef-.] ef8-.[ r16 ef32-. ef-.] ef16-. d-. ef-. d-. |
   ef8-. r r4 r2 |
   R1 * 8 \mark\default \barNumberCheck \RhLIX \mbreak \bar "||"
-  \time 2/2 R1 * 4 |
+  \defaultTimeSignature \time 2/2 R1 * 4 |
   c'4.--\p g8-. c4.-- g8-. |
   c4-- c8-. g-. c4-. c-. |
   g2.-- c4-. |

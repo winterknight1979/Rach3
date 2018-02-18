@@ -65,4 +65,20 @@ nextDim =
   #}
 )
 
-
+% used in the third mobement to temporarily change from 2/2 to 6/4 time
+inSixFour=
+#(define-music-function
+   (parser location music)
+   (ly:music?)
+   #{
+     <>^\markup\smaller{(\note #"2." #1 "=" \note #"2" #1 )} 
+     \once \override Staff.TimeSignature.stencil = #(lambda (grob)
+        (parenthesize-stencil (ly:time-signature::print grob) 0.1 0.4 0.4 0.1 ))
+    \set Staff.timeSignatureFraction = 6/4
+    \scaleDurations 2/3 $music
+    \once \override Staff.TimeSignature.stencil = #(lambda (grob)
+    (parenthesize-stencil (ly:time-signature::print grob) 0.1 0.4 0.4 0.1 ))
+    \unset Staff.timeSignatureFraction  
+    <>^\markup\smaller{(\note #"2" #1 "=" \note #"2." #1 )} 
+  #}
+  )

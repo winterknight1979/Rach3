@@ -357,8 +357,8 @@ ObOneIII=\relative c'{
   g2.-- bf4-. |
   ef,-.\p r r2 |
   R1 * 7 |
-  R1 * 4 \bar "||"
-  \time 4/4 \key c\minor R1 * 2 \mark\default \barNumberCheck \RhXLVIII |
+  R1 * 4 \bar "||" 
+  \numericTimeSignature  \time 4/4 \key c\minor R1 * 2 \mark\default \barNumberCheck \RhXLVIII |
   R1 * 7 |
   \cueWhile "ViolOneIII" "Viol.I" #DOWN
   {R1 \bar "||" \time 3/2 R1. \mark\default \barNumberCheck \RhXLIX \mbreak \bar "||" \time 4/4 R1} |
@@ -412,7 +412,7 @@ ObOneIII=\relative c'{
   g4(\p ef c |
   bf) r r2 |
   R1 * 8 \mark\default \barNumberCheck \RhLIX \bar "||"
-  \time 2/2 R1 * 4 |
+  \defaultTimeSignature \time 2/2 R1 * 4 |
   ef4.--\p d8-. ef4.-- d8-. |
   ef4-- ef8-. d8-. ef4-. ef-. \mbreak |
   d2.-- c4-. |
@@ -502,11 +502,7 @@ ObOneIII=\relative c'{
   a,4-.\p r a-. r \mbreak |
   bf4-. r bf-. r \mark\default \barNumberCheck \RhLXXII |
   bf-. r r2 |
-  <>^\markup\smaller{(\note #"2." #1 "=" \note #"2" #1 )} 
-  \once \override Staff.TimeSignature.stencil = #(lambda (grob)
-    (parenthesize-stencil (ly:time-signature::print grob) 0.1 0.4 0.4 0.1 ))
-  \set Staff.timeSignatureFraction = 6/4
-  \scaleDurations 2/3 {
+  \inSixFour {
     r4 r g'8(\p\< a bf4-.\!) r r |
     R1. |
     r4 r g8(\< a bf4-.\!) r r \mbreak |
@@ -515,11 +511,6 @@ ObOneIII=\relative c'{
     R1.
     r4 r bf8(\< c df4->\!) r r |
    } |
-   \unset Staff.timeSignatureFraction
-   \once \override Staff.TimeSignature.stencil = #(lambda (grob)
-    (parenthesize-stencil (ly:time-signature::print grob) 0.1 0.4 0.4 0.1 ))
-  \time 2/2
-  <>^\markup\smaller{(\note #"2" #1 "=" \note #"2." #1 )} 
   r4 r8\mf  e,\<( a4.--\> gs8\!) | 
   r4 r8  e\<( a4.--\> gs8\!) \mbreak | 
   r4 r8  e\cresc( bf'4.-- a8) |

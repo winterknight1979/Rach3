@@ -246,7 +246,7 @@ FlOneIII = \relative c' {
   g\f r r2 | 
   R1 * 11 |
   R1 * 4 \bar "||"
-  \time 4/4
+  \numericTimeSignature \time 4/4
   \key c \minor
   R1 * 2 \mark\default \barNumberCheck \RhXLVIII |
   R1 * 8 \bar "||"
@@ -281,7 +281,7 @@ FlOneIII = \relative c' {
   {R1 * 3\mbreak | R1 * 3 \mark\default \barNumberCheck \RhLVIII | r4 }
   g'4\mf^"Solo"( ef c | bf) r r2 |
   R1 * 9 \mark\default \barNumberCheck \RhLIX \mbreak \bar "||"
-  \time 2/2 R1 * 12 |
+  \defaultTimeSignature \time 2/2 R1 * 12 |
   \cueWhile "OboesIII" "Ob." #UP
  {R1} \mark\default \barNumberCheck \RhLX |
   r4 \tuplet 3/2 {bf8-.\mf af-. bf-.} bf4--(\> af)\!|

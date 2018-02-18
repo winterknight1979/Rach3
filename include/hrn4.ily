@@ -266,8 +266,8 @@ HrnFourIII=\relative c' {
   f2.\p\<-- f4--\! |
   f2.-- f4-- |
   f2.--\> f4--\! |
-  f2.-- f4-- \bar "||"
-  \time 4/4 f1\p\dim~ |
+  f2.-- f4-- \bar "||" 
+  \numericTimeSignature  \time 4/4 f1\p\dim~ |
   f2~ f8\pp r r4 \mark\default \barNumberCheck \RhXLVIII |
   R1 * 8 \bar "||"
   \time 3/2 R1. \mark\default \barNumberCheck \RhXLIX \bar "||"
@@ -304,7 +304,7 @@ HrnFourIII=\relative c' {
   R1 * 6 \mark\default \barNumberCheck \RhLVIII \mbreak |
   f,1\pp~ | f~ | f~ | f~ | f8 r r4 r2 |
   R1 * 3 | R1 * 3 \mark\default \barNumberCheck \RhLIX \mbreak \bar "||"
-  \time 2/2 R1 * 8 |
+  \defaultTimeSignature \time 2/2 R1 * 8 |
   \cueWhile "HrnOneIII" "Cor.I" #DOWN {R1 * 4 | r4}
   ef'-.\p d-. c-. \mark\default \barNumberCheck \RhLX |
   bf-. f'2--\mf\> ef4-.\p |

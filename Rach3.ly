@@ -21,6 +21,8 @@
 \include "include/hrn2.ily"
 \include "include/hrn3.ily"
 \include "include/hrn4.ily"
+\include "include/tpt1.ily"
+\include "include/tpt2.ily"
 
 
 
@@ -56,6 +58,11 @@
         midiInstrument = #"french horn"}
         \unfoldRepeats \articulate <<{\HrnOneI \HrnOneII \HrnOneIII} \\ {\HrnTwoI \HrnTwoII \HrnTwoIII} \\ 
           {\HrnThreeI \HrnThreeII \HrnThreeIII} \\ {\HrnFourI \HrnFourII \HrnFourIII}>>
+          \new Staff \with
+      { instrumentName = #"2 Trombe"
+        shortInstrumentName = #"Tr."
+        midiInstrument = #"trumpet"}
+        \unfoldRepeats \articulate <<{\TptOneI \TptOneII \TptOneIII} \\ {\TptTwoI \TptTwoII \TptTwoIII}>>
       
       
       >>

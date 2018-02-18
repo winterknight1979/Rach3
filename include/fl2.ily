@@ -230,7 +230,7 @@ g4-. d8-.} g4->~ \tuplet 3/2 {g d8(} f4)-> |
 g\f r r2 |
 R1 * 11 |
 R1 * 4 \mbreak \bar "||"
-\time 4/4 \key c\minor
+\numericTimeSignature \time 4/4 \key c\minor
 R1 * 2 \mark\default \barNumberCheck \RhXLVIII |
 R1 * 8 \bar "||"
 \time 3/2 R1. \mark\default \barNumberCheck \RhXLIX \bar "||"
@@ -263,7 +263,7 @@ R1 * 6 \mark\default \barNumberCheck \RhLVIII |
   \cueWhile "FluteOneIII" "Fl.I" #UP
 {R1 * 2 } |
 R1 * 9 \mark\default\barNumberCheck \RhLIX \mbreak \bar "||"
-\time 2/2  R1 * 4 |
+\defaultTimeSignature \time 2/2  R1 * 4 |
 \cueWhile "OboeOneIII" "Ob.I" #UP
 { R1 * 4 } |
 R1 * 4 |

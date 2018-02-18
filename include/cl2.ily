@@ -375,8 +375,8 @@ ClTwoIII=\relative c'{
   g1(\p\< |
   f\! |
   e)\>~ |
-  e(\> \mbreak \bar "||"
-  \key d\minor \time 4/4 
+  e(\> \mbreak \bar "||" 
+  \numericTimeSignature \key d\minor \time 4/4 
   f)~\p |
   f~\dim \mark\default \barNumberCheck \RhXLVIII |
   f8\pp r r4 r2 |
@@ -428,7 +428,7 @@ ClTwoIII=\relative c'{
   c8-. r f,8\pp[ r16 f32( e] f8)[ r16 f32( e] f8)[ r16 f32( e] |
   f8) r r4 r2 |
   R1 * 7 \mark\default \barNumberCheck \RhLIX \mbreak \bar "||"
-  \time 2/2 R1 * 4 |
+  \defaultTimeSignature \time 2/2 R1 * 4 |
   a'4.--\p a8-. a4.-- a8-. |
   a4-- a8-. a-. a4-. a-. |
   a2.-- a4-. |

@@ -198,6 +198,7 @@ conductorIII = {
     s1 * 8 \tempo "Allegro molto" 2=80 s1 * 4 \mark\default \barNumberCheck \RhXLVII
 
     s1 * 2 \tempo\markup{\italic "poco a poco rit."} 2=78 s1 * 10 \tempo\markup{\italic "rit."} 2=76 s1 * 4 \bar "||"
+    \numericTimeSignature
     \time 4/4
     \tempo \markup {
       \concat {
@@ -237,7 +238,8 @@ conductorIII = {
     s1 * 6 \mark\default \barNumberCheck \RhLVIII
 
     s1 * 8 s2 \tempo\markup{\italic "rit."} 4=72 s2 s1 * 2 \mark\default \barNumberCheck \RhLIX \bar "||"
-
+  
+    \defaultTimeSignature
     \time 2/2 \tempo \markup {
       \concat {
         "Tempo I Alla breve ("
