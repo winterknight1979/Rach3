@@ -365,7 +365,7 @@
           {\partcombine \TromOneIII \TromTwoIII}
           \new Staff \with
           {shortInstrumentName=\markup{\center-column{"T.no.III" \line{"e Tub."}}}}
-          {\TromThreeIII \TubaIII}
+          {\partcombine \TromThreeIII \TubaIII}
         >>
        
       >>

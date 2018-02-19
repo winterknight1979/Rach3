@@ -23,6 +23,10 @@
 \include "include/hrn4.ily"
 \include "include/tpt1.ily"
 \include "include/tpt2.ily"
+\include "include/trom1.ily"
+\include "include/trom2.ily"
+\include "include/trom3.ily"
+\include "include/tuba.ily"
 
 
 
@@ -63,6 +67,17 @@
         shortInstrumentName = #"Tr."
         midiInstrument = #"trumpet"}
         \unfoldRepeats \articulate <<{\TptOneI \TptOneII \TptOneIII} \\ {\TptTwoI \TptTwoII \TptTwoIII}>>
+        \new Staff \with
+        { instrumentName = #"3 Tromboni"
+        shortInstrumentName = #"Tb."
+        midiInstrument = #"trombone"}
+        \unfoldRepeats \articulate <<{\conductorI \TromOneII \TromOneIII} \\ {\conductorI \TromTwoII \TromTwoIII} \\ 
+          {\conductorI \TromThreeII \TromThreeIII} >>
+          \new Staff \with
+      { instrumentName = #"Tuba"
+        shortInstrumentName = #"Tu."
+        midiInstrument = #"tuba"}
+        \unfoldRepeats \articulate {\conductorI \TubaII \TubaIII} 
       
       
       >>
