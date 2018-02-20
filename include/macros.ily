@@ -48,6 +48,12 @@ stopSlurSpan = {}
   copyright = "Creative Commons Attribution-ShareAlike 4.0"
 }
 
+#(define mydrums '(
+        (bassdrum   default #f  -3)
+        (snare      default #f  3)
+        (crashcymbal    default #f 0)
+        ))
+
 %marks
 
 RhI         =   #11

@@ -28,7 +28,7 @@ LBFILES=include/trom1.ily include/trom2.ily include/trom3.ily include/tuba.ily
 LBCUES=include/fl1.ily include/bsn1.ily include/bsn2.ily include/timp.ily include/cello.ily include/bass.ily
 
 PERCFILES=include/timp.ily include/perc.ily
-PERCCUES=
+PERCCUES=include/ob1.ily include/cl1.ily include/hrn1.ily include/cello.ily include/bass.ily
 
 #Piano and strings files only have one source file each, so we only need cues variables
 PIANOCUES=
@@ -42,7 +42,7 @@ SCOREFILES=${HEADERS} ${FLUTEFILES} ${OBOEFILES} ${CLARFILES} ${BSNFILES} ${HRNF
 	    ${TPTFILES} ${LBFILES} ${PERCFILES} include/piano.ily include/viol1.ily include/viol2.ily \
 	    include/vla.ily include/cello.ily include/bass.ily
 
-all: flutes oboes clarinets bassoons horns trumpets lowbrass score Rach3.mid
+all: flutes oboes clarinets bassoons horns trumpets lowbrass percussion score Rach3.mid
 
 score: score.a4.pdf score.letter.pdf
 flutes: flutes.a4.pdf flutes.letter.pdf
@@ -52,6 +52,7 @@ bassoons: bassoons.a4.pdf bassoons.letter.pdf
 horns: horns.a4.pdf horns.letter.pdf
 trumpets: trumpets.a4.pdf trumpets.letter.pdf
 lowbrass: lowbrass.a4.pdf lowbrass.letter.pdf
+percussion: percussion.a4.pdf percussion.letter.pdf
 
 %.mid: %.ly
 	${LILY} -dmidi-extension=mid -s  $< 2>&1 | tee $*.mid.log
@@ -77,7 +78,9 @@ horns.letter.pdf: horns.ly ${HEADERS} ${HRNFILES} ${HRNCUES}
 trumpets.a4.pdf: trumpets.ly ${HEADERS} ${TPTFILES} ${TPTCUES}
 trumpets.letter.pdf: trumpets.ly ${HEADERS} ${TPTFILES} ${TPTCUES}
 lowbrass.a4.pdf: lowbrass.ly ${HEADERS} ${LBFILES} ${LBCUES}
-lowbrass.letter.pdf: lowbrass.ly ${HEADERS} ${LBFILES} ${LBTCUES}
+lowbrass.letter.pdf: lowbrass.ly ${HEADERS} ${LBFILES} ${LBCUES}
+percussion.a4.pdf: percussion.ly ${HEADERS} ${PERCFILES} ${PERCCUES}
+percussion.letter.pdf: percussion.ly ${HEADERS} ${PERCFILES} ${PERCCUES}
 
 Rach3.mid: Rach3.ly ${SCOREFILES}
 

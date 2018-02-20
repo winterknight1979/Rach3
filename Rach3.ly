@@ -27,7 +27,7 @@
 \include "include/trom2.ily"
 \include "include/trom3.ily"
 \include "include/tuba.ily"
-
+\include "include/timp.ily"
 
 
      \score{
@@ -78,7 +78,13 @@
         shortInstrumentName = #"Tu."
         midiInstrument = #"tuba"}
         \unfoldRepeats \articulate {\conductorI \TubaII \TubaIII} 
+        \new Staff \with
+      { instrumentName = #"Timpani"
+        shortInstrumentName = #"Timp."
+        midiInstrument = #"timpani"}
+        \unfoldRepeats \articulate {\TimpI \TimpII \TimpIII} 
       
+
       
       >>
         \header{piece=\markup\huge "I"}

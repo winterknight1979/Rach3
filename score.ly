@@ -372,7 +372,7 @@
       
       \new StaffGroup="Perc" <<
         \new Staff \with {
-          instrumentName=\markup{\center-column {"Timpani" \line {"In B,A"}}}
+          instrumentName=\markup{\center-column {"Timpani" \line {"In E,D,A"}}}
           shortInstrumentName="Timp"}
           {\TimpIII}
         \new RhythmicStaff \with
@@ -446,6 +446,12 @@
       \layout {
         \context{
           \Staff \RemoveEmptyStaves
+        }
+        \context {
+          \Voice
+          \override DynamicTextSpanner.style=#'none
+          \override TupletBracket.bracket-visibility=##f
+ 
         }
       }
     
