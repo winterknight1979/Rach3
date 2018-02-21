@@ -7,10 +7,14 @@
 \include "include/conductor.ily"
 
 \include "include/timp.ily"
+  \addQuote "TimpIII" {\keepWithTag #'quote \TimpIII}
 \include "include/perc.ily"
+  \addQuote "PercIII" {\keepWithTag #'quote <<\CymIII \BDIII>>}
 
 \include "include/fl1.ily"
   \addQuote "FlOneIII" {\keepWithTag #'quote \FlOneIII}
+\include "include/cl1.ily"
+  \addQuote "ClarOneIII" {\keepWithTag #'quote \ClOneIII}
 \include "include/ob1.ily"
   \addQuote "OboeOneI" {\keepWithTag #'quote \ObOneI}
   \addQuote "OboeOneIII" {\keepWithTag #'quote \ObOneIII}
@@ -90,7 +94,7 @@
          \with{\consists "Page_turn_engraver"
               drumStyleTable=#(alist->hash-table mydrums)} 
          <<
-         \new DrumVoice{\voiceOne \SDIII}
+         \new DrumVoice{\oneVoice \SDIII}
          \conductorIII>>
         \header{piece=\markup\huge "III Finale"}
       }

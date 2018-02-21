@@ -54,6 +54,13 @@ stopSlurSpan = {}
         (crashcymbal    default #f 1)
         ))
 
+#(define scoredrums '(
+        (bassdrum   default #f  0)
+        (snare      default #f  0)
+        (crashcymbal    default #f 0)
+        ))
+
+
 %marks
 
 RhI         =   #11

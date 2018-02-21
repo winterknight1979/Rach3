@@ -375,10 +375,10 @@
           instrumentName=\markup{\center-column {"Timpani" \line {"In E, D, A"}}}
           shortInstrumentName="Timp"}
           {\TimpIII}
-        \new RhythmicStaff \with
+        \new DrumStaff \with
         {instrumentName="Tamburo"
         shortInstrumentName="T.bo"}
-        {\SDIII}
+        <<\new DrumVoice{\SDIII}>>
         \new RhythmicStaff \with
         {instrumentName="Piatti"
         shortInstrumentName="Pti."}
@@ -446,6 +446,12 @@
       \layout {
         \context{
           \Staff \RemoveEmptyStaves
+        }
+        \context{
+          \DrumStaff 
+          \RemoveEmptyStaves
+          drumStyleTable = #(alist->hash-table scoredrums)
+          \override StaffSymbol.line-positions=#'(0)
         }
         \context {
           \Voice

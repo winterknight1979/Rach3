@@ -28,7 +28,7 @@ LBFILES=include/trom1.ily include/trom2.ily include/trom3.ily include/tuba.ily
 LBCUES=include/fl1.ily include/bsn1.ily include/bsn2.ily include/timp.ily include/cello.ily include/bass.ily
 
 PERCFILES=include/timp.ily include/perc.ily
-PERCCUES=include/fl1.ily include/ob1.ily include/bsn1.ily include/bsn2.ily \
+PERCCUES=include/fl1.ily include/ob1.ily include/cl1.ily include/bsn1.ily include/bsn2.ily \
 	 include/hrn1.ily include/tpt1.ily include/trom3.ily include/tuba.ily include/cello.ily include/bass.ily
 
 #Piano and strings files only have one source file each, so we only need cues variables
