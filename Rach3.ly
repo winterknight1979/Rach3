@@ -28,7 +28,7 @@
 \include "include/trom3.ily"
 \include "include/tuba.ily"
 \include "include/timp.ily"
-
+\include "include/perc.ily"
 
      \score{
  
@@ -83,8 +83,12 @@
         shortInstrumentName = #"Timp."
         midiInstrument = #"timpani"}
         \unfoldRepeats \articulate {\TimpI \TimpII \TimpIII} 
-      
-
+        \new DrumStaff
+        \unfoldRepeats \articulate <<
+          \new DrumVoice {\conductorI \conductorII \SDIII}
+          \new DrumVoice {\conductorI \BDII \BDIII }
+          \new DrumVoice {\conductorI \CymII \CymIII}
+        >>
       
       >>
         \header{piece=\markup\huge "I"}

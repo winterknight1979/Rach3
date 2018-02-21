@@ -252,13 +252,13 @@
           shortInstrumentName="Timp"}
           {\TimpII}
         \new RhythmicStaff \with
-        {instrumentName="Gran Cassa"
-        shortInstrumentName="G.C."}
-        {\BDII}
-        \new RhythmicStaff \with
         {instrumentName="Piatti"
         shortInstrumentName="Pti."}
         {\CymII}
+        \new RhythmicStaff \with
+        {instrumentName="Gran Cassa"
+        shortInstrumentName="G.C."}
+        {\BDII}
         >>
       \new PianoStaff="Piano" \with {
         instrumentName="Piano"
@@ -380,13 +380,13 @@
         shortInstrumentName="T.bo"}
         {\SDIII}
         \new RhythmicStaff \with
-        {instrumentName="Gran Cassa"
-        shortInstrumentName="G.C."}
-        {\BDIII}
-        \new RhythmicStaff \with
         {instrumentName="Piatti"
         shortInstrumentName="Pti."}
         {\CymIII}
+        \new RhythmicStaff \with
+        {instrumentName="Gran Cassa"
+        shortInstrumentName="G.C."}
+        {\BDIII}
         >>
       \new PianoStaff="Piano" \with {
         instrumentName="Piano"
