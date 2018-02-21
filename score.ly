@@ -187,7 +187,7 @@
 %      \markup{\pageBreak}
            \score{
  
-       \keepWithTag #'score \killCues <<
+       \keepWithTag #'(score disp) \killCues <<
          \new Devnull \conductorII
          \new StaffGroup ="Woods" <<
           \new Staff  \with
