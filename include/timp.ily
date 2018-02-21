@@ -197,5 +197,166 @@ TimpIII=\relative c{
   \time 4/4 R1 * 2 | R1 | R1 \mark\default \barNumberCheck \RhLIII |
   \grace s8 R1 * 4 \bar "||"
   \time 3/2 R1. * 2 | R1. \mark\default \barNumberCheck \RhLIV \mpbreak \bar "||"
+  \time 4/4 R1 * 4 | R1 * 4 \mark\default \barNumberCheck \RhLV |
+  R1 * 2 |
+  \cueWhileClef "FlOneIII" "Fl.I" #UP "treble" {R1 * 3} | 
+  R1 * 4 \mark\default \barNumberCheck \RhLVI |
+  R1 * 3 | R1 \mbreak |
+  R1 * 4 \mark\default \barNumberCheck \RhLVII | 
+  R1 * 6 \mark\default \barNumberCheck \RhLVIII |
+  \cueWhile "TubaIII" "Tuba" #DOWN {R1 * 5} |
+  R1 | 
+  ef1\pp\<\startTrillSpan |
+  ef8\stopTrillSpan\> r\!^\markup\concat{"muta E" \smaller{\flat} " in D"} r4 r2 |
+  R1 * 3 \mark\default \barNumberCheck \RhLIX \mbreak \bar "||"
+ \defaultTimeSignature \time 2/2 R1 * 13 \mark\default \barNumberCheck \RhLX |
+ \cueWhileClef "TptOneIII" "Tr.I" #UP "treble" {R1 * 2} | R1 | 
+ \cueWhileClef "TptOneIII" "Tr.I" #UP "treble" {R1 * 2} | R1*2  |
+ R1 * 8 \mark\default \barNumberCheck \RhLXI \mbreak |
+ R1 * 11 |
+ \cueWhile "Bsn12III" "Fag." #UP {R1 * 2 | r2 r4}
+ d\f \mark\default \barNumberCheck \RhLXII |
+ d r r2 | 
+ R1 * 13 \mark\default \barNumberCheck \RhLXIII |
+ R1 * 4 \bar "||" |
+ R1 * 9 |
+ \cueWhile "TrTuIII" "Tromb.III e Tuba" #DOWN {R1 * 2} \mbreak |
+ a4\f r a r \mark\default \barNumberCheck \RhLXIV |
+  d r r2 | R1 * 3 |
+  bf4\sf r r2 |
+  r2 r4 r8 bf16\p bf |
+  bf4 r r r8 bf16 bf |
+  bf4 r r r8 bf16 bf \mbreak |
+  bf4\sempreP r8 bf16 bf bf4 r8 bf16 bf |
+  bf4 r8 bf16 bf bf4 r8 bf16 bf |
+  bf4 r8 bf16 bf bf4\dim r8 bf16 bf |
+  bf4 r8 bf16 bf bf4 r8 bf16 bf \mark\default \barNumberCheck \RhLXV |
+  bf4\! r r2 |
+  r2 r4 r8 bf16\p bf \mbreak |
+  bf4 r r r8 bf16 bf |
+  bf4 r r r8 bf16 bf |
+  bf4 r8 bf16 bf bf4 r8 bf16 bf |
+  bf4 r8 bf16 bf bf4 r8 bf16 bf |
+  bf4 r8 bf16 bf bf4\dim r8 bf16 bf \mbreak |
+  bf4 r8 bf16 bf bf4 r8 bf16 bf | 
+  bf4 r r r8 bf16 bf |
+  bf4 r r r8 \nextCresc "poco cresc" bf16\< bf |
+  a4\! r r2\mark\default \barNumberCheck \RhLXVI |
+  r r4 r8 d16\mp d |
+  d4 r r r8 d16 d \mbreak |
+  d4 r8 d16 d d4 r8 d16 d | 
+  d4 r8 d16 d d4 r8 d16 d | 
+  d4 r8 d16 d d4\dim r8 d16 d | 
+  d4 r8 d16 d d4 r8 d16 d |
+  d4\pp r r r8 d16 d |
+  d4 r r2 |
+  R1 * 4 \mbreak |
+  R1 * 6 \mark\default \barNumberCheck \RhLXVII |
+  R1 * 5 |
+  \cueWhileClef "OboeOneIII" "Ob.I" #UP "treble" {R1 * 3 | r2}
+  d4\p r | d r r2 |
+  R1 * 3 \mark\default\barNumberCheck \RhLXVIII \mbreak |
+  R1 * 8 | R1 * 2 |
+  \cueWhile "TromThreeIII" "Tromb.III" #DOWN {R1 | r2}
+  a\f\startTrillSpan \mark\default\barNumberCheck\RhLXIX \bar "||"
+  a1\startTrillSpan |
+  a1\startTrillSpan\dim |
+  a1\startTrillSpan |
+  a1\startTrillSpan |
+  a1\startTrillSpan\pp |
+  a1\startTrillSpan |
+  a1\startTrillSpan |
+  a1\startTrillSpan \mbreak |
+  a1\startTrillSpan |
+  a1\startTrillSpan |
+  a1\startTrillSpan |
+  a1\startTrillSpan |
+  a1\startTrillSpan |
+  a1\startTrillSpan |
+  a1\startTrillSpan |
+  a1\startTrillSpan \mark\default\barNumberCheck\RhLXX \bar "||"
+  \inSixFour{
+  a4\pp\stopTrillSpan r a8 a a4 r a8 a |
+  a4 r a8 a a4 r a8 a \mpbreak | 
+  a4\semprePP r a8 a a4 r a8 a |
+  a4 r a8 a a4 r a8 a |
+  a4 r a8 a a4 r a8 a |
+  a4 r a8 a a4 r a8 a |
+  a4 r a8 a a4 r a8 a \mbreak |
+  a4 r a8 a a4 r a8 a 
+  } \mark\default \barNumberCheck \RhLXXI |
+  a4\p r a r |
+  a r a r |
+  a r a r |
+  a r a r |
+  a\sempreP r a r \mbreak |
+  a r a r |
+  a r a r |
+  a r a r |
+  a r a r |
+  a r a r \mark\default \barNumberCheck \RhLXXII |
+  a r r2 |
+  R1 * 3 | R1 * 8 \mark\default \barNumberCheck \RhLXXIII \mbreak \bar "||"
+  a4\f r r2 |
+  a4 r r2 |
+  a4 r r2 |
+  a4 r r2 |
+  a4\f d a d |
+  a d a d |
+  a a8 a a4 r |
+  r a8 a a4 r \mbreak |
+  r4 a8\cresc a8 a4 a8 a |
+  a4 a8 a a a a a |
+  a4\sff r r2\fermata_"Cadenza"
+  \tag #'score \cadenzaIIIa
+  \mark\default \barNumberCheck \RhLXXIV \bar "||"
+  \inSixFour {
+    r2. r4 r d8\mf d |
+    d4-> r r r r d8 d |
+    d4-> r r r r d8 d \mbreak |
+    d4-> r r r r d8 d } |
+  d4-> r r2 |
+  R1 * 3 |
+  \time 3/2 R1.* 2 |
+  \time 2/2 \inSixFour{
+    R1. * 2 |
+    r2. r4 r d8\mf d |
+    d4-> r r r r d8 d \mbreak |
+    d4-> r r r r d8 d |
+    d4-> r r r r d8 d 
+  } \mark\default \barNumberCheck \RhLXXV |
+  d4-> r r2 |
+  R1 * 3 |
+  R1 * 10 \mark\default \barNumberCheck \RhLXXVI |
+  R1 | R1 * 4 \mbreak |
+  \cueWhile "BassIII" "Basso" #UP
+  { R1 * 5 \mark\default \barNumberCheck \RhLXXVII |
+  R1 * 4 }|
+  d1\p\startTrillSpan |
+  d\<\startTrillSpan\mbreak |
+  bf\ff\>\startTrillSpan |
+  d\dim\startTrillSpan \mark\default \barNumberCheck \RhLXXVIII |
+  a4\p\stopTrillSpan r8 a a4 r8 a |
+  a4\cresc r8 a a4 r8 a |
+  a4 a-> r8 a a4 |
+  r4 d d a \mbreak |
+  d\f r d r |
+  d r d r |
+  d r d r |
+  bf\mf r r a \mark\default\barNumberCheck \RhLXXIX |
+  d r d\mf d  |
+  d r d d \mbreak |
+  d r d d |
+  d r r a |
+  d r r2 |
+  < a d >4\ff r r2 |
+  < a d >4 r < a d > r |
+  r2 < a d >4 r \mbreak |
+  r d r d |
+  r d r d |
+  r d d\cresc d |
+  a\sff r a\sff r |
+  d\sff r a-> a8-> a-> |
+  d4-> r r2 \barNumberCheck \EndMIII \bar "|."
 }
 

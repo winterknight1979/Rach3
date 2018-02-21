@@ -9,6 +9,8 @@
 \include "include/timp.ily"
 \include "include/perc.ily"
 
+\include "include/fl1.ily"
+  \addQuote "FlOneIII" {\keepWithTag #'quote \FlOneIII}
 \include "include/ob1.ily"
   \addQuote "OboeOneI" {\keepWithTag #'quote \ObOneI}
   \addQuote "OboeOneIII" {\keepWithTag #'quote \ObOneIII}
@@ -17,18 +19,23 @@
   \addQuote "BsnOneII" {\keepWithTag #'quote \BsnOneII}
 \include "include/bsn2.ily"
   \addQuote "Bsn12III" {\keepWithTag #'quote <<\BsnOneIII \BsnTwoIII>>}
+\include "include/tpt1.ily"
+  \addQuote "TptOneIII" {\keepWithTag #'quote \TptOneIII}
 \include "include/hrn1.ily"
   \addQuote "HrnOneI" {\keepWithTag #'quote \HrnOneI}
 \include "include/trom3.ily"
   \addQuote "TromThreeIII" {\keepWithTag #'quote \TromThreeIII}
 \include "include/tuba.ily"
   \addQuote "TubaII" {\keepWithTag #'quote \TubaII}
+  \addQuote "TubaIII" {\keepWithTag #'quote \TubaIII}
+  \addQuote "TrTuIII" {\keepWithTag #'quote <<\TromThreeIII \TubaIII>>}
 \include "include/cello.ily"
   \addQuote "CellI" {\keepWithTag #'quote \CellI}
   \addQuote "CellII" {\keepWithTag #'quote \CellII}
   \addQuote "CellIII" {\keepWithTag #'quote \CellIII}
 \include "include/bass.ily"
   \addQuote "BassI" {\keepWithTag #'quote \BassI}
+  \addQuote "BassIII" {\keepWithTag #'quote \BassIII}
 
 \paper{ 
   #(layout-set-staff-size 19)
