@@ -248,7 +248,7 @@
       
       \new StaffGroup="Perc" <<
         \new Staff \with {
-          instrumentName=\markup{\center-column {"Timpani" \line {"In B,A"}}}
+          instrumentName=\markup{\center-column {"Timpani" \line{"In B"\smaller{\flat} ", A"}}}
           shortInstrumentName="Timp"}
           {\TimpII}
         \new RhythmicStaff \with
@@ -372,7 +372,7 @@
       
       \new StaffGroup="Perc" <<
         \new Staff \with {
-          instrumentName=\markup{\center-column {"Timpani" \line {"In E,D,A"}}}
+          instrumentName=\markup{\center-column {"Timpani" \line {"In E, D, A"}}}
           shortInstrumentName="Timp"}
           {\TimpIII}
         \new RhythmicStaff \with

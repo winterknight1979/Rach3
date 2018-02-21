@@ -11,12 +11,22 @@
 
 \include "include/ob1.ily"
   \addQuote "OboeOneI" {\keepWithTag #'quote \ObOneI}
+  \addQuote "OboeOneIII" {\keepWithTag #'quote \ObOneIII}
 \include "include/bsn1.ily"
   \addQuote "BsnOneI" {\keepWithTag #'quote \BsnOneI}
+  \addQuote "BsnOneII" {\keepWithTag #'quote \BsnOneII}
+\include "include/bsn2.ily"
+  \addQuote "Bsn12III" {\keepWithTag #'quote <<\BsnOneIII \BsnTwoIII>>}
 \include "include/hrn1.ily"
   \addQuote "HrnOneI" {\keepWithTag #'quote \HrnOneI}
+\include "include/trom3.ily"
+  \addQuote "TromThreeIII" {\keepWithTag #'quote \TromThreeIII}
+\include "include/tuba.ily"
+  \addQuote "TubaII" {\keepWithTag #'quote \TubaII}
 \include "include/cello.ily"
   \addQuote "CellI" {\keepWithTag #'quote \CellI}
+  \addQuote "CellII" {\keepWithTag #'quote \CellII}
+  \addQuote "CellIII" {\keepWithTag #'quote \CellIII}
 \include "include/bass.ily"
   \addQuote "BassI" {\keepWithTag #'quote \BassI}
 
@@ -62,10 +72,27 @@
         \header{piece=\markup\huge "III Finale"}
       }
     }
+
+    \bookpart{
+      \header{
+        instrument = "Tamburo"
+      }
+      \markup{\huge "I e II Tacet"}
+         \score{
+         \keepWithTag #'part \new DrumStaff 
+         \with{\consists "Page_turn_engraver"
+              drumStyleTable=#(alist->hash-table mydrums)} 
+         <<
+         \new DrumVoice{\voiceOne \SDIII}
+         \conductorIII>>
+        \header{piece=\markup\huge "III Finale"}
+      }
+
+    }
     
     \bookpart {
       \header {
-        instrument = "Batteria"
+        instrument = "Piatti e Gran Cassa"
       }
       \markup{\huge "I Tacet"}
        \score{
@@ -83,9 +110,9 @@
          \keepWithTag #'part \new DrumStaff 
          \with{\consists "Page_turn_engraver"
               drumStyleTable=#(alist->hash-table mydrums)} 
-         <<\new DrumVoice{\voiceOne \SDIII}
+         <<
          \new DrumVoice{\voiceTwo \BDIII}
-         \new DrumVoice{\voiceThree \CymIII}
+         \new DrumVoice{\voiceOne \CymIII}
          \conductorIII>>
         \header{piece=\markup\huge "III Finale"}
       }

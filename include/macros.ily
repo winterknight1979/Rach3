@@ -49,9 +49,9 @@ stopSlurSpan = {}
 }
 
 #(define mydrums '(
-        (bassdrum   default #f  -3)
-        (snare      default #f  3)
-        (crashcymbal    default #f 0)
+        (bassdrum   default #f  -1)
+        (snare      default #f  0)
+        (crashcymbal    default #f 1)
         ))
 
 %marks
