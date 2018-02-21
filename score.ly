@@ -251,14 +251,14 @@
           instrumentName=\markup{\center-column {"Timpani" \line{"In B"\smaller{\flat} ", A"}}}
           shortInstrumentName="Timp"}
           {\TimpII}
-        \new RhythmicStaff \with
+        \new DrumStaff \with
         {instrumentName="Piatti"
         shortInstrumentName="Pti."}
-        {\CymII}
-        \new RhythmicStaff \with
+        <<\new DrumVoice {\CymII}>>
+        \new DrumStaff \with
         {instrumentName="Gran Cassa"
         shortInstrumentName="G.C."}
-        {\BDII}
+        <<\new DrumVoice {\BDII}>>
         >>
       \new PianoStaff="Piano" \with {
         instrumentName="Piano"
@@ -379,14 +379,14 @@
         {instrumentName="Tamburo"
         shortInstrumentName="T.bo"}
         <<\new DrumVoice{\SDIII}>>
-        \new RhythmicStaff \with
+        \new DrumStaff \with
         {instrumentName="Piatti"
         shortInstrumentName="Pti."}
-        {\CymIII}
-        \new RhythmicStaff \with
+        <<\new DrumVoice {\CymIII}>>
+        \new DrumStaff \with
         {instrumentName="Gran Cassa"
         shortInstrumentName="G.C."}
-        {\BDIII}
+        <<\new DrumVoice {\BDIII}>>
         >>
       \new PianoStaff="Piano" \with {
         instrumentName="Piano"
