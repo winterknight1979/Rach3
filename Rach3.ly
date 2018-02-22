@@ -93,7 +93,7 @@
            \new Staff \with
       { instrumentName = #"Violins"
         shortInstrumentName = #"Vln."
-        midiInstrument = #"String ensemble I"}
+        midiInstrument = #"string ensemble 1"}
         \unfoldRepeats \articulate {\ViolOneI \ViolOneII \ViolOneIII} 
       >>
         \header{piece=\markup\huge "I"}
