@@ -29,6 +29,7 @@
 \include "include/tuba.ily"
 \include "include/timp.ily"
 \include "include/perc.ily"
+\include "include/viol1.ily"
 
      \score{
  
@@ -89,7 +90,11 @@
           \new DrumVoice {\conductorI \BDII \BDIII }
           \new DrumVoice {\conductorI \CymII \CymIII}
         >>
-      
+           \new Staff \with
+      { instrumentName = #"Violins"
+        shortInstrumentName = #"Vln."
+        midiInstrument = #"String ensemble I"}
+        \unfoldRepeats \articulate {\ViolOneI \ViolOneII \ViolOneIII} 
       >>
         \header{piece=\markup\huge "I"}
       \midi{}
