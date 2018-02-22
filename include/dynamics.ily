@@ -42,6 +42,10 @@ fMarc = \tweak DynamicText.self-alignment-X #LEFT
 ffMMarc = \tweak DynamicText.self-alignment-X #LEFT 
   #(make-dynamic-script (markup #:dynamic "ff" #:normal-text #:italic "molto marc."))
 
+ffBenTen = \tweak DynamicText.self-alignment-X #LEFT 
+  #(make-dynamic-script (markup #:dynamic "ff" #:normal-text #:italic "ben tenuto"))
+
+
 %midi volumes
 #(set! absolute-volume-alist
    (append
@@ -60,6 +64,7 @@ ffMMarc = \tweak DynamicText.self-alignment-X #LEFT
        ("fCant"     . 0.75)
        ("fMarc"     . 0.75)
        ("ffMMarc"   . 0.80)
+       ("ffBenTen"  . 0.80)
        )
      absolute-volume-alist))
 

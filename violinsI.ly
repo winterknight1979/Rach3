@@ -8,6 +8,12 @@
 
 \include "include/viol1.ily"
 
+\include "include/ob1.ily"
+  \addQuote "OboeOneI" {\keepWithTag #'quote \ObOneI}
+\include "include/hrn1.ily"
+  \addQuote "HrnOneI" {\keepWithTag #'quote \HrnOneI}
+\include "include/viol2.ily"
+  \addQuote "ViolTwoI" {\keepWithTag #'quote \ViolTwoI}
 \include "include/vla.ily"
   \addQuote "VlaI" {\keepWithTag #'quote \VlaI}
 

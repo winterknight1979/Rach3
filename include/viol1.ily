@@ -1,31 +1,31 @@
 ViolOneI=\relative c' {\commonConductor
   \clef treble \time 4/4 \key d\minor
-  r8^"con sord." d8:16\p f: e: r d: f: e: |
-  r d: f: e: r d:\dim f: e: |
-  r d:\pp f: d: r e: f: d: |
-  r d: e: cs: r d: f: e: \mbreak
-  r f: a: f: r f: b: d,: |
-  r d: e: d: r cs: g': e: |
-  r f: a: e: r e: f: d: |
-  r d: e: cs: e d: f: d: |
-  r d: d: a': e:[ bf':] e,: b': \mbreak |
-  r cs,: e: cs: r d: e: d: \mark\default \barNumberCheck \RhI
-  r cs: e: cs: a': cs,: e: cs: |
-  r ef:\pp g: ef: r d: fs: d: |
-  r d: g: d: g: cs,: f: d: |
-  r ef: g: ef: r d: a': d,: \mbreak |
-  r d: bf': df,: g: cs,: f: d: |
-  r fs: c': fs,: r g: bf: g:
-  r \nextCresc "poco cresc" gs:\< d': gs,: r a: cs: a: |
-  r a:\mf ef': a,: d:\> a: c: a: |
-  r d,:\pp bf': ef,: r d: a': d,: \mbreak |
-  r d: g: cs,: r d: f: d: |
-  r c: d: c: a': d,: g: d: |
-  r d: e: cs: r d: g: d: |
-  r d: e: d:\< f:\! d: r f:[ |
-  a:\mf f:] r e:\dim gs: e: r ef: \mbreak \bar "||"
-  \time 2/4 g: ef: g: d: \bar "||"
-  \time 4/4 r d:\pp f: d: r d: e: cs: |
+  r8^"con sord." d8:16\p f:16 e:16 r d:16 f:16 e:16 |
+  r d:16 f:16 e:16 r d:16\dim f:16 e:16 |
+  r d:16\pp f:16 d:16 r e:16 f:16 d:16 |
+  r d:16 e:16 cs:16 r d:16 f:16 e:16 \mbreak
+  r f:16 a:16 f:16 r f:16 b:16 d,:16 |
+  r d:16 e:16 d:16 r cs:16 g':16 e:16 |
+  r f:16 a:16 e:16 r e:16 f:16 d:16 |
+  r d:16 e:16 cs:16 e d:16 f:16 d:16 |
+  r d:16 d:16 a':16 e:16[ bf':16] e,:16 b':16 \mbreak |
+  r cs,:16 e:16 cs:16 r d:16 e:16 d:16 \mark\default \barNumberCheck \RhI
+  r cs:16 e:16 cs:16 a':16 cs,:16 e:16 cs:16 |
+  r ef:16\pp g:16 ef:16 r d:16 fs:16 d:16 |
+  r d:16 g:16 d:16 g:16 cs,:16 f:16 d:16 |
+  r ef:16 g:16 ef:16 r d:16 a':16 d,:16 \mbreak |
+  r d:16 bf':16 df,:16 g:16 cs,:16 f:16 d:16 |
+  r fs:16 c':16 fs,:16 r g:16 bf:16 g:16
+  r \nextCresc "poco cresc" gs:16\< d':16 gs,:16 r a:16 cs:16 a:16 |
+  r a:16\mf ef':16 a,:16 d:16\> a:16 c:16 a:16 |
+  r d,:16\pp bf':16 ef,:16 r d:16 a':16 d,:16 \mbreak |
+  r d:16 g:16 cs,:16 r d:16 f:16 d:16 |
+  r c:16 d:16 c:16 a':16 d,:16 g:16 d:16 |
+  r d:16 e:16 cs:16 r d:16 g:16 d:16 |
+  r d:16 e:16 d:16\< f:16\! d:16 r f:16[ |
+  a:16\mf f:16] r e:16\dim gs:16 e:16 r ef:16 \mbreak \bar "||"
+  \time 2/4 g:16 ef:16 g:16 d:16 \bar "||"
+  \time 4/4 r d:16\pp f:16 d:16 r d:16 e:16 cs:16 |
   r d16 d f8 r r2 |
   R1 * 10 \mark\default\barNumberCheck \RhII |
   R1 * 4 |
@@ -63,6 +63,71 @@ ViolOneI=\relative c' {\commonConductor
   cs\ppp~ | cs |
   R1\fermataMarkup_"Cadenza"
   \tag #'score \cadenzaIa \mpbreak
+  R1 * 2 |
+  \cueWhile "OboeOneI" "Ob.I" #UP {R1 * 2 | r2}
+  r4 d'\downbow\mf^"senza sord."\mf( |
+  e f) fs(\< g)
+  \time 3/2 gs\downbow\f a\upbow~ a8\< bf( c2)\! bf8( a) \mark\default\barNumberCheck \RhV \mbreak |
+  \time 4/4 a8\ffBenTen( bf4) g-- a-- fs8--~ |
+  fs g4--\dim e-- f-- d8--~( |
+  d\mf ef4) c( d8) cs\<( d) |
+  d\f( g,)\> g2 g4--\< |
+  g8\mf( c,) c4~\> c8\p r r4 \mbreak |
+  \key g \minor d4\pp\upbow-.( r8 c)-. d4-. r8 a16-. a-. |
+  bf8-. f'-. g-. c,-. d4-. r | R1 |
+  d4-.\upbow(\pp r8 c-.) d4-. r8 a16-. a-. |
+  bf8-. f'-. g-. c,-. d4-. bf'\mf\>--( |
+  bf a) g8\p( f\> e4 \mark\default \barNumberCheck \RhVI \mbreak |
+  f)\p r r2 | R1 |
+  r8 e-.(\pp f-. cs-.) d4-- r8 c-. |
+  a4-. r r8 d16-. d-. c4-. |
+  r2 r8 a-.\p b4-- |
+  r8 b-. c4-- r2 |
+  \time 2/4 r8 b-.\p c4-- \mbreak |
+  \time 4/4 r8 c-. d4-- r8 d-.\pp( ef-. f-.) |
+  d4-. r r2 |
+  R1 * 2 |
+  r2\breathe r2 |
+  R1 * 4 \mark\default \barNumberCheck \RhVII |
+  R1 * 2 |
+  \cueWhile "HrnOneI" "Cor.I" #DOWN
+  {R1 * 2\mbreak r2 }
+  r8 af'\pDolce( c ef) |
+  d--( f4\> g8--)\! c,--( f4\> g8--) |
+  c,--\dim( af4)\! r8 r2 |
+  R1 * 2 \mark\default \barNumberCheck \RhVIII |
+  R1 * 2 |
+  g4.\p\cresc( af8) a2 \mbreak |
+  bf4\f\<( gf'\!) g\>( g,) |
+  bf2.\dim( af4) |
+  bf8\mf--( g4.)~ g8 f4( ef8) |
+  ef2--( d8 c4\dim bf8) \mark\default \barNumberCheck \RhIX |
+  r2 f'\p~ |
+  f4 e2( f4) |
+  e2(\dim d) \mbreak |
+  cs( d)\! | R1 | R1 |
+  r4 r8 ef-.\pp  ef4-- r8 ef-. |
+  ef4-- r8 ef-. ef4-- r8 ef-. |
+  ef4-- r8 g-. g-. fs-. f-. e-. |
+  ef4-- r8 c'-. c-. b-. bf-. a-. \mbreak |
+  a4-- r8 ef'-. ef4-- r8 ef-. |
+  ef4-- r8 ef-. ef-. d-. d-. ef-. |
+  ef4-. r r2 |
+  R1 * 5 \mark\default \barNumberCheck \RhX |
+  R1 * 2 | R1 * 2 |
+  \cueWhile "ViolTwoI" "Viol.II" #UP {R1 * 2} \mbreak |
+  <>^"div."
+  <<{f'2^"arco"(\p  e) | ef( d) | df1 | c2\dim( cf) \mark\default \barNumberCheck \RhXI | bf2\pp }
+  \\
+  {f2^(  e) | ef( d) | df1 | c2( cf) \mark\default \barNumberCheck \RhXI | bf2} >> r2 |
+  R1 |
+  r8^"unis." bf,\p( d f a4.) g8( |
+  fs4.) g8(\dim e4.) f8( \mbreak |
+  d4)\! r r r8 ef(\dim |
+  d4) r r r8 ef( |
+  d4.) ef8\pp(-- d4.) ef8--( |
+  d4.) g8--( d4.) a'8--( \bar "||"
+  d,) d:16[\p f:16 e:16] r d: f: e: \mpbreak | 
 
 }
 ViolOneII=\relative c' {\commonConductor  s1}
