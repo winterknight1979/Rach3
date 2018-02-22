@@ -7,6 +7,7 @@
 \include "include/conductor.ily"
 
 \include "include/timp.ily"
+  \addQuote "TimpII" {\keepWithTag #'quote \TimpII}
   \addQuote "TimpIII" {\keepWithTag #'quote \TimpIII}
 \include "include/perc.ily"
   \addQuote "PercIII" {\keepWithTag #'quote <<\CymIII \BDIII>>}
@@ -14,6 +15,7 @@
 \include "include/fl1.ily"
   \addQuote "FlOneIII" {\keepWithTag #'quote \FlOneIII}
 \include "include/cl1.ily"
+  \addQuote "ClarOneII" {\keepWithTag #'quote \ClOneII}
   \addQuote "ClarOneIII" {\keepWithTag #'quote \ClOneIII}
 \include "include/ob1.ily"
   \addQuote "OboeOneI" {\keepWithTag #'quote \ObOneI}
@@ -27,6 +29,8 @@
   \addQuote "TptOneIII" {\keepWithTag #'quote \TptOneIII}
 \include "include/hrn1.ily"
   \addQuote "HrnOneI" {\keepWithTag #'quote \HrnOneI}
+\include "include/viol1.ily"
+  \addQuote "ViolOneIII" {\keepWithTag #'quote \ViolOneIII}
 \include "include/trom3.ily"
   \addQuote "TromThreeIII" {\keepWithTag #'quote \TromThreeIII}
 \include "include/tuba.ily"
@@ -110,13 +114,13 @@
        \keepWithTag #'part \new DrumStaff 
         \with {\consists "Page_turn_engraver"
                 drumStyleTable=#(alist->hash-table mydrums)} 
-        <<\new DrumVoice{\voiceOne \CymII}
-          \new DrumVoice{\voiceTwo \BDII}
+                <<\new DrumVoice{\voiceOne \CymII}
+                \new DrumVoice{\voiceTwo \BDII}
           \conductorII>>
         \header{piece=\markup\huge "II Intermezzo"}
       }
 
-      \markup{ \vspace #1 }
+      \pageBreak
       \score{
          \keepWithTag #'part \new DrumStaff 
          \with{\consists "Page_turn_engraver"
