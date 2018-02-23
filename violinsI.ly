@@ -10,6 +10,8 @@
 
 \include "include/ob1.ily"
   \addQuote "OboeOneI" {\keepWithTag #'quote \ObOneI}
+\include "include/piano.ily"
+  \addQuote "PianoII" {\keepWithTag #'quote \PianoUPII}
 \include "include/hrn1.ily"
   \addQuote "HrnOneI" {\keepWithTag #'quote \HrnOneI}
 \include "include/viol2.ily"
@@ -37,13 +39,21 @@
       }
       \score{
  
-      \keepWithTag #'part \new Staff 
+      \keepWithTag #'part \new GrandStaff
+      <<
+      \new Staff 
         \with {\consists "Page_turn_engraver"} 
         <<\ViolOneI \conductorI>>
+       \new Staff 
+        \with {\consists "Page_turn_engraver" 
+        \RemoveEmptyStaves 
+        \override VerticalAxisGroup.remove-first=##t}
+        <<\ViolOneDI \conductorI>> 
+      >>
         \header{piece=\markup\huge "I"}
       }
 
-      \markup{ \vspace #1 }
+      \pageBreak
       \score{
        \keepWithTag #'part \new Staff 
         \with {\consists "Page_turn_engraver"} 

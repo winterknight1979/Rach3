@@ -82,3 +82,4 @@ inSixFour=
     <>^\markup\smaller{(\note #"2" #1 "=" \note #"2." #1 )} 
   #}
   )
+

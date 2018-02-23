@@ -94,7 +94,7 @@
       { instrumentName = #"Violins"
         shortInstrumentName = #"Vln."
         midiInstrument = #"string ensemble 1"}
-        \unfoldRepeats \articulate {\ViolOneI \ViolOneII \ViolOneIII} 
+        \unfoldRepeats \articulate {<<\ViolOneI \ViolOneDI>> \ViolOneII \ViolOneIII} 
       >>
         \header{piece=\markup\huge "I"}
       \midi{}
