@@ -10,12 +10,14 @@
 
 \include "include/ob1.ily"
   \addQuote "OboeOneI" {\keepWithTag #'quote \ObOneI}
+  \addQuote "OboeOneIII" {\keepWithTag #'quote \ObOneIII}
 \include "include/piano.ily"
   \addQuote "PianoII" {\keepWithTag #'quote \PianoUPII}
 \include "include/hrn1.ily"
   \addQuote "HrnOneI" {\keepWithTag #'quote \HrnOneI}
 \include "include/viol2.ily"
   \addQuote "ViolTwoI" {\keepWithTag #'quote \ViolTwoI}
+  \addQuote "ViolTwoIII" {\keepWithTag #'quote \ViolTwoIII}
 \include "include/vla.ily"
   \addQuote "VlaI" {\keepWithTag #'quote \VlaI}
 
@@ -61,11 +63,19 @@
         \header{piece=\markup\huge "II Intermezzo"}
       }
 
-      \markup{ \vspace #1 }
+      \pageBreak 
       \score{
-         \keepWithTag #'part \new Staff 
-         \with{\consists "Page_turn_engraver"} 
+        \keepWithTag #'part \new GrandStaff
+      <<
+      \new Staff 
+        \with {\consists "Page_turn_engraver"} 
         <<\ViolOneIII \conductorIII>>
+       \new Staff 
+        \with {\consists "Page_turn_engraver" 
+        \RemoveEmptyStaves 
+        \override VerticalAxisGroup.remove-first=##t}
+        <<\ViolOneDIII \conductorIII>> 
+      >>
         \header{piece=\markup\huge "III Finale"}
       }
     }

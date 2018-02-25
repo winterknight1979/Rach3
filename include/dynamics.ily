@@ -15,11 +15,25 @@ pComm = \tweak DynamicText.self-alignment-X #LEFT
 pEsp = \tweak DynamicText.self-alignment-X #LEFT 
   #(make-dynamic-script (markup #:dynamic "p" #:normal-text #:italic "espress."))
 
+pMarc = \tweak DynamicText.self-alignment-X #LEFT 
+  #(make-dynamic-script (markup #:dynamic "p" #:normal-text #:italic "marcato"))
+
+mpPMarc = \tweak DynamicText.self-alignment-X #LEFT 
+  #(make-dynamic-script (markup #:dynamic "mp" #:normal-text #:italic "poco marc."))
+
+
+
+pPMarc = \tweak DynamicText.self-alignment-X #LEFT 
+  #(make-dynamic-script (markup #:dynamic "p" #:normal-text #:italic "poco marcato"))
+
 ppDolce = \tweak DynamicText.self-alignment-X #LEFT 
   #(make-dynamic-script (markup #:dynamic "pp" #:normal-text #:italic "dolce"))
 
 ppLeg = \tweak DynamicText.self-alignment-X #LEFT 
   #(make-dynamic-script (markup #:dynamic "pp" #:normal-text #:italic "leggiero"))
+pppLeg = \tweak DynamicText.self-alignment-X #LEFT 
+  #(make-dynamic-script (markup #:dynamic "ppp" #:normal-text #:italic "leggiero"))
+
 
 sempreP = \tweak DynamicText.self-alignment-X #LEFT 
   #(make-dynamic-script (markup #:normal-text #:italic "sempre" #:dynamic "p" ))
@@ -38,6 +52,9 @@ fCant = \tweak DynamicText.self-alignment-X #LEFT
 
 fMarc = \tweak DynamicText.self-alignment-X #LEFT 
   #(make-dynamic-script (markup #:dynamic "f" #:normal-text #:italic "marcato"))
+fMMarc = \tweak DynamicText.self-alignment-X #LEFT 
+  #(make-dynamic-script (markup #:dynamic "f" #:normal-text #:italic "molto marc."))
+
 
 ffMMarc = \tweak DynamicText.self-alignment-X #LEFT 
   #(make-dynamic-script (markup #:dynamic "ff" #:normal-text #:italic "molto marc."))
@@ -54,15 +71,20 @@ ffBenTen = \tweak DynamicText.self-alignment-X #LEFT
        ("pLeg"      . 0.55)
        ("pCant"     . 0.55)
        ("pEsp"      . 0.55)
+       ("pMarc"     . 0.55)
+       ("pPMarc"    . 0.55)
        ("pComm"     . 0.55)
        ("sempreP"   . 0.55)
        ("ppDolce"   . 0.49)
        ("ppLeg"     . 0.49)
+       ("pppLeg"    . 0.42)
        ("semprePP"  . 0.49)
+       ("mpPMarc"   . 0.61)
        ("mfCant"    . 0.68)
        ("mfMarc"    . 0.68)
        ("fCant"     . 0.75)
        ("fMarc"     . 0.75)
+       ("fMMarc"    . 0.75)
        ("ffMMarc"   . 0.80)
        ("ffBenTen"  . 0.80)
        )

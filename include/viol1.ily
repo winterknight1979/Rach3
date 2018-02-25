@@ -344,11 +344,516 @@ ViolOneII=\relative c' {\commonConductor
   af2\mf~( \tuplet 3/2 {af4 bf8)} |
   gf2~( \tuplet 3/2 {gf4 af8)} |
   f2\dim r4 \! |
-  R2. * 5 \mark\default \barNumberCheck \RhXXXII \mpbreak
-
-  
+  R2. * 5 \mark\default \barNumberCheck \RhXXXII \mpbreak   
+  r4 r gf--\mp\> |
+  f2\pp\< gf4--\> |
+  f2\pp( gf4) |
+  af2~ af4-- \bar "||"
+  \key fs\minor af--~ af8 r r4 |
+  R2. * 3 \mark\default \barNumberCheck \RhXXXIII \mbreak \bar "||"
+  \time 3/8 r8 fs-.\upbow\p fs-.\downbow |
+  r es-. es-. |
+  r e-.\cresc e-. |
+  r ds-. ds-. |
+  r d-.\mf d-. |
+  r ds-.\dim ds-. |
+  r e-. e-. |
+  r es-.\pp es-. |
+  \set Staff.midiInstrument = "pizzicato strings"
+  r fs8^"pizz."\pp fs \mbreak |
+  r ds ds |
+  r es es |
+  r fs fs |
+  r gs gs |
+  r fs fs |
+  r fs fs |
+  r ds ds |
+  r es es |
+  r ds ds \mbreak |
+  r es es |
+  r cs cs |
+  r d d |
+  r ds ds |
+  r es es |
+  r fs fs |
+  r es es |
+  r cs cs \mark\default \barNumberCheck \RhXXXIV \mbreak |
+  R4. |
+  \set Staff.midiInstrument = "string ensemble 1"
+  cs'4.^"arco"\downbow->\pPMarc~ |
+  cs4 cs16-.( cs-.) |
+  cs8--~ cs16 fs-.( gs-. gs,-.) |
+  cs4-- r8 |
+  cs,4\downbow--\mf~ cs16-.( cs-.) |
+  cs4.--~\>
+  cs8--\! cs16(\p fs-. gs-. gs,-.) \mbreak |
+  cs8-. <<{\voiceOne \nextCresc "poco cresc" cs'4(\<^"div." |
+           d4.) |
+           ds4.( |
+           e8\dim es4)^\markup{\italic "ten."} \>} \new Voice{\voiceTwo
+           cs,4( |
+           d4.) |
+           ds4.( |
+           e8 es4)}>> \oneVoice \mark\default \barNumberCheck \RhXXXV |
+  r8\!^"unis" \set Staff.midiInstrument="pizzicato strings" a8^"pizz"\mp a |
+  r  gs gs |
+  r fs fs |
+  r es es |
+  r g g \mbreak |
+  r fs fs |
+  r fs fs |
+  r es es |
+  r f\pp f |
+  r e e |
+  r e e |
+  r e e | R4. |
+  \set Staff.midiInstrument ="string ensemble 1"
+  cs4.^"arco"\downbow\mp~-- |
+  cs4 cs16-.( cs-.) |
+  cs-. fs-. gs8.-. gs,16-. \mark\default \barNumberCheck \RhXXXVI \mbreak \bar "||"
+  c4 r r | R2. |
+  r4 r^"div." <<{\voiceOne a''\fCant--\downbow |
+                gs2-- fs4-- |
+                es2-- e4--\dim |
+                ds2-- d4( |
+                cs8)\p} 
+  \new Voice{\voiceTwo a4\downbow-- |
+             gs2-- fs4-- |
+             es2-- e4-- |
+             ds2-- d4( |
+             cs8)}>>
+  \oneVoice r r4 r | 
+  R2. * 3 \mark\default \barNumberCheck \RhXXXVII \mbreak |
+  R2. * 10 \mark\default \barNumberCheck \RhXXXVIII |
+  r4^"unis."
+  cs''4\fCant\<\downbow^"senza sord."
+  \tuplet 3/2 {b(\> gs8)} |
+  gs2--\< \tuplet 3/2 {fs4(\> d8)\!} |
+  d2-- \tuplet 3/2{ cs4(\dim a8) }|
+  a2--\< \tuplet 3/2 {gs4--(\> es8) }
+  es2.~\mf | es2.(\dim \mbreak\bar "||"
+  \time 4/4 \key d\minor e8) r r4 r2 |
+  R1 * 3 \mark\default \barNumberCheck \RhXXXIX |
+  R1 |
+  r8 <g ef'>4:32\f\cresc <bf g'>8: bf': ef: g4\sff | R1 |
+  <a,, a''>8-. r <a a''>-. r r2 \barNumberCheck \EndMII \bar "||" 
 }
-ViolOneIII=\relative c' {\commonConductor  s1}
+ViolOneIII=\relative c' {\commonConductor  
+  \clef treble \time 2/2 \key d\minor
+  <d d' d'>4\sff r r2 | R1 * 4 |
+  r8 e-.\pp fs-. gs-. a-. b-. c-. d-. |
+  e4-. r r2 | R1 * 2 |
+  r8 d,-. e-. fs-. g-. a-. bf-. c-. |
+  d-. e-.(\< f-. g-.) a4\! r \mbreak |
+  r \tuplet 3/2 {f,8\p f f } bf4-> \tuplet 3/2 {e,8 e e} |
+  a4-> \tuplet 3/2 {ef8 ef ef} af4-> \tuplet 3/2 {d,8 d d} |
+  g4-> r r2 |
+  r r4 \tuplet 3/2 {d8\pp d d} |
+  g4--( df) r \tuplet 3/2 {c8 c c} |
+  f4--( c) r2 \mbreak |
+  r r4 d-.\pp \mark #40 \barNumberCheck \RhXL |
+  ds-. r r2 | R1 * 5 |
+  b4-.\pp\upbow cs-. ds-. e-. |
+  fs-. g8-.( a-.) b4-. cs-. |
+  d-.\pp r r2 | R1 |
+  a,4-. b-. c-. d-. \mbreak |
+  e-. fs8-.( gs-.) a4-. b-. |
+  c-. r r2 | R1 |
+  g,4-. a-. bf-. c-. |
+  d-. e8-.( fs-.) g4-. a-. |
+  bf-. r r2 | R1 |
+  r2 r4 <a a'>\f\downbow-. |
+  <a g'>8-. f'-. e-. d-. c4-.( <d, b'>-.) \mark\default \barNumberCheck \RhXLI \mbreak |
+  <e a>-> r r2 |
+  <e a>4->\mf r r2 |
+  <e a>4-> r <e a>-> r |
+  <e a>-> r r fs->  |
+  <g, g'>-> r r2 | R1 * 2 |
+  \set Staff.midiInstrument = "pizzicato strings"
+  r4 d''\f^"pizz." g, r |
+  f'\sfz e d c \mbreak |
+  d e f g |
+  f r r2 |
+  r4 a\f d, r |
+  r d'8 d g,4 r |
+  R1 * 3 |
+  \set Staff.midiInstrument = "string ensemble 1"
+  r4 e,8^"arco"\upbow\f-.( e-.) e4-- e8-.( e-.) |
+  e-.\downbow e-.\upbow e-.[ e-.] e4-. a,\upbow \mark\default \barNumberCheck \RhXLII \mbreak |
+  <a f' d'>\ff r <a f' d'> r |
+  <a f' d'> r r <d d'>\upbow |
+  <e b' e> r
+  \set Staff.midiInstrument = "pizzicato strings"
+  b''^"pizz"\ff e, |
+  R1 |
+  \set Staff.midiInstrument = "string ensemble 1"
+  <g,, e' c'>4^"arco" r <g e' c'> r |
+  <g e' c'> r r <e' c'> |
+  <a, fs' d'> r 
+  \set Staff.midiInstrument = "pizzicato strings"
+  a''^"pizz." d, |
+  \set Staff.midiInstrument = "string ensemble 1"
+  r2 r8 a\mf^"arco"\upbow-. bf-. c-. \mbreak |
+  d-.\dim e-. f-. g-.( a4-.) a,--\p~ |
+  a8 b-. c4--~ c8 d-. e4--~( |
+  e8\dim fs-.) g-. a-. b4-.( b,\! |
+  e-.\p) r r 
+  \set Staff.midiInstrument = "pizzicato strings"
+  b'\p^"pizz" |
+  e, r r2 |
+  \set Staff.midiInstrument = "string ensemble 1"
+  r2 \tuplet 3/2 {b8^"arco"\p b b} e,4 |
+  R1 \mbreak|
+  R1 |
+  r2 r4 \tuplet 3/2 {r8 g,\p\upbow-- g--} |
+  c4---> \tuplet 3/2 {r8 g\downbow-- g--} c4---> \tuplet 3/2 {r8 g\upbow-- g--} |
+  \nextCresc "poco cresc" c4--->\< \tuplet 3/2 {r8 g\downbow-- g--} c4---> \tuplet 3/2 {r8 g\upbow-- g--} | 
+  c4--\! r8 e16-.\p\downbow(^\markup{\italic "ricochét"} e-.) e8-.\upbow r r e16-.( e-.) |
+  e8-. r r e16-.( e-.) e8-. r r e16-.( e-.) \mbreak |
+  e8-. r r e16-.( e-.) ef8-. r r ef16-.( ef-.) |
+  d8-.\dim r r d16-.( d-.) d8-. r r c16-.( c-.) \mark\default \barNumberCheck \RhXLIII |
+  c8-.\pp r r4 r2 |
+  r2 r4 \tuplet 3/2 {r8 g\p\upbow-- g--} |
+  c4---> \tuplet 3/2 {r8 g\downbow-- g--} c4---> \tuplet 3/2 {r8 g\upbow-- g--} |
+  \nextCresc "poco cresc" c4--->\< \tuplet 3/2 {r8 g\downbow-- g--} c4---> \tuplet 3/2 {r8 g\upbow-- g--} \mbreak | 
+  c4->-.\! r8 e16-.\p\downbow( e-.) e8-.\upbow r r e16-.( e-.) |
+  e8-. r r e16-.( e-.) e8-. r r f16-.( f-.) |
+  f8-. r r f16-.( f-.) e8-. r r e16-.( e-.) |
+  ef8-.\dim r r ef16-.( ef-.) d8-. r r d16-.( d-.) |
+  c8-.\pp r r4 r2 | R1 \mpbreak |
+  r2 r4 \tuplet 3/2 {r8 b\p\upbow-- b--} \mark\default \barNumberCheck \RhXLIV |
+  e4---> \tuplet 3/2 {r8 b\cresc\downbow-- b--} e4---> \tuplet 3/2 {r8 b-- b--} |
+  e4--->\< \tuplet 3/2 {r8 b\downbow-- b--} e4---> \tuplet 3/2 {r8 b-- b--} |
+  e4->--\! r8 g16-.(\p g-.) g8-. r r g16-.( g-.) |
+  g8-. r r g16-.( g-.) fs8-. r r fs16-.( fs-.) \mbreak |
+  g8-. r r g16-.( g-.) g8-. r r g16-.( g-.) |
+  g8-.\dim r r g16-.( g-.) g8-. r r g16-.( g-.) |
+  g8-. r \tuplet 3/2 {r8 b,\p\downbow b} e4-.-> \tuplet 3/2 {r8 b b} |
+  e4-.-> \tuplet 3/2 {r8 e\cresc e} g4-.-> \tuplet 3/2 {r8 g g} |
+  b4-.->\! r8 b16-.(\p b-.) b8-. r r b16-.( b-.) \mbreak |
+  a8-. r r a16-.( a-.) a8-. r r a16-.( a-.) |
+  g8-. r r g16-.( g-.) d8-. r r d16-.( d-.) |
+  e8-.\dim r r e16-.( e-.) fs8-. r r fs16-.( fs-.) \mark\default \barNumberCheck \RhXLV |
+  g8-. r r d\pp\upbow( g-- fs4 g8) |
+  fs--( e4 fs8) e(-- d4 a'8)\mbreak |
+  b8( a4 b8) a--( gs4 a8) |
+  a--( gs4 a8) g( fs4 g8) |
+  g--( fs4 e8) cs( c4 cs8) |
+  c( b4 c8) b( c4 d8)~ |
+  d r r d\upbow\pp( g fs4 g8) |
+  fs--( e4 fs8) e(-- d4 a'8)\mbreak |
+  b8( a4 b8) c( b4 c8) |
+  b--( a4 b8) a( g4 a8) |
+  c( b4 c8) d( c4 d8) |
+  c( b4 c8) b( c4 d8) |
+  e_\markup{\italic"senza cresc."}( f4 fs8) g( fs4 g8) |
+  fs( g4 gs8) a( gs4 a8) \mbreak |
+  gs( a4 as8) b( c4 d8) |
+  c( b4 c8) b( a4 b8) |
+  a( gs4 a8) gs( g4 gs8) |
+  g2.( fs4) |
+  e2.( ef4) |
+  d2( cs4 c) |
+  b( bf a af) \mark\default \barNumberCheck \RhXLVI |
+  g2.(\pp a4)\mbreak |
+  b( c2\< ds4) |
+  e8\f( ds4 e8) ds( d4 ds8) |
+  d\dim( c4 d8) c( b4 c8) |
+  b4\p\downbow( r8 a-.\mf) b4.(\upbow-- fs8-.) |
+  g4.--( c8-.) d4.--( a8-.) |
+  b4.(-- d8-.)\cresc e4.--( b8-.) c4.--( a'8-.) b4-. fs-.\mbreak |
+  \tuplet 3/2 {g-.\ff d'8\downbow(} g4)~ \tuplet 3/2 4 {g d8( fs)[ b, b] |
+  e4-.\upbow b8( e)[ g, g] c4 g8( b)[ fs fs] |
+  g4 d8(\downbow} g4)->~ \tuplet 3/2 4 { g d8\downbow( f)[ d bf] |
+  ef4-> bf8(\dim d)[ b g] c4-> g8( b)[ fs d]} \mark\default \barNumberCheck \RhXLVII |
+  g4-.\fMMarc \tuplet 3/2 {d8-.[\downbow r d-.]\upbow} e4-.\downbow fs-.\upbow \mbreak |
+  g4-.\downbow \tuplet 3/2 {d8-.[\downbow r d-.]} e4-. fs-. |
+  g4-.\downbow\dim \tuplet 3/2 {bf,8-.[\downbow r bf-.]} c4-. d-. |
+  ef4-.\downbow \tuplet 3/2 {bf8-.[\downbow r bf-.]} c4-. d-. |
+  ef4-.\downbow r r \tuplet 3/2 {bf8-.\upbow c-. d-.} |
+  ef4-. r r \tuplet 3/2 {bf8-. c-. cs-.} |
+  d4-. r r \tuplet 3/2 {af8-. bf-. b-.} \mbreak |
+  c4-. r r \tuplet 3/2 {g8-. af-. a-.} |
+  bf4-.\p \tuplet 3/2 {bf8-. bf-. bf-.} bf4-. r |
+  r \tuplet 3/2 {bf8-. bf-. bf-.} bf4-. r |
+  r \tuplet 3/2 {bf8-.\upbow\dim[ r bf]-.(\downbow} bf4-.) r |
+  r \tuplet 3/2 {bf8-.\pp[ r bf]-.(} bf4-.) r |
+  R1 * 4 \mbreak \bar "||" 
+  \numericTimeSignature \time 4/4 \key c\minor
+  R1 * 2 \mark\default \barNumberCheck \RhXLVIII |
+  R1 * 6 |
+  <>^"senza sord" ef2\p\<^\markup{\italic "poco marcato"}(\upbow d) |
+  df4(\> cf2\! bf8 cf) \bar "||"
+  \time 3/2 bf2.\p( a8 bf) af2(\<^\markup{\italic "ten."} \mark\default \barNumberCheck \RhXLIX \bar "||"
+  \time 4/4 g8)\pp r r4 r2 |
+  R1 * 6 \mark\default \barNumberCheck \RhL \mbreak |
+  R1 | R1 * 4 \bar "||"
+  \time 3/2 ef''2\upbow^"con sord."\p(~ ef4 d2\< df4) |
+  df2--(~\> df4\! c) bf( af) |
+  g2~( g4 f8 g) f4.^\markup{\italic "ten."}\dim( ef8) \mark\default \barNumberCheck \RhLI \bar "||"
+  \time 4/4 ef8\! r r4 r2 \mpbreak 
+  r2 b'16:32\pMarc c: df: d:\< ef: e: f: fs: |
+  g8\f r r4 r2 |
+  r b16: c: df: d:\< ef: e: f: fs: |
+  g8[\f r16 f32\pp f] g8[ r16 f32 f] g8[ r16 f32 f] g8[ r16 f32 f] |
+  g8 r r4 r2 \mbreak
+  R1 * 2 \mark\default \barNumberCheck \RhLII |
+  R1 * 2 \bar "||"
+  \time 3/2 R1. * 2 \bar "||"
+  \time 4/4 r2 r8^"unis." df,,4\p\<( d8) |
+  d4--^\markup{\italic "ten."}\>( d8)\! r r e4(\< f8) |
+  fs4--^\markup{\italic "ten."}\>( fs8)\! r r fs4(\cresc  g8) |
+  af4.( g8) af( a4\> bf8)~ \mark\default \barNumberCheck \RhLIII \mbreak |
+  \grace s8 bf4\p r r2 | R1 * 3 \bar "||"
+  \time 3/2 ef,2\p d2.( df4) |
+  df2.\dim( c4)( bf8)\! r r4 |
+  R1. \mark\default \barNumberCheck \RhLIV \bar "||"
+  \time 4/4 R1 * 4 | R1 * 4 \mark\default \barNumberCheck \RhLV \mbreak |
+  R1 * 9 \mark\default \barNumberCheck \RhLVI |
+  \cueWhile "OboeOneIII" "Ob.I" #UP {R1 * 5}
+  \cueWhile "ViolTwoIII" "Viol.II" #UP {r2}
+  bf''4\mpPMarc( af) |
+  g2.\< af4--\>\mbreak |
+  g2.\< f4--\>\mark\default \barNumberCheck \RhLVII |
+  ef2.\< f4--\> |
+  ef2.\<( d4)\! |
+  df1\mp\dim~ |
+  df4\pp c( bf\< a\!) |
+  af2.\mp\dim( g8 a\<) |
+  g2.(~\>^\markup{\italic "ten."} g8\dim  ef) \mark\default \barNumberCheck \RhLVIII |
+  ef4-- ef'8\ppLeg-.[ r16 ef32( bf] ef8-.)[ r16 ef32( bf] ef16-.) bf'-. c-.( bf,-. \mbreak |
+  ef8-.) r ef,[ r16 ef32( bf] ef8-.)[ r16 ef32( bf] ef16-.) bf'-. c-.( bf,-. |
+  ef8) r r4 r2 |
+  R1 * 5 | R1 * 3 \mark\default \barNumberCheck \RhLIX \bar "||"
+  \defaultTimeSignature \time 2/2 
+  r4 \tuplet 3/2 {r8 bf-.\downbow\ppLeg bf-.} ef4-> \tuplet 3/2 {r8 bf-.\downbow bf} |
+  \nextCresc "poco a poco cresc." ef4->\< \tuplet 3/2 {r8 bf-. bf-.} ef4-> \tuplet 3/2 {r8 bf-. bf-.} \mbreak |
+  ef4-> \tuplet 3/2 {g,8-.\upbow  bf-. bf-.} ef4-> \tuplet 3/2 {g,8-. bf-. bf-.} |
+  ef4-> \tuplet 3/2 {g,8-. b-. b-.} ef4-> \tuplet 3/2 {g,8-. b-. b-.} |
+  ef4\f\> \tuplet 3/2 {c'8-.\pp\upbow c-. g-.} c4-- \tuplet 3/2 4 {c8-. c-. g-. |
+  c-.[ c-. g-.] c-.[ c-. g-.] c-.[ c-. g-.] c-. c-. g-. \mbreak |
+  d'-. d( g,)} g4--~ \tuplet 3/2 {g8 g-. g-.} g4-- |
+  \tuplet 3/2 {d'8-. d( g,)} g4--~ \tuplet 3/2 4 {g8\< a-. bf-. bf-.[ c-. d-.]\!} |
+  d4-.-> \tuplet 3/2 {bf8-.\p bf-. f-.} bf4-- \tuplet 3/2 4 {bf8-. bf-. f-. |
+  bf8-.[ bf-. f-.] bf8-.[ bf-. f-.] bf8-.[ bf-. f-.] bf8-.[ bf-. f-.] \mbreak |
+  c'-. c( f,)} f4--~ \tuplet 3/2 {f8 f-. f-.} f4-- |
+  \tuplet 3/2 {c'8-. c( f,)} f4--~ \tuplet 3/2 4 {f8 g-. af-. af-.[ bf-. c-.] |
+  c-.\< d-. ef-.\!} f4-. g--~\downbow \tuplet 3/2 4 {g8 a-. b-. \mark\default \barNumberCheck \RhLX |
+  c-.\< df-. d-.} ef2--\downbow\mf\>( \tuplet 3/2 { d4-.\!) c8(} |
+  b4-.) df2--\mf\>( \tuplet 3/2 {c4-.)\! bf8(} \mbreak |
+  af4-.) c4-.\p \tuplet 3/2 {bf8( a af)} g4-. |
+  a-.\< bf2--\>( \tuplet 3/2 {af4-.)\! g8(} |
+  f4-.) af2--\>( \tuplet 3/2 {g4-.)\! f8(} |
+  ef4-.) g4-. \tuplet 3/2 {f8( e ef)} d4\downbow-.( |
+  c-.) bf2--\cresc( a4-.) |
+  g-.->\! r r2 |
+  R1 * 5 \mpbreak |
+  a,4\pp-. b-. cs-. d-. |
+  e-. f8-.( g-.) a4-. b-.\mark\default \barNumberCheck\RhLXI |
+  c-. r r2 | R1 |
+  r4 g-.\ppLeg \tuplet 3/2 {f8( e ef)} d4-. |
+  c-. bf-. a-. g-. | R1 * 2 \mbreak |
+  r4 f'\pp-. \tuplet 3/2 {ef8( d df)} c4-. |
+  bf-. af-. g-. r |
+  r2 ef'4\downbow-. \tuplet 3/2 {d8( cs c)} |
+  bf4-. r d\downbow-. \tuplet 3/2 {c8( b bf)} |
+  af4 \tuplet 3/2 {c8( df d)} ef4-. g-.\p |
+  f-. ef-. d-. d'-.\cresc \mbreak |
+  c-. bf-.( a-.) g'-.\f\downbow |
+  f8-.[ ef-.] d-. c-. bf4-.( <d, a'>->) \mark\default \barNumberCheck \RhLXII |
+  g-> r r2 | R1 * 2 |
+  r4 c-. bf8-.( a-.) g4-.( |
+  f-.) r r \tuplet 3/2 {c8\upbow c c} |
+  c4-. r r \tuplet 3/2 {c'8 c c} \mbreak |
+  c4-. bf-. a-. g-. |
+  f-. c-. c-. d-. |
+  ef-. r r2 | R1 * 2 |
+  r4 \tuplet 3/2 {g'8\p g g } c,4-. r |
+  r \tuplet 3/2 {c'8\cresc c c} f,4-. r |
+  r bf,-. f-. c-.\! \mark\default \barNumberCheck \RhLXIII \mbreak |
+  R1 * 2 |
+  r4 <bf d>8-.(\f\upbow <c d>-.) <bf d>4-- <bf d>8-.( <c d>-.) |
+  <bf d>-.\downbow <c d>\upbow-. <bf d>-.[ <c d>-.] <bf d>4-. g-.-> \bar "||"
+  \key d\minor <a d d'>\ff r <a d d'> r |
+  <a d d'> r r d'\upbow |
+  <e, b' e> r \set Staff.midiInstrument = "pizzicato strings" b''^"pizz" e, | R1 \mbreak |
+  \set Staff.midiInstrument = "string ensemble 1"
+  <c, af' f'>4^"arco" r <c af' f'> r |
+  <c af' f'> r r f'\upbow |
+  <g,, d' b' g'> r
+  \set Staff.midiInstrument = "pizzicato strings"
+  d'''^"pizz." g, | R1 |
+  \set Staff.midiInstrument = "string ensemble 1"
+  r4^"arco" \tuplet 3/2 {bf8\f bf f} bf4-- r |
+  r \tuplet 3/2 {d8 d a} d4-- \tuplet 3/2 {ef8\cresc ef c} \mbreak |
+  f4-- \tuplet 3/2 {g8 g d} g4-- \tuplet 3/2 {gs8 gs d} |
+  a'4->\ff r <a,, a'>-> r \mark\default \barNumberCheck \RhLXIV |
+  <d, d' d'>-> r r2 | R1 |
+  r4 d8-.\p c-. d-. bf-. d-. a-. |
+  d4-. r r2 |
+  R1 * 8 \mark\default \barNumberCheck \RhLXV |
+  R1 * 10 \mbreak |
+  \arpeggioBracket
+  r4 <a d>2\arpeggio\mf-- <g e'>4-. \mark\default \barNumberCheck \RhLXVI |
+  <a d>-. r r2 |
+  R1 * 11 |
+  r4 r8 c\pppLeg-. f-. e-. e-. f-. |
+  e-. d-. d-. e-. d-. c-. c-. g'-. |
+  a-. g-. g-. a-. g-. fs-. fs-. g-. \mbreak |
+  g-. fs-. fs-. g-. f-. e-. e-. f-. |
+  f-. e-. e-. d-.( b) r r4 |
+  r2 bf8-. b-. b-. c-. \mark\default \barNumberCheck \RhLXVII |
+  a4-. r8 c-.\ppp f-. e-. e-. f-. |
+  e-. d-. d-. e-. d-. c-. c-. g'-. \mbreak |
+  \nextCresc "poco a poco cresc."
+  a-.\< g-. g-. a-. bf-. a-. a-. bf-. |
+  a-. g-. g-. a-. g-. f-. f-. g-. |
+  bf-. a-. a-. bf-. c-. bf-. bf-. c-. |
+  bf-. a-. a-. bf-. a-. bf-. bf-. c-. |
+  d-. ef-. ef-. e-. f-. e-. e-. f-. \mbreak |
+  e-. f-. f-. fs-. g-. fs-. fs-. g-. |
+  fs-.\< g-. g-. a-.\! a-. bf-. bf-. c-. |
+  bf-.\mf a-. a-. bf-. \nextDim "poco a poco dim." g-.\> a-. a-. bf-. |
+  a-. g-. g-. a-. bf-. a-. a-. bf-. |
+  g-. fs-. fs-. g-. a-. g-. g-. a-. \mpbreak |
+  g-. fs-. fs-. g-. d-. cs-. cs-. d-. \mark\default \barNumberCheck \RhLXVIII |
+  bf-.\p a-. a-. bf-. g-. fs-. fs-. g-. |
+  d'-. cs-. cs-. d-. df-.\dim c-. c-. d-. |
+  c-. b-. b-. c-. bf-. a-. a-. bf-. |
+  a-. gs-. gs-. a-. g-. gf-. gf-. f-. \mbreak |
+  d4-.\pp r r2 |
+  R1 * 2 |
+  df1--\mf\downbow(\> |
+  d4.\pp ef8) e4.--(\cresc\upbow  fs8) |
+  g4.--( a8-.) bf4.--( c8-.) |
+  d4.--( e8-.) f4.--( g8-.) |
+  a( bf) cs-- f-- a4\sff r \mark\default \barNumberCheck \RhLXIX \mbreak \bar "||"
+  \inSixFour{
+    r4 r g,,,8\ff(\downbow gs a4)-> r r |
+    r4 r g8(\dim gs a4)-> r r |
+    r4 r g8( gs a4)-> r r |
+    r4 r g8\p( gs a4)-> r r |
+    R1. * 11 \mbreak 
+    \set Staff.midiInstrument="pizzicato strings"
+    r2.^"col legno" r4 r d8\downbow\pp-.( e-.) \mark\default \barNumberCheck \RhLXX |
+    f4-.\upbow r bf,8-.( c-.) d4-. r cs8-.( d-.) |
+    e4-. r d8-.( e-.) f4-. r d8-.( e-.) |
+    f4-. r d8-.( e-.) f4-. r d8-.( e-.) |
+    f4-. r cs8-.( d-.) e4-. r f8-.( g-.) \mbreak |
+    a4-.\semprePP r df,8-.( ef-.) f4-. r e8-.( f-.) |
+    g4-. r f8-.( g-.) a4-. r f8-.( g-.) |
+    a4-. r f8-.( g-.) a4-. r f8-.( g-.) |
+    a4-. r f8-.( g-.) gs4-. r a8-.( b-.) \mark\default \barNumberCheck \RhLXXI |
+    c4-.\p r f,8-.( f-.) e4-. r f8-.( f-.) \mbreak |
+    e4-. r f8-.( f-.) e4-. r c'8-.( d-.) |
+    ef4-. r f,8-.( f-.) fs4-. r e8-.( e-.) |
+    f4-. r f8-.( f-.) fs4-. r ds8-.( e-.) |
+    fs4-.\sempreP r e8-.( e-.) ds4-. r ef8-.( f-.) |
+    g4-. r e8-.( e-.) ds4-. r e8-.( fs-.) \mbreak |
+    g4-. r f8-.( d-.) e4-. r e8-.( fs-.) |
+    gs4-. r f8-.( f-.) e4-. r f8-.( g-.) |
+    a4-. r f8-.( g-.) a4-. r fs8-.( a-.)|
+    bf4-. r g8-.( a-.) bf4-. r g8-.( a-.)   
+  } \mark\default \barNumberCheck \RhLXXII |
+  bf4-. r 
+  \set Staff.midiInstrument = "string ensemble 1"
+  bf4.--\downbow\p^"arco"( a8) \mbreak |
+  bf4.--(\< a8) ef'4.--(\> d8) |
+  bf4.--\p( a8) bf4.--( a8) |
+  bf4.--(\< a8) ef'4.--(\> d8) |
+  df4.--\p( c8) df4.--( c8) |
+  df4.--(\< c8) gf'4.--(\> f8)\! |
+  df4.--( c8) df4.--( c8) \mbreak |
+  df4.--(\< c8) gf'4.--(\> f8) |
+  f4.(\< e8) a4.(\> gs8) |
+  f4.(\< e8) a4.(\> gs8) |
+  f4.--(\< e8) bf'4.--(\> a8)\! |
+  f4.--( e8) a4.--( gs8) \mark\default \barNumberCheck \RhLXXIII \bar "||"
+  \key d\major
+  a4.--\f( as8) b4.--( e,8) \mbreak |
+  a4.--( as8) b4.--( e,8) |
+  a4.--\cresc( as8) b4.--( e,8) |
+  a4.--( as8) b4.--( e,8) |
+  a8\ff( as) b( e,) a( as) b( e,) |
+  a8( as) b( e,) a( as) b( e,) \mbreak |
+  a4 e8( fs) g fs g gs |
+  a e fs g a b cs b |
+  cs d e d e fs g fs |
+  g( ds) e fs g fs g gs |
+  a4\sff r r2\fermata_"Cadenza"
+  \tag #'score \cadenzaIIIa
+  \mark\default \barNumberCheck \RhLXXIV \mpbreak \bar "||"
+  R1 *4 |
+  r4 a,,\p\upbow( b2)~ |
+  b4 d\cresc( fs2)~ |
+  fs4 a( d2~ |
+  d2. cs4) |
+  \time 3/2 b4\f( a2) b4(~\< b\> fs)\! |
+  a--( g2) a4(\< b--\> e,\!) \mbreak |
+  \time 2/2 fs( cs) b2\dim~ |
+  b a4( fs') |
+  d2\p r |
+  R1 * 3 \mark\default \barNumberCheck \RhLXXV |
+  r4 a\upbow\p( b2)~ |
+  b4 d\cresc( fs2~) |
+  fs4 a( d2~ |
+  d2. cs4) \mbreak |
+  b4(\f a2 b4) |
+  b--( g2 b4) |
+  d(\< fs2\! e4) |
+  cs( b2 cs4) |
+  cs--( a2 cs4) |
+  e\<( g2\! fs4) |
+  ds2\cresc( e4 fs) |
+  fs(\< a2\! g4) |
+  e2( fs4 g) \mbreak |
+  \ottava #1
+  gs4(\< b2\! a4) \mark\default \barNumberCheck \RhLXXVI |
+  fs( g a) as-- |
+  b--\< c2(\! b4) |
+  b2--\ff\< cs4-- d--\! |
+  cs2-- b4-- cs-- |
+  a2.--\> b4(\! \mbreak |
+  \ottava #0 
+  g a) fs2(~ |
+  fs4 g) e2(~ |
+  e4 fs) d2(~ |
+  d4 e) cs-- d-- |
+  b2 bf4(\> c) \mark\default \barNumberCheck \RhLXXVII |
+  a2\f gs4( bf) |
+  g2.( a4) \mbreak |
+  fs2 fs4--(\dim g) |
+  e2.( fs4) |
+  d\upbow\mf( fs2 a4) |
+  bf(\cresc d2\< fs4) |
+  bf2->\ff g4( ef) |
+  d( a2)\> g4(\! \mark\default \barNumberCheck \RhLXXVIII \mbreak |
+  fs8) cs-. d-.\cresc e-. fs-. a,-. b-. c-. |
+  d-. e-. fs-. g-. a-. cs,-. d-. e-. |
+  fs-. a-. b-> ds,-. e-. fs-. g-. a-. |
+  b-. cs-. d-. e-. fs-. g-. a4-.\mbreak |
+  d,-.^"unis" \ff r
+  \set Staff.midiInstrument = "pizzicato strings"
+  <d,, d' d'>\f^"pizz."-. r |
+  <d d' d'>-. r <d d' d'>-. r |
+  <d d' d'>-. r <d d' d'>-. r |
+  \set Staff.midiInstrument = "string ensemble 1"
+  <bf' g'>->\f^"arco" ef-. d-. cs-. \mark\default \barNumberCheck \RhLXXIX |
+  d->\downbow\fMarc c8(\upbow b) bf4-. b-. |
+  c-. bf8( a) af4-. a \mbreak |
+  bf-. a8( g) fs4-. g-. |
+  bf-. d-. g-. <a, a'>-> |
+  d-> r r2 |
+  <d, d' d'>4\ff r r2 |
+  <d d' d'>4 r <d d' d'> r |
+  r2 <d d' d'>4 r \mbreak |
+  r2 r4 <d d'>:8 |
+  <d d'>: <a' fs'>2: <a a'>4: 
+  <a a'>: <a d'>: <a fs''>: <a g''>: |
+  <a a''>\sff r <a cs'>:\sff r |
+  <d, d' d'>\sff r fs-> e8-> fs-> |
+  d4-> r r2 \barNumberCheck \EndMIII \bar "|."
+}
 
 % second stave for divisi sections
 ViolOneDI=\relative c' {\commonConductor 
@@ -422,5 +927,140 @@ ViolOneDI=\relative c' {\commonConductor
   \tag #'score \cadenzaIc
   \mark\default \barNumberCheck \RhXX |
 }
-ViolOneDIII=\relative c' {\commonConductor s1}
+ViolOneDIII=\relative c' {\commonConductor
+  \time 2/2 \tempo \markup {
+      \concat {
+        "Alla breve ("
+        \smaller \general-align #Y #DOWN \note #"2" #1
+        " = "
+        \smaller \general-align #Y #DOWN \note #"4" #1
+        )
+      }
+    } 2=72
+    s1 * 18 \mark #40 \barNumberCheck \RhXL
+
+    s1 * 20 \mark\default \barNumberCheck \RhXLI
+
+    s1 * 18 \mark\default \barNumberCheck \RhXLII
+
+    s1 * 15 \tempo "Più mosso" 2=76 s1 * 8 \mark\default \barNumberCheck \RhXLIII
+
+    s1 * 11 \mark\default \barNumberCheck \RhXLIV
+
+    s1 * 12 \mark\default \barNumberCheck \RhXLV
+
+    \tempo "Meno mosso" 2=72 s1 * 15 
+    \tempo\markup{\italic "allarg."} 2=65 s1
+    \tempo "a tempo" 2=72 s1 * 5 \mark\default \barNumberCheck \RhXLVI
+
+    s1 * 8 \tempo "Allegro molto" 2=80 s1 * 4 \mark\default \barNumberCheck \RhXLVII
+
+    s1 * 2 \tempo\markup{\italic "poco a poco rit."} 2=78 s1 * 10 \tempo\markup{\italic "rit."} 2=76 s1 * 4 \bar "||"
+    \numericTimeSignature
+    \time 4/4 \key c\minor
+    \tempo \markup {
+      \concat {
+        "Scherzando ("
+        \smaller \general-align #Y #DOWN \note #"4" #1
+        " = "
+        \smaller \general-align #Y #DOWN \note #"2" #1
+        )
+      }
+    } 4=76 s1 * 2 \mark\default \barNumberCheck \RhXLVIII
+
+    s1 * 8 \bar "||"
+    \time 3/2 s1. \mark\default \barNumberCheck \RhXLIX \bar "||"
+
+    \time 4/4 s1*6 s2. \tempo \markup{\italic "rit."} 4=72 s4 \mark\default \barNumberCheck \RhL
+
+    s1 \tempo "a tempo" 4=76 s1 * 4 \bar "||"
+    \time 3/2 s1.*3 \mark\default \barNumberCheck \RhLI \bar "||"
+    R1 |
+    r2 ^"div." g'16:32\pMarc af: a: bf:\< cf: c: df: d: |
+    ef8\f r r4 r2 |
+    r g16: af: a: bf:\< b: c: df: d: |
+    ef8\f[ r16 bf32\pp bf]  ef8[ r16 bf32 bf] ef8[ r16 bf32 bf] ef8[ r16 bf32 bf] |
+    ef8 r r4 r2 | 
+R1 * 2 
+    \tempo\markup{\italic "rit."} 4=76 s1 * 2 \bar "||"
+    \time 3/2 \tempo "Meno mosso" 4=72 s1. * 2 \bar "||"
+    \time 4/4 s1 * 2 \tempo\markup{\italic "poco accel."} 4=76  s1 s2 \tempo\markup{\italic "rit."} 4=73  s2 \mark\default \barNumberCheck \RhLIII
+
+    \tempo "a tempo" 4=76 \grace s8 s1 * 4 \bar "||" 
+    \time 3/2 s1. * 2 s2 \tempo\markup{\italic "rit."} 4=72  s1 \mark\default \barNumberCheck \RhLIV \bar "||"
+
+    \time 4/4 \tempo "a tempo" 4=76 s2 \tempo\markup{\italic "accel."} 4=80 s2 s1 * 3 
+    \tempo\markup{\italic "poco a poco rit."} 4=70 s1 * 4 \mark\default \barNumberCheck \RhLV
+    
+    \tempo "Lento" 4=60 s1 * 9 \mark\default \barNumberCheck \RhLVI
+
+    s1 * 3 \tempo\markup{\italic "rit."} 4=55 s1 
+    \tempo "a tempo come prima" 4=76 s1 * 4 \mark\default \barNumberCheck \RhLVII
+
+    s1 * 6 \mark\default \barNumberCheck \RhLVIII
+
+    s1 * 8 s2 \tempo\markup{\italic "rit."} 4=72 s2 s1 * 2 \mark\default \barNumberCheck \RhLIX \bar "||"
+  
+    \defaultTimeSignature
+    \time 2/2 \tempo \markup {
+      \concat {
+        "Tempo I Alla breve ("
+        \smaller \general-align #Y #DOWN \note #"2" #1
+        " = "
+        \smaller \general-align #Y #DOWN \note #"4" #1
+        )
+      }
+    } 2=72 s1 * 13 \mark\default \barNumberCheck \RhLX
+
+    s1 * 7 \tempo "Più vivo" 2=76  s1 * 8 \mark\default \barNumberCheck \RhLXI
+
+    s1 * 14 \mark\default \barNumberCheck \RhLXII
+
+    s1 * 14 \mark\default \barNumberCheck \RhLXIII
+
+    s1 * 4 \bar "||"
+
+    s1 * 12 \mark\default \barNumberCheck \RhLXIV
+
+    s1 * 4 \tempo "Più mosso" 2=80 s1 * 8 \mark\default \barNumberCheck \RhLXV
+
+    s1 * 11 \mark\default \barNumberCheck \RhLXVI
+
+    s1 * 12 \tempo "Più vivo" 2=84 s1 * 6 \mark\default \barNumberCheck \RhLXVII
+
+    s1 * 13 \mark\default \barNumberCheck \RhLXVIII
+
+    s1 * 8 \tempo\markup{\italic "accel."} 2=86  s1 * 4 \mark\default \barNumberCheck \RhLXIX
+
+    \tempo "Vivace" 2=88 s1 * 16 \mark\default \barNumberCheck \RhLXX
+
+    s1 * 8 \mark\default \barNumberCheck \RhLXXI
+
+    s1 * 10 \mark\default \barNumberCheck \RhLXXII
+
+    s1 * 4 \tempo\markup{\italic "poco a poco accel."} 2=90  s1 * 8 \mark\default \barNumberCheck \RhLXXIII \bar "||"
+    \key d\major
+    s1 * 11 \tag #'score \cadenzaIIIa \mark\default \barNumberCheck \RhLXXIV \bar "||"
+  
+    \tempo "Vivacissimo" 2=92 s1 * 4
+    \tempo "Un poco meno mosso" 2=88 s1 * 4
+    \time 3/2 s1. * 2
+    \time 2/2 \tempo\markup{\italic "accel."} 2=90  s1 * 2 |
+    \tempo "Tempo precedente" 2=92 s1 * 4 \mark\default \barNumberCheck \RhLXXV
+
+    \tempo "Un poco meno mosso" 2=88 s1 * 4
+    \tempo \markup{\italic "poco a poco accel."} 2=90 s1 * 10 \mark\default \barNumberCheck \RhLXXVI
+
+    s1 \tempo \markup{\italic "allarg."} 2=84 s1 * 4
+    \tempo\markup{\italic "accel."} 2=86 s1 * 3 
+    \tempo "a tempo" 2=88 s1 * 2 \mark\default \barNumberCheck \RhLXXVII
+
+    \tempo "Più vivo" 2=92 s1 * 6 
+    \tempo\markup{\italic "rit."} 2=88 s1 * 2 \mark\default \barNumberCheck \RhLXXVIII
+
+    fs,8^"div." cs-. d-. cs-. d-. a-. b-. cs-. |
+    d-. cs-. d-. e-. fs-. cs-. d-. e-. |
+    fs-. fs-. g-> ds-. e-. ds-. e-. fs-. |
+    g-. cs-. d-. e-. fs-. g-. a4-. |
+}
 
