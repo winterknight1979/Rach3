@@ -33,7 +33,7 @@ PERCCUES=include/fl1.ily include/ob1.ily include/cl1.ily include/bsn1.ily includ
 
 #Piano and strings files only have one source file each, so we only need cues variables
 PIANOCUES=
-VIOLICUES= include/ob1.ily include/vla.ily
+VIOLICUES= include/ob1.ily include/vla.ily include/hrn1.ily include/piano.ily include/viol2.ily
 VIOLIICUES=
 VIOLACUES=
 CELLOCUES=
@@ -54,7 +54,7 @@ horns: horns.a4.pdf horns.letter.pdf
 trumpets: trumpets.a4.pdf trumpets.letter.pdf
 lowbrass: lowbrass.a4.pdf lowbrass.letter.pdf
 percussion: percussion.a4.pdf percussion.letter.pdf
-violins: violinsI.a4.pdf violinsI.letter.pdf
+violins: violinsI.a4.pdf violinsI.letter.pdf violinsII.a4.pdf violinsII.letter.pdf
 
 %.mid: %.ly
 	${LILY} -dmidi-extension=mid -s  $< 2>&1 | tee $*.mid.log
@@ -85,7 +85,8 @@ percussion.a4.pdf: percussion.ly ${HEADERS} ${PERCFILES} ${PERCCUES}
 percussion.letter.pdf: percussion.ly ${HEADERS} ${PERCFILES} ${PERCCUES}
 violinsI.a4.pdf: violinsI.ly include/viol1.ily ${HEADERS} ${VIOLICUES}
 violinsI.letter.pdf: violinsI.ly include/viol1.ily ${HEADERS} ${VIOLICUES}
-
+violinsII.a4.pdf: violinsII.ly include/viol2.ily ${HEADERS} ${VIOLIICUES}
+violinsII.letter.pdf: violinsII.ly include/viol2.ily ${HEADERS} ${VIOLIICUES}
 
 
 Rach3.mid: Rach3.ly ${SCOREFILES}

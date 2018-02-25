@@ -154,7 +154,7 @@
              {instrumentName=#"Violini II"
              shortInstrumentName="V.ni II"
               \remove "Keep_alive_together_engraver"} <<
-               \new Staff {\ViolTwoI}
+                \new Staff \with {\consists "Span_arpeggio_engraver"} {\ViolTwoI}
                \new Staff \with {\override VerticalAxisGroup.remove-first=##t} {\ViolTwoDI} >>
            >>
 
@@ -460,4 +460,4 @@
  
         }
       }
-    
+     

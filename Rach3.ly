@@ -30,12 +30,14 @@
 \include "include/timp.ily"
 \include "include/perc.ily"
 \include "include/viol1.ily"
+\include "include/viol2.ily"
+
 
      \score{
  
     \keepWithTag #'score \killCues <<
       \new Devnull {
-%        \set Score.instrumentEqualizer = #my-equalizer
+        \set Score.instrumentEqualizer = #my-equalizer
         \conductorI \conductorII \conductorIII}
       \new Staff \with
       { instrumentName = #"2 Flauti"
@@ -90,11 +92,17 @@
           \new DrumVoice {\conductorI \BDII \BDIII }
           \new DrumVoice {\conductorI \CymII \CymIII}
         >>
-           \new Staff \with
+            \new Staff \with
       { instrumentName = #"Violins"
         shortInstrumentName = #"Vln."
         midiInstrument = #"string ensemble 1"}
         \unfoldRepeats \articulate {<<\ViolOneI \ViolOneDI>> \ViolOneII <<\ViolOneIII \ViolOneDIII>>} 
+           \new Staff \with
+      { instrumentName = #"Violins"
+        shortInstrumentName = #"Vln."
+        midiInstrument = #"string ensemble 1"}
+        \unfoldRepeats \articulate {<<\ViolTwoI \ViolTwoDI>> \ViolTwoII <<\ViolTwoIII \ViolTwoDIII>>} 
+      
       >>
         \header{piece=\markup\huge "I"}
       \midi{}

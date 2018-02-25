@@ -97,11 +97,17 @@ ffBenTen = \tweak DynamicText.self-alignment-X #LEFT
 #(set! my-equalizer-alist
    (append
     '(
-       ("flute"     .   (0.1 . 0.8))
-       ("oboe"      .   (0.1 . 0.7))
+       ("flute"     .   (0.1 . 0.9))
+       ("oboe"      .   (0.1 . 0.8))
        ("clarinet"  .   (0.1 . 0.7))
-       ("bassoon"   .   (0.2 . 0.7))
-       ("french horn" . (0.2 . 1.0)))
+       ("bassoon"   .   (0.2 . 0.9))
+       ("french horn" . (0.2 . 0.9))
+       ("trumpet"     . (0.2 . 0.8))
+       ("trombone"    . (0.2 . 0.8))
+       ("tuba"        . (0.2 . 0.9))
+       ("timpani"     . (0.1 . 0.8))
+       ("string ensemble 1" . (0.2 . 0.7))
+       ("pizzicato strings" . (0.2 . 0.7)))
     my-equalizer-alist))
 
 #(define (my-equalizer s)

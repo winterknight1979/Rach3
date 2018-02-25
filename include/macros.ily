@@ -60,7 +60,7 @@ stopSlurSpan = {}
         (crashcymbal    default #f 0)
         ))
 
-
+csBracket = \once\override Staff.Arpeggio.stencil = #ly:arpeggio::brew-chord-bracket
 
 %marks
 
