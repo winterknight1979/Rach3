@@ -102,11 +102,139 @@ ViolTwoI=\relative c' {\commonConductor
   \new Voice {\voiceTwo d2( c) | d1 | d2( c) | d1( | ef4)} >>
   \oneVoice r r2 | R1 \mbreak |
   ef2^"unis."\p\cresc <b d> |
-  <bf ef>4\f\<( bf')\! ef(\> g)\! |
+  <bf ef>4\f\<( bf')\! ef(\> g,)\! |
   <g, ef'>2\arpeggio\dim <af d>\arpeggio |
   <g ef'>\arpeggio\mf b4( c) |
   c2( f8.\dim fs16 g4) \mark\default \barNumberCheck \RhIX |
-  bf1\p | bf2( c) | R1 * 2 \mbreak | 
+  bf,1\p | bf2( c) | R1 * 2 \mbreak | 
+  d1\pp |
+  d2.( c8 bf |
+  a4) r8 bf-.\pp a4-- r8 bf-. |
+  a4-- r8 bf-. a4-- r8 bf-. |
+  a4-- r8 ef'-. c-. c-. d-. bf-. |
+  a4-- r8 f'-. f-. af-. gf-. f-. \mbreak |
+  a,4-- r8^"div" <<
+    { \voiceOne bf'8-. bf4-- b8\rest a-. |
+                bf4-- b8\rest bf-. bf-. a-. a-. bf-. | a-.}
+    \new Voice {\voiceTwo g8-. g4-- s8 g-. |
+                g4-- s8 fs-. g-. f-. fs-. g-. | f4-.} >>
+  \oneVoice r r2 | R1 * 5 \mark\default \barNumberCheck \RhX |
+  R1 * 2 \mbreak |
+  R1 * 2 |
+  r4^"unis." r8 f\p(\upbow^"arco" g4. a8) |
+  bf4.( c8) d4.( ef8) |
+  f4 r r2 |
+  R1 * 3 \mark\default\barNumberCheck \RhXI |
+  <<{\voiceOne f2^"div."(\p e) | ef( d)\dim | d,1\p \mbreak |
+               bf\dim | d4\! }
+               \new Voice {\voiceTwo f2( e) | ef( d) | bf1 | g | bf4}>>
+  \oneVoice r r r8 a^"unis."(\dim |
+  bf4)\! r r r8 a( |
+  bf) <bf d>16\pp <bf d> <bf d>4:16 <bf d>: <bf d>: |
+  <bf d>2: <bf d>4.: cs8: \mpbreak \bar "||"
+  \key a\minor
+  d a:\p d: a: r a: d: a: |
+  r a: d: a: r a:\dim d: a: |
+  r a:\pp d: a: r a: d: a: |
+  r a: g: a: r a: d: a: |
+  r d: f: d: r d: f: d: \mbreak |
+  r c: e: d: r c: e: g,: |
+  r g:\pp c: g: r g: c: g: |
+  r c: ef: c: r g: c: g: |
+  r g: g4: r8 g: c: g: |
+  r c: ef: c: r c: ef: c: \mbreak |
+  r bf: d: c: r bf: d: c: |
+  r bf: bf4: r8 bf: bf4: |
+  r8 a:\dim a4: r8 a: a4: |
+  r8 g: g4: r8 g: g4: \mark\default \barNumberCheck \RhXII \mbreak \bar "||"
+  \time 3/2 r8 a: a4:\! r2 r | R1. \bar "||"
+  \time 4/4 R1 * 6 \bar "||"
+  \time 3/2 R1. * 4 \mark\default \barNumberCheck \RhXIII \bar "||"
+  \time 4/4 \cueWhile "OboeOneI" "Ob.I" #UP {R1 * 3 \mbreak r4}
+  \set Staff.midiInstrument="pizzicato strings"
+  r8 a'\p^"pizz." g fs r4 |
+  r8 a g fs r2 |
+  R1 |
+  r4 r8 gs\p fs e d e |
+  fs gs r gs fs e d e |
+  fs gs r4 r2 | R1 \mbreak |
+  R1 * 10 \mark\default \barNumberCheck \RhXIV |
+  \set Staff.midiInstrument="string ensemble 1"
+  cs,2\p\upbow^"arco"\(( bs) |
+  b( d)\) |
+  c(\cresc b) |
+  b1 |
+  e2( ef) | ef1 |
+  a,4.--\f bf8-. a4.-- bf8-. |
+  a4-- a8-.( bf-.) a4.-- c8-. \mbreak |
+  <bf d>4.-- cf8-. <bf d>4-- d8(-. cf)-. |
+  <bf d> 4.-- cf8 <b d>4.--\downbow r8 |
+  <bf ef>4.--\downbow\fMarc <bf ef>8-. <bf d>4.-- <bf d>8-. |
+  <bf ef>4.-- <bf ef>8-. <af d>4.-- <af d>8 |
+  <b d>4-- ef8-.( d-.) <as d>4.-- <as d>8-. |
+  <b d>4.-- <b d>8-. <as d>4.-- <as d>8-. \mbreak |
+  a4.-- a8-. a4.-- a8-. |
+  a4.-- a8-. a4.-- a8-. |
+  <a f'>4-- e'8-.( d-.) cs4.-- cs8-. |
+  d4.-- d8-. cs4.-- cs8-. |
+  c4-- a'8-.(\f gs-.) a4 a8-.( gs-.) |
+  a4-> a8-.( gs-.) a4 a8-.( gs-.) \mbreak |
+  a4-> <e c' e>->\cresc <e c' e>-> <e c' e>-> |
+  <e c' e>-> <e c' e>-> <e c' e>-> <e c' e>-> |
+  \time 2/2 <a fs'>->\ff <c, fs>2.:16 |
+  <c fs>2: <c fs>: |
+  <c fs>: <c fs>: |
+  <c fs>: <c fs>: |
+  <c fs>:\dim <c fs>: \mbreak |
+  <c fs>: <c fs>: |
+  <c fs>: <c fs>: |
+  <c fs>: <c fs>:\> \mark\default \barNumberCheck \RhXV |
+  ef4\pp r r2 | R1 * 12 |
+  \cueWhile "ViolOneI" "Viol.I" #DOWN {R1 * 3}
+  \mark\default \barNumberCheck \RhXVI \mbreak |
+  r2 fs(--^"con sord."\mf\> |
+  g)\! e(--\mf\> |
+  f)\! d--(\> |
+  e)\! cs--\p( |
+  d)\< <bf g'>4\sf r |
+  R1 * 12 \mpbreak |
+  \cueWhile "ViolOneI" "Viol." #DOWN {R1*3}
+  \mark\default \barNumberCheck\RhXVII
+  r2^"unis." f'--\p~ |
+  f e--~ |
+  e d--~|
+  d c--~ |
+  c4 a2\p\>(^\markup{\italic "poco marc."} bf4)\!--~ |
+  bf g2--\dim( a4\>~) |
+  a\! r r2 |
+  R1 * 5 \mark\default \barNumberCheck\RhXVIII \mbreak |
+  R1 * 8 | r4 <bf d>2:16\pp\< <g ef'>4: |
+  <g ef>:\> <bf d>2:\< <g ef>4: |
+  <g ef>:\> <bf d>2:\< f'4: |
+  f:\> <bf, d>2:\< g'4: |
+  g:\> d8\p r r2\fermata_"Cadenza"
+  \tag #'score \cadenzaIb
+  \mark\default \barNumberCheck \RhXIX \mbreak \bar"||" 
+
+  R1 * 13 | R1\fermataMarkup_"Cadenza"
+  \tag #'score \cadenzaIc \mark\default \barNumberCheck \RhXX |
+  R1 * 2 |
+  \cueWhile "HrnOneI" "Cor.I" #DOWN
+  {R1 * 2 \bar "||" \key d\minor r8}
+  a:16\p d: a: r a: d: a: \mbreak |
+  r a: d: a: r a:\dim d: a: |
+  r a:\pp d: a: r a: d: a: |
+  r a: g: a: r a: d: a: |
+  r d: f: d: r d: f: b,: |
+  r a: g: a: r a: d: a: \mbreak |
+  r d: f: d: r a: d: a: |
+  r a: g: a: r a: d: a: |
+  r bf: d: a: d: e: d: e: |
+  r a: cs: a: r gs: d': gs,: \mark\default \barNumberCheck \RhXXI |
+  r a: cs: a: cs: a: cs: a: \mbreak |
+
+
+
 }
 ViolTwoII=\relative c' {\commonConductor s1}
 ViolTwoIII=\relative c' {\commonConductor  s1}
@@ -125,8 +253,64 @@ ViolTwoDI=\relative c' {\commonConductor
   d4( a2) c4\pp( |
   bf) bf( a) a( |
   g) g( a) g( |
-  a)\< d2--\>( cs4)\!
-}
+  a)\< d2--\>( cs4)\! | R1 * 4 |
+
+  s1 * 11 | \tempo\markup{\italic "colla parte"} 4=140 s1 \bar "||" 
+  \time 2/4 \tempo "a tempo" 4=155 s2 \mark\default \barNumberCheck \RhIV \bar "||" %4
+
+  \time 4/4 \tempo "Allegro" 4=140 s1 * 8  \tag #'score \cadenzaIa s1 
+  \tempo "Moderato" 4=110 s1 * 6  
+  \time 3/2 \tempo\markup{\italic "allarg."} 4=95 s1. \mark\default  \barNumberCheck \RhV %5
+
+  \time 4/4 \tempo "a tempo" 4=110  s1 * 3 s2 s4 \tempo\markup{\italic "rit."} 4=100 
+  s4 s1 \tempo "a tempo" 4=110 s1 * 6 \mark\default  \barNumberCheck \RhVI  %6
+
+  s1 * 6 | \time 2/4 s2 | \time 4/4 s4 \tempo\markup{\italic "colla parte"} 4=100 s4 s2 | 
+  \tempo "a tempo" 4=110 s1 * 3
+  s2 \tempo \markup{\italic "poco rit."} 4=100 s2 |
+  \tempo "a tempo" 4=110 s1 * 4 | \mark\default  \barNumberCheck \RhVII %7
+
+  s1 * 9 \mark\default  \barNumberCheck \RhVIII %8
+
+  s1 * 2  \tempo\markup{\italic "allarg."} 4=95 s1  
+  \tempo "a tempo" 4=110 s1 * 4 \mark\default  \barNumberCheck \RhIX %9
+
+  s1 * 5  s2 \tempo\markup{\italic "rit."} 4=100 s2  
+  \tempo\markup{\italic "accel."} 4=115 s1 * 6  \tempo "Allegro" 4=140 
+  s1 * 6 \mark\default  \barNumberCheck \RhX %10
+
+  s1 s2 \tempo\markup{\italic "rit."} s2 \tempo "Tempo precedente" 4=115 s1 * 5 
+  \tempo\markup{\italic "poco a poco accel."} 4=125 s1 * 3 \mark\default  \barNumberCheck \RhXI %11
+
+  s2 \tempo "Allegro" 4=140 s2  s1 *5 s2 \tempo\markup{\italic "rit"} 4=132 s2 s1 \bar "||"
+  \tempo "Tempo I" 4=120 \key a\minor s1 * 14 \mark\default  \barNumberCheck \RhXII \bar "||" %12
+
+  \tempo "Più mosso" 4=140 \time 3/2 s1.*2 \bar "||"
+  \time 4/4 s1 * 6 \bar "||"
+  \time 3/2 s1.*4 \mark\default  \barNumberCheck \RhXIII \bar "||"
+
+  \time 4/4 s1 * 10 \tempo "Più vivo" 4=155 s1 * 10 \mark\default \barNumberCheck \RhXIV
+
+  s1 * 10 \tempo "Allegro" 4=145 s1*8 \tempo\markup{\italic "accel."} 4=152 s1*4
+  \time 2/2 \tempo "Allegro molto (Alla breve)" 2=91 s1 * 8 \mark\default \barNumberCheck \RhXV
+
+  s1 * 16 \mark\default \barNumberCheck \RhXVI
+ 
+  r2^"div." d--^"con sord."\mf\>( |
+  e)\! c--(\mf\> |
+  d)\! bf--(\> |
+  cs)\! a--~\p |
+  a\< <g ef'>4\sf r |
+  R1 * 15 |
+  
+  s1 * 12 \mark\default \barNumberCheck \RhXVIII
+  R1 * 8 ^"div." |
+  r4 g2:16\pp\< bf4: |
+  bf:\> g2:\< bf4: |
+  bf:\> g2:\< <bf d>4: |
+  <bf d>:\> g2:\< <bf d>4: |
+  <bf d>:\> <a d>8\p r r2 \fermata_"Cadenza"
+  \tag #'score \cadenzaIb}
 ViolTwoDII=\relative c' {\commonConductor s1}
 ViolTwoDIII=\relative c' {\commonConductor s1}
 

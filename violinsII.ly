@@ -10,8 +10,13 @@
 
 \include "include/ob1.ily"
   \addQuote "OboeOneI" {\keepWithTag #'quote \ObOneI} 
+\include "include/hrn1.ily"
+  \addQuote "HrnOneI" {\keepWithTag #'quote \HrnOneI} 
+\include "include/viol1.ily"
+  \addQuote "ViolOneI" {\keepWithTag #'quote \ViolOneI}
 \include "include/vla.ily"
   \addQuote "VlaI" {\keepWithTag #'quote \VlaI}
+
 
 
 \paper{ 
