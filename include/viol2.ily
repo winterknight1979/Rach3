@@ -312,8 +312,172 @@ ViolTwoII=\relative c' {\commonConductor
   a4( gs4. fs8) |
   fs( gs fs4. e8) |
   ds([ d cs b])\< a( g)\! \mark\default \barNumberCheck \RhXXX \mbreak |
+  r4 d''\upbow\f \tuplet 3/2 {cs( a8) } |
+  a2-- \tuplet 3/2 {cs4( b8) }|
+  gs2 \tuplet 3/2 {b4(\dim a8)} |
+  fs2 \tuplet 3/2 {a4( gs8)} |
+  d4 fs2\((\> |
+  gf8)\p af,\) g4.\upbow( af8) |
+  af( a) bf4.( c8) \mbreak |
+  df(\cresc^"unis." c) df4.( ef8) |
+  f( gf4) <f f'>8^"div."\<( <gf gf'> <af af'>) \mark\default \barNumberCheck \RhXXXI |
+  <bf bf'>([\f <af af'>] <f f'> <df df'>) \tuplet 3/2 {<c c'>4(\> <af af'>8)\!} |
+  f'2.^"unis."~ |
+  f4 ff\dim( ef) |
+  e(\mf ef d) |
+  d( df c) |
+  c(\dim \tuplet 3/2 {ef\> df8\!)} r4 |
+  R2. * 5 \mpbreak |
+  r4 af\pp(\< eff')\mp\> |
+  df2\pp\< eff4--\> |
+  df2~\pp df4--|
+  df2( eff4) \bar "||"
+  \key fs \minor
+  df4~-- df8 r
+  \set Staff.midiInstrument="pizzicato strings"
+  \tuplet 3/2 {r b'^"pizz."\p cs}
+  fs,4 r \tuplet 3/2 {r8 a b} |
+  e,4 r \tuplet 3/2 {r8 gs a} |
+  d,4 r \tuplet 3/2 {r8 fs\dim gs\!} \mark\default \barNumberCheck \RhXXXIII \mbreak \bar "||"
+  \time 3/8 cs,8\f 
+  \set Staff.midiInstrument="string ensemble 1"
+  cs-.\p\upbow^"arco"[ cs-.\downbow] |
+  r cs-. cs-. |
+  r cs-.\cresc cs-. |
+  r cs-. cs-. |
+  r cs-.\mf cs-. |
+  r cs-.\dim cs-. |
+  r cs-. cs-. |
+  r cs-.\pp cs-. |
+  \set Staff.midiInstrument = "pizzicato strings"
+  r cs\pp^"pizz" cs \mbreak|
+  r bs bs |
+  r cs cs |
+  r cs cs |
+  r e e |
+  r d d |
+  r cs cs |
+  r bs bs |
+  r b b |
+  r a a \mbreak |
+  r gs gs |
+  r a a |
+  r a a |
+  r a a |
+  r gs gs |
+  r bs bs |
+  r cs cs |
+  r gs gs \mark\default \barNumberCheck \RhXXXIV |
+  r cs\pp cs \mbreak |
+  r ds ds |
+  r es es |
+  r <a, fs'> <b e> |
+  r cs cs |
+  r ds ds |
+  r es es |
+  r <a, fs'> <b e> |
+  r \nextCresc "poco cresc." cs\< cs |
+  r <a fs'> <a fs'> \mbreak |
+  r bs bs |
+  r <b gs'>\dim <b gs'> \mark\default \barNumberCheck \RhXXXV |
+  r <a fs'>\mp <a fs'> |
+  r <b e> <b e> |
+  r d d |
+  r cs cs |
+  r <g e'> <g e'> |
+  r <b d> <b d> |
+  r <b d> <b d> \mbreak |
+  r cs cs |
+  r d\pp d |
+  r cs cs |
+  r cs cs |
+  r b b |
+  r <b d>\dim <b d> |
+  r cs cs |
+  r cs cs |
+  r bs bs\! \mark\default \barNumberCheck \RhXXXVI \mbreak \bar "||"
+  \set Staff.midiInstrument = "string ensemble 1"
+  r4 gs\downbow^"arco"\pp(\< d')\mp\> |
+  cs2\pp\< d4\> |
+  cs2\pp\< cs'4\f\downbow |
+  cs2-- cs4-- |
+  cs2-- cs4--\dim |
+  a2-- fs4( |
+  es8)\p r r4 r | R2. * 3 \mark\default \barNumberCheck \RhXXXVII \mbreak |
+  R2. * 10 ^"senza sord." \mark\default \barNumberCheck \RhXXXVIII |
+  r4 cs''\downbow\fCant\< \tuplet 3/2 {b\>( gs8)} |
+  gs2\<-- \tuplet 3/2 {fs4(\> d8)\!} |
+  d2-- \tuplet 3/2 {cs4\dim( a8)} |
+  a2--\< \tuplet 3/2 {gs4\>--( es8)} |
+  cs2.\mf~
+  cs\dim~ \mbreak \bar "||"
+  \key d\minor \time 4/4 cs8\p r r4 r2 |
+  R1 * 3 \mark\default \barNumberCheck \RhXXXIX |
+  r4 g:16\mf\cresc bf: <g ef'>: |
+  <g g'>4.: <bf g'>8:32 <bf bf'>: ef': <bf g'>4\sff |
+  R1 |
+  <d, f' d'>8-.\ff r <e' cs'>-. r r2 \barNumberCheck \EndMII \bar "||"
+  
+
+
 }
-ViolTwoIII=\relative c' {\commonConductor  s1}
+ViolTwoIII=\relative c' {\commonConductor  
+  \clef treble \key d\minor \time 2/2 
+  <d f' a>4\sff r r2 | R1 * 9 |
+  \set Staff.midiInstrument = "pizzicato strings"
+  r4 e\mf^"pizz." a r |
+  r <f c'>\p d' <e, b'> |
+  cs' <ef, bf'> c' <d, a'> |
+  bf' r r2 |
+  \set Staff.midiInstrument = "string ensemble 1"
+  r2 r4 c,\pp-.^"arco" \mbreak |
+  bf2-- r4 c-. |
+  a2-- r |
+  r r4 gs-.\pp \mark #40 \barNumberCheck \RhXL |
+  a-. r r2 |
+  R1 * 14 |
+  \cueWhileClef "BassIII" "Basso" #UP "bass"
+  {R1 * 3 | r2 r4} <a' f'>\f-.\downbow \mbreak |
+  <a e'>8-. d-. c-. a-. g4-.( <d b'>-.) \mark\default \barNumberCheck \RhXLI |
+  <e a>-> r r2 |
+  <e a>4->\mf r r2 |
+  <e a>4-> r <e a>-> r |
+  <e a>-> r r <c d>-> |
+  <b d> r r2 | R1 * 2 |
+  \set Staff.midiInstrument = "pizzicato strings"
+  r2 g'4^"pizz."\f c, \mbreak |
+  <f a>\sfz <e a> <d a'> <c gs'> |
+  <d a'> <e a> <f a> <g cs> |
+  <f d'> r r2 |
+  r r4 a\f |
+  d, d'8 d g,4 d'8 d |
+  g,4 c, r2 |
+  R1 * 2 |
+  \set Staff.midiInstrument="string ensemble 1"
+  r4 cs8-.\f(^"arco"\upbow d-.) cs4-- cs8-.( d-.) \mbreak |
+  cs-.\downbow d-.\upbow cs-. d-. cs4-. a-.\upbow \mark\default \barNumberCheck \RhXLII |
+  <a d d'>\ff r <a d d'> r |
+  <a d d'>r r <d d'>\upbow |
+  <gs, e' b'> r r2 |
+  \set Staff.midiInstrument="pizzicato strings"
+  b'4\ff^"pizz" e, r2 |
+  \set Staff.midiInstrument="string ensemble 1"
+  <g, e' c'>4^"arco" r <g e' c'> r |
+  <g e' c'> r r c \mbreak |
+  <a d d'> r r2 |
+  \set Staff.midiInstrument="pizzicato strings"
+  a'4^"pizz" d, r2 |
+  \set Staff.midiInstrument="string ensemble 1"
+  r4 g-.\p(^"arco" f-. <g, e'>-.) |
+  <a d>-. r r2 |
+  r r4 ds -. |
+  e-. r r
+  \set Staff.midiInstrument="pizzicato strings"
+  b'\p^"pizz." |
+  e, r r b' |
+  e, r r2 |
+  R1 \mbreak 
+}
 
 % second part for divisi sections#
 ViolTwoDI=\relative c' {\commonConductor 
@@ -414,7 +578,44 @@ ViolTwoDII=\relative c' {\commonConductor
 
   s2.*8 \mark\default \barNumberCheck \RhXXX
 
-  r4^"div." fs\downbow\f
+  r4^"div." fs\downbow\f \tuplet 3/2 {e( cs8)} |
+  cs2-- \tuplet 3/2 {e4( d8)} |
+  <b d>2 \tuplet 3/2 {d4\dim( cs8)} |
+  <a d>2 \tuplet 3/2 {cs4( b8)} |
+  b4 d~( \tuplet 3/2 {d8 cs c~} |
+  c\! af) g4.\upbow( af8) |
+  af( a) bf4.( c8) | R2. * 2 |
+  s2.*8 \tempo\markup{\italic "rit."} 4=78 s2.*2 s4.\tempo\markup{\italic "rit."} 4=74 s4. \mark\default \barNumberCheck \RhXXXII 
+
+  \tempo "Tempo come prima" 4=72 s2. * 4 \bar "||"
+  \key fs\minor \tempo "Poco più mosso" 4=76 s2. * 4 \mark\default \barNumberCheck \RhXXXIII \bar "||"
+
+  \time 3/8
+  \tempo\markup {
+    \concat {
+      (
+        \smaller \general-align #Y #DOWN \note #"4." #1
+        " = "
+        \smaller \general-align #Y #DOWN \note #"4" #1
+      )
+    }
+    
+  } 4=51
+  s4.*26 \mark\default \barNumberCheck \RhXXXIV
+
+  s4.*11 \tempo\markup{\italic "rit."} 4=45 s4. \mark\default \barNumberCheck \RhXXXV
+
+  \tempo "a tempo" 4=51 s4.*16 \mark\default \barNumberCheck \RhXXXVI \bar "||"
+
+  r4^"div." gs\pp\<(\downbow d'--\mp\>) |
+  cs2\pp\< d4\> |
+  cs2\pp\< cs4--\f\downbow |
+  cs2-- cs4-- |
+  cs2-- cs4--\dim |
+  a2-- a4( |
+  gs8)\p r r4 r | R2. * 3 |
+
+
 }
 ViolTwoDIII=\relative c' {\commonConductor s1}
 

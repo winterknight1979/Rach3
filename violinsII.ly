@@ -19,6 +19,9 @@
   \addQuote "ViolOneII" {\keepWithTag #'quote \ViolOneII}
 \include "include/vla.ily"
   \addQuote "VlaI" {\keepWithTag #'quote \VlaI}
+\include "include/bass.ily"
+  \addQuote "BassIII" {\keepWithTag #'quote \BassIII}
+
 
 
 
