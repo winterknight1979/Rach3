@@ -34,7 +34,7 @@ PERCCUES=include/fl1.ily include/ob1.ily include/cl1.ily include/bsn1.ily includ
 #Piano and strings files only have one source file each, so we only need cues variables
 PIANOCUES=
 VIOLICUES= include/ob1.ily include/vla.ily include/hrn1.ily include/piano.ily include/viol2.ily
-VIOLIICUES=
+VIOLIICUES=include/ob1.ily include/vla.ily include/hrn1.ily include/piano.ily include/viol1.ily include/bass.ily
 VIOLACUES=
 CELLOCUES=
 BASSCUES=

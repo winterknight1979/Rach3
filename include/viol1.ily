@@ -857,53 +857,53 @@ ViolOneIII=\relative c' {\commonConductor
 
 % second stave for divisi sections
 ViolOneDI=\relative c' {\commonConductor 
-\time 4/4 \tempo "Allegro ma non tanto" 4=120 s1 * 10 \mark\default \barNumberCheck\RhI %1 
+ s1 * 10 \mark\default \barNumberCheck\RhI %1 
 
-  s1 * 7  s4 \tempo\markup{\italic "colla parte"} 4=100 s4 s2  
-  \tempo "a tempo" 4=120 s1 * 6 \bar "||" 
-  \time 2/4 s2 \bar "||" \time 4/4 s1 \tempo "Più mosso" 4=140 s1 * 11 \mark\default \barNumberCheck\RhII  %2
+  s1 * 7  s4  s4 s2  
+  s1 * 6 \bar "||" 
+  \time 2/4 s2 \bar "||" \time 4/4 s1  s1 * 11 \mark\default \barNumberCheck\RhII  %2
 
   
-  s1 * 14 | \tempo "Più vivo" 4=155 s1 * 4 \mark\default \barNumberCheck\RhIII %3
+  s1 * 14 | s1 * 4 \mark\default \barNumberCheck\RhIII %3
 
-  s1 * 11 | \tempo\markup{\italic "colla parte"} 4=140 s1 \bar "||" 
-  \time 2/4 \tempo "a tempo" 4=155 s2 \mark\default \barNumberCheck \RhIV \bar "||" %4
+  s1 * 11 |  s1 \bar "||" 
+  \time 2/4  s2 \mark\default \barNumberCheck \RhIV \bar "||" %4
 
-  \time 4/4 \tempo "Allegro" 4=140 s1 * 8  \tag #'score \cadenzaIa s1 
-  \tempo "Moderato" 4=110 s1 * 6  
-  \time 3/2 \tempo\markup{\italic "allarg."} 4=95 s1. \mark\default  \barNumberCheck \RhV %5
+  \time 4/4  s1 * 8  \tag #'score \cadenzaIa s1 
+  s1 * 6  
+  \time 3/2  s1. \mark\default  \barNumberCheck \RhV %5
 
-  \time 4/4 \tempo "a tempo" 4=110  s1 * 3 s2 s4 \tempo\markup{\italic "rit."} 4=100 
-  s4 s1 \tempo "a tempo" 4=110 s1 * 6 \mark\default  \barNumberCheck \RhVI  %6
+  \time 4/4   s1 * 3 s2 s4  
+  s4 s1  s1 * 6 \mark\default  \barNumberCheck \RhVI  %6
 
-  s1 * 6 | \time 2/4 s2 | \time 4/4 s4 \tempo\markup{\italic "colla parte"} 4=100 s4 s2 | 
-  \tempo "a tempo" 4=110 s1 * 3
-  s2 \tempo \markup{\italic "poco rit."} 4=100 s2 |
-  \tempo "a tempo" 4=110 s1 * 4 | \mark\default  \barNumberCheck \RhVII %7
+  s1 * 6 | \time 2/4 s2 |  \time 4/4 s4 s4 s2 | 
+  s1 * 3
+  s2  s2 |
+  s1 * 4 | \mark\default  \barNumberCheck \RhVII %7
 
   s1 * 9 \mark\default  \barNumberCheck \RhVIII %8
 
-  s1 * 2  \tempo\markup{\italic "allarg."} 4=95 s1  
-  \tempo "a tempo" 4=110 s1 * 4 \mark\default  \barNumberCheck \RhIX %9
+  s1 * 2    s1  
+  s1 * 4 \mark\default  \barNumberCheck \RhIX %9
 
-  s1 * 5  s2 \tempo\markup{\italic "rit."} 4=100 s2  
-  \tempo\markup{\italic "accel."} 4=115 s1 * 6  \tempo "Allegro" 4=140 
+  s1 * 5  s2  s2  
+  s1 * 6   
   s1 * 6 \mark\default  \barNumberCheck \RhX %10
 
-  s1 s2 \tempo\markup{\italic "rit."} s2 \tempo "Tempo precedente" 4=115 s1 * 5 
-  \tempo\markup{\italic "poco a poco accel."} 4=125 s1 * 3 \mark\default  \barNumberCheck \RhXI %11
+  s1 s2  s2  s1 * 5 
+  s1 * 3 \mark\default  \barNumberCheck \RhXI %11
 
-  s2 \tempo "Allegro" 4=140 s2  s1 *5 s2 \tempo\markup{\italic "rit"} 4=132 s2 s1 \bar "||"
-  \tempo "Tempo I" 4=120 s1 * 14 \mark\default  \barNumberCheck \RhXII \bar "||" %12
+  s2  s2  s1 *5 s2  s2 s1 \bar "||"
+ s1 * 14 \mark\default  \barNumberCheck \RhXII \bar "||" %12
 
-  \tempo "Più mosso" 4=140 \time 3/2 s1.*2 \bar "||"
+  \time 3/2 s1.*2 \bar "||"
   \time 4/4 s1 * 6 \bar "||"
   \time 3/2 s1.*4 \mark\default  \barNumberCheck \RhXIII \bar "||"
 
-  \time 4/4 s1 * 10 \tempo "Più vivo" 4=155 s1 * 10 \mark\default \barNumberCheck \RhXIV
+  \time 4/4 s1 * 10  s1 * 10 \mark\default \barNumberCheck \RhXIV
 
-  s1 * 10 \tempo "Allegro" 4=145 s1*8 \tempo\markup{\italic "accel."} 4=152 s1*4
-  \time 2/2 \tempo "Allegro molto (Alla breve)" 2=91 s1 * 8 \mark\default \barNumberCheck \RhXV
+  s1 * 10  s1*8   s1*4
+  \time 2/2 s1 * 8 \mark\default \barNumberCheck \RhXV
 
   s1 * 16 \mark\default \barNumberCheck \RhXVI
   
@@ -928,52 +928,34 @@ ViolOneDI=\relative c' {\commonConductor
   \mark\default \barNumberCheck \RhXX |
 }
 ViolOneDIII=\relative c' {\commonConductor
-  \time 2/2 \tempo \markup {
-      \concat {
-        "Alla breve ("
-        \smaller \general-align #Y #DOWN \note #"2" #1
-        " = "
-        \smaller \general-align #Y #DOWN \note #"4" #1
-        )
-      }
-    } 2=72
-    s1 * 18 \mark #40 \barNumberCheck \RhXL
+  \time 2/2 s1 * 18 \mark #40 \barNumberCheck \RhXL
 
     s1 * 20 \mark\default \barNumberCheck \RhXLI
 
     s1 * 18 \mark\default \barNumberCheck \RhXLII
 
-    s1 * 15 \tempo "Più mosso" 2=76 s1 * 8 \mark\default \barNumberCheck \RhXLIII
+    s1 * 15 s1 * 8 \mark\default \barNumberCheck \RhXLIII
 
     s1 * 11 \mark\default \barNumberCheck \RhXLIV
 
     s1 * 12 \mark\default \barNumberCheck \RhXLV
 
-    \tempo "Meno mosso" 2=72 s1 * 15 
-    \tempo\markup{\italic "allarg."} 2=65 s1
-    \tempo "a tempo" 2=72 s1 * 5 \mark\default \barNumberCheck \RhXLVI
+    s1 * 15 
+    s1
+    s1 * 5 \mark\default \barNumberCheck \RhXLVI
 
-    s1 * 8 \tempo "Allegro molto" 2=80 s1 * 4 \mark\default \barNumberCheck \RhXLVII
+    s1 * 8  s1 * 4 \mark\default \barNumberCheck \RhXLVII
 
-    s1 * 2 \tempo\markup{\italic "poco a poco rit."} 2=78 s1 * 10 \tempo\markup{\italic "rit."} 2=76 s1 * 4 \bar "||"
+    s1 * 2 s1 * 10  s1 * 4 \bar "||"
     \numericTimeSignature
-    \time 4/4 \key c\minor
-    \tempo \markup {
-      \concat {
-        "Scherzando ("
-        \smaller \general-align #Y #DOWN \note #"4" #1
-        " = "
-        \smaller \general-align #Y #DOWN \note #"2" #1
-        )
-      }
-    } 4=76 s1 * 2 \mark\default \barNumberCheck \RhXLVIII
+    \time 4/4 \key c\minor s1 * 2 \mark\default \barNumberCheck \RhXLVIII
 
     s1 * 8 \bar "||"
     \time 3/2 s1. \mark\default \barNumberCheck \RhXLIX \bar "||"
 
-    \time 4/4 s1*6 s2. \tempo \markup{\italic "rit."} 4=72 s4 \mark\default \barNumberCheck \RhL
+    \time 4/4 s1*6 s2.  s4 \mark\default \barNumberCheck \RhL
 
-    s1 \tempo "a tempo" 4=76 s1 * 4 \bar "||"
+    s1  s1 * 4 \bar "||"
     \time 3/2 s1.*3 \mark\default \barNumberCheck \RhLI \bar "||"
     R1 |
     r2 ^"div." g'16:32\pMarc af: a: bf:\< cf: c: df: d: |
@@ -982,37 +964,29 @@ ViolOneDIII=\relative c' {\commonConductor
     ef8\f[ r16 bf32\pp bf]  ef8[ r16 bf32 bf] ef8[ r16 bf32 bf] ef8[ r16 bf32 bf] |
     ef8 r r4 r2 | 
 R1 * 2 
-    \tempo\markup{\italic "rit."} 4=76 s1 * 2 \bar "||"
-    \time 3/2 \tempo "Meno mosso" 4=72 s1. * 2 \bar "||"
-    \time 4/4 s1 * 2 \tempo\markup{\italic "poco accel."} 4=76  s1 s2 \tempo\markup{\italic "rit."} 4=73  s2 \mark\default \barNumberCheck \RhLIII
+    s1 * 2 \bar "||"
+    \time 3/2  s1. * 2 \bar "||"
+    \time 4/4 s1 * 2    s1 s2  s2 \mark\default \barNumberCheck \RhLIII
 
-    \tempo "a tempo" 4=76 \grace s8 s1 * 4 \bar "||" 
-    \time 3/2 s1. * 2 s2 \tempo\markup{\italic "rit."} 4=72  s1 \mark\default \barNumberCheck \RhLIV \bar "||"
+    \grace s8 s1 * 4 \bar "||" 
+    \time 3/2 s1. * 2 s2  s1 \mark\default \barNumberCheck \RhLIV \bar "||"
 
-    \time 4/4 \tempo "a tempo" 4=76 s2 \tempo\markup{\italic "accel."} 4=80 s2 s1 * 3 
-    \tempo\markup{\italic "poco a poco rit."} 4=70 s1 * 4 \mark\default \barNumberCheck \RhLV
+    \time 4/4  s2   s2 s1 * 3 
+    s1 * 4 \mark\default \barNumberCheck \RhLV
     
-    \tempo "Lento" 4=60 s1 * 9 \mark\default \barNumberCheck \RhLVI
+     s1 * 9 \mark\default \barNumberCheck \RhLVI
 
-    s1 * 3 \tempo\markup{\italic "rit."} 4=55 s1 
-    \tempo "a tempo come prima" 4=76 s1 * 4 \mark\default \barNumberCheck \RhLVII
+    s1 * 8 
+    \mark\default \barNumberCheck \RhLVII
 
     s1 * 6 \mark\default \barNumberCheck \RhLVIII
 
-    s1 * 8 s2 \tempo\markup{\italic "rit."} 4=72 s2 s1 * 2 \mark\default \barNumberCheck \RhLIX \bar "||"
+    s1 * 8 s2 s2 s1 * 2 \mark\default \barNumberCheck \RhLIX \bar "||"
   
     \defaultTimeSignature
-    \time 2/2 \tempo \markup {
-      \concat {
-        "Tempo I Alla breve ("
-        \smaller \general-align #Y #DOWN \note #"2" #1
-        " = "
-        \smaller \general-align #Y #DOWN \note #"4" #1
-        )
-      }
-    } 2=72 s1 * 13 \mark\default \barNumberCheck \RhLX
+    \time 2/2 s1 * 13  \barNumberCheck \RhLX
 
-    s1 * 7 \tempo "Più vivo" 2=76  s1 * 8 \mark\default \barNumberCheck \RhLXI
+    s1 * 7  s1 * 8 \mark\default \barNumberCheck \RhLXI
 
     s1 * 14 \mark\default \barNumberCheck \RhLXII
 
@@ -1022,41 +996,41 @@ R1 * 2
 
     s1 * 12 \mark\default \barNumberCheck \RhLXIV
 
-    s1 * 4 \tempo "Più mosso" 2=80 s1 * 8 \mark\default \barNumberCheck \RhLXV
+    s1 * 4 s1 * 8 \mark\default \barNumberCheck \RhLXV
 
     s1 * 11 \mark\default \barNumberCheck \RhLXVI
 
-    s1 * 12 \tempo "Più vivo" 2=84 s1 * 6 \mark\default \barNumberCheck \RhLXVII
+    s1 * 12 s1 * 6 \mark\default \barNumberCheck \RhLXVII
 
     s1 * 13 \mark\default \barNumberCheck \RhLXVIII
 
-    s1 * 8 \tempo\markup{\italic "accel."} 2=86  s1 * 4 \mark\default \barNumberCheck \RhLXIX
+    s1 * 8  s1 * 4 \mark\default \barNumberCheck \RhLXIX
 
-    \tempo "Vivace" 2=88 s1 * 16 \mark\default \barNumberCheck \RhLXX
+    s1 * 16 \mark\default \barNumberCheck \RhLXX
 
     s1 * 8 \mark\default \barNumberCheck \RhLXXI
 
     s1 * 10 \mark\default \barNumberCheck \RhLXXII
 
-    s1 * 4 \tempo\markup{\italic "poco a poco accel."} 2=90  s1 * 8 \mark\default \barNumberCheck \RhLXXIII \bar "||"
+    s1 * 4  s1 * 8 \mark\default \barNumberCheck \RhLXXIII \bar "||"
     \key d\major
     s1 * 11 \tag #'score \cadenzaIIIa \mark\default \barNumberCheck \RhLXXIV \bar "||"
   
-    \tempo "Vivacissimo" 2=92 s1 * 4
-    \tempo "Un poco meno mosso" 2=88 s1 * 4
+    s1 * 4
+      s1 * 4
     \time 3/2 s1. * 2
-    \time 2/2 \tempo\markup{\italic "accel."} 2=90  s1 * 2 |
-    \tempo "Tempo precedente" 2=92 s1 * 4 \mark\default \barNumberCheck \RhLXXV
+    \time 2/2   s1 * 2 |
+    s1 * 4 \mark\default \barNumberCheck \RhLXXV
 
-    \tempo "Un poco meno mosso" 2=88 s1 * 4
-    \tempo \markup{\italic "poco a poco accel."} 2=90 s1 * 10 \mark\default \barNumberCheck \RhLXXVI
+     s1 * 4
+     s1 * 10 \mark\default \barNumberCheck \RhLXXVI
 
-    s1 \tempo \markup{\italic "allarg."} 2=84 s1 * 4
-    \tempo\markup{\italic "accel."} 2=86 s1 * 3 
-    \tempo "a tempo" 2=88 s1 * 2 \mark\default \barNumberCheck \RhLXXVII
+    s1  s1 * 4
+     s1 * 3 
+     s1 * 2 \mark\default \barNumberCheck \RhLXXVII
 
-    \tempo "Più vivo" 2=92 s1 * 6 
-    \tempo\markup{\italic "rit."} 2=88 s1 * 2 \mark\default \barNumberCheck \RhLXXVIII
+     s1 * 6 
+     s1 * 2 \mark\default \barNumberCheck \RhLXXVIII
 
     fs,8^"div." cs-. d-. cs-. d-. a-. b-. cs-. |
     d-. cs-. d-. e-. fs-. cs-. d-. e-. |

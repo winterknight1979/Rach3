@@ -39,7 +39,7 @@ conductorI={
   \tempo\markup{\italic "accel."} 4=115 s1 * 6  \tempo "Allegro" 4=140 
   s1 * 6 \mark\default  \barNumberCheck \RhX %10
 
-  s1 s2 \tempo\markup{\italic "rit."} s2 \tempo "Tempo precedente" 4=115 s1 * 5 
+  s1 s2 \tempo\markup{\italic "rit."} 4=125 s2 \tempo "Tempo precedente" 4=115 s1 * 5 
   \tempo\markup{\italic "poco a poco accel."} 4=125 s1 * 3 \mark\default  \barNumberCheck \RhXI %11
 
   s2 \tempo "Allegro" 4=140 s2  s1 *5 s2 \tempo\markup{\italic "rit"} 4=132 s2 s1 \bar "||"

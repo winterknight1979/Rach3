@@ -12,6 +12,7 @@
   \addQuote "OboeOneI" {\keepWithTag #'quote \ObOneI} 
 \include "include/hrn1.ily"
   \addQuote "HrnOneI" {\keepWithTag #'quote \HrnOneI} 
+  \addQuote "HrnOneIII" {\keepWithTag #'quote \HrnOneIII} 
 \include "include/piano.ily"
   \addQuote "PianoII" {\keepWithTag #'quote \PianoUPII}
 \include "include/viol1.ily"
