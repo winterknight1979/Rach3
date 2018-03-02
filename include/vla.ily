@@ -618,7 +618,62 @@ VlaIII=\relative c' {\commonConductor
   af2-- g8( af bf4)\dim |
   gf\p r r2 |
   R1 * 3 \mark\default \barNumberCheck \RhLV \mpbreak |
-
+  R1 * 9 \mark\default \barNumberCheck \RhLVI |
+  r2 r4 ff'--\p\<^\markup{\italic "cantabile"} |
+  ff4.\mf( ef8) d2 |
+  cs4.\cresc( c8) b4( a8 af) |
+  af4\f\dim(-- g8 af a2)\mbreak |
+  bf4\ppp( g2.) |
+  g2.(-- af4) |
+  af1-- |
+  af2.(-- b4) \mark\default \barNumberCheck \RhLVII |
+  c2.( b4) |
+  \arpeggioBracket
+  \set Staff.connectArpeggios=##t
+  c2 <<{\csBracket ef4\arpeggio(\< d)\! }\\{ \csBracket g,2\arpeggio}>> 
+  <bf df>1~\mp\dim |
+  <bf df>4\pp c( bf\< a) \mbreak |
+  af1--\mp\dim |
+  af--\pp\dim^\markup{\italic "ten."} \mark\default \barNumberCheck \RhLVIII |
+  g8\! r
+  \set Staff.midiInstrument="pizzicato strings"
+  d''4^"pizz."\p df c |
+  bf d, df c |
+  bf d,\dim df c\! |
+  R1 * 5 | R1 * 3 \mark\default \barNumberCheck \RhLIX \mbreak \bar "||"
+  \defaultTimeSignature \time 2/2
+  \cueWhileClef "ViolOneIII" "Viol.I" #DOWN "treble" {R1 * 2 | r4^"unis."}
+  \set Staff.midiInstrument="string ensemble 1"
+  \tuplet 3/2 {g''8\upbow\p^"arco"-. g,-. g-.} ef'4->\cresc \tuplet 3/2 {g8-. g,-. g-.} |
+  ef'4-> \tuplet 3/2 {g8-. g,-. g-.} b4-> \tuplet 3/2 {g'8-. g,-. g-.}\mbreak |
+  c4\f-> r8
+  \set Staff.midiInstrument="pizzicato strings"
+  g'8\p^"pizz." g4 r8 g |
+  g4 g8 g g4 g-+^\markup{\italic "m.g."} |
+  g-+^\markup{\italic "m.g."} 
+  \set Staff.midiInstrument="string ensemble 1"
+  \tuplet 3/2 4 {r8 r d\ppLeg\upbow^"arco"-. d-.[ r d-.] ef( d) ef-.} |
+  d4-. \tuplet 3/2 {bf'8-. bf-. a-.} bf4-. \tuplet 3/2 {bf8-.\< bf-. a-.\!} |
+  bf4-.-> r8
+  \set Staff.midiInstrument="pizzicato strings"
+  f-.\p^"pizz." f4-. r8 f-. \mbreak 
+  f4 f8 f f4 f-+^\markup{\italic "m.g."} |
+  f-+^\markup{\italic "m.g."}
+  \set Staff.midiInstrument="string ensemble 1"
+  \tuplet 3/2 4 {r8 r c-.\pp^"arco" c-.[ r c-.] d( c) d-.} |
+  c4-. \tuplet 3/2 {af'8-. af-. g-.} af4-. \tuplet 3/2 {af8-. af-. g-.} |
+  af4-. r
+  \set Staff.midiInstrument="pizzicato strings"
+  ef-.^"pizz." d \mark\default \barNumberCheck \RhLX |
+  c <g ef'>->\mf r <c d>\dim \mbreak |
+  <b d>\! <f df'>->\mf r c'\dim |
+  c\p 
+  \set Staff.midiInstrument="string ensemble 1"
+  <g ef'>-.^"arco" <af f'>-. <g ef'>-. |
+  ef'\< df2\mf\>-- <e, c'>4-.(\! |
+  <f c'>-.) cf'2-- <d, bf'>4-.( |
+  <ef bf'>-.) \tuplet 3/2 {d'8( cs c)} c4(-- bf) |
+  r4 \tuplet 3/2 {g8\mf\upbow-. d-. d-.} d'4-. fs,-. \mpbreak |
 
 }
 
@@ -836,5 +891,41 @@ s1 * 18 \mark #40 \barNumberCheck \RhXL
   r8 ef-. ef4--~ ef8 ef-. ef4-- |
   r8 ef-.\pp ef4-- r8 ef-. ef4-- r8 ef-. ef4-- |
   r8 gf-. gf4-- r8 f-. f4-- r8 bf-. bf4-- |
-  r8 af-. af4-- r8 ef-.\dim ef4-- r8 f-. f4--\! 
+  r8 af-. af4-- r8 ef-.\dim ef4-- r8 f-. f4--\!
+  R1 * 8 | R1 * 9 | R1 * 4 |
+  <>^"div." bf4(\ppp ef,2.) |
+  ef1-- |
+  ef-- |
+  ef2.( f4) |
+  g2.( af4) |
+  g2 bf\< |
+  f1\mp\dim |
+  e2\pp( f)\< |
+  ef1--\mp\dim | 
+  d\pp\dim^\markup{\italic "ten."} |
+  ef8 r d''4^"pizz."\p df c |
+  bf d, df c |
+  bf d,\dim df c\! |
+  R1 * 5 | R1 * 3 | R1 * 4 |
+  <>^"div." c'4\f-> r8
+  g'8\p^"pizz." g4 r8 g |
+  g4 g8 g g4 g-+^\markup{\italic "m.g."} |
+  g-+^\markup{\italic "m.g."} 
+  \tuplet 3/2 4 {r8 d(\upbow\ppLeg^"arco" g,) g-.[ r g-.] c( g) c-. }
+  g4-. \tuplet 3/2 {g'8-. g-. d-.} g4-. \tuplet 3/2 {g8-.\< g-. d-.\!} |
+  f4->-. r8 
+  f-.\p^"pizz." f4-. r8 f-. \mbreak  |
+  f4 f8 f f4 f-+^\markup{\italic "m.g."} |
+  f-+^\markup{\italic "m.g."}
+  \tuplet 3/2 {r8 c^"arco"\pp( f,) f[-. r f]-. bf( f) bf-. } |
+  f4-. \tuplet 3/2 {f'8-. f-. c-.} f4-. \tuplet 3/2 {f8-. f-. c-.} |
+  f4-. r c^"pizz." b |
+  c e,->\mf r a\dim |
+  g\! df->\mf r bf'\dim |
+  af\p c-.^"arco" bf-. bf-. |
+  a-.\< <f bf>2--\mf\> bf4\!-.( |
+  af)-. <ef af>2-- af4-.( |
+  g-.) bf-. f2-- 
+  r4 \tuplet 3/2 {g8\mf\upbow-. d-. d-.} d'4-. fs,-. \mpbreak |
+
 }

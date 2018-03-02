@@ -19,6 +19,7 @@
 
 \include "include/viol1.ily"
   \addQuote "ViolOneI" {\keepWithTag #'quote \ViolOneI} 
+  \addQuote "ViolOneIII" {\keepWithTag #'quote \ViolOneIII} 
 \include "include/bass.ily"
   \addQuote "BassIII" {\keepWithTag #'quote \BassIII} 
 
@@ -80,7 +81,7 @@
         \keepWithTag #'part \new GrandStaff
       <<
       \new Staff 
-        \with {\consists "Page_turn_engraver"} 
+        \with {\consists "Page_turn_engraver" \consists "Span_arpeggio_engraver"} 
         <<\VlaIII \conductorIII>>
        \new Staff 
         \with {\consists "Page_turn_engraver" 
