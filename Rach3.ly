@@ -31,7 +31,7 @@
 \include "include/perc.ily"
 \include "include/viol1.ily"
 \include "include/viol2.ily"
-
+\include "include/vla.ily"
 
      \score{
  
@@ -43,51 +43,51 @@
       { instrumentName = #"2 Flauti"
         shortInstrumentName = #"Fl."
         midiInstrument = #"flute"}
-        \unfoldRepeats \articulate <<{\FlOneI \FlOneII \FlOneIII} \\ {\FlTwoI \FlTwoII \FlTwoIII}>>
+        \articulate \unfoldRepeats <<{\FlOneI \FlOneII \FlOneIII} \\ {\FlTwoI \FlTwoII \FlTwoIII}>>
        \new Staff \with
       { instrumentName = #"2 Oboi"
         shortInstrumentName = #"Ob."
         midiInstrument = #"oboe"}
-        \unfoldRepeats \articulate <<{\ObOneI \ObOneII \ObOneIII} \\ {\ObTwoI \ObTwoII \ObTwoIII}>>
+        \articulate \unfoldRepeats <<{\ObOneI \ObOneII \ObOneIII} \\ {\ObTwoI \ObTwoII \ObTwoIII}>>
         \new Staff \with
       { instrumentName = #"2 Clarinetti"
         shortInstrumentName = #"Cl."
         midiInstrument = #"clarinet"}
-        \unfoldRepeats \articulate <<{\ClOneI \ClOneII \ClOneIII} \\ {\ClTwoI \ClTwoII \ClTwoIII}>>
+        \articulate \unfoldRepeats <<{\ClOneI \ClOneII \ClOneIII} \\ {\ClTwoI \ClTwoII \ClTwoIII}>>
          \new Staff \with
       { instrumentName = #"2 Fagotti"
         shortInstrumentName = #"Fag."
         midiInstrument = #"bassoon"}
-        \unfoldRepeats \articulate <<{\BsnOneI \BsnOneII \BsnOneIII} \\ {\BsnTwoI \BsnTwoII \BsnTwoIII}>>
+        \articulate \unfoldRepeats <<{\BsnOneI \BsnOneII \BsnOneIII} \\ {\BsnTwoI \BsnTwoII \BsnTwoIII}>>
           \new Staff \with
       { instrumentName = #"4 Corni"
         shortInstrumentName = #"Cor."
         midiInstrument = #"french horn"}
-        \unfoldRepeats \articulate <<{\HrnOneI \HrnOneII \HrnOneIII} \\ {\HrnTwoI \HrnTwoII \HrnTwoIII} \\ 
+        \articulate \unfoldRepeats <<{\HrnOneI \HrnOneII \HrnOneIII} \\ {\HrnTwoI \HrnTwoII \HrnTwoIII} \\ 
           {\HrnThreeI \HrnThreeII \HrnThreeIII} \\ {\HrnFourI \HrnFourII \HrnFourIII}>>
           \new Staff \with
       { instrumentName = #"2 Trombe"
         shortInstrumentName = #"Tr."
         midiInstrument = #"trumpet"}
-        \unfoldRepeats \articulate <<{\TptOneI \TptOneII \TptOneIII} \\ {\TptTwoI \TptTwoII \TptTwoIII}>>
+        \articulate \unfoldRepeats <<{\TptOneI \TptOneII \TptOneIII} \\ {\TptTwoI \TptTwoII \TptTwoIII}>>
         \new Staff \with
         { instrumentName = #"3 Tromboni"
         shortInstrumentName = #"Tb."
         midiInstrument = #"trombone"}
-        \unfoldRepeats \articulate <<{\conductorI \TromOneII \TromOneIII} \\ {\conductorI \TromTwoII \TromTwoIII} \\ 
+        \articulate \unfoldRepeats <<{\conductorI \TromOneII \TromOneIII} \\ {\conductorI \TromTwoII \TromTwoIII} \\ 
           {\conductorI \TromThreeII \TromThreeIII} >>
           \new Staff \with
       { instrumentName = #"Tuba"
         shortInstrumentName = #"Tu."
         midiInstrument = #"tuba"}
-        \unfoldRepeats \articulate {\conductorI \TubaII \TubaIII} 
+        \articulate \unfoldRepeats {\conductorI \TubaII \TubaIII} 
         \new Staff \with
       { instrumentName = #"Timpani"
         shortInstrumentName = #"Timp."
         midiInstrument = #"timpani"}
-        \unfoldRepeats \articulate {\TimpI \TimpII \TimpIII} 
+        \articulate \unfoldRepeats {\TimpI \TimpII \TimpIII} 
         \new DrumStaff
-        \unfoldRepeats \articulate <<
+        \articulate \unfoldRepeats <<
           \new DrumVoice {\conductorI \conductorII \SDIII}
           \new DrumVoice {\conductorI \BDII \BDIII }
           \new DrumVoice {\conductorI \CymII \CymIII}
@@ -96,12 +96,17 @@
       { instrumentName = #"Violins"
         shortInstrumentName = #"Vln."
         midiInstrument = #"string ensemble 1"}
-        \unfoldRepeats \articulate {<<\ViolOneI \ViolOneDI>> \ViolOneII <<\ViolOneIII \ViolOneDIII>>} 
+        \articulate \unfoldRepeats {<<\ViolOneI \ViolOneDI>> \ViolOneII <<\ViolOneIII \ViolOneDIII>>} 
            \new Staff \with
       { instrumentName = #"Violins"
         shortInstrumentName = #"Vln."
         midiInstrument = #"string ensemble 1"}
-        \unfoldRepeats \articulate {<<\ViolTwoI \ViolTwoDI>> <<\ViolTwoII \ViolTwoDII>> <<\ViolTwoIII \ViolTwoDIII>>} 
+        \articulate \unfoldRepeats {<<\ViolTwoI \ViolTwoDI>> <<\ViolTwoII \ViolTwoDII>> <<\ViolTwoIII \ViolTwoDIII>>} 
+            \new Staff \with
+      { instrumentName = #"Violas"
+        shortInstrumentName = #"Vla."
+        midiInstrument = #"string ensemble 1"}
+        \articulate \unfoldRepeats {<<\VlaI \VlaDI>> <<\VlaII \VlaDII>> <<\VlaIII \VlaDIII>>} 
       
       >>
         \header{piece=\markup\huge "I"}

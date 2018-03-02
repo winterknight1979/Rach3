@@ -162,7 +162,7 @@
            {instrumentName=#"Viole"
            shortInstrumentName="V.le"
             \remove "Keep_alive_together_engraver"} <<
-              \new Staff {\VlaI}
+              \new Staff \with {\consists "Span_arpeggio_engraver"} {\VlaI}
               \new Staff \with {\override VerticalAxisGroup.remove-first=##t} {\VlaDI} >>
             
 

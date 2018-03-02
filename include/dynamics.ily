@@ -22,6 +22,10 @@ mpPMarc = \tweak DynamicText.self-alignment-X #LEFT
   #(make-dynamic-script (markup #:dynamic "mp" #:normal-text #:italic "poco marc."))
 
 
+pBenTen = \tweak DynamicText.self-alignment-X #LEFT 
+  #(make-dynamic-script (markup #:dynamic "p" #:normal-text #:italic "ben tenuto"))
+
+
 
 pPMarc = \tweak DynamicText.self-alignment-X #LEFT 
   #(make-dynamic-script (markup #:dynamic "p" #:normal-text #:italic "poco marcato"))
@@ -74,6 +78,7 @@ ffBenTen = \tweak DynamicText.self-alignment-X #LEFT
        ("pMarc"     . 0.55)
        ("pPMarc"    . 0.55)
        ("pComm"     . 0.55)
+       ("pBenTen"   . 0.55)
        ("sempreP"   . 0.55)
        ("ppDolce"   . 0.49)
        ("ppLeg"     . 0.49)

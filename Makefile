@@ -43,7 +43,7 @@ SCOREFILES=${HEADERS} ${FLUTEFILES} ${OBOEFILES} ${CLARFILES} ${BSNFILES} ${HRNF
 	    ${TPTFILES} ${LBFILES} ${PERCFILES} include/piano.ily include/viol1.ily include/viol2.ily \
 	    include/vla.ily include/cello.ily include/bass.ily
 
-all: flutes oboes clarinets bassoons horns trumpets lowbrass percussion violins score Rach3.mid
+all: flutes oboes clarinets bassoons horns trumpets lowbrass percussion violins violas score Rach3.mid
 
 score: score.a4.pdf score.letter.pdf
 flutes: flutes.a4.pdf flutes.letter.pdf
@@ -55,6 +55,7 @@ trumpets: trumpets.a4.pdf trumpets.letter.pdf
 lowbrass: lowbrass.a4.pdf lowbrass.letter.pdf
 percussion: percussion.a4.pdf percussion.letter.pdf
 violins: violinsI.a4.pdf violinsI.letter.pdf violinsII.a4.pdf violinsII.letter.pdf
+violas: violas.a4.pdf violas.letter.pdf
 
 %.mid: %.ly
 	${LILY} -dmidi-extension=mid -s  $< 2>&1 | tee $*.mid.log
@@ -87,6 +88,9 @@ violinsI.a4.pdf: violinsI.ly include/viol1.ily ${HEADERS} ${VIOLICUES}
 violinsI.letter.pdf: violinsI.ly include/viol1.ily ${HEADERS} ${VIOLICUES}
 violinsII.a4.pdf: violinsII.ly include/viol2.ily ${HEADERS} ${VIOLIICUES}
 violinsII.letter.pdf: violinsII.ly include/viol2.ily ${HEADERS} ${VIOLIICUES}
+violas.a4.pdf: violas.ly include/vla.ily ${HEADERS} ${VIOLACUES}
+violas.letter.pdf: violas.ly include/vla.ily ${HEADERS} ${VIOLACUES}
+
 
 
 Rach3.mid: Rach3.ly ${SCOREFILES}

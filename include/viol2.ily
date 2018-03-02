@@ -587,7 +587,8 @@ ViolTwoIII=\relative c' {\commonConductor
   r8. bf,16\p^"pizz." g8[ r16 bf] g8[ r16 bf] g8[ r16 bf] |
   g4 r r2 \bar "||"
   \time 3/2 R1. * 2 \bar "||"
-  \time 4/4 r2 r4 gs\pp\< |
+  \set Staff.midiInstrument="string ensemble 1"
+  \time 4/4 r2 r4 gs\pp\<^"arco" |
   gs\>--~ gs8 \! r r4 b\< |
   b\>--~ b8 r r4 d\cresc |
   f( d2)\dim <af d>4\arpeggio \mark\default \barNumberCheck \RhLIII \mbreak |
@@ -702,27 +703,27 @@ ViolTwoIII=\relative c' {\commonConductor
   R1 * 11 \mbreak |
   r4 r8 a-.\pppLeg c-. c-. c-. c-. |
   a-. a-. a-. a-. a-. a-. a-. c-. |
-  e2:8-. ef:-. |
-  d:-. df:-.
-  c:-. b8-. bf-. bf-. b-. |
+  \repeat tremolo 4 e8-. \repeat tremolo 4 ef-. |
+  \repeat tremolo 4 d-. \repeat tremolo 4 df-.
+  \repeat tremolo 4 c-. b8-. bf-. bf-. b-. |
   bf-. a-. a-. bf-. c2:-. \mark\default \barNumberCheck \RhLXVII |
   a4-. r8 a-.\ppp c-. c-. c-. c-. \mbreak |
   a-. a-. a-. a-. a-. a-. a-. c-. |
-  \nextCresc "poco a poco cresc." c2:-.\< d:-. |
-  d:-. df:-. |
-  c:-. e:-. |
-  e:-. ef:-. |
+  \nextCresc "poco a poco cresc." \repeat tremolo 4 c8-.\< \repeat tremolo 4 d-. |
+   \repeat tremolo 4 d-.  \repeat tremolo 4 df-. |
+   \repeat tremolo 4 c-.  \repeat tremolo 4 e-. |
+   \repeat tremolo 4 e-.  \repeat tremolo 4 ef-. |
   d8-. ef-. ef-. e-. f-. e-. e-. f-. |
   e-. f-. f-. fs-. g-. fs-. fs-. f-. |
   fs-.\< g-. g-. a-.\! a-. bf-. bf-. c-. \mpbreak |
   bf-.\mf a-. a-. bf-. \nextDim "poco a poco dim." g\>-. a-. a-. bf-. |
   a-. g-. g-. a-. bf-. a-. a-. bf-. |
   g-. fs-. fs-. g-. a-. g-. g-. a-. |
-  g-. fs-. fs-. g-. fs2: \mark\default \barNumberCheck \RhLXVIII |
-  d:\p-. cs:-. |
-  g':-. <f a>:^"div"-.\dim |
-  <f a>:-. <e g>:-.\mbreak |
-  <d f>:-. <a ef'>:-. |
+  g-. fs-. fs-. g-. \repeat tremolo 4 fs8 \mark\default \barNumberCheck \RhLXVIII |
+  \repeat tremolo 4 d\p-. \repeat tremolo 4 cs-. |
+  \repeat tremolo 4 g'-. \repeat tremolo 4 <f a>^"div"-.\dim |
+  \repeat tremolo 4 <f a>-. \repeat tremolo 4 <e g>-.\mbreak |
+  \repeat tremolo 4 <d f>-. \repeat tremolo 4 <a ef'>-. |
   <bf d>4-.\pp r r2 | R1 * 2 |
   bf1--\mf\>\downbow( |
   bf4.\pp-- <bf d>8-.) <bf d>4.--(\upbow\cresc <bf d>8-.) |

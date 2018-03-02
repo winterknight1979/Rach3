@@ -34,6 +34,7 @@ commonConductor = {
   \set Staff.soloIIText = #"II"
   \override DynamicTextSpanner.style=#'none
   \override TupletBracket.bracket-visibility=##f
+  \override Beam.breakable=##t
   %\tag #'part \markLengthOn
   %\tag #'midi \set Score.currentBarNumber = #1
 }
