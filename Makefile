@@ -93,7 +93,7 @@ violinsII.letter.pdf: violinsII.ly include/viol2.ily ${HEADERS} ${VIOLIICUES}
 violas.a4.pdf: violas.ly include/vla.ily ${HEADERS} ${VIOLACUES}
 violas.letter.pdf: violas.ly include/vla.ily ${HEADERS} ${VIOLACUES}
 cellos.a4.pdf: cellos.ly include/cello.ily ${HEADERS} ${CELLOCUES}
-cellos.letter.pdf: cello.ly include/cello.ily ${HEADERS} ${CELLOCUES}
+cellos.letter.pdf: cellos.ly include/cello.ily ${HEADERS} ${CELLOCUES}
 
 
 
