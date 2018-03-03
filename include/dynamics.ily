@@ -54,6 +54,9 @@ mfMarc = \tweak DynamicText.self-alignment-X #LEFT
 fCant = \tweak DynamicText.self-alignment-X #LEFT 
   #(make-dynamic-script (markup #:dynamic "f" #:normal-text #:italic "cantabile"))
 
+fPes = \tweak DynamicText.self-alignment-X #LEFT 
+  #(make-dynamic-script (markup #:dynamic "f" #:normal-text #:italic "pesante"))
+
 fMarc = \tweak DynamicText.self-alignment-X #LEFT 
   #(make-dynamic-script (markup #:dynamic "f" #:normal-text #:italic "marcato"))
 fMMarc = \tweak DynamicText.self-alignment-X #LEFT 
@@ -87,6 +90,7 @@ ffBenTen = \tweak DynamicText.self-alignment-X #LEFT
        ("mpPMarc"   . 0.61)
        ("mfCant"    . 0.68)
        ("mfMarc"    . 0.68)
+       ("fPes"      . 0.75)
        ("fCant"     . 0.75)
        ("fMarc"     . 0.75)
        ("fMMarc"    . 0.75)

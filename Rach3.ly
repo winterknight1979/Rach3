@@ -32,6 +32,7 @@
 \include "include/viol1.ily"
 \include "include/viol2.ily"
 \include "include/vla.ily"
+\include "include/cellos.ily"
 
      \score{
  
@@ -107,6 +108,11 @@
         shortInstrumentName = #"Vla."
         midiInstrument = #"string ensemble 1"}
         \articulate \unfoldRepeats {<<\VlaI \VlaDI>> <<\VlaII \VlaDII>> <<\VlaIII \VlaDIII>>} 
+             \new Staff \with
+      { instrumentName = #"Cellos"
+        shortInstrumentName = #"Vc."
+        midiInstrument = #"string ensemble 1"}
+        \articulate \unfoldRepeats {<<\CellI \CellDI>> <<\CellII \CellDII>> <<\CellIII \CellDIII>>} 
       
       >>
         \header{piece=\markup\huge "I"}
