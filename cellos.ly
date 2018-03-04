@@ -8,7 +8,10 @@
 
 \include "include/cello.ily"
 
-
+\include "include/hrn1.ily"
+  \addQuote "HrnOneI" {\keepWithTag #'quote \HrnOneI}
+\include "include/piano.ily"
+  \addQuote "PianoII" {\keepWithTag #'quote \PianoUPII}
 
 \paper{ 
   #(layout-set-staff-size 19)

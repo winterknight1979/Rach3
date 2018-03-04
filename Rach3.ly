@@ -32,7 +32,7 @@
 \include "include/viol1.ily"
 \include "include/viol2.ily"
 \include "include/vla.ily"
-\include "include/cellos.ily"
+\include "include/cello.ily"
 
      \score{
  
