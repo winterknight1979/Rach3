@@ -612,6 +612,41 @@ CellIII=\relative c {\commonConductor
   bf4-.) r r \tuplet 3/2 {bf8-.[ r bf-.](} |
   bf4-.)\pp r r2 |
   R1 * 3 \mbreak \bar "||"
+  \numericTimeSignature \time 4/4 \key c\minor
+  bf4.^"con sord."\p-- bf8-. bf4.-- bf8-. |
+  bf4--\dim bf8-.( bf-.) bf4.-- bf8-. \mark\default \barNumberCheck \RhXLVIII |
+  bf4.\ppp bf8-. bf2--~
+  bf4 bf8-.( bf-.) bf4.-- bf8-. |
+  b4.-- b8-. b2--~ |
+  b4 b8-.( b8-.) b4.--\< b8-. |
+  cf4.--\mp cf8-. cf4.--\dim cf8-. |
+  cf4.-- cf8-. cf4.-- cf8-. \mbreak |
+  bf4--\pp bf8-.( bf-.) bf4.-- bf8-. |
+  bf4.-- ef,8-. af4.-- af8-. \bar "||"
+  \time 3/2 bf4-- bf8-.( bf-.) bf4.-- bf8-. bf2-- \mark\default \barNumberCheck \RhXLIX \bar "||"
+  \time 4/4 bf4.--\pp bf8-. bf2--~ |
+  bf4.\< bf8-. cf2\mf\> |
+  bf4.\pp-- bf8-. bf4.-- bf8-. |
+  bf4.--\< g'8-. g2\mf\> \mbreak |
+  g1--~\pp | g~ | g8 r r4 r2 \mark\default \barNumberCheck \RhL |
+  bf,4.--\ppp bf8-. bf4.-- bf8-. |
+  bf4.-- r8 r2 |
+  R1 * 3 \bar "||"
+  \time 3/2 g'1\ppp( gf2\<) |
+  f\>( e)\! ef |
+  g(~ g4 f8 g) f4.^\markup{\italic "ten."}\dim( ef8) \mark\default \barNumberCheck \RhLI \mpbreak \bar "||"
+  \time 4/4 ef1--~\pp |
+  ef2\cresc g--\mf\> |
+  ef1\p~ |
+  ef2\cresc <ef cf'>--\mf\> |
+  <ef bf'>1\p\dim~ |
+  <ef bf'>\pp~ |
+  <ef bf'>~ |
+  <ef bf'>~ \mark\default \barNumberCheck \RhLII |
+  <ef bf'>8 r16
+  \set Staff.midiInstrument="pizzicato strings"
+  f\p^"pizz." g8[ r16 f] g8[ r16 f] g8[ r16 f] |
+  g4 r r2 \mbreak\bar "||"
 }
 
 % Divisi
@@ -801,7 +836,50 @@ CellDIII=\relative c {\commonConductor
     <e, b'> r <e b'>\p r |
     <e b'>\cresc r <e b'> r |
     <e b'>\! r r2 |
-    R1 * 3 |
+    R1 * 3 | R1 * 6 |
+
+  \tempo "Meno mosso" 2=72 s1 * 15 
+    \tempo\markup{\italic "allarg."} 2=65 s1
+    \tempo "a tempo" 2=72 s1 * 5 \mark\default \barNumberCheck \RhXLVI
+
+    s1 * 8 \tempo "Allegro molto" 2=80 s1 * 4 \mark\default \barNumberCheck \RhXLVII
+
+    s1 * 2 \tempo\markup{\italic "poco a poco rit."} 2=78 s1 * 10 \tempo\markup{\italic "rit."} 2=76 s1 * 4 \bar "||"
+    \numericTimeSignature
+    \time 4/4 \key c\minor <>^"div." ef4.--\p^"con sord." ef8-. ef4.-- ef8-. |
+    ef4--\dim ef8-.( ef-.) ef4.-- ef8-. |
+    ef4.\ppp-- ef8-. ef2--~ |
+    ef4 ef8-.( ef-.) ef4.-- ef8-. |
+    ef4.-- ef8-. ef2--~ |
+    ef4 ef8-.( ef-.) ef4.--\< ef8-. |
+    ef4.--\mp ef8-. ef4.--\dim ef8-. |
+    ef4.-- ef8-. ef4.-- ef8-. |
+    ef4--\pp ef8-.( ef-.) ef4.-- ef8-. |
+    ef4.-- ef8-. af4.-- af8-. \bar "||"
+    \time 3/2 bf4-- bf8-.( bf-.) bf4.-- bf8-. bf2-- \bar "||"
+    ef,4.--\pp ef8-. ef2--~ |
+    ef4.\< ef8-. ef2\mf--\> |
+    ef4.\pp ef8-. ef4.-- ef8-. |
+    ef4.--\< <ef bf'>8-. <ef cf'>2\mf\>-- |
+    <ef bf'>1\pp--~ | <ef bf'>~ | <ef bf'>8 r r4 r2 |
+    ef4.\ppp-- ef8-. ef4.-- ef8-. |
+    ef4.-- r8 r2 | R1 * 3 \bar "||"
+    \time 3/2 <ef bf'>1.\ppp\< |
+    bf'2\>( c)\! af |
+    bf1 bf2--^\markup{\italic "ten."}\dim \bar "||"
+    \time 4/4 <ef, bf'>1\pp~ |
+    <ef bf'>2\cresc <ef cf'>\mf\> |
+    <ef bf'>1\p~ |
+    <ef bf'>2\cresc <ef cf'>\mf\> |
+    <ef bf'>1~\p\dim |
+    <ef bf'>~\pp |
+    <ef bf'>~ |
+    <ef bf'>~ |
+    <ef bf'>8 r16
+    \set Staff.midiInstrument="pizzicato strings"
+    bf'\p^"pizz." ef8[ r16 bf]  ef8[ r16 bf]  ef8[ r16 bf] |
+    ef4 r r2 \bar "||"
+
 }
 
 
