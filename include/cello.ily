@@ -647,6 +647,49 @@ CellIII=\relative c {\commonConductor
   \set Staff.midiInstrument="pizzicato strings"
   f\p^"pizz." g8[ r16 f] g8[ r16 f] g8[ r16 f] |
   g4 r r2 \mbreak\bar "||"
+  \time 3/2 R1. * 2 \bar "||"
+  \time 4/4 \set Staff.midiInstrument="string ensemble 1"
+  r2 r4^"unis." b,^"arco"\pp\< |
+  <e, b'>^\markup{\italic "ten."}\>~-- <e b'>8\! r r4 d'\< |
+  <g, d'>^\markup{\italic "ten."}\>~-- <g d'>8\! r r4 \nextCresc "poco cresc." f'\< |
+  b,( d) f(\dim bf,)~ \mark\default \barNumberCheck \RhLIII \mbreak |
+  \grace s8 bf8\! r <ef, bf'>4\pp--~^"div." <ef bf'>8 <ef bf'>-. <ef cf'>4-- |
+  r8 <ef bf'>-. <ef bf'>4--~ <ef bf'>8 <ef cf'>-. <ef cf'>4-- |
+  r8 <ef c'>-. <ef c'>4--~ <ef c'>8 <ef c'>-. <ef cf'>4-- |
+  r8 <ef c'>-. <ef c'>4--~ <ef c'>8 <ef c'>-. <ef c'>4-- \bar "||"
+  \time 3/2 r8 <ef bf'>-.\pp <ef bf'>4-- r8 <ef bf'>-. <ef bf'>4-- r8 <ef bf'>-. <ef bf'>4-- \mbreak |
+  r8 bf'-.^"unis." bf4-- r8 bf-. bf4-- r8 c-. c4-- |
+  r8^"div." <f, ef'>-. <f ef'>4-- r8 <g ef>-.\dim <a ef'>4-- r8^"unis." bf8-. bf4--\! \mark\default \barNumberCheck \RhLIV \bar "||"
+  \time 4/4 r4 ef'\mf-\markup{\italic "cantabile"}\< ff8(\! ef df4) |
+  cf8( df ef4)\> bf2--\! |
+  df8( cf bf4) a8( bf c4)\mbreak |
+  af2-- g8(\dim af bf4)\! |
+  gf4 gf\mf\< bff8(\! af g4) |
+  f8( g af4) ff2-- |
+  ef8(\dim g gf4) d8( ef) f4 |
+  df4.--\p( ff8) c4.(\pp ef8) \mark\default \barNumberCheck \RhLV |
+  b4\pp r r2 |
+  R1 * 8 \mark\default \barNumberCheck \RhLVI \mbreak |
+  R1 |
+  g'2\mf fs |
+  es\cresc e4.\<( f8) |
+  ef2--\f( cf)\dim |
+  bf2.\ppp( cf4) |
+  bf2.--( cf4) |
+  c2.--( cf4) |
+  c2.--( d4) \mark\default \barNumberCheck \RhLVII \mbreak |
+  ef2.( d4) |
+  ef2( bf)\< |
+  bf1\mp\dim |
+  c\pp\< |
+  ef\mp\dim |
+  d--\pp\dim \mark\default \barNumberCheck \RhLVIII |
+  ef8\ppp r r4 r2 |
+  R1 \mbreak |
+  r2 r4 c(\mp--~ |
+  c bf2\dim g4) |
+  ef1\ppp~ ef~ ef8 r r4 r2 |
+  R1 | R1 * 3 \mark\default \barNumberCheck \RhLIX \mpbreak \bar "||"
 }
 
 % Divisi
@@ -879,6 +922,26 @@ CellDIII=\relative c {\commonConductor
     \set Staff.midiInstrument="pizzicato strings"
     bf'\p^"pizz." ef8[ r16 bf]  ef8[ r16 bf]  ef8[ r16 bf] |
     ef4 r r2 \bar "||"
+    \time 3/2 \tempo "Meno mosso" 4=72 s1. * 2 \bar "||"
+    \time 4/4 s1 * 2 \tempo\markup{\italic "poco accel."} 4=76  s1 s2 \tempo\markup{\italic "rit."} 4=73  s2 \mark\default \barNumberCheck \RhLIII
+
+    \tempo "a tempo" 4=76 \grace s8 s1 * 4 \bar "||" 
+    \time 3/2 s1. * 2 s2 \tempo\markup{\italic "rit."} 4=72  s1 \mark\default \barNumberCheck \RhLIV \bar "||"
+
+    \time 4/4 \tempo "a tempo" 4=76 s2 \tempo\markup{\italic "accel."} 4=80 s2 s1 * 3 
+    \tempo\markup{\italic "poco a poco rit."} 4=70 s1 * 4 \mark\default \barNumberCheck \RhLV
+    
+    \tempo "Lento" 4=60 s1 * 9 \mark\default \barNumberCheck \RhLVI
+    R1^"div." |
+    <ef, bf>2\mf gs | 
+    cs\cresc a4.\<( af8) |
+    <c,~ a'>4\f( <c g'>8 c'\dim ef2) |
+    ef,1\ppp | ef-- | ef-- | ef-- \mbreak |
+    ef-- | ef--\< |
+    bf'\mp\dim | c\pp\< | af\mp\dim | bf\pp\dim-- | ef,8\ppp r r4 r2 | R1 |
+    r2 r4 c'\mp(~ | c bf2\dim  g4) |
+    ef1\ppp~ | ef~ | ef8 r r4 r2 |
+    R1 | R1 * 3 \bar "||"
 
 }
 
