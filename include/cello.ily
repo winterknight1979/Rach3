@@ -886,8 +886,70 @@ CellIII=\relative c {\commonConductor
   <e' a>4\sff r r2\fermata
   \tag #'score \cadenzaIIIa 
   \mark\default \barNumberCheck \RhLXXIV \mpbreak \bar "||"
-
-
+  R1 * 4 |
+  r4 a,\p\upbow( b2~) |
+  b4 d\cresc( fs2~) |
+  fs4 a( d2~) | d1 |
+  \time 3/2 d,2\f-\markup{\italic "pesante"} cs c |
+  b bf a \mbreak |
+  \time 2/2 <>^"div." <<{a4( a') gs2\dim | g1 | fs2\p} \\
+  {d,2( e) | g( a)~ | a }>> r2 |
+  R1 * 3 \mark\default \barNumberCheck \RhLXXV |
+  r4^"unis." a\p\upbow( b2~) |
+  b4 d\cresc( fs2~) \mbreak |
+  fs4 a( d2~ |
+  d2. cs4) |
+  b(\f a2 b4) |
+  b--( g2 b4) |
+  \clef tenor d(\< fs2\! e4) |
+  cs( b2 cs4) \mbreak |
+  cs--( a2 cs4) |
+  e(\< g2\! fs4) |
+  ds2(\cresc e4 fs) |
+  fs(\< a2\!  g4) |
+  \clef treble e2( fs4 g) |
+  gs(\< b2\! a4) \mark\default \barNumberCheck \RhLXXVI \mbreak | 
+  fs( g a) as-- |
+  b--\< c2(\! b4) |
+  b2--\ff cs4--\< d--\! |
+  cs2-- b4-- cs-- |
+  a2.--\> b4(\! |
+  g a) fs2~( \mbreak |
+  fs4 g) \clef tenor  e2(~ |
+  e4 fs) d2(~ |
+  d4 e) cs( d) |
+  \clef bass b2 bf4\>( c) \mark\default \barNumberCheck \RhLXXVII |
+  a2\f gs4( bf) |
+  g2.( a4) |
+  fs2 fs4--\dim( g) |
+  e2.( fs4) |
+  d\downbow\mf( fs2 a4 \mbreak |
+  bf^"unis"\cresc \clef treble d2\< fs4) |
+  bf2--\ff g4( ef) |
+  d( \clef bass a2)\> g4(\> \mark\default \barNumberCheck \RhLXXVIII |
+  fs) r8 ^"non div." <a, fs'>-.\upbow\f <a fs'>4.\downbow-- <a fs'>8 |
+  <a fs'>4.-- <e' a>8-. <fs a>4.-- <a, fs'>8-.\cresc( |
+  <a fs'>4-.) a->~\downbow a8 a-. a4--~ \mbreak |
+  a4 e'-. bf'-. <g a>-. |
+  <fs a>-.\ff \set Staff.midiInstrument="pizzicato strings" r <d, bf' f'>^"pizz."\f r |
+  <d a' fs'> r <af' d c'> r |
+  <d, bf' f' bf> r <d bf' fs'> r |
+  \set Staff.midiInstrument="string ensemble 1" <ef bf' g'>\f->^"arco" bf''-. e,-. a-. 
+  \mark\default \barNumberCheck \RhLXXIX |
+  d,->\fMarc fs-. g-. gs-. |
+  a-. d,-. f-. fs-. \mbreak |
+  g-. d-. ef-. e-. |
+  fs-. g-. bf-. <e, a>-> |
+  <d a'>-> r r2 |
+  <d, a' fs' d'>4\ff r r2 |
+  <d a' fs' d'>4 r <d a' fs' d'> r |
+  r2 <d a' fs' d'>4 r \mbreak |
+  r <d a'>2:\downbow <a' d>4: |
+  <a d>4: <a d>2: <d a'>4: |
+  <d a'>: <fs a>: <fs a>: <g a>: |
+  <fs a>\sff r <a, e' cs'>\sff r |
+  <d, a' fs' d'>\sff r a'-> a8-> a-> |
+  <a d>4-> r r2 \barNumberCheck \EndMIII \bar "|."
   }
 
 % Divisi
@@ -1189,7 +1251,35 @@ CellDIII=\relative c {\commonConductor
     <g d' bf'> r <c, g' e'> r |
     <a' g'> r fs' r |
     g\p r a,2^"arco"
+    s1 * 7 \tempo\markup{\italic "accel."} 2=86  s1 * 4 \mark\default \barNumberCheck \RhLXIX
 
+    \tempo "Vivace" 2=88 s1 * 16 \mark\default \barNumberCheck \RhLXX
+
+    s1 * 8 \mark\default \barNumberCheck \RhLXXI
+
+    s1 * 10 \mark\default \barNumberCheck \RhLXXII
+
+    s1 * 4 \tempo\markup{\italic "poco a poco accel."} 2=90  s1 * 8 \mark\default \barNumberCheck \RhLXXIII \bar "||"
+    \key d\major
+    s1 * 11 \tag #'score \cadenzaIIIa \mark\default \barNumberCheck \RhLXXIV \bar "||"
+  
+    \tempo "Vivacissimo" 2=92 s1 * 4
+    \tempo "Un poco meno mosso" 2=88 s1 * 4
+    \time 3/2 s1. * 2
+    \time 2/2 \tempo\markup{\italic "accel."} 2=90  s1 * 2 |
+    \tempo "Tempo precedente" 2=92 s1 * 4 \mark\default \barNumberCheck \RhLXXV
+
+    \tempo "Un poco meno mosso" 2=88 s1 * 4
+    \tempo \markup{\italic "poco a poco accel."} 2=90 s1 * 10 \mark\default \barNumberCheck \RhLXXVI
+
+    s1 \tempo \markup{\italic "allarg."} 2=84 s1 * 4
+    \tempo\markup{\italic "accel."} 2=86 s1
+    \clef treble fs''4 g \clef tenor  as,2 |
+    b2.( bf4) |
+    a2 gs4( g) |
+    \clef bass fs( d) e(\> g,) |
+    a2:8\f a: | a: a: | a: b:\dim | g: fs: |
+    b4\mf r r a'\upbow |
 }
 
 

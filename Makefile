@@ -36,7 +36,7 @@ PIANOCUES=
 VIOLICUES= include/ob1.ily include/vla.ily include/hrn1.ily include/piano.ily include/viol2.ily
 VIOLIICUES=include/ob1.ily include/vla.ily include/hrn1.ily include/piano.ily include/viol1.ily include/bass.ily
 VIOLACUES=include/ob1.ily include/cl1.ily include/hrn1.ily include/piano.ily include/viol1.ily include/bass.ily
-CELLOCUES=
+CELLOCUES=include/hrn1.ily include/piano.ily
 BASSCUES=
 
 SCOREFILES=${HEADERS} ${FLUTEFILES} ${OBOEFILES} ${CLARFILES} ${BSNFILES} ${HRNFILES} \
