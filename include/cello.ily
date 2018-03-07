@@ -800,9 +800,95 @@ CellIII=\relative c {\commonConductor
   g r <c, bf'> r |
   <ef c'> r <d c'> r \mark\default \barNumberCheck \RhLXVIII |
   <g, d' bf'>\p e \set Staff.midiInstrument="string ensemble 1" a2^"arco" \mbreak |
+  bf2^"unis"( b\dim) |
+  c( cs) |
+  d( c4 f,) |
+  bf\pp r r2 | R1 |
+  \set Staff.midiInstrument ="pizzicato strings"
+  <d, a' fs' d'>4^"pizz"\pp r r2 |
+  \set Staff.midiInstrument="string ensemble 1"
+  bf'1\downbow^"arco"\mf\>(-- |
+  g4.\pp) <g d'>8\upbow <g d'>4.(--\cresc <g d'>8-.) |
+  <g d'>4.--( <g d'>8-.) <bf d>4.--( <bf d>8-.) |
+  <bf d>4.--( <bf d>8-.) cs4.(-- cs8-.) |
+  cs4.--( cs8-.) <a d a'>4\sff r \mark\default \barNumberCheck \RhLXIX \mbreak \bar "||"
+  \inSixFour{
+    r4 r g8\ff(\downbow gs a4->) r r |
+    r r g8\dim( gs a4->) r r |
+    r r g8( gs a4->) r r |
+    r r g8( gs a4->) r r |
+    r r g8(\pp gs a4-.->) r r |
+    r r g8( gs a4-.) r r  \mbreak |
+    r r g8( gs a4-.) r r
+    r r g8( gs a4-.) r r |
+    r2. r4 r g8( gs |
+    a4-.) r r r r g8( gs |
+    a4-.) r r r r g8( gs |
+    a4-.) r r r2. | R1. \mbreak |
+    r4 r g8( gs a4-.) r r |
+    r2. r4 r g8( gs |
+    a4-.)  \set Staff.midiInstrument ="pizzicato strings" r r^"col legno" r r a8-.\downbow\pp( a-.)
+    \mark\default \barNumberCheck \RhLXX |
+    a4-.\upbow r a8-.( a-.) a4-. r a8-.( a-.) |
+    a4-. r a8-.( a-.) a4-. r a8-.( a-.) \mbreak |
+    a4-. r a8-.( a-.) a4-. r a8-.( a-.) |
+    a4-. r a8-.( a-.) a4-. r a8-.( a-.) |
+    a4-.\semprePP r a8-.( a-.) a4-. r a8-.( a-.) |
+    a4-. r a8-.( a-.) a4-. r a8-.( a-.) |
+    a4-. r a8-.( a-.) a4-. r a8-.( a-.) \mbreak |
+    a4-. r a8-.( a-.) a4-. r a8-.( a-.) \mark\default \barNumberCheck \RhLXXI |
+    a4-. r a8-.( a-.) a4-. r a8-.( a-.) |
+    a4-. r a8-.( a-.) a4-. r^"div." 
+    <<{\voiceOne f'8-.( f-.) |
+    fs4-. \oneVoice r \voiceOne a,8-.( a-.) a4-. \oneVoice r \voiceOne a8-.( a-.) |
+    a4-. \oneVoice r \voiceOne a8-.( a-.) a4-. \oneVoice r \voiceOne a8-.( a-.) \mbreak |
+    a4-.\sempreP  \oneVoice r \voiceOne e'8-.( e-.) ds4-. \oneVoice r \voiceOne a8-.( a-.) |
+    a4-. \oneVoice r \voiceOne e'8-.( e-.) ds4-. \oneVoice r \voiceOne a8-.( a-.) |
+    a4-. \oneVoice r \voiceOne f'8-.( f-.) e4-. \oneVoice r \voiceOne a,8-.( a-.) |
+    a4-. \oneVoice r \voiceOne f'8-.( f-.) e4-. \oneVoice r \voiceOne f8-.( f-.) |
+    f4-. \oneVoice r \voiceOne f8-.( f-.) f4-. \oneVoice r \voiceOne fs8-.( fs-.) \mbreak |
+    fs4-. \oneVoice r \voiceOne g8-.( g-.) g4-. \oneVoice r \voiceOne g8-.( g-.)}
+    \new Voice {\voiceTwo 
+      a,8-.( a-.) |
+      a4-. s a8-.( a-.) a4-. s a8-.( a-.) |
+      a4-. s a8-.( a-.) a4-. s a8-.( a-.) |
+      a4-. s a8-.( a-.) a4-. s a8-.( a-.) |
+      a4-. s a8-.( a-.) a4-. s a8-.( a-.) |
+      a4-. s a8-.( a-.) a4-. s a8-.( a-.) |
+      a4-. s a8-.( a-.) a4-. s a8-.( a-.) |
+      a4-. s a8-.( a-.) a4-. s a8-.( a-.) |
+      a4-. s a8-.( a-.) a4-. s a8-.( a-.) |
+    }>> \oneVoice\mark\default \barNumberCheck \RhLXXII | 
+  } <<{g'4-.}\\{a,-.}>> r r2 |
+  r2 <ef bf' g'>4\sf^"pizz" r |
+  a\p r r2 |
+  r2 <ef bf' g'>4\sf r |
+  a\p r r2 |
+  r <gf df' bf'>4\sf r \mbreak |
+  <g e'>\p r r2 |
+  r <gf df' bf'>4\sf r |
+  ef'\p r <a, e' cs'>\sf r |
+  ef'\p r <a, e' cs'>\sf r |
+  e'\p r <bf f' d'>\sf r |
+  e\p r <d, a' f' d'>\sf r \mark\default \barNumberCheck \RhLXXIII \bar "||"
+  \key d\major 
+  \set Staff.midiInstrument="string ensemble 1"
+  a'2--\f^"arco" e-- |
+  a-- e-- \mbreak |
+  a--\cresc e-- |
+  a-- e-- |
+  a4-.\ff e'-. a,-. e'-. |
+  a,-. e'-. a,-. e'-. |
+  a,-. r <a e'>2--~ |
+  <a e'>4 <a e'>8 <a e'> <a e'>2--~ | 
+  <a e'>4 <a e'>2-- <a e'>4--~ |
+  <a e'> <a g'>8 <a g'> <a g'> <a g'> <a g'> <a g'> |
+  <e' a>4\sff r r2\fermata
+  \tag #'score \cadenzaIIIa 
+  \mark\default \barNumberCheck \RhLXXIV \mpbreak \bar "||"
 
 
-}
+  }
 
 % Divisi
 CellDI=\relative c {\commonConductor  
