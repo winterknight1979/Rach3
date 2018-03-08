@@ -8,6 +8,11 @@
 
 \include "include/bass.ily"
 
+\include "include/hrn1.ily"
+  \addQuote "HrnOneI" {\transpose c c, \keepWithTag #'quote \HrnOneI}
+\include "include/viol1.ily"
+  \addQuote "ViolOneI" {\transpose c c, \keepWithTag #'quote \ViolOneI}
+
 \paper{ 
   #(layout-set-staff-size 19)
   system-system-spacing = #'((basic-distance . 18)
