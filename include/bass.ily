@@ -446,8 +446,208 @@ BassII=\relative c {\commonConductor \transposition c
   R1 |
   a8-.\ff r a-. r r2 \barNumberCheck \EndMII \bar "||"
 }
-BassIII=\relative c {\commonConductor \transposition c s1}
+BassIII=\relative c {\commonConductor \transposition c 
+  \time 2/2 \clef bass \key d\minor
+  d4\sff r r2 |
+  R1 * 17 \mark #40 \barNumberCheck \RhXL |
+  R1 * 6 |
+  \cueWhileClef "ViolOneIII" "Viol.I" #DOWN "treble"
+  {R1 | r2 r4}
+  a4-. |
+  bf1\pp--~ | bf |
+  a4-. r r2 \mbreak |
+  r2 r4 g-. |
+  af1~\pp | af |
+  g4-. r r2 |
+  r r4 f'\pp-. |
+  gf2--( f4) e-. |
+  f2--( e4) d-. |
+  ef2--( d4) c-.\f |
+  cs8-. d-. e-. f-. g4-. gs-. \mark\default \barNumberCheck \RhXLI \mbreak |
+  a-> r r2 |
+  a4->\mf r r2 |
+  a4-> r a-> r |
+  a-> r r d,-> | 
+  g-> r \set Staff.midiInstrument="pizzicato strings" r d\f^"pizz."
+  g, r r d' |
+  g d g d \mbreak |
+  g r r c, |
+  f\sfz r r2 |
+  r f4 f |
+  d r r2 |
+  R1 * 2 |
+  c4\f r bf r |
+  a r r2 | R1 \mbreak |
+  \set Staff.midiInstrument="string ensemble 1"
+  r4 a'8^"arco"(-.\f e-.) a4-- a8-.( e-.) |
+  a-. e-. a-.[ e-.] a4-. a,-. \mark\default \barNumberCheck \RhXLII |
+  d-.\ff r d r |
+  d r r f |
+  e1--~ e |
+  c4 r c r |
+  c r r e \mbreak |
+  d1--~ | d |
+  r4 e-.\p( a-. a,-.) |
+  d-. ds-. e-. f-. |
+  fs2-- b,4-.\dim b'-. |
+  e,-.\! r r2 | R1 | 
+  \set Staff.midiInstrument="pizzicato strings"
+  r4 g^"pizz."\f c, e \mbreak |
+  a,\dim c fs, g |
+  c\p r c r |
+  c r c r |
+  \nextCresc "poco cresc" c\< r c r |
+  c r c\! r |
+  \set Staff.midiInstrument="string ensemble 1"
+  c1^"arco"--\p~ | c\dim~ | c~ | c~ \mark\default \barNumberCheck \RhXLIII \mbreak |
+  c4\pp r 
+  \set Staff.midiInstrument="pizzicato strings"
+  c\p^"pizz." r |
+  c r c r |
+  \nextCresc "poco cresc" c\< r c r |
+  c r c\! r |
+  \set Staff.midiInstrument="string ensemble 1"
+  c1^"arco"--\p~ | c\dim~ | c~ | c~ |
+  c4\pp r 
+  \set Staff.midiInstrument="pizzicato strings"
+  c\p^"pizz." r \mbreak |
+  c\cresc r c r |
+  b\f r b r \mark\default \barNumberCheck \RhXLIV |
+  e r e\p r |
+  e\cresc r e\! r |
+  \set Staff.midiInstrument="string ensemble 1"
+  e1^"arco"\p~ | e~ | e~ | e\dim~ |
+  e4\! r 
+  \set Staff.midiInstrument="pizzicato strings"
+  e\p^"pizz." r \mbreak |
+  e\cresc r cs r |
+  d\! r 
+  \set Staff.midiInstrument="string ensemble 1"
+  d2\p^"arco"~ |
+  d1~ | d~ | d\dim \mark\default \barNumberCheck \RhXLV |
+  g8 r r4 
+  \set Staff.midiInstrument="pizzicato strings"
+  g,\pp^"pizz." r |
+  R1 * 4 |
+  r2 d'4 r |
+  g r g, r |
+  R1 \mbreak |
+  e'4 r a, r | 
+  r2 a'4 r |
+  d, r b r |
+  r2 b'4 r |
+  e,\mf r a r |
+  d, r b' r |
+  gs r e r \mbreak |
+  a, r d' r |
+  b r e, r |
+  a r b,\p r |
+  c r cs r |
+  d\dim r ds r |
+  e r g r \mark\default \barNumberCheck \RhXLVI |
+  \set Staff.midiInstrument="string ensemble 1"
+  c,1\pp^"arco" |
+  a\< \mpbreak |
+  e'\f |
+  a\dim |
+  d,4\p( r8 d-.)\mf d4.--( d8-.) 
+  d4.--( d8-.) d4.--( d8-.) |
+  d4.--( d8-.)\cresc d4.--( d8-.) |
+  d4.--( d8-.) d4-. d'-. |
+  \tuplet 3/2 {g,--( g8-.)\ff} g2-> b4-. |
+  e,-. g-. c,-. d-. \mbreak |
+  \tuplet 3/2 {g-.( g8-.)} g2-> bf,4-.|
+  ef-. g,-.\dim c-. d-. \mark\default \barNumberCheck \RhXLVII |
+  g-.\fMMarc fs-. e-. d-. |
+  g-. fs-. e-. d-. |
+  ef-.\dim d-. c-. bf-. |
+  ef-. d-. c-. bf-. |
+  c-. \tuplet 3/2{ bf8-. a-. af-.} g4-. r \mbreak |
+  c-. \tuplet 3/2{ bf8-. a-. af-.} g4-. r |
+  bf-. \tuplet 3/2 {af8-. g-. gf-.} f4-. r |
+  af-.\! r r2 |
+  \set Staff.midiInstrument="pizzicato strings"
+  ef'4\p^"pizz." d c bf |
+  ef d c bf |
+  g'\dim f ef d |
+  g f ef d \mbreak |
+  bf'\pp r r2 |
+  R1 * 3 \bar "||"
+  \numericTimeSignature \time 4/4
+  \key c\minor ef,4\p^"pizz." r8 ef ef4 r8 ef |
+  ef4\dim r8 ef ef4 r8 ef \mark\default \barNumberCheck \RhXLVIII |
+  ef4\pp r8 ef ef4 r |
+  r ef8 ef ef4 r8 ef \mbreak |
+  ef4 r8 ef ef4 r |
+  r ef8 ef ef4\cresc r8 ef |
+  ef4\mp r8 ef ef4 r8 ef |
+  ef4 r8 ef ef4 r |
+  \set Staff.midiInstrument="string ensemble 1"
+  ef1^"arco"\ppp~ |
+  ef2( af8) r r4 \bar "||" \mbreak |
+  \time 3/2 bf,1~ bf8 r r4 \mark\default \barNumberCheck \RhXLIX \bar "||"
+  \time 4/4
+  \set Staff.midiInstrument="pizzicato strings"
+  ef4^"pizz." r8 ef ef4 r |
+  \set Staff.midiInstrument="string ensemble 1"
+  r2 ef--^"arco"\p~ |
+  ef8 r r 
+  \set Staff.midiInstrument="pizzicato strings"
+  ef\pp^"pizz." ef4 r8 ef |
+  ef4 r 
+  \set Staff.midiInstrument="string ensemble 1"
+  ef2\p\>^"arco" |
+  ef1--~\pp | ef~ | ef8 r r4 r2 
+  \mark\default \barNumberCheck \RhL \mbreak |
+  \set Staff.midiInstrument="pizzicato strings"
+  ef4\pp^"pizz." r ef r |
+  \set Staff.midiInstrument="string ensemble 1"
+  ef1--~\pp^"arco" | ef |
+  ef--~ | ef \bar "||"
+  \time 3/2 ef1.\pp\< |
+  bf2(\> c)\! af |
+  bf1 bf2--\dim^\markup{\italic "ten."} \mark\default \barNumberCheck \RhLI \bar "||" \mbreak |
+  \time 4/4 ef1\pp~ |
+  ef2\cresc ef\mf\> |
+  ef1--\p~ |
+  ef2\cresc ef2--\mf\> |
+  ef1\p\dim~ | ef\pp~ | ef~ | ef \mark\default \barNumberCheck \RhLII |
+  <ef bf'>-"div."\pp~ |
+  <ef bf'>~ \bar "||"
+  \time 3/2 <ef bf'>8 r r4 r2 r | R1.\mbreak\bar "||"
+  r2 r4 b\pp\<^"unis." |
+  e--^\markup{\italic "ten."}\>~ e8\! r r4 d\< |
+  g--^\markup{\italic "ten."}\>~ g8\! r r4 \nextCresc "poco cresc." f\< |
+  b,( d) f\dim( bf, \mark\default \barNumberCheck \RhLIII |
+  \grace s8 ef8) r 
+  \set Staff.midiInstrument="pizzicato strings"
+  ef4\pp^"pizz." r8 ef ef4 |
+  r8 ef ef4 r8 ef ef4 \mbreak |
+  r8 ef ef4 r8 ef ef4 |
+  r8 ef ef4 r8 ef ef4 \bar "||"
+  \time 3/2 r8 ef\pp ef4 r8 ef ef4 r8 ef ef4 |
+  r8 bf bf4 r8 bf bf4 r8 c c4 |
+  r8 f f4 r8 g\dim af4 r bf,\! \mark\default \barNumberCheck \RhLIV \mbreak \bar "||"
+  \time 4/4 R1 * 4 |
+  R1 * 3 |
+  \set Staff.midiInstrument="string ensemble 1"
+  ef1^"arco"\p\dim( \mark\default \barNumberCheck \RhLV |
+  e4)\pp r r2 |
+  R1 * 8 \mark\default \barNumberCheck \RhLVI |
+  R1 \mbreak |
+  ef2\p gs, |
+  cs\cresc a |
+  c(\f\dim b) |
+  ef1\ppp | ef-- | ef-- | ef-- \mark\default \barNumberCheck \RhLVII |
+  ef-- | ef--\< |
+  bf\mp\dim \mbreak |
+  c2\pp( f)\< |
+  af,1\mp |
+  bf--\pp\dim^\markup{\italic "ten."} \mark\default \barNumberCheck \RhLVIII |
+  ef\ppp~ | ef~ | ef~ | ef~ | ef8 r r4 r2 |
+  R1 * 3 | R1 * 3 \mark\default \barNumberCheck \RhLIX \mpbreak \bar "||"
+}
 
-%divisi
+%divisi1
 BassDIII=\relative c {\commonConductor \transposition c s1}
 

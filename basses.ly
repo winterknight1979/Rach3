@@ -15,6 +15,7 @@
 
 \include "include/viol1.ily"
   \addQuote "ViolOneI" {\transpose c c, \keepWithTag #'quote \ViolOneI}
+  \addQuote "ViolOneIII" {\transpose c c, \keepWithTag #'quote \ViolOneIII}
 
 \include "include/cello.ily"
   \addQuote "CellII" {\transpose c c, \keepWithTag #'quote \CellII}
