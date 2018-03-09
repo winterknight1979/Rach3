@@ -10,8 +10,14 @@
 
 \include "include/hrn1.ily"
   \addQuote "HrnOneI" {\transpose c c, \keepWithTag #'quote \HrnOneI}
+\include "include/piano.ily"
+  \addQuote "PianoII" {\transpose c c, \keepWithTag #'quote \PianoUPII}
+
 \include "include/viol1.ily"
   \addQuote "ViolOneI" {\transpose c c, \keepWithTag #'quote \ViolOneI}
+
+\include "include/cello.ily"
+  \addQuote "CellII" {\transpose c c, \keepWithTag #'quote \CellII}
 
 \paper{ 
   #(layout-set-staff-size 19)

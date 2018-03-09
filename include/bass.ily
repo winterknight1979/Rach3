@@ -306,7 +306,146 @@ BassI=\relative c {\commonConductor \transposition c
   d r r2 \barNumberCheck \EndMI \bar "|."
 
 }
-BassII=\relative c {\commonConductor \transposition c s1}
+BassII=\relative c {\commonConductor \transposition c 
+  \clef bass \key fs\minor \time 3/4 R2. * 9 \mark #24 \barNumberCheck \RhXXIV |
+  \set Staff.midiInstrument="pizzicato strings"
+  \cueWhile "CellII" "Vcl." #UP {R2. * 4 } |
+  r4 r d\pp^"pizz." |
+  g r r | R2. |
+  \set Staff.midiInstrument="string ensemble 1"
+  a2--\p^"arco"\>( d,4)\dim \mbreak |
+  g2(\pp\< c,4)\> |
+  f2\p\< bf,4\>( |
+  ef)\! a,( bf |
+  d) g(\dim e) |
+  a(\pp g f) |
+  \nextCresc "poco cresc." g\<( f e) |
+  d( cs\dim c) |
+  b( bf a) \mark\default \barNumberCheck \RhXXV \mbreak |
+  a2\pp\< a4\mf~ | a2. |
+  a2.~ | a2.\> | a2.\p~ | a2.\< |
+  fs2.\mf~ | fs2.\dim~ | fs4\p r r |
+  R2. * 3 \mbreak \bar "||" 
+  \key bf\minor R2. * 8 | R2. \mark\default \barNumberCheck \RhXXVI |
+  df'2\pp\< df4--\mp\>~ |
+  df2\pp\< df4--\>~ |
+  df2.\pp~ | df |
+  df2.~ | df~ | df8 r r4\fermata_"Cadenza" r 
+  \tag #'score \cadenzaIIa | R2. \mbreak |
+  R2.*7 |
+  \cueWhileClef "PianoII" "Pno." #UP "treble" {R2. * 3}
+  \mark\default \barNumberCheck \RhXXVII |
+  f2\pp\< f4--\mp\>~ |
+  f2\< f4--\>~ |
+  f2.~\pp | f2. \mpbreak |
+  <f f,>~^"div." | <f f,> |
+  R2. * 5 | R2. \mark\default \barNumberCheck \RhXXVIII |
+  R2. | f2.--\pp | f2.-- | f2-- r4 | f2-- r4 |
+  R2. | R2. * 2 \mbreak |
+  R2. * 8 |
+  f2\f\>( bf,4) \mark\default \barNumberCheck \RhXXIX |
+  ef2\p~ ef8 r |
+  \set Staff.midiInstrument="pizzicato strings"
+  af,4^"pizz." r r |
+  f r r |
+  bf\cresc r r |
+  gf r \set Staff.midiInstrument="string ensemble 1"
+  fs'\mf^"arco" |
+  e2. |
+  ds2 cs4~ |
+  cs a2\< \mark\default \barNumberCheck \RhXXX \mbreak |
+  d2.\f |
+  d2.-- |
+  d2.--\dim |
+  d2.-- |
+  d2.-- |
+  ef4\p~ ef8 r r4 |
+  \set Staff.midiInstrument="pizzicato strings"
+  f^"pizz." gf g |
+  af\cresc bff bf |
+  \set Staff.midiInstrument="string ensemble 1"
+  ef,2^"arco"\< af,4 \mark\default \barNumberCheck \RhXXXI |
+  df2.\f \mbreak |
+  df2.--~ |
+  df2.\dim |
+  df2.\mf |
+  df2. |
+  df2\dim r4\! | R2. * 5 \mark\default \barNumberCheck \RhXXXII |
+  df2\pp\< df4--\mp\>~ |
+  df2\pp\< df4--\>~ |
+  df2.\pp~ df2. \mbreak \bar "||"
+  \key fs\minor cs2.~ | cs~ | cs~ | cs2 r4 \mark\default \barNumberCheck \RhXXXIII \bar "||"
+  \set Staff.midiInstrument="pizzicato strings"
+  \time 3/8 fs'4\p-"pizz." r8 |
+  cs4 r8 |
+  a4\cresc r8 |
+  fs4 r8 | 
+  cs4\mf r8 |
+  fs4\dim r8 |
+  a4 r8 \mbreak |
+  cs4\pp r8 |
+  fs,4 r8 |
+  gs4 r8 |
+  cs,4 r8 |
+  fs4 r8 |
+  e4 r8 |
+  b4 r8 |
+  fs'4 r8 |
+  gs,4 r8 |
+  cs4 r8 |
+  fs4 r8 \mbreak |
+  cs4 r8 |
+  a4 r8 |
+  b4 r8 |
+  bs4 r8 |
+  cs4 r8 |
+  gs'4 r8 |
+  cs,4 r8 |
+  R4. \mark\default \barNumberCheck \RhXXXIV |
+  R4. |
+  b4\pp r8 |
+  cs4 r8 \mbreak |
+  fs4 gs8 |
+  a,4 r8 |
+  b4 r8 |
+  cs4 r8 |
+  fs4 gs8 |
+  a4 r8 |
+  \nextCresc "poco cresc." d,4\< r8 |
+  gs,4 r8 |
+  cs4\dim r8 \mark\default \barNumberCheck \RhXXXV |
+  fs4\p r8 |
+  gs4 r8 \mbreak |
+  b,4 r8 | cs4 r8 |
+  e4 r8 |
+  fs4 r8 |
+  gs,4\dim r8 |
+  cs4 r8 |
+  d4\pp r8 |
+  a'4 r8 |
+  cs,4 r8 |
+  e4 r8 |
+  b4 r8 \mbreak |
+  d4 r8 |
+  gs4 r8 |
+  gs4 r8 \mark\default \barNumberCheck \RhXXXVI \bar "||"
+  \set Staff.midiInstrument="string ensemble 1"
+  \time 3/4 cs,2\pp\< cs4--~\mp\> |
+  cs2\pp\< cs4--\>~ |
+  cs2\pp\< cs4--\f |
+  cs2.--~ | cs2.~\dim | cs2.~ | cs8\p r r4 r |
+  R2. * 3 \mark\default \barNumberCheck \RhXXXVII \mbreak |
+  R2. * 7 |
+  \cueWhile "CellII" "Vcl." #UP {R2. * 3}
+  \mark\default \barNumberCheck \RhXXXVIII |
+  cs2.~\p\< | cs2.\f~ | cs2.~ | cs2.\dim | cs2.--~\mf | cs2.\dim( \mbreak \bar "||"
+  \key d\minor \time 4/4 a8\p) r r4 r2 |
+  R1 * 3 \mark\default \barNumberCheck \RhXXXIX |
+  ef'8.--\p[ ef16] ef8.--[\cresc ef16] ef8.--[ ef16] ef8.--[ ef16] |
+  ef4.-- ef8 ef ef ef4\sff |
+  R1 |
+  a8-.\ff r a-. r r2 \barNumberCheck \EndMII \bar "||"
+}
 BassIII=\relative c {\commonConductor \transposition c s1}
 
 %divisi
