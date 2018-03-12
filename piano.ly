@@ -21,13 +21,18 @@
  %page-breaking = #ly:page-turn-breaking
 }
 
+ 
+
+  
+
+
 \book {
-    \bookpart {
+  \bookpart { 
       \header {
          instrument = "Pianoforte"
       }
       \score{
- 
+        \midi{} \layout{} 
       \keepWithTag #'(part piano) \new PianoStaff="Piano" 
       %\with {
        % instrumentName="Piano"
@@ -68,15 +73,10 @@
     \header{piece=\markup\huge "III Finale"}
       }
     }
+  
   }
 
   
   
-  \layout{
-  \context {
-  \Voice
-  \override Beam.breakable=##t}}
-  
-
 
 

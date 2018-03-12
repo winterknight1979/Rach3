@@ -61,7 +61,7 @@ PianoUPI=\relative c'{\commonConductor
   << {r4 r8 e''4--( d8) \oneVoice r8 \voiceOne cs,--(~ }
   \context Voice="PnoV2" {d16\< e f g gs\mf a bf a bf a bf a s8 bf,16 a}>> \mbreak |
   <<{cs8 d \oneVoice r8\dim  \voiceOne <g, e~>( ) \oneVoice <e fs> <d f>) } 
-  \context Voice="PnoV2" {bf'16 a bf a s8 e \oneVoice \toDN bf16 \toUP a bf a}>> 
+  \context Voice="PnoV2" {bf'16 a bf a s8 e \oneVoice \toDN\stemUp bf16 \toUP\stemDown a bf a\stemNeutral}>> 
   r8 \clef bass <d, gs>~( |
   <d gs> <cs a'>) r \clef treble c'16\p( cs d cs d cs ef d ef d |
   a' fs g a c bf c bf e cs d e f e f e |
@@ -93,7 +93,7 @@ PianoUPI=\relative c'{\commonConductor
   <<{\voiceOne e'~(\cresc e8 d4 e8}
   \context Voice="PnoV2" {r8. e,16( f8.) fs16( g8.) gs16}>> |
   <<{<a c>4) <e c' a'>2\arpeggio\f( g'4) }
-  \context Voice="PnoV2" {r16 \oneVoice c,, d \toDN ds \toUP \voiceTwo r c fs g c d ds e g(\> b, g e'\!)}>>
+  \context Voice="PnoV2" {r16 c,, d \toDN\stemUp ds \toUP \voiceTwo r c fs g c d ds e g(\> b, g e'\!)}>>
   \time 2/4 
   <<{c4( bf\dim}
   \context Voice="PnoV2" {c16 b bf a af g fs f}>>\mpbreak |
@@ -198,7 +198,48 @@ PianoUPI=\relative c'{\commonConductor
    ef4.) d8( ef\< g\! bf a) |
    a--(\> g4\! a8) g--\<( f4\! g8) 
    g-.( ef4) d8( ef\< g\! bf a) }>> \mbreak |
-}
+
+  <<{
+    \toDN \stemUp <c,, f,>16 ef bf' \toUP \stemDown a  \toDN \stemUp ef a d \toUP \stemDown ef 
+    \toDN \stemUp <bf, f> ef a \toUP \stemDown g \toDN \stemUp ef g c \toUP \stemDown d |
+    \toDN \stemUp <a, ef c f,>\arpeggio c ef \toUP \stemDown g  \toDN \stemUp c, ef g \toUP \stemDown af 
+     \toDN \stemUp ef af b \toUP \stemDown c \toDN \stemUp af c ef \toUP \stemDown f |
+     \toDN \stemUp <f, bf,> af ef' \toUP \stemDown d  \toDN \stemUp af d g \toUP \stemDown af 
+     \toDN \stemUp <ef, bf> af d \toUP \stemDown c \toDN \stemUp af c g' \toUP \stemDown af |
+     \toDN \stemUp <f,, bf,> af d \toUP \stemDown af'  \toDN \stemUp af, d af' \toUP \stemDown c
+     \toDN \stemUp d, f c' \toUP \stemDown f \toDN \stemUp g, c f \toUP \stemDown af |
+        
+  }
+  \context Voice="PnoV2" {
+    a8--\>( c4\> d8)\! g,8-.(\> c4\> d8)\! |
+    g,8( c,4) ef8( f\< af\! c ef) |
+    d8--(\> c4\! d8) c--\>( bf4\! c8) |
+    c8--(\> af4) g8\cresc( af c e d)\!
+  } >> \mbreak |
+
+  <<{\toDN \stemUp <f,, bf,>16( af ef' d)  \toDN \stemUp af( d c' \toUP \stemDown <bf d>) 
+  \toDN \stemUp <ef,, bf>( af d c) \toDN \stemUp af( c d' \toUP \stemDown <a c>) |
+     \toDN \stemUp d,, f af \toUP \stemDown c  \toDN \stemUp c, f af \toUP \stemDown d
+     \toDN \stemUp bf, f' af \toUP \stemDown <c ef> \toDN \stemUp af, <d f> ef' \toUP \stemDown <d f> }
+ 
+     \context Voice="PnoV2" {d'8--( <f f,>4 <g g,>8) <c, c,>--(\> <f f,>4\! <g g,>8) |
+    <bf, bf,>8(\dim-- c4 d8)\! af\dim( bf4\> c8)\!}
+  >> |
+
+  <<{\voiceOne <g, bf ef g>4\p( <af ef' f af>8\cresc <bf ef g bf>) <c ef fs c'>( <d fs c' d> <ef fs c' ef>[ <b b'>)] |
+      <bf ef g bf>4( <c ef bf' c>8 <d bf' d>) <ef g c ef>[( <d' f>] <ef g> <c c,>)-\omit\f}
+      \context Voice="PnoV2" {\voiceTwo \toDN \once\stemUp <g,, bf, ef,>4\arpeggio \toUP s2 ef''16 d ef f |
+      \toDN \once \stemUp <g,, bf, ef,>4\arpeggio \toUP s4 r8 f''16 fs \tuplet 5/4 { g af a af a}}>> \mbreak |
+  <<{ <f, bf d f>4\f <bf d g>8-- <d a>-- \ottava #1 <fs b d fs>--\cresc <g g'>-- <af af'> <a d a'>}
+      \context Voice="PnoV2" {r16 g, af bf c d ef f r bf b cs d e fs gf}>> 
+
+  \oneVoice <bf, ef gf bf>8--\ff <a ef' gf a> <a ef' gf a> <bf ef gf df> <c ef g c>[( <bf ef g bf>]) <bf ef g bf> <a ef' g bf-->
+  <bf ef g bf>4-- <a c ef a>8--( <af c ef af>) <g b d g>--([ <fs b d fs>]) <fs b d fs>-- <g b d g>--
+  <af bf ef af>8-- <g bf ef g>4 \ottava #0 <f bf f'>8
+  <<{ <ef af b ef>--( <d af' bf d>)}
+    \context Voice="PnoV2" {\toDN ef,,,4\toUP }>>
+    <d''' g c d>8--[ <ef g c ef-->] \mpbreak 
+  }
 PianoUPII=\relative c'{\commonConductor s1}
 PianoUPIII=\relative c'{\commonConductor s1}
 PianoDNI=\relative c'{\commonConductor 
@@ -231,9 +272,9 @@ PianoDNI=\relative c'{\commonConductor
   \clef bass \showStaffSwitch \toUP <d d'>4 s s2 \hideStaffSwitch \toDN
   s1 * 9 |
   s2 s4 s8 \stemUp a16 af |
-  g c, g' c \toUP \stemDown ef c g' ef \stemNeutral fs d c \toDN a d, d' \toUP a' c, |
-  g' d \toDN c a g d' \toUP bf' d, \stemDown a' cs, a e' \stemNeutral d a \toDN d, a' |
-  \stemUp bf ef, bf' d \toUP \stemDown ef bf bf' g \stemNeutral a f ef \toDN c f, f' \toUP c' ef, |
+  g c, g' c \toUP \stemDown ef c g' ef fs d c \toDN \stemUp a d, d' \toUP \stemDown a' c, |
+  g' d \toDN\stemUp c a g d' \toUP\stemDown bf' d, \stemDown a' cs, a e' d a \toDN\stemUp d, a' |
+  \stemUp bf ef, bf' d \toUP \stemDown ef bf bf' g  a f ef \toDN\stemUp c f, f' \toUP\stemDown c' ef,\stemNeutral|
   \toDN \clef treble bf' f \toDN ef c bf f' \toUP d' f, \stemDown c' fs, d a' \stemNeutral g d \toDN g, d' |
   r d e a gs \toUP e gs bf a \toDN cs, e bf' a \toUP e a cs |
   c \toDN ef, f bf a \toUP f a c bf \toDN d, f c' b \toUP g b d |
@@ -262,7 +303,7 @@ PianoDNI=\relative c'{\commonConductor
   <f d>4) \clef treble <d' e>16( a <d f> f,) <df' f>( bf bf' gf,) <bf c>( e, <bf' c> c,) |
   <gs' d'>( f <a d> d,) <f a>( df <f bf>8) \clef bass <a, c,>16( c \clef treble f a <g c,>8 bf |
   <f a>4) \clef bass r8 a,,( bf16 fs' g8) c,16( g' gs8) |
-  <<{\voiceOne r16 gs a bf b \once \slurDown c( \toUP \oneVoice f g \toDN \voiceOne c,) d ds r <d g,>8 e,}
+  <<{\voiceOne r16 gs a bf b \once \slurDown c( \toUP \stemDown f g \toDN\voiceOne  c,) d ds e <d g,>8 e,}
   \context Voice="PnoV4" {d4( ds e2) } >>| 
   \oneVoice a,16( e' a c) bf,( gs' a8) d,16( bf' b8) e,16( b' c8) |
   <<{\voiceTwo f,( fs) g,16( e' a b c4) <b f'>8( g)}
@@ -329,7 +370,26 @@ PianoDNI=\relative c'{\commonConductor
   s1 |
   \clef bass  s4 \clef treble s2. | s1 |
   \clef bass s4 \clef treble s2 g8( a) |
-  
+  s1 | s1 |
+  \clef bass <<{\voiceOne r16 g16( f ff ef d df c bf a af g fs d c cf) |
+  r bf''( a af g gf f ff ef c b bf \tuplet 5/4 {a af g ef c)}}
+  \context Voice="PnoV4" {\voiceTwo r16 bf'8.~ bf8[ g] ef4 c8. cf16 |
+  r bf'8.~ bf4 g c,}
+  >>
+
+  <<{r16 bf( ef g bf \clef treble g' af c,) r16 bf'( b cs d e f gf)}
+  \context Voice="PnoV4" {\voiceTwo <ef,,, ef,>2 <fs' b d>--}
+  \new Voice{\voiceFour s2 s4 <fs' b>8 <b d>}>> |
+
+  \clef bass
+  <<{\tuplet 3/2 4{ r8 <gf, ef bf>--([ <a gf ef>--] <cf gf ef>-- <bf gf ef>-- <gf ef bf>--)
+  r <g ef bf>--([ <bf g ef>--] <d g, ef>-- <c g ef>-- <g ef bf>--)| 
+  r <c g ef>[(-- <ef c g>--] <f c g>-- <ef c g>-- <c g ef>--) 
+  r <b af>[(-- <d b af>]-- <af' d, b>-- <g d b>-- <d b af>--)
+  r \clef treble <ef bf g>[(-- <g ef bf>--] <c g ef>-- <bf gf ef>-- <gf ef bf>--) 
+  \clef bass f,--[ <af b>-- <af b d>--] g-- <c ef>-- <c ef g>-- }}
+  \context Voice="PnoV4" {<ef,, ef,>2 <ef bf'> | <ef c'> <ef b' d> | <ef bf' ef> f'4( g)}
+>> |
 }
   
 PianoDNII=\relative c'{\commonConductor s1}
