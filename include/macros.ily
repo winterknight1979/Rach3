@@ -3,6 +3,18 @@
 mbreak={\tag #'part \break}
 mpbreak={\tag #'part \pageBreak}
 sbreak={}
+pbreak ={\tag #'(part disp) \break}
+ppbreak ={\tag #'disp \break \tag #'part \pageBreak}
+pmbreak ={\tag #'disp \pageBreak \tag #'part \break}
+nbreak={\tag #'(part disp) \noBreak}
+npbreak={\tag #'(part disp) \noPageBreak}
+
+
+
+
+toUP = \tag #'(part disp) \change Staff="PnoUp"
+
+toDN = \tag #'(part disp) \change Staff="PnoDn"
 
 commonConductor = {
   \accidentalStyle Score.modern

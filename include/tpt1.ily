@@ -17,8 +17,8 @@ TptOneI=\relative c' {
   b'16\ppLeg^"Solo"-. b-. b8-. fs'-. g-. cs,-. |
   ds-. fs-. b4-- r2 |
   R1 * 5 |
-  R1\fermataMarkup_"Cadenza"
-  \tag #'score \cadenzaIa \mbreak |
+  \tag #'score \cadenzaIa 
+  R1\fermataMarkup_"Cadenza" \mbreak |
   R1 * 6 |
   \time 3/2 R1. \mark\default \barNumberCheck \RhV |
   \time 4/4 R1 * 3 |

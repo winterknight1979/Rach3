@@ -64,8 +64,8 @@ ViolTwoI=\relative c' {\commonConductor
   cs( a) |
   gs1\dim |
   a1\ppp~ | a |
-  R1\fermataMarkup_"Cadenza"
-  \tag #'score \cadenzaIa \mpbreak
+  \tag #'score \cadenzaIa 
+  R1\fermataMarkup_"Cadenza"\mpbreak
   R1 * 2 |
   \cueWhile "OboeOneI" "Ob.I" #UP {R1 * 2 | r2}
   r4 d^"senza sord."\downbow\mf( |

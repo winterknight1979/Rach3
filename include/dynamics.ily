@@ -115,6 +115,7 @@ ffBenTen = \tweak DynamicText.self-alignment-X #LEFT
        ("trombone"    . (0.2 . 0.8))
        ("tuba"        . (0.2 . 0.9))
        ("timpani"     . (0.1 . 0.8))
+       ("acoustic grand" . (0.35 . 1.0))
        ("string ensemble 1" . (0.2 . 0.7))
        ("pizzicato strings" . (0.2 . 0.7)))
     my-equalizer-alist))

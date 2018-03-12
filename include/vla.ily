@@ -73,8 +73,8 @@ VlaI=\relative c' {\commonConductor
   e( ef) |
   d(\dim e) |
   e1\ppp~-- | e |
-  R1\fermataMarkup_"Cadenza"
-  \tag #'score \cadenzaIa \mpbreak
+  \tag #'score \cadenzaIa 
+  R1\fermataMarkup_"Cadenza"\mpbreak
   R1 * 2^"senza sord." |
   \cueWhileClef "OboeOneI" "Ob.I" #UP "treble"
   {R1 * 2 | r2} r4 <f c'>\upbow\mf^"non div."
@@ -780,7 +780,7 @@ VlaIII=\relative c' {\commonConductor
     r4 r g8( gs a4->) r r |
     r4 r g8\p( gs a4->) r r |
     R1. * 11 \mbreak |
-    \set Staff.midiInstrument ="pizzicato strigs"
+    \set Staff.midiInstrument ="pizzicato strings"
     r2.^"col legno" r4 r f8-.(\pp g-.) \mark\default \barNumberCheck \RhLXX |
     a4-.\upbow r d,8-.( e-.) f4-. r e8-.( f-.) |
     g4-. r f8-.( g-.) a4-. r f8-.( g-.) |

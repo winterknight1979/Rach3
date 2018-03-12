@@ -37,14 +37,14 @@ VIOLICUES= include/ob1.ily include/vla.ily include/hrn1.ily include/piano.ily in
 VIOLIICUES=include/ob1.ily include/vla.ily include/hrn1.ily include/piano.ily include/viol1.ily include/bass.ily
 VIOLACUES=include/ob1.ily include/cl1.ily include/hrn1.ily include/piano.ily include/viol1.ily include/bass.ily
 CELLOCUES=include/hrn1.ily include/piano.ily
-BASSCUES=
+BASSCUES=include/hrn1.ily include/piano.ily include/viol1.ily include/cello.ily
 
 SCOREFILES=${HEADERS} ${FLUTEFILES} ${OBOEFILES} ${CLARFILES} ${BSNFILES} ${HRNFILES} \
 	    ${TPTFILES} ${LBFILES} ${PERCFILES} include/piano.ily include/viol1.ily include/viol2.ily \
 	    include/vla.ily include/cello.ily include/bass.ily
 
 all: flutes oboes clarinets bassoons horns trumpets lowbrass\
-    percussion violins violas cellos basses score Rach3.mid
+    percussion violins violas cellos basses piano score Rach3.mid
 
 score: score.a4.pdf score.letter.pdf
 flutes: flutes.a4.pdf flutes.letter.pdf
@@ -59,9 +59,10 @@ violins: violinsI.a4.pdf violinsI.letter.pdf violinsII.a4.pdf violinsII.letter.p
 violas: violas.a4.pdf violas.letter.pdf
 cellos: cellos.a4.pdf cellos.letter.pdf
 basses: basses.a4.pdf basses.letter.pdf
+piano: piano.a4.pdf piano.letter.pdf
 
 %.mid: %.ly
-	${LILY} -dmidi-extension=mid -s  $< 2>&1 | tee $*.mid.log
+	${LILY} -dmidi-extension=mid   $< 2>&1 | tee $*.mid.log
 
 %.a4.pdf : %.ly
 	${LILY} -fpdf -dpaper-size=\"a4\"  --loglevel=${LOG} -o $*.a4 $< 2>&1 | tee $*.a4.log
@@ -97,6 +98,9 @@ cellos.a4.pdf: cellos.ly include/cello.ily ${HEADERS} ${CELLOCUES}
 cellos.letter.pdf: cellos.ly include/cello.ily ${HEADERS} ${CELLOCUES}
 basses.a4.pdf: basses.ly include/bass.ily ${HEADERS} ${BASSCUES}
 basses.letter.pdf: basses.ly include/bass.ily ${HEADERS} ${BASSCUES}
+piano.a4.pdf: piano.ly include/piano.ily ${HEADERS} ${PIANOCUES}
+piano.letter.pdf: piano.ly include/piano.ily ${HEADERS} ${PIANOCUES}
+
 
 
 Rach3.mid: Rach3.ly ${SCOREFILES}

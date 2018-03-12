@@ -42,7 +42,7 @@
 
 
 \paper {
-  #(layout-set-staff-size 15)
+  #(layout-set-staff-size 13)
   indent = 2.75\cm
   short-indent = 1.0\cm
   ragged-last-bottom = ##f
@@ -59,7 +59,7 @@
 %showFirstLength=R1*3 
      \score{
  
-    \keepWithTag #'score \killCues <<
+    \keepWithTag #'(score disp) \killCues <<
       \new Devnull \conductorI
       \new StaffGroup ="Woods" <<
         \new Staff \with
@@ -113,7 +113,7 @@
         instrumentName="Ossia"
         shortInstrumentName="Ossia"}
         <<
-          \new Staff="PnoUp" \with
+          \new Staff="PnoOUp" \with
           {
             \override VerticalAxisGroup.remove-first=##t
             fontSize = #-3
@@ -121,7 +121,7 @@
             \override StaffSymbol.thickness = #(magstep -3)
           }
           {\PianoUPOssia}
-          \new Staff="PnoDn"  \with
+          \new Staff="PnoODn"  \with
           {
             \override VerticalAxisGroup.remove-first=##t
             fontSize = #-3
@@ -135,8 +135,8 @@
         instrumentName="Piano"
         shortInstrumentName="P.no"}
         <<
-          \new Staff="PnoUp" {\PianoUPI}
-          \new Staff="PnoDn" {\PianoDNI}
+          \new Staff="PnoUp" <<\new Voice = "PnoV1" {\PianoUPI} \new Voice ="PnoV2" {\conductorI}>>
+          \new Staff="PnoDn" <<\new Voice = "PnoV3" {\PianoDNI} \new Voice ="PnoV4" {\conductorI}>>
         >>
 
       \new StaffGroup="Strings"

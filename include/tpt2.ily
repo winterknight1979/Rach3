@@ -15,8 +15,8 @@ TptTwoI=\relative c' {
   \time 4/4 R1 |
   \cueWhile "TptOneI" "Tr.I" #UP {R1 * 2} |
   R1 * 5 |
-  R1\fermataMarkup_"Cadenza"
-  \tag #'score \cadenzaIa |
+  \tag #'score \cadenzaIa 
+  R1\fermataMarkup_"Cadenza"|
   R1 * 6 |
   \time 3/2 R1. \mark\default \barNumberCheck \RhV \mbreak |
   \time 4/4 R1 * 3 |

@@ -21,8 +21,8 @@ HrnFourI=\relative c' {
   R1 * 8 | R1 \bar "||"
   \time 2/4 R2 \mark\default \barNumberCheck \RhIV \mbreak \bar "||"
   \clef treble \time 4/4 R1 * 8 |
-  R1\fermataMarkup_"Cadenza" |
   \tag #'score \cadenzaIa
+  R1\fermataMarkup_"Cadenza" |
   \cueWhile "BsnOneI" "Fag.I" #DOWN
   {R1 * 2 | r4 }
   gs''2\mf( a4)~ |

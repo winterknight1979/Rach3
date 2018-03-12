@@ -59,8 +59,8 @@ BsnTwoI=\relative c {
   a4\<( c2\mf\> d8 e\! \bar "||"
   \time 2/4 c4\pp) r \mark\default \barNumberCheck \RhIV \bar "||"
   \time 4/4 R1 * 8 |
-  R1\fermataMarkup_"Cadenza"
-  \tag #'score \cadenzaIa \mbreak |
+  \tag #'score \cadenzaIa 
+  R1\fermataMarkup_"Cadenza"\mbreak |
   \clef bass r2 r4 a,(\mf |
   bf8 a g4 f8 g a4 |
   e2.) e4( |

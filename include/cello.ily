@@ -69,8 +69,8 @@ CellI=\relative c {\commonConductor
   f8( fs g2.\mf\>) \bar "||"
   \time 2/4 c4\pp( bf) \mark\default \barNumberCheck \RhIV \mbreak \bar "||"
   \time 4/4 a,1 ~ a-- | a\pp~ | a | a2( f)~ | f(\dim  e) | a1\ppp~ | a |
-  R1\fermataMarkup_"Cadenza" 
-  \tag #'score \cadenzaIa \mpbreak 
+  \tag #'score \cadenzaIa 
+  R1\fermataMarkup_"Cadenza" \mpbreak 
   r2^"senza sord." r4 a'\mf |
   bf8( a g4) f8( g a4) |
   e2. e4 |

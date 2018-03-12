@@ -27,9 +27,9 @@ FlTwoI=\relative c'{
   \time 4/4 R1 * 2 |
   \cueWhile "FluteOneI" "Fl.I" #UP
   {R1} |
-  R1 * 5 |
- R1^\fermataMarkup_"Cadenza" 
+  R1 * 5 | 
    \tag #'score \cadenzaIa
+ R1^\fermataMarkup_"Cadenza"
   %slip cadenza
   \mbreak |
    R1 * 6 |

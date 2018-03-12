@@ -38,8 +38,8 @@ ClTwoI=\relative c'{
   r2 r4^"Solo" r16 ds(\ppLeg e es |
   fs8) r r16 b,( cs css ds8) r r16 fs,( a as |
   b8) r r4 r2 |
-  R1^\fermataMarkup_"Cadenza"
-  \tag #'score {\cadenzaIa} |
+  \tag #'score {\cadenzaIa} 
+  R1^\fermataMarkup_"Cadenza"|
   \cueWhileClef "BsnOneI" "Fag.I" #UP "bass"
   {R1 * 2 \mbreak r4}
   ds2(\mf e4)~ |

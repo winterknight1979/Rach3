@@ -1,6 +1,6 @@
 \version "2.18.2"
 
-cadenzaIa={\cadenzaOn s1*9 s1*3 \bar "|" s1 \bar "|" s1 \cadenzaOff |}
+cadenzaIa={\cadenzaOn \tempo\markup{\italic "veloce"} 4=300 s1*9 s1*3 \bar "|" s1 \bar "|" s1 \cadenzaOff |}
 cadenzaIb={\cadenzaOn s1 * 58 \cadenzaOff}
 cadenzaIc={\cadenzaOn s1*15 s1 s4*21 s4*6 s2*3 s4.*3 s8 s2 s2 s2 s4 s1 s1\cadenzaOff}
 
@@ -18,7 +18,7 @@ conductorI={
   s1 * 11 | \tempo\markup{\italic "colla parte"} 4=140 s1 \bar "||" 
   \time 2/4 \tempo "a tempo" 4=155 s2 \mark\default \barNumberCheck \RhIV \bar "||" %4
 
-  \time 4/4 \tempo "Allegro" 4=140 s1 * 8  \tag #'score \cadenzaIa s1 
+  \time 4/4 \tempo "Allegro" 4=140 s1 * 8  \tag #'(score piano) \cadenzaIa s1 
   \tempo "Moderato" 4=110 s1 * 6  
   \time 3/2 \tempo\markup{\italic "allarg."} 4=95 s1. \mark\default  \barNumberCheck \RhV %5
 

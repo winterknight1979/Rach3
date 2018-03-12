@@ -17,8 +17,8 @@ HrnTwoI=\relative c' {
   R1 * 11 | R1 \mbreak \bar "||"
   \time 2/4 R2 \mark\default \barNumberCheck \RhIV \bar "||"
   R1 * 8 |
-  R1\fermataMarkup_"Cadenza"
-  \tag #'score \cadenzaIa |
+  \tag #'score \cadenzaIa 
+  R1\fermataMarkup_"Cadenza"|
   \cueWhile "BsnOneI" "Fag.I" #DOWN
   {R1 * 2 | r4}
   d2\mf d4-- |

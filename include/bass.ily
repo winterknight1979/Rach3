@@ -72,8 +72,8 @@ BassI=\relative c {\commonConductor \transposition c
   a( f) |
   bf\dim( e,) |
   a1\ppp~ | a |
-  R1\fermataMarkup_"Cadenza"
-  \tag #'score \cadenzaIa \mpbreak |
+  \tag #'score \cadenzaIa 
+  R1\fermataMarkup_"Cadenza"\mpbreak |
   r2 r4 a'\mf |
   bf8( a g4) f8( g a4) |
   e2. e4 |

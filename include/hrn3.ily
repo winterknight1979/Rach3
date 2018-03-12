@@ -30,8 +30,8 @@ HrnThreeI=\relative c' {
   r4 d2.\mf\>( \bar "||"
   \time 2/4 g4)\pp r \mark\default \barNumberCheck \RhIV \bar "||"
   \time 4/4 R1 * 8 |
-  R1\fermataMarkup_"Cadenza"
-  \tag #'score \cadenzaIa \mbreak |
+  \tag #'score \cadenzaIa 
+  R1\fermataMarkup_"Cadenza" \mbreak |
   \cueWhile "BsnOneI" "Fag.I" #DOWN
   {R1 * 2 | r4}
   e2\mf( f4)~ |

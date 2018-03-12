@@ -47,9 +47,9 @@ ClOneI=\relative c'{\transposition bf \commonConductor
   r2 r4 r16 c\ppLeg( cs d|
   ds fs a as b8) r r4 r16 g,( a as |
   b ds, e es fs8) r r4 r16 ds( e es |
-  fs\< g gs a! bf8-.\!) r r2 |
-  R1 * 2 | R1^\fermataMarkup_"Cadenza"
-  \tag #'score {\cadenzaIa} |
+  fs\< g gs a! bf8-.\!) r r2 | R1 * 2 |
+  \tag #'score {\cadenzaIa} 
+   R1^\fermataMarkup_"Cadenza"|
   \cueWhileClef "BsnOneI" "Fag.I" #UP "bass"
   {R1 * 2 | r4}
   b2(\mf c4)~ \mbreak |

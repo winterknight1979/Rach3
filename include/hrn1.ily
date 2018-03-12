@@ -42,8 +42,8 @@ HrnOneI=\relative c' {
   \time 4/4 r4^"Solo" r8 e,16\pLeg-. e-. e8-. b'-. c-. fs,-. |
   gs-. b-. e4-- r2 |
   R1 * 6 |
-  R1\fermataMarkup_"Cadenza"
   \tag #'score \cadenzaIa |
+  R1\fermataMarkup_"Cadenza"
   R1 * 2 |
   \cueWhile "HrnTwoI" "Cor.II" #UP
   {R1 * 2 \mbreak R1 * 2 } |
