@@ -1,6 +1,6 @@
 \version "2.18.2"
 
-cadenzaIa={\cadenzaOn \tempo\markup{\italic "veloce"} 4=300 s1*9 s1*3 \bar "|" s1 \bar "|" s1 \cadenzaOff |}
+cadenzaIa={\tempo\markup{\italic "veloce"} 4=300 \cadenzaOn s1*9 s1*3 \bar "|" s1 \bar "|" s1 \cadenzaOff |}
 cadenzaIb={\cadenzaOn s1 * 58 \cadenzaOff}
 cadenzaIc={\cadenzaOn s1*15 s1 s4*21 s4*6 s2*3 s4.*3 s8 s2 s2 s2 s4 s1 s1\cadenzaOff}
 
