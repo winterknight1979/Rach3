@@ -239,7 +239,59 @@ PianoUPI=\relative c'{\commonConductor
   <ef af b ef>--( <d af' bf d>)
    
     <d g c d>8--[ <ef g c ef-->] \mpbreak 
-  }
+ 
+    <f af c f>8-- <ef af c ef>4(-- <d af' d>8)\dim
+    <<{\voiceOne <d d'>--([ <c c'>)] <c c'>--( <bf bf'>)}
+    \context Voice="PnoV2" {f'( ef)~ <ef g>4}>> |
+
+  <<{<df df'>8--(\p <c c'>4 df'8) c--( bf4 b8)}
+  \context Voice="PnoV2" {f8[ e]~ e16 df--( f c-- f bf, df8~ df16) b--( f' c--}>> |
+
+  <<{c'8--( bf4 c8) <bf bf,>[( af]) af--(\> a)}
+  \context Voice="PnoV2" {f16 bf, c8~ c16) c(  e g) g( c, <ef af,>8~ <ef af,>16 c <f a,>) bf,--}>> |
+
+  <<{bf'8\dim--( a4 bf8) a--( g4 g8)\!}
+  \context Voice="PnoV2" {<e cs>16 a,-- <c e>8~ <c e>16 bf-- <cs e> a-- <c d>16 g-- <bf d>8~ <bf d>16 gs--( <c d> a--}>> \mbreak ||
+  
+  <<{a'8--( g4 a8) g--( f4\> fs8\!)}
+  \context Voice="PnoV2"{<cs e>16 g-- <cs e>8~) <cs e>16 a( cs e d a8 cs16 c f, a) af(}>> |
+  
+  <<{af'8--(\mf g4 af8) g--( f4 fs8)}
+  \context Voice="PnoV2" {<c d>16 g <b d>8)~ <b d>16 af( <c d> g <bf d> f <a d>8~) <a d>16( fs af g}>> |
+
+  <<{g'8--(\dim f4 g8) f[( e])\> e( f)~}
+  \context Voice="PnoV2" {d16 f, <g d'>8~) <g d'>16 g( cs d~ d f, b c b ef, bf' c}>> |
+
+  <<{f16\p fs( g f,\mf}
+  \context Voice="PnoV2" {a4)}>>
+  \oneVoice g--)~ g16 d'( ef f, g4--)~ \mbreak |
+
+  g16 c(\dim d f, g4-- g16) bf( c f, g4--~ |
+  \stemDown g16)\p^\markup{\italic "legato"} f g \toDN\stemUp a, bf \toUP\stemDown f' g \toDN\stemUp bf, c \toUP \stemDown g' a \toDN\stemNeutral c, d \toUP a' bf \toDN d, | 
+  ef\toUP bf' c \toDN d, ef \toUP bf' c \toDN ef, f \toUP c' d \toDN f, fs \toUP d' ef \toDN fs, |
+  g\toUP d' ef \toDN gs, a \toUP f' g \toDN fs, g \toUP d' ef \toDN gs, a \toUP f' g \toDN fs, |
+  g\toUP d' ef gs, \stemUp a bf c d ef f g gs a b c d \stemNeutral \mbreak |
+
+  ef\pp f fs g g d ef f g d ef f g d ef f |
+
+  <<{\voiceOne g fs g fs g fs g fs g c, g' fs g bf, g' fs |
+               g a, ef' d ef d ef d ef f, fs g gs a bf b}
+     \context Voice="PnoV2" {ef16 d ef d ef d ef d ef a, ef' d ef g, ef' d |
+     ef f, fs g gs a bf b c8 s s4} 
+  >> |
+
+  \oneVoice c16 a c, \toDN\stemUp d ef \toUP\stemNeutral f fs g ef c a g gf f ef c \mbreak |
+
+  \voiceOne a8 <ef' g>16\p( <d fs> <ef g>-- d ef c a8) <ef' g>16( <d fs> <ef g>-- d ef c|
+   a8) <ef' g>16( <d fs> <ef g>-- d ef c a8) <ef' g>16( <d fs> <ef g>-- d ef c \barNumberCheck \RhX |
+   a8) a16\cresc ef' d f ef g f a \toDN ef bf' \toUP a c bf d |
+   c ef\! r d,( ef c' d f, g ef' f a, bf g' a c,) \mbreak |
+
+  <d, bf' d>4.\p c'8( <d bf d,> <a f' a> <bf g' bf> ef |
+  <f d f,>4.) ef8( <f d f,> <c a' c> <bf' d> g |
+  <a f a,>4.) a8( <bf g bf,> <f d' f> <g ef' g> c |
+  <d bf d,>4.) ef8( <f d f,> \ottava #1 <c a' c> <d bf' d> g \mpbreak |
+}
 PianoUPII=\relative c'{\commonConductor s1}
 PianoUPIII=\relative c'{\commonConductor s1}
 PianoDNI=\relative c'{\commonConductor 
