@@ -17,7 +17,8 @@
  score-markup-spacing = #'((basic-distance . 20)
                             (padding . 0.5)
                             (stretchability . 60))
- page-breaking-system-system-spacing = #'((basic-distance . 12))
+staffgroup-staff-spacing=#'((stretchability . 20)) 
+page-breaking-system-system-spacing = #'((basic-distance . 12))
  %page-breaking = #ly:page-turn-breaking
 }
 

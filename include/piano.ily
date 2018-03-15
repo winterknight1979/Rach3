@@ -291,6 +291,10 @@ PianoUPI=\relative c'{\commonConductor
   <f d f,>4.) ef8( <f d f,> <c a' c> <bf' d> g |
   <a f a,>4.) a8( <bf g bf,> <f d' f> <g ef' g> c |
   <d bf d,>4.) ef8( <f d f,> \ottava #1 <c a' c> <d bf' d> g \mpbreak |
+
+  <<{<a a,>4\p)( <bf bf,>) <gs gs,>( <a a,>) }
+  \context Voice="PnoV2" {\tuplet 3/2 4 {<f d>8-\omit\p <e cs> <f d>~ <f d>[ <e cs> <f d>] <e cs>[ <ef c> <e cs>]~ <e cs> <ef c> <e cs>}}>> |
+
 }
 PianoUPII=\relative c'{\commonConductor s1}
 PianoUPIII=\relative c'{\commonConductor s1}
