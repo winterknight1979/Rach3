@@ -78,25 +78,21 @@
         shortInstrumentName = #"Tb."
         midiInstrument = #"trombone"}
         \articulate \unfoldRepeats <<{\conductorI \TromOneII \TromOneIII} \\ {\conductorI \TromTwoII \TromTwoIII} \\ 
-        {\conductorI \TromThreeII \TromThreeIII} {\conductorI \TubaII \TubaIII}>> 
+        {\conductorI \TromThreeII \TromThreeIII} 
+        
+      >> 
 
-%          \new Staff \with %8
-%      { instrumentName = #"Tuba"
-%        shortInstrumentName = #"Tu."
-%        midiInstrument = #"tuba"}
-%        \articulate \unfoldRepeats {\conductorI \TubaII \TubaIII} 
+          \new Staff \with %8
+      { instrumentName = #"Tuba"
+        shortInstrumentName = #"Tu."
+        midiInstrument = #"tuba"}
+        \articulate \unfoldRepeats {\conductorI \TubaII \TubaIII} 
         \new Staff \with %9
       { instrumentName = #"Timpani"
         shortInstrumentName = #"Timp."
         midiInstrument = #"timpani"}
         \articulate \unfoldRepeats {\TimpI \TimpII \TimpIII} 
-        \new DrumStaff %10 (convieniently!)
-        \articulate \unfoldRepeats <<
-          \new DrumVoice {\conductorI \conductorII \SDIII}
-          \new DrumVoice {\conductorI \BDII \BDIII }
-          \new DrumVoice {\conductorI \CymII \CymIII}
-        >>
-            \new Staff \with %11
+           \new Staff \with %11
       { instrumentName = #"Violins"
         shortInstrumentName = #"Vln."
         midiInstrument = #"string ensemble 1"}
@@ -128,6 +124,12 @@
         <<
           \new Voice = "PnoV1" {\PianoUPI \PianoUPII \PianoUPIII} \new Voice ="PnoV2" {\conductorI \conductorII \conductorIII}
           \new Voice = "PnoV3" {\PianoDNI} \new Voice ="PnoV4" {\conductorI \conductorII \conductorIII }>>
+         \new DrumStaff %10 (convieniently!)
+        \articulate \unfoldRepeats <<
+          \new DrumVoice {\conductorI \conductorII \SDIII}
+          \new DrumVoice {\conductorI \BDII \BDIII }
+          \new DrumVoice {\conductorI \CymII \CymIII}
+        >>
              
       >>
         \header{piece=\markup\huge "I"}
