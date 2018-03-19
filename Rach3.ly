@@ -79,7 +79,7 @@
         midiInstrument = #"trombone"}
         \articulate \unfoldRepeats <<{\conductorI \TromOneII \TromOneIII} \\ {\conductorI \TromTwoII \TromTwoIII} \\ 
         {\conductorI \TromThreeII \TromThreeIII} 
-      %  {\conductorI \TubaII \TubaIII}
+        
       >> 
 
           \new Staff \with %8
@@ -92,7 +92,7 @@
         shortInstrumentName = #"Timp."
         midiInstrument = #"timpani"}
         \articulate \unfoldRepeats {\TimpI \TimpII \TimpIII} 
-                   \new Staff \with %11
+           \new Staff \with %11
       { instrumentName = #"Violins"
         shortInstrumentName = #"Vln."
         midiInstrument = #"string ensemble 1"}
@@ -130,7 +130,7 @@
           \new DrumVoice {\conductorI \BDII \BDIII }
           \new DrumVoice {\conductorI \CymII \CymIII}
         >>
-     
+             
       >>
         \header{piece=\markup\huge "I"}
       \midi{}
