@@ -87,7 +87,7 @@ HrnTwoI=\relative c' {
   g4-> g8-. g-. g4-> g8-. g-. |
   g4-> g->\cresc g-> g-> |
   g-> g-> g-> g-> |
-  \time 2/2 cs,1\ff~ |
+  \time 2/2 \grace s8 cs,1\ff~ |
   cs2. cs8-- cs-- |
   cs1--~ |
   cs2. cs8-- cs-- \mbreak |

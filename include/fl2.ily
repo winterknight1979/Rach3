@@ -84,7 +84,7 @@ FlTwoI=\relative c'{
   r4 c8-. c-. c4-> c8-. c-. |
   c4-> c8-. c-. c4-> c8-. c-. \mbreak |
   c4-> gs->\cresc g-> fs-> | f-> fs-> g-> gs-> |
-  \time 2/2 a->\ff r r2 |
+  \time 2/2 \grace s8 a4->\ff r r2 |
   R1 * 7 \mark\default \barNumberCheck \RhXV |
   R1 * 16 \mark\default \barNumberCheck \RhXVI |
   R1 * 8 \mbreak |

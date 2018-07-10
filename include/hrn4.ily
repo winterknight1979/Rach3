@@ -86,7 +86,7 @@ HrnFourI=\relative c' {
   e4-> e8-. ds-. e4-> e8-. ds-. 
   e4-> ds->\cresc d-> cs-> \mbreak |
   c-> cs-> d-> ds-> |
-  \time 2/2 as1~\ff |
+  \time 2/2 \grace s8 as1~\ff |
   as2. as8-- as-- |
   as1--~ |
   as2. as8-- as-- |

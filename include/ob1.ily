@@ -120,7 +120,7 @@ ObOneI=\relative c' {
   e4-> e8-. e-. e4-> e8-. e-. |
   e4-> e->\cresc e-> e-> |
   e-> e-> e-> e-> |
-  \time 2/2 fs,1\ff~ |
+  \time 2/2 \grace s8 fs,1\ff~ |
   fs2 r4 fs8-- fs-- |
   fs1--~\mbreak |
   fs2 r4 fs8-- fs-- |

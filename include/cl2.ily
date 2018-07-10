@@ -113,7 +113,7 @@ ClTwoI=\relative c'{
   b4-> b8-. as-. b4-> b8-. as-. |
   b4-> d,->\cresc d-> d-> |
   d-> d-> d-> d-> \mbreak |
-  \time 2/2 es,1\ff~ |
+  \time 2/2 \grace s8 es,1\ff~ |
   es2 r4 es8-- es-- |
   es1--~ |
   es2 r4 es8-- es-- |

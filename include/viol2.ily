@@ -181,7 +181,7 @@ ViolTwoI=\relative c' {\commonConductor
   a4-> a8-.( gs-.) a4 a8-.( gs-.) \mbreak |
   a4-> <e c' e>->\cresc <e c' e>-> <e c' e>-> |
   <e c' e>-> <e c' e>-> <e c' e>-> <e c' e>-> |
-  \time 2/2 <a fs'>->\ff <c, fs>2.:16 |
+  \time 2/2 \grace s8 <a fs'>4->\ff <c, fs>2.:16 |
   <c fs>2: <c fs>: |
   <c fs>: <c fs>: |
   <c fs>: <c fs>: |
@@ -911,7 +911,7 @@ ViolTwoDI=\relative c' {\commonConductor
   \time 4/4 s1 * 10  s1 * 10 \mark\default \barNumberCheck \RhXIV
 
   s1 * 10  s1*8 s1*4
-  \time 2/2 s1 * 8 \mark\default \barNumberCheck \RhXV
+  \time 2/2 \grace s8 s1 * 8 \mark\default \barNumberCheck \RhXV
 
   s1 * 16 \mark\default \barNumberCheck \RhXVI
  

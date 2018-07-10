@@ -134,7 +134,7 @@ ClOneI=\relative c'{\transposition bf \commonConductor
   b4-> b8-. as-. b4-> b8-. as-. |
   b4-> fs,->\cresc fs-> fs->  \mbreak |
   fs-> fs-> fs-> fs-> |
-  \time 2/2 gs,1\ff~ |
+  \time 2/2 \grace s8 gs,1\ff~ |
   gs2 r4 gs8-- gs-- |
   gs1\ff~-- |
   gs2 r4 gs8-- gs-- |

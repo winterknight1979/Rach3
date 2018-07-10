@@ -189,7 +189,7 @@ BassI=\relative c {\commonConductor \transposition c
   a4-> a8-.( e-.) a4-> a8-.( e-.) |
   a4-> e->\cresc c-> a-> |
   e-> a-> c-> e-> |
-  \time 2/2 a,2--\ffMMarc bf-- |
+  \time 2/2 \grace s8 a,2--\ffMMarc bf-- |
   a-- af-- |
   a-- bf-- \mbreak |
   a-- af-- |

@@ -50,7 +50,7 @@ TptOneI=\relative c' {
   R1 * 5 |
   \cueWhileClef "TimpI" "Timp." #DOWN "bass" {R1 * 2} | R1 |
   \cueWhileClef "TimpI" "Timp." #DOWN "bass" {R1 * 4} \mbreak |
-  \time 2/2 d,2.\f d8-- d--|
+  \time 2/2 \grace s8 d,2.\f d8-- d--|
   d1~-- |
   d2. d8-- d-- |
   d1~-- |

@@ -175,7 +175,7 @@ ViolOneI=\relative c' {\commonConductor
   <e, c' e>4-- <c' e>8-.( <c e>-.) <e, c' e>4-> <c' e>8-.( <c e>-.) |
   <e, c' e>4-> <c' c'>->\cresc <c c'>-> <c c'>->  |
   <c c'>-> <c c'>-> <c c'>-> <c c'>-> \mbreak |
-  \time 2/2 <c c'>->\ff r r2 |
+  \time 2/2 \grace s8 <c c'>4->\ff r r2 |
   R1 * 7 \mark\default \barNumberCheck \RhXV |
   R1 |
   r4 g'2^"con sord"--(\mf\< af4)\> | R1\! |
@@ -903,7 +903,7 @@ ViolOneDI=\relative c' {\commonConductor
   \time 4/4 s1 * 10  s1 * 10 \mark\default \barNumberCheck \RhXIV
 
   s1 * 10  s1*8   s1*4
-  \time 2/2 s1 * 8 \mark\default \barNumberCheck \RhXV
+  \time 2/2 \grace s8 s1 * 8 \mark\default \barNumberCheck \RhXV
 
   s1 * 16 \mark\default \barNumberCheck \RhXVI
   

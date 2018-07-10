@@ -169,7 +169,7 @@ BsnOneI=\relative c {
   a4-> a8-. e-. a4-> a8-. e-. |
   a4-> gs->\cresc g-> fs-> |
   f-> fs-> g-> gs-> \mbreak |
-  \time 2/2 a\ffMMarc r bf,2(|
+  \time 2/2 \grace s8 a4\ffMMarc r bf,2(|
   a af) |
   a( bf |
   a af) |
