@@ -189,7 +189,7 @@ VlaI=\relative c' {\commonConductor
   <c e>4-> <c e>8-.( <c e>8-.) <c e>4-> <c e>8-.( <c e>-.) |
   <e a>4-> <a, gs'>->\cresc <a g'>-> <a fs'>-> |
   <a f'>-> <a fs'>-> <a g'>-> <a gs'>->
-  \time 2/2 <ds a>->\ff <fs, ds'>2.:16 |
+  \time 2/2 \grace s8 <ds a>4->\ff <fs, ds'>2.:16 |
   <fs ds'>2: <fs ds'>: |
   <fs ds'>: <fs ds'>: |
   <fs ds'>: <fs ds'>: \mbreak |
@@ -956,7 +956,7 @@ VlaDI=\relative c' {\commonConductor \clef alto \time 4/4 \key d\minor s1 * 10 \
   \time 4/4 s1 * 10  s1 * 10 \mark\default \barNumberCheck \RhXIV
 
   s1 * 10  s1*8 s1*4
-  \time 2/2 s1 * 8 \mark\default \barNumberCheck \RhXV
+  \time 2/2 \grace s8 s1 * 8 \mark\default \barNumberCheck \RhXV
 
   s1 * 16 \mark\default \barNumberCheck \RhXVI
   r2^"div." bf--\mf\>~^"con sord." |

@@ -45,7 +45,7 @@ TptTwoI=\relative c' {
   R1 * 10 | R1 * 5 ||
   \cueWhileClef "TimpI" "Timp." #DOWN "bass" {R1 * 2} | R1 |
   \cueWhileClef "TimpI" "Timp." #DOWN "bass" {R1 *  2\mbreak | R1 * 2} |
-  \time 2/2 d2.\f d8-- d--|
+  \time 2/2 \grace s8 d2.\f d8-- d--|
   d1~-- |
   d2. d8-- d-- |
   d1~-- |

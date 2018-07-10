@@ -68,7 +68,7 @@ TimpI=\relative c{
   a r a r |
   a r c a |
   c a c a \mbreak |
-  \time 2/2 c1\f\startTrillSpan |
+  \time 2/2 \grace s8 c1\f\startTrillSpan |
   c\startTrillSpan
   c\startTrillSpan
   c\startTrillSpan

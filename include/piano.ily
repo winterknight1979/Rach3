@@ -393,6 +393,79 @@ PianoUPI=\relative c'{\commonConductor
   }
 >> |
 \oneVoice \ottava #1 r8\ff
+<gf a c gf'> <f a c f>->[ <ef bf' c ef>] r <gf a c gf'> <f a c f>->[ <ef bf' c ef>] |
+r <gf a c gf'> <f a c f>->[ <ef bf' c ef>] r <gf a c gf'>-> <f a c f>->[ <ef a c ef>] |
+r <f bf d f> <gf bf d gf>->[ <af cf ef af>] r <f bf d f> <gf bf d gf>->[ <af cf ef af>] |
+r <f bf d f > <gf bf d gf>->[ <af cf ef af>] r <f bf d f> <gf bf d gf>->[ <af bf d af'>] \mbreak |
+\tuplet 3/2 4 {r\ff-\markup{\italic "molto marcato"} <gf bf ef gf> <f bf d f> <f bf d f>4->( <ef bf' c ef>8) r <d bf' d> <ef bf' c ef> <ef bf' c ef>4->( <f bf d f>8) |
+r <gf bf ef gf> <f bf d f> <f bf d f>4-> <gf bf ef gf>8 r <fs d' fs>[ <gs d' fs gs>] <gs d' fs gs>\< <as d fs as> <as d fs as>\! |
+<b d fs b> <fs d' fs>[ <e cs' e>] <e cs' e>4(-> <d b' d>8) r <d as' d> <e as d e> <e as d e>4->( <fs as d fs>8) |
+r <d b' d> <e b' cs e> <e b' cs e>4->( <fs b d fs>8) r <es d' es> <fs d' fs> <fs d' fs>4(-> <gs d' fs gs>8) \mbreak |
+r <a cs fs a> <gs cs es gs> <gs cs es gs>4->( <fs cs' ds fs>8) r <es cs' es> <fs cs' ds fs> <fs cs' ds fs>4->( <gs cs es gs>8) |
+r <a cs fs a> <gs cs es gs> <gs cs es gs>4(-> <a cs fs a>8) r <a f' a>\<[ <b f' a b>] <b f' a b> <cs f a cs> <cs f a cs>\! |
+<d fs a d> <a fs' a>[ <g e' g>] <g e' g>4->( <f d' f>8) r <f cs' f> <g cs f g> <g cs f g>4(-> <a cs f a>8) |
+r <f d' f> <g d' f g> <g d' f g>4->( <a d f a>8) r <gs f' gs> <a f' a> <a f' a>4->( <b f' a b>8) |
+}
+
+r <c e a c>\ff <e, a c e> <e gs c e> r <a c e a> <c, e a c> <c e gs c> \mbreak |
+\ottava #0
+r <e a c e> <a, c e a> <gs c e gs> r <c e a c> <e, a c e> <e gs c e> |
+r4 \clef bass <c, e a c> <e a c e> \clef treble <a c e a>
+<c e a c> <e a c e> <a c e a> <c e a c>
+\time 2/2 \grace s8
+<ds fs a c ds>\fff \toDN <ds fs>16[ \toUP \ottava #1 <fs' ds' fs> \toDN <d, f> \toUP <f' d' f> \toDN <ds, fs> \toUP <fs' ds' fs>]
+\toDN <ds, fs,>[ \toUP <ds' fs>] \toDN <ds, fs,>[ \toUP \ottava #0 <fs ds' fs> \toDN <d f,> \toUP <f d' f> \toDN <ds fs,> \toUP <fs ds' fs>] |
+
+\toDN <fs, ds>[ \toUP <ds' fs>] \toDN <fs, ds> \toUP <ds' fs ds'> \toDN <f, d> \toUP <d' f d'> \toDN <fs, ds> \toUP <ds' fs ds'> 
+\toDN \stemUp\clef bass  <ds, fs,>[ \toUP \stemDown  <fs ds'>] \toDN \stemUp <ds fs,> \toUP \stemDown <fs ds' fs> 
+\toDN \stemUp <d f,> \toUP \stemDown <f d' f> \toDN \stemUp <ds fs,> \toUP \stemDown <fs ds' fs> \mbreak |
+
+r8 \toDN \stemUp <fs ds'>16 \toUP \stemDown <fs' ds' fs> \toDN \stemUp <d f,> \toUP \stemDown <f d' f> \toDN \stemUp <ds fs,> \toUP\stemDown <fs ds' fs>
+\toDN \stemUp <fs, ds>[ \toUP \stemDown <ds' fs>]
+\toDN \stemUp <fs, ds> \toUP \stemDown <ds' fs ds'> \toDN \stemUp <f, d> \toUP \stemDown <d' f d'> \toDN \stemUp <fs, ds> \toUP \stemDown <ds' fs ds'> |
+
+\toDN \stemUp <ds, fs,>[ \toUP \stemDown <fs ds'>]
+\toDN \stemUp <ds fs,> \toUP \stemDown <fs ds' fs> \toDN \stemUp <d f,> \toUP \stemDown <f d' f> \toDN \stemUp <ds fs,> \toUP \stemDown <fs ds' fs> 
+\toDN \stemUp <fs, ds>[ \toUP \stemDown <ds' fs>]
+\toDN \stemUp <fs, ds> \toUP \stemDown <ds' fs ds'> \toDN \stemUp <f, d> \toUP \stemDown <d' f d'> \toDN \stemUp <fs, ds> \toUP \stemDown <ds' fs ds'> |
+
+
+r8 \ottava #1 \toDN \stemUp <d' f>16 \toUP \stemDown <f' d' f> \toDN \stemUp <e, cs> \toUP \stemDown <e' cs' e> \toDN \stemUp <f, d> \toUP\stemDown <f' d' f>
+\toDN \stemUp <d, f,>[ \toUP \stemDown <d' f>] \ottava #0
+\toDN \stemUp <d, f,> \toUP \stemDown <f d' f> \toDN \stemUp <cs e,> \toUP \stemDown <e cs' e> \toDN \stemUp <d f,> \toUP \stemDown <f d' f> |
+
+\toDN \stemUp <f, d>[ \toUP \stemDown <d' f>]
+\toDN \stemUp <f, d> \toUP \stemDown <d' f d'> \toDN \stemUp <e, cs> \toUP \stemDown <cs' e cs'> \toDN \stemUp <f, d> \toUP \stemDown <d' f d'> 
+\toDN \stemUp \clef bass <d, f,>[ \toUP \stemDown <f d'>]
+\toDN \stemUp <d f,> \toUP \stemDown <f d' f> \toDN \stemUp <cs e,> \toUP \stemDown <e cs' e> \toDN \stemUp <d f,> \toUP \stemDown <f d' f>  \mpbreak |
+
+r8\dim \toDN \stemUp <f d>16 \toUP \stemDown <d' f d'> \toDN \stemUp <e, cs> \toUP \stemDown <cs' e cs'> \toDN \stemUp <f, d> \toUP\stemDown <d' f d'>
+\toDN \stemUp <d, f,>[ \toUP \stemDown <d' f>]
+\toDN \stemUp <d, f,> \toUP \stemDown <f d' f> \toDN \stemUp <cs e,> \toUP \stemDown <e cs' e> \toDN \stemUp <d f,> \toUP \stemDown <f d' f> |
+
+\toDN \stemUp <e, cs>[ \toUP \stemDown <cs' e>\toDN \stemUp <f, d> \toUP \stemDown <d' f>] 
+\toDN \stemUp <cs e,> \toUP \stemDown <e cs'> \toDN \stemUp <d f,> \toUP \stemDown <f d'> 
+\toDN \stemUp <cs e>[ \toUP \stemDown <cs' e> \toDN \stemUp <d, f> \toUP \stemDown <d' f>]
+\toDN \stemUp \clef treble <e, cs'> \toUP \stemDown <e' cs'> \toDN \stemUp <f, d'> \toUP \stemDown <f' d'> |
+\stemNeutral r8 b\p( c d ef d c b |
+c b ef, d ef d c b |
+c b ef, d ef d ef bf' \mbreak |
+cf bf cf d ef d ef bf' |
+b cs d4) r8 as,( b cs |
+d cs d as' b as b cs |
+d\< cs d a'\! bf a d, cs |
+d\> cs bf a\! bf a d, cs) |
+r8\mf \stemUp \once\slurUp bf'( a gs a ef d cs |
+d bf a gs a ef d cs \mbreak |
+d\dim) \once\slurUp bf'( a gs a ef d cs |
+d \toDN \stemUp bf a gs a ef d) r |
+\toUP \stemNeutral r \once\slurUp<a'' cs>\p( <gs bs> <a cs> \stemDown <cs, a>4)_\markup{\italic "m.d."} \toDN r \toUP \stemNeutral |
+r8 \once\slurUp <a' cs>(\mf <gs bs> <a cs> \stemDown <a, cs>4)_\markup{\italic "m.g."} \stemNeutral s |
+ r8 \once\slurUp<a' cs>\p( <gs bs> <a cs> \stemDown <cs, a>4)^\markup{\italic "m.g."} \toDN r \toUP \stemNeutral |
+s1 \mbreak |
+
+
+
 
 }
 PianoUPII=\relative c'{\commonConductor s1}
@@ -659,6 +732,60 @@ PianoDNI=\relative c'{\commonConductor
   \tuplet 6/4 {<gs cs,>8([-\omit\cresc cs e~ <cs e a> gs')] r} \tuplet 3/2 {<ef, bf>( df' ef~} <bf ef g>4) |
   \tuplet 6/4 {<bf ef,>8([ \clef treble  ef gf~ <ef gf cf> bf')] r} \clef bass \tuplet 3/2 {<f, c>( \clef treble ef' f~} <c f a>4) |
   r8-\omit\ff 
+  <a c ef> <a c ef f>[-> <b c ef gf>] r <a c ef> <a c ef f>[-> <b c ef gf>] |
+  r <a c ef> <a c ef f>->[ <bf c ef gf>] r <a c ef> <a c ef f>->[ <a c ef gf>] |
+  r <af bf d f> <af bf d gf>->[ <af cf ef af>] r <af bf d f> <af bf d gf>->[ <af cf ef af>] |
+  r <af bf d f> <af bf d gf>->[ <af cf ef af>] r <af bf d f> <af bf d gf>->[ <af bf d af'>] |
+  \clef bass
+  \tuplet 3/2 4 {r-\omit\ff <gf bf ef gf> <gf bf d f> <gf bf d f>4->( <gf bf c ef>8) r <gf bf d> <gf bf c ef> <gf bf c ef>4->( <gf bf d f>8) |
+  r <gf bf ef gf> <gf bf d f> <gf bf d f>4(-> <gf bf ef gf>8) r \clef treble <as d fs>[ <as d fs gs>] <as d fs gs>-\omit\< <as d fs as> <as d fs as>\! |
+  <as d fs b> \clef bass <fs d' fs>[ <fs cs' e>] <fs cs' e>4(-> <fs b d>8) r <fs as d> <fs as d e> <fs as d e>4->( <fs as d fs>8) |
+  r <fs b d> <fs b cs e> <fs b cs e>4->( <fs b d fs>8) r <es d' es> <fs d' fs> <fs d' fs>4->( <gs d' gs>8) |
+  \clef treble
+  r <a cs fs a> <a cs es gs> <a cs es gs>4->( <a cs ds fs>8) r <a cs es> <a cs ds fs> <a cs ds fs>4->( <a cs es gs>8) |
+  r <a cs fs a> <a cs es gs> <a cs es gs>4->( <a cs fs a>8) r <cs f a>[-\omit\< <cs f a b>] <cs f a b> <cs f a cs> <cs f a cs> |
+  <d f a d> <a f' a>[ <a e' g>] <a e' g>4->( <a d f>8) r <a cs f> <a cs f g> <a cs f g>4->( <a cs f a>8) |
+  r <a d f> <a d f g> <a d f g>4->( <a d f a>8) r <gs f' gs> <a f' a> <a f' a>4->( <b f' a b>8)|
+  }
+  r-\omit\ff <c e a c> <e, a c e> <e gs c e> r \clef bass <a c e a> <c, e a c> <c e gs c> |
+  r <e a c e> <a, c e a> <gs c e gs> r <c e a c> <e, a c e> <e gs c e> |
+  r4^\markup{\italic "marcato"}
+  \acciaccatura {<a, c e a>8} <a c e a>4 
+  \acciaccatura {<c e a c>8} <c e a c>4
+  \acciaccatura {<e a c e>8} <e a c e>4 |
+  \acciaccatura {<a c e a>8} <a c e a>4 
+  \acciaccatura {<c e a c>8} <c e a c>4
+  \acciaccatura {<e a c e>8} <e a c e>4
+  \acciaccatura {<a c e a>8} <a c e a>4 |
+  \clef treble \time 2/2 
+  \acciaccatura {<c ds fs a c>8} <c ds fs a c>8-\omit\fff 
+  s16*14 |
+  s2 s2 \mbreak |
+  \clef treble r8 s s4 s2 |
+  \clef bass s1 |
+  \clef treble r8 s s4 s2 s1 \mpbreak
+  r8 s s4 s2 s1 |
+  r2 \clef bass r8-\omit\p b,,( c d |
+  ef d ef b' c b c d\< |
+  ef d ef bf'\! cf bf ef, d |
+  ef\> d cf bf\! cf bf ef, d) |
+  r as''\<( b cs\! d cs b as |
+  b as d, cs d\> cs b as \! |
+  b as d, cs d cs d a' |
+  bf a bf cs d cs d gs |
+  a4)-\omit\mf r8 \toUP \stemDown \slurDown bf'( a gs a ef |
+  d cs d \toDN \stemUp bf a gs a ef |
+  d-\omit\dim cs d) bf'( \stemDown a gs a ef |
+  d cs d bf a gs a c |
+  \oneVoice \stemNeutral \slurNeutral fs,4)-\omit\p
+  r \toUP b''2\rest |
+  s2 b8\rest \toDN \stemUp <a, cs>-\omit\mf^\markup{\italic "m.d."} <gs bs>\dim <a cs> |
+  <cs, fs,>4-\omit\p r \toUP s2 \toDN |
+  <<{\voiceOne r8 <a' cs>8( <bs gs> <a cs> \stemDown <a, cs>4) e\rest | s4}
+  \context Voice="PnoV4" {\voiceTwo r2 a'8\rest \stemUp <a, cs>([ <gs bs> <a cs>] | <a d,>4)-\omit\f}>>
+
+
+
 }
   
 PianoDNII=\relative c'{\commonConductor s1}

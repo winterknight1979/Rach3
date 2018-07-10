@@ -116,7 +116,7 @@ HrnOneI=\relative c' {
   b4-> b8-. b-. b4-> b8-. b-. |
   b4-> b->\cresc b-> b-> |
   b-> b-> b-> b-> \mbreak |
-  \time 2/2 cs1\ff~ |
+  \time 2/2 \grace s8 cs1\ff~ |
   cs2. cs8-- cs-- |
   cs1--~ |
   cs2. cs8-- cs-- |

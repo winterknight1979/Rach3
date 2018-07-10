@@ -94,7 +94,7 @@ ObTwoI=\relative c' {
   c4-> c8-. c-. c4-> c8-. c-. |
   c4-> c->\cresc c-> c-> |
   c-> c-> c-> c-> |
-  \time 2/2 ds,1\ff~ |
+  \time 2/2 \grace s8 ds,1\ff~ |
   ds2 r4 ds8-- ds-- |
   ds1--~ |
   ds2 r4 ds8-- ds-- |

@@ -52,7 +52,7 @@ conductorI={
   \time 4/4 s1 * 10 \tempo "Più vivo" 4=155 s1 * 10 \mark\default \barNumberCheck \RhXIV
 
   s1 * 10 \tempo "Allegro" 4=145 s1*8 \tempo\markup{\italic "accel."} 4=152 s1*4
-  \time 2/2 \tempo "Allegro molto (Alla breve)" 2=91 s1 * 8 \mark\default \barNumberCheck \RhXV
+  \time 2/2 \tempo "Allegro molto (Alla breve)" 2=91 \grace s8 s1 * 8 \mark\default \barNumberCheck \RhXV
 
   s1 * 16 \mark\default \barNumberCheck \RhXVI
   

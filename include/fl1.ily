@@ -85,8 +85,8 @@ FlOneI=\relative c'{
   r4 f'8-.\f f-. f4-> f8-. f-. |
   f4-> f8-. f-. f4-> f8-. f-. |
   f4-> gs,->\cresc  g-> fs-> | f-> fs-> g-> gs->|
-  \time 2/2 
-  a->\ff r r2 | R1 * 7 \mark\default \barNumberCheck \RhXV \mbreak |
+  \time 2/2 \grace s8
+  a4->\ff r r2 | R1 * 7 \mark\default \barNumberCheck \RhXV \mbreak |
   R1 * 16 \mark\default \barNumberCheck \RhXVI |
   R1 * 5 |
   \cueWhile "ViolOneI" "Viol.I" #UP

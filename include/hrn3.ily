@@ -96,7 +96,7 @@ HrnThreeI=\relative c' {
   e4-> e8-. ds-. e4-> e8-. ds-. |
   e4-> e->\cresc e-> e-> |
   e-> e-> e-> e-> \mbreak |
-  \time 2/2 as1\ff~ |
+  \time 2/2 \grace s8 as1\ff~ |
   as2. as8-- as-- |
   as1--~ |
   as2. as8-- as--
