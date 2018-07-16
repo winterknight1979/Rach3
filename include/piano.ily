@@ -463,10 +463,91 @@ d \toDN \stemUp bf a gs a ef d) r |
 r8 \once\slurUp <a' cs>(\mf <gs bs> <a cs> \stemDown <a, cs>4)_\markup{\italic "m.g."} \stemNeutral s |
  r8 \once\slurUp<a' cs>\p( <gs bs> <a cs> \stemDown <cs, a>4)^\markup{\italic "m.g."} \toDN r \toUP \stemNeutral |
 s1 \mbreak |
+<<{\voiceOne \dynamicUp r4\f a''2--(\> bf4)-\omit\mp |
+r g2--(-\omit\f\> a4)-\omit\mp |
+r f2-\omit\f\>--( g4)-\omit\dim |
+r e2--( f4) |
+\oneVoice r8 \voiceOne f4-\omit\<( fs8-\omit\f g->)-\omit\sf }
+\context Voice="PnoV2" {\voiceTwo \dynamicDown r8-\omit\f <ef c>4--( <ef c>8)-- r <d bf>4--( <d bf>8--) |
+r <d bf>4--( <d bf>8)-- r <c a>4--( <c a>8)-- |
+r8 <c a>4\dim--( <c a>8--) r <bf g>4--( <bf g>8--) |
+r <bf g>4--( <bf g>8--) r <a f>4--( <a f>8--)-\omit\p |
+s cs\< d d-\omit\f ef\sf }
+>>
+
+\oneVoice \dynamicNeutral <fs a>\mf([ <g bf>-- <fs a>)] |
+r2 \clef bass r8 <fs,, a>( <g bf>-- <fs a>) \mbreak |
+\clef treble r2 r8 <f'' a>( <gf bf>-- <f a>) |
+r2 \clef bass r8 <f,, a>( <gf bf>-- <f a>) |
+r2 \clef treble r8 <es'' gs>( <fs a>-- <es gs>) |
+r <es, gs>( <fs a>-- <es gs>) r gs,[ a( es' |
+fs)] <es gs>([ <fs a>-- gs]) r <e' gs>( <f a>-- <e gs>) |
+r <e, gs>(\dim <f a>-- <e gs>) r \clef bass gs,( <f a>-- <e gs>)-\omit\p \mbreak | 
+
+\clef treble r8 \voiceOne bf'''(\mf a gs a f e ds |
+e bf a gs a f e ds |
+e \toDN bf a gs a) bf[\dim( a gs] |
+a f e ds e bf a) r |
+\toUP \oneVoice r\p <e'' gs>( <ds fss> <e gs> \toDN <e, gs>4) r |
+\toUP r8 <e''' gs>\pp( <ds fss> <e gs> \toDN \clef treble <e, gs>4) r \mbreak |
+\toUP r8 <e, gs>( <ds fss> <e gs> \toDN <e, gs>4) r |
+\toUP r8 <e' gs>(\dim <ds fss> <e gs> \toDN <e, gs>4) s |
+\toUP
+<<{\voiceOne r4-\omit\ppp \once\dynamicUp e''2---\omit\f\>( f4)\! | r-\omit\f \once\dynamicUp d2--(\> e4)\! |
+r-\omit\f c2---\omit\dim( d4) | r b2--( c4)} 
+\context Voice="PnoV2" {\voiceTwo 
+r8 <bf g>4--(\f <bf g>8--) r <f a>4--( <f a>8--) |
+r <f a>4--( <f a>8--) r <e g>4--( <e g>8--) |
+r <e g>4--( <e g>8--)\dim r <d f>4--( <d f>8--) |
+r <d f>4--( <d f>8--) r <c e>4--( <c e>8--)-\omit\mf}
+>>
+
+\oneVoice r8 <c' ef>\mf( <bf d> <a c>) r <g bf>( <a c> <bf d>) \mpbreak | 
+
+r <bf d>( <a c> <g bf>) r <f a>( <g bf> <a c>) |
+r <a c>\dim( <g bf> <f a>) r <e g>( <f a> <g bf>) |
+r <g bf>( <f a> <e g>) r <d f>( <e g> <f a>) |
+
+
+r4 <<{\voiceOne e2--\p( f4) | b4\rest e,2--( f4) | b4\rest ef,2--( e4) | b'4\rest ef,2--( e4) |
+b'4\rest d,2--(\dim ef4) |b'4\rest d,2--( ef4) |
+b'4\rest cs,2--( d4) |b'4\rest cs,2--( d4) |
+b'4\rest c,2--(\pp df4) |b'4\rest c,2--( df4) |
+b'4\rest c,2--( cs4) |b'4\rest c,2--( cs4) |
+}
+\context Voice="PnoV2" {\voiceTwo
+r8-\omit\p <bf d>4 <bf d> <bf d>8 |
+s4 r8 <bf d>4 <bf d> <bf d>8 |
+s4 r8 <bf d>4 <bf d> <bf d>8 |
+s4 r8 <bf d>4 <bf d> <bf d>8 |
+s4 r8 <bf g>4-\omit\dim <bf g> <bf g>8 |
+s4 r8 <bf g>4 <bf g> <bf g>8 |
+s4 r8 <bf g>4 <bf g> <bf g>8 |
+s4 r8 <bf g>4 <bf g> <bf g>8 |
+s4 r8 <bf g>4-\omit\pp <bf g> <bf g>8 |
+s4 r8 <bf g>4 <bf g> <bf g>8 |
+s4 r8 <bf g>4 <bf g> <bf g>8 |
+s4 r8 <bf g>4 <bf g> <bf g>8 }>> |
+
+\oneVoice r2 <g'' bf d>-- |
+r2 <ef g bf>-- |
+r2 <bf d g>-- |
+r2 <g bf d>-- |
+\key d \minor s4-\omit\p \clef bass s s2 |
+s1 \bar "|"
+\cadenzaOn
+\omit TupletBracket \tuplet 6/4 2 {s8 \clef treble d4 f s bf, d s8 \bar "|" s cs4 e s d f s8 } \bar "|"
+s1 \mbreak \bar "|"
+s1 * 4 \mbreak \bar "|"
+s1-\omit\< s1 * 3 \mbreak \bar "|"
+s1 * 3 \mbreak \bar "|"
+s1 * 2 \bar "|"
+\omit TupletBracket \tuplet 6/4 2 {r8 <c' f>([ a <cs f a>-> a)] r r <cs f>([ a <d f a>-> a)] r} \mbreak \bar "|"
+\omit TupletBracket \tuplet 6/4 2 {r8 <d f>([ a <ds f a>-> a)] r r <ds g>([ a <e' g a>-> a,)] r-\omit\ff} \bar "|"
 
 
 
-
+%\cadenzaOff
 }
 PianoUPII=\relative c'{\commonConductor s1}
 PianoUPIII=\relative c'{\commonConductor s1}
@@ -780,11 +861,93 @@ PianoDNI=\relative c'{\commonConductor
   \oneVoice \stemNeutral \slurNeutral fs,4)-\omit\p
   r \toUP b''2\rest |
   s2 b8\rest \toDN \stemUp <a, cs>-\omit\mf^\markup{\italic "m.d."} <gs bs>\dim <a cs> |
-  <cs, fs,>4-\omit\p r \toUP s2 \toDN |
+  <cs, fs,>4-\omit\p r \toUP r2 \toDN |
   <<{\voiceOne r8 <a' cs>8( <bs gs> <a cs> \stemDown <a, cs>4) e\rest | s4}
   \context Voice="PnoV4" {\voiceTwo r2 a'8\rest \stemUp <a, cs>([ <gs bs> <a cs>] | <a d,>4)-\omit\f}>>
+  \clef treble
+  <<{\voiceOne a''8( fs) b4\rest bf8( fs) |
+  b4\rest g8( e) b'4\rest a8( e)
+  b'4\rest f8(-\omit\dim d) b'4\rest g8( d) |
+  b'4\rest e,8( cs) b'4\rest f8( cs)-\omit\p |
+  b'8\rest f4(-\omit\< fs8-\omit\f g->-\omit\sf)}
+  \context Voice="PianoV4" {\voiceTwo a4 s bf |
+  s g s a |
+  s f-\omit\dim s g |
+  s e s f-\omit\p |
+  s8 cs(-\omit\< d d ef)-\omit\sf}>>
 
+  \oneVoice r r4 |
+  r8 <fs a>( <g bf>-- <fs a>) r2 |
 
+  r8 <fs a>( <g bf>-- <fs a>) r2 |
+  r8 <f a>( <gf bf>-- <f a>) r2 |
+  r8 <es gs>( <fs a>-- <es gs>) r \clef bass es,,( fs gs |
+  a gs a es' fs\< es fs gs |
+  a-\omit\f gs a e' f e a,\> gs |
+  a gs-\omit\dim f e f e a, gs \mbreak|
+  a4\p) r8 \voiceTwo \toUP bf''-\omit\mf( a gs a f |
+  e ds e \toDN \stemUp bf a gs a f |
+  \stemDown e ds e bf a4) r8 bf-\omit\dim( |
+  a gs a f e ds e g |
+  cs,4-\omit\p) \oneVoice \stemNeutral r \toUP r2 |
+  \toDN r2-\omit\pp \toUP r8 <e''' gs>( <ds fss> <e gs> |
+  \toDN \clef bass <gs,,, cs,>4) r \toUP r2 |
+  \toDN r2-\omit\dim \toUP r8 \toDN \stemUp <e' gs>(^\markup{\italic "m.d."} <ds fss> <e gs> |
+  \stemNeutral <e a,>4)-\omit\ppp 
+  <<{\voiceOne e'4-\omit\f d,\rest f' |
+  d,\rest d' d,\rest e' |
+  d,\rest c'-\omit\dim d,\rest d' |
+  d,\rest b' d,\rest c'-\omit\mf}
+  \context Voice="PnoV4" {\voiceTwo e8(-\omit\f cs) s4 f8( cs) |
+  s4 d8( b) s4 e8( b) |
+  s4 c8( a)-\omit\dim s4 d8( a) |
+  s4 b8( gs) s4 c8( gs)-\omit\mf}>> |
+  \oneVoice r2 \clef treble <d' fs>2--( |
+  <e g>) <c e>--( |
+  <d f>)-\omit\dim <bf d>--( |
+  <cs e>) <a cs>--( |
+  <bf d>)-\omit\p \clef bass
+  <<{ e,4--( f)}\\{gs,2}>> |
+  r2 \clef treble e'''4--( f) |
+  r2 \clef bass <<{ef,,4--( e)}\\{gs,2}>> |
+  r2 \clef treble ef'''4--( e) \mbreak |
+  \clef bass r2 <<{\voiceOne d,,4--(-\omit\p-\omit\dim ef)} \context Voice="PnoV4" {g,2-\omit\p-\omit\dim}>>
+  \oneVoice r2 \clef treble d'''4( ef) |
+  r2 \clef bass <<{\voiceOne cs,,4--( d)} \context Voice="PnoV4" {g,2}>>
+  \oneVoice r2 \clef treble cs''4( d) |
+  r2 \clef bass <<{\voiceOne c,,4---\omit\pp( df)} \context Voice="PnoV4" {g,2-\omit\pp}>>
+  \oneVoice r2 \clef treble c''4( df) ||
+  r2 \clef bass <<{\voiceOne c,,4--( cs)} \context Voice="PnoV4" {g2}>>
+  \oneVoice r2 \clef treble c''4( cs) \mbreak |
+  
+  R1 | <d bf g>2-\omit\mf r |
+  <bf g d> r |
+  \clef bass <d, bf g> r |
+
+  % cadenza
+  \key d\minor r4 \stemUp \once\dynamicUp \tuplet 3/2 {a,,8(\p d f} \tuplet 6/4{ g \toUP \stemDown gs a  bf b c)} \break | % we always want to break here
+  \cadenzaOn \tuplet 6/4 2 {
+  \toDN \stemUp cs([ d ef e \toUP \stemDown f fs] g[ \toDN \stemUp gs a bf b c] \bar "|"
+  cs)[ \toUP \stemDown d( bf f' a,) \toDN \stemUp \clef treble a'(] d,->)[ \toUP \stemDown bf( g d' g,) \toDN \stemUp f'(] \bar "|"
+  a,->)[ \toUP \stemDown cs( bf e a,) \toDN \stemUp \clef bass g(] <f d a>)[ \toUP \stemDown d'( bf f' a,) \toDN \stemUp bf,(] \bar "|"
+  <a a,>)[ \toUP \stemDown d'( bf f' d) \toDN \stemUp a(] g)[ \toUP \stemDown d'( b f' d) \toDN \stemUp a(] \mbreak \bar "|"
+  gs)[ \toUP \stemDown d'( c f d) \toDN \stemUp bf(] a)[ \toUP \stemDown cs( a e' cs) \toDN \stemUp g(] \bar "|"
+  \nextCresc "poco a poco cresc" <f a,>\<)[ \toUP \stemDown f'( df a' c,) \toDN \stemUp \clef treble c'(] f,)[ \toUP \stemDown d( bf f' a,) \toDN \stemUp a'(] \bar "|"
+  c,)[ \toUP \stemDown e( df g c,) \toDN \stemUp \clef bass b(] <bf g>[) \toUP \stemDown f'( d a' c,) \toDN \stemUp a(] \bar "|"
+  <f a,>)[ \toUP \stemDown f'( df a' c,) \toDN \stemUp bf]( a)[ \toUP \stemDown f'( d a' cs,) \toDN \stemUp b(] \mbreak \bar "|"
+  bf)[ \toUP \stemDown f'( ef a d,) \toDN \stemUp c(] b[) \toUP \stemDown f'( d gs e) \toDN \stemUp d(] \bar "|"
+  <c a>)[ \toUP \stemDown a'( f c' e,) \toDN \stemUp \clef treble e'(] a,)[ \toUP \stemDown f( c a' e) \toDN \stemUp \clef bass f,(] \bar "|"
+  <e a,>)[ \toUP \stemDown <cs' gs'>( b <d g b> b) \toDN \stemUp ds]( <e a,>)[ \toUP \stemDown <f a>( c <a' c> c,) \toDN \stemUp \clef treble fs(] \bar "|"
+  <c ef g>[) \toUP \stemDown c'( af ef' g,) \toDN \stemUp g'(] c,)[ \toUP \stemDown a( ef c' g) \toDN \stemUp \clef bass fs,(] \mbreak \bar "|"
+  <g d a>)[ \toUP \stemDown <e' b>( d <f b d> d) \toDN \stemUp \clef treble fs(] <g ef c>)[ \toUP \stemDown <af c>( ef <c' e> ef,) \toDN \stemUp g(] \bar "|"
+  <fs gs b>)[ \toUP\stemDown <b ds>( g <b ds fs> fs) \toDN \stemUp \clef bass g,(] <fs ds a>)[ \toUP \stemDown <ds' g>( b <ds fs b> b) \toDN \stemUp \clef treble fs'(] \bar "|"
+  <g ds b>)[ \toUP\stemDown <b ds>( gs <b ds g> g) \toDN \stemUp \clef bass fs,]( <g ds a>)[ \toUP \stemDown <ds' g>( b <ds g b> b) \toDN \stemUp\clef treble fs'(] \mbreak \bar "|"
+  <g e c>)[ \toUP\stemDown <c e>( af <c e g> g) \toDN\stemUp\clef bass fs,]( <g e a,>)[ \toUP\stemDown <af' c>( e <g c e> e) \toDN\stemUp\clef treble a(] \bar "|"
+  <gs e c>)[ \toUP\stemDown <c e>( a <c e gs> gs) \toDN\stemUp\clef bass a,]( <gs e a,>[) \toUP\stemDown <a' c>( e <g c e> e) \toDN\stemUp\clef treble bf'(] \bar "|"
+}
+\tuplet 3/2 4{<a f>4) a,8( <cs f>4) bf'8( <a f>4) a,8( <d f>4) bf'8( \mbreak \bar "|"
+<a f>4) a,8( <d f>4) bf'8( <a g>4) a,8( } <e' g>4) \bar "|"
+s1-\omit\ff \bar "|"
 
 }
   

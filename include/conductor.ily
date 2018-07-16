@@ -62,7 +62,7 @@ conductorI={
 
   \tempo\markup{\italic "poco a poco ritenuto"} 2=70 s1 * 12 | 
   \tempo "Allegro molto" 2=91 s1 |
-  \tag #'score \cadenzaIb \mark\default \barNumberCheck \RhXIX \bar "||"
+  \tag #'(score piano) \cadenzaIb \mark\default \barNumberCheck \RhXIX \bar "||"
 
   \time 4/4  \tempo\markup {
     \concat {
@@ -73,7 +73,7 @@ conductorI={
       )
     }
   } 4=150 s1 * 12 s2 \tempo\markup{\italic "rit."} 4=145 s2 s1
-  \tag #'score \cadenzaIc
+  \tag #'(score piano) \cadenzaIc
   \mark\default \barNumberCheck \RhXX \bar "|"
 
   s1 * 3 s2 \tempo\markup{\italic "rit."} 4=140  s2 \bar "||"
