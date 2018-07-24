@@ -34,7 +34,7 @@ page-breaking-system-system-spacing = #'((basic-distance . 12))
       }
       \score{
         \midi{} \layout{} 
-      \keepWithTag #'(part piano main) \new PianoStaff="Piano" 
+      \keepWithTag #'(part piano ossia) \new PianoStaff="Piano" 
       %\with {
        % instrumentName="Piano"
        % shortInstrumentName="P.no"}

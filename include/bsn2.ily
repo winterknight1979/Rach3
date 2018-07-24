@@ -121,7 +121,7 @@ BsnTwoI=\relative c {
   f4.( gf8 g2) |
   e4.( f8 fs2\dim) |
   d4.( ef8 e2 \mark\default \barNumberCheck \RhXII \mbreak \bar "||"
-  f4\pp) r r2 r |
+  \time 3/2 f4\pp) r r2 r |
   R1. \bar "||"
   \time 4/4 c4.\mf( ef8 df4.\cresc f8 |
   ef4. gf8 f4.\> af8 |

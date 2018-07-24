@@ -25,7 +25,7 @@ VlaI=\relative c' {\commonConductor
   r f:\< bf: e,: a: f:\! r bf:[ |
   d:\mf a:] r gs:\dim[ d': gs,:] r g: \bar "||"
   \time 2/4 ef': g,: d': g,: \mbreak \bar "||"
-  r f:\pp a: f: r f: a: g: |
+  \time 4/4 r f:\pp a: f: r f: a: g: |
   r f16 f a8 r r2 | R1 |
   r4 d\pComm\upbow^"Soli"( f8 e d4) |
   cs8( d e4) d4.( e8) |

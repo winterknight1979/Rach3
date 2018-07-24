@@ -83,3 +83,13 @@ inSixFour=
   #}
   )
 
+
+oScale=
+#(define-music-function
+   (parser location num music)
+   (fraction? ly:music?)
+   #{
+   \tag #'score \scaleDurations $num $music
+   \tag #'part $music
+   #}
+   )

@@ -143,7 +143,7 @@ ViolOneI=\relative c' {\commonConductor
   r b: d: c: r bf: c: bf: \mark\default \barNumberCheck \RhXII \bar "||"
   \time 3/2 r a: c: a:\! r2 r |
   R1.\bar "||"
-  R1 * 6 \bar "||" \mbreak
+  \time 4/4 R1 * 6 \bar "||" \mbreak
   \time 3/2 R1. * 4 \mark\default \barNumberCheck \RhXIII \bar "||"
   \time 4/4 \cueWhile "OboeOneI" "Ob.I" #UP {R1 * 3 | r4}
   r8 \set Staff.midiInstrument="pizzicato strings" c'\p^"pizz."[ b a] r4 |

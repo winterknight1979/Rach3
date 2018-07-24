@@ -1,3 +1,153 @@
+MainCadenzaUp=\relative g'{\key d \minor s4-\omit\p \clef bass s s2 |
+%\cadenzaOn
+s1 \bar "|"
+\omit TupletBracket \tuplet 6/4 2 {s8 \clef treble d4 f s bf, d s8 \bar "|" s cs4 e s d f s8 } \bar "|"
+s1 \break \bar "|"
+s1 * 4 \break \bar "|"
+s1-\omit\< s1 * 3 \break \bar "|"
+s1 * 3 \break \bar "|"
+s1 * 2 \bar "|"
+\omit TupletBracket \tuplet 6/4 2 {r8 <c' f>([ a <cs f a>-> a)] r r <cs f>([ a <d f a>-> a)] r} \break \bar "|"
+\omit TupletBracket \tuplet 6/4 2 {r8 <d f>([ a <ds f a>-> a)] r r <ds g>([ a <e' g a>-> a,)] r} \bar "|"
+\omit TupletBracket \omit TupletNumber \tuplet 3/2 4 {
+  \stemDown <g' bf>\ff[( <fs a> \toDN \stemUp <f gs>]) 
+  \toUP \stemDown <g bf>[( <fs a> \toDN \stemUp <e g>]) 
+  \toUP \stemDown <g bf>[( <fs a> \toDN \stemUp <fs ds>]) 
+  \toUP \stemDown <g bf>[( <fs a> \toDN \stemUp <f d>]) \bar "|"
+  \toUP \stemDown <g bf>[( <fs a> \toDN \stemUp <e cs>]) 
+  \toUP \stemDown <g bf>[( <fs a> \toDN \stemUp <ef c>]) 
+  \toUP \stemDown <g bf>[( <fs a> \toDN \stemUp <d b>]) 
+  \toUP \stemDown <g bf>[( <fs a> \toDN \stemUp <cs bf>] \bar "|"
+}
+<c a>4) s2. \break \bar "|"
+s1 \bar "|"
+s1-\omit\dim \bar "|"
+s2 \stemNeutral \omit TupletNumber \tuplet 6/4 {g8-\omit\>[ gs a bf b cs]} \bar "|"
+r-\omit\p \toUP r^\markup{\italic "scherzando"} r <g e'>-.[ <f a d>-.] r r <e cs'>-.[ \break \bar "|"
+
+<f a d>]-. r r <g e'>[-. <f a d>]-. r r <a e'>-.[ \bar "|"
+<d f>-.] r r <bf e>[-. <d f>-.] r r <b d>-.[ \bar "|"
+<cs e>-.] r r <b d> <a cs>[ <b d>] <cs e> r \bar "|"
+r <a' e'>-.[ <d f>-.] <a, e'> <<{\voiceOne d4.--} \context Voice="PnoV2" {r8 <e a>-.[ <f d'>-.]}>>
+\oneVoice s8 \break \bar "|"
+\toDN r8 \toUP r r <g, e'>-.[ <a d f>-.] r r <a fs'>-. \bar "|"
+\stemDown <bf d g>->[ \toDN \stemUp <cs a e>] \toUP
+\stemDown <bf d f>->[ \toDN \stemUp <cs a f>] \toUP
+\stemDown <bf d e>->[ \toDN \stemUp <cs a g>] \toUP
+\stemDown <bf d>->[ \toDN \stemUp <b gs>] \toUP \bar "|"
+\stemNeutral
+<e, a cs e>2--\p~ <e a cs e>8-.[ <b' d>-. <a cs>-. <b d>-.] \bar "|"
+cs-.[ <b d>-.] <cs e>-. r r gs'-. <e a>--([ e']) \break \bar "|"
+
+<<{\voiceOne
+<ef c g>4.-- <ef g,>8 <d fs,>4.-- <c a d,>8 \bar "|"
+<bf g d>[ <c g d>] <d g, d>4.-\omit\cresc <a~ cs e>8[( <a d f>]) s \bar "|"
+<g ef bf g>4.-> <g ef bf g>8 <a d, a>4.-> <a d, a>8 \bar "|"
+<b d, b>[ <c g c,>] <d g, d>4-> s8 <a~ cs e>[( <a d f>]) s-\omit\f
+}\context Voice="PnoV2" {\voiceTwo
+r4 <c, ef>-- r <d f>-- \bar "|"
+r r8 <d g,~>[-\cresc <e cs g>]-> r r <f d a f> \bar "|"
+r4 <ef bf' ef> r8 <a d>[( <c d,>]) r \bar "|"
+r4 r8 <d, g,~>[( <e cs g>]) r r <f d a f>-\omit\f
+}>> \bar "|"
+}
+MainCadenzaDn=\relative d'{
+  \key d\minor r4 \stemUp \once\dynamicUp \tuplet 3/2 {a,,8(\p d f} \tuplet 6/4{ g \toUP \stemDown gs a  bf b c)} \break | % we always want to break here
+  %\cadenzaOn 
+ \tuplet 6/4 2 {
+  \toDN \stemUp cs([ d ef e \toUP \stemDown f fs] g[ \toDN \stemUp gs a bf b c] \bar "|"
+  cs)[ \toUP \stemDown d( bf f' a,) \toDN \stemUp \clef treble a'(] d,->)[ \toUP \stemDown bf( g d' g,) \toDN \stemUp f'(] \bar "|"
+  a,->)[ \toUP \stemDown cs( bf e a,) \toDN \stemUp \clef bass g(] <f d a>)[ \toUP \stemDown d'( bf f' a,) \toDN \stemUp bf,(] \bar "|"
+  <a a,>)[ \toUP \stemDown d'( bf f' d) \toDN \stemUp a(] g)[ \toUP \stemDown d'( b f' d) \toDN \stemUp a(] \break \bar "|"
+  gs)[ \toUP \stemDown d'( c f d) \toDN \stemUp bf(] a)[ \toUP \stemDown cs( a e' cs) \toDN \stemUp g(] \bar "|"
+  \nextCresc "poco a poco cresc" <f a,>\<)[ \toUP \stemDown f'( df a' c,) \toDN \stemUp \clef treble c'(] f,)[ \toUP \stemDown d( bf f' a,) \toDN \stemUp a'(] \bar "|"
+  c,)[ \toUP \stemDown e( df g c,) \toDN \stemUp \clef bass b(] <bf g>[) \toUP \stemDown f'( d a' c,) \toDN \stemUp a(] \bar "|"
+  <f a,>)[ \toUP \stemDown f'( df a' c,) \toDN \stemUp bf]( a)[ \toUP \stemDown f'( d a' cs,) \toDN \stemUp b(] \break \bar "|"
+  bf)[ \toUP \stemDown f'( ef a d,) \toDN \stemUp c(] b[) \toUP \stemDown f'( d gs e) \toDN \stemUp d(] \bar "|"
+  <c a>)[ \toUP \stemDown a'( f c' e,) \toDN \stemUp \clef treble e'(] a,)[ \toUP \stemDown f( c a' e) \toDN \stemUp \clef bass f,(] \bar "|"
+  <e a,>)[ \toUP \stemDown <cs' gs'>( b <d g b> b) \toDN \stemUp ds]( <e a,>)[ \toUP \stemDown <f a>( c <a' c> c,) \toDN \stemUp \clef treble fs(] \bar "|"
+  <c ef g>[) \toUP \stemDown c'( af ef' g,) \toDN \stemUp g'(] c,)[ \toUP \stemDown a( ef c' g) \toDN \stemUp \clef bass fs,(] \break \bar "|"
+  <g d a>)[ \toUP \stemDown <e' b>( d <f b d> d) \toDN \stemUp \clef treble fs(] <g ef c>)[ \toUP \stemDown <af c>( ef <c' e> ef,) \toDN \stemUp g(] \bar "|"
+  <fs gs b>)[ \toUP\stemDown <b ds>( g <b ds fs> fs) \toDN \stemUp \clef bass g,(] <fs ds a>)[ \toUP \stemDown <ds' g>( b <ds fs b> b) \toDN \stemUp \clef treble fs'(] \bar "|"
+  <g ds b>)[ \toUP\stemDown <b ds>( gs <b ds g> g) \toDN \stemUp \clef bass fs,]( <g ds a>)[ \toUP \stemDown <ds' g>( b <ds g b> b) \toDN \stemUp\clef treble fs'(] \break \bar "|"
+  <g e c>)[ \toUP\stemDown <c e>( af <c e g> g) \toDN\stemUp\clef bass fs,]( <g e a,>)[ \toUP\stemDown <af' c>( e <g c e> e) \toDN\stemUp\clef treble a(] \bar "|"
+  <gs e c>)[ \toUP\stemDown <c e>( a <c e gs> gs) \toDN\stemUp\clef bass a,]( <gs e a,>[) \toUP\stemDown <a' c>( e <g c e> e) \toDN\stemUp\clef treble bf'(] \bar "|"
+}
+\tuplet 3/2 4{<a f>4) a,8( <cs f>4) bf'8( <a f>4) a,8( <d f>4) bf'8( \break \bar "|"
+<a f>4) a,8( <d f>4) bf'8( <a g>4) a,8( } <e' g>4) \bar "|"
+s1-\omit\ff \bar "|"
+s1 \bar "|"
+
+\omit TupletNumber \tuplet 6/4 2 {
+\toUP \stemDown bf''8([ g e \toDN \stemUp d cs bf] \toUP \stemDown a[ g e \toDN \stemUp \clef bass d cs bf] \bar "|"
+\toUP \stemDown \clef bass a[ g e \toDN \stemUp d cs bf] \toUP \stemDown a[ g e \toDN \stemUp d cs bf] \bar "|"
+\once\dynamicUp a[\dim e' a \toUP\stemDown bf cs d] \toDN\stemUp e[ g a \toUP\stemDown bf cs d] \bar "|"
+\toDN\stemUp \clef treble e[ f fs \toUP\stemDown \clef treble g gs a] bf[\> b c cs d e] \bar "|"
+}
+\stemNeutral <d f>-.)\p \toDN <d, gs>-.[ <f a>-.] r r <e a,>-.[ <d f>-.] r \bar "|"
+r <bf fs'>-.[ <d g>-.] r r <d gs>-.[ <f a>-.] r \bar "|"
+r <f bf>-.[ <d a'>-.] r r <f b>-.[ <d bf'>-.] r \bar "|"
+r <e b'>-.[ <a cs>-.] a,-. e'-.[ f-.] g-. <a e'>-. \bar "|"
+<d f>4.-- <b, g'>8 <<{\voiceTwo r8 a'-.[ d-.] \stemUp <e, a cs>-.[ \bar "|" \toUP \stemDown <f a d>-.] \toDN \stemNeutral}
+\context Voice="PnoV4"{\voiceOne <d f>4.-- s8}>>
+\oneVoice <fs a,>-.[ <bf, d g>-.] r r <e gs>-.[ <d fs a>-.] r \bar "|"
+s1 \bar "|"
+\clef bass r4-\omit\p <cs e, a,>8\arpeggio <d a>-.[ <e cs>-.] <f a,>-.[ <g e>-.] <gs d>-.[ \bar "|"
+a-.] r r \clef treble <d f>-.[ <e g>-.] d-.( <cs a>4--) \bar "|"
+<<{\voiceOne <g c ef>4.-- <bf e>8 <a d>4.-- fs8 \bar "|"
+g[ a] bf4.---\omit\cresc <a e'>8[( <d f>]) \clef bass s \bar "|"
+<ef,, bf' ef>4.-> \clef bass <ef bf' ef>8 <fs c' d>4.-> \clef bass <fs d'>8 \bar "|"
+<g d'>[ <a d>] <bf d>4-> s8 \clef treble <a' e'>8[( <d f>]) \clef bass s-\omit\f}
+\context Voice="PnoV4" {\voiceTwo
+r4 <g, c,>-- r <a d,>-- \bar "|"
+r r8 <d, bf>[-\omit\cresc <e a,>->] r r \clef bass <d a d,> \bar "|"
+r4\clef treble <g bf>4 r8 \clef treble <a d>[( <c d,>)] r \bar "|"
+r4 r8 <bf, d>[( <a e'>]) r r <d a d,>8-\omit\f
+}>> \break \bar "|"
+
+}
+
+OssiaCadenzaUp=\relative g'{
+\key d\minor
+r4 \tuplet 3/2 {r8 r <d bf f>->-\omit\f} <f d a f>2->~ \break |
+%\cadenzaOn
+\oScale #'(4 . 6) \relative c' {<f d a f>1~ \bar "|"
+<f d a f>4~ \tuplet 3/2 {<f d a f>8 \clef bass <bf, f d>4--\dim} <d f, d>2--~ \bar "|"
+<d f, d>1 \bar "|"
+\tuplet 3/2 {r8 r <f, bf d>\p->(} <a d f>4->)~ \tuplet 3/2{ <a d f>  <d, f a>8->(} <f a d>4->)~  \bar "|" 
+\tuplet 3/2 {<f a d> <e g cs>8->(} <g a cs e>4)->~ \tuplet 3/2 {<g a cs e> <f bf d>8->(} <a d f>4)->~  \bar "|" 
+\tuplet 3/2 {<a d f>\cresc <f bf d>8} <a d f>4--~ \tuplet 3/2 {<a d f> <f b d>8} <a d f>4--~   
+} \break \bar "|"
+\oScale #'(4 . 6) {s1 \bar "|" s1.\bar "|" s1.\bar "|" s1\bar "|" s1} \break \bar "|"
+\oScale #'(4 . 6) {s1 \bar "|" s1\bar "|" s1\bar "|" s1\bar "|" s1 \bar "|" s1} \break \bar "|"
+\oScale #'(3 . 6) {s1 \bar "|" s1\bar "|" s1\bar "|" s1\bar "|" s1 \bar "|" s1} \break \bar "|"
+\oScale #'(3 . 6) {s1 \bar "|" s1\bar "|" s1\bar "|" s1\bar "|" s1 \bar "|" s1} \break \bar "|"
+\oScale #'(4 . 5) {s1\bar "|" s1\bar "|" s1\bar "|" s1 \bar "|" s1} \break \bar "|"
+\oScale #'(4 . 5) {s1\bar "|" s1\bar "|" s1\bar "|" s1 \bar "|" s1} \break \bar "|"
+\oScale #'(4 . 5) {s1\bar "|" s1\bar "|" s1\bar "|" s1 \bar "|" s1} \break \bar "|"
+\oScale #'(4 . 5) {s1\bar "|" s1\bar "|" s1\bar "|" s1 \bar "|" s1} \break \bar "|"
+\oScale #'(4 . 5) {s1\bar "|" s1\bar "|" s1\bar "|" s1 \bar "|" s1} \break \bar "|"
+}
+
+OssiaCadenzaDn=\relative d'{
+\key d\minor \once\omit Clef \clef bass
+\tuplet 6/4{ a,,8([\< d f g gs)\f <f bf d>->]}
+<<{\voiceTwo\tuplet 6/4 { r8 r f'\ff([ a, d f,]}}
+\new Voice="O2" {\voiceOne <a d>2->}
+\new Voice {\voiceThree \tuplet 6/4 {s4 f'2}}>>
+%\cadenzaOn
+\oScale #'(4 . 6) \relative c'{
+  <<{\voiceOne \tuplet 6/4 2  {e,8[ f, a e d' f,] a[ d, c'\dim f, a c,] \bar "|" 
+     b'[ d, f b, bf' d,] f[ bf, a' d, f a,] \bar "|"
+     gs'[ d  f a, g' d] f[ a, f' cs d a)~] }
+   }
+     \context Voice="O2" {\voiceTwo \tuplet 3/4 1 {e''4 d c b bf a gs g f}}>> \bar "|"
+     \oneVoice \tuplet 6/4 2 {a,8[ bf'-\omit\p( bf, a' a, d] a[) bf'( bf, a' a, d] \bar "|"
+   a)[ bf'( bf, a' a, cs] a[) bf'( bf, a' a, d] \bar "|"
+   a)[-\omit\cresc bf'( bf, a' a, d] a)[ b'( b, a' a, d]}} \bar "|"
+ 
+ }
+
 PianoUPI=\relative c'{\commonConductor 
 \expandFullBarRests  
 \clef treble \key d\minor \time 4/4
@@ -533,19 +683,8 @@ s4 r8 <bf g>4 <bf g> <bf g>8 }>> |
 r2 <ef g bf>-- |
 r2 <bf d g>-- |
 r2 <g bf d>-- |
-\key d \minor s4-\omit\p \clef bass s s2 |
-s1 \bar "|"
-\cadenzaOn
-\omit TupletBracket \tuplet 6/4 2 {s8 \clef treble d4 f s bf, d s8 \bar "|" s cs4 e s d f s8 } \bar "|"
-s1 \mbreak \bar "|"
-s1 * 4 \mbreak \bar "|"
-s1-\omit\< s1 * 3 \mbreak \bar "|"
-s1 * 3 \mbreak \bar "|"
-s1 * 2 \bar "|"
-\omit TupletBracket \tuplet 6/4 2 {r8 <c' f>([ a <cs f a>-> a)] r r <cs f>([ a <d f a>-> a)] r} \mbreak \bar "|"
-\omit TupletBracket \tuplet 6/4 2 {r8 <d f>([ a <ds f a>-> a)] r r <ds g>([ a <e' g a>-> a,)] r-\omit\ff} \bar "|"
-
-
+\tag #'main \MainCadenzaUp
+\tag #'ossia \OssiaCadenzaUp
 
 %\cadenzaOff
 }
@@ -924,36 +1063,127 @@ PianoDNI=\relative c'{\commonConductor
   <bf g d> r |
   \clef bass <d, bf g> r |
 
+  \tag #'main \MainCadenzaDn
+  \tag #'ossia \OssiaCadenzaDn
   % cadenza
-  \key d\minor r4 \stemUp \once\dynamicUp \tuplet 3/2 {a,,8(\p d f} \tuplet 6/4{ g \toUP \stemDown gs a  bf b c)} \break | % we always want to break here
-  \cadenzaOn \tuplet 6/4 2 {
-  \toDN \stemUp cs([ d ef e \toUP \stemDown f fs] g[ \toDN \stemUp gs a bf b c] \bar "|"
-  cs)[ \toUP \stemDown d( bf f' a,) \toDN \stemUp \clef treble a'(] d,->)[ \toUP \stemDown bf( g d' g,) \toDN \stemUp f'(] \bar "|"
-  a,->)[ \toUP \stemDown cs( bf e a,) \toDN \stemUp \clef bass g(] <f d a>)[ \toUP \stemDown d'( bf f' a,) \toDN \stemUp bf,(] \bar "|"
-  <a a,>)[ \toUP \stemDown d'( bf f' d) \toDN \stemUp a(] g)[ \toUP \stemDown d'( b f' d) \toDN \stemUp a(] \mbreak \bar "|"
-  gs)[ \toUP \stemDown d'( c f d) \toDN \stemUp bf(] a)[ \toUP \stemDown cs( a e' cs) \toDN \stemUp g(] \bar "|"
-  \nextCresc "poco a poco cresc" <f a,>\<)[ \toUP \stemDown f'( df a' c,) \toDN \stemUp \clef treble c'(] f,)[ \toUP \stemDown d( bf f' a,) \toDN \stemUp a'(] \bar "|"
-  c,)[ \toUP \stemDown e( df g c,) \toDN \stemUp \clef bass b(] <bf g>[) \toUP \stemDown f'( d a' c,) \toDN \stemUp a(] \bar "|"
-  <f a,>)[ \toUP \stemDown f'( df a' c,) \toDN \stemUp bf]( a)[ \toUP \stemDown f'( d a' cs,) \toDN \stemUp b(] \mbreak \bar "|"
-  bf)[ \toUP \stemDown f'( ef a d,) \toDN \stemUp c(] b[) \toUP \stemDown f'( d gs e) \toDN \stemUp d(] \bar "|"
-  <c a>)[ \toUP \stemDown a'( f c' e,) \toDN \stemUp \clef treble e'(] a,)[ \toUP \stemDown f( c a' e) \toDN \stemUp \clef bass f,(] \bar "|"
-  <e a,>)[ \toUP \stemDown <cs' gs'>( b <d g b> b) \toDN \stemUp ds]( <e a,>)[ \toUP \stemDown <f a>( c <a' c> c,) \toDN \stemUp \clef treble fs(] \bar "|"
-  <c ef g>[) \toUP \stemDown c'( af ef' g,) \toDN \stemUp g'(] c,)[ \toUP \stemDown a( ef c' g) \toDN \stemUp \clef bass fs,(] \mbreak \bar "|"
-  <g d a>)[ \toUP \stemDown <e' b>( d <f b d> d) \toDN \stemUp \clef treble fs(] <g ef c>)[ \toUP \stemDown <af c>( ef <c' e> ef,) \toDN \stemUp g(] \bar "|"
-  <fs gs b>)[ \toUP\stemDown <b ds>( g <b ds fs> fs) \toDN \stemUp \clef bass g,(] <fs ds a>)[ \toUP \stemDown <ds' g>( b <ds fs b> b) \toDN \stemUp \clef treble fs'(] \bar "|"
-  <g ds b>)[ \toUP\stemDown <b ds>( gs <b ds g> g) \toDN \stemUp \clef bass fs,]( <g ds a>)[ \toUP \stemDown <ds' g>( b <ds g b> b) \toDN \stemUp\clef treble fs'(] \mbreak \bar "|"
-  <g e c>)[ \toUP\stemDown <c e>( af <c e g> g) \toDN\stemUp\clef bass fs,]( <g e a,>)[ \toUP\stemDown <af' c>( e <g c e> e) \toDN\stemUp\clef treble a(] \bar "|"
-  <gs e c>)[ \toUP\stemDown <c e>( a <c e gs> gs) \toDN\stemUp\clef bass a,]( <gs e a,>[) \toUP\stemDown <a' c>( e <g c e> e) \toDN\stemUp\clef treble bf'(] \bar "|"
-}
-\tuplet 3/2 4{<a f>4) a,8( <cs f>4) bf'8( <a f>4) a,8( <d f>4) bf'8( \mbreak \bar "|"
-<a f>4) a,8( <d f>4) bf'8( <a g>4) a,8( } <e' g>4) \bar "|"
-s1-\omit\ff \bar "|"
-
 }
   
 PianoDNII=\relative c'{\commonConductor s1}
 PianoDNIII=\relative c'{\commonConductor s1}
-PianoUPOssia=\relative c'{\stopStaff \commonConductor s1}
-PianoDNOssia=\relative c'{\stopStaff \commonConductor s1}
+PianoUPOssia=\relative c'{\stopStaff \commonConductor   %\commonConductor
+  \time 4/4 \tempo "Allegro ma non tanto" 4=120 s1 * 10 \mark\default \barNumberCheck\RhI %1 
+
+  s1 * 7  s4 \tempo\markup{\italic "colla parte"} 4=100 s4 s2  
+  \tempo "a tempo" 4=120 s1 * 6 \bar "||" 
+  \time 2/4 s2 \bar "||" \time 4/4 s1 \tempo "Più mosso" 4=140 s1 * 11 \mark\default \barNumberCheck\RhII  %2
+
+  
+  s1 * 14 | \tempo "Più vivo" 4=155 s1 * 4 \mark\default \barNumberCheck\RhIII %3
+
+  s1 * 11 | \tempo\markup{\italic "colla parte"} 4=140 s1 \bar "||" 
+  \time 2/4 \tempo "a tempo" 4=155 s2 \mark\default \barNumberCheck \RhIV \bar "||" %4
+
+  \time 4/4 \tempo "Allegro" 4=140 s1 * 8  \tag #'(score piano) \cadenzaIa s1 
+  \tempo "Moderato" 4=110 s1 * 6  
+  \time 3/2 \tempo\markup{\italic "allarg."} 4=95 s1. \mark\default  \barNumberCheck \RhV %5
+
+  \time 4/4 \tempo "a tempo" 4=110  s1 * 3 s2 s4 \tempo\markup{\italic "rit."} 4=100 
+  s4 s1 \tempo "a tempo" 4=110 s1 * 6 \mark\default  \barNumberCheck \RhVI  %6
+
+  s1 * 6 | \time 2/4 s2 | \time 4/4 s4 \tempo\markup{\italic "colla parte"} 4=100 s4 s2 | 
+  \tempo "a tempo" 4=110 s1 * 3
+  s2 \tempo \markup{\italic "poco rit."} 4=100 s2 |
+  \tempo "a tempo" 4=110 s1 * 4 | \mark\default  \barNumberCheck \RhVII %7
+
+  s1 * 9 \mark\default  \barNumberCheck \RhVIII %8
+
+  s1 * 2  \tempo\markup{\italic "allarg."} 4=95 s1  
+  \tempo "a tempo" 4=110 s1 * 4 \mark\default  \barNumberCheck \RhIX %9
+
+  s1 * 5  s2 \tempo\markup{\italic "rit."} 4=100 s2  
+  \tempo\markup{\italic "accel."} 4=115 s1 * 6  \tempo "Allegro" 4=140 
+  s1 * 6 \mark\default  \barNumberCheck \RhX %10
+
+  s1 s2 \tempo\markup{\italic "rit."} 4=125 s2 \tempo "Tempo precedente" 4=115 s1 * 5 
+  \tempo\markup{\italic "poco a poco accel."} 4=125 s1 * 3 \mark\default  \barNumberCheck \RhXI %11
+
+  s2 \tempo "Allegro" 4=140 s2  s1 *5 s2 \tempo\markup{\italic "rit"} 4=132 s2 s1 \bar "||"
+  \tempo "Tempo I" 4=120 s1 * 14 \mark\default  \barNumberCheck \RhXII \bar "||" %12
+
+  \tempo "Più mosso" 4=140 \time 3/2 s1.*2 \bar "||"
+  \time 4/4 s1 * 6 \bar "||"
+  \time 3/2 s1.*4 \mark\default  \barNumberCheck \RhXIII \bar "||"
+
+  \time 4/4 s1 * 10 \tempo "Più vivo" 4=155 s1 * 10 \mark\default \barNumberCheck \RhXIV
+
+  s1 * 10 \tempo "Allegro" 4=145 s1*8 \tempo\markup{\italic "accel."} 4=152 s1*4
+  \time 2/2 \tempo "Allegro molto (Alla breve)" 2=91 \grace s8 s1 * 8 \mark\default \barNumberCheck \RhXV
+
+  s1 * 16 \mark\default \barNumberCheck \RhXVI
+  
+  s1 * 20 \mark\default \barNumberCheck \RhXVII
+
+  s1 * 12 \mark\default \barNumberCheck \RhXVIII
+
+  \tempo\markup{\italic "poco a poco ritenuto"} 2=70 s1 * 12 | 
+  \startStaff \OssiaCadenzaUp 
+}
+PianoDNOssia=\relative c'{\stopStaff \commonConductor   %\commonConductor
+  \time 4/4 \tempo "Allegro ma non tanto" 4=120 s1 * 10 \mark\default \barNumberCheck\RhI %1 
+
+  s1 * 7  s4 \tempo\markup{\italic "colla parte"} 4=100 s4 s2  
+  \tempo "a tempo" 4=120 s1 * 6 \bar "||" 
+  \time 2/4 s2 \bar "||" \time 4/4 s1 \tempo "Più mosso" 4=140 s1 * 11 \mark\default \barNumberCheck\RhII  %2
+
+  
+  s1 * 14 | \tempo "Più vivo" 4=155 s1 * 4 \mark\default \barNumberCheck\RhIII %3
+
+  s1 * 11 | \tempo\markup{\italic "colla parte"} 4=140 s1 \bar "||" 
+  \time 2/4 \tempo "a tempo" 4=155 s2 \mark\default \barNumberCheck \RhIV \bar "||" %4
+
+  \time 4/4 \tempo "Allegro" 4=140 s1 * 8  \tag #'(score piano) \cadenzaIa s1 
+  \tempo "Moderato" 4=110 s1 * 6  
+  \time 3/2 \tempo\markup{\italic "allarg."} 4=95 s1. \mark\default  \barNumberCheck \RhV %5
+
+  \time 4/4 \tempo "a tempo" 4=110  s1 * 3 s2 s4 \tempo\markup{\italic "rit."} 4=100 
+  s4 s1 \tempo "a tempo" 4=110 s1 * 6 \mark\default  \barNumberCheck \RhVI  %6
+
+  s1 * 6 | \time 2/4 s2 | \time 4/4 s4 \tempo\markup{\italic "colla parte"} 4=100 s4 s2 | 
+  \tempo "a tempo" 4=110 s1 * 3
+  s2 \tempo \markup{\italic "poco rit."} 4=100 s2 |
+  \tempo "a tempo" 4=110 s1 * 4 | \mark\default  \barNumberCheck \RhVII %7
+
+  s1 * 9 \mark\default  \barNumberCheck \RhVIII %8
+
+  s1 * 2  \tempo\markup{\italic "allarg."} 4=95 s1  
+  \tempo "a tempo" 4=110 s1 * 4 \mark\default  \barNumberCheck \RhIX %9
+
+  s1 * 5  s2 \tempo\markup{\italic "rit."} 4=100 s2  
+  \tempo\markup{\italic "accel."} 4=115 s1 * 6  \tempo "Allegro" 4=140 
+  s1 * 6 \mark\default  \barNumberCheck \RhX %10
+
+  s1 s2 \tempo\markup{\italic "rit."} 4=125 s2 \tempo "Tempo precedente" 4=115 s1 * 5 
+  \tempo\markup{\italic "poco a poco accel."} 4=125 s1 * 3 \mark\default  \barNumberCheck \RhXI %11
+
+  s2 \tempo "Allegro" 4=140 s2  s1 *5 s2 \tempo\markup{\italic "rit"} 4=132 s2 s1 \bar "||"
+  \tempo "Tempo I" 4=120 s1 * 14 \mark\default  \barNumberCheck \RhXII \bar "||" %12
+
+  \tempo "Più mosso" 4=140 \time 3/2 s1.*2 \bar "||"
+  \time 4/4 s1 * 6 \bar "||"
+  \time 3/2 s1.*4 \mark\default  \barNumberCheck \RhXIII \bar "||"
+
+  \time 4/4 s1 * 10 \tempo "Più vivo" 4=155 s1 * 10 \mark\default \barNumberCheck \RhXIV
+
+  s1 * 10 \tempo "Allegro" 4=145 s1*8 \tempo\markup{\italic "accel."} 4=152 s1*4
+  \time 2/2 \tempo "Allegro molto (Alla breve)" 2=91 \grace s8 s1 * 8 \mark\default \barNumberCheck \RhXV
+
+  s1 * 16 \mark\default \barNumberCheck \RhXVI
+  
+  s1 * 20 \mark\default \barNumberCheck \RhXVII
+
+  s1 * 12 \mark\default \barNumberCheck \RhXVIII
+
+  \tempo\markup{\italic "poco a poco ritenuto"} 2=70 s1 * 12 | 
+  \startStaff \OssiaCadenzaDn } 
 
 

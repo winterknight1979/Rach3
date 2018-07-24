@@ -68,7 +68,7 @@ ObTwoI=\relative c' {
   r4 r8 f'-.\p[ ef-. d-.] r d-.[ |
   c-. bf-.] r bf-.[\dim af-. g-.]\! r4 \bar "||"
   \time 3/2 R1.* 4 \mark\default \barNumberCheck \RhXIII \mpbreak \bar "||"
-  r4 r8 d'-.\mf c-. b-. a-. b-. |
+  \time 4/4 r4 r8 d'-.\mf c-. b-. a-. b-. |
   c-. d-. r4 r2 |
   r4 r8 a-.\p g-. fs-. e-. fs-. |
   g-. a-. r4 r2 |

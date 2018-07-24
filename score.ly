@@ -59,7 +59,7 @@
 %showFirstLength=R1*3 
      \score{
  
-    \keepWithTag #'(score disp) \killCues <<
+    \keepWithTag #'(score disp main) \killCues <<
       \new Devnull \conductorI
       \new StaffGroup ="Woods" <<
         \new Staff \with
@@ -120,7 +120,7 @@
             \override StaffSymbol.staff-space = #(magstep -3)
             \override StaffSymbol.thickness = #(magstep -3)
           }
-          {\PianoUPOssia}
+          <<\new Voice \with {\remove "Forbid_line_break_engraver"} {\PianoUPOssia}>>
           \new Staff="PnoODn"  \with
           {
             \override VerticalAxisGroup.remove-first=##t
@@ -181,7 +181,32 @@
             {\BassI}
           >>
         >>
-    >>
+    >>  
+    \layout{
+      \context{
+        \Score
+        \remove "Timing_translator"
+        \remove "Default_bar_line_engraver"
+      }
+      \context {
+        \Staff
+        \consists "Timing_translator"
+        \consists "Default_bar_line_engraver"
+        \RemoveEmptyStaves}
+      \context{
+          \DrumStaff 
+          \consists "Timing_translator"
+          \consists "Default_bar_line_engraver"
+          \RemoveEmptyStaves
+          drumStyleTable = #(alist->hash-table scoredrums)
+          \override StaffSymbol.line-positions=#'(0)
+        }
+        \context {
+          \Voice
+          \override DynamicTextSpanner.style=#'none
+          \override TupletBracket.bracket-visibility=##f
+ }
+    }
         \header{piece=\markup\huge "I"}
       }
 %      \markup{\pageBreak}

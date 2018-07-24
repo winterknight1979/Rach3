@@ -25,7 +25,7 @@ ViolTwoI=\relative c' {\commonConductor
   r a: d:\< bf: d: a:\! r d:[ |
   f:\mf d:] r d:[\dim e: d:] r c: \mbreak \bar "||"
   \time 2/4 b16 b b b bf bf bf bf \bar "||"
-  r8 a:\pp d: a: r a: g: a: |
+  \time 4/4 r8 a:\pp d: a: r a: g: a: |
   r a16 a d8 r r2 |
   R1 * 10 \mark\default \barNumberCheck \RhII
   R1 * 4 |

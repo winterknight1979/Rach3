@@ -972,7 +972,7 @@ CellDI=\relative c {\commonConductor
   \tempo "Moderato" 4=110 s1 * 6  
   \time 3/2 \tempo\markup{\italic "allarg."} 4=95 s1. \mark\default  \barNumberCheck \RhV %5
   <>^"div."
-  f1~
+ \time 4/4 f1~
   f2.\dim g4( |
   c)\mf f,( bf2)\< |
   ef,2.\f~( ef8\> e\! |
