@@ -89,7 +89,7 @@ oScale=
    (parser location num music)
    (fraction? ly:music?)
    #{
-   \tag #'score \scaleDurations $num $music
-   \tag #'part $music
+   \tag #'main \scaleDurations $num $music
+   \tag #'ossia $music
    #}
    )
