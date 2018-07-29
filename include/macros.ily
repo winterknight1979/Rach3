@@ -16,6 +16,9 @@ toUP = \tag #'(part disp) \change Staff="PnoUp"
 
 toDN = \tag #'(part disp) \change Staff="PnoDn"
 
+oUP = {\tag #'ossia \toUP \tag #'main \change Staff="PnoOUp"}
+oDN = {\tag #'ossia \toDN \tag #'main \change Staff="PnoODn"}
+
 commonConductor = {
   \accidentalStyle Score.modern
   \tag #'part \set Score.countPercentRepeats = ##t

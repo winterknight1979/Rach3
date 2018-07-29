@@ -1,16 +1,32 @@
 \version "2.18.2"
 
-cadenzaIa={\tempo\markup{\italic "veloce"} 4=300 \cadenzaOn s1*9 s1*3 \bar "|" s1 \bar "|" s1 \cadenzaOff |}
+cadenzaIa={\tempo\markup{\italic "veloce"} 4=300 \cadenzaOn 
+s1*9 \cadenzaOff \bar "|" \cadenzaOn s1*3 \bar "|" s1 \bar "|" s1 \cadenzaOff 
+|}
 cadenzaIb={
-%  \cadenzaOn 
-  s1 * 58 
+  \cadenzaOn
+  s1*4 \cadenzaOff \bar "|"
+  \cadenzaOn s1*4 \cadenzaOff \bar "|"
+  \cadenzaOn s1*4 \cadenzaOff \bar "|"
+   \cadenzaOn s1*3 \cadenzaOff \bar  "|"
+  \cadenzaOn s1*3 \cadenzaOff \bar "|"
+  \cadenzaOn s1*4 \cadenzaOff \bar "|"
+  \cadenzaOn s1*4 \cadenzaOff \bar "|"
+  \cadenzaOn s1*4 \cadenzaOff \bar "|"
+  \cadenzaOn s1*4 \cadenzaOff \bar "|"
+  \cadenzaOn s1*4 \cadenzaOff \bar "|"
+  \cadenzaOn s1*4 \cadenzaOff \bar "|"
+  \cadenzaOn s1*4 \cadenzaOff \bar "|"
+  \cadenzaOn s1*4 \cadenzaOff \bar "|"
+  \cadenzaOn s1*4 \cadenzaOff \bar "|"
+  \cadenzaOn s1*4 \cadenzaOff \bar "|" 
 % \cadenzaOff
 % \set Score.currentBarNumber=\RhXIX
 }
 cadenzaIc={\cadenzaOn s1*15 s1 s4*21 s4*6 s2*3 s4.*3 s8 s2 s2 s2 s4 s1 s1\cadenzaOff}
 
 conductorI={
-  %\commonConductor
+  \commonConductor
   \time 4/4 \tempo "Allegro ma non tanto" 4=120 s1 * 10 \mark\default \barNumberCheck\RhI %1 
 
   s1 * 7  s4 \tempo\markup{\italic "colla parte"} 4=100 s4 s2  
@@ -67,6 +83,9 @@ conductorI={
 
   \tempo\markup{\italic "poco a poco ritenuto"} 2=70 s1 * 12 | 
   \tempo "Allegro molto" 2=91 s1 |
+  
+ 
+  %\tag #'ossia {\cadenzaOn s1*7 s1.*2 s1*4\cadenzaOff}
   \tag #'(score piano) \cadenzaIb \mark\default \barNumberCheck \RhXIX \bar "||"
 
   \time 4/4  \tempo\markup {
@@ -98,6 +117,8 @@ conductorI={
 cadenzaIIa={\cadenzaOn s8 * 36 s2 s1 \cadenzaOff}
 
 conductorII={
+  \commonConductor
+  \set Score.currentBarNumber=#1
   \time 3/4 \tempo "Adagio" 4 = 72 s2.*9 \mark #24 \barNumberCheck \RhXXIV
   
   s2.*16 \mark\default \barNumberCheck \RhXXV
@@ -175,6 +196,8 @@ cadenzaIIIa={\bar "" \cadenzaOn s1*7\cadenzaOff }
 
 
 conductorIII = {
+  \commonConductor
+  \set Score.currentBarNumber=#1
   \time 2/2 \tempo \markup {
       \concat {
         "Alla breve ("

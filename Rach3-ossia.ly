@@ -38,7 +38,7 @@
 
      \score{
  
-    \keepWithTag #'(score ossia) \killCues <<
+    \keepWithTag #'(score ossia midi) \killCues <<
 %      \new Devnull {
 %        \set Score.instrumentEqualizer = #my-equalizer
 %        \conductorI \conductorII \conductorIII}
