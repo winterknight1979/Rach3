@@ -108,6 +108,7 @@ HrnTwoI=\relative c' {
   f\pp-+~ | f-+~ | f-+~ | f-+ |
   R1 * 8 |
   R1\fermataMarkup_"Cadenza"
+  \tag #'ossia \cadenzaIbo
   \tag #'score \cadenzaIb 
   \mark\default \barNumberCheck \RhXIX \bar "||"
   \time 4/4 R1 * 8 |

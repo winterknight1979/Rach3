@@ -217,6 +217,7 @@ ViolOneI=\relative c' {\commonConductor
   <a ef'>:\> <bf d>2: f'4:\< |
   f:\> <bf, d>2: g'4:\< |
   g:\> d8\p r r2\fermata_"Cadenza"
+  \tag #'ossia \cadenzaIbo
   \tag #'score \cadenzaIb 
   \mark\default \barNumberCheck \RhXIX \bar "||" |
   \time 4/4 R1 * 13 |
@@ -920,6 +921,7 @@ ViolOneDI=\relative c' {\commonConductor
   bf:\> g2: <bf d>4:\< |
   <bf d>:\> g2: <bf d>4:\< |
   <bf d>:\> <a d>8\p r r2\fermata_"Cadenza"
+  \tag #'ossia \cadenzaIbo
   \tag #'score \cadenzaIb 
   \mark\default \barNumberCheck \RhXIX \bar "||" |
   \time 4/4 R1 * 13 |

@@ -274,6 +274,7 @@ CellI=\relative c {\commonConductor
   <bf d>--\< <g f'>--\> |
   <bf d>--\< <bf g'>--\> |
   f'4\p r r2\fermata_"Cadenza"
+  \tag #'ossia \cadenzaIbo
   \tag #'score \cadenzaIb
   \mark\default \barNumberCheck \RhXIX \mpbreak \bar "||"
   R1 * 13 | R1\fermataMarkup_"Cadenza"
@@ -1036,6 +1037,7 @@ CellDI=\relative c {\commonConductor
   g'--\< <d bf'>--\> |
   g--\< <e f'>--\> |
   <a d>4\p r r2\fermata_"Cadenza"
+  \tag #'ossia \cadenzaIbo
   \tag #'score \cadenzaIb
   \mark\default \barNumberCheck \RhXIX \mpbreak \bar "||"
 

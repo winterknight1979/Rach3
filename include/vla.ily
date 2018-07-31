@@ -231,6 +231,7 @@ VlaI=\relative c' {\commonConductor
   <g ef'>:\> <bf d>2:\< <bf d>4: |
   <bf d>:\> <bf d>2:\< <bf d>4: |
   <bf d>:\> <a d>8\p r r2\fermata_"Cadenza"
+  \tag #'ossia \cadenzaIbo
   \tag #'score \cadenzaIb
   \mark\default \barNumberCheck \RhXIX \bar "||"
   R1 * 13 | R1 \fermataMarkup_"Cadenza"
@@ -983,6 +984,7 @@ VlaDI=\relative c' {\commonConductor \clef alto \time 4/4 \key d\minor s1 * 10 \
   bf:\> g2:\< fs4: |
   fs:\> g2:\< g4: |
   g:\> f8\p r r2\fermata_"Cadenza"
+  \tag #'ossia \cadenzaIbo
   \tag #'score \cadenzaIb \bar "||"
   \time 4/4 R1 * 13 |
   R1 \fermataMarkup_"Cadenza"

@@ -95,6 +95,7 @@ FlTwoI=\relative c'{
   \cueWhile "PianoI" "Piano" #DOWN
   {R1 * 4} \mark\default \barNumberCheck \RhXVIII \mbreak |
   g1--\pp~ | g | R1 * 10 | R1^\fermataMarkup_"Cadenza"
+  \tag #'ossia \cadenzaIbo
   \tag #'score \cadenzaIb
   \mark\default \barNumberCheck \RhXIX \bar "||"
   \time 4/4  R1 |

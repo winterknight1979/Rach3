@@ -145,6 +145,7 @@ ClTwoI=\relative c'{
   e\<( g--\> |
   e\< a--\> |
   g4)\p r r2\fermata_"Cadenza"
+  \tag #'ossia \cadenzaIbo
   \tag #'score \cadenzaIb 
   \mark\default \barNumberCheck \RhXIX \mbreak \bar "||"
   \time 4/4 R1 * 13 | R1\fermataMarkup_"Cadenza"

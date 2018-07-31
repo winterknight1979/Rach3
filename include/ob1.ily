@@ -146,6 +146,7 @@ ObOneI=\relative c' {
   R1 * 9 \mark\default \barNumberCheck \RhXVII
   R1 * 12 \mark\default \barNumberCheck \RhXVIII
   R1 * 12 | R1\fermataMarkup_"Cadenza"
+  \tag #'ossia \cadenzaIbo
   \tag #'score \cadenzaIb \mark\default \barNumberCheck \RhXIX \mbreak \bar "||"
   \time 4/4 R1 |
   \cueWhile "FluteOneI" "Fl.I" #UP

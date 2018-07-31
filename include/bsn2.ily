@@ -192,6 +192,7 @@ BsnTwoI=\relative c {
   g1~\pp-- | g~ | g~ | g |
   R1 * 4 |
   R1\fermataMarkup_"Cadenza"
+  \tag #'ossia \cadenzaIbo
   \tag #'score \cadenzaIb 
   \mark\default \barNumberCheck \RhXIX \bar "||"
   \time 4/4 R1 * 13 |

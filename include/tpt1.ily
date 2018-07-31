@@ -64,6 +64,7 @@ TptOneI=\relative c' {
   R1 * 20 \mark\default \barNumberCheck \RhXVII |
   R1 * 12 \mark\default \barNumberCheck \RhXVIII |
   R1 * 12 | R1\fermataMarkup_"Cadenza"
+  \tag #'ossia \cadenzaIbo
   \tag #'score \cadenzaIb
   \mark\default \barNumberCheck \RhXIX \bar "||"
   \time 4/4 R1*13 | R1\fermataMarkup_"Cadenza"

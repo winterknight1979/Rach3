@@ -117,6 +117,7 @@ HrnThreeI=\relative c' {
   a-+~\pp | a-+~ | a-+~ | a-+ | R1 * 4 |
   \clef bass f,,1\open\p~ | f~ | f~ | f( \mbreak |
   a4)\p r r2\fermata_"Cadenza"
+  \tag #'ossia \cadenzaIbo
   \tag #'score \cadenzaIb
   \mark\default \barNumberCheck \RhXIX \bar "||"
   \clef treble \time 4/4 R1 * 13 |

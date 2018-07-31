@@ -3,8 +3,14 @@
 cadenzaIa={\tempo\markup{\italic "veloce"} 4=300 \cadenzaOn 
 s1*9 \cadenzaOff \bar "|" \cadenzaOn s1*3 \bar "|" s1 \bar "|" s1 \cadenzaOff 
 |}
+  cadenzaIbo={
+    %\cadenzaOn 
+    %s1 * 7 s1. * 2 s1 * 7 s1 * 58 \cadenzaOff
+  }
 cadenzaIb={
   \cadenzaOn
+  
+  s1 * 7 s1. * 2 s1 * 7
   s1*4 \cadenzaOff \bar "|"
   \cadenzaOn s1*4 \cadenzaOff \bar "|"
   \cadenzaOn s1*4 \cadenzaOff \bar "|"
@@ -86,6 +92,7 @@ conductorI={
   
  
   %\tag #'ossia {\cadenzaOn s1*7 s1.*2 s1*4\cadenzaOff}
+  \tag #'ossia \cadenzaIbo
   \tag #'(score piano) \cadenzaIb \mark\default \barNumberCheck \RhXIX \bar "||"
 
   \time 4/4  \tempo\markup {

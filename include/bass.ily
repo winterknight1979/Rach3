@@ -259,6 +259,7 @@ BassI=\relative c {\commonConductor \transposition c
   g\p r d'-> r |
   g, r e'-> r |
   a,\p r r2\fermata_"Cadenza"
+  \tag #'ossia \cadenzaIbo
   \tag #'score \cadenzaIb 
   \mark\default \barNumberCheck \RhXIX \bar "||"
   \time 4/4 R1 * 13 |

@@ -44,7 +44,7 @@ SCOREFILES=${HEADERS} ${FLUTEFILES} ${OBOEFILES} ${CLARFILES} ${BSNFILES} ${HRNF
 	    include/vla.ily include/cello.ily include/bass.ily
 
 all: flutes oboes clarinets bassoons horns trumpets lowbrass\
-    percussion violins violas cellos basses piano score Rach3.mid Rach3-ossia.mid
+    percussion violins violas cellos basses mainfiles 
 
 score: score.a4.pdf score.letter.pdf
 flutes: flutes.a4.pdf flutes.letter.pdf
@@ -59,7 +59,23 @@ violins: violinsI.a4.pdf violinsI.letter.pdf violinsII.a4.pdf violinsII.letter.p
 violas: violas.a4.pdf violas.letter.pdf
 cellos: cellos.a4.pdf cellos.letter.pdf
 basses: basses.a4.pdf basses.letter.pdf
-piano: piano.a4.pdf piano.letter.pdf piano-ossia.a4.pdf piano-ossia.letter.pdf
+pianomain: piano.a4.pdf piano.letter.pdf 
+pianoossia: piano-ossia.a4.pdf piano-ossia.letter.pdf
+
+mainfiles: main pianomain score Rach3.mid
+ossiafiles: ossia pianoossia Rach3-ossia.mid
+
+
+
+main: include/conductor-main.ily
+	rm -f ossia
+	cp include/conductor-main.ily include/conductor.ily
+	touch main
+
+ossia: include/conductor-ossia.ily
+	rm -f main
+	cp include/conductor-ossia.ily include/conductor.ily
+	touch ossia
 
 %.mid: %.ly
 	${LILY} -dmidi-extension=mid   $< 2>&1 | tee $*.mid.log
@@ -70,48 +86,48 @@ piano: piano.a4.pdf piano.letter.pdf piano-ossia.a4.pdf piano-ossia.letter.pdf
 %.letter.pdf : %.ly
 	${LILY} -fpdf -dpaper-size=\"letter\" --loglevel=${LOG} -o $*.letter $< 2>&1 | tee $*.letter.log
 
-score.a4.pdf: score.ly ${SCOREFILES}
-score.letter.pdf: score.ly ${SCOREFILES}
-flutes.a4.pdf: flutes.ly ${HEADERS} ${FLUTEFILES} ${FLUTECUES}
-flutes.letter.pdf: flutes.ly ${HEADERS} ${FLUTEFILES} ${FLUTECUES}
-oboes.a4.pdf: oboes.ly ${HEADERS} ${OBOEFILES} ${OBOECUES}
-oboes.letter.pdf: oboes.ly ${HEADERS} ${OBOEFILES} ${OBOECUES}
-clarinets.a4.pdf: clarinets.ly ${HEADERS} ${CLARFILES} ${CLARCUES}
-clarinets.letter.pdf: clarinets.ly ${HEADERS} ${CLARFILES} ${CLARCUES}
-bassoons.a4.pdf: bassoons.ly ${HEADERS} ${BSNFILES} ${BSNCUES}
-bassoons.letter.pdf: bassoons.ly ${HEADERS} ${BSNFILES} ${BSNCUES}
-horns.a4.pdf: horns.ly ${HEADERS} ${HRNFILES} ${HRNCUES}
-horns.letter.pdf: horns.ly ${HEADERS} ${HRNFILES} ${HRNCUES}
-trumpets.a4.pdf: trumpets.ly ${HEADERS} ${TPTFILES} ${TPTCUES}
-trumpets.letter.pdf: trumpets.ly ${HEADERS} ${TPTFILES} ${TPTCUES}
-lowbrass.a4.pdf: lowbrass.ly ${HEADERS} ${LBFILES} ${LBCUES}
-lowbrass.letter.pdf: lowbrass.ly ${HEADERS} ${LBFILES} ${LBCUES}
-percussion.a4.pdf: percussion.ly ${HEADERS} ${PERCFILES} ${PERCCUES}
-percussion.letter.pdf: percussion.ly ${HEADERS} ${PERCFILES} ${PERCCUES}
-violinsI.a4.pdf: violinsI.ly include/viol1.ily ${HEADERS} ${VIOLICUES}
-violinsI.letter.pdf: violinsI.ly include/viol1.ily ${HEADERS} ${VIOLICUES}
-violinsII.a4.pdf: violinsII.ly include/viol2.ily ${HEADERS} ${VIOLIICUES}
-violinsII.letter.pdf: violinsII.ly include/viol2.ily ${HEADERS} ${VIOLIICUES}
-violas.a4.pdf: violas.ly include/vla.ily ${HEADERS} ${VIOLACUES}
-violas.letter.pdf: violas.ly include/vla.ily ${HEADERS} ${VIOLACUES}
-cellos.a4.pdf: cellos.ly include/cello.ily ${HEADERS} ${CELLOCUES}
-cellos.letter.pdf: cellos.ly include/cello.ily ${HEADERS} ${CELLOCUES}
-basses.a4.pdf: basses.ly include/bass.ily ${HEADERS} ${BASSCUES}
-basses.letter.pdf: basses.ly include/bass.ily ${HEADERS} ${BASSCUES}
-piano.a4.pdf: piano.ly include/piano.ily ${HEADERS} ${PIANOCUES}
-piano.letter.pdf: piano.ly include/piano.ily ${HEADERS} ${PIANOCUES}
+score.a4.pdf: main score.ly ${SCOREFILES}
+score.letter.pdf: main score.ly ${SCOREFILES}
+flutes.a4.pdf: main flutes.ly ${HEADERS} ${FLUTEFILES} ${FLUTECUES}
+flutes.letter.pdf: main flutes.ly ${HEADERS} ${FLUTEFILES} ${FLUTECUES}
+oboes.a4.pdf: main oboes.ly ${HEADERS} ${OBOEFILES} ${OBOECUES}
+oboes.letter.pdf: main oboes.ly ${HEADERS} ${OBOEFILES} ${OBOECUES}
+clarinets.a4.pdf: main clarinets.ly ${HEADERS} ${CLARFILES} ${CLARCUES}
+clarinets.letter.pdf: main clarinets.ly ${HEADERS} ${CLARFILES} ${CLARCUES}
+bassoons.a4.pdf: main bassoons.ly ${HEADERS} ${BSNFILES} ${BSNCUES}
+bassoons.letter.pdf: main bassoons.ly ${HEADERS} ${BSNFILES} ${BSNCUES}
+horns.a4.pdf: main horns.ly ${HEADERS} ${HRNFILES} ${HRNCUES}
+horns.letter.pdf: main horns.ly ${HEADERS} ${HRNFILES} ${HRNCUES}
+trumpets.a4.pdf: main trumpets.ly ${HEADERS} ${TPTFILES} ${TPTCUES}
+trumpets.letter.pdf: main trumpets.ly ${HEADERS} ${TPTFILES} ${TPTCUES}
+lowbrass.a4.pdf: main lowbrass.ly ${HEADERS} ${LBFILES} ${LBCUES}
+lowbrass.letter.pdf: main lowbrass.ly ${HEADERS} ${LBFILES} ${LBCUES}
+percussion.a4.pdf: main percussion.ly ${HEADERS} ${PERCFILES} ${PERCCUES}
+percussion.letter.pdf: main percussion.ly ${HEADERS} ${PERCFILES} ${PERCCUES}
+violinsI.a4.pdf: main violinsI.ly include/viol1.ily ${HEADERS} ${VIOLICUES}
+violinsI.letter.pdf: main violinsI.ly include/viol1.ily ${HEADERS} ${VIOLICUES}
+violinsII.a4.pdf: main violinsII.ly include/viol2.ily ${HEADERS} ${VIOLIICUES}
+violinsII.letter.pdf: main violinsII.ly include/viol2.ily ${HEADERS} ${VIOLIICUES}
+violas.a4.pdf: main violas.ly include/vla.ily ${HEADERS} ${VIOLACUES}
+violas.letter.pdf: main violas.ly include/vla.ily ${HEADERS} ${VIOLACUES}
+cellos.a4.pdf: main cellos.ly include/cello.ily ${HEADERS} ${CELLOCUES}
+cellos.letter.pdf: main cellos.ly include/cello.ily ${HEADERS} ${CELLOCUES}
+basses.a4.pdf: main basses.ly include/bass.ily ${HEADERS} ${BASSCUES}
+basses.letter.pdf: main basses.ly include/bass.ily ${HEADERS} ${BASSCUES}
+piano.a4.pdf: main piano.ly include/piano.ily ${HEADERS} ${PIANOCUES}
+piano.letter.pdf: main piano.ly include/piano.ily ${HEADERS} ${PIANOCUES}
     
-piano-ossia.a4.pdf: piano-ossia.ly include/piano.ily ${HEADERS} ${PIANOCUES}
-piano-ossia.letter.pdf: piano-ossia.ly include/piano.ily ${HEADERS} ${PIANOCUES}
+piano-ossia.a4.pdf: ossia piano-ossia.ly include/piano.ily ${HEADERS} ${PIANOCUES}
+piano-ossia.letter.pdf: ossia piano-ossia.ly include/piano.ily ${HEADERS} ${PIANOCUES}
 
 
 
 
-Rach3.mid: Rach3.ly ${SCOREFILES}
-Rach3-ossia.mid: Rach3-ossia.ly ${SCOREFILES}
+Rach3.mid: main Rach3.ly ${SCOREFILES}
+Rach3-ossia.mid: ossia Rach3-ossia.ly ${SCOREFILES}
 
 
 .PHONY: clean all
 
 clean:
-	rm -fv *.pdf *.ps *.mid* *.log
+	rm -fv *.pdf *.ps *.mid* *.log *.bak include/conductor.ily main ossia

@@ -165,6 +165,7 @@ ClOneI=\relative c'{\transposition bf \commonConductor
   e\<( g--\> |
   e\< a--\> |
   g4)\p r r2\fermata_"Cadenza"
+  \tag #'ossia \cadenzaIbo
   \tag #'score \cadenzaIb 
   \mark\default \barNumberCheck \RhXIX \mbreak \bar "||"
   \time 4/4 R1 * 5 |
@@ -181,7 +182,7 @@ ClOneI=\relative c'{\transposition bf \commonConductor
   {R1 * 2} \bar "||"
   \key e\minor
   e,4.(\p-- fs8 e4.-- fs8 |
-  r4.-- fs8 e4.--\dim fs8 |
+  e4.-- fs8 e4.--\dim fs8 |
   e4.)\! r8 r2 | 
   R1 * 7 \mark\default \barNumberCheck \RhXXI |
   R1 \mbreak |

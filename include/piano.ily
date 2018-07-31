@@ -891,6 +891,70 @@ r2 <g bf d>-- |
 \tag #'main \MainCadenzaUp
 \tag #'ossia \OssiaCadenzaUp
 
+\cadenzaOn
+<<{\voiceOne <fs' a d fs>4.---\omit\ff <f a d f>8 <fs a d fs>4.-- <f a d f>8 \bar "|"
+<fs a d fs>4.-- <fs bf d fs>8 <g bf d g>2 \bar "|"
+\ottava #1 <gs b d gs>4.-- \ottava #1 <g b d g>8 <gs b d gs>4.-- \ottava #1 <g b d g>8 \bar "|"
+<gs b d gs>4.-- \ottava #1 <g c e g>8 <a c e a>2--} \context Voice="PnoV2" {
+r8-\omit\ff e[ d] r r cs[ c] r \bar "|"
+r b[ bf] r r <a d, bf>[ <g d bf> <fs d bf>] \bar "|"
+r8 \ottava #0 <f gs b f'>[ <e gs b e>] r r \ottava #0 <ds g b ds>[ <d g b d>] r \bar "|"
+r \ottava #0 <cs e gs cs>[ <c e gs c>] r r \ottava #0 <b c e b'>[ <a c e a> <gs c e gs>]
+}
+>>
+\cadenzaOff \break \bar "|"
+\cadenzaOn
+<<
+  {\tempo \markup{\italic "rit."} 2=85 \ottava #1 <a'' c ef a>4.->\cresc \ottava #1 <af c ef af>8 <a c e a>4.-> \ottava #1 <gs c e gs>8 \bar "|"
+  <a c f a>4.-> \ottava #1 <gs c f gs>8 <a cs f a>4.-> \ottava #1 \tuplet 3/1 {s8 <g c f g>[ <a c f a>]} \bar "|"
+  \tempo "a tempo" 2=91 <a d fs a>1->\fff \bar "|"
+   <a, d fs a>4-> s2. 
+ } \context Voice="PnoV2"{
+  r8-\omit\cresc \ottava #0 <c a ef c>8 <a ef c>4-- r8 \ottava #0 <c a e c>8 <a e c>4-- \bar "|"
+  r8 \ottava #0 <c a f c> <a f c>4-- r8 \ottava #0 <cs a f cs> <a f cs>4-- \bar "|"
+  s8-\omit\fff \stemDown \ottava #0 \clef bass <a, fs d>[ <d a fs> <d bf fs>] \stemUp \clef treble <fs d a>[ <a fs d> <d a fs> <fs d bf>] \bar "|"
+  r8\oneVoice \ottava #1 <c' d fs c'>->[ <bf d fs bf>-> <a d fs a>->] <a cs fs a>->[ <g cs e g>-> <a cs fs a>-> <bf cs g' bf>->] 
+ } 
+>>\cadenzaOff \break \bar "|"
+\cadenzaOn
+<<
+  {\voiceOne <a d fs a>1-> \bar "|"
+  r8 \ottava #1 <c d fs c'>-> <bf d fs bf>->[ <a d fs a>->] \tuplet 3/2 4 {<a cs fs a>->[ <g cs e g> <gs cs e gs>] <gs cs f g>[ <a cs fs a> <bf cs g' bf>]} \bar "|"
+  <a d fs a>2-> \tuplet 3/2 4 {r8 \ottava #1 <g c e g>[ <gs c e gs>] <gs cs f gs>[ <a cs f a> <bf cs f bf>]} \bar "|"
+  <a d fs a>2-> \tuplet 3/2 {r8 \ottava #1 <g c e g>[ <gs c e gs>]} <gs cs f gs>16[ <a cs f a> <a cs fs a> <bf cs g' bf>]
+  } \context Voice="PnoV2" {\voiceTwo
+  r8 \clef bass \ottava #0 <a,, fs d>[ <d a fs> <d bf fs>] \clef treble \stemUp <fs d a>[ <a fs d> <d a fs> <fs d a>] \bar "|"
+  \stemDown <a fs d a>4 s2. \bar "|"
+  r8 \ottava #0 <fs, d a>[ <a fs d> <d bf fs>] <a' fs d a>4 s \bar "|"
+  r8 \ottava #0 <fs, d a> \tuplet 3/2 {<a fs d>[ <d a fs> <fs d bf>]} <a fs d a>4 s
+}
+>>
+\cadenzaOff \break \bar "|"
+\cadenzaOn \oneVoice
+\tuplet 3/2 4 {
+  <a d fs a>8 \tempo\markup{\italic "accelerando"} 2=100 \ottava #0 <b, fs' a b>[ <c fs a c>]
+  <cs fs a cs>[ <d fs a d> <ef fs a ef'>] 
+  <d fs a d> <fs, d' fs>[ <g d' fs g>]
+  <gs d' fs gs>[ <b d fs a> <bf d fs bf>] \bar "|"
+  <a d fs a>[ <a c e> <a cs es>] 
+  <a d fs>[ <f a cs> <fs a cs>]
+  <g bf ef>[ <e a c> <es a cs>]
+  <fs a d>[ <d fs gs> <d fs a>]
+} \bar "|"
+\tuplet 6/4 {
+  <d fs bf>[ \clef bass <fs fs,> <a a,> <ef ef,> <fs fs,> <d d,>]
+  <ef ef,>[ bf d a bf d,] \bar "|"
+  fs[ a ef fs d ef] bf[ d a bf fs a]
+} \cadenzaOff \break \bar "|"
+\cadenzaOn
+<<
+  {\stemUp r16 \tempo\markup{\italic "veloce"} 2=125 a\ff([ d fs d' fs, d a]) r fs'[( a d a' d, a fs])}
+  \context Voice="PnoV2" {d,1->}
+>> \bar "|" \stemNeutral
+\clef treble r16 a''[( d fs d' fs, d a]) r fs'[( a d a' d, a fs]) \bar "|"
+r a[( d fs d' fs, d a]) r fs'[( a d a' d, a fs]) \bar "|"
+r \ottava #1 a[(\ff d fs d' fs, d a]) r a[( d fs d' fs, d a])
+\cadenzaOff \break \bar "|"
 %\cadenzaOff
 }
 PianoUPII=\relative c'{\commonConductor s1}
@@ -1271,6 +1335,77 @@ PianoDNI=\relative c'{\commonConductor
   \tag #'main \MainCadenzaDn
   \tag #'ossia \OssiaCadenzaDn
   % cadenza
+\cadenzaOn
+<<
+  {
+    \voiceOne <fs, a d fs>4.---\omit\ff <f a d f>8 <fs a d fs>4.-- <f a d f>8 \bar "|"
+    <fs a d fs>4.-- <fs bf d f>8 <g bf d g>2-- \bar "|"
+    <gs b d gs>4.-- <g b e g>8 <g b d g>4.-- <g b d g>8 \bar "|"
+    <gs b d gs>4.-- <gs c e gs>8 <a c e a>2-- 
+  } \context Voice="PnoV4" {\voiceTwo
+  r8-\omit\ff <ef ef'>[ <d d'>] r r <cs cs'>[ <c c'>] r \bar "|"
+  r <b b'>[ <bf bf'>] r r <a bf d a'>[ <g bf d g> <fs b d fs>] \bar "|"
+  r <f gs b f'>[ <e gs b e>] r r <ds g b ds>[ <d g b d>] r \bar "|"
+  r <cs e g cs>[ <c e g c>] r r  <b e b'>[ <a e' a> <gs e' gs>]}
+>>
+
+\cadenzaOff \break \bar "|"
+\cadenzaOn
+<<
+  {
+    r8-\omit\cresc \clef bass <g' g,> <c ef a>4-- r8 \clef bass <fs, fs,> <c' e a>4-- \bar "|"
+    r8 \clef bass <f, f,> <c' f a>4-- r8 \clef bass <ef, ef,> <cs' f a>4-- \bar "|"
+    r8-\omit\fff \clef bass <d, d,>[ <a' d> <bf d>] <a fs'>[ <d a'> <fs d'> <bf fs'>] \bar "|"
+    <a d fs>4 s2.
+  } \context Voice="PnoV4"{
+    \clef treble <a c ef a>4.->-\omit\cresc \clef treble <af c ef af>8 <a c e a>4.-> \clef treble <gs c e gs>8 \bar "|"
+    <a c f a>4.-> \clef treble <gs c f gs>8 <a cs f a>4. \clef treble \tuplet 3/1 {s8 <gs c f gs>[ <a c f a>]} \bar "|"
+    <a d fs a>1-\omit\fff \bar "|"
+    r8 \stemUp \clef treble <c d fs c'>[-> <bf d fs bf>-> <a d fs a>->] <a cs fs a>->[ <g c e g>-> <a cs f a>-> <bf cs g' bf>]->
+  }
+>> 
+\cadenzaOff \break \bar "|"
+\cadenzaOn
+<<{\voiceOne
+r8 \clef bass <d,, d,>[ <a' d> <bf d>] <a fs'>[ <d a'> <fs d'> <bf fs'>] \bar "|"
+<a d fs>4 s2. \bar "|"
+<a d fs a>2-> \tuplet 3/2 4 {r8 \clef treble <g c e g>[ <gs c e gs>] <gs cs f gs>[ <a cs f a> <bf cs f bf>]} \bar "|"
+<a d fs a>2-> \tuplet 3/2 {r8 \clef treble <g c e g>[ <gs c e gs>]} <gs cs f gs>16[ <a cs f a> <a cs fs a> <bf cs g' bf>]
+} \context Voice="PnoV4" {\voiceTwo 
+<a d fs a>1-> \bar "|"
+r8 \clef treble \stemUp <c d fs c'>-> <bf d fs bf>->[ <a d fs a>->] \tuplet 3/2 4 {<a cs fs a>->[ <g cs e g> <gs cs e gs>] <gs cs f gs>[ <a cs fs a> <bf cs g' bf>]} \bar "|"
+r8 \clef bass \stemDown <d,, d,>[ <a' d fs a> <fs' bf d>] <a d fs>4 s \bar "|"
+r8 \clef bass <d,, d,> \tuplet 3/2 {<a' d fs>[ <d fs a> <fs bf d>]} <a d fs>4 s
+}
+>>
+\cadenzaOff \break \bar "|"
+\cadenzaOn
+\oneVoice
+\tuplet 3/2 4 {
+  <a d fs a>8 \clef bass <b, fs' a b>[ <c fs a c>] <cs fs a cs>[ <d fs a d> <ef fs a ef'>] <d fs a d> <fs, d' fs>[ <g d' g>] <gs d' fs gs>[ <a d f a> <bf d f bf>] \bar "|"
+  <a d fs a>[ <e' c' e> <es cs' es>] <fs d' fs>[ <cs a' cs> <d a' d>] <ef bf' ef>[ <c a' c> <cs a' cs>] <d a' d>[ <gs, fs' gs> <a fs' a>] \bar "|" }
+  \tuplet 6/4 2 { <bf fs' bf>[ fs a ef fs d] e[ <bf bf'> <d d'> <a a'> <bf bf'> d] \bar "|"
+  fs[ a ef fs d ef] bf[ d a bf fs a]
+}
+
+\cadenzaOff \break \bar "|"
+\cadenzaOn
+<<{\tuplet 3/2 {d,([-\omit\ff d' d]} a'4) \tuplet 3/2 {d,8[( a' d]} fs4)}
+\context Voice="PnoV4"{d,,1->-\omit\ff}
+>>\bar "|"
+\tuplet 3/2 {a''8[( d fs]} d'4) \tuplet 3/2{d,8[( a' d]} fs4) \bar "|"
+\clef treble \tuplet 3/2  {a,8[( d fs]} d'4) \tuplet 3/2 {d,8[( a' d]} fs4) \bar "|"
+\tuplet 3/2 {a,8[(-\omit\ff d fs]} d'4) \tuplet 3/2 {a,8[( d fs]} d'4)
+
+\cadenzaOff \tag #'score \break \mpbreak \bar "|"
+\mark\default
+a1 | a1 \mbreak |
+a1 | a1 | a1 \mbreak |
+a1 | a1 | a1 \mbreak |
+a1 | a1 | a1 \mbreak |
+a1 | a1 \mbreak |
+a1
+
 }
   
 PianoDNII=\relative c'{\commonConductor s1}

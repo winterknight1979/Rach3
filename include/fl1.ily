@@ -104,6 +104,8 @@ FlOneI=\relative c'{
   R1 * 10 |
   % Skip cadenza
   R1\fermataMarkup_"Cadenza" 
+
+  \tag #'ossia \cadenzaIbo
   \tag #'score \cadenzaIb 
   \mark\default \barNumberCheck \RhXIX \mbreak \bar "||"
   \cueWhile "PianoI" "Piano" #DOWN

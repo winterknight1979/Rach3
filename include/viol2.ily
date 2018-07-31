@@ -213,6 +213,7 @@ ViolTwoI=\relative c' {\commonConductor
   <g ef>:\> <bf d>2:\< f'4: |
   f:\> <bf, d>2:\< g'4: |
   g:\> d8\p r r2\fermata_"Cadenza"
+  \tag #'ossia \cadenzaIbo
   \tag #'score \cadenzaIb
   \mark\default \barNumberCheck \RhXIX \mbreak \bar"||" 
 
@@ -929,6 +930,7 @@ ViolTwoDI=\relative c' {\commonConductor
   bf:\> g2:\< <bf d>4: |
   <bf d>:\> g2:\< <bf d>4: |
   <bf d>:\> <a d>8\p r r2 \fermata_"Cadenza"
+  \tag #'ossia \cadenzaIbo
   \tag #'score \cadenzaIb}
 ViolTwoDII=\relative c' {\commonConductor 
 \time 3/4  s2.*9 \mark #24 \barNumberCheck \RhXXIV

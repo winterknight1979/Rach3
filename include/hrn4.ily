@@ -105,6 +105,7 @@ HrnFourI=\relative c' {
   a\pp-+~ | a-+~ | a-+~ | a-+ | R1 * 4 |
   \clef bass d,,1\p\open~ | d~ | d~ | d( |
   e4\p) r r2\fermata_"Cadenza"
+  \tag #'ossia \cadenzaIbo
   \tag #'score \cadenzaIb
   \mark\default \barNumberCheck \RhXIX \bar "||"
   \time 4/4 R1 * 13 |
