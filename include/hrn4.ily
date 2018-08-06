@@ -112,7 +112,7 @@ HrnFourI=\relative c' {
   R1\fermataMarkup_"Cadenza"
   \tag #'score \cadenzaIc 
   \mark\default \barNumberCheck \RhXX \mbreak |
-  \clef treble R1 * 2 |
+  \clef treble \grace s8*5 R1 * 2 |
   \cueWhile "HrnOneI" "Cor.I" #DOWN
   {R1 * 2 \bar "||" R1 } |
   R1 *9 \mark\default \barNumberCheck \RhXXI |

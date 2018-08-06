@@ -122,8 +122,8 @@
         shortInstrumentName="P.no"
       midiInstrument="acoustic grand"}
         <<
-          \new Voice = "PnoV1" {\PianoUPI \PianoUPII \PianoUPIII} \new Voice ="PnoV2" {\conductorI \conductorII \conductorIII}
-          \new Voice = "PnoV3" {\PianoDNI} \new Voice ="PnoV4" {\conductorI \conductorII \conductorIII }>>
+          \new Voice = "PnoV1" \articulate \unfoldRepeats {\PianoUPI \PianoUPII \PianoUPIII} \new Voice ="PnoV2" {\conductorI \conductorII \conductorIII}
+          \new Voice = "PnoV3" \articulate \unfoldRepeats {\PianoDNI} \new Voice ="PnoV4" {\conductorI \conductorII \conductorIII }>>
          \new DrumStaff %10 (convieniently!)
         \articulate \unfoldRepeats <<
           \new DrumVoice {\conductorI \conductorII \SDIII}

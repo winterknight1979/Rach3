@@ -114,10 +114,10 @@ HrnTwoI=\relative c' {
   \time 4/4 R1 * 8 |
   \cueWhile "HrnOneI" "Cor.I" #UP {R1 * 4 \mbreak | R1 | r2}
   r2\fermata_"Cadenza"
-  \tag #'score \cadenzaIc
+  \tag #'score {\stopStaff \cadenzaIc \startStaff}
   \mark\default \barNumberCheck \RhXX |
   \cueWhile "PianoI" "Piano" #DOWN
-  {R1 * 2}
+  {\grace s8*5 R1 * 2}
   d4.--\pp(\> cs8-.\! d4.--\> cs8-.\! |
   d4.--\> cs8-. d2\dim \bar "||"
   c4\pp) r r2 |

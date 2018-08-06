@@ -955,7 +955,202 @@ r \ottava #0 <cs e gs cs>[ <c e gs c>] r r \ottava #0 <b c e b'>[ <a c e a> <gs 
 r a[( d fs d' fs, d a]) r fs'[( a d a' d, a fs]) \bar "|"
 r \ottava #1 a[(\ff d fs d' fs, d a]) r a[( d fs d' fs, d a])
 \cadenzaOff \break \bar "|"
-%\cadenzaOff
+\ottava #0
+\key d\minor \time 4/4 \teeny
+\tuplet 8/2 4 {
+\toDN \stemUp 
+d,,8[(\dim a' \toUP \stemDown d g a fs d \toDN\stemUp bf]) a[( fs' \toUP\stemDown a d a' ef d a)] 
+\toDN\stemUp d,,[( a' \toUP\stemDown d g a fs d \toDN\stemUp  bf]) a([ fs' \toUP\stemDown a d a' ef d a)] |
+\toDN\stemUp d,,\p([ a' \toUP\stemDown d g a fs d \toDN\stemUp  bf])} \tuplet 9/2{a([ fs' a \toUP\stemDown \ottava #1 d fs d' bf a d,])\ottava #0 }
+\tuplet 8/2{\toDN\stemUp d,,[( a' \toUP\stemDown d g a fs d \toDN\stemUp  bf])} \tuplet 9/2{ a([ fs' a \toUP\stemDown \ottava #1 d fs d' bf a d,])\ottava #0
+} |
+\tuplet 8/2 4 {
+\toDN\stemUp d,,[( bf' \toUP\stemDown d g bf f d \toDN\stemUp c])
+bf[( f' \toUP\stemDown \ottava #1 bf d bf' g f bf,]) \ottava #0
+\toDN\stemUp d,,[( a' \toUP\stemDown d g a f d \toDN\stemUp bf])
+a[( f' \toUP\stemDown a d a' e d a])|  
+\toDN\stemUp d,,[( a' \toUP\stemDown d g a f d \toDN\stemUp bf])
+a[( f' \toUP\stemDown a d a' e d a]) 
+\toDN\stemUp d,,[( gs \toUP\stemDown bf f' gs e bf \toDN\stemUp a])}
+\tuplet 9/2{
+gs[( b e \toUP\stemDown gs b gs' e d gs,]) 
+}| 
+\tuplet 8/2 4 {
+\toDN\stemUp c,,[( g' \toUP\stemDown c f g ef c \toDN\stemUp af])
+g[( ef' \toUP\stemDown  g c g' d c g])
+\toDN\stemUp c,,[( fs \toUP\stemDown a ef' fs d a \toDN\stemUp g])
+fs[( d' \toUP\stemDown fs a fs' d c g])|    
+\toDN\stemUp bf,,[( f' \toUP\stemDown bf ef f d bf \toDN\stemUp g])
+f[( d' \toUP\stemDown f bf f' c bf f])
+\toDN\stemUp a,,[( d \toUP\stemDown f c' d bf a\toDN\stemUp g])
+f[( bf \toUP\stemDown d f d' g, f d]) |
+\toDN\stemUp g,,[( cs \toUP\stemDown e bf' cs a g \toDN\stemUp f])
+e[( a \toUP\stemDown cs e cs' bf a cs,])
+\toDN\stemUp f,,[( c' \toUP\stemDown f bf c a f \toDN\stemUp d])
+c[( a' \toUP\stemDown c f c' g f c]) |
+\toDN\stemUp f,,[( c' \toUP\stemDown f bf c af f \toDN\stemUp df])
+c[( af' \toUP\stemDown c f c' g f c])
+\toDN\stemUp f,,[( c' \toUP\stemDown f bf c af f \toDN\stemUp b,])
+c[( af' \toUP\stemDown c ef c' g f c]) \mbreak |
+\toDN\stemUp f,,[( bf \toUP\stemDown d a' b gs d \toDN\stemUp c])
+b[( gs' \toUP\stemDown b d b' g f b,])
+\toDN\stemUp ef,,[( bf' \toUP\stemDown ef af bf g ef\toDN\stemUp c])
+bf[( g' \toUP\stemDown bf ef bf' f ef bf]) |
+\toDN\stemUp d,,[( g \toUP\stemDown bf f' g ef d \toDN\stemUp c])
+bf[( ef \toUP\stemDown g bf g' c, bf g])
+\toDN\stemUp c,,[( fs \toUP\stemDown a ef' fs ef c \toDN\stemUp bf])
+a[( ef' \toUP\stemDown fs a fs' bf, a fs]) |
+\toDN\stemUp bf,,[( f' \toUP\stemDown bf ef f ef bf \toDN\stemUp g])
+f[( d' \toUP\stemDown f bf f' c bf f])
+\toDN\stemUp a,,[( e' \toUP\stemDown g d' e cs g \toDN\stemUp f])
+e[( cs' \toUP\stemDown e g e' a, g e]) \mbreak |
+\stemNeutral r c([ ef af ef' af, ef c])
+}
+\normalsize
+\tuplet 6/4 4 {
+  r16 c[( df d ef e] <d f>[ d ef f gf g] <f a>[ e f g a <g b>] |
+  <af c>)[ ef( f g af bf] <af c>[ g af bf c df] 
+  <b d>[ <f af> <g bf> <af cf> <a c> <bf df>]
+} \tuplet 8/4 {
+  <b d> <a c> <bf df> <b d> <c ef> <cs e> <d f> <d fs>
+} \break \bar "||" \key c\minor \tempo "Moderato" 4=110 
+
+<<{\voiceOne <ef g>4.)\p-- f8^\markup{\italic "dolce"}( g bf c ef,  }
+\context Voice="PnoV2" {<bf g>8-\omit\p s s2 \toDN \stemUp bf,16( ef g \toUP\stemDown c,)--~
+}>>
+\bar "|"
+\cadenzaOn
+<<{<f'~ af, f c>4\arpeggio--) f8[ ef(] f[ af bf d,] \bar "|"
+\time 3/4 <ef~ g, ef c bf>4)\arpeggio ef8[ g( af c,] \bar "|"
+<d~ af f b, af>4\arpeggio--) d8[ f( g b,])}
+\context Voice="PnoV2" {
+\tweak Stem.transparent ##t c,4 s2 \toDN\stemUp af16([ d f  \toUP\stemDown bf,--)~]
+\tweak Stem.transparent ##t bf4
+}
+>>
+\cadenzaOff \bar "|" \break \cadenzaOn \time 4/4
+<<{\voiceOne \tempo "poco più mosso" 4=125
+c'8\mf[( ef f b,]) c[( ef f\> a,]) \bar "|"
+bf[(\p d ef a,]) \tempo\markup{\italic "rit."} 4=117 bf[( d ef g,]) \bar "|"
+\tempo "Come prima" 4=110 af[( c d g,] af[ c d) \nextCresc "poco cresc." g,](\< \bar "|"
+\set Staff.connectArpeggios=##t
+gs[ cs d g,] gs[ cs d^\markup{\italic "ten."}\>) af\!(] 
+}
+\context Voice="PnoV2"{\voiceTwo
+<af c>4-\omit\mf~ <af c>8[ g] af4.(-\omit\> fs8) 
+<g ef bf>4.(-\omit\p <fs d>8) <g ef>4.( <e cs>8)
+<f d>1 
+<f d>2. <af d, d' >4\arpeggio
+}
+>> \cadenzaOff \mpbreak \tag #'score \break \bar "|" \cadenzaOn
+<<{\tempo "poco accel." 4=125 a8[ cs d)\cresc a]( bf[ cs d) f,]( \bar "|"
+fs[ cs' d) fs,]( g[ cs \tempo\markup {\italic "rit."} 4=110 d) g,](-\omit\mf \bar "|"
+
+af16\pp[-- c-- d-- g,]-- \tempo "poco a poco accel." 4=125 af[-- d ef g,] \tempo 4=135 af[ ef' f af,] \tempo 4=150 bf[ f' g bf,] \bar "|"
+\tempo 4=170 cf[ g' af cf,] \tempo 4=180 c[ g' af c,] \tempo 4=190 df[ g af df,]| \tuplet 7/4{cs[ af' a c, cs d a']}
+}\context Voice="PnoV2" {
+  <d,, bf>2-\omit\< <d bf> <d bf> <d bf>-\omit\mp <f d af>1-\omit\pp
+}>>
+\cadenzaOff \break \bar "|" \cadenzaOn \tiny
+\tempo\markup{\italic "veloce"} 4=200
+\tuplet 5/4 4{
+bf'16)[ ef,( e f c'] d[ f, fs g e'] f[ af, a bf fs'] g[ \ottava #1 bf, b c g']
+a[ c, cs d a'] bf[ c, cs d bf'] c[ c, cs d bf'] a[ c, cs d bf'] \bar "|"
+c[ c, cs d bf'] c[ c, cs d bf'] c[ c, cs d bf'] c[ c, cs d bf']
+c[ c, cs d bf'] c[ ef, e f bf] c[ f, fs g bf]
+} \tuplet 6/4 { c[ g af a bf b])}
+\cadenzaOff \break \bar "" \cadenzaOn
+\teeny
+\stemUp 
+c[ af f d] \stemDown cs[_\markup{\italic "m.g."} d ef e] \stemUp f[ fs g bf   a af f d] %1
+\stemDown b[ c cs d] \stemUp ef[ e g f  d b] \ottava #0 \stemDown af[ a bf b] \stemUp c[ cs %2
+e d b bf  af]\stemDown f[ fs g  af] \stemUp a[ bf df cf bf af fs] %3
+\stemDown fs[ g] \stemUp bf[ a  af f d] \stemDown b[   c cs d] \stemUp ef[ e g f %4 
+d bf] \stemDown c[ cs] \stemUp ef[ %s4
+d b bf af] cf[( bf a gf] cf[ bf af f] cf'[ bf g e])
+\cadenzaOff \bar "" \break \cadenzaOn
+bf'[( a af f] bf[ a g e] bf'[ a gf ef]) a[( af g e] a[ af gf ef] a[ af f d])
+af'[(\cresc f e ef d fs g a] f[ d df c cf ef e f] d[ \toDN\stemUp cf bf a af c df d])
+\toUP\normalsize \stemDown cf8_\markup{\italic "m.g"}-> \stemUp \acciaccatura{df} cf4\trill
+\stemDown bf8_\markup{\italic "m.g"}-> \stemUp \acciaccatura{cf} bf4\trill
+\stemDown a8_\markup{\italic "m.g"}-> \stemUp \acciaccatura{bf} a4\trill
+\cadenzaOff \bar "" \break \cadenzaOn
+\stemDown af8_\markup{\italic "m.g"}-> \stemUp \acciaccatura{bf} af2\startTrillSpan s4-\omit\f\stopTrillSpan
+s4 \stemDown bf'2--~^\markup{\italic "ten."} \stemUp \tempo "Moderato" bf8[ g,](\mf \bar "|"
+<<{\voiceTwo
+af[ c d) g,]( af[\< d ef) g,](\! \bar "|"
+af[ ef' e) g,]( \tuplet 3/2 {af\>[ e' f]\!} fs[) af,] 
+} \context Voice="PnoV2" {
+  \voiceOne r4-\omit\mf <af d bf'>2.-- \bar "|" r4 <af d bf'>2-- <a d bf'>4--
+
+}>>
+\cadenzaOff \mark\default 
+\bar "|" 
+\stemNeutral
+\appoggiatura {bf8 ef g~ bf ef~} 
+<g, ef' bf'>2--\mf^"dirigieren" \clef bass <g, bf, ef,>--\p\arpeggio |
+\clef treble <g' ef' bf'>--\arpeggio \clef bass <g, bf, ef,>\arpeggio-- \break |
+
+\clef treble <g' ef' bf'>--\arpeggio\dim \clef bass <g, bf, ef,>\arpeggio--  |
+\clef treble <g' ef' bf'>--\arpeggio \clef bass <g, e a,>\arpeggio--\pp  |
+\clef treble \key d\minor R1 * 2 |\oneVoice
+r4 d''4\pp( f8 e d4 |
+cs8 d e4 d4.) e8( \mbreak |
+d8 e f4) f--\< f--\! |
+e8--( d cs2 b8 cs |
+d4) d\p( f8 e d4 |
+cs8 d e4 d2)
+g4(\mf f e\> d) |
+e2~\p( e8 d cs b |
+cs d e2.) \mpbreak |
+r4 ef\mf( d4. c8 |
+bf c d4 e f) |
+ef2( d4. c8 |
+bf c d4 e8 g f4)|
+fs4.--\cresc( a8 g2) |
+gs4.--( bf8 a2)~ |
+a4 \nextDim "rit. e dim." a--~(\> a8 g a c) \mbreak |
+bf2.\p( a4 |
+g f8 e d2) |
+a'2.\mf( g4 |
+f\> e8 f d4)\! g\mf( |
+f e d) f--~( |
+f e2-- ef4--~
+\time 2/4 ef d\>) \mbreak |
+\time 4/4 d2.--(\! cs4 |
+d) r8 \ottava #1 <a'' d>16( <d, e'>   <a' d> <d, e'> <a' d> <d, e'>  <a' d> c <e e,> d |
+<a c> d <e e,> c <bf d>8) <g d>16([ <a g,>]  <g d> <a g,> <g d> <a g,>  <g d> f <a a,> g |
+<f d> g <a a,> f <g d>8) \ottava #0 <d bf>16[( <e g,>]  <d bf> <e g,> <d bf> <e g,> <d bf> c <e f,> d \mbreak |
+<c a> d <e f> c <d e,>8) <d, b>16[( e] <d bf> ef d bf') <d, a>( e d a') |
+<<{\voiceOne 
+d,4.--(\mf f8) c4.--( e8) | bf4.--( d8) a4.--( c8) | gs4.--(\dim b8) g4.--( bf8) | fs4.--( a8) f4.--( gs8) 
+}\context Voice="PnoV2" {\voiceTwo 
+r16-\omit\mf d( f a bf a) r8 r16 c,( e g a g)  r8 |
+r16 bf,( d f g f) r8 r16 a,( c f g f) r8 |
+r16-\omit\dim gs,( b e f e) r8 r16 g,( bf ef f ef) r8 |
+r16 fs,( a d ef d) r8 r16 f,( a d e d) r8-\omit\pp
+}>> |
+\oneVoice <e d b>4\pp r r2 |
+<ef c g>4.-- <d c af>16[( d] <ef c g>8) <g c, g>-. <a c, a>-. <c, a>-. |
+<d bf f>4-. r r2 |
+r8 <g d bf g>-.\pp <a d, a>-. <d, g,>->
+<<{\voiceOne <e g,>2--}
+\context Voice="PnoV2" {\voiceTwo d4( cs)}>> 
+\clef bass 
+<<{\voiceTwo
+f,8\p( a bf e, a d,16 f g8[ cs,)] |
+f[( a] bf e,16 g a8 d,16 f e8[ cs]) |
+d(\< g\! a c,
+}
+\context Voice="PnoV2" {
+\voiceOne d'2.--(-\omit\p cs4) d2.(-- cs4) d
+}
+>>
+\oneVoice bf,8\> e f\! a,
+g) c16(\< cs d8)->\![ f,]-\pp e-. g-. a4-. |
+d,-. r d'-.\pp r |
+d-. r r2 \bar "|."
+
 }
 PianoUPII=\relative c'{\commonConductor s1}
 PianoUPIII=\relative c'{\commonConductor s1}
@@ -1398,13 +1593,125 @@ r8 \clef bass <d,, d,> \tuplet 3/2 {<a' d fs>[ <d fs a> <fs bf d>]} <a d fs>4 s
 \tuplet 3/2 {a,8[(-\omit\ff d fs]} d'4) \tuplet 3/2 {a,8[( d fs]} d'4)
 
 \cadenzaOff \tag #'score \break \mpbreak \bar "|"
-\mark\default
-a1 | a1 \mbreak |
-a1 | a1 | a1 \mbreak |
-a1 | a1 | a1 \mbreak |
-a1 | a1 | a1 \mbreak |
-a1 | a1 \mbreak |
-a1
+\mark\default \stemDown \slurDown
+\time 4/4 d,,8..-\omit\dim[ bf'32]( a8..)[ ef32]( d8..[) bf'32(] a8..[) ef32]( |
+d8..[)-\omit\p bf'32]( a8..)[ ef32]( d8..[) bf'32(] a8..[) ef32]( \mbreak |
+d8..[) c'32]( bf8..)[ e,32]( d8..[) bf'32(] a8..[) e32]( | 
+d8..)[ bf'32]( a8..[) cs,32]( d8..)[ a'32]( gs8..[) b,32](| 
+c8..[) af'32]( g8..[) d32]( c8..[) g'32]( fs8..)[ a,32]( \mbreak |
+bf8..[) g'32]( f8..[) bf,32]( a8..[) g'32]( f8..[) a,32]( | 
+g8..[) f'32]( e8..)[ e,32]( f8..)[ d'32]( c8..[) g32]( |
+f8..[) df'32]( c8..[) g32]( f8..[) b32]( c8..[) e,32]( \mbreak |
+f8..[) c'32]( bf8..[) \clef bass d,32]( ef8..[) c'32]( bf8..)[ ef,32]( |
+d8..[) c'32]( bf8..)[ d,32]( c8..[) bf'32]( a8..[) a,32](|
+bf8..[) g'32]( f8..[) bf,32]( a8..[) f'32]( e8..[) g,32]( \mbreak |
+<<{af1) | s2. <af' cf>8[ <cf d>]}
+\context Voice="PnoV4"{ \voiceOne
+r8.-\omit\p f,16( ef8.[) g16(] <f a,>8.)[ ef'16]( <d b f>8.)[ d,16]( |
+<ef af,>8.)[ df'16]( <c af ef>8.[) ef16]( <d b f>8)~[ \tuplet 3/2{<d b f>16 \clef treble ef( e]} \tuplet 5/4 {f fs g af a)}
+
+}>>
+
+\mbreak \bar "||"
+\key c\minor
+\stemUp \clef bass <g, ef bf ef,>16\arpeggio-\omit\p( bf ef \toUP\stemDown g--) \clef treble
+<<{
+\toDN\stemUp \clef treble d( ef g \toUP\stemDown bf--) \toDN\stemUp c,( ef g \toUP\stemDown c--) s4
+\toDN } \context Voice="PnoV4" {\toDN \voiceTwo 
+d,4-\omit\p c bf 
+}>> \bar "|" \clef bass \cadenzaOn
+
+<<{\stemUp <g c, ef,>16\arpeggio([ a c \toUP\stemDown f--)] 
+\toDN \stemUp\clef treble c([ ef f \toUP\stemDown af--)]
+\toDN\stemUp bf,[( ef f \toUP\stemDown bf--)] s4\toDN \bar "|"
+\toDN \time 3/4 \clef bass \stemUp <g, c, ef,>16\arpeggio([ c ef \toUP\stemDown g--)]
+\toDN\stemUp af,[( c ef \toUP\stemDown af--)]
+\toDN\stemUp g,[( c ef \toUP\stemDown af,--])\toDN \bar "|"
+\toDN\stemUp <f b, ef,>\arpeggio[( b d \toUP\stemDown f--)]
+\toDN\stemUp g,[( b d \toUP\stemDown g--])
+\toDN\stemUp f,[( b d \toUP\stemDown g,--])\toDN}
+\context Voice="PnoV4" {\voiceTwo s4 c bf af s af g s g f}
+>>
+\toDN \cadenzaOff \bar "|" \break \cadenzaOn \time 4/4
+
+<<{ef16(-\omit\mf[ af c ef] <d f>8.--[ <df ff>16] \stemUp <c ef>4.) s8 \bar "|"
+\stemUp r16-\omit\p ef,,([ bf' gf'] a[ bf cf8--~]) \tweak Stem.transparent ##t cf16 bf4-- s16 <a bf,~>8 \bar "|"
+<af bf,>16[^\markup{\italic "dolce"} f( bf, ef,] bf'[ g' af c] d4)~ d16[( c af-\omit\< g] \bar "|"
+gs8[ b,16 e,] b'[ g' gs cs] d4) <af d, bf f>\arpeggio-\omit\>
+}
+\context Voice="PnoV4"{\voiceTwo 
+s2-\omit\mf r16 ef[( af c] ef[-\omit\> f <ef cf>8]) \bar "|"
+s2-\omit\p c16[ bf( g cf,] bf~[ ef,)] \tweak Stem.transparent ##t bf'8
+}
+>>
+\cadenzaOff \bar "|" \cadenzaOn
+r16 a'[( d, fs,] d'-\omit\cresc[ a' bf cs]) r d,[( g, cs] d[ a' bf cs]) \bar "|"
+r8 af,16[( d] fs[ a bf cs]) r a,([ bf d] g[ d' \toUP\stemDown ef e]) \toDN \bar "|"
+\stemNeutral ef,,-\omit\pp[( bf' f' af] f[ bf, f' af] d[ af f af] f[ bf, f' af] \bar "|"
+d4) r \tuplet 6/4 {af8[ f af f bf, f']}
+\cadenzaOff \bar "|" \cadenzaOn
+<d' af f bf, ef,>1\arpeggio s \bar "|"
+\tuplet 6/4 2 { ef,,8[( bf' f' g af \clef treble df] d[ e f af df d]} af'4) \clef bass r r2
+\cadenzaOff \break \bar "" \cadenzaOn
+s4*21 \cadenzaOff \bar "" \break \cadenzaOn
+s4*6 s2*3 s4.*3 \cadenzaOff \bar "" \break \cadenzaOn
+s4 \teeny \stemUp \once\dynamicUp ef,,,,16[(\f ef' a bf d \toUP\stemDown f af f bf d \toDN\stemUp \clef treble e f af a])
+s2 s4 \bar "|"
+\normalsize \stemNeutral r4-\omit\mf \clef bass <f, bf, ef,>2.\arpeggio \bar "|"
+r4 <a bf, ef,>2\arpeggio bf,4 \cadenzaOff \bar "|"
+\appoggiatura {ef,8 bf' g' bf ef}
+<<{\voiceOne \clef treble bf'4.--(-\omit\mf c8--) bf4.--( d8--) | bf4.--( c8--) bf4.--( d8--)
+}\context Voice="PnoV4" {\voiceTwo
+\tuplet 6/4 2 {bf8[-\omit\mf ef, g bf, ef c'] bf[ bf, ef g, ef' d'] | bf[ ef, g bf, ef c'] bf[ bf, ef g, ef' d'] }
+}>> |
+<<{\voiceOne \clef treble bf4.--(-\omit\dim c8--) bf4.--( d8--) | bf4.--( c8--)-\omit\pp bf4.--( d8--)
+}\context Voice="PnoV4" {\voiceTwo
+\tuplet 6/4 2 {bf8[-\omit\dim ef, g bf, ef c'] bf[ bf, ef g, ef' d'] | bf[ ef, g bf, ef c']-\omit\pp bf[ d, e g, d' d'] }
+}>> |
+\key d\minor <a f d>4 r r2 | R1 |\oneVoice
+r4 d,4-\omit\pp( f8 e d4 |
+cs8 d e4 d4.) e8( \mbreak |
+d8 e f4) f---\omit\< f--\! |
+e8--( d cs2 b8 cs |
+d4) d-\omit\p( f8 e d4 |
+cs8 d e4 d2)
+g4(-\omit\mf f e-\omit\> d) |
+e2~-\omit\p( e8 d cs b |
+cs d e2.) \mpbreak |
+r4 ef-\omit\mf( d4. c8 |
+bf c d4 e f) |
+ef2( d4. c8 |
+bf c d4 e8 g f4)|
+fs4.---\omit\cresc( a8 g2) |
+gs4.--( bf8 a2)~ |
+a4  a--~(-\omit\> a8 g a c) \mbreak |
+bf2.-\omit\p( a4 |
+g f8 e d2) |
+a'2.-\omit\mf( g4 |
+f-\omit\> e8 f d4)\! g-\omit\mf( |
+f e d) f--~( |
+f e2-- ef4--~
+\time 2/4 ef d-\omit\>) \mbreak |
+\time 4/4 d2.--(\! cs4 |
+d) r8 <d' a'>16( a <d g> a <d f> a <c e> a <c f> a |
+<c g'> a a' c, <bf d bf'>8) <bf f'>16[( g] <bf e> g <bf d> g <a c> d, a' d, |
+bf' d, <a' c> d, <bf' d>8) <bf g>16[( d] <bf f> d <bf e,> d <a d,> d <a e> d |
+<a f> d <a g> d <b gs>8) gs16([ e] <g ef>8 g,) <g' e>([ a,)] |
+\clef bass r16-\omit\mf d,,( a' f' bf a f' d) r d,,( a' e' a g e' c) |
+r d,,( bf' f' g f d' bf) r d,,( a' f' g f c' a) |
+r-\omit\dim d,,( b' e f e b' gs) r d,( bf' ef f ef bf' g) \mbreak |
+r d,( a' d ef d a' fs) r d,( a' d e d gs\( f |
+<g e>4-\omit\pp\)) r r2 |
+<c, c,>4.-- <c e,>16[( f,] <c' c,>8) <c ef,>-. <c e,>-. <ef f,>-. |
+<d bf>4-. r r2 |
+r8-\omit\pp <d bf e,>-. <d a f>-. <d bf>-. <a a,>2-- \mbreak |
+<<{d8-\omit\p( c bf c a bf g a) | d( c bf c a bf g a) }
+\context Voice="PnoV4" { d,1 d}>> |
+d8-\omit\<( g\! a c, g-\omit\> e' f\! a, |
+g) c16(-\omit\! cs bf8[)->\! f]-\omit\pp-. e-. g-. a-. \ottava #-1 a,-. \ottava #0 |
+d4-. r <d d'>-.-\omit\pp r |
+<d d'>-. r r2 \bar "|."
+
 
 }
   

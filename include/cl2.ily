@@ -151,7 +151,7 @@ ClTwoI=\relative c'{
   \time 4/4 R1 * 13 | R1\fermataMarkup_"Cadenza"
   \tag #'score \cadenzaIc 
   \mark\default \barNumberCheck \RhXX |
-  R1 * 2 |
+  \grace s8*5 R1 * 2 |
   \cueWhile "HrnOneI" "Cor.I" #DOWN 
   {R1 * 2 } \bar "||"
   \key e \minor

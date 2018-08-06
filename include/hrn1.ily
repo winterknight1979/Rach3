@@ -154,10 +154,10 @@ HrnOneI=\relative c' {
   bf2--) a8(\dim bf c4 |
   bf2 a |
   bf4\pp) r r2\fermata_"Cadenza"
-  \tag #'score \cadenzaIc
+  \tag #'score {\stopStaff \cadenzaIc \startStaff}
   \mark\default \barNumberCheck \RhXX |
   \cueWhile "PianoI" "Piano" #DOWN
-  {R1 * 2} \mbreak |
+  {\grace s8*5 R1 * 2} \mbreak |
   a4.\pp\>--( bf8-.\! a4.--\> bf8-.\! |
   a4.--\> bf8-.\! a4.--\dim bf8-. \bar "||"
   a4)\pp r r2 |

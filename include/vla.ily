@@ -237,7 +237,7 @@ VlaI=\relative c' {\commonConductor
   R1 * 13 | R1 \fermataMarkup_"Cadenza"
   \tag #'score \cadenzaIc
   \mark\default \barNumberCheck \RhXX \mbreak |
-  R1 * 2 |
+  \grace s8*5 R1 * 2 |
   \cueWhile "HrnOneI" "Cor.I" #UP {R1 * 2 \bar "||" r8}
   f8:16^"con sord"\pp a: g: r f: a: g: |
   r f: a: g: r f:\dim a: g: |

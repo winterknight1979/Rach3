@@ -117,7 +117,7 @@ FlOneI=\relative c'{
   R1\fermataMarkup_"Cadenza" 
   \tag #'score \cadenzaIc
   \mark\default \barNumberCheck \RhXX |
-  R1 * 2 |
+  \grace s8*5 R1 * 2 |
   \cueWhile "HrnOneI" "Cor.I" #DOWN
     {R1 | R1 \bar "||" \key d\minor 
     R1 }

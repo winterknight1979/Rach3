@@ -225,7 +225,7 @@ ViolOneI=\relative c' {\commonConductor
   \tag #'score \cadenzaIc
   \mark\default \barNumberCheck \RhXX \mbreak |
 
-  R1 * 2 |
+  \grace s8*5 R1 * 2 |
   \cueWhile "HrnOneI" "Cor.I" #DOWN
   {R1 * 2 \bar "||" \key d\minor r8}
   d8:16\p f: e: r d: f: e: |
@@ -927,7 +927,7 @@ ViolOneDI=\relative c' {\commonConductor
   \time 4/4 R1 * 13 |
   R1\fermataMarkup_"Cadenza"
   \tag #'score \cadenzaIc
-  \mark\default \barNumberCheck \RhXX |
+  \mark\default \barNumberCheck \RhXX | \grace s8*5 R1
 }
 ViolOneDIII=\relative c' {\commonConductor
   \time 2/2 s1 * 18 \mark #40 \barNumberCheck \RhXL

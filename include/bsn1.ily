@@ -207,7 +207,7 @@ BsnOneI=\relative c {
   \tag #'score \cadenzaIc |
   \mark\default \barNumberCheck \RhXX |
   \cueWhile "PianoI" "Piano" #UP 
-  {R1 * 2}
+  {\grace s8*5 R1 * 2}
   bf,1\pp(~ |
   bf2 a4) r \mbreak \bar "||"
   \key d \minor \clef tenor

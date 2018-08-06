@@ -89,7 +89,7 @@ TimpI=\relative c{
   R1\fermataMarkup_"Cadenza"
   \tag #'score \cadenzaIc
   \mark\default \barNumberCheck \RhXX |
-  R1 * 2
+  \grace s8*5 R1 * 2
   \cueWhileClef "HrnOneI" "Cor.I" #DOWN "treble"
   {R1 | r2} a4\pp r \bar "||"
   d4 r8 a d4 r8 a \mbreak |

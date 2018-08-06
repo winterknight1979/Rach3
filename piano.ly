@@ -46,7 +46,7 @@ page-breaking-system-system-spacing = #'((basic-distance . 12))
         \header{piece=\markup\huge "I"}
       }
 
-      \markup{ \vspace #1 }
+     \pageBreak 
       \score{
       \keepWithTag #'part \new PianoStaff="Piano" 
       %\with {

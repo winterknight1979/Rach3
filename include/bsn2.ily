@@ -200,7 +200,7 @@ BsnTwoI=\relative c {
   \tag #'score \cadenzaIc 
   \mark\default \barNumberCheck \RhXX \mbreak |
   \cueWhile "PianoI" "Piano" #UP 
-  {R1 * 2}
+  {\grace s8*5 R1 * 2}
   ef,1(~\pp | ef2 a4) r \bar "||"
   \clef tenor \key d\minor R1 * 8 |
   e'4\p( f g gs |

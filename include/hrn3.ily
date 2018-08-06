@@ -125,7 +125,7 @@ HrnThreeI=\relative c' {
   \tag #'score \cadenzaIc 
   \mark\default \barNumberCheck \RhXX |
   \cueWhile "PianoI" "Piano" #DOWN
-  {R1 * 2} |
+  {\grace s8*5 R1 * 2} |
   f''1\pp~ | f \mbreak \bar "||"
   e1\pp~ | e~ | e4. r8 r2 |
   R1 * 7 \mark\default \barNumberCheck \RhXXI |

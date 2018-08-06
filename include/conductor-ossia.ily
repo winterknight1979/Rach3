@@ -29,7 +29,7 @@ cadenzaIb={
 % \cadenzaOff
 % \set Score.currentBarNumber=\RhXIX
 }
-cadenzaIc={\cadenzaOn s1*15 s1 s4*21 s4*6 s2*3 s4.*3 s8 s2 s2 s2 s4 s1 s1\cadenzaOff}
+cadenzaIc={\cadenzaOn s1 * 2 s2.* 2 s1*11  s4*21 s4*6 s2*3 s4.*3 s8\bar "" s2\bar "" s2\bar "" s2\bar "" s4 s1 s1\cadenzaOff}
 
 conductorI={
   \commonConductor
@@ -107,6 +107,7 @@ conductorI={
   \tag #'(score piano) \cadenzaIc
   \mark\default \barNumberCheck \RhXX \bar "|"
 
+  \grace s8*5
   s1 * 3 s2 \tempo\markup{\italic "rit."} 4=140  s2 \bar "||"
   \tempo "Tempo I" 4=120 s1 * 10 \mark\default \barNumberCheck \RhXXI
 

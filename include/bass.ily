@@ -266,7 +266,7 @@ BassI=\relative c {\commonConductor \transposition c
   R1 \fermataMarkup_"Cadenza"
   \tag #'score \cadenzaIc
   \mark\default \barNumberCheck \RhXX \mpbreak |
-  R1 * 2 |
+  \grace s8*5 R1 * 2 |
   \cueWhile "HrnOneI" "Cor.I" #UP {R1 | r2}
   a4\pp^"pizz" r \bar "||"
   \key d\minor d\p r8 a d4 r8 a |

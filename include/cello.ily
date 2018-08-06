@@ -280,7 +280,7 @@ CellI=\relative c {\commonConductor
   R1 * 13 | R1\fermataMarkup_"Cadenza"
   \tag #'score \cadenzaIc 
   \mark\default \barNumberCheck \RhXX |
-  R1 * 2 |
+  \grace s8*5 R1 * 2 |
   \cueWhile "HrnOneI" "Cor.I" #UP {R1 | r2}
   a,2^"unis"\pp \bar "||"
   \key d\minor 
