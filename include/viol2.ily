@@ -289,7 +289,7 @@ ViolTwoII=\relative c' {\commonConductor
   df2\pp\< eff4--\> | df2\pp~ df4-- |
   df2( \tuplet 3/2 {d4 ef8)} |
   f2.~ | f~ | f8 r r4\fermata_"Cadenza" r 
-  \tag #'score \cadenzaIIa | R2. \mbreak |
+  \tag #'score \cadenzaIIa  \mbreak |
   R2. * 7 |
   \cueWhile "PianoII" "Pno." #DOWN
   {R2. * 3}\mark\default \barNumberCheck \RhXXVII |
@@ -943,7 +943,7 @@ ViolTwoDII=\relative c' {\commonConductor
 
   s2.*3 s4  s2
    s2. * 2 s2. \tag #'score \cadenzaIIa \bar "|"
-  s2.  s2.*6
+    s2.*6
   s2  s4 
   s2. * 2 
  

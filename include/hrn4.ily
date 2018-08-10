@@ -157,7 +157,7 @@ HrnFourII=\relative c' {
   ef\pp~ ef8 r r4 |
   R2. | R2. * 2 | R2.\fermataMarkup_"Cadenza"
   \tag #'score \cadenzaIIa 
-  R2. | R2. * 7 | R2. * 2 | R2. \mark\default \barNumberCheck \RhXXVII \mbreak |
+  R2. * 7 | R2. * 2 | R2. \mark\default \barNumberCheck \RhXXVII \mbreak |
   r4 r g--\mp\>~ |
   g\pp~ g8 r g4--\mp\>~ |
   g\pp~ g8 r r4 |

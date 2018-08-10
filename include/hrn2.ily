@@ -149,7 +149,7 @@ HrnTwoII=\relative c' {
   R2. * 8 | R2. \mark\default \barNumberCheck \RhXXVI |
   R2. * 3 | R2. \mbreak |
   R2. * 2 | R2.\fermataMarkup_"Cadenza"
-  \tag #'score \cadenzaIIa | R2. |
+  \tag #'score \cadenzaIIa | 
   R2. * 7 | R2.*2 | R2.\mark\default \barNumberCheck \RhXXVII |
   R2. * 3 |
   \cueWhile "HrnOneII" "Cor.I" #UP

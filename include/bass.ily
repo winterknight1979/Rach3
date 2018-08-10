@@ -332,7 +332,7 @@ BassII=\relative c {\commonConductor \transposition c
   df2\pp\< df4--\>~ |
   df2.\pp~ | df |
   df2.~ | df~ | df8 r r4\fermata_"Cadenza" r 
-  \tag #'score \cadenzaIIa | R2. \mbreak |
+  \tag #'score \cadenzaIIa  \mbreak |
   R2.*7 |
   \cueWhileClef "PianoII" "Pno." #UP "treble" {R2. * 3}
   \mark\default \barNumberCheck \RhXXVII |

@@ -316,7 +316,7 @@ VlaII=\relative c' {\commonConductor
   f2( gf4) |
   f2.~ | f~ | f8 r r4\fermata_"Cadenza" r |
   \tag #'score \cadenzaIIa
-  R2.\mbreak |
+  \mbreak |
   R2. * 7 |
   \cueWhileClef "PianoII" "Pno." #UP "treble" {R2.*3} 
   \mark\default \barNumberCheck \RhXXVII |
@@ -1007,7 +1007,7 @@ VlaDII=\relative c' {\commonConductor
 
   s2.*3 s4  s2
    s2. * 2 s2. \tag #'score \cadenzaIIa \bar "|"
-  s2.  s2.*6
+    s2.*6
   s2  s4 
   s2. * 2 
  

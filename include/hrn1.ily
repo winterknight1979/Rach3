@@ -201,7 +201,7 @@ HrnOneII=\relative c' {
   R2. * 3 | R2. | R2. * 2 |
   R2.\fermataMarkup_"Cadenza"
   \tag #'score \cadenzaIIa |
-  R2. | R2. * 7 | R2. * 2 \mbreak |
+  R2. * 7 | R2. * 2 \mbreak |
   R2. \mark\default \barNumberCheck \RhXXVII |
   \cueWhileClef "Hrn34II" "Cor.III.IV" #UP "bass"
   {R2. * 3}

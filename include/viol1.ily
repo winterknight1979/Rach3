@@ -303,7 +303,7 @@ ViolOneII=\relative c' {\commonConductor
   a2.~ | a2.~ |
   a8 r r4\fermata_"Cadenza" r 
   \tag #'score \cadenzaIIa
-  R2. \mbreak |
+  \mbreak |
   R2. * 7 |
   \cueWhile "PianoII" "Pno." #DOWN {R2. * 3 
   \mark\default \barNumberCheck \RhXXVII | r4}

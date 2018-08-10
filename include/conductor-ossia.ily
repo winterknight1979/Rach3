@@ -122,7 +122,7 @@ conductorI={
   s1 \tempo\markup{\italic "poco accel. a fine"} 4=140 s1* 6 \barNumberCheck \EndMI
 }
 
-cadenzaIIa={\cadenzaOn s8 * 36 s2 s1 \cadenzaOff}
+cadenzaIIa={\cadenzaOn s8 * 36 \bar "|" s2 s1 \cadenzaOff}
 
 conductorII={
   \commonConductor
@@ -136,8 +136,8 @@ conductorII={
   \tempo "a tempo" 4=86 s2.*8  s4\tempo\markup{\italic "rit."} 4=80 s2 \mark\default \barNumberCheck \RhXXVI
 
   \tempo "Meno mosso" 4=76 s2.*3 s4 \tempo\markup{\italic "rit."} 4=72 s2
-  \tempo "a tempo" 4=76 s2. * 2 s2. \tag #'score \cadenzaIIa \bar "|"
-  s2. \tempo "a tempo, più mosso" 4=86 s2.*6
+  \tempo "a tempo" 4=76 s2. * 2 s2. \bar "" \tag #'(score piano) \cadenzaIIa \bar "|"
+  \tempo "a tempo, più mosso" 4=86 s2.*6
   s2 \tempo\markup{\italic "rit."} 4=80 s4 
   \tempo "a tempo" 4=86 s2. * 2 
  

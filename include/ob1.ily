@@ -206,7 +206,7 @@ ObOneII=\relative c'{
   R2. * 2 |
   R2.\fermataMarkup_"Cadenza"
   \tag #'score \cadenzaIIa |
-  R2. |
+  
   R2. * 9 |
   R2.\mark\default \barNumberCheck \RhXXVII |
   R2. * 3 |

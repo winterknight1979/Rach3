@@ -367,7 +367,7 @@ CellII=\relative c {\commonConductor
   df( cf \tuplet 3/2 {bff af8)} \mbreak |
   af2.~ | af~ | af8 r r4\fermata_"Cadenza" r 
   \tag #'score \cadenzaIIa |
-  R2. | R2. * 7 |
+   R2. * 7 |
   \cueWhileClef "PianoII" "Pno." #DOWN "treble" {R2. * 3}
   \mark\default \barNumberCheck \RhXXVII \mbreak |
   \clef alto f''2\pp^\markup{\italic "poco marc."}\< \tuplet 3/2 {ef4\mp\>--( c8)} |
@@ -1054,7 +1054,7 @@ CellDII=\relative c {\commonConductor
 
   \tempo "Meno mosso" 4=76 s2.*3 s4 \tempo\markup{\italic "rit."} 4=72 s2
   \tempo "a tempo" 4=76 s2. * 2 s2. \tag #'score \cadenzaIIa \bar "|"
-  s2. \tempo "a tempo, più mosso" 4=86 s2.*6
+  \tempo "a tempo, più mosso" 4=86 s2.*6
   s2 \tempo\markup{\italic "rit."} 4=80 s4 
   \tempo "a tempo" 4=86 s2. * 2 
  

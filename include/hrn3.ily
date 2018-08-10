@@ -176,7 +176,7 @@ HrnThreeII=\relative c' {
   R2. | R2. * 2 |
   R2.\fermataMarkup_"Cadenza"
   \tag #'score \cadenzaIIa 
-  R2. \mbreak |
+  \mbreak |
   R2. * 7 | R2. * 2 | R2. \mark\default \barNumberCheck \RhXXVII |
   r4 r g--\mp\>~ |
   g\pp~ g8 r g4--\mp\>~ |

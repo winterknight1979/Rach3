@@ -255,7 +255,7 @@ BsnTwoII=\relative c' {
   R2. * 3 | R2.\mbreak |
   R2. * 2 | R2.\fermataMarkup_"Cadenza"
   \tag #'score \cadenzaIIa 
-  R2. | R2. * 9 | R2.\mark\default \barNumberCheck \RhXXVII |
+  R2. * 9 | R2.\mark\default \barNumberCheck \RhXXVII |
   \cueWhile "BsnOneII" "Fag.I" #UP
   {R2. * 3 \mbreak R2. } |
   f'2.\pp~ | f |

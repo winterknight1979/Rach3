@@ -154,7 +154,7 @@ FlOneII = \relative c'{
   % Skip cadenza
   R2.\fermataMarkup_"Cadenza"
   \tag #'score \cadenzaIIa
-  R2.
+
   R2. * 9 |
   R2. \mark\default \barNumberCheck \RhXXVII \mbreak |
   R2. * 3 |

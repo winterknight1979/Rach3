@@ -98,7 +98,7 @@ TptOneII=\relative c' {
   R2. * 3 | R2. | R2. * 2 |
   R2.\fermataMarkup_"Cadenza"
   \tag #'score \cadenzaIIa |
-  R2. | R2. * 9 | R2. \mark\default \barNumberCheck \RhXXVII |
+  R2. * 9 | R2. \mark\default \barNumberCheck \RhXXVII |
   R2. * 6 \mbreak |
   R2. * 5 | R2. \mark\default \barNumberCheck \RhXXVIII |
   R2. * 6 | R2. * 2 | R2. * 9 \mark\default \barNumberCheck \RhXXIX |

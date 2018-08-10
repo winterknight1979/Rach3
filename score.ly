@@ -289,8 +289,8 @@
         instrumentName="Piano"
         shortInstrumentName="P.no"}
         <<
-          \new Staff="PnoUp" {\PianoUPII}
-          \new Staff="PnoDn" {\PianoDNII}
+          \new Staff="PnoUp" <<\new Voice = "PnoV1" {\PianoUPII} \new Voice ="PnoV2" {\conductorII}>>
+          \new Staff="PnoDn" <<\new Voice = "PnoV3" {\PianoDNII} \new Voice ="PnoV4" {\conductorII}>>
         >>
 
       \new StaffGroup="Strings"
