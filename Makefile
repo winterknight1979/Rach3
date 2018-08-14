@@ -44,7 +44,7 @@ SCOREFILES=${HEADERS} ${FLUTEFILES} ${OBOEFILES} ${CLARFILES} ${BSNFILES} ${HRNF
 	    include/vla.ily include/cello.ily include/bass.ily
 
 all: flutes oboes clarinets bassoons horns trumpets lowbrass\
-    percussion violins violas cellos basses mainfiles 
+    percussion violins violas cellos basses mainfiles ossiafiles
 
 score: score.a4.pdf score.letter.pdf
 flutes: flutes.a4.pdf flutes.letter.pdf
@@ -68,15 +68,9 @@ ossiafiles: ossia pianoossia Rach3-ossia.mid
 
 
 main: include/conductor-main.ily
-	rm -f ossia
-	cp include/conductor-main.ily include/conductor.ily
-	touch main
+
 
 ossia: include/conductor-ossia.ily
-	rm -f main
-	cp include/conductor-ossia.ily include/conductor.ily
-	touch ossia
-
 %.mid: %.ly
 	${LILY} -dmidi-extension=mid   $< 2>&1 | tee $*.mid.log
 
@@ -88,9 +82,9 @@ ossia: include/conductor-ossia.ily
 
 score.a4.pdf: main score.ly ${SCOREFILES}
 score.letter.pdf: main score.ly ${SCOREFILES}
-flutes.a4.pdf: main flutes.ly ${HEADERS} ${FLUTEFILES} ${FLUTECUES}
-flutes.letter.pdf: main flutes.ly ${HEADERS} ${FLUTEFILES} ${FLUTECUES}
-oboes.a4.pdf: main oboes.ly ${HEADERS} ${OBOEFILES} ${OBOECUES}
+flutes.a4.pdf:  main flutes.ly ${HEADERS} ${FLUTEFILES} ${FLUTECUES}
+flutes.letter.pdf:  main flutes.ly ${HEADERS} ${FLUTEFILES} ${FLUTECUES}
+oboes.a4.pdf:  oboes.ly ${HEADERS} ${OBOEFILES} ${OBOECUES}
 oboes.letter.pdf: main oboes.ly ${HEADERS} ${OBOEFILES} ${OBOECUES}
 clarinets.a4.pdf: main clarinets.ly ${HEADERS} ${CLARFILES} ${CLARCUES}
 clarinets.letter.pdf: main clarinets.ly ${HEADERS} ${CLARFILES} ${CLARCUES}
@@ -130,4 +124,4 @@ Rach3-ossia.mid: ossia Rach3-ossia.ly ${SCOREFILES}
 .PHONY: clean all
 
 clean:
-	rm -fv *.pdf *.ps *.mid* *.log *.bak include/conductor.ily main ossia
+	rm -fv *.pdf *.ps *.mid* *.log *.bak  main ossia

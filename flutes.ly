@@ -15,6 +15,7 @@
 \include "include/macros.ily"
 \include "include/dynamics.ily"
 \include "include/functions.ily"
+\include "include/conductor-main.ily"
 \include "include/conductor.ily"
 
 \include "include/fl1.ily" 

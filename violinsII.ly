@@ -4,6 +4,7 @@
 \include "include/macros.ily"
 \include "include/functions.ily"
 \include "include/dynamics.ily"
+\include "include/conductor-main.ily"
 \include "include/conductor.ily"
 
 \include "include/viol2.ily"

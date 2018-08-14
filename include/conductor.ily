@@ -7,28 +7,6 @@ s1*9 \cadenzaOff \bar "|" \cadenzaOn s1*3 \bar "|" s1 \bar "|" s1 \cadenzaOff
     %\cadenzaOn 
     %s1 * 7 s1. * 2 s1 * 7 s1 * 58 \cadenzaOff
   }
-cadenzaIb={
-  \cadenzaOn
-  
-  %\tag #'ossia {s1 * 17}
-  s1*4 \cadenzaOff \bar "|"
-  \cadenzaOn s1*4 \cadenzaOff \bar "|"
-  \cadenzaOn s1*4 \cadenzaOff \bar "|"
-   \cadenzaOn s1*3 \cadenzaOff \bar  "|"
-  \cadenzaOn s1*3 \cadenzaOff \bar "|"
-  \cadenzaOn s1*4 \cadenzaOff \bar "|"
-  \cadenzaOn s1*4 \cadenzaOff \bar "|"
-  \cadenzaOn s1*4 \cadenzaOff \bar "|"
-  \cadenzaOn s1*4 \cadenzaOff \bar "|"
-  \cadenzaOn s1*4 \cadenzaOff \bar "|"
-  \cadenzaOn s1*4 \cadenzaOff \bar "|"
-  \cadenzaOn s1*4 \cadenzaOff \bar "|"
-  \cadenzaOn s1*4 \cadenzaOff \bar "|"
-  \cadenzaOn s1*4 \cadenzaOff \bar "|"
-  \cadenzaOn s1*4 \cadenzaOff \bar "|" 
-% \cadenzaOff
-% \set Score.currentBarNumber=\RhXIX
-}
 cadenzaIc={\bar "|" \cadenzaOn 
 s1 s2.*2 \cadenzaOff \bar "|"
 \cadenzaOn s1 * 4 \cadenzaOff \bar "|"
