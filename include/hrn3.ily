@@ -223,7 +223,7 @@ HrnThreeII=\relative c' {
   gs e\dim( ds) |
   ds2.\mf~ |
   ds2.~\dim \mbreak \bar "||"
-  \time 4/4 ds8\p r r4 r2 |
+  \time 4/4 \grace s8. ds8\p r r4 r2 |
   R1 * 3 \mark\default \barNumberCheck \RhXXXIX |
   r8.. d32\mf d8..--[ f32]\cresc f8..--[ bf32] bf8..--[ d32] |
   d4.-- bf8 bf bf f'4\sff |

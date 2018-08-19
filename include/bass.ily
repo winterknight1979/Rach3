@@ -440,7 +440,7 @@ BassII=\relative c {\commonConductor \transposition c
   \cueWhile "CellII" "Vcl." #UP {R2. * 3}
   \mark\default \barNumberCheck \RhXXXVIII |
   cs2.~\p\< | cs2.\f~ | cs2.~ | cs2.\dim | cs2.--~\mf | cs2.\dim( \mbreak \bar "||"
-  \key d\minor \time 4/4 a8\p) r r4 r2 |
+  \key d\minor \time 4/4 \grace s8. a8\p) r r4 r2 |
   R1 * 3 \mark\default \barNumberCheck \RhXXXIX |
   ef'8.--\p[ ef16] ef8.--[\cresc ef16] ef8.--[ ef16] ef8.--[ ef16] |
   ef4.-- ef8 ef ef ef4\sff |

@@ -257,7 +257,7 @@ HrnOneII=\relative c' {
   e \tuplet 3/2 {cs'( bs8} fs4)~ |
   fs( \tuplet 3/2 {gs\dim fss8} cs4 |
   bs2.~) | bs2.\dim( \mbreak \bar "||"
-  \time 4/4 b8)\p r r4 r2 | R1 * 3 \mark\default \barNumberCheck \RhXXXIX |
+  \time 4/4 \grace s8. b8)\p r r4 r2 | R1 * 3 \mark\default \barNumberCheck \RhXXXIX |
   r8.. d32\mf d8..--[ f32\cresc] f8..[-- bf32] bf8..--[ d32] |
   d4.-- d8 d d f4\sff | R1 |
   e8-.\ff r e-. r r2 \barNumberCheck \EndMII \bar "||"

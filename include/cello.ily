@@ -479,7 +479,7 @@ CellII=\relative c {\commonConductor
   es \tuplet 3/2 {e( bs8)} bs4--\mbreak |
   cs2.^"unis"\mf~ |
   cs\dim( \bar "||"
-  \time 4/4 \key d\minor a8) r r4 r2 |
+  \time 4/4 \key d\minor \grace s8. a8) r r4 r2 |
   R1 * 3 \mark\default \barNumberCheck \RhXXXIX |
   <ef bf'>2:32\p\cresc <ef bf'>:
   <ef ef'>: <ef bf'>4: <g' df'>\sff | R1 |

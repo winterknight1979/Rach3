@@ -24,7 +24,7 @@ BDII=\drummode{\commonConductor \time 3/4
   R2. * 10 \mark\default \barNumberCheck \RhXXXVIII |
   {s2. * 3 \mbreak s2.}
   R2. * 2 \bar "||"
-  \time 4/4 R1 * 4 \mark\default \barNumberCheck \RhXXXIX |
+  \time 4/4 \grace s8. R1 * 4 \mark\default \barNumberCheck \RhXXXIX |
   {s1 | s2}
   r4 bd\f |
   R1 * 2 \barNumberCheck \EndMII \bar "||"
@@ -144,7 +144,7 @@ CymII=\drummode{\commonConductor \time 3/4
   R2. * 10 \mark\default \barNumberCheck \RhXXXVIII |
   \cueWhileClef "TubaII" "Tuba" #DOWN "bass" {R2. * 3 \mbreak R2.}
   R2. * 2 \bar "||"
-  \time 4/4 R1 * 4 \mark\default \barNumberCheck \RhXXXIX |
+  \time 4/4 \grace s8. R1 * 4 \mark\default \barNumberCheck \RhXXXIX |
   \cueWhileClef "TimpII" "Timp." #DOWN "bass" {R1 | r2}
   r4 cymc\f |
   R1 * 2 \barNumberCheck \EndMII \bar "||"

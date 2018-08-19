@@ -323,7 +323,7 @@ ClOneII=\relative c'{
   ef df cf bf[ af g] ef\> d df\!} |
   cf) r r4 r |
   R2. * 2 \bar "||"
-  \time 4/4 \key fs\minor  R1 * 4 |
+  \time 4/4 \key fs\minor  \grace s8. R1 * 4 |
   a8\p( c4\cresc f a c8~) |
   c4. a8 c f a4\sff |
   R1 |

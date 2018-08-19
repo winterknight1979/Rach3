@@ -30,7 +30,7 @@ TubaII=\relative c{
   R2. * 10 \mark\default \barNumberCheck \RhXXXVIII |
   cs,2.~\p | cs~ | cs~ \mbreak |
   cs\dim | R2.*2 \! \bar "||"
-  \time 4/4 \key d\minor R1 * 4 \mark\default \barNumberCheck \RhXXXIX |
+  \time 4/4 \key d\minor \grace s8. R1 * 4 \mark\default \barNumberCheck \RhXXXIX |
   ef1~\p\cresc |
   ef8 ef4-- ef8 ef ef ef'4\sff | R1 |
   a,8-.\ff r a-. r r2 \barNumberCheck \EndMII \bar "||"

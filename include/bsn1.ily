@@ -385,7 +385,7 @@ BsnOneII=\relative c' {
   es e\dim( fs)\! |
   \tuplet 3/2 {cs8\f\<^"Solo"( es gs\!} cs4 b\> \mbreak |
   gs\dim es \tuplet 3/2 {cs8 bs b} \bar "||"
-  \time 4/4 \key d\minor a8\p) r r4 r2 |
+  \time 4/4 \key d\minor \grace s8. a8\p) r r4 r2 |
   R1 * 3 \mark\default \barNumberCheck \RhXXXIX |
   r8.. ef'32\mf ef8..-- g32 g8..--\cresc bf32 bf8..-- ef32 |
   ef4. g,8 bf ef g4\sff | R1 |

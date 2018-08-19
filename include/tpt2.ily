@@ -108,7 +108,7 @@ TptTwoII=\relative c' {
   R2. * 10 \mark\default \barNumberCheck \RhXXXVIII \mbreak |
   \cueWhile "TptOneII" "Tr.I" #DOWN {R2. * 4} |
   R2. * 2 \bar "||"
-  \time 4/4 R1 * 4\mark\default \barNumberCheck \RhXXXIX |
+  \time 4/4 \grace s8. R1 * 4\mark\default \barNumberCheck \RhXXXIX |
   R1 |
   r8 f4--\mf f8\cresc a c f4\sff | R1 |
   e8-.\ff r ds-. r r2 \barNumberCheck \EndMII \bar "||"

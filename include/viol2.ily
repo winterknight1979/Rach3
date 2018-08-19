@@ -412,7 +412,7 @@ ViolTwoII=\relative c' {\commonConductor
   a2--\< \tuplet 3/2 {gs4\>--( es8)} |
   cs2.\mf~
   cs\dim~ \mbreak \bar "||"
-  \key d\minor \time 4/4 cs8\p r r4 r2 |
+  \key d\minor \time 4/4 \grace s8. cs8\p r r4 r2 |
   R1 * 3 \mark\default \barNumberCheck \RhXXXIX |
   r4 g:16\mf\cresc bf: <g ef'>: |
   <g g'>4.: <bf g'>8:32 <bf bf'>: ef': <bf g'>4\sff |

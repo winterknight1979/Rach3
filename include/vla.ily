@@ -423,7 +423,7 @@ VlaII=\relative c' {\commonConductor
   es \tuplet 3/2 {e\<( bs8)} bs4--\> |
   r\! \tuplet 3/2 4 {r8 cs\mf([ bs] b a gs)~ |
   gs(\dim fs es~ es[ d cs])~} cs\p r \mbreak \bar "||"
-  \time 4/4 \key d\minor e8 r r4 r2 |
+  \time 4/4 \key d\minor \grace s8. e8 r r4 r2 |
   R1 * 3 \mark\default \barNumberCheck \RhXXXIX |
   g8:32\p bf4:\cresc <g ef'>: <g g'>: <ef' bf'>8: |
   <ef bf'>4.: <g, ef'>8: <g g'>8: bf': <f ef'>4\sff |

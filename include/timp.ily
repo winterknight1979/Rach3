@@ -141,7 +141,7 @@ TimpII=\relative c{
   R2.* 10 \mark\default \barNumberCheck \RhXXXVIII \mbreak |
   \cueWhile "TubaII" "Tuba" #DOWN {R2. * 4} |
   R2. * 2 \bar "||"
-  \time 4/4 R1 * 4 \mark\default \barNumberCheck \RhXXXIX |
+  \time 4/4 \grace s8. R1 * 4 \mark\default \barNumberCheck \RhXXXIX |
   bf1\p\cresc\startTrillSpan |
   bf2. bf4\sff\stopTrillSpan |
   R1 |

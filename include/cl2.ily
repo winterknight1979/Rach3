@@ -257,7 +257,7 @@ ClTwoII=\relative c'{\transposition bf \commonConductor
   \tuplet 3/2 4 {r8 ef\mf( df cf[ bf af]~ af\> a b\!)} |
   R2. * 2 \mbreak \bar "||"
   \time 4/4 \key e\minor 
-  R1 * 4 \mark\default \barNumberCheck \RhXXXIX |
+  \grace s8. R1 * 4 \mark\default \barNumberCheck \RhXXXIX |
   r8.. a32\mf a8..--[ c32]\cresc c8..--[ f32] f8..--[ a32] |
   a4.-- f8 a c f4\sff |
   R1 |

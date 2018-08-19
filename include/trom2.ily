@@ -26,7 +26,7 @@ TromTwoII=\relative c'{
   \cueWhileClef "TubaII" "Tuba" #UP "bass"
   {R2. * 4} |
   R2. * 2 \bar "||"
-  \time 4/4 \key d\minor R1 * 4 \mark\default \barNumberCheck \RhXXXIX |
+  \time 4/4 \key d\minor \grace s8. R1 * 4 \mark\default \barNumberCheck \RhXXXIX |
   ef,1\p\cresc~ 
   ef8 g4-- ef8 g bf ef4\sff | R1 |
   d8-.\ff r cs-. r r2 \barNumberCheck \EndMII \bar "||"

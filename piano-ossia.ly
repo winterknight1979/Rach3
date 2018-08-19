@@ -61,7 +61,7 @@ page-breaking-system-system-spacing = #'((basic-distance . 12))
       \header{piece=\markup\huge "II Intermezzo"}
     }
 
-      \pageBreak 
+    \markup{ \vspace #1 } 
       \score{
       \keepWithTag #'part \new PianoStaff="Piano" 
       %\with {

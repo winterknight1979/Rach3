@@ -202,7 +202,7 @@ HrnFourII=\relative c' {
   cs ds( gs,8) r |
   r4 r ds\dim |
   ds2.--~\mf | ds(\dim \mbreak \bar "||" 
-  \time 4/4 e8\p) r r4 r2 |
+  \time 4/4 \grace s8. e8\p) r r4 r2 |
   R1 * 3 \barNumberCheck \RhXXXIX |
   r8.. f32\mf f8..--[ bf32] bf8..--[\cresc d32] d8..--[ f32] |
   f4.-- d8 d d bf4\sff |

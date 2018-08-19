@@ -180,7 +180,7 @@ conductorII={
   s2. * 10 \mark\default \barNumberCheck \RhXXXVIII
 
   \tempo "Un poco più mosso" 4=72 s2. * 6 \bar "||"
-  \time 4/4 \tempo "L'istesso tempo" s1 * 4 \mark\default \barNumberCheck \RhXXXIX
+  \time 4/4 \tempo "L'istesso tempo" \grace s8. s1 * 4 \mark\default \barNumberCheck \RhXXXIX
 
   s1 *3 \tempo "attaca subito" s1 \barNumberCheck \EndMII \bar "||" \tag #'(disp part) {\time 2/2 s8}
         

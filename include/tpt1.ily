@@ -126,7 +126,7 @@ TptOneII=\relative c' {
   b \tuplet 3/2 {bf( g8)} g4~\dim |
   g \tuplet 3/2 {fs( d8)} d4--\p |
   R2. * 2 \mbreak \bar "||"
-  \time 4/4 R1 * 4 \mark\default \barNumberCheck \RhXXXIX |
+  \time 4/4 \grace s8. R1 * 4 \mark\default \barNumberCheck \RhXXXIX |
   R1 |
   r8 f4--\mf a8\cresc c f a4\sff | R1 |
   b8-.\ff r b-. r r2 \barNumberCheck \EndMII \bar "||"

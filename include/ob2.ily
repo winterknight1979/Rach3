@@ -187,7 +187,7 @@ ObTwoII=\relative c'{
   cs~ \tuplet 3/2 {cs bs8)} bs4\mf\> <>\! |
   R2.*2 \mbreak \bar "||"
   \time 4/4 \key d\minor 
-  R1 * 4 \mark\default \barNumberCheck \RhXXXIX |
+  \grace s8. R1 * 4 \mark\default \barNumberCheck \RhXXXIX |
   R1 |
   r8 bf'4\f\cresc ef8 g4 bf\sff |
   R1 |

@@ -197,7 +197,7 @@ FlOneII = \relative c'{
   fs\! es d cs\dim b a\!)} r4 | R2. * 4 \mbreak \bar "||"
   \time 4/4
   \key d \minor
-  R1 * 4 \mark\default \barNumberCheck \RhXXXIX |
+  \grace s8. R1 * 4 \mark\default \barNumberCheck \RhXXXIX |
   R1 |
   r8 ef'4\f\cresc-- g8 b ef g4\sff | R1 | a8-.\ff r a-. r r2 \barNumberCheck \EndMII \mpbreak \bar "||"
 } 

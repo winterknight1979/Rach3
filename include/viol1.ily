@@ -433,7 +433,7 @@ ViolOneII=\relative c' {\commonConductor
   d2-- \tuplet 3/2{ cs4(\dim a8) }|
   a2--\< \tuplet 3/2 {gs4--(\> es8) }
   es2.~\mf | es2.(\dim \mbreak\bar "||"
-  \time 4/4 \key d\minor e8) r r4 r2 |
+  \time 4/4 \key d\minor \grace s8. e8) r r4 r2 |
   R1 * 3 \mark\default \barNumberCheck \RhXXXIX |
   R1 |
   r8 <g ef'>4:32\f\cresc <bf g'>8: bf': ef: g4\sff | R1 |

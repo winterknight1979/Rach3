@@ -264,7 +264,7 @@ ObOneII=\relative c'{
   a \tuplet 3/2 {gs es8)} es4--~(\dim |
   es \tuplet 3/2 {e bs8\mf)\>} bs4\! |
   R2. * 2 \mbreak \bar "||"
-  \time 4/4 \key d\minor R1 * 4 \mark\default \barNumberCheck \RhXXXIX |
+  \time 4/4 \key d\minor \grace s8. R1 * 4 \mark\default \barNumberCheck \RhXXXIX |
   R1 |
   r8 ef'4\f g8\cresc bf4~\< bf\sff |
   R1 |

@@ -195,7 +195,7 @@ HrnTwoII=\relative c' {
   a fs( gs,)~ |
   gs b\dim( cs8\!) r |
   R2. * 2 \bar "||"
-  \time 4/4 R1 * 4 \mark\default \barNumberCheck \RhXXXIX |
+  \time 4/4 \grace s8. R1 * 4 \mark\default \barNumberCheck \RhXXXIX |
   r8.. bf32\mf bf8..[-- d32]\cresc d8..--[ f32] f8..[-- bf32] |
   bf4.-- f8 f f d'4\sff | R1 |
   e,8-.\ff r e-. r r2 \barNumberCheck \EndMII \bar "||"

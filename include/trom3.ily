@@ -28,7 +28,7 @@ TromThreeII=\relative c{
   \cueWhile "TubaII" "Tuba" #UP 
   {R2. * 4} |
   R2. * 2 \bar "||"
-  \time 4/4 \key d\minor R1 * 4 \mark\default \barNumberCheck \RhXXXIX |
+  \time 4/4 \key d\minor \grace s8. R1 * 4 \mark\default \barNumberCheck \RhXXXIX |
   bf1\p\cresc~ | 
   bf8 ef4-- bf8 ef g bf4\sff |
   R1 |

@@ -181,7 +181,7 @@ FlTwoII = \relative c'{
   {R2. * 2} |
   R2. * 4 \bar "||"
   \time 4/4 \key d\minor 
-  R1 * 4 \mark\default \barNumberCheck \RhXXXIX |
+  \grace s8. R1 * 4 \mark\default \barNumberCheck \RhXXXIX |
   R1 | r8 bf'4\f\cresc-- ef8 g b ef4\sff |
   R1 |
   d8-.\ff r cs-. r r2 \barNumberCheck \EndMII \mbreak \bar "||"

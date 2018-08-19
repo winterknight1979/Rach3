@@ -314,7 +314,7 @@ BsnTwoII=\relative c' {
   cs a\dim( gs |
   cs,2.\mf~) \mbreak |
   cs\dim( \bar "||"
-  \key d\minor \time 4/4 a'8\p) r r4 r2 |
+  \key d\minor \time 4/4 \grace s8. a'8\p) r r4 r2 |
   R1 * 3 \mark\default \barNumberCheck \RhXXXIX |
   r8.. bf32\mf bf8..[-- ef32] ef8..--[\cresc g32] g8..--[ bf32] |
   bf4.-- ef,8 bf g ef4\sff | R1 |
