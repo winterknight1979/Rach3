@@ -290,8 +290,8 @@
         instrumentName="Piano"
         shortInstrumentName="P.no"}
         <<
-          \new Staff="PnoUp" <<\new Voice = "PnoV1" {\PianoUPII} \new Voice ="PnoV2" {\conductorII}>>
-          \new Staff="PnoDn" <<\new Voice = "PnoV3" {\PianoDNII} \new Voice ="PnoV4" {\conductorII}>>
+          \new Staff="PnoUp" <<\new Voice = "PnoV1" {\PianoUPII} \new voice ="PnoV2" {\conductorII}>>
+          \new Staff="PnoDn" <<\new Voice = "PnoV3" {\PianoDNII} \new voice ="PnoV4" {\conductorII}>>
         >>
 
       \new StaffGroup="Strings"
@@ -338,7 +338,7 @@
 %      \markup{\pageBreak}
      \score{
  
-       \keepWithTag #'score \killCues <<
+       \keepWithTag #'(score disp)\killCues <<
          \new Devnull \conductorIII
          \new StaffGroup="Woods" <<
             \new Staff  \with
@@ -418,8 +418,8 @@
         instrumentName="Piano"
         shortInstrumentName="P.no"}
         <<
-          \new Staff="PnoUp" {\PianoUPIII}
-          \new Staff="PnoDn" {\PianoDNIII}
+          \new Staff="PnoUp" <<\new Voice = "PnoV1" {\PianoUPIII} \new Voice ="PnoV2" {\conductorIII}>>
+          \new Staff="PnoDn" <<\new Voice = "PnoV3" {\PianoDNIII} \new Voice ="PnoV4" {\conductorIII}>>
         >>
 
       \new StaffGroup="Strings"

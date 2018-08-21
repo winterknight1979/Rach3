@@ -1595,7 +1595,69 @@ cs,8)-\p[ \tuplet 6/2 {cs16( bs cs ds cs ds]}
   <a f d a>8\ff r <a, e cs a> r r2 \bar "||"
 }
 
-PianoUPIII=\relative c'{\commonConductor s1}
+PianoUPIII=\relative c''{\commonConductor \time 2/2 \key d\minor R1 * 2 |
+<f d'>4\f~-> \tuplet 3/2 {<f d'>8 <e a>( a} <f d'>4->)~ \tuplet 3/2 4 {<f d'>8 <e a>( a |
+<f d'>)[ a-. a-.] <f d'>-. a-. a-. <f d'>-. a-. a-. <f d'>-.[ a-. a-.] |
+<e e'>->( a a} a'4~->) \tuplet 3/2 4 {a8 a,( a <f d'>)->[ a( a]} \mpbreak |
+\tuplet 3/2 {<e e'>)-> a( a} a'4->) \tuplet 3/2 4 {\toDN\stemUp e,8 \toUP\stemDown e a, \stemNeutral a'[ a e]}
+<e c'>4~-> \tuplet 3/2 {<e c'>8 <d g> g} <e c'>4->~ \tuplet 3/2 4 {<e c'>8 <d g> g |
+<e c'>-> g-. g-. <e c'>->[ g-. g-.] <e c'>->[ g-. g-.] <e c'>[-> g-. g-.] |
+<d d'>->( g g} g'4->~) \tuplet 3/2 4{g8[ g,( g] <ef c'>)-> g( g |
+<d d'>->) g( g} g'4->) \tuplet 3/2 4{\toDN\stemUp d,8 \toUP\stemDown d g, \stemNeutral g'[ g d]} \mbreak |
+
+\tuplet 3/2 4 {d'[ d g,] g'[ g d] \ottava #1 d'->([ \ottava #0 e, d] <e a> a, e' |
+}<d f,>4->) <<{\voiceOne f2--( \tuplet 3/2 { e4) d8(} |
+cs4) ef2--( \tuplet 3/2 {d4) c8(} |
+bf4) d \tuplet 3/2 {c8( b bf} a4) |
+b c2--( \tuplet 3/2 {bf4) a8(}}
+\context Voice="PnoV2" {\voiceTwo \tuplet 6/4 2 {
+  a8([-\omit\f gs a bf a af)]~ af[( g gs |
+  a gs g])~ g[( fs g af g fs])~ fs[( f fs |
+  g fs f])} \tuplet 3/2 {a( gs g)} g4 \tuplet 3/2 4 {f8( e ef |
+  d ef f)} \tuplet 6/4 {ef[( f fs af g ef]} \tuplet 3/2 {d4) c8(}}>> \mbreak |
+
+<<{\voiceOne g'4) bf2--( \tuplet 3/2 {a4) g8(} |
+f4) a-- \tuplet 3/2 {g8\dim( fs f} e4) |
+d-. c2-- b4-. |
+<a ds,>-.\p}
+\context Voice="PnoV2" {\voiceTwo
+\tuplet 3/2 4 {bf4) c8( df[ ef e] gf f d c4) bf8( |
+a4) c8( e[ ds d])} d4-\omit\dim \tuplet 3/2 4 {d8( cs c) |
+b( bf a gs[ g fs] f[ e ds] d) \toDN\stemUp \once\slurUp cs( c} |
+\stemDown<b a fs>4)-\omit\p}>>
+\oneVoice \toDN \clef treble \tuplet 3/2 4 {
+  \stemUp fs'8-.( fs-. b,-. b')[ \toUP\stemDown b( a] fs' c b) |
+  ds[( b a] b)\toDN\stemUp fs( b fs')[ \toUP\stemDown e( ds] <a' c> g fs)} \mbreak |
+
+\stemNeutral
+  \tuplet 6/4 2 {b,( g' fs ds' g, fs) b,[( g' fs e' g, fs]) |
+  b,( g' fs ds' g, fs) b,[( g' fs e' g, fs)]} |
+  \tuplet 3/2 {b,(\cresc g' fs c'[) g g] cs[ gs gs] d' a a |
+  ef' bf bf e[ b b ] f' c c fs[ cs cs]\! |
+  r8  <ds b'>(\dim b) r <as fs'>( b) r8 <ds b'>( b) r <as fs'>( b) \mbreak |
+
+  r <ds b'>( b) r as( b)} r4 \ottava #1 <cs g' cs>-. |
+  <d f d'>--\p~ \tuplet 3/2 {<d f d'>8 a'-. a-.} <d d,>4--~ \tuplet 3/2 4 {<d d,>8 a-. a-. |
+  <d d,>-.[ a-. a-.] <d d,>-.[ a-. a-.] <d d,>-.[ a-. a-.] <d d,>-.[ a-. a-.] |
+  <e e,>-. a,-. a-. a'-.[ a-. a-.] e'-.[ e, e]}\ottava #0 a16( e b a |
+  e' a, f e \tuplet 3/2 {a8[ e a,)]} r4 b \glissando |
+  \ottava #1 c''--~ \tuplet 3/2 {c8 g-. g-.} <c c,>4--~ \tuplet 3/2 4 {<c c,>8 g-. g-. \mbreak |
+  
+  <c c,> g g <c c,>[ g g] <c c,> g g <c c,>[ g g] |
+  <d d'>-. g g g'[-. g, g] d'-.[ d, d]} \ottava #0 g16( d a g |
+  d' g, ef d \tuplet 3/2 {g8[ d g,])} r4 \ottava #1 <a' ef' a>-. |
+  <bf df bf'>--~ \tuplet 3/2 4{<bf df bf'>8 f' f <c c'>[-. f f] f'-. f, f} |
+  <a c, a>4--~ \tuplet 3/2 4 {<a c, a>8 e e <b b'>-.[ e e] e'-.[ e, e]} \mbreak |
+  
+  <g bf, g>4--~ \tuplet 3/2 4 {<g bf, g>8 d d <a a'>[-. d d] d'-.[ d, d]} |
+  e4-. \ottava #0 r <e, e,>-. r |
+  r <e, c gs>8\mf-.[ <fs c a>-.] <fs c a>-.[ <gs d b>-.] <gs d b>-. <a e c>-. |
+  <a e c>4-> <e c gs>8-.[ <fs c a>-.] <fs c a>-.[ <gs d b>-.] <gs d b>-.[ <a e c>-.] |
+  <a e c>4-> <a e c>8-. <b e, d>-. <a e c>4-> <a e c>8-. <b e, d>-. |
+  <a e c>4-> <a e c>8-. <b e, d>-. <c e,>-.[ <b d,>-.] <a fs d c>4-> \mpbreak |
+  
+
+}
 PianoDNI=\relative c'{\commonConductor 
   \clef treble \key d\minor \time 4/4 \expandFullBarRests
   R1 * 2 |
@@ -2543,7 +2605,63 @@ s4 s16 <fs a,> <g bf,> <bf cs,> <cs e,> <ds f,> <e g,> <g bf,> <bf cs,> <cs e,> 
 
 }
 
-PianoDNIII=\relative c'{\commonConductor s1}
+PianoDNIII=\relative c'{\commonConductor 
+\time 2/2 \key d\minor
+R1 * 2 |
+<d a' d>4->-\omit\f~ \tuplet 3/2 {<d a' d>8 <a e' b'>( cs'} <d, a' d>4->~) \tuplet 3/2 4 {<d a' d>8 <a e' b'>( cs'} |
+<d, a' d>->) <cs' e>-. <d a d,>[-. <cs e>-.] <d a d,>-.[ <cs e>-.] <d a d>4-. |
+<c e, a,>-> \tuplet 3/2 {a8( a e} e'4) <b a d,>-> |
+<c e, a,>-> \tuplet 3/2 {a8 a e} s4 r |
+<c g' c>4->~ \tuplet 3/2 {<c g' c>8 <g d' a'>( b'} <c g c,>4)~-> \tuplet 3/2 {<c g c,>8 <a d, g,>( b} |
+<c g c,>->) <d b> <c g c,>-.[ <d b>-.] <c g c,>-. <d b>-.] <c g c,>4-. |
+<bf d, g,>-> \tuplet 3/2 {g8( g d} d'4) <a g c,>-> |
+<bf d, g,> \tuplet 3/2 {g8 g d} s4 g,8( <d' e> \mbreak |
+
+bf')[ <c e,>-. <d bf>-. <e g,>-.] <f d>-. <g bf,>-. <a e a,>4-. |
+<d, a d,>-. \tuplet 3/2 {f8->( c f,} <bf d>4) \tuplet 3/2 {e8->( b e,} |
+<a cs>4) \tuplet 3/2 {ef'8(-> b ef,} <af c>4) \tuplet 3/2 {d8->( a d,} |
+<g bf>4) <<{\voiceOne \tuplet 3/2 {a8( b bf} c2) |
+\voiceTwo s4 c, s \voiceOne \tuplet 3/2 {c8( cs d)} }
+\context Voice="PnoV4" {\voiceTwo d4 e \tuplet 3/2 4 {f8( e f |
+\voiceOne fs[ g g] af g ef c4) \clef bass \voiceTwo d,8~} d4} >> |
+
+<<{\voiceOne \tuplet 3/2 4 {d'8( \clef treble ef e gf[ f df] bf4) \clef bass c,8~ } \voiceTwo c4 |
+\voiceOne \tuplet 3/2 {c'8( d ds} \clef treble e4--) \tuplet 3/2 {f8(-\omit\dim fs g)} g4--~ |
+\tuplet 3/2 {g8( fs f} e4)}
+\context Voice="PnoV4" {\voiceTwo g,4 bf s \voiceOne \tuplet 3/2 {bf8( b c)} |
+\voiceTwo f,4 a b-\omit\dim c |
+d e\!}>>
+\oneVoice r4 \clef bass <gs, f> |
+s-\omit\p s s \tuplet 3/2 {<fs' a>8( e ds} |
+<fs b,>4) s s \tuplet 3/2 {r8( e' ds)} |
+
+r4 <b' fs'> r <c fs> |
+r \ottava #1 <b' fs'> e <c fs> \ottava #0 |
+r4-\omit\cresc <<{\voiceOne ef,,8( e) e[( es]) es[( fs)] | fs[( g)] g( gs) gs[( a]) a( as)\!}
+\context Voice="PnoV4" {\voiceTwo c,4-\omit\p-\omit\cresc cs d | ef e f fs\!} >> |
+\oneVoice <fs b,>-.-\omit\dim <fs ds'>-. <fs b,>-. <fs ds'>-. |
+
+<fs b,>-. b-. b,-. <a e a,>-. |
+<d f, d>4.---\omit\p <a d, a>8-. <d f, d>4.-- <a d, a>8-. |
+<d f, d>[-. <e a,>-.] <d f, d>-. <e a,>-. <d f, d>-.[ <e a,>]-. <d f, d>4-. |
+<c e, a,>-. a'-> e-. a,8-. e-. |
+\clef bass a,-.[ e-.] a,-.[ e-.] a,4-. \clef treble <g'' d' g>-. |
+<c ef c'>4.-- <g c g'>8-. <a ef c'>4.-- <g c g'>8-. |
+
+<c ef c'>-.[ <g' d'>-.] <c ef, c>-. <d g,>-. <c ef, c>-.[ <d g,>-.] <c ef, c>4-. |
+<bf d, gf,>-. gf'-. d-. gf,8-. d-. |
+\clef bass gf,-. d-. gf,-.[ d-.] gf,4-. \clef treble <f'' c' f>-. |
+<bf df bf'>4--~ \tuplet 3/2 {<bf df bf'>8 f' f~} <c f c'>4-. <f a f'>-. |
+<a, c a'>4--~ \tuplet 3/2 {<a c a'>8 e' e~} <b e b'>4-. <e gs e'>-. |
+
+<g, bf g'>4--~ \tuplet 3/2 {<g bf g>8 d' d~} <a d a'>4-. <d f d'>-. |
+<e e'>-. r \clef bass e,-. r |
+e e8-.-\omit\mf e,-. c'-.[ e,-.] e-.[ a,-.] |
+<a e'>->[( a']) e'-.[ e,-.] c'-.[ e,-.] e-.[ a,-.] |
+<a e'>->[( a')] e'-.[ e,-.] <e a,>->([ a)] e'-. e,-. |
+<e a,>->[( a)] e'-.[ e,-.] c'-.[ c,-.] d'-.[ d,-.] |
+
+}
 PianoUPOssia=\relative c'{\stopStaff \commonConductor   %\commonConductor
   \time 4/4 \tempo "Allegro ma non tanto" 4=120 s1 * 10 \mark\default \barNumberCheck\RhI %1 
 
