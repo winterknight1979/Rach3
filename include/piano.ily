@@ -1655,8 +1655,61 @@ b( bf a gs[ g fs] f[ e ds] d) \toDN\stemUp \once\slurUp cs( c} |
   <a e c>4-> <e c gs>8-.[ <fs c a>-.] <fs c a>-.[ <gs d b>-.] <gs d b>-.[ <a e c>-.] |
   <a e c>4-> <a e c>8-. <b e, d>-. <a e c>4-> <a e c>8-. <b e, d>-. |
   <a e c>4-> <a e c>8-. <b e, d>-. <c e,>-.[ <b d,>-.] <a fs d c>4-> \mpbreak |
-  
 
+  <g d b>4-.->\f <fs d b a>->-. <e b g>->-. <d b a fs>->-. |
+  <e b g>-. <fs d b a>-. <g d b>-. <a fs d c>-. |
+  <bf g bf,>-> <bf g d>8-. <c a d,>-. <bf g bf,>4-> <bf g d>8-. <c a d,>-. |
+  <bf g bf,>->( <c a>) <d bf d,>-.[ <c a d,>-.] <bf g bf,>4-. <c e, bf>-> |
+  <a f c>-> <c a c,>8-. <d c a d,>-. <d c a d,>-.[ <e c a e>-.] <e c gs e>-. <f c gs f>-. |
+  <f c a f>4-> <c a c,>8-. <d c a d,>-. <d c a d,>-.[ <e c a e>-.] <e cs bf e,>-. <f cs bf f>-. \mbreak |
+
+  <f d a f>4-> <f d f,>8-. <g d g,>-. <f d f,>4-> <f d f,>8-. <g d g,>-. |
+  <a f d a>4->\cresc <a f d a>8-. <bf f d bf>-. <a f d a>4-> <a f d a>8-. <bf f d bf>-. |
+  <c a d, c>4-- <bf bf,>8-. <c c,>-. <d bf g d>--([ <c c,>)] <d d,>-. <ef ef,>-. |
+  <f d c f,>4-- <ef ef,>8-. <f f,>-. <g e d g,>4-- <f f,>8-. <g g,>-. |
+  \ottava #1 <a e cs a>4\ff-> \tuplet 3/2 {e'8 e, e} <a cs, a>4-> \tuplet 3/2 {e'8 e, e} |
+ <a cs, a>4-> \tuplet 3/2 {e'8 e, e}  <a cs, a>4-> \tuplet 3/2 {e'8 e, e}\mbreak | 
+
+ <a cs, a>4-> <e e'>8-> e-. <a cs, a>4-> <e e'>8-> e-. |
+ <a cs, a>-.[ <e e'>-.] a-. <e e'>-. a4-. \ottava #0 r |
+ r \ottava #1 <a d f a>\ff <d a f d> \ottava #0 <a f d a> |
+ <d, a f d> <a f d a> <d, a f d> <a f d a> |
+ <e b gs e> \tuplet 3/2 4 {gs,8( e b' e[ b fs'] gs e b' |
+ e b fs' gs[ e b'] e b fs' gs[ e b']} \mbreak |
+
+ \ottava #1 <e c e,>4) <g e c g>\ff <c, g e c> \ottava #0 <g e c g> |
+ <c, g e c> <g e c g> <c, g e c> <g e c g> |
+ \clef bass <d a fs d> \tuplet 3/2 4 {fs,8(  d a' d[ a \clef treble e'] fs d a' |
+ d a e' fs[ d a'] d a e' fs[ d a']} |
+ \ottava #1 <d g, d>4) \ottava #0 \tuplet 3/2 {d,8-.\mf d, d}
+ <<{\voiceTwo \tuplet 3/2 4 {e( d a a[ g e]}}
+ \context Voice="PnoV2" {\voiceOne a'4-.-\omit\mf e-.} >> \mbreak |
+
+
+  <<{\voiceTwo f,4)} \context Voice="PnoV2"{\voiceOne d'-.}>>
+  \oneVoice \tuplet 3/2 4 {a'8\cresc-> a, a r r b'( c)[ c, c] |
+  r b'( c e[ e, a] b) b( e}
+  <<{\voiceTwo \tuplet 3/2 4 { fs[ b, fs']} |
+  g,4)\f \tuplet 3/2 4 {b8\dim( a gs g[ fs e] ds d cs |
+  c b a gs[ g f] e d c b[ as a]} |
+  g4) }
+  \context Voice="PnoV2"{\voiceOne 
+  b'''4 | e,-.-\omit\f g-.-\omit\dim c,-. b-. | e,-. d-. g,-. b,-. | e-.-\omit\p}>>
+  \oneVoice \clef bass b-.\p e,-. r \mbreak |
+
+
+  \clef treble R1 |
+  <g' e c g>2--\p <g e c g>-- |
+  <g e c g>-- <g e c g>4.-- <g e c g>8-. |
+  <g e c g>\mf(-- <a e c a>4) <a e c a>8-. <a e c a>--( <c g e c>4)\< <c g e c>8-.\! |
+  <c g e c>--( <e c g e>4) <e c g e>8-. <e c g e>--( <g e c g>4) <a e c a>8 |
+  <a e c a>--(\f <g e c g>4) <a e c a>8-. <g e c g>--( <e c e,>4) <g e c g>8 \mbreak |
+
+  <g e c g>--( <d c d,>4) <e c e,>8 <e c e,>--( <c e, c>4) <e c e,>8 |
+  <e b e,>--(\dim <b e, b>4) <c e, c>8 <c ef, c>--( <bf ef, bf>4) <c ef, c>8 |
+  <c d, c>--( <af d, c>4) <c d, c>8 <c d, c>--( <g d c>4) <c d, c>8 |
+  <c e, c>2--\p <g e c g>-- |
+  <g e c g>-- <g e c g>4.-- <g e c g>8 \mpbreak |
 }
 PianoDNI=\relative c'{\commonConductor 
   \clef treble \key d\minor \time 4/4 \expandFullBarRests
@@ -2660,6 +2713,54 @@ e e8-.-\omit\mf e,-. c'-.[ e,-.] e-.[ a,-.] |
 <a e'>->[( a']) e'-.[ e,-.] c'-.[ e,-.] e-.[ a,-.] |
 <a e'>->[( a')] e'-.[ e,-.] <e a,>->([ a)] e'-. e,-. |
 <e a,>->[( a)] e'-.[ e,-.] c'-.[ c,-.] d'-.[ d,-.] |
+
+<d' g>->(-\omit\f g,) d'[-. d,]-. b'[-. b,]-. d-. d,-. |
+g'-. g,-. b'-.[ b,-.] e'-.[ e,-.] d'-.[ d,-.]|
+<g' d'>->( d) d-.[ g,-.] <g' d'>->( d) d->[ g,-.] |
+<g' d'>->( d) d-.[ g,-.] <g' d'>->( d) c->[ c,-.] |
+<c' a'>->( f,) c'-.[ c,-.] <c' a'>--( f,) <c' gs'>--([ f,)] |
+<c' a'>->( f,) c'-.[ c,-.] <c' a'>--( f,) <cs' bf'>--[( f,]) |
+
+<d' f a>--( a) a-.[ d,-.] <d' f a>--( a) a-.[ d,-.] |
+<f' a d>--(-\omit\cresc d) f,-.[ bf,-.] <f'' a d>--( d) f,-.[ bf,-.] |
+<g'' bf d>--( d) d-.[ g,-.] <g' bf d>--( ef) bf-.[ ef,-.] |
+<c'' d f>--( g) c,-.[ c,-.] <d'' e g>--( g,) bf,-.[ bf,-.] |
+<cs'' e a>->(-\omit\ff g) e-.[ a,-.] \clef treble <cs' e a>--( a) e''--[( e,)] |
+\clef bass <cs e a>->( a) e-.[ a,-.] \clef treble <cs' e a>->( a) e''->[( e,)] |
+
+<a e cs a>4-> <e e'>8-> e-. <a cs, a>4-> <e e'>8-> e-. |
+<a cs, a>-.[ <e e'>-.] <a cs a'>-. e'-. <a, cs a'>4-. r |
+r <a d f a>-\omit\ff <d, f a d> <a d f a> |
+\clef bass <d, f a d> <a d f a> <d, f a d> <a d f a> |
+<d, gs b e> <e' b'>8-. <e b'>-. <b' gs'>4-- <b e gs>8-. <b e gs>-. |
+<gs' b e>4 \clef treble <b gs'>8-. <b gs'>-. <gs' b e>4-- <b gs'>8-. <b gs'>-. |
+
+<c e g>4-- <g c e g>-\omit\ff <c, e g c> <g c e g> |
+\clef bass <c, e g c> <g c e g> <c, e g c> <g c e g> |
+<d fs a d> <d' a'>8-. <d a'> <a' fs'>4-- <a fs'>8-. <a fs'>-. |
+<fs' a d>4-- \clef treble <a fs'>8-. <a fs'>-. <fs' a d>4-- <a fs'>8-. <a fs'>-. |
+<bf d g>4-- \clef bass <bf, d>8-.-\omit\mf <g e'>-. <a d f>4-- <g cs>8-.( a,-.) |
+
+<d a'>4-. \clef treble <c' f>-.-\omit\cresc
+<<{\voiceOne \tuplet 3/2 {a'8( bf b} c4) | \tuplet 3/2 4 {c8( d ds e4) fs8(} g4) b-.}
+\context Voice="PnoV4"{\voiceTwo e,,-\omit\mf-\omit\cresc <f a> | <fs a> <a c> <b e> f'8( b,)-\omit\f}>> |
+\oneVoice <e b e,>4-.-\omit\f <b e, d>8(-.-\omit\dim e,,-.) <c' e a>4-. <b ds g>8-.( e,-.) |
+<a c fs>4-. \clef bass <gs d>8-.( e,-.) <c' g'>4-. <b fs>8-.( e,-.) |
+<b' e>4-. b-.-\omit\p e,-. r |
+
+R1 |
+<g c e>8-\omit\p--( c,4) <a' c e>8-. <g c e>--( c,4) <a' c e>8-. |
+<g c e>8--( c,4) <a' c e>8-. <g c e>--( c,4) <a' c e>8-. |
+<g c e>8-\omit\mf--( c,4) <a' c e>8-. <g c e>--( c,4)-\omit\< <a' c e>8-.\! |
+<g c e>8--( c,4) <a' c e>8-. <g c e>--( c,4) <b' e b'>8 |
+<c e c'>---\omit\f( c,4) <c' e c'>8-. <b c e b'>--( c,4) <b' c e b'>8 |
+
+<bf c e bf'>--( c,4) <bf' c e bf'>8 <a c e a>--( c,4) <a' e c a>8 |
+<gs c e gs>--(-\omit\dim c,4) <gs' c e gs>8 <g c ef g>--( c,4) <g' c ef g>8 |
+<g c d fs>--( c,4) <g' c d fs>8 <g c d f>--( c,4) <g' c d f>8 |
+<g c e>8-\omit\p--( c,4) <a' c e>8-. <g c e>--( c,4) <a' c e>8-. |
+<g c e>8--( c,4) <a' c e>8-. <g c e>--( c,4) <a' c e>8-. |
+
 
 }
 PianoUPOssia=\relative c'{\stopStaff \commonConductor   %\commonConductor
