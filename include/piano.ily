@@ -468,6 +468,7 @@ PianoUPI=\relative c'{\commonConductor
   \oneVoice d\<( f af\! d f d\> af g\! f e d f) cs'( f, e ds) |
   d( e a, e' a cs, a \clef bass f e a d, e cs e bf d) |
   a( e' a cs a' cs, a f e a d, e cs e bf d) \mbreak \bar "|"
+ \tag #'(score piano) {
   \cadenzaOn \tempo\markup{\italic "veloce"} 4=300
   a8\p([ e' a cs a' cs, a e)] \clef treble a[(\cresc cs e a e' a, e cs)]
   r e([ a cs a' cs, a e)] a[( cs e a e' a, e cs])
@@ -476,7 +477,7 @@ PianoUPI=\relative c'{\commonConductor
   cs([ e a cs ds e \ottava #1 a cs]) e[ a, e cs' cs, a' e a,] \ottava #0 \cadenzaOff \break \bar "|" \cadenzaOn
   e'\dim[ e, cs' cs, a' e a, cs] e[ bf a gs g fs f d] cs[\clef bass bf a gs g fs f d] \bar "|"
   cs4\p r8 e16[\<( g] a\![ d, f g] b,[ f'\> e cs\!] \bar "|"
-  a4) r8 cs16\dim[( e] f\<[ b,\! d cs] e\<[ bf d c]\! \cadenzaOff \bar "|"
+  a4) r8 cs16\dim[( e] f\<[ b,\! d cs] e\<[ bf d c]\! \cadenzaOff} \bar "|"
   a4) r8 cs16\p( e a,4) r8 e'( \break |
   a,4) r r2 | \repeat unfold 5 {R1} |
   \time 3/2 R1. \mbreak | \time 4/4 R1 * 5 \mbreak  |
@@ -890,7 +891,7 @@ r2 <bf d g>-- |
 r2 <g bf d>-- |
 \tag #'main \MainCadenzaUp
 \tag #'ossia \OssiaCadenzaUp
-
+\tag #'(score piano) {
 \cadenzaOn
 <<{\voiceOne <fs' a d fs>4.---\omit\ff <f a d f>8 <fs a d fs>4.-- <f a d f>8 \bar "|"
 <fs a d fs>4.-- <fs bf d fs>8 <g bf d g>2 \bar "|"
@@ -954,7 +955,7 @@ r \ottava #0 <cs e gs cs>[ <c e gs c>] r r \ottava #0 <b c e b'>[ <a c e a> <gs 
 \clef treble r16 a''[( d fs d' fs, d a]) r fs'[( a d a' d, a fs]) \bar "|"
 r a[( d fs d' fs, d a]) r fs'[( a d a' d, a fs]) \bar "|"
 r \ottava #1 a[(\ff d fs d' fs, d a]) r a[( d fs d' fs, d a])
-\cadenzaOff \break \bar "|"
+\cadenzaOff \break \bar "|"}
 \ottava #0
 \key d\minor \time 4/4 \teeny
 \tuplet 8/2 4 {
@@ -1019,6 +1020,7 @@ e[( cs' \toUP\stemDown e g e' a, g e]) \mbreak |
 \context Voice="PnoV2" {<bf g>8-\omit\p s s2 \toDN \stemUp bf,16( ef g \toUP\stemDown c,)--~
 }>>
 \bar "|"
+\tag #'(score piano) {
 \cadenzaOn
 <<{<f'~ af, f c>4\arpeggio--) f8[ ef(] f[ af bf d,] \bar "|"
 \time 3/4 <ef~ g, ef c bf>4)\arpeggio ef8[ g( af c,] \bar "|"
@@ -1084,7 +1086,7 @@ af[ ef' e) g,]( \tuplet 3/2 {af\>[ e' f]\!} fs[) af,]
   \voiceOne r4-\omit\mf <af d bf'>2.-- \bar "|" r4 <af d bf'>2-- <a d bf'>4--
 
 }>>
-\cadenzaOff \mark\default 
+\cadenzaOff} \mark\default 
 \bar "|" 
 \stemNeutral
 \appoggiatura {bf8 ef g~ bf ef~} 
@@ -1233,13 +1235,13 @@ gs ds fs cs\dim es bs} \tuplet 5/4{ds16 a cs gs b)}
   %\cadenzaOn
   \teeny
   df8([ c df ef] 
-  \cadenzaOn
+\tag #'(score piano){\cadenzaOn
   f[ df bf g bf af] df[ af gf c, ef df]
  f[ df bf g bf af] df[ af gf c, ef df]
  f[\cresc df bf g bf af bf a cf bf c b]) \bar "|"
   \normalsize
   df4-.\f f->~ f8^\markup{\italic "marcato"}[ ef c df bf c af bf]
-  \cadenzaOff 
+  \cadenzaOff }
   <<{\voiceOne r8 \tuplet 3/2 {af16\f( c f} \tuplet 6/4 4 {c' f, c af c f c' f, c af c f) } |
     r4 \once\dynamicUp f'\ff( \tuplet 3/2 {ef d8)}}
     \context Voice="PnoV2" {\voiceTwo f,,2.-> r8 \tuplet 3/2 {af16( c f} \tuplet 3/2 4 {af4-\omit\ff f8) af( f c)}}>>
@@ -1780,6 +1782,60 @@ b( bf a gs[ g fs] f[ e ds] d) \toDN\stemUp \once\slurUp cs( c} |
   \toDN \stemUp \clef bass \tuplet 6/4 2 {<b, e, gs,>8( \clef treble d e gs a as b c d \toUP\stemDown e fs gs)}}
   >> \mpbreak |
 
+  <<
+    {\voiceOne 
+    \tuplet 3/2 {<e e'>4--\f <fs fs'>-- <g g'>--} <fs fs'> <e e'> |
+    <d d'>2-- <c c'>4( <b b'>) |
+    <b g' b>--( <c c'> <a d a'~>2) |
+    a'4\dim b( g2)~ |
+    g4 a( fs g
+  }\context Voice="PnoV2" {\voiceTwo 
+  \tuplet 3/2 4 {a8-\omit\f b c d[ ds e] d[ c d] c b c |
+  b4 gs8 a[ b a] gs4 d8~ d[ ds e] |
+  ef4( d8 c[ ds fs] g fs g fs e fs) |
+  e-\omit\dim a, bf b b' fs g b, g b e ef |
+  d b g a a' d, fs cs fs, g g' c,}
+} >> \mbreak |
+<<{\voiceOne e2) d4( e}
+\context Voice="PnoV2" {\voiceTwo \tuplet 3/2 { e8 b e, g b bf a f c e' f, af-\omit\mf}}>>
+\oneVoice<c g e>4)\mf <e c g e>( <g e c g>\< <a e g a>\! |
+<b g ef b>\cresc <c g ef c> <ef c g ef> <g ef c g>) |
+<b gs e b>\ff( <gs e b gs> <e b gs e> <c gs e c> |
+<b g ef b>\dim <g ef c g> <ef c g ef> <c g ef> |
+\tuplet 3/2 {<b g d>8) d[\f d](} <g d b>4~->) \tuplet 3/2 4 {<g d b> <b g b,>8( <fs d>4) <a fs, a>8(}
+\mbreak |
+\tuplet 3/2 {<e b>8) fs fs~(} <b fs d>4~) \tuplet 3/2 4 {<b ds d> <d b d,>8( <a f>4) <c a c,>8( |
+<gs e>)\cresc as( b} <d f, d>4->~) \tuplet 3/2 4 {<d f, d> <e c e,>8( <b gs>4) <d b d,>8( |
+<a e>4) <c e,~>8( <e a, e>4) <g g,~>8( <e b g>4) \ottava #1 <b b'>8( <d fs>4) <d d'>8(}
+g4)\ff \ottava #0 r r2 | R1 \mbreak |
+
+  R1 * 18 \bar "||" \numericTimeSignature \time 4/4 \key c\minor R1 * 2 \mbreak |
+  r8-\omit\pp ef,32(\< e f fs <g ef>8->-.)[\! r16 \toDN\stemUp <fs d bf>-.\p(] \toUP\stemDown <g ef>8)-.[->^\markup{\italic "molto leggiero"}
+  r16 <g ef>32( \toDN\stemUp <fs d>] \toUP\stemDown <ef gf>16-.[) \toDN\stemUp <d fs bf>-. \toDN\stemUp <ef g cf>-. \toDN\stemUp <fs d bf>-.] \toUP \stemDown |
+  <ef g>16-.[ <ef g>32( \toDN\stemUp <fs d>\toUP\stemDown <ef g>8--)~] <ef g>16[ \toDN\stemUp <fs d cf>-.( \toUP\stemDown <ef g>8--)~]
+  <ef g>16[ \toDN\stemUp <fs d bf>-. \toUP\stemDown <ef g>-. \toDN\stemUp <fs df a-.>] \toUP\stemNeutral <ef g>-. f32( fs g16) f32( fs |
+  g16) fs,32([ g bf b cs d]\! <ef b>8-.->)[ r16 \toDN\stemUp <d bf g>-.\p(] \toUP\stemDown <ef b>8-.->)[ r16 <ef b>32(\toDN\stemUp <d bf>]
+  \toUP\stemDown <ef b>16-.)[ \toDN\stemUp <fs d bf>-. \toUP\stemDown <g ef b>-. \toDN\stemUp <d bf g>] \mbreak |
+  
+  \toUP\stemDown <b ef>16-.[ <b ef>32( \toDN\stemUp <bf d>-. \toUP\stemDown <b ef>8)]--~ <b ef>16[ \toDN \stemUp <d g, ef>-. \toUP\stemDown <b ef>8--~]
+  <b ef>16[ \toDN\stemUp <d af ff>-. \toUP\stemDown <b ef>-. \toDN\stemUp <d a f>-.]
+  \toUP\stemNeutral <b ef>16-. df32( d ef16) df32( d |
+  ef\<) af,( a bf cf bf cf bf cf4\sf)--~ cf16[\dim \toDN\stemUp <d bf af>-. \toUP\stemDown <cf ef>-. \toDN\stemUp <bf g ff>-.] \toUP \stemDown <af cf>4--~ |
+  <af cf>16 \toDN\stemUp <af bf d>-. \toUP \stemDown <cf ef>-. \toDN\stemUp <bf g f>-. \toUP \stemDown <af cf>-.[ \toDN \stemUp <af bf d>-. 
+  \toUP\stemDown <cf ef>-. \toDN\stemUp <bf af f>-.] \toUP\stemDown <b a fs> <gs' cs>32\p[( d' <a ds>16) <as d,>-.] <b d,>-. <d, gs,>-. <ds a>-.
+  \toDN\stemUp <a fs>-. \toUP \stemNeutral \mbreak |
+  
+  <g bf>16[ g32(\< af a bf ef fs\!] <ef g>16-.->)[ \toDN\stemUp <d fs> \toUP\stemDown <ef g>8\mf~]
+  <ef g>16[ \toDN\stemUp <d fs bf> \toUP\stemDown <ef g c> \toDN\stemUp <fs d bf>-.]
+  \toUP\stemDown <ef g>-.[ <ef g>32( \toDN\stemUp <fs d> \toUP\stemDown <ef g>8--)~] |
+  <<{\voiceOne <ef g>16-.[ <ef a>-. <ef bf'>8--~] <ef bf'>16[ <ef g> <ef a>8--~] <ef a>16[ <ef f> <ef g>8--~] <ef g>16-. <ef cf>-. <cf f>8--}
+  \context Voice="PnoV2" {\voiceTwo r8.-\omit\mf bf32( cf) cf8 r16 af32( bf) bf8-. r16 g32( af) af8-. r16 fs32( g)}>>  \bar "||"
+  \oneVoice\stemDown  \time 3/2 g16-.[ af32(\< a bf a <bf g> \toDN \stemUp <a fs>]\!\toUP \stemNeutral <g bf>16->-.)  
+  <bf ef, cf>-.\mf[ g-. <bf ef, c>-.] g[-. <d fs c'>-. g-. <fs a e'>-.]
+  bf-.[\dim <a c g'>-. ef'-. <c ef bf'>-.]
+  g'32-.[ cs,( d f fs g af a] <g bf>16)->[ af'32(\> a bf8)]\!-. 
+  \mpbreak \bar "||"
+
 }
 PianoDNI=\relative c'{\commonConductor 
   \clef treble \key d\minor \time 4/4 \expandFullBarRests
@@ -1856,6 +1912,7 @@ PianoDNI=\relative c'{\commonConductor
   bf f'-\omit\< <af d>4)-\omit\> r8\! gs( <f e,> e) |
   a, e' cs' r16 f,( e8) d16( e cs8) bf16( d |
   a8) e'16( cs a'8) a,16( f e8) d16( e cs8) bf16( d \bar "|" 
+  \tag #'(score piano) {
   \cadenzaOn a2)-\omit\p e'8([ a cs d] ds[-\omit\cresc e] a,4) d'8([ cs a f] e[ a,]) r4 \clef treble 
   e'8([ a cs d] ds[ e] a,4) d'8[( cs a f] e[-\omit\ff a,]) r4
   f''8([ e cs a] e[ a,)] r bf'( <a f'>[ e' cs a] e[ a,])
@@ -1864,7 +1921,8 @@ PianoDNI=\relative c'{\commonConductor
   \break \bar "|" e,[-\omit\dim cs' a e' \clef treble ds e cs'] r 
   \clef bass \tuplet 6/8 1 { r cs,[( d a bf e,] f[ cs d a bf f]}
   e[-\omit\p a,]) r e'16([-\omit\< g] a->[\! d, f g] b,[ f'-\omit\> e cs] \bar "|"
-  a4) r8 cs16[(-\omit\dim e] f[-\omit\< b,\! d cs] e[-\omit\< bf d cs]\! \cadenzaOff \bar "|" 
+  a4) r8 cs16[(-\omit\dim e] f[-\omit\< b,\! d cs] e[-\omit\< bf d cs]\! \cadenzaOff }
+  \bar "|" 
   a4) r8 cs16(-\omit\p e a,4) r8 e'16( e, |
   a4) r r2 | R1 * 5 |
   \time 3/2 R1. | \time 4/4 R1 * 5 |
@@ -2153,10 +2211,10 @@ PianoDNI=\relative c'{\commonConductor
   R1 | <d bf g>2-\omit\mf r |
   <bf g d> r |
   \clef bass <d, bf g> r |
-
+%\tag #'(score piano) {
   \tag #'main \MainCadenzaDn
   \tag #'ossia \OssiaCadenzaDn
-  % cadenza
+ \tag #'(score piano){% cadenza
 \cadenzaOn
 <<
   {
@@ -2219,7 +2277,8 @@ r8 \clef bass <d,, d,> \tuplet 3/2 {<a' d fs>[ <d fs a> <fs bf d>]} <a d fs>4 s
 \clef treble \tuplet 3/2  {a,8[( d fs]} d'4) \tuplet 3/2 {d,8[( a' d]} fs4) \bar "|"
 \tuplet 3/2 {a,8[(-\omit\ff d fs]} d'4) \tuplet 3/2 {a,8[( d fs]} d'4)
 
-\cadenzaOff \tag #'score \break \mpbreak \bar "|"
+\cadenzaOff \tag #'score \break \mpbreak }
+\bar "|"
 \mark\default \stemDown \slurDown
 \time 4/4 d,,8..-\omit\dim[ bf'32]( a8..)[ ef32]( d8..[) bf'32(] a8..[) ef32]( |
 d8..[)-\omit\p bf'32]( a8..)[ ef32]( d8..[) bf'32(] a8..[) ef32]( \mbreak |
@@ -2246,7 +2305,8 @@ r8.-\omit\p f,16( ef8.[) g16(] <f a,>8.)[ ef'16]( <d b f>8.)[ d,16]( |
 \toDN\stemUp \clef treble d( ef g \toUP\stemDown bf--) \toDN\stemUp c,( ef g \toUP\stemDown c--) s4
 \toDN } \context Voice="PnoV4" {\toDN \voiceTwo 
 d,4-\omit\p c bf 
-}>> \bar "|" \clef bass \cadenzaOn
+}>> \bar "|" \clef bass \tag #'(score piano) {
+  \cadenzaOn
 
 <<{\stemUp <g c, ef,>16\arpeggio([ a c \toUP\stemDown f--)] 
 \toDN \stemUp\clef treble c([ ef f \toUP\stemDown af--)]
@@ -2285,7 +2345,9 @@ s4*6 s2*3 s4.*3 \cadenzaOff \bar "" \break \cadenzaOn
 s4 \teeny \stemUp \once\dynamicUp ef,,,,16[(\f ef' a bf d \toUP\stemDown f af f bf d \toDN\stemUp \clef treble e f af a])
 s2 s4 \bar "|"
 \normalsize \stemNeutral r4-\omit\mf \clef bass <f, bf, ef,>2.\arpeggio \bar "|"
-r4 <a bf, ef,>2\arpeggio bf,4 \cadenzaOff \bar "|"
+r4 <a bf, ef,>2\arpeggio bf,4 \cadenzaOff
+}
+\bar "|"
 \appoggiatura {ef,8 bf' g' bf ef}
 <<{\voiceOne \clef treble bf'4.--(-\omit\mf c8--) bf4.--( d8--) | bf4.--( c8--) bf4.--( d8--)
 }\context Voice="PnoV4" {\voiceTwo
@@ -2415,9 +2477,13 @@ df,,,16( af' df af bf-\omit\< af af' af, df, af' <f' af> af, <ef' gf> af, df, af
 <df f> <af df,> \clef treble <ef' af> |
 <f df'> <df af> <af' af'> <df f> \once\dynamicUp <af df,>\pp) r} 
 r4 |
-\clef bass R2.\fermataMarkup \cadenzaOn s8*36 \bar "|"
+\clef bass R2.\fermataMarkup 
+\tag #'(score piano) {
+\cadenzaOn s8*36 \bar "|"
 <df,, df,>4-\omit\f-. <f f,>->~ <f f,>8[ <ef ef,> <c c,> <df df,> <bf bf,> <c c,> <af af,> <bf bf,>]
-\cadenzaOff \bar "|"
+\cadenzaOff }
+
+\bar "|"
 <<{\voiceOne r8 f16( c'-\omit\f af' ef f, c' af' c, f, c')
 f,,( f' c' af' \voiceTwo \tuplet 3/2 4 {df8-\omit\ff af c,) c'( af c,) }}
 \context Voice="PnoV2" {\voiceTwo <f, f,>2.->-\omit\f |
@@ -2875,8 +2941,50 @@ d,,8( fs'4 c'8 <d fs>4) b,8( fs' |
 \context Voice="PnoV4"{\stemUp \tuplet 6/4 2 { \clef bass 
 \once\slurUp<fs d,>8( a c \clef treble fs g gs a as b \toUP\stemDown c d ds} | <b d e>4)}
 >> 
-s <e gs>2 |
+\toDN s <e, gs>2 |
+\stemNeutral \clef bass \tuplet 3/2 {
+  <a,, a,>8-\omit\f( e' a} <c e>)[ <g c g'>--]
+  <<{\voiceOne <fs c' d fs>2-- | <f a d f>-- s}
+  \context Voice="PnoV4" {\voiceTwo r8 fs( a, d,) |
+  r4 r8 b'( e, e' <gs d'> e')}>> |
+  \oneVoice a,,( g'4 ef'8) b,( a'4 ds8) |
+  <a c,>-\omit\dim( e'4 b8) <g cs,>( e'4 b8) |
+  <g d>( d'4 b8) ds,( a'4 c8) |
 
+
+  <g e>( b4 bf8) <d, g,>( a' b4) |
+  \tuplet 3/2 4 {<e, g, c,>-\omit\mf <e c g> <g e c> <g c e>-\omit\< <e g c> <e c g>} |
+  <<{\voiceOne \tuplet 3/2 2 {r-\omit\cresc <ef g> <ef g c> <g c ef> <c ef g> r}}
+  \context Voice="PnoV4" {\voiceTwo<a, a,>1-\omit\f}>> | \oneVoice
+  \appoggiatura <e e,>8 \tuplet 3/2 2 {<b' e gs b>4-\omit\ff <g' b e> <b e gs> <e gs b> <b e gs> <gs b e>} |
+  <<{\voiceOne \tuplet 3/2 2 {r-\omit\dim <ef g> <g c> r <g c g'> <ef g c>}}
+  \context Voice="PnoV4" {\voiceTwo <a, a,>1-\omit\ff}>> |
+  \oneVoice \tuplet 3/2 {<d g b>8 \clef treble d'-\omit\f[ d]~(} <b d g>4~->) \tuplet 3/2 4 {<b d g>  <b g>8( <d fs>4) <g, d>8(} |
+
+
+  \tuplet 3/2 {<b e>) fs' fs(~} <d fs b>4->~) \tuplet 3/2 4 {<d fs b> <d b>8( <f a>4) <b, gs>8( |
+  <e gs>)-\omit\cresc as( b~ } <b a f d>4->~) \tuplet 3/2 4 {<b a f d> <e, c>8( <gs b>4) <c, a>8( |
+  <e a>4) c8~( <a c e g>4) e'8~( <cs e g b>4) fs8~( <d fs c' d>4) d'8(} |
+  <g, b g'>4-\omit\ff) r r2 | R1 |
+
+  R1 * 18 \bar "||"
+  \numericTimeSignature \key c\minor \time 4/4 R1 * 2 |
+  r8-\omit\pp cf32(-\omit\< c df d) s4-\omit\p s2 |
+  s2. r16 <af c>-. ef'-.  <b g>-. |
+  ef8-.-\omit\<\noBeam b,32( ef f fs\! <g ef>8) s-\omit\p  s2 |
+  
+  s2. r16 <gf bf>-. b-. <g bf>-. |
+  cf8-.\noBeam-\omit\< <af ff>32( g <af ff> g <af ff>4--~)-\omit\sf <af ff>16 s8. r4 |
+  s2 r16-\omit\p es'32( fs b16) fs,-.  b-.[ b,32( e es16)] s |
+
+  r16 bf32-\omit\<([ ef fs g af a]\! <bf g>16)-> s8.-\omit\mf s2 |
+  <<{\voiceOne r8. g16-. af8-. r16 f-. g8-. r16 e-. f8-. r16 d-.}
+  \context Voice="PnoV4"{\voiceTwo r16 <ef af cf>-. <ef bf' d>8-- r16 <ef af bf>-. <ef af cf>8-- r16 <cf ef af>-. <cf ef bf'>8-- r16 <cf ef g>-. <cf ef af>8--}
+  >> |
+  \oneVoice
+  \time 3/2 
+  ef16(-\omit\< f32 fs <g ef bf>8) r16\mf gf,-. <bf ef>-. g-. <bf ef>-.[ a-. <bf ef>-. c-.]-\omit\dim <ef g>-. ef-. <g bf>-. g-. <bf d>-.\noBeam
+  bf,32([ a' d ef e f] <d a>16->-.[) af'32(-\omit\> a bf8)]\! |
 }
 PianoUPOssia=\relative c'{\stopStaff \commonConductor   %\commonConductor
   \time 4/4 \tempo "Allegro ma non tanto" 4=120 s1 * 10 \mark\default \barNumberCheck\RhI %1 
