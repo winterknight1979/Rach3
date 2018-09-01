@@ -1836,6 +1836,36 @@ g4)\ff \ottava #0 r r2 | R1 \mbreak |
   g'32-.[ cs,( d f fs g af a] <g bf>16)->[ af'32(\> a bf8)]\!-. 
   \mpbreak \bar "||"
 
+  \time 4/4 r8.\p \stemDown <g,, ef>32([ \toDN \stemUp <fs d>] \toUP \stemDown <g ef>8-.) r16 df32[( d] ef16-.)[ \toDN\stemUp <fs d bf> \toUP\stemDown <g ef>8--~] <g ef>16 s8. |
+  <g ef>16-.[ \toDN\stemUp <fs d bf>-. \toUP\stemDown <g ef>-. \toDN\stemUp <af fs ef>32( a] \toUP\stemDown <g bf>16--)[ \toDN \stemUp \clef bass <a, fs>
+  \toUP \stemDown <bf g>-. \toDN \stemUp \clef treble <a' fs>32( bf] \toUP \stemDown <b g>16-.)
+  <d f>32[( fs <ef g>16-.) <df bf>32( d] <ef b>16)[-. <fs a>32( bf <b g>16) f32( fs] |
+  g16) <g ef>32[ \toDN\stemUp <fs d> \toUP\stemDown
+<g ef>32 \toDN\stemUp <fs d> \toUP\stemDown
+<g ef>32 \toDN\stemUp <fs d>] \toUP\stemDown <g ef>16 df32([ d ef16) g,32( fs] g16)[ \toDN\stemUp <d' fs>-. \toUP \stemDown <ef g>8--~]
+<ef g>16 <d fs cf'>-. <ef g>-. <d fs bf>-. \mbreak |
+
+  <ef g>-.[ <fs cf' ef>-. <g bf>-. <fs cf' d>-.] <g bf>\noBeam <g, bf>32([ \toDN\stemUp <fs a> \toUP \stemDown <g bf>16)-. df'32 d]( ef16-.\noBeam\cresc->)
+  \toDN\stemUp <cf d fs>32[ \toUP\stemDown <ef g> \toDN\stemUp <ef fs bf> \toUP\stemDown <g cf>\toDN\stemUp <ef fs bf> \toUP\stemDown <g cf>]
+  \repeat tremolo 4 {\toDN \stemUp <cf d fs>->\f\> \toUP\stemDown <ef g>\!} |
+  
+  \stemNeutral \ottava #1 <g ef bf g>16[ r32 <af bf,>( <a ef>16) <bf bf,>] <ef g,>8[-. \tuplet 3/2 {bf'16 bf, bf]}
+   <ef g,>8[ \tuplet 3/2 {bf'16 bf, bf]} <ef g,>8[ \tuplet 3/2 {bf'16 bf, bf]} |
+   <ef g,>8\noBeam \ottava #0 \tempo "poco accel." 4=80 bf16-.[\pp bf,-.] <g ef'>8 bf16-.[ bf,]-. <g ef'>8-. bf16-.[ bf,-.] <g ef'>8-. \clef bass bf16-.[ bf,-.] \mbreak |
+
+   
+   <ef g>8-.\mf s s4 \clef treble <ef' g>16\dim-. <df f>-. <d fs>-. <ef g>-. <ff af>-. <f a>-. <fs bf>-. <g ef'>-. |
+   <bf ef g>8-.\pp r r4 r2 |
+   \voiceOne <ef' g>8..-.\pp fs32(   <ef g>8..-.) fs32(   <ef g>8..-.) fs32( <ef g>16-.) <fs bf>-. <g cf>-. fs-. \mbreak |
+   
+   <ef g>8-. s s4 s2 |
+   <c ef>8..-. d32(  <c ef>8..-.) d32( <c ef>8..-.) d32( <c ef>16)-. <bf d g> <c ef af> d  \mbreak |
+
+   <c ef>8-. s s4 s2 |
+   \time 3/2 <g bf>8..-.\mf a32(  <g bf>8..-.) a32( <g bf>8..-.) a32( <g bf>16)-. <fs d'>-. <g ef'>-. a-.  <g bf>8..-. a32( <g bf>8..-.) a32( \mbreak |
+   <f bf>8-.) s s4-\omit\cresc s2 s8-\omit\dim s16 s32 d <cf ef>16 <e, g>-. <f af>-. <fs a>-. \mbreak |
+   <g bf>8-.\p s s4 s1 \mpbreak |
+
 }
 PianoDNI=\relative c'{\commonConductor 
   \clef treble \key d\minor \time 4/4 \expandFullBarRests
@@ -2985,7 +3015,84 @@ d,,8( fs'4 c'8 <d fs>4) b,8( fs' |
   \time 3/2 
   ef16(-\omit\< f32 fs <g ef bf>8) r16\mf gf,-. <bf ef>-. g-. <bf ef>-.[ a-. <bf ef>-. c-.]-\omit\dim <ef g>-. ef-. <g bf>-. g-. <bf d>-.\noBeam
   bf,32([ a' d ef e f] <d a>16->-.[) af'32(-\omit\> a bf8)]\! |
+
+  \clef bass <bf,,, ef,>4-\omit\p r8 s16 <fs' bf>32([ a] <g bf>16) r r8 \clef treble r16 <ef' fs a>32([ bf' \toUP\stemDown <g cf>16-.) \toDN\stemUp <gf d cf>-.] |
+  \stemNeutral s2 r16 <g, d'>-. <b ef>-. <b fs'>-. <ef g>-. <ef bf'>-. <g b>-. <cf d>-. |
+  <bf ef>-.s8. r16 <bf fs>32([ a <g bf>16) <ef cf>32( d] <ef bf>8) s r16 <cf fs cf'> <ef g> <bf fs' bf>-. |
+
+  <ef g>-. <ef cf' ef>-. <g bf>-. <d cf' d>-. <g bf>-. s8 bf16-.[ cf]-.-\omit\cresc s8.-\omit\cresc s8-\omit\f-\omit\> s\! |
+  <ef, bf' ef>16[ r32 <bf' f'>( <ef fs>16) <bf g'>]
+  <ef bf' ef>8[ \tuplet 3/2 {g'16( c, bf]}
+  <ef, bf' ef>8[) \tuplet 3/2 {g'16( c, bf]}
+  <ef, bf' ef>8[) \tuplet 3/2 {g'16( c, bf]} |
+  <ef, bf' ef>8) g16(-.-\omit\pp[ bf,-. ef-. ef,-.]) g-.[( bf,-. ef-. ef,-.]) \clef bass g-.[( bf,-. ef-. ef,-.]) bf'-.( bf,-. |
+
+  ef8-.\noBeam-\omit\mf \stemUp <bf' ef>16-.->)[ r32 \toUP\stemDown <fs' a>(] <g bf>16[-.) \toDN\stemUp <fs d'>-. <g ef'>-. \toUP\stemDown \clef treble <d' fs>]
+  \toDN \stemNeutral r16-\omit\dim af-. a-. c-. cf-. bf-. ef-. bf'-. |
+  R1-\omit\pp 
+  \clef treble \teeny 
+  <<{\voiceTwo ef4-\omit\pp d df cf}
+  \context Voice="PnoV4" {\teeny \voiceOne \slurDown \stemUp 
+  ef32-\omit\pp( fs g a bf \toUP\stemDown c df d)
+  \toDN\stemUp d,( ef fs g bf \toUP\stemDown c df d) 
+  \toDN\stemUp df,( ef fs g bf \toUP\stemDown c df d)
+  \toDN\stemUp cf,( ef fs g bf \toUP\stemDown cf df d) \toDN}>> |
+
+
+  <<{\voiceTwo bf,4 cf bf a | af g gf f}
+  \context Voice="PnoV4" {\voiceOne \stemUp \slurUp
+  \tuplet 10/8 4 {
+    bf32( d ef fs g \toUP\stemDown bf d ef fs g) \toDN \stemUp
+    cf,,32( d ef fs g \toUP\stemDown cf d ef fs g) \toDN \stemUp
+    bf,,32( df ef fs g \toUP\stemDown bf df ef fs g) \toDN \stemUp
+    a,,32( c ef fs g \toUP\stemDown a c ef fs g) \toDN \stemUp} | \slurDown
+    af,,( c ef fs g \toUP\stemDown a bf b) \toDN\stemUp
+    g,( c ef fs g \toUP\stemDown a bf b)\toDN\stemUp
+    gf,( af c ef g \toUP\stemDown a bf b)\toDN\stemUp
+    f,( af c ef g a \toUP\stemDown bf b)\toDN\stemUp
+  }>> |
+
+  <<{\voiceTwo g,4 gf f ff | \time 3/2 ef-\omit\mf d c bf af gf}
+    \context Voice="PnoV4" {\voiceOne \stemUp \slurUp
+    \tuplet 10/8 4 {
+      g'32( af b c ef \toUP \stemDown g af b c ef) \toDN\stemUp
+      gf,,32( af b c ef \toUP \stemDown gf af b c ef) \toDN\stemUp
+      f,,32( af b c ef \toUP \stemDown f af b c ef) \toDN\stemUp
+      ff,,32( af b c ef \toUP \stemDown ff af b c ef) \toDN\stemUp
+    } | \time 3/2  \slurDown
+    ef,,( fs g bf ef \toUP\stemDown f fs~ fs) \toDN\stemUp
+    d,( fs g bf d \toUP\stemDown ef f fs) \toDN \stemUp
+    \tuplet 9/8 { c,( ef g bf c \toUP\stemDown d ef fs a)} \toDN\stemUp
+    bf,,( d ef g bf \toUP\stemDown d ef f) \toDN \stemUp 
+    \tuplet 9/8 {af,,( bf d gf bf \toUP\stemDown d ef f~ f)} \toDN \stemUp
+    gf,,( bf df gf bf \toUP \stemDown c df ef) \toDN
+  
+  }
+>> |
+<<{\voiceTwo s4 \clef treble c,-\omit\cresc bf af g-\omit\dim \clef bass f |
+s-\omit\p \clef treble bf-\omit\cresc d c' a,-\omit\dim s-\omit\pp}
+\context Voice="PnoV4" {\voiceOne \stemUp \slurUp
+\tuplet 10/8 4 {
+  <f bf,>32( bf df e f \toUP \stemDown a bf df\cresc e f) \toDN\stemUp
+  c,( df e f bf \toUP \stemDown c df e f bf) \toDN \stemUp
+  bf,,( d ef e af \toUP\stemDown bf df ef f af) \toDN \stemUp
+  af,,( bf c ef g \toUP\stemDown af bf c ef g) \toDN\stemUp
+  \once\dynamicUp g,,\dim( af cf d ef \toUP \stemDown g af bf cf d) \toDN \stemUp
+} \once\slurDown f,,( af bf cf c df d \toUP\stemDown ef) |\toDN \stemUp
+
+\tuplet 9/8 {<ef, bf>-\omit\p( fs g bf \toUP \stemDown d ef fs g bf)} \toDN \stemUp
+\tuplet 10/8 4 {
+  \once\dynamicUp bf,\cresc( e ef fs g \toUP\stemDown bf d ef fs g) \toDN\stemUp
+  d,( ef fs g bf \toUP \stemDown d ef fs g bf) \toDN \stemUp
+  c,( ef f g bf \toUP\stemDown c ef f\dim g bf) \toDN\stemUp
+  a,,,( c ef f g \toUP\stemDown a c ef f g) \toDN \stemUp}
+  \clef bass 
+  \tuplet 12/4 {\once\dynamicUp bf,,,(\pp fs' af d \toUP\stemDown g af c d
+  \toDN\stemUp\clef treble f af d \toUP\stemDown f} \normalsize bf8)\noBeam \toDN
 }
+>> |
+
+  }
 PianoUPOssia=\relative c'{\stopStaff \commonConductor   %\commonConductor
   \time 4/4 \tempo "Allegro ma non tanto" 4=120 s1 * 10 \mark\default \barNumberCheck\RhI %1 
 
