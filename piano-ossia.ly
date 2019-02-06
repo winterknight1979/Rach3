@@ -63,7 +63,7 @@ page-breaking-system-system-spacing = #'((basic-distance . 12))
 
     \markup{ \vspace #1 } 
       \score{
-      \keepWithTag #'part \new PianoStaff="Piano" 
+      \keepWithTag #'(part piano) \new PianoStaff="Piano" 
       %\with {
       %  instrumentName="Piano"
       %  shortInstrumentName="P.no"}

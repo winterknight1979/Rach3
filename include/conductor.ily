@@ -300,7 +300,7 @@ conductorIII = {
 
     s1 * 4 \tempo\markup{\italic "poco a poco accel."} 2=90  s1 * 8 \mark\default \barNumberCheck \RhLXXIII \bar "||"
 
-    s1 * 11 \tag #'score \cadenzaIIIa \mark\default \barNumberCheck \RhLXXIV \bar "||"
+    s1 * 11 \tag #'(score piano) \cadenzaIIIa \mark\default \barNumberCheck \RhLXXIV \bar "||"
   
     \tempo "Vivacissimo" 2=92 s1 * 4
     \tempo "Un poco meno mosso" 2=88 s1 * 4

@@ -1865,7 +1865,108 @@ g4)\ff \ottava #0 r r2 | R1 \mbreak |
    \time 3/2 <g bf>8..-.\mf a32(  <g bf>8..-.) a32( <g bf>8..-.) a32( <g bf>16)-. <fs d'>-. <g ef'>-. a-.  <g bf>8..-. a32( <g bf>8..-.) a32( \mbreak |
    <f bf>8-.) s s4-\omit\cresc s2 s8-\omit\dim s16 s32 d <cf ef>16 <e, g>-. <f af>-. <fs a>-. \mbreak |
    <g bf>8-.\p s s4 s1 \mpbreak |
+  \oneVoice
+  \clef bass \time 4/4
+  r8\mf \tuplet 3/2 {<bf, f>16( fs g} \tuplet 6/4 4{ <bf ef> g ef <af ef'> a bf \clef treble <ef g>\cresc bf g <df' g> d ef <g bf> ef bf <f' bf> fs g |
+  <bf ef> g ef <df g> d ef <g bf> ef bf <af' ef'> a bf)}
+  <<{\voiceOne b32( ef c\< g' df gf d g ef g e\! cf' f, bf fs cf'}
+  \context Voice="PnoV2" {\voiceTwo b,16 c-\omit\< df d ef e\! f fs}>> |
+  \oneVoice <g ef'>8\f)\noBeam \tuplet 3/2 {<bf, f>16( fs g}
+  \tuplet 6/4 4 {<bf ef> g ef <af ef'> a bf <ef g> bf g <df' g> d ef <g bf> ef bf <f' bf> fs g} \mbreak |
 
+  \tuplet 6/4 4 {<bf ef> g ef <df g> d ef <g bf> ef g, <af' ef'> a bf}
+  <<{\voiceOne b(\< c df d\! \ottava #1 ef32 g e cf' f, bf fs cf'}
+  \context Voice="PnoV2" {\voiceTwo b,-\omit\< ef c g' df gf d g\! ef16 e f fs}>> |
+  \oneVoice \tuplet 6/4 4 {<g ef'>)  bf bf bf' bf, bf <g ef'>\dim  bf bf bf' bf, bf <g ef'>  bf bf bf' bf, bf <g ef'>  bf bf bf' bf, bf }
+  <g ef'>8-.\p <g g'>-. \tuplet 3/2 {<g ef>16( d ef)} <ef ef'>8-. \ottava #0 \tuplet 3/2 {<bf g>16( fs g~)} <g bf g'>8-. 
+  << {\voiceTwo \tuplet 6/4 {ef16( d ef g f fs}}\context Voice="PnoV2" {\voiceOne g8 bf}>>  \mbreak |
+  
+  \oneVoice <ef, ef'>-.) <ef g bf>-.[ <ef g ef'>-.] <bf ef>-.[ <bf g' bf>-.] <ef, g bf>-.[ <ef g ef'>-.] <bf ef>-.[ |
+  <bf g' bf>-.]\dim \clef bass <ef, g bf>-.[ <ef g ef'>-.] <bf ef>-.[ <bf g' bf>-.] r r4 \mbreak |
+  
+  \clef treble R1\! | R1 \bar "||"\voiceOne 
+  \time 3/2 <ef' g~>4\mf--( g8 fs) g4--~( g8 fs) g8--( \once\dynamicUp af4\< <<{a8)\!} \context Voice="PnoV2" {\voiceTwo \tuplet 3/2 {a,16-\omit\f d fs}}>>  \mbreak |
+  
+  <<{bf4--~(} \context Voice="PnoV2"{\voiceTwo <g d bf>8}>> bf8 a) bf4--~( bf8 a) bf( \once\dynamicUp b4--\< c8)\! \bar "||"
+  \time 4/4 c4--~(\cresc c8 b) c( \once\dynamicUp df4\< d8)\! \mbreak |
+  <ds~ b gs ds b>4--\arpeggio( ds8 d) ds( \once\dynamicUp e4\< f8)\! |
+  <fs~ d b fs d>4--\arpeggio( fs8 f) <f f,>-- \once\dynamicUp fs4\<( g8) \mbreak |
+  \once\dynamicDown <af~ f d af f>4--\ff\arpeggio( af8 g) <af af,>(
+  <<{\once\dynamicUp <a a,>4--\> <bf bf,>8)\! }
+  \context Voice="PnoV2" {\voiceTwo s8 \tuplet 6/4 {d,-\omit\>( ef16) e--( f-- fs)\!} }>> | 
+      <<{\voiceOne <g, bf ef g bf>2.--\arpeggio bf'4--}
+      \context Voice="PnoV2" {\voiceTwo r8-\omit\mf \tuplet 3/2 {<ef,, bf>16( f fs} <g ef>8)~ \tuplet 3/2 {<g ef>16( <af f> <a fs>}
+      <bf g>8)~ \tuplet 3/2 {<bf g>16~( a bf} \tuplet 6/4 {<cf ef>) <df a> <d bf> <ef cf> <f df> <fs d>}}>>
+    \mpbreak |
+
+    R1 * 2 \mbreak |
+    R1 | \time 3/2 R1. \mbreak |
+    R1.* 2 \mbreak |
+    \time 4/4 R1 * 3 \mbreak |
+    R1 * 4 \mbreak |
+    R1 * 4 \mbreak |
+    R1 * 4 \mpbreak |
+
+    R1 * 3 \mbreak |
+    R1 * 3 \mbreak |
+    R1 * 2 \mbreak |
+    R1 * 2 \mbreak |
+    R1 * 2 \mbreak |
+    R1 * 2 \mbreak |
+    R1 * 2 \mpbreak |
+
+    R1 * 2 \mbreak |
+    R1 * 2 \mbreak |
+    R1 * 2 \mbreak |
+    R1 * 7 \mbreak |
+    R1 * 10 \mbreak 
+    R1 * 5 \mbreak |
+    R1 * 5 \mbreak |
+    R1 * 5 \mbreak |
+    R1 * 5 \mpbreak |
+
+    R1 * 5 \mbreak |
+    R1 * 5 \mbreak |
+    R1 * 6 \mbreak |
+    R1 * 6 \mbreak |
+    R1 * 6 \mbreak |
+    R1 * 6 \mpbreak |
+
+    R1 * 6 \mbreak |
+    R1 * 6 \mbreak |
+    R1 * 6 \mbreak |
+    R1 * 6 \mbreak |
+    R1 * 6 \mbreak |
+    R1 * 6 \mpbreak |
+
+    R1 * 6 \mbreak |
+    R1 * 6 \mbreak |
+    R1 * 6 \mbreak |
+    R1 * 6 \mbreak |
+    R1 * 6 \mbreak |
+    R1 * 6 \mpbreak |
+
+    R1 * 3 \inSixFour { R1. * 3 \mbreak |
+    R1. * 6 \mbreak |
+    R1. * 6 \mbreak |
+    R1. * 6 \mbreak |
+    R1. * 6 \mbreak |
+    R1. * 4} R1 * 2 \mbreak |
+    R1 * 6 \mbreak |
+    R1 * 7 \mpbreak |
+
+    R1 * 7 \mbreak |
+    R1 \bar "" \cadenzaOn \cadenzaIIIa \cadenzaOff \mbreak |
+    \inSixFour {R1. * 4 } | R1 * 4 \mbreak |
+    \time 3/2 R1. * 2 | \time 2/2 \inSixFour{R1. * 5 \mbreak 
+    R1. } | R1 * 7 \mbreak |
+    R1 * 8 \mpbreak |
+
+    R1 * 9 \mbreak
+    R1 * 8 \mbreak |
+    R1 * 7 \mbreak |
+    R1 * 7 \mbreak |
+    R1 * 8 \barNumberCheck \EndMIII \bar "|."
 }
 PianoDNI=\relative c'{\commonConductor 
   \clef treble \key d\minor \time 4/4 \expandFullBarRests
@@ -3090,7 +3191,88 @@ s-\omit\p \clef treble bf-\omit\cresc d c' a,-\omit\dim s-\omit\pp}
   \tuplet 12/4 {\once\dynamicUp bf,,,(\pp fs' af d \toUP\stemDown g af c d
   \toDN\stemUp\clef treble f af d \toUP\stemDown f} \normalsize bf8)\noBeam \toDN
 }
->> |
+>> \stemNeutral \normalsize |
+\clef bass
+\set tieWaitForNote = ##t 
+  ef,,,,,16([-\omit\mf bf') r bf]( ef[ bf) r bf(] ef,-\omit\<[ bf') r bf]( <ef g>[ bf) r bf]( |
+  ef,[ bf') r bf(] <g' bf>[ bf,) r \clef treble gf''(]
+  <<{\voiceOne g af-\omit\< a bf b c df d)\!}
+  \context Voice="PnoV4" {\voiceTwo \set tieWaitForNote = ##t <cf, ef>4-\omit\< <ef g>\!}>> |
+  \oneVoice <ef bf' ef>8-\omit\f \clef bass <ef,, bf'>16([ g'] <g bf>[( bf,) r bf]( ef,[ bf') r bf]( <g' ef'>[ bf,) r bf] |
+  <bf ef,>([ g') r g]( <bf ef g>[ g) r \clef treble ef''] <g b,>-.-\omit\< <af ef>-. <a ef>-. <bf g>-.\! <b ef,>-. <c g>-. <df g,>-. <d cf>-. |
+  <ef bf ef,>8-.[ r16 <f bf,>-.] <ef bf ef,>8-.[-\omit\dim r16 <f bf,>-.] <ef bf ef,>8-.[ r16 <f bf,>-.] <ef bf ef,>8-.[ r16 <f bf,>-.]
+  <ef bf ef>8-.-\omit\p \tuplet 3/2 { <ef bf>16( d ef } <b g>8-.) \tuplet 3/2 {<g ef>16( fs g} <ef b,>8-.) \tuplet 3/2 {<ef bf,>16( d ef} <b g>8-.) <d a bf,>8 |
+  \tuplet 6/4 4 {<g, ef>16( ef' d df df) cf   bf bf a af af g   ef ef d df df cf \clef bass bf bf a af af g |
+  ef-\omit\dim ef d df df cf  bf bf a af af g  ef ef d df df cf  bf bf a af af g } |
+  g8\! r r4 r2 | R1 |
+
+  \time 3/2 
+  <<{\stemUp \tuplet 6/4 {ef'16-\omit\mf([ bf' ef \toUP \stemDown fs g~ d')]} <ef g,>8 s 
+      \toDN\stemUp \tuplet 6/4 {bf16([ d, g,) \toUP\stemDown fs'( g~ d']} <c g>8)  s
+      \toDN\stemUp \tuplet 6/4 {af16[( c, f,) \toUP\stemDown af'(-\omit\< c e]} <f d af>8)\! s}
+  \context Voice = "PnoV4" {
+\set tieWaitForNote = ##t \stemUp s4-\omit\mf \tuplet 6/4 {b,16( e, b) \toUP \stemDown fs'( g~ cs } <d g,>8) s
+  \toDN \stemUp \tuplet 6/4 {a16[ cs, e, \toUP\stemDown fs'( g| df']} <c g>8) s 
+  \toDN \stemUp \tuplet 3/2 {bf,,16(-\omit\<[ bf' f'} fs8)]
+  } >> |
+
+  <<{\toDN \stemUp \slurDown \tuplet 6/4 {<g, g,>16( d' g \toUP \stemDown a bf~ g')} <gf ef bf> 4
+     \toDN \stemUp \tuplet 6/4 {bf,,,16( d' bf' \toUP \stemDown a bf~ g')} <f df bf> 4
+     \toDN \stemUp \tuplet 6/4 {<g,, g,>16( df' bf' \toUP \stemDown bf df f )} <af ef~ bf~>8-\omit\<\noBeam \hideNotes <ef bf>16\! s \unHideNotes
+    }
+    \context Voice="PnoV4" {
+\set tieWaitForNote = ##t 
+      \toDN\stemUp\slurDown s4
+      \tuplet 6/4 {ef,,16( bf' gf' \toUP \stemDown af bf~ g')} <gf d bf>4
+      \toDN\stemUp \tuplet 6/4 {df,,16( df' f \toUP \stemDown af bf e)} <f df bf>8 s
+      \toDN\stemUp \tuplet 6/4 {c,,16(-\omit\< c' bf' \toUP \stemDown <bf ef g>\! c ef)}
+    } >> |
+
+    \time 4/4
+    <<{\toDN\stemUp \tuplet 6/4 {f,,16(-\omit\< <c' af'>  b' \toUP\stemDown c <f a> <e g>)} <f a>8 s
+    \toDN\stemUp \tuplet 6/4 {<a,, a,>16( <a f'> c' \toUP\stemDown df-\omit\< <f a> <ef g>)} <f a>8 s\!}
+    \context Voice="PnoV4" {
+      \set tieWaitForNote = ##t s4-\omit\cresc
+      \toDN\stemUp \tuplet 6/4 {<df, df,>16( <f a,> bf \toUP\stemDown b <f' a> <ef g>)} <c f a>8 s-\omit\<
+      \toDN\stemUp \tuplet 6/4 {<b, b,>16( <es gs> cs' \toUP\stemDown d\! <fs a> <g bf>)}
+    }
+    \new Voice {\toDN\stemDown f,,4-\omit\< df af-\omit\< b\!} >>
+    
+    <<{\toDN\stemUp \tuplet 6/4 {<e e,>16( <b' gs'>  d' \toUP\stemDown ds <gs b> <fss as>)} <gs b>8 s
+    \toDN\stemUp \tuplet 6/4 {<b,, b,>16( <b gs'> ds' \toUP\stemDown e-\omit\< <gs b> <fss as>)} <gs b>8 s\!}
+    \context Voice="PnoV4" {
+      \set tieWaitForNote = ##t s4
+      \toDN\stemUp \tuplet 6/4 {<gs, gs,>16( <f b> cs' \toUP\stemDown d <gs b> <fss as>)} <ds gs b>8 s-\omit\<
+      \toDN\stemUp \tuplet 6/4 {<d, d,>16( <d g b> e' \toUP\stemDown fss\! <a c> <as cs>)}
+    }
+    \new Voice {\toDN\stemDown e,,,4 gs' b,-\omit\< d\!} >>
+
+
+    <<{\toDN\stemUp \tuplet 6/4 {<g g,>16( <d' b'>  d' \toUP\stemDown fs~ <as cs> <b d>)~} <d b fs>8 s
+    \toDN\stemUp \tuplet 6/4 {<d,, d,>16( <d b'> d' \toUP\stemDown fs-\omit\<~ <as cs> <b d>)} <d b fs>8 s\!}
+    \context Voice="PnoV4" {
+      \set tieWaitForNote = ##t s4
+      \toDN\stemUp \tuplet 6/4 {<b, b,>16( <b d,> d \toUP\stemDown f <as cs> <b d>~)} <b d>8 s-\omit\<
+      \toDN\stemUp \tuplet 6/4 {<f, f,>16( <d g b> d' \toUP\stemDown g\! <c ef> <cs e>)}
+    }
+    \new Voice {\toDN\stemDown g,,,4 b' d,-\omit\< f\!} >>
+
+  <<{\toDN\stemUp \tuplet 6/4 {<b b,>16(-\omit\ff <f' af d>  g' \toUP\stemDown af~ <cs e> <d f>)~} <f d af>8 s
+  \toDN\stemUp \tuplet 6/4 {<f,,, f,>16( <d' b' d> af'' \toUP\stemDown b\dim c cs)}
+  \toDN\stemUp \tuplet 6/4 {g16\rest d( <bf fs'> g' af b\!) }
+  }
+    \context Voice="PnoV4" {
+      \set tieWaitForNote = ##t s4-\omit\ff
+      \toDN\stemUp \tuplet 6/4 {<d,, d,>16( <d g b> fs' \toUP\stemDown g <bf df> <b d>~)} <b d>8 s-\omit\>
+      \toDN\stemUp \tuplet 3/2 {<bf,, bf,>16\noBeam \stemDown af'8\noBeam~} <af d>
+    }
+    \new Voice {\toDN\stemDown b,,4-\omit\ff d f,-\omit\> bf\!} >>
+
+  <<{\voiceOne r16-\omit\mf <ef bf'>( g' <bf, ef,>) r <bf g'>( bf' <g bf,>) r <g bf>( ef' <bf g>) g'4}
+  \context Voice="PnoV2" {\voiceTwo <ef,, ef,>2.-\omit\mf g''16( <ef cf> g, cf,)}
+>>
+
+
 
   }
 PianoUPOssia=\relative c'{\stopStaff \commonConductor   %\commonConductor
