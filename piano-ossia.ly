@@ -36,7 +36,7 @@ page-breaking-system-system-spacing = #'((basic-distance . 12))
       \score{
         \midi{} \layout{} 
       \keepWithTag #'(part piano ossia) \new PianoStaff="Piano" 
-      %\with {
+      \with { connectArpeggios = ##t}
        % instrumentName="Piano"
        % shortInstrumentName="P.no"}
         <<
@@ -50,7 +50,7 @@ page-breaking-system-system-spacing = #'((basic-distance . 12))
       \pageBreak
       \score{
       \keepWithTag #'(part piano) \new PianoStaff="Piano" 
-      %\with {
+      \with { connectArpeggios = ##t }
       %  instrumentName="Piano"
       %  shortInstrumentName="P.no"}
         <<
@@ -64,7 +64,7 @@ page-breaking-system-system-spacing = #'((basic-distance . 12))
     \markup{ \vspace #1 } 
       \score{
       \keepWithTag #'(part piano) \new PianoStaff="Piano" 
-      %\with {
+      \with { connectArpeggios = ##t }
       %  instrumentName="Piano"
       %  shortInstrumentName="P.no"}
         <<

@@ -112,7 +112,8 @@
 
       \new PianoStaff="Ossia" \with {
         instrumentName="Ossia"
-        shortInstrumentName="Ossia"}
+        shortInstrumentName="Ossia"
+       connectArpeggios = ##t }
         <<
           \new Staff="PnoOUp" \with
           {
@@ -134,7 +135,8 @@
 
       \new PianoStaff="Piano" \with {
         instrumentName="Piano"
-        shortInstrumentName="P.no"}
+        shortInstrumentName="P.no"
+      connectArpeggios = ##t}
         <<
           \new Staff="PnoUp" <<\new Voice = "PnoV1" {\PianoUPI} \new Voice ="PnoV2" {\conductorI}>>
           \new Staff="PnoDn" <<\new Voice = "PnoV3" {\PianoDNI} \new Voice ="PnoV4" {\conductorI}>>
@@ -288,7 +290,8 @@
         >>
       \new PianoStaff="Piano" \with {
         instrumentName="Piano"
-        shortInstrumentName="P.no"}
+        shortInstrumentName="P.no"
+      connectArpeggios = ##t }
         <<
           \new Staff="PnoUp" <<\new Voice = "PnoV1" {\PianoUPII} \new voice ="PnoV2" {\conductorII}>>
           \new Staff="PnoDn" <<\new Voice = "PnoV3" {\PianoDNII} \new voice ="PnoV4" {\conductorII}>>
@@ -416,7 +419,8 @@
         >>
       \new PianoStaff="Piano" \with {
         instrumentName="Piano"
-        shortInstrumentName="P.no"}
+        shortInstrumentName="P.no"
+      connectArpeggios = ##t }
         <<
           \new Staff="PnoUp" <<\new Voice = "PnoV1" {\PianoUPIII} \new Voice ="PnoV2" {\conductorIII}>>
           \new Staff="PnoDn" <<\new Voice = "PnoV3" {\PianoDNIII} \new Voice ="PnoV4" {\conductorIII}>>
