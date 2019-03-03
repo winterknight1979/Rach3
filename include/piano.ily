@@ -1959,14 +1959,65 @@ g4)\ff \ottava #0 r r2 | R1 \mbreak |
     \context Voice="PnoV2" {\voiceOne\dynamicUp cs8( d fs\< a\! gs)}>> |
     
     \mpbreak |
+    <<
+      {\voiceOne
+      \dynamicDown <gs b, gs>8--(\mf \dynamicUp <b d, b>4\> cs8)\! \dynamicDown <fs, d~ fs,>8--(\dim <b d, b>4 cs8) |
+      e,8( fs4 gs8) d( \dynamicUp e4\> fs8)-\omit\p |
+      \nextCresc "poco a poco cresc." <cs a cs,>4--\< <d b d,>8(\< <ds a ds,> <ff df af ff>4.--)\! <gf gf,>8-\omit\<
+      }
+      \context Voice="PnoV2" {\voiceTwo
+      s4.-\omit\mf fs16( <gs e>) s4.-\omit\dim e16( <fs d>) |
+      \toDN\stemUp gs,,16( b d \toUP\stemDown fs~) fs8. gs16~ gs8. a16~ a <as fss> <b gs~> <bs gs> |
+      r8\p-\omit\< e,,16( cs') d a' b c r \slurUp c,( df ff af c df ef 
+      }
+    >>
+    \mbreak |
+    \key c\minor
+    <<{\voiceTwo r16 ff, g c df d \tuplet 3/2 {ef e f} r8. cs16( d es fs gs) |
+        \voiceOne \dynamicDown <cs a es cs>4 <d d,>8( <ds ds,>) <ds ds,>(-- <e e,>4 <f f,>8) |
+       <fs ef c fs,>\ff--( <g ef c g>4) <af af,>8}
+       \context Voice="PnoV2" {\voiceOne <g, ff df g,>4) <af af,>8( <bf df, bf>) <as fs as,>--( <b fs b,>4) <bs d, bs>8 | 
+     \voiceTwo r16 es,,( b' c) a' gs a bf b8[ c]~ \dynamicDown c16\< b c d\! |
+     r4-\omit\ff r16 d->[ ef-> <f f,>->] }>>
+    \oneVoice \acciaccatura es,8 <gs b ds es gs>-> \acciaccatura fs <a b d fs a>-> <gs d' fs gs>->[ <a d fs a>->]
+    \mbreak |
+    
+    <g bf ef g bf>8\ff\arpeggio
+    \ottava #1 
+    <<{\voiceOne r16 d''-. ef8[ r16 d-.] ef8-.[ ef16-. g-.] gf-. f-. e-. ef-. | bf8-.[-\omit\dim  r16 d-.] ef8-.[ ef16-. d-.] df-. c-. cf-. bf-. a-. af-. g-. fs-. }
+    \context Voice="PnoV2"{\voiceTwo bf32-\omit\ff a bf a  bf f fs g bf a bf a  bf g af a c bf ef d  ef d df c c cf c cf |
+         bf f\dim fs g bf a bf a  bf g af a bf a bf a  bf a af g gf f gf f  gf f f ff ef d ef d} >>
+    \mbreak |
 
-    R1 * 3 \mbreak |
-    R1 * 3 \mbreak |
-    R1 * 2 \mbreak |
-    R1 * 2 \mbreak |
-    R1 * 2 \mbreak |
-    R1 * 2 \mbreak |
-    R1 * 2 \mpbreak |
+    <<{\voiceOne g8-. c->[\p g->] c,-.->[ g-.->] fs'16-.[ g-.] a-. bf-. cf-. gf-. | 
+    g-. b,-.[ c-. g-.] af ef'-.[ af,-.] ef'-.[ af,-.] f'-.[-\omit\< fs-. g-.]\! af-. a-. bf-. b-. |}
+    \context Voice="PnoV2" {\voiceTwo
+      ef,8 c'32-\omit\p( g f e ef d df c) \ottava #0 c([ g f e ef16.) c'32]( \ottava #1 ef[ d ef d] ef d ef d ef d ef d |
+      ef16) \ottava #0 ef,32([ d ef d ef d] ef16) af32[( g gf f]) a[( g gf f]) \ottava #1 ef'[\< c ef c ef c\!] f d f d g d af' d,
+    }
+    >>\mbreak |
+    <<{c'( af g c,) s( <ef g>[ s <ef g>)] c'( af g c,) s( <ef g>[ s <ef g>]) c'( af g c,) f16-.[ \once\dynamicUp g-.]\< af-. a-. bf-. b-.\! |
+    c\f b c b c-. b-. c-. b-. c-.\< bf-.\! ef-. d-. df-. c-. cf-.\> bf-.\!}
+        \context Voice="PnoV2" {s8 <fs d>32[ s <fs d>] s s8 <fs d>32[ s <fs d>] s s8 ef32[ d ef-\omit\< d] f d fs d g f af f\!  |
+        af-\omit\f g fs g af g fs g  af g fs g af g fs g  af-\omit\< g fs g\! bf a bf a af g af g fs-\omit\> g fs g\!} >>
+    \mbreak |
+    <<{
+      \voiceOne c16-.\mf bf-. a-. bf-. bf-. a-. af-. a-. a-. af-. g-. af-. af-. g-. fs-. g-. |
+        af-. g-. fs-. g-. g-. fs-. f-. fs-. g-. f-. e-. f-. f-. e-. ef-. e-. 
+    } \context Voice="PnoV2" {
+      \voiceTwo gf32-\omit\mf f gf f gf f gf f  f e f e f e f e  e ef e ef e ef e ef ef d ef d ef d ef d |
+      e df e df e df e df  e c e c e c e c df c df c df c df c c b c b c b c b 
+    }>>\mbreak |
+    <<{\voiceOne
+    ff'16-[-. ef-. af,-.] \ottava #0 ef'16-.[\dim af,-.] ef'-.[ af,-.] ef'-.[ af,-.] cf-.[ ef,-.] cf'-.[ ef,-.] ef-.[ af,-.] r}
+    \context Voice="PnoV2" {
+    \voiceTwo cf'32([ bf cf bf af16)] af32[-\omit\dim g gf f] af[ g gf f] af[ g gf f] ef[ d df cf] ef[ d df cf] bf[ a af g gf f]\!
+    }
+  >>
+  \oneVoice
+  ff\p( ef d ef d df c df c cf \toDN bf cf bf a af a af \stemUp g[ gf f ff ef d df] c\noBeam \stemDown cf\noBeam\( bf16)\)\pp r8  
+
+      \mpbreak |
 
     R1 * 2 \mbreak |
     R1 * 2 \mbreak |
@@ -3393,13 +3444,43 @@ s-\omit\p \clef treble bf-\omit\cresc d c' a,-\omit\dim s-\omit\pp}
     \toDN\stemUp <b gs>( d-\omit\< \toUP\stemDown fs gs)\! \toDN s4
     \mpbreak |
 
-    R1 * 3 \mbreak |
-    R1 * 3 \mbreak |
-    R1 * 2 \mbreak |
-    R1 * 2 \mbreak |
-    R1 * 2 \mbreak |
-    R1 * 2 \mbreak |
-    R1 * 2 \mpbreak |
+    \oneVoice <b, e,>16-\omit\mf( d a' gs d gs c8)-- \clef bass <a, e,>16\arpeggio-\omit\dim( d \clef treble gs fs d fs c'8) |
+    \clef bass 
+    <<{
+      \voiceOne s4 fs,,16( b d e) e,( b' d e~ e) cs[( d ds])}
+    \context Voice="PnoV4" {\voiceTwo gs,4 fs e e,8( e')}
+    >> |
+    \oneVoice \once \dynamicUp r16\p  a,,(-\omit\< a' e'~ e a b c 
+    <<{\voiceOne <df af ff>4.) \voiceTwo gf,8}
+    \context Voice="PnoV4" {\voiceTwo r8-\omit\p-\omit\< \voiceOne <bf, bf,>16( ff' af c df ef} >> 
+
+    \mbreak |
+    \key c\minor
+    <<{\voiceTwo r8 \voiceOne <bf, ef,>16 g' df'[ d \tuplet 3/2  {ef e f]} <fs d fs,>4. \voiceTwo <d bs>8 |
+        r16 \clef bass cs,( b' es \clef treble \voiceOne \dynamicUp a\< gs a bf\! <b e, c>4--) \voiceTwo s8 f8 |
+        r16-\omit\ff \clef bass <g,, c,>( ef' <g c ef>}
+        \context Voice="PnoV4"{
+          \voiceOne <g df' ff>4--) \voiceTwo af8 <g df'> r16 <fs gs,> b c \voiceOne d \clef treble es( fs gs |
+        <a fs cs b>4) \voiceTwo <ef bf>8 <f c> r16 \clef bass <e, a,>( c' e \clef treble \voiceOne c' <b b,> <c c,> <d d,> | <ef c af ef>4)-\omit\ff
+      }
+    \new Voice {\voiceThree s2 cs,8( b4)}>>
+    \oneVoice g'16\noBeam) \clef treble <d d'>-> <ef a c ef>-> f-> \clef bass \slashedGrace <b,, b,>8 \tuplet 3/2 4 {<a' b ds es>-> <a b ds fs>-> <a b ds gs>->
+    <a b ds fs a>-> <a b ds fs as>-> <a b ds fs b>->}    
+    \mbreak |
+   
+    \clef treble <ef' g bf ef>8\arpeggio-\omit\mf r16 <ef'' g>32([ <bf fs'>] <ef g>8-.) r16 <ef, g>32([ <bf fs'>] <ef g>16-.) bf'-. ef-. bf'-. <gf bff>-. <f af>-. <e g>-. <ef gf>-.
+    <f g>8-.-\omit\dim r16 <ef, g>32([ <bf fs>] <ef g>8-.)[ r16 bf'] <ef g>-. bf-. <bf ef>-. ef,-. <ef cf'>-. cf-. <cf ef>-. ef,-. \mbreak |
+    
+    <af' ef c>8-. r16-\omit\p <af c>32([ <g b>] <af c>16)-. ef-. r <af, c>32([ <g b>] <af c>16-.) ef-. r <c' fs>32([ g'] <ef af>16) <ef bf'>-. <af cf>-. <gf cf,>-. |
+    <g ef>\noBeam <b, g>-.[ <af c>-. <b ef,>-.] <af c> <b ef,>-.[ <c ef>-.] <b ef,>-.[ <c ef>-.] ef,32(-\omit\<[ g g af bf c\!] d ef fs g af a bf b)
+    \mbreak |
+
+    <c g ef>8-> <<{\voiceOne s c-. s c-. s s4 } \context Voice="PnoV4" {\voiceTwo s2 <a fs>16-. <bf g>-.-\omit\< <b af>-. <c a>-. <df bf>-. <d b>-.\!}>> |
+    \oneVoice c32-\omit\f ef b ef  c ef b ef  c ef b ef  c ef b ef c-\omit\< ef bf ef\! ef g d fs  df f c e  cf-\omit\> ef bf d-.\! \mbreak |
+    c(-\omit\mf df bf df a df bf df)  bf( df a df af df a df) a( c af c g c af c) af( b g b fs b g b) |
+    af( bf g bf fs bf g bf) g( bf fs bf f bf fs bf) g( bf f bf e, bf' f bf) f( a e a ef a e a) \mbreak |
+    ff( af ef16) r <ef c>-.-\omit\dim[ <cf ef,>-.] <c ef>-.[ <cf ef,>-.] <c ef>-.[ <cf ef,>-.] <cf af>-.[ <ef, cf>-.] <af cf>-.[ <ef cf>-.] \clef bass <ef cf>-.[ ef,]-. r |
+    s1-\omit\p \mpbreak |
 
     R1 * 2 \mbreak |
     R1 * 2 \mbreak |
