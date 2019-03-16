@@ -2019,14 +2019,58 @@ g4)\ff \ottava #0 r r2 | R1 \mbreak |
 
       \mpbreak |
 
-    R1 * 2 \mbreak |
-    R1 * 2 \mbreak |
-    R1 * 2 \mbreak |
-    R1 * 5 \defaultTimeSignature \time 2/2 R1 * 2 \mbreak |
-    R1 * 11 \mbreak |
+
+    \toUP \stemUp r32\p g'( bf d ef g bf cs)
+    <<{\stemDown \tuplet 9/8 {d \toDN\stemUp ef fs g \toUP\stemDown \ottava #1 a bf ef fs g}
+    \toDN\stemUp\slurUp \tuplet 10/8 {df,( ef fs g a \toUP\stemDown bf ef fs g bf)}
+    \toDN\stemUp \tuplet 11/8 {c,,( ef fs g bf \toUP\stemDown d ef fs g bf ef) }
+    }
+    \context Voice="PnoV2" {\stemUp d,,4--^\markup{\italic "ten."}}>>
+    
+    \toDN\stemUp \tuplet 13/8 { bf32( ef g bf c \toUP\stemDown d ef fs g bf ef fs g)} \ottava #0
+    \toDN\stemUp \tuplet 9/8 {d,,,( ef fs g \toUP\stemDown a bf ef fs g)}
+    \toDN\stemUp \tuplet 10/8 {df,( ef fs g a \toUP\stemDown bf ef fs g bf)}
+    \toDN\stemUp \tuplet 11/8 {c,,( ef fs g bf \toUP\stemDown d ef fs g bf ef)}
+    \mbreak |
+    
+    \toDN\stemUp \tuplet 13/8 {bf,,( ef g bf c \toUP \stemDown d ef fs g bf ef fs g)}
+    \toDN\stemUp \tuplet 9/8 {d,,,\mf( ef fs g \toUP\stemDown a bf ef fs g)}
+    \toDN\stemUp \tuplet 10/8 {df,( ef fs g a \toUP\stemDown bf ef fs g bf)}
+    \toDN\stemUp \tuplet 11/8 {c,,( ef fs g bf \toUP\stemDown d ef fs g bf ef)} |
+
+    \toDN\stemUp \tuplet 9/8 {c,( ef fs g \toUP\stemDown bf ef fs g bf)\dim}
+    \toDN\stemUp \tuplet 10/8 {bf,,,( ef g bf ef \toUP\stemDown g bf ef fs g)}
+    \toDN\stemUp \tuplet 10/8 {bf,,( c ef fs g \toUP\stemDown bf ef g bf ef)}
+    \toDN\stemUp \tuplet 19/8 {g,,,,8( c32 ef bf' \toUP\stemDown c ef fs g bf
+    \toDN\stemUp \clef treble c ef fs \toUP\stemDown g bf c ef)}
+    \mbreak |
+    \stemNeutral g16\ppLeg \clef bass g,,,32([ fs g af a af] a bf c bf c cs d cs 
+    \clef treble d ef f ef f fs g fs  g af a af a bf c bf |
+    c cs d cs d ef f ef f fs g fs g af a af a bf c bf c cs d cs d ef f fs g af a bf) \mbreak |
+    \ottava #1 <ef g,>8\ppp \ottava #0 r r4 r <bf,, ef, bf>--\mf |
+    <g ef c>2.-- <ef g d'>4--\cresc |
+    <ef g bf>2--~ <ef g bf>8[\dim <c ef af c>-- <c ef g>--\> <bf ef gf bf>--] |
+    <<{\voiceOne g'2.\p( f8 g) | f2.~\dim( f8 ef)}
+    \context Voice="PnoV2" {<ef bf>1-\omit\p | <bf af>}>> |
+    \oneVoice \defaultTimeSignature \time 2/2 <g ef'>--~\pp | <g ef'>~ \mbreak |
+    <g ef'>~ | <g ef'>4 r r2 |
     R1 * 9 \mbreak |
-    R1 * 5 \mbreak |
-    R1 * 5 \mpbreak |
+    R1 * 7
+    r2\f <a' e' a>4-> r | <a e' a>-> r <a e' a> r 
+    \mbreak |
+    \tuplet 6/4 2 { g8\p\<([ a cs e g a\!] bf\>[ g ef d cs bf])\! |
+    g\<([ a cs e g a\!] bf\>[ g ef d cs bf)\!] } |
+    \tuplet 3/2 4 { g(\p[ cs a'] bf)-> f f b-> fs[ fs c'->] g g |
+    cs->[ gs gs] d'-> af af ef'-> bf bf e->[ b b]} |
+    \tuplet 6/4 2 {r a'([ a, cs gs a)] r a'([ a, cs gs a])}    
+    \mbreak |
+    \tuplet 6/4 {r a'( a, cs gs a)} r4 \ottava #1 <b' f b,>-. |
+    \tuplet 3/2 4 {<c ef,>4\mf g8\noBeam( c g' g, <c ef,>4) g8\noBeam( c g' g, |
+    c[) g( g'] c, g g' c,[ g af] a bf c } |
+    <d bf g>4-.) \tuplet 3/2 {d8(->-. g, d} g4-.)-> \ottava #0 \tuplet 3/2 {d8(\p g, d)} |
+    <<{\voiceOne g4-. g-. d-. g,-.}
+    \context Voice="PnoV2" {\voiceTwo \tuplet 3/2 4 {d'8(-\omit\p c g) c[( bf g)] a( g d)} g4-.}>>
+    \mpbreak |
 
     R1 * 5 \mbreak |
     R1 * 5 \mbreak |
@@ -3482,14 +3526,41 @@ s-\omit\p \clef treble bf-\omit\cresc d c' a,-\omit\dim s-\omit\pp}
     ff( af ef16) r <ef c>-.-\omit\dim[ <cf ef,>-.] <c ef>-.[ <cf ef,>-.] <c ef>-.[ <cf ef,>-.] <cf af>-.[ <ef, cf>-.] <af cf>-.[ <ef cf>-.] \clef bass <ef cf>-.[ ef,]-. r |
     s1-\omit\p \mpbreak |
 
-    R1 * 2 \mbreak |
-    R1 * 2 \mbreak |
-    R1 * 2 \mbreak |
-    R1 * 5 \defaultTimeSignature \time 2/2 R1 * 2 \mbreak |
-    R1 * 11 \mbreak |
+    ef,32-\omit\p( bf' ef g bf8) \clef treble \stemDown s4 df'--_\markup{\italic "ten."} c--_\markup{\italic "ten."} |
+    bf--_\markup{\italic "ten."} d,-- df-- c-- \mbreak |
+    bf \clef bass d,-\omit\mf df c |
+    \clef treble c' \clef bass bf,-\omit\dim-- \clef treble bf' \clef bass g,-- 
+    \mbreak | \stemNeutral
+    \clef bass ef16-\omit\ppLeg( bf' ef f <ef fs>) g-. <f af>-. a-. <g bf>-. c-. <bf cs>-. d-. \clef treble <c ef>-. f-. <ef fs>-. g-. |
+    <f af>-. a-. <g bf>-. c-. <bf cs>-. d-. <c ef>-. f-. <ef fs>-. g-. <f af>-. a-. <g bf>-. c-. <bf df>-. d-. \mbreak |
+    
+    <ef bf ef,>8-\omit\ppp r r4 r \clef bass <g,,, ef g,>-\omit\mf |
+    < g ef c>2.-- <d' g, ef bf>4---\omit\cresc |
+    <bf g ef>2~-- <bf g ef>8[-\omit\dim <af ef f,>-- <g ef c>-\omit\>-- <gf cf, ef,>] |
+    <g ef bf>1-\omit\p |
+    <<{\voiceOne ef2(-\omit\dim d)} \context Voice="PnoV4" {bf,1}>> |
+    \oneVoice
+    \defaultTimeSignature \time 2/2
+    <ef bf' ef>1-\omit\pp~ | <ef bf' ef>~  \mbreak |
+    <ef bf' ef>~ | <ef bf' ef>4 r r2 |
     R1 * 9 \mbreak |
-    R1 * 5 \mbreak |
-    R1 * 5 \mpbreak |
+    R1 * 7
+    \clef treble r4-\omit\f \tuplet 3/2 {e'''8->( a, e)} r4 \tuplet 3/2 {e'8(-> a, e} |
+    r4 \tuplet 3/2 {e'8(-> a, e)} r4 \tuplet 3/2 {e'8( a, e }
+    \mbreak |
+    \tuplet 3/2 4 {a,4)(-\omit\p e'8\noBeam-\omit\< g bf cs\!} <d bf g>4--)-\omit\> r\! |
+    \tuplet 3/2 4 {a,4(-\omit\< e'8\noBeam g bf cs\!} <d bf g>4--)-\omit\> r\! |
+    \tuplet 3/2 {a,8(-\omit\pi[ e' a)]}
+    <<{\voiceOne cs( d) d([ ds)] ds( e) | e([ es]) f( fs) fs([ g)] g( gs)}
+    \context Voice="PnoV4" {\voiceTwo bf,4-\omit\p b c | cs d ef e}>> |
+    \oneVoice <e a>-. <e a,>-. <e a>-. <e a,>-. |
+    \mbreak |
+    <e a>-. <e a,>-. <e a>-. <g d g,>-. |
+    <c ef, c>4.---\omit\mf g8-. <c ef, c>4.-- g8-. |
+    <c ef, c>-.[ g-.] <c ef, c>-. g-. <c ef, c>4-. <g ef d>-. |
+    <bf d, g,>-. \tuplet 3/2 {d8-.->( g, d} g4-.->) \tuplet 3/2 {d8(-\omit\p g, d} |
+    \clef bass c-.)[ ef,-.] bf'-. d,-. a'-. c,-. g'4-.
+    \mpbreak |
 
     R1 * 5 \mbreak |
     R1 * 5 \mbreak |
