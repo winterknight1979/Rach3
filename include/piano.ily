@@ -2122,8 +2122,8 @@ g4)\ff \ottava #0 r r2 | R1 \mbreak |
     <g bf, g> <d d'> g <d d'> g4 \ottava #0 r
     \mbreak |
     \key d\minor
-    r4\ff \ottava #1 <af d f af>_\markup{\italic "marc"} <d, f af d> <af d f af>|
-    \ottava #0 <d, f af d> <af d f af> <d, f af d> <af d f af> |
+    r4\ff \ottava #1 <a d f a>_\markup{\italic "marc"} <d, f a d> <a d f a>|
+    \ottava #0 <d, f a d> <a d f a> <d, f a d> <a d f a> |
     <e gs b e> \clef bass \tuplet 3/2 4 {gs8( e b' e[ b \clef treble fs'] gs e b' |
     e b fs' gs[ e b'] e b \ottava #1 fs' gs[ e b']} |
     <f c' f>4) <c' f af c>\ff <f, af c f> <c f af c> |
