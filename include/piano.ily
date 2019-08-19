@@ -2130,12 +2130,54 @@ g4)\ff \ottava #0 r r2 | R1 \mbreak |
     \ottava #0 <f, af c f> <c f af c> <f, af c f> <c f af c>
     \mpbreak |
 
-    R1 * 6 \mbreak |
-    R1 * 6 \mbreak |
-    R1 * 6 \mbreak |
-    R1 * 6 \mbreak |
-    R1 * 6 \mbreak |
-    R1 * 6 \mpbreak |
+    <g b d g> \tuplet 3/2 4 {b8( g d' g[ d a'] b g d' |
+    g d a' b[ g d'] g d g} <af ef cf>4->) |
+    r \ottava #1 <f bf d f>\ff <bf, d f bf> <a c ef a> \ottava #0 |
+    < d a fs d> \ottava #1 <a' d fs a> <d a fs d> <c g ef c> |
+    <f, d bf f> <bf g d bf> \ottava #0 <ef,, g bf ef> <f bf d f> |
+    <a, d f a> r <a' cs e a> r
+    \mbreak |
+    <d, f a d>\mf 
+    <<{\voiceOne d'-. c-. bf-. | a-. g-.-\omit\dim f-. e-. | d-.\p }
+    \context Voice="PnoV2" {\voiceTwo 
+    \tuplet 3/2 4 {
+    f8( a d,) ef[( g c,)] d( f bf,) |
+    d( f a,)\dim bf[( ef g,]) a( d f,) g[( a e] |
+    f4\p) 
+    }
+    }>> \oneVoice r r2 |
+    r <f~ d~ bf~ g>(\f\>\arpeggio |
+    <f d bf f>)\mf <f d bf f>-- |
+    <f d bf f>-- <f d bf f>4.-- <f d bf f>8-. 
+    \mbreak |
+    <f d bf f>--\mf( <g d bf d>4) <g d bf d>8-. <g d bf d>--(\cresc <bf f d bf>4) <bf f d bf>8-. |
+    <bf f d bf>--( <d bf f d>4) <d bf f d>8-. <d bf f d>--( <f d bf f>4) <g d bf g>8 |
+    <g d bf g>--(\f <f d bf f>4) <g d bf g>8 <f d bf f>8--( <d bf d,>4) <f d bf f>8 |
+    <f d bf f>--( <c bf c,>4) <d bf d,>8 <d bf d,>--( <bf d, bf>4) <d bf d,>8 |
+    <d a d,>--(\dim <a d, a>4) <bf d, bf>8 <d bf, d>--( <af df, af>4) <bf df, bf>8 |
+    <bf c, bf>--( <gf c, bf>4) <bf c, bf>8 <bf c, bf>--( <f c bf>4) <bf c, bf>8 |
+    \mbreak |
+    <bf d, bf>2--\p <f d bf f>-- |
+    <f d bf f>-- <f d bf f>4.-- <f d bf f>8-. |
+    <f d bf f>--( <bf f d bf>4)\cresc <bf f d bf>8-. <bf f d bf>--( <d bf f d>4) <d bf f d>8-. |
+    <d bf f d>--( <f d bf f>4) <f d bf f>8-. <f d bf f>--( <bf f d bf>4) <a f d a>8 |
+    <g d bf g>--\f( <f d bf f>4) <g d bf g>8 <g d bf g>--( <d bf d,>4) <f d bf f>8 |
+    <f d bf f>--( <ef bf ef,>4) <f d bf f>8 <f bf, f>--( <c bf c,>4) <ef bf ef,>8 |
+    \mbreak |
+    <ef bf ef,>--(\dim <bf ef, bf>4) <d bf d,>8 <d a d,>--( <a d, a>4) <bf d, bf>8 |
+    <bf df, bf>--( <af df, af>4) <bf df, bf>8 <bf c, bf>--( <gf c, gf>4) <bf c, bf>8 |
+    <bf d, bf>2--\p <f d bf f>\cresc-- |
+    <g d bf g>-- <gs d bf gs>-- |
+    <a f d a>-- <a g e a,>4.-- <a f a,>8-. |
+    <a f a,>--\f( <d a f d>4) <d a f d>8-. <d a f d>--(\cresc  <f d a f>4) <f d a f>8-. 
+    \mbreak |
+    <f d a f>--( <a f d a>4) <a f d a>8 <a f d a>--( <d a f d>4) <c a f c>8 |
+    <bf f bf,>\ff--( <a f a,>4) <bf f bf,>8 <bf f bf>--( <f cs f,>4) <a f c a>8 |
+    <a f d a>--( <g d g,>4) <a f d a>8 <a d, a>--( <e d e,>4) <g d g,>8 |
+    <g d g,>--(\dim <d g, d>4) <f d f,>8 <f c f,>--( <c f, c>4) <f c f,>8 |
+    <f b, f>--(  <b, f b,>4) <f' b, f>8 <f bf, f>--( <bf, f bf,>4) <d bf d,>8 |
+    <d a d,>4.\mf\cresc <a f d a>8-. <a f d a>--( <d a f d>4) <f d a f>8-. 
+    \mpbreak |
 
     R1 * 6 \mbreak |
     R1 * 6 \mbreak |
@@ -3666,12 +3708,54 @@ s-\omit\p \clef treble bf-\omit\cresc d c' a,-\omit\dim s-\omit\pp}
     <f, af c f> \clef bass <c f af c> <f, af c f> <c f af c>
     \mpbreak |
 
-    R1 * 6 \mbreak |
-    R1 * 6 \mbreak |
-    R1 * 6 \mbreak |
-    R1 * 6 \mbreak |
-    R1 * 6 \mbreak |
-    R1 * 6 \mpbreak |
+    
+    <g b d g> <g' d'>8-. <g d'> <d' b'>4-- <d g b>8-. <d g b>-. |
+    <b' d g>4-- \clef treble <d g b>8-. <d g b>-. <b' d g>4-. <af cf ef af>-> |
+    r <f bf d f>-\omit\ff <bf, d f bf> <a c ef a> |
+    <d, fs a d> <a'' d fs a> <d, fs a d> <c ef g c> |
+    <f, bf d f> <bf d g bf> \clef bass <ef, g bf ef> <f bf d f> |
+    <a, d f a> r <a' cs e a> r
+    \mbreak |
+    
+    <d, f a d>-\omit\mf <c' d a'>8-.( d,-.) <bf' ef g>-.( d,-.) <gs d' f>-.([ d-.)] |
+    <a' d f>4-. <g bf ef>8-.(-\omit\dim g,-.) <f' a d>4-. <g a cs>8-. a,-. |
+    <d a'>4-\omit\p r r2 |
+    r
+    <<{\voiceOne <bf d f>~-\omit\f-\omit\>\arpeggio | <bf d f>4.-\omit\mf}
+    \context Voice="PnoV4" {g2\arpeggio-\omit\f-\omit\>( | f8-\omit\mf bf,4)}>>
+    \oneVoice <g' bf d>8-.\noBeam <f bf d>--( bf,4) <g' bf d>8-. |
+    <f bf d>--( bf,4) <g' bf d>8-.\noBeam  <f bf d>--( bf,4) <g' bf d>8-. 
+    \mbreak |
+     <f bf d>--(-\omit\mf bf,4) <g' bf d>8-.\noBeam  <f bf d>--(-\omit\cresc bf,4) <g' bf d>8-.\noBeam |
+     <f bf d>--( bf,4) <g' bf d>8-.\noBeam  <f bf d>--( bf,4) <a' d a'>8\noBeam |
+     <bf d bf'>--(-\omit\f bf,4) <bf' d bf'>8\noBeam <a bf d a'>--( bf,4) <a' bf d a'>8 |
+     <af bf d af'>--( bf,4) <af' bf d af'>8\noBeam <g bf d g>--~( bf,4) <g' bf d g>8 |
+     <gf bf d gf>--(-\omit\dim bf,4) <gf' bf d gf>8\noBeam <f bf df f>--( bf,4) <f' bf df f>8 |
+     <f bf c e>--( bf,4) <f' bf c e>8\noBeam <f bf c ef>--( bf,4) <f' bf c ef>8  
+    \mbreak |
+     <f bf d>--(-\omit\p bf,4) <g' bf d>8-.\noBeam   <f bf d>--( bf,4) <g' bf d>8-.\noBeam    |
+     <f bf d>--( bf,4) <g' bf d>8-.\noBeam   <f bf d>--( bf,4) <g' bf d>8-.\noBeam |
+     <f bf d>--( bf,4)-\omit\cresc <g' bf d>8-.\noBeam   <f bf d>--( bf,4) <g' bf d g>8-.\noBeam  |
+     <f bf d f>--( bf,4) <g' bf d g>8-.\noBeam <f bf d f>--( bf,4) <c' d f c'>8 |
+     <bf d f bf>--( bf,4)-\omit\f <bf' d bf'>8\noBeam <a bf d a'>--( bf,4) <a' bf d a'>8 |
+     <af bf d af'>--( bf,4) <af' bf d af'>8\noBeam <g bf g'>--( bf,4) <g' bf g'>8
+    \mbreak |
+  
+    <gf bf gf'>--(-\omit\dim bf,4) <gf' bf gf'>8\noBeam <f bf f'>--( bf,4) <f' bf f'>8 |
+    <f bf e>--( bf,4) <f' bf e>8\noBeam <f bf ef>--( bf,4) <f' bf ef>8 |
+    <f bf d>--(-\omit\p bf,4) <g' bf d>8-.\noBeam <f bf d>---\omit\<( bf,4) <g' bf d>8-. |
+    <f bf d>--( bf,4) <g' bf d>8-.\noBeam <f bf d>--( bf,4) <bf' d f>8-. |
+    <a d f>--( a,4) <bf' e g>8\noBeam <a e' g>--( a,4) <bf' d f>8-. |
+    <a d f>--(-\omit\f d,4) <bf' d f>8-.\noBeam <a d f>--(-\omit\< d,4) <bf' d f>8-.
+    \mbreak |
+    
+    <a d f>--( d,4) <bf' a f bf>8\noBeam <a d f a>--( d,4) <e' f a e'>8 |
+    <d f a d>-\omit\ff--( d,4) <d' f a d>8\noBeam <cs f a cs>--( d,4) <cs' f a cs>8 |
+    <c f a c>--( d,4) <c' f a c>8\noBeam <b d b'>--( d,4) <b' d b'>8 |
+    <bf d bf'>--(-\omit\dim d,4) <bf' d bf'>8\noBeam <a d a'>--( d,4) <a' d a'>8 |
+    <a d gs>--( d,4) <a' d gs>8\noBeam <a cs g'>--( d,4) <a' cs g'>8 |
+    <a d f>--(-\omit\mf-\omit\< d,4) <bf' d f>8-.\noBeam <a d f>--( d,4) <bf' d f>8-. 
+    \mpbreak |
 
     R1 * 6 \mbreak |
     R1 * 6 \mbreak |
@@ -3705,6 +3789,7 @@ s-\omit\p \clef treble bf-\omit\cresc d c' a,-\omit\dim s-\omit\pp}
 
   }
 PianoUPOssia=\relative c'{\stopStaff \commonConductor   %\commonConductor
+
   \time 4/4 \tempo "Allegro ma non tanto" 4=120 s1 * 10 \mark\default \barNumberCheck\RhI %1 
 
   s1 * 7  s4 \tempo\markup{\italic "colla parte"} 4=100 s4 s2  
