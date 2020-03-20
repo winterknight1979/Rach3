@@ -1,3 +1,4 @@
+\version "2.20.0"
 TromThreeII=\relative c{
   \commonConductor 
   \set Staff.soloText = #"III"

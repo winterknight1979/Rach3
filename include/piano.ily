@@ -1,3 +1,4 @@
+\version "2.20.0"
 MainCadenzaUp=\relative g'{\key d \minor s4-\omit\p \clef bass s s2 |
 \cadenzaOn
 s1 \bar "|"

@@ -1,9 +1,9 @@
-\version "2.18.2"
+\version "2.20.0"
 
 % use as \cueWhile "Flute" "Fl." #UP {music}
 cueWhile = 
 #(define-music-function
-   (parser location instrument name dir music)
+   (instrument name dir music)
    (string? string? ly:dir? ly:music?)
    #{
      \cueDuring $instrument #dir {
@@ -17,7 +17,7 @@ cueWhile =
 % use as \cueWhileClef "Cello" "Vc." #DOWN "bass"
 cueWhileClef = 
 #(define-music-function
-   (parser location instrument name dir clef music)
+   (instrument name dir clef music)
    (string? string? ly:dir? string? ly:music?)
    #{
      \cueDuringWithClef $instrument #dir $clef {
@@ -30,7 +30,7 @@ cueWhileClef =
 
 cueWhileTr = 
 #(define-music-function
-   (parser location instrument name dir mc music)
+   (instrument name dir mc music)
    (string? string? ly:dir? ly:music? ly:music?)
    #{
      \transposedCueDuring $instrument #dir $mc {
@@ -47,7 +47,7 @@ cueWhileTr =
 % use as \nextCresc "poco cresc." a4\< etc 
 nextCresc =
 #(define-music-function
-   (parser location name)
+   (name)
    (string?)
    #{
     \once\set crescendoText=$name
@@ -57,7 +57,7 @@ nextCresc =
 
 nextDim =
 #(define-music-function
-   (parser location name)
+   (name)
    (string?)
    #{
     \once\set decrescendoText=$name
@@ -68,7 +68,7 @@ nextDim =
 % used in the third mobement to temporarily change from 2/2 to 6/4 time
 inSixFour=
 #(define-music-function
-   (parser location music)
+   (music)
    (ly:music?)
    #{
      <>^\markup\smaller{(\note #"2." #1 "=" \note #"2" #1 )} 
@@ -86,7 +86,7 @@ inSixFour=
 
 oScale=
 #(define-music-function
-   (parser location num music)
+   (num music)
    (fraction? ly:music?)
    #{
    \tag #'main \scaleDurations $num $music

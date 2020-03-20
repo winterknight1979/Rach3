@@ -1,3 +1,4 @@
+\version "2.20.0"
 VlaI=\relative c' {\commonConductor 
   \clef alto \key d\minor \time 4/4
   r8 f,:16\p^"con sord." a: g: r f a: g: |

@@ -1,3 +1,4 @@
+\version "2.20.0"
 ViolOneI=\relative c' {\commonConductor
   \clef treble \time 4/4 \key d\minor
   r8^"con sord." d8:16\p f:16 e:16 r d:16 f:16 e:16 |

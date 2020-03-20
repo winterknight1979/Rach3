@@ -1,4 +1,4 @@
-\version "2.18.2"
+\version "2.20.0"
 BsnOneI=\relative c {
   \commonConductor
   \clef tenor \time 4/4 \key d \minor

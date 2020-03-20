@@ -1,3 +1,4 @@
+\version "2.20.0"
 BDII=\drummode{\commonConductor \time 3/4
   R2. * 9 \mark #24 \barNumberCheck \RhXXIV |
   R2. * 16 \mark\default \barNumberCheck \RhXXV |

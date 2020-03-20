@@ -1,3 +1,4 @@
+\version "2.20.0"
 BassI=\relative c {\commonConductor \transposition c 
   \clef bass \time 4/4 \key d\minor \set Staff.midiInstrument="pizzicato strings"
   d4\p^"pizz." r8 a d4 r8 a |

@@ -43,8 +43,8 @@ SCOREFILES=${HEADERS} ${FLUTEFILES} ${OBOEFILES} ${CLARFILES} ${BSNFILES} ${HRNF
 	    ${TPTFILES} ${LBFILES} ${PERCFILES} include/piano.ily include/viol1.ily include/viol2.ily \
 	    include/vla.ily include/cello.ily include/bass.ily
 
-all: flutes oboes clarinets bassoons horns trumpets lowbrass\
-    percussion violins violas cellos basses mainfiles ossiafiles
+all: mainfiles ossiafiles flutes oboes clarinets bassoons horns trumpets lowbrass\
+    percussion violins violas cellos basses 
 
 score: score.a4.pdf score.letter.pdf
 flutes: flutes.a4.pdf flutes.letter.pdf
@@ -62,7 +62,7 @@ basses: basses.a4.pdf basses.letter.pdf
 pianomain: piano.a4.pdf piano.letter.pdf 
 pianoossia: piano-ossia.a4.pdf piano-ossia.letter.pdf
 
-mainfiles: pianomain score Rach3.mid
+mainfiles: score pianomain Rach3.mid
 ossiafiles: pianoossia Rach3-ossia.mid
 
 
@@ -70,10 +70,14 @@ ossiafiles: pianoossia Rach3-ossia.mid
 	${LILY} -dmidi-extension=mid   $< 2>&1 | tee $*.mid.log
 
 %.a4.pdf : %.ly
-	${LILY} -fpdf -dpaper-size=\"a4\"  --loglevel=${LOG} -o $*.a4 $< 2>&1 | tee $*.a4.log
+	${LILY} -fpdf -dpaper-size=\"a4\"  --loglevel=${LOG} -o $*.a4.large $< 2>&1 | tee $*.a4.log
+	ps2pdf $*.a4.large.pdf $*.a4.pdf
+	rm -f $*.a4.large.pdf
 
 %.letter.pdf : %.ly
-	${LILY} -fpdf -dpaper-size=\"letter\" --loglevel=${LOG} -o $*.letter $< 2>&1 | tee $*.letter.log
+	${LILY} -fpdf -dpaper-size=\"letter\" --loglevel=${LOG} -o $*.letter.large $< 2>&1 | tee $*.letter.log
+	ps2pdf $*.letter.large.pdf $*.letter.pdf
+	rm -f $*.letter.large.pdf
 
 score.a4.pdf: include/conductor-main.ily score.ly ${SCOREFILES}
 score.letter.pdf: include/conductor-main.ily score.ly ${SCOREFILES}
@@ -119,4 +123,4 @@ Rach3-ossia.mid: include/conductor-ossia.ily Rach3-ossia.ly ${SCOREFILES}
 .PHONY: clean all
 
 clean:
-	rm -fv *.pdf *.ps *.mid* *.log *.bak
+	rm -fv *.pdf *.ps *.mid* *.log *.bak *~ include/*~

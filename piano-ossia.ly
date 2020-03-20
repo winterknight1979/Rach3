@@ -1,4 +1,4 @@
-\version "2.18.2"
+\version "2.20.0"
 \language "english"
 
 \include "include/macros.ily"
@@ -34,7 +34,8 @@ page-breaking-system-system-spacing = #'((basic-distance . 12))
          instrument = "Pianoforte"
       }
       \score{
-        \midi{} \layout{} 
+        %\midi{} 
+        \layout{} 
       \keepWithTag #'(part piano ossia) \new PianoStaff="Piano" 
       \with { connectArpeggios = ##t}
        % instrumentName="Piano"
